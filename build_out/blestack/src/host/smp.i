@@ -9033,7 +9033,7 @@ static const u8_t sc_debug_public_key[64] = {
  0x49, 0x9c, 0x80, 0xdc
 };
 # 269 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/smp.c"
-static struct bt_smp bt_smp_pool[2];
+static struct bt_smp bt_smp_pool[1];
 static 
 # 270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/smp.c" 3 4
       _Bool 

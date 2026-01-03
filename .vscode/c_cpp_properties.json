@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Ai-Thinker WB2 BLE",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../components/**",
+                "${workspaceFolder}/../components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Device/Bouffalo/BL602/Startup",
+
+                "${workspaceFolder}/../components/network/ble/blestack/src/include",
+                "${workspaceFolder}/../components/network/ble/blestack/src/common/include",
+                "${workspaceFolder}/../components/network/ble/blestack/src/host",
+                "${workspaceFolder}/../components/platform/soc/bl602/freertos_riscv_ram/config",
+                "${workspaceFolder}/../components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V"
+            ],
+            "defines": [
+                "CONFIG_BT=1",
+                "CONFIG_BT_ID_MAX=1",
+                "CONFIG_BT_MAX_PAIRED=0",
+                "CONFIG_BT_GATT_CCC_MAX=1",
+                "CONFIG_BT_CONN=1",
+                "CONFIG_NET_BUF_USER_DATA_SIZE=4"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

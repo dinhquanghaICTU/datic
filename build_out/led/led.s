@@ -6,10 +6,6 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.rodata.led_init.str1.4,"aMS",@progbits,1
-	.align	2
-.LC0:
-	.string	">>>>> this point\r\n"
 	.section	.text.led_init,"ax",@progbits
 	.align	1
 	.globl	led_init
@@ -17,32 +13,25 @@
 led_init:
 .LFB3:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.c"
-	.loc 1 9 1
+	.loc 1 10 1
 	.cfi_startproc
-	.loc 1 10 5
-	.loc 1 9 1 is_stmt 0
+	.loc 1 11 5
+	.loc 1 10 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
-	sw	ra,12(sp)
 	sw	s0,8(sp)
-	.loc 1 10 5
-	lui	a0,%hi(.LC0)
-	.cfi_offset 1, -4
+	sw	ra,12(sp)
 	.cfi_offset 8, -8
-	.loc 1 9 1
+	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 10 5
-	addi	a0,a0,%lo(.LC0)
-	call	printf
-.LVL0:
-	.loc 1 11 5 is_stmt 1
+	.loc 1 11 5
 	li	a1,0
 	li	a2,0
 	li	a0,17
 	call	bl_gpio_enable_output
-.LVL1:
-	.loc 1 12 5
+.LVL0:
+	.loc 1 12 5 is_stmt 1
 	.loc 1 13 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_restore 8
@@ -59,13 +48,13 @@ led_init:
 	.cfi_def_cfa_offset 0
 	.loc 1 12 5
 	tail	bl_gpio_output_set
-.LVL2:
+.LVL1:
 	.cfi_endproc
 .LFE3:
 	.size	led_init, .-led_init
 	.section	.rodata.led_on.str1.4,"aMS",@progbits,1
 	.align	2
-.LC1:
+.LC0:
 	.string	">>>>> led on\r\n"
 	.section	.text.led_on,"ax",@progbits
 	.align	1
@@ -86,12 +75,12 @@ led_on:
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
 	.loc 1 17 5
-	lui	a0,%hi(.LC1)
+	lui	a0,%hi(.LC0)
 	.loc 1 16 1
 	.loc 1 17 5
-	addi	a0,a0,%lo(.LC1)
+	addi	a0,a0,%lo(.LC0)
 	call	printf
-.LVL3:
+.LVL2:
 	.loc 1 18 5 is_stmt 1
 	.loc 1 19 1 is_stmt 0
 	lw	s0,8(sp)
@@ -109,13 +98,13 @@ led_on:
 	.cfi_def_cfa_offset 0
 	.loc 1 18 5
 	tail	bl_gpio_output_set
-.LVL4:
+.LVL3:
 	.cfi_endproc
 .LFE4:
 	.size	led_on, .-led_on
 	.section	.rodata.led_off.str1.4,"aMS",@progbits,1
 	.align	2
-.LC2:
+.LC1:
 	.string	">>>>> led off\r\n"
 	.section	.text.led_off,"ax",@progbits
 	.align	1
@@ -136,12 +125,12 @@ led_off:
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
 	.loc 1 23 5
-	lui	a0,%hi(.LC2)
+	lui	a0,%hi(.LC1)
 	.loc 1 22 1
 	.loc 1 23 5
-	addi	a0,a0,%lo(.LC2)
+	addi	a0,a0,%lo(.LC1)
 	call	printf
-.LVL5:
+.LVL4:
 	.loc 1 24 5 is_stmt 1
 	.loc 1 25 1 is_stmt 0
 	lw	s0,8(sp)
@@ -159,7 +148,7 @@ led_off:
 	.cfi_def_cfa_offset 0
 	.loc 1 24 5
 	tail	bl_gpio_output_set
-.LVL6:
+.LVL5:
 	.cfi_endproc
 .LFE5:
 	.size	led_off, .-led_off
@@ -192,7 +181,7 @@ led_toggle:
 	lbu	a1,0(s1)
 	li	a0,17
 	call	bl_gpio_output_set
-.LVL7:
+.LVL6:
 	.loc 1 31 5 is_stmt 1
 	.loc 1 31 13 is_stmt 0
 	lbu	a5,0(s1)
@@ -222,7 +211,7 @@ led_blink:
 .LFB7:
 	.loc 1 35 1 is_stmt 1
 	.cfi_startproc
-.LVL8:
+.LVL7:
 	.loc 1 36 5
 .LBB2:
 	.loc 1 36 9
@@ -248,7 +237,7 @@ led_blink:
 .LBB3:
 	.loc 1 36 13
 	li	s3,0
-.LVL9:
+.LVL8:
 .L10:
 	.loc 1 36 20 is_stmt 1 discriminator 1
 	.loc 1 36 5 is_stmt 0 discriminator 1
@@ -263,43 +252,74 @@ led_blink:
 	.cfi_def_cfa 2, 32
 	lw	s1,20(sp)
 	.cfi_restore 9
-.LVL10:
+.LVL9:
 	lw	s2,16(sp)
 	.cfi_restore 18
-.LVL11:
+.LVL10:
 	lw	s3,12(sp)
 	.cfi_restore 19
-.LVL12:
+.LVL11:
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL13:
+.LVL12:
 .L11:
 	.cfi_restore_state
 .LBB4:
 	.loc 1 37 9 is_stmt 1 discriminator 3
 	call	led_toggle
-.LVL14:
+.LVL13:
 	.loc 1 38 9 discriminator 3
 	mv	a0,s1
 	call	aos_msleep
-.LVL15:
+.LVL14:
 	.loc 1 39 9 discriminator 3
 	call	led_toggle
-.LVL16:
+.LVL15:
 	.loc 1 40 9 discriminator 3
 	mv	a0,s1
 	call	aos_msleep
-.LVL17:
+.LVL16:
 	.loc 1 36 31 discriminator 3
 	.loc 1 36 32 is_stmt 0 discriminator 3
 	addi	s3,s3,1
-.LVL18:
+.LVL17:
 	j	.L10
 .LBE4:
 	.cfi_endproc
 .LFE7:
 	.size	led_blink, .-led_blink
+	.section	.text.led_get_state,"ax",@progbits
+	.align	1
+	.globl	led_get_state
+	.type	led_get_state, @function
+led_get_state:
+.LFB8:
+	.loc 1 45 1 is_stmt 1
+	.cfi_startproc
+	.loc 1 47 5
+	.loc 1 45 1 is_stmt 0
+	addi	sp,sp,-16
+	.cfi_def_cfa_offset 16
+	sw	s0,12(sp)
+	.cfi_offset 8, -4
+	addi	s0,sp,16
+	.cfi_def_cfa 8, 0
+	.loc 1 48 1
+	lw	s0,12(sp)
+	.cfi_restore 8
+	.cfi_def_cfa 2, 16
+	.loc 1 47 12
+	li	a0,17
+	.loc 1 48 1
+	addi	sp,sp,16
+	.cfi_def_cfa_offset 0
+	.loc 1 47 12
+	tail	bl_gpio_input_get_value
+.LVL18:
+	.cfi_endproc
+.LFE8:
+	.size	led_get_state, .-led_get_state
 	.section	.sbss.value.0,"aw",@nobits
 	.set	.LANCHOR0,. + 0
 	.type	value.0, @object
@@ -308,21 +328,21 @@ value.0:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
 	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x248
+	.4byte	0x267
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF22
-	.byte	0xc
 	.4byte	.LASF23
+	.byte	0xc
 	.4byte	.LASF24
+	.4byte	.LASF25
 	.4byte	.Ldebug_ranges0+0x20
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -343,7 +363,7 @@ value.0:
 	.byte	0x5
 	.4byte	.LASF3
 	.byte	0x3
-	.4byte	.LASF25
+	.4byte	.LASF26
 	.byte	0x5
 	.byte	0x2e
 	.byte	0x17
@@ -377,6 +397,27 @@ value.0:
 	.byte	0x8
 	.4byte	.LASF9
 	.byte	0x5
+	.4byte	.LASF27
+	.byte	0x1
+	.byte	0x2c
+	.byte	0x5
+	.4byte	0x69
+	.4byte	.LFB8
+	.4byte	.LFE8-.LFB8
+	.byte	0x1
+	.byte	0x9c
+	.4byte	0xa8
+	.byte	0x6
+	.4byte	.LVL18
+	.4byte	0x22d
+	.byte	0x7
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x1
+	.byte	0x41
+	.byte	0
+	.byte	0
+	.byte	0x8
 	.4byte	.LASF12
 	.byte	0x1
 	.byte	0x22
@@ -385,51 +426,51 @@ value.0:
 	.4byte	.LFE7-.LFB7
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xff
-	.byte	0x6
+	.4byte	0x129
+	.byte	0x9
 	.4byte	.LASF10
 	.byte	0x1
 	.byte	0x22
 	.byte	0x14
 	.4byte	0x69
 	.4byte	.LLST0
-	.byte	0x6
+	.byte	0x9
 	.4byte	.LASF11
 	.byte	0x1
 	.byte	0x22
 	.byte	0x1f
 	.4byte	0x69
 	.4byte	.LLST1
-	.byte	0x7
+	.byte	0xa
 	.4byte	.Ldebug_ranges0+0
-	.byte	0x8
+	.byte	0xb
 	.string	"i"
 	.byte	0x1
 	.byte	0x24
 	.byte	0xd
 	.4byte	0x69
 	.4byte	.LLST2
-	.byte	0x9
-	.4byte	.LVL14
-	.4byte	0xff
-	.byte	0xa
-	.4byte	.LVL15
-	.4byte	0x21a
-	.4byte	0xe4
-	.byte	0xb
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0
-	.byte	0x9
-	.4byte	.LVL16
-	.4byte	0xff
 	.byte	0xc
-	.4byte	.LVL17
-	.4byte	0x21a
-	.byte	0xb
+	.4byte	.LVL13
+	.4byte	0x129
+	.byte	0xd
+	.4byte	.LVL14
+	.4byte	0x239
+	.4byte	0x10e
+	.byte	0x7
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x2
+	.byte	0x79
+	.byte	0
+	.byte	0
+	.byte	0xc
+	.4byte	.LVL15
+	.4byte	0x129
+	.byte	0xe
+	.4byte	.LVL16
+	.4byte	0x239
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
@@ -438,7 +479,7 @@ value.0:
 	.byte	0
 	.byte	0
 	.byte	0
-	.byte	0x5
+	.byte	0x8
 	.4byte	.LASF13
 	.byte	0x1
 	.byte	0x1b
@@ -447,8 +488,8 @@ value.0:
 	.4byte	.LFE6-.LFB6
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x137
-	.byte	0xd
+	.4byte	0x161
+	.byte	0xf
 	.4byte	.LASF14
 	.byte	0x1
 	.byte	0x1d
@@ -457,17 +498,17 @@ value.0:
 	.byte	0x5
 	.byte	0x3
 	.4byte	value.0
-	.byte	0xc
-	.4byte	.LVL7
-	.4byte	0x227
-	.byte	0xb
+	.byte	0xe
+	.4byte	.LVL6
+	.4byte	0x246
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x1
 	.byte	0x41
 	.byte	0
 	.byte	0
-	.byte	0x5
+	.byte	0x8
 	.4byte	.LASF15
 	.byte	0x1
 	.byte	0x15
@@ -476,34 +517,34 @@ value.0:
 	.4byte	.LFE5-.LFB5
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x179
-	.byte	0xa
-	.4byte	.LVL5
-	.4byte	0x233
-	.4byte	0x164
-	.byte	0xb
+	.4byte	0x1a3
+	.byte	0xd
+	.4byte	.LVL4
+	.4byte	0x252
+	.4byte	0x18e
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC2
+	.4byte	.LC1
 	.byte	0
-	.byte	0xe
-	.4byte	.LVL6
-	.4byte	0x227
-	.byte	0xb
+	.byte	0x6
+	.4byte	.LVL5
+	.4byte	0x246
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x1
 	.byte	0x41
-	.byte	0xb
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x31
 	.byte	0
 	.byte	0
-	.byte	0x5
+	.byte	0x8
 	.4byte	.LASF16
 	.byte	0x1
 	.byte	0xf
@@ -512,111 +553,106 @@ value.0:
 	.4byte	.LFE4-.LFB4
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1bb
-	.byte	0xa
-	.4byte	.LVL3
-	.4byte	0x233
-	.4byte	0x1a6
-	.byte	0xb
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC1
-	.byte	0
-	.byte	0xe
-	.4byte	.LVL4
-	.4byte	0x227
-	.byte	0xb
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x1
-	.byte	0x41
-	.byte	0xb
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x1
-	.byte	0x30
-	.byte	0
-	.byte	0
-	.byte	0x5
-	.4byte	.LASF17
-	.byte	0x1
-	.byte	0x8
-	.byte	0x6
-	.4byte	.LFB3
-	.4byte	.LFE3-.LFB3
-	.byte	0x1
-	.byte	0x9c
-	.4byte	0x21a
-	.byte	0xa
-	.4byte	.LVL0
-	.4byte	0x233
-	.4byte	0x1e8
-	.byte	0xb
+	.4byte	0x1e5
+	.byte	0xd
+	.4byte	.LVL2
+	.4byte	0x252
+	.4byte	0x1d0
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC0
 	.byte	0
-	.byte	0xa
-	.4byte	.LVL1
-	.4byte	0x23f
-	.4byte	0x205
-	.byte	0xb
+	.byte	0x6
+	.4byte	.LVL3
+	.4byte	0x246
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x1
 	.byte	0x41
-	.byte	0xb
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0xb
+	.byte	0
+	.byte	0
+	.byte	0x8
+	.4byte	.LASF17
+	.byte	0x1
+	.byte	0x9
+	.byte	0x6
+	.4byte	.LFB3
+	.4byte	.LFE3-.LFB3
+	.byte	0x1
+	.byte	0x9c
+	.4byte	0x22d
+	.byte	0xd
+	.4byte	.LVL0
+	.4byte	0x25e
+	.4byte	0x218
+	.byte	0x7
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x1
+	.byte	0x41
+	.byte	0x7
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x1
+	.byte	0x30
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x30
 	.byte	0
-	.byte	0xe
-	.4byte	.LVL2
-	.4byte	0x227
-	.byte	0xb
+	.byte	0x6
+	.4byte	.LVL1
+	.4byte	0x246
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x1
 	.byte	0x41
-	.byte	0xb
+	.byte	0x7
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x31
 	.byte	0
 	.byte	0
-	.byte	0xf
+	.byte	0x10
 	.4byte	.LASF18
 	.4byte	.LASF18
 	.byte	0x2
-	.2byte	0x207
-	.byte	0xa
-	.byte	0x10
+	.byte	0x13
+	.byte	0x5
+	.byte	0x11
 	.4byte	.LASF19
 	.4byte	.LASF19
 	.byte	0x3
-	.byte	0x11
-	.byte	0x5
+	.2byte	0x207
+	.byte	0xa
 	.byte	0x10
 	.4byte	.LASF20
 	.4byte	.LASF20
+	.byte	0x2
+	.byte	0x11
+	.byte	0x5
+	.byte	0x10
+	.4byte	.LASF21
+	.4byte	.LASF21
 	.byte	0x4
 	.byte	0xc8
 	.byte	0x5
 	.byte	0x10
-	.4byte	.LASF21
-	.4byte	.LASF21
-	.byte	0x3
+	.4byte	.LASF22
+	.4byte	.LASF22
+	.byte	0x2
 	.byte	0xf
 	.byte	0x5
 	.byte	0
@@ -693,6 +729,8 @@ value.0:
 	.byte	0xb
 	.byte	0x27
 	.byte	0x19
+	.byte	0x49
+	.byte	0x13
 	.byte	0x11
 	.byte	0x1
 	.byte	0x12
@@ -706,102 +744,6 @@ value.0:
 	.byte	0
 	.byte	0
 	.byte	0x6
-	.byte	0x5
-	.byte	0
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0xb
-	.byte	0x39
-	.byte	0xb
-	.byte	0x49
-	.byte	0x13
-	.byte	0x2
-	.byte	0x17
-	.byte	0
-	.byte	0
-	.byte	0x7
-	.byte	0xb
-	.byte	0x1
-	.byte	0x55
-	.byte	0x17
-	.byte	0
-	.byte	0
-	.byte	0x8
-	.byte	0x34
-	.byte	0
-	.byte	0x3
-	.byte	0x8
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0xb
-	.byte	0x39
-	.byte	0xb
-	.byte	0x49
-	.byte	0x13
-	.byte	0x2
-	.byte	0x17
-	.byte	0
-	.byte	0
-	.byte	0x9
-	.byte	0x89,0x82,0x1
-	.byte	0
-	.byte	0x11
-	.byte	0x1
-	.byte	0x31
-	.byte	0x13
-	.byte	0
-	.byte	0
-	.byte	0xa
-	.byte	0x89,0x82,0x1
-	.byte	0x1
-	.byte	0x11
-	.byte	0x1
-	.byte	0x31
-	.byte	0x13
-	.byte	0x1
-	.byte	0x13
-	.byte	0
-	.byte	0
-	.byte	0xb
-	.byte	0x8a,0x82,0x1
-	.byte	0
-	.byte	0x2
-	.byte	0x18
-	.byte	0x91,0x42
-	.byte	0x18
-	.byte	0
-	.byte	0
-	.byte	0xc
-	.byte	0x89,0x82,0x1
-	.byte	0x1
-	.byte	0x11
-	.byte	0x1
-	.byte	0x31
-	.byte	0x13
-	.byte	0
-	.byte	0
-	.byte	0xd
-	.byte	0x34
-	.byte	0
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0xb
-	.byte	0x39
-	.byte	0xb
-	.byte	0x49
-	.byte	0x13
-	.byte	0x2
-	.byte	0x18
-	.byte	0
-	.byte	0
-	.byte	0xe
 	.byte	0x89,0x82,0x1
 	.byte	0x1
 	.byte	0x11
@@ -812,23 +754,127 @@ value.0:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0xf
-	.byte	0x2e
+	.byte	0x7
+	.byte	0x8a,0x82,0x1
 	.byte	0
+	.byte	0x2
+	.byte	0x18
+	.byte	0x91,0x42
+	.byte	0x18
+	.byte	0
+	.byte	0
+	.byte	0x8
+	.byte	0x2e
+	.byte	0x1
 	.byte	0x3f
 	.byte	0x19
-	.byte	0x3c
-	.byte	0x19
-	.byte	0x6e
-	.byte	0xe
 	.byte	0x3
 	.byte	0xe
 	.byte	0x3a
 	.byte	0xb
 	.byte	0x3b
-	.byte	0x5
+	.byte	0xb
 	.byte	0x39
 	.byte	0xb
+	.byte	0x27
+	.byte	0x19
+	.byte	0x11
+	.byte	0x1
+	.byte	0x12
+	.byte	0x6
+	.byte	0x40
+	.byte	0x18
+	.byte	0x97,0x42
+	.byte	0x19
+	.byte	0x1
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0x9
+	.byte	0x5
+	.byte	0
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x49
+	.byte	0x13
+	.byte	0x2
+	.byte	0x17
+	.byte	0
+	.byte	0
+	.byte	0xa
+	.byte	0xb
+	.byte	0x1
+	.byte	0x55
+	.byte	0x17
+	.byte	0
+	.byte	0
+	.byte	0xb
+	.byte	0x34
+	.byte	0
+	.byte	0x3
+	.byte	0x8
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x49
+	.byte	0x13
+	.byte	0x2
+	.byte	0x17
+	.byte	0
+	.byte	0
+	.byte	0xc
+	.byte	0x89,0x82,0x1
+	.byte	0
+	.byte	0x11
+	.byte	0x1
+	.byte	0x31
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0xd
+	.byte	0x89,0x82,0x1
+	.byte	0x1
+	.byte	0x11
+	.byte	0x1
+	.byte	0x31
+	.byte	0x13
+	.byte	0x1
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0xe
+	.byte	0x89,0x82,0x1
+	.byte	0x1
+	.byte	0x11
+	.byte	0x1
+	.byte	0x31
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0xf
+	.byte	0x34
+	.byte	0
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x49
+	.byte	0x13
+	.byte	0x2
+	.byte	0x18
 	.byte	0
 	.byte	0
 	.byte	0x10
@@ -850,71 +896,90 @@ value.0:
 	.byte	0xb
 	.byte	0
 	.byte	0
+	.byte	0x11
+	.byte	0x2e
+	.byte	0
+	.byte	0x3f
+	.byte	0x19
+	.byte	0x3c
+	.byte	0x19
+	.byte	0x6e
+	.byte	0xe
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0x5
+	.byte	0x39
+	.byte	0xb
+	.byte	0
+	.byte	0
 	.byte	0
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 .LLST0:
+	.4byte	.LVL7
 	.4byte	.LVL8
-	.4byte	.LVL9
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL9
-	.4byte	.LVL11
+	.4byte	.LVL8
+	.4byte	.LVL10
 	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL11
-	.4byte	.LVL13
+	.4byte	.LVL10
+	.4byte	.LVL12
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL13
+	.4byte	.LVL12
 	.4byte	.LFE7
 	.2byte	0x1
 	.byte	0x62
 	.4byte	0
 	.4byte	0
 .LLST1:
+	.4byte	.LVL7
+	.4byte	.LVL8
+	.2byte	0x1
+	.byte	0x5b
 	.4byte	.LVL8
 	.4byte	.LVL9
 	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL9
-	.4byte	.LVL10
-	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL10
-	.4byte	.LVL13
+	.4byte	.LVL9
+	.4byte	.LVL12
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL13
+	.4byte	.LVL12
 	.4byte	.LFE7
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST2:
+	.4byte	.LVL7
 	.4byte	.LVL8
-	.4byte	.LVL9
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL9
-	.4byte	.LVL12
+	.4byte	.LVL8
+	.4byte	.LVL11
 	.2byte	0x1
 	.byte	0x63
-	.4byte	.LVL13
+	.4byte	.LVL12
 	.4byte	.LFE7
 	.2byte	0x1
 	.byte	0x63
 	.4byte	0
 	.4byte	0
 	.section	.debug_aranges,"",@progbits
-	.4byte	0x3c
+	.4byte	0x44
 	.2byte	0x2
 	.4byte	.Ldebug_info0
 	.byte	0x4
@@ -931,6 +996,8 @@ value.0:
 	.4byte	.LFE6-.LFB6
 	.4byte	.LFB7
 	.4byte	.LFE7-.LFB7
+	.4byte	.LFB8
+	.4byte	.LFE8-.LFB8
 	.4byte	0
 	.4byte	0
 	.section	.debug_ranges,"",@progbits
@@ -953,6 +1020,8 @@ value.0:
 	.4byte	.LFE6
 	.4byte	.LFB7
 	.4byte	.LFE7
+	.4byte	.LFB8
+	.4byte	.LFE8
 	.4byte	0
 	.4byte	0
 	.section	.debug_line,"",@progbits
@@ -966,46 +1035,50 @@ value.0:
 	.string	"led_init"
 .LASF8:
 	.string	"unsigned int"
-.LASF23:
+.LASF24:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.c"
 .LASF13:
 	.string	"led_toggle"
-.LASF19:
+.LASF20:
 	.string	"bl_gpio_output_set"
 .LASF6:
 	.string	"long unsigned int"
-.LASF22:
+.LASF23:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF18:
+.LASF19:
 	.string	"aos_msleep"
 .LASF0:
 	.string	"signed char"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF25:
+.LASF26:
 	.string	"uint8_t"
 .LASF4:
 	.string	"unsigned char"
 .LASF9:
 	.string	"char"
-.LASF24:
+.LASF25:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/led"
 .LASF16:
 	.string	"led_on"
 .LASF11:
 	.string	"delay_ms"
-.LASF20:
+.LASF21:
 	.string	"printf"
 .LASF2:
 	.string	"long int"
 .LASF14:
 	.string	"value"
-.LASF21:
+.LASF18:
+	.string	"bl_gpio_input_get_value"
+.LASF22:
 	.string	"bl_gpio_enable_output"
 .LASF1:
 	.string	"short int"
 .LASF10:
 	.string	"times"
+.LASF27:
+	.string	"led_get_state"
 .LASF12:
 	.string	"led_blink"
 .LASF15:

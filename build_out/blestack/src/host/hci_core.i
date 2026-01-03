@@ -9331,7 +9331,7 @@ struct bt_gatt_ccc_cfg {
 
 
 struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(2)];
+ struct bt_gatt_ccc_cfg cfg[(1)];
  u16_t value;
  void (*cfg_changed)(const struct bt_gatt_attr *attr,
             u16_t value);
@@ -17790,7 +17790,7 @@ static void hci_tx_thread(void *p1)
 
 
 {
- static struct k_poll_event events[(2 + 2)] = {
+ static struct k_poll_event events[(2 + 1)] = {
   { .type = 3, .tag = BT_EVENT_CMD_TX, .state = 0, .mode = K_POLL_MODE_NOTIFY_ONLY, .unused = 0, { .obj = &bt_dev.cmd_tx_queue }, }
 
 

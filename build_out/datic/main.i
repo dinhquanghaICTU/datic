@@ -1815,16 +1815,37 @@ int hosal_uart_callback_set (hosal_uart_dev_t *uart,
 # 325 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
 int hosal_uart_finalize(hosal_uart_dev_t *uart);
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.h" 1
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/led_state/led_state_machine.h" 1
 
 
 
-void led_init(void);
-void led_on(void);
-void led_off(void);
-void led_toggle(void);
-void led_blink(int times, int delay_ms);
+typedef enum {
+    LED_STATE_ON = 0,
+    LED_STATE_OFF,
+}led_state_t;
+
+typedef enum {
+    LED_EVENT_ON,
+    LED_EVENT_OFF,
+}led_event_t;
+
+typedef void (*action_led_t) (void);
+
+typedef struct
+{
+    led_event_t event;
+    led_state_t current_state;
+    led_state_t next_state;
+    action_led_t action;
+}led_ctx_t;
+
+void led_state_init(void);
+void led_handle_action(led_event_t event);
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/relay_state/relay_state_machine.h" 1
+
+
+
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h" 1
 
 
@@ -1834,7 +1855,78 @@ void led_blink(int times, int delay_ms);
 void relay_init(void);
 void relay_on(void);
 void relay_off(void);
+void relay_toggle(void);
+uint8_t relay_get_state(void);
+# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/relay_state/relay_state_machine.h" 2
+
+typedef enum {
+    RELAY_EVENT_ON,
+    RELAY_EVENT_OFF,
+}relay_event_t;
+
+typedef enum {
+    RELAY_STATE_ON,
+    RELAY_STATE_OFF,
+}relay_state_t;
+
+
+typedef void (*relay_action_t) (void);
+
+typedef struct
+{
+    relay_event_t event;
+    relay_state_t current_state;
+    relay_state_t next_state;
+    relay_action_t action;
+}relay_ctx_t;
+
+
+
+void relay_state_init(void);
+void relay_handle_event(relay_event_t event);
 # 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_adv.h" 1
+
+
+
+
+typedef struct
+{
+    const char *device_name;
+    uint16_t adv_interval_min;
+    uint16_t adv_interval_max;
+    uint16_t service_uuid;
+    int8_t tx_power;
+}ble_adv_param_t;
+
+
+
+typedef int (*ble_gatt_conn_cb_t)(struct bt_conn *conn, uint8_t code);
+
+void ble_reverse_byte(uint8_t *arr, uint32_t size);
+int ble_server_init();
+int ble_server_deinit(void);
+void ble_stack_start(void);
+int ble_uuid1_notify_data(void *handle, void *data, uint16_t length);
+int ble_uuid2_notify_data(void *handle, void *data, uint16_t length);
+
+
+struct bt_conn *ble_get_conn_cur(void);
+int ble_regist_conn(ble_gatt_conn_cb_t cb);
+int ble_regist_disconn(ble_gatt_conn_cb_t cb);
+int ble_slave_init();
+int ble_slave_deinit(void);
+int UUID1_SendNotify(uint16_t len, uint8_t *data);
+int UUID2_SendNotify(uint16_t len, uint8_t *data);
+int ble_slave_init();
+int ble_slave_deinit(void);
+int ble_salve_adv();
+void apps_ble_stop();
+void apps_ble_start();
+uint8_t BleSetMtu();
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+
+
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -1855,15 +1947,22 @@ int main(void)
 {
     bl_sys_init();
     hosal_uart_init(&uart_dev_log);
-    printf(">>>> check relay \r\n");
-    relay_init();
-    relay_on();
 
+    led_state_init();
+    relay_state_init();
 
+    ble_start();
+
+    printf("DATiC BLE Device Started\r\n");
+    printf("LED and Relay control via BLE enabled\r\n");
+
+    printf(">>> check init \r\n");
+    ble_slave_init();
 
     while (1)
     {
 
+        aos_msleep(1000);
     }
 
 }

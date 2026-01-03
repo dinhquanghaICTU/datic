@@ -1856,9 +1856,9 @@ int hosal_uart_finalize(hosal_uart_dev_t *uart);
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.c" 2
 
 
+
 void led_init(void)
 {
-    printf(">>>>> this point\r\n");
     bl_gpio_enable_output(17, 0, 0);
     bl_gpio_output_set(17, 1);
 }
@@ -1890,4 +1890,10 @@ void led_blink(int times, int delay_ms)
         led_toggle();
         aos_msleep(delay_ms);
     }
+}
+
+int led_get_state(void)
+{
+
+    return bl_gpio_input_get_value(17);
 }

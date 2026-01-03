@@ -7647,7 +7647,7 @@ struct bt_gatt_ccc_cfg {
 
 
 struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(2)];
+ struct bt_gatt_ccc_cfg cfg[(1)];
  u16_t value;
  void (*cfg_changed)(const struct bt_gatt_attr *attr,
             u16_t value);
@@ -10388,7 +10388,7 @@ static void blecli_set_data_len(char *pcWriteBuffer, int xWriteBufferLen, int ar
 
 static void blecli_get_all_conn_info(char *pcWriteBuffer, int xWriteBufferLen, int argc, char **argv)
 {
-        struct bt_conn_info info[2];
+        struct bt_conn_info info[1];
         char le_addr[30];
         int link_num;
 

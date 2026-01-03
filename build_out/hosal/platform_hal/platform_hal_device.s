@@ -10210,8 +10210,8 @@ platform_hal_device_init:
 	.string	"INCLUDE_xTaskGetIdleTaskHandle 0"
 .LASF1483:
 	.string	"taskENABLE_INTERRUPTS() portENABLE_INTERRUPTS()"
-.LASF148:
-	.string	"__UINT16_C(c) c"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767435078"
 .LASF329:
 	.string	"__PRAGMA_REDEFINE_EXTNAME 1"
 .LASF55:
@@ -11945,8 +11945,6 @@ platform_hal_device_init:
 	.string	"portRECORD_READY_PRIORITY(uxPriority,uxReadyPriorities) ( uxReadyPriorities ) |= ( 1UL << ( uxPriority ) )"
 .LASF1461:
 	.string	"listCURRENT_LIST_LENGTH(pxList) ( ( pxList )->uxNumberOfItems )"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767410710"
 .LASF950:
 	.string	"UINT_LEAST64_MAX __UINT_LEAST64_MAX__"
 .LASF826:
@@ -11995,6 +11993,8 @@ platform_hal_device_init:
 	.string	"_HAVE_CC_INHIBIT_LOOP_TO_LIBCALL 1"
 .LASF533:
 	.string	"__CONCAT1(x,y) x ## y"
+.LASF148:
+	.string	"__UINT16_C(c) c"
 .LASF590:
 	.string	"__RCSID_SOURCE(s) struct __hack"
 .LASF1356:

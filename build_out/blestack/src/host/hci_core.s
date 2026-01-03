@@ -17888,7 +17888,7 @@ bt_dev:
 	.align	2
 	.set	.LANCHOR35,. + 0
 	.type	events.11, @object
-	.size	events.11, 80
+	.size	events.11, 60
 events.11:
 	.zero	12
 	.byte	0
@@ -17896,7 +17896,7 @@ events.11:
 	.byte	0
 	.byte	0
 	.word	bt_dev+168
-	.zero	60
+	.zero	40
 	.section	.rodata.CSWTCH.96,"a"
 	.align	2
 	.set	.LANCHOR17,. + 0
@@ -31399,7 +31399,7 @@ cmd_data:
 	.4byte	0x628e
 	.byte	0x17
 	.4byte	0xa0
-	.byte	0x3
+	.byte	0x2
 	.byte	0
 	.byte	0x23
 	.4byte	.LASF597

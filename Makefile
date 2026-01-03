@@ -61,6 +61,9 @@ INCLUDE_COMPONENTS += rfparam_adapter_tmp
 INCLUDE_COMPONENTS += hardware/common
 INCLUDE_COMPONENTS += hardware/led
 INCLUDE_COMPONENTS += hardware/relay
+INCLUDE_COMPONENTS += middle/state_machine/led_state
+INCLUDE_COMPONENTS += middle/state_machine/relay_state
+INCLUDE_COMPONENTS += middle/ble
 ifeq ($(CONFIG_BT),1)
 INCLUDE_COMPONENTS += $(COMPONENTS_BLE)
 ifeq ($(CONFIG_BT_MESH),1)

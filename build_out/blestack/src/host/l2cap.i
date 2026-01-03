@@ -8589,7 +8589,7 @@ struct bt_l2cap {
  struct bt_l2cap_le_chan chan;
 };
 
-static struct bt_l2cap bt_l2cap_pool[2];
+static struct bt_l2cap bt_l2cap_pool[1];
 
 static u8_t get_ident(void)
 {

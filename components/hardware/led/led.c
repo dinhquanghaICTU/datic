@@ -3,11 +3,11 @@
 #include <bl_sys.h>
 #include <hosal_uart.h>
 #include "hardware.h"
+#include <stdint.h>
 
 
 void led_init(void)
 {
-    printf(">>>>> this point\r\n");
     bl_gpio_enable_output(LED_STT, 0, 0);  
     bl_gpio_output_set(LED_STT, LED_STT_OFF);  
 }
@@ -39,4 +39,10 @@ void led_blink(int times, int delay_ms)
         led_toggle();
         aos_msleep(delay_ms);
     }
+}
+
+int led_get_state(void)
+{
+    // Read current GPIO state
+    return bl_gpio_input_get_value(LED_STT);
 }

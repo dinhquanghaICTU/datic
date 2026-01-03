@@ -9561,7 +9561,7 @@ struct bt_gatt_ccc_cfg {
 
 
 struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(2)];
+ struct bt_gatt_ccc_cfg cfg[(1)];
  u16_t value;
  void (*cfg_changed)(const struct bt_gatt_attr *attr,
             u16_t value);
@@ -10023,7 +10023,7 @@ struct net_buf_pool acl_tx_pool;
 const struct bt_conn_auth_cb *bt_auth;
 
 
-static struct bt_conn conns[2];
+static struct bt_conn conns[1];
 static struct bt_conn_cb *callback_list;
 
 static struct bt_conn_tx conn_tx[10];
@@ -12222,7 +12222,7 @@ int bt_conn_init(void)
 
 
 
-    net_buf_init(&acl_tx_pool, 2, (1 + 4 + 4 + (247)), 
+    net_buf_init(&acl_tx_pool, 1, (1 + 4 + 4 + (247)), 
 # 2688 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn.c" 3 4
                                                                                                        ((void *)0)
 # 2688 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn.c"

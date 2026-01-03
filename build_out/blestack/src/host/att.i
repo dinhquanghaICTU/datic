@@ -7180,7 +7180,7 @@ struct bt_gatt_ccc_cfg {
 
 
 struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(2)];
+ struct bt_gatt_ccc_cfg cfg[(1)];
  u16_t value;
  void (*cfg_changed)(const struct bt_gatt_attr *attr,
             u16_t value);
@@ -9920,7 +9920,7 @@ struct bt_att {
 
 
 
-static struct bt_att bt_req_pool[2];
+static struct bt_att bt_req_pool[1];
 static struct bt_att_req cancel;
 # 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/att.c"
 static void att_req_destroy(struct bt_att_req *req)

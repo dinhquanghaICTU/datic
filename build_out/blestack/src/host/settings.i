@@ -8017,7 +8017,7 @@ struct bt_gatt_ccc_cfg {
 
 
 struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(2)];
+ struct bt_gatt_ccc_cfg cfg[(1)];
  u16_t value;
  void (*cfg_changed)(const struct bt_gatt_attr *attr,
             u16_t value);

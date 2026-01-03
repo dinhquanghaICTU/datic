@@ -1,10 +1,13 @@
 
 #include <stdio.h>
-#include <aos/kernel.h>   
+#include <aos/kernel.h>
 #include <bl_sys.h>
 #include <hosal_uart.h>
-#include "led.h"
-#include "relay.h"
+#include "led_state_machine.h"
+#include "relay_state_machine.h"
+#include "ble_adv.h"
+
+
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -25,15 +28,21 @@ int main(void)
 {
     bl_sys_init();
     hosal_uart_init(&uart_dev_log);
-    printf(">>>> check relay \r\n");
-    relay_init();
-    relay_on();
-    // led_init();
-    // led_on();
+
+    led_state_init();
+    relay_state_init();
+
+
+    printf("DATiC BLE Device Started\r\n");
+    printf("LED and Relay control via BLE enabled\r\n");
+
+    printf(">>> check init \r\n");
+    ble_slave_init();
 
     while (1)
     {
-        
+
+        aos_msleep(1000);
     }
 
 }

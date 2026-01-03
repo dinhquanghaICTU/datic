@@ -1863,6 +1863,8 @@ int hosal_uart_finalize(hosal_uart_dev_t *uart);
 void relay_init(void);
 void relay_on(void);
 void relay_off(void);
+void relay_toggle(void);
+uint8_t relay_get_state(void);
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
 
 
@@ -1872,9 +1874,23 @@ void relay_init(void){
 }
 
 void relay_on(void){
+    printf(">>> relay on\r\n");
     bl_gpio_output_set(22, 1);
 }
 
 void relay_off(void){
+    printf(">>> relay off\r\n");
     bl_gpio_output_set(22, 0);
+}
+
+void relay_toggle(void){
+    printf(">>> relay toggle\r\n");
+    static uint8_t relay_state = 0;
+    relay_state = !relay_state;
+    bl_gpio_output_set(22, relay_state);
+}
+
+uint8_t relay_get_state(void){
+
+    return bl_gpio_input_get_value(22);
 }

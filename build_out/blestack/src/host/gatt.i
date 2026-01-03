@@ -7513,7 +7513,7 @@ struct bt_gatt_ccc_cfg {
 
 
 struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(2)];
+ struct bt_gatt_ccc_cfg cfg[(1)];
  u16_t value;
  void (*cfg_changed)(const struct bt_gatt_attr *attr,
             u16_t value);
@@ -10514,7 +10514,7 @@ struct gatt_sc_cfg {
 };
 
 
-static struct gatt_sc_cfg sc_cfg[(2 + 2)];
+static struct gatt_sc_cfg sc_cfg[(1 + 1)];
 _Static_assert(sizeof(struct sc_data) == sizeof(sc_cfg[0].data), "");
 
 static struct gatt_sc_cfg *find_sc_cfg(u8_t id, bt_addr_le_t *addr)
@@ -12284,7 +12284,7 @@ static void sc_restore_rsp(struct bt_conn *conn,
 # 2107 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/gatt.c"
 }
 
-static struct bt_gatt_indicate_params sc_restore_params[2];
+static struct bt_gatt_indicate_params sc_restore_params[1];
 
 static void sc_restore(struct bt_conn *conn)
 {
@@ -12524,7 +12524,7 @@ _Bool
  ccc = attr->user_data;
 
 
- for (size_t i = 0; i < (2); i++) {
+ for (size_t i = 0; i < (1); i++) {
   if (conn->id == ccc->cfg[i].id &&
       !bt_conn_addr_le_cmp(conn, &ccc->cfg[i].peer) &&
       (ccc_value & ccc->cfg[i].value)) {
