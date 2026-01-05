@@ -9868,8 +9868,8 @@ platform_hal_device_init:
 	.string	"listLIST_ITEM_CONTAINER(pxListItem) ( ( pxListItem )->pxContainer )"
 .LASF1214:
 	.string	"pdFREERTOS_ERRNO_ETIMEDOUT 116"
-.LASF1219:
-	.string	"pdFREERTOS_ERRNO_ENOTCONN 128"
+.LASF1572:
+	.string	"operator delete []"
 .LASF1076:
 	.string	"IOF0_UART0_MASK _AC(0x00030000, UL)"
 .LASF1031:
@@ -11631,8 +11631,8 @@ platform_hal_device_init:
 	.string	"configUSE_TASK_FPU_SUPPORT 1"
 .LASF823:
 	.string	"_PID_T_DECLARED "
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767583960"
+.LASF1219:
+	.string	"pdFREERTOS_ERRNO_ENOTCONN 128"
 .LASF701:
 	.ascii	"_REENT_INIT(var) { 0, _REENT_STDIO_STREAM(&(var), 0), _REENT"
 	.ascii	"_STDIO_STREAM(&(var), 1), _REENT_STDIO_STREAM(&(var), 2), 0,"
@@ -12063,6 +12063,8 @@ platform_hal_device_init:
 	.string	"__min_size(x) (x)"
 .LASF807:
 	.string	"__u_int_defined "
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767599924"
 .LASF1443:
 	.string	"listSECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE "
 .LASF1490:
@@ -12808,8 +12810,6 @@ platform_hal_device_init:
 	.string	"__UINT16_MAX__ 0xffff"
 .LASF900:
 	.string	"__PLATFORM_HAL_DEVICE_H__ "
-.LASF1572:
-	.string	"operator delete []"
 .LASF1029:
 	.string	"MCAUSE_CAUSE 0x7FFFFFFF"
 .LASF1057:

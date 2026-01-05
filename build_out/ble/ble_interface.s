@@ -16,22 +16,22 @@
 bt_enable_cb:
 .LFB69:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-	.loc 1 22 1
+	.loc 1 24 1
 	.cfi_startproc
 .LVL0:
-	.loc 1 23 5
-	.loc 1 23 8 is_stmt 0
+	.loc 1 25 5
+	.loc 1 25 8 is_stmt 0
 	bne	a0,zero,.L4
 .LVL1:
 .LBB6:
 .LBB7:
 .LBB8:
-	.loc 1 25 9 is_stmt 1
-	.loc 1 26 9
+	.loc 1 27 9 is_stmt 1
+	.loc 1 28 9
 .LBE8:
 .LBE7:
 .LBE6:
-	.loc 1 22 1 is_stmt 0
+	.loc 1 24 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	ra,28(sp)
@@ -43,34 +43,34 @@ bt_enable_cb:
 .LBB11:
 .LBB10:
 .LBB9:
-	.loc 1 26 9
+	.loc 1 28 9
 	addi	a0,s0,-24
 .LVL2:
 	call	bt_get_local_public_address
 .LVL3:
-	.loc 1 27 9 is_stmt 1
-	.loc 1 28 9
-	.loc 1 29 9
+	.loc 1 29 9 is_stmt 1
 	.loc 1 30 9
 	.loc 1 31 9
 	.loc 1 32 9
-	.loc 1 31 26 is_stmt 0
-	li	a5,-28672
-	.loc 1 32 26
-	li	a4,-120
-	.loc 1 31 26
-	addi	a5,a5,-1912
 	.loc 1 33 9
+	.loc 1 34 9
+	.loc 1 33 26 is_stmt 0
+	li	a5,-28672
+	.loc 1 34 26
+	li	a4,-120
+	.loc 1 33 26
+	addi	a5,a5,-1912
+	.loc 1 35 9
 	lui	a0,%hi(.LC0)
-	.loc 1 32 26
+	.loc 1 34 26
 	sb	a4,-23(s0)
-	.loc 1 31 26
+	.loc 1 33 26
 	sh	a5,-22(s0)
-	.loc 1 29 26
+	.loc 1 31 26
 	sh	a5,-20(s0)
-	.loc 1 27 26
+	.loc 1 29 26
 	sb	a4,-18(s0)
-	.loc 1 33 9 is_stmt 1
+	.loc 1 35 9 is_stmt 1
 	li	a6,136
 	li	a5,136
 	li	a4,136
@@ -83,7 +83,7 @@ bt_enable_cb:
 .LBE9:
 .LBE10:
 .LBE11:
-	.loc 1 36 1 is_stmt 0
+	.loc 1 38 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -104,10 +104,10 @@ bt_enable_cb:
 	.type	ble_stack_init, @function
 ble_stack_init:
 .LFB70:
-	.loc 1 40 1 is_stmt 1
+	.loc 1 42 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 42 5
-	.loc 1 40 1 is_stmt 0
+	.loc 1 44 5
+	.loc 1 42 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -116,29 +116,29 @@ ble_stack_init:
 	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 42 5
+	.loc 1 44 5
 	li	a0,31
 	call	ble_controller_init
 .LVL6:
-	.loc 1 45 5 is_stmt 1
+	.loc 1 47 5 is_stmt 1
 	call	hci_driver_init
 .LVL7:
-	.loc 1 46 5
-	.loc 1 48 1 is_stmt 0
+	.loc 1 48 5
+	.loc 1 50 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 46 5
+	.loc 1 48 5
 	lui	a0,%hi(bt_enable_cb)
-	.loc 1 48 1
-	.loc 1 46 5
+	.loc 1 50 1
+	.loc 1 48 5
 	addi	a0,a0,%lo(bt_enable_cb)
-	.loc 1 48 1
+	.loc 1 50 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 46 5
+	.loc 1 48 5
 	tail	bt_enable
 .LVL8:
 	.cfi_endproc
@@ -157,10 +157,10 @@ ble_stack_init:
 	.type	ble_test_adv, @function
 ble_test_adv:
 .LFB71:
-	.loc 1 51 1 is_stmt 1
+	.loc 1 53 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 53 5
-	.loc 1 51 1 is_stmt 0
+	.loc 1 55 5
+	.loc 1 53 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -169,20 +169,23 @@ ble_test_adv:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 53 9
+	.loc 1 55 9
 	call	ble_adv_start
 .LVL9:
-	.loc 1 53 8
+	.loc 1 55 8
 	bne	a0,zero,.L9
-	.loc 1 54 9 is_stmt 1
+	.loc 1 56 9 is_stmt 1
 	lui	a1,%hi(.LC1)
 	lui	a0,%hi(.LC2)
 	addi	a1,a1,%lo(.LC1)
 	addi	a0,a0,%lo(.LC2)
 	call	printf
 .LVL10:
-	.loc 1 55 9
-	.loc 1 58 1 is_stmt 0
+	.loc 1 57 9
+	call	ble_conn_init
+.LVL11:
+	.loc 1 58 9
+	.loc 1 61 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -191,12 +194,12 @@ ble_test_adv:
 	.cfi_restore 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 55 9
-	tail	ble_conn_init
-.LVL11:
+	.loc 1 58 9
+	tail	ble_wifi_init
+.LVL12:
 .L9:
 	.cfi_restore_state
-	.loc 1 58 1
+	.loc 1 61 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -215,21 +218,22 @@ ble_test_adv:
 	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_adv.h"
 	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_gatt.h"
+	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
+	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
+	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x283
+	.4byte	0x298
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF24
-	.byte	0xc
 	.4byte	.LASF25
+	.byte	0xc
 	.4byte	.LASF26
+	.4byte	.LASF27
 	.4byte	.Ldebug_ranges0+0x30
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -344,19 +348,19 @@ ble_test_adv:
 	.byte	0xa
 	.4byte	.LASF15
 	.byte	0x1
-	.byte	0x32
+	.byte	0x34
 	.byte	0x6
 	.4byte	.LFB71
 	.4byte	.LFE71-.LFB71
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x12f
+	.4byte	0x138
 	.byte	0xb
 	.4byte	.LVL9
-	.4byte	0x231
+	.4byte	0x23a
 	.byte	0xc
 	.4byte	.LVL10
-	.4byte	0x23d
+	.4byte	0x246
 	.4byte	0x125
 	.byte	0xd
 	.byte	0x1
@@ -371,24 +375,27 @@ ble_test_adv:
 	.byte	0x3
 	.4byte	.LC1
 	.byte	0
-	.byte	0xe
+	.byte	0xb
 	.4byte	.LVL11
-	.4byte	0x249
+	.4byte	0x252
+	.byte	0xe
+	.4byte	.LVL12
+	.4byte	0x25e
 	.byte	0
 	.byte	0xa
 	.4byte	.LASF16
 	.byte	0x1
-	.byte	0x27
+	.byte	0x29
 	.byte	0x6
 	.4byte	.LFB70
 	.4byte	.LFE70-.LFB70
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x175
+	.4byte	0x17e
 	.byte	0xc
 	.4byte	.LVL6
-	.4byte	0x255
-	.4byte	0x158
+	.4byte	0x26a
+	.4byte	0x161
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -397,10 +404,10 @@ ble_test_adv:
 	.byte	0
 	.byte	0xb
 	.4byte	.LVL7
-	.4byte	0x261
+	.4byte	0x276
 	.byte	0xf
 	.4byte	.LVL8
-	.4byte	0x26d
+	.4byte	0x282
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -410,59 +417,59 @@ ble_test_adv:
 	.byte	0
 	.byte	0
 	.byte	0x10
-	.4byte	.LASF27
+	.4byte	.LASF28
 	.byte	0x1
-	.byte	0x15
+	.byte	0x17
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x19d
+	.4byte	0x1a6
 	.byte	0x11
 	.string	"err"
 	.byte	0x1
-	.byte	0x15
+	.byte	0x17
 	.byte	0x1e
 	.4byte	0x5d
 	.byte	0x12
 	.byte	0x13
-	.4byte	.LASF28
+	.4byte	.LASF29
 	.byte	0x1
-	.byte	0x19
+	.byte	0x1b
 	.byte	0x16
 	.4byte	0xd3
 	.byte	0
 	.byte	0
 	.byte	0x14
-	.4byte	0x175
+	.4byte	0x17e
 	.4byte	.LFB69
 	.4byte	.LFE69-.LFB69
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x231
+	.4byte	0x23a
 	.byte	0x15
-	.4byte	0x182
+	.4byte	0x18b
 	.4byte	.LLST0
 	.byte	0x16
-	.4byte	0x175
+	.4byte	0x17e
 	.4byte	.LBB6
 	.4byte	.Ldebug_ranges0+0
 	.byte	0x1
-	.byte	0x15
+	.byte	0x17
 	.byte	0xd
 	.byte	0x15
-	.4byte	0x182
+	.4byte	0x18b
 	.4byte	.LLST1
 	.byte	0x17
-	.4byte	0x18e
+	.4byte	0x197
 	.4byte	.Ldebug_ranges0+0x18
 	.byte	0x18
-	.4byte	0x18f
+	.4byte	0x198
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0xc
 	.4byte	.LVL3
-	.4byte	0x279
-	.4byte	0x1f7
+	.4byte	0x28e
+	.4byte	0x200
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -472,7 +479,7 @@ ble_test_adv:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL4
-	.4byte	0x23d
+	.4byte	0x246
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -541,24 +548,30 @@ ble_test_adv:
 	.4byte	.LASF20
 	.4byte	.LASF20
 	.byte	0x7
-	.byte	0x7
+	.byte	0xf
 	.byte	0x6
 	.byte	0x1a
 	.4byte	.LASF21
 	.4byte	.LASF21
 	.byte	0x8
-	.byte	0xc3
-	.byte	0x5
+	.byte	0x7
+	.byte	0x6
 	.byte	0x1a
 	.4byte	.LASF22
 	.4byte	.LASF22
 	.byte	0x9
-	.byte	0x43
+	.byte	0xc3
 	.byte	0x5
-	.byte	0x1b
+	.byte	0x1a
 	.4byte	.LASF23
 	.4byte	.LASF23
 	.byte	0xa
+	.byte	0x43
+	.byte	0x5
+	.byte	0x1b
+	.4byte	.LASF24
+	.4byte	.LASF24
+	.byte	0xb
 	.2byte	0x117
 	.byte	0x5
 	.byte	0
@@ -1001,9 +1014,9 @@ ble_test_adv:
 	.string	"bt_addr_t"
 .LASF17:
 	.string	"ble_adv_start"
-.LASF24:
-	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF25:
+	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF26:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
 .LASF3:
 	.string	"short unsigned int"
@@ -1011,7 +1024,7 @@ ble_test_adv:
 	.string	"ble_conn_init"
 .LASF16:
 	.string	"ble_stack_init"
-.LASF26:
+.LASF27:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/ble"
 .LASF15:
 	.string	"ble_test_adv"
@@ -1027,7 +1040,7 @@ ble_test_adv:
 	.string	"unsigned int"
 .LASF9:
 	.string	"char"
-.LASF28:
+.LASF29:
 	.string	"bt_addr"
 .LASF10:
 	.string	"u8_t"
@@ -1040,18 +1053,20 @@ ble_test_adv:
 .LASF2:
 	.string	"short int"
 .LASF20:
+	.string	"ble_wifi_init"
+.LASF21:
 	.string	"ble_controller_init"
 .LASF4:
 	.string	"long int"
-.LASF27:
+.LASF28:
 	.string	"bt_enable_cb"
-.LASF22:
-	.string	"bt_enable"
 .LASF23:
+	.string	"bt_enable"
+.LASF24:
 	.string	"bt_get_local_public_address"
 .LASF0:
 	.string	"signed char"
-.LASF21:
+.LASF22:
 	.string	"hci_driver_init"
 .LASF14:
 	.string	"_Bool"

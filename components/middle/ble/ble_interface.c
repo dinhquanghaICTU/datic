@@ -16,6 +16,8 @@
 #include "ble_adv.h"
 #include "ble_interface.h"
 #include "ble_conn.h"
+#include "ble_gatt.h"
+
 
 //must config mac for ble_adv
 static void bt_enable_cb(int err)
@@ -53,6 +55,7 @@ void ble_test_adv(void)
     if (ble_adv_start() == 0) {
         printf(">>> Device name: %s\r\n", BLE_DEVICE_NAME);
         ble_conn_init();
+        ble_wifi_init();
     } 
     
 }

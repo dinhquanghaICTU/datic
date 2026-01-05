@@ -46,7 +46,8 @@ ble_interface.o: \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_config.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_adv.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.h
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_gatt.h
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h:
@@ -94,4 +95,5 @@ ble_interface.o: \
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_adv.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_gatt.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/./ble_interface.c:

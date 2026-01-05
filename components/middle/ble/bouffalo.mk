@@ -2,6 +2,7 @@
 COMPONENT_SRCS += ble_adv.c
 COMPONENT_SRCS += ble_interface.c
 COMPONENT_SRCS += ble_conn.c
+COMPONENT_SRCS += ble_gatt.c
 
 
 COMPONENT_ADD_INCLUDEDIRS += .

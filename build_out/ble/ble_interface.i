@@ -8113,6 +8113,32 @@ void ble_conn_init(void);
 
 uint8_t ble_conn_set_mtu(void);
 # 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_gatt.h" 1
+
+
+
+
+
+typedef enum {
+    WIFI_STATUS_CONNECTING = 1,
+    WIFI_STATUS_CONNECTED = 2,
+    WIFI_STATUS_FAILED = 3,
+    BLE_FULL_BUFF = 4,
+    WIFI_STATUS_IDLE,
+} wifi_status_t;
+
+
+void ble_wifi_init(void);
+void ble_wifi_notify_status(wifi_status_t status);
+
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_gatt.h" 3 4
+_Bool 
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_gatt.h"
+    ble_wifi_is_config_ready(void);
+const char* ble_wifi_get_ssid(void);
+const char* ble_wifi_get_pass(void);
+# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+
 
 
 static void bt_enable_cb(int err)
@@ -8150,6 +8176,7 @@ void ble_test_adv(void)
     if (ble_adv_start() == 0) {
         printf(">>> Device name: %s\r\n", "HNN_intern");
         ble_conn_init();
+        ble_wifi_init();
     }
 
 }

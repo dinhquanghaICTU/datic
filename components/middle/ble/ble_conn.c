@@ -78,19 +78,48 @@ static void on_disconnected(struct bt_conn *conn, u8_t reason)
     
 }
 
+
+// static void exchange_mtu_callback(struct bt_conn *conn, u8_t err, struct bt_gatt_exchange_params *params)
+// {
+//     if (conn) {
+//         printf("[BLE] MTU exchange %s, size=%d\r\n", 
+//                err == 0 ? "OK" : "FAIL", bt_gatt_get_mtu(conn));
+//     }
+// }
+
+// static struct bt_gatt_exchange_params mtu_exchange_params;
+
+// uint8_t ble_conn_set_mtu(void)
+// {
+//     if (current_conn == NULL) {
+//         return 1;
+//     }
+
+//     mtu_exchange_params.func = exchange_mtu_callback;
+//     if (bt_gatt_exchange_mtu(current_conn, &mtu_exchange_params) != 0) {
+//         return 1;
+//     }
+//     return 0;
+// }
+
+
+// static void on_mtu_changed(struct bt_conn *conn, int mtu)
+// {
+//     printf(" MTU  %d\r\n", mtu);
+// }
+
 static struct bt_conn_cb conn_callbacks = {
     .connected = on_connected,
     .disconnected = on_disconnected,
-    // .le_param_req = on_le_param_req,
     // .le_param_updated = on_le_param_updated,
-    // .le_phy_updated = on_le_phy_updated,
 };
 
 void ble_conn_init(void)
 {
-
     printf( ">>> init conn \r\n");
     bt_conn_cb_register(&conn_callbacks);
     conn_callbacks._next = NULL; 
     // bt_gatt_register_mtu_callback(on_mtu_changed);
 }
+
+

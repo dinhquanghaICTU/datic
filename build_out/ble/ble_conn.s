@@ -293,10 +293,10 @@ ble_conn_register_callbacks:
 	.type	ble_conn_init, @function
 ble_conn_init:
 .LFB77:
-	.loc 1 90 1 is_stmt 1
+	.loc 1 118 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 92 5
-	.loc 1 90 1 is_stmt 0
+	.loc 1 119 5
+	.loc 1 118 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -307,29 +307,29 @@ ble_conn_init:
 	.cfi_offset 9, -12
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 92 5
+	.loc 1 119 5
 	lui	a0,%hi(.LC4)
-	.loc 1 90 1
-	.loc 1 92 5
+	.loc 1 118 1
+	.loc 1 119 5
 	addi	a0,a0,%lo(.LC4)
 	call	printf
 .LVL21:
-	.loc 1 93 5 is_stmt 1
+	.loc 1 120 5 is_stmt 1
 	lui	a0,%hi(.LANCHOR3)
 	addi	s1,a0,%lo(.LANCHOR3)
 	addi	a0,a0,%lo(.LANCHOR3)
 	call	bt_conn_cb_register
 .LVL22:
-	.loc 1 94 5
-	.loc 1 96 1 is_stmt 0
+	.loc 1 121 5
+	.loc 1 123 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 94 26
+	.loc 1 121 26
 	sw	zero,20(s1)
-	.loc 1 96 1
+	.loc 1 123 1
 	lw	s1,4(sp)
 	.cfi_restore 9
 	addi	sp,sp,16
@@ -941,7 +941,7 @@ user_disconn_cb:
 	.byte	0x1a
 	.4byte	.LASF62
 	.byte	0x1
-	.byte	0x51
+	.byte	0x6f
 	.byte	0x1a
 	.4byte	0x300
 	.byte	0x5
@@ -950,7 +950,7 @@ user_disconn_cb:
 	.byte	0x1b
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x59
+	.byte	0x75
 	.byte	0x6
 	.4byte	.LFB77
 	.4byte	.LFE77-.LFB77

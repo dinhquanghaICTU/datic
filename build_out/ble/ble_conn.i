@@ -7993,24 +7993,21 @@ static void on_disconnected(struct bt_conn *conn, u8_t reason)
     ble_adv_start();
 
 }
-
+# 111 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.c"
 static struct bt_conn_cb conn_callbacks = {
     .connected = on_connected,
     .disconnected = on_disconnected,
-
-
 
 };
 
 void ble_conn_init(void)
 {
-
     printf( ">>> init conn \r\n");
     bt_conn_cb_register(&conn_callbacks);
     conn_callbacks._next = 
-# 94 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.c" 3 4
+# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.c" 3 4
                           ((void *)0)
-# 94 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.c"
+# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.c"
                               ;
 
 }
