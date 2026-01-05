@@ -9868,8 +9868,8 @@ platform_hal_device_init:
 	.string	"listLIST_ITEM_CONTAINER(pxListItem) ( ( pxListItem )->pxContainer )"
 .LASF1214:
 	.string	"pdFREERTOS_ERRNO_ETIMEDOUT 116"
-.LASF1572:
-	.string	"operator delete []"
+.LASF1219:
+	.string	"pdFREERTOS_ERRNO_ENOTCONN 128"
 .LASF1076:
 	.string	"IOF0_UART0_MASK _AC(0x00030000, UL)"
 .LASF1031:
@@ -10210,8 +10210,8 @@ platform_hal_device_init:
 	.string	"INCLUDE_xTaskGetIdleTaskHandle 0"
 .LASF1483:
 	.string	"taskENABLE_INTERRUPTS() portENABLE_INTERRUPTS()"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767435078"
+.LASF148:
+	.string	"__UINT16_C(c) c"
 .LASF329:
 	.string	"__PRAGMA_REDEFINE_EXTNAME 1"
 .LASF55:
@@ -11631,8 +11631,8 @@ platform_hal_device_init:
 	.string	"configUSE_TASK_FPU_SUPPORT 1"
 .LASF823:
 	.string	"_PID_T_DECLARED "
-.LASF1219:
-	.string	"pdFREERTOS_ERRNO_ENOTCONN 128"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767583960"
 .LASF701:
 	.ascii	"_REENT_INIT(var) { 0, _REENT_STDIO_STREAM(&(var), 0), _REENT"
 	.ascii	"_STDIO_STREAM(&(var), 1), _REENT_STDIO_STREAM(&(var), 2), 0,"
@@ -11993,8 +11993,6 @@ platform_hal_device_init:
 	.string	"_HAVE_CC_INHIBIT_LOOP_TO_LIBCALL 1"
 .LASF533:
 	.string	"__CONCAT1(x,y) x ## y"
-.LASF148:
-	.string	"__UINT16_C(c) c"
 .LASF590:
 	.string	"__RCSID_SOURCE(s) struct __hack"
 .LASF1356:
@@ -12810,6 +12808,8 @@ platform_hal_device_init:
 	.string	"__UINT16_MAX__ 0xffff"
 .LASF900:
 	.string	"__PLATFORM_HAL_DEVICE_H__ "
+.LASF1572:
+	.string	"operator delete []"
 .LASF1029:
 	.string	"MCAUSE_CAUSE 0x7FFFFFFF"
 .LASF1057:

@@ -3,84 +3,8 @@
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 1
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
-
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
-typedef signed char int8_t;
-
-
-typedef short int int16_t;
-
-
-typedef long int int32_t;
-
-
-typedef long long int int64_t;
-
-
-typedef unsigned char uint8_t;
-
-
-typedef short unsigned int uint16_t;
-
-
-typedef long unsigned int uint32_t;
-
-
-typedef long long unsigned int uint64_t;
-
-
-
-
-typedef signed char int_least8_t;
-typedef short int int_least16_t;
-typedef long int int_least32_t;
-typedef long long int int_least64_t;
-typedef unsigned char uint_least8_t;
-typedef short unsigned int uint_least16_t;
-typedef long unsigned int uint_least32_t;
-typedef long long unsigned int uint_least64_t;
-
-
-
-typedef int int_fast8_t;
-typedef int int_fast16_t;
-typedef int int_fast32_t;
-typedef long long int int_fast64_t;
-typedef unsigned int uint_fast8_t;
-typedef unsigned int uint_fast16_t;
-typedef unsigned int uint_fast32_t;
-typedef long long unsigned int uint_fast64_t;
-
-
-
-
-typedef int intptr_t;
-
-
-typedef unsigned int uintptr_t;
-
-
-
-
-typedef long long int intmax_t;
-typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 2
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h" 1
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
@@ -97,35 +21,17 @@ typedef long long unsigned int uintmax_t;
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
 # 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef int ptrdiff_t;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef int wchar_t;
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
-
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+
 # 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
@@ -178,7 +84,48 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 2 3
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef unsigned int size_t;
+# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef int ptrdiff_t;
+# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef int wchar_t;
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+
+
+typedef __gnuc_va_list va_list;
+# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef unsigned int wint_t;
+# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
 # 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
@@ -563,199 +510,7 @@ extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
-struct __locale_t;
-typedef struct __locale_t *locale_t;
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
-
-
-int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
-void bcopy(const void *, void *, size_t);
-void bzero(void *, size_t);
-
-
-void explicit_bzero(void *, size_t);
-
-
-int ffs(int) __attribute__((__const__));
-
-
-int ffsl(long) __attribute__((__const__));
-int ffsll(long long) __attribute__((__const__));
-int fls(int) __attribute__((__const__));
-int flsl(long) __attribute__((__const__));
-int flsll(long long) __attribute__((__const__));
-
-
-char *index(const char *, int) __attribute__((__pure__));
-char *rindex(const char *, int) __attribute__((__pure__));
-
-int strcasecmp(const char *, const char *) __attribute__((__pure__));
-int strncasecmp(const char *, const char *, size_t) __attribute__((__pure__));
-
-
-int strcasecmp_l (const char *, const char *, locale_t);
-int strncasecmp_l (const char *, const char *, size_t, locale_t);
-
-
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
-
-
-void * memchr (const void *, int, size_t);
-int memcmp (const void *, const void *, size_t);
-void * memcpy (void *restrict, const void *restrict, size_t);
-void * memmove (void *, const void *, size_t);
-void * memset (void *, int, size_t);
-char *strcat (char *restrict, const char *restrict);
-char *strchr (const char *, int);
-int strcmp (const char *, const char *);
-int strcoll (const char *, const char *);
-char *strcpy (char *restrict, const char *restrict);
-size_t strcspn (const char *, const char *);
-char *strerror (int);
-size_t strlen (const char *);
-char *strncat (char *restrict, const char *restrict, size_t);
-int strncmp (const char *, const char *, size_t);
-char *strncpy (char *restrict, const char *restrict, size_t);
-char *strpbrk (const char *, const char *);
-char *strrchr (const char *, int);
-size_t strspn (const char *, const char *);
-char *strstr (const char *, const char *);
-
-char *strtok (char *restrict, const char *restrict);
-
-size_t strxfrm (char *restrict, const char *restrict, size_t);
-
-
-int strcoll_l (const char *, const char *, locale_t);
-char *strerror_l (int, locale_t);
-size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
-
-
-char *strtok_r (char *restrict, const char *restrict, char **restrict);
-
-
-int timingsafe_bcmp (const void *, const void *, size_t);
-int timingsafe_memcmp (const void *, const void *, size_t);
-
-
-void * memccpy (void *restrict, const void *restrict, int, size_t);
-
-
-void * mempcpy (void *, const void *, size_t);
-void * memmem (const void *, size_t, const void *, size_t);
-void * memrchr (const void *, int, size_t);
-void * rawmemchr (const void *, int);
-
-
-char *stpcpy (char *restrict, const char *restrict);
-char *stpncpy (char *restrict, const char *restrict, size_t);
-
-
-char *strcasestr (const char *, const char *);
-char *strchrnul (const char *, int);
-
-
-char *strdup (const char *) __attribute__((__malloc__)) __attribute__((__warn_unused_result__));
-
-char *_strdup_r (struct _reent *, const char *);
-
-char *strndup (const char *, size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__));
-
-char *_strndup_r (struct _reent *, const char *, size_t);
-
-
-
-
-
-
-char *strerror_r (int, char *, size_t);
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-char * _strerror_r (struct _reent *, int, int, int *);
-
-
-size_t strlcat (char *, const char *, size_t);
-size_t strlcpy (char *, const char *, size_t);
-
-
-size_t strnlen (const char *, size_t);
-
-
-char *strsep (char **, const char *);
-
-
-char *strnstr(const char *, const char *, size_t) __attribute__((__pure__));
-
-
-
-char *strlwr (char *);
-char *strupr (char *);
-
-
-
-char *strsignal (int __signo);
-
-
-
-
-
-
-
-int strverscmp (const char *, const char *);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
-static __inline unsigned long __libc_detect_null(unsigned long w)
-{
-  unsigned long mask = 0x7f7f7f7f;
-  if (sizeof (long) == 8)
-    mask = ((mask << 16) << 16) | mask;
-  return ~(((w & mask) + mask) | w | mask);
-}
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 1
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
-typedef __builtin_va_list __gnuc_va_list;
-# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
-typedef __gnuc_va_list va_list;
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
 # 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
@@ -1546,7 +1301,1282 @@ _putchar_unlocked(int _c)
 }
 # 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 2
+# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 49 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+typedef signed char int8_t;
+
+
+typedef short int int16_t;
+
+
+typedef long int int32_t;
+
+
+typedef long long int int64_t;
+
+
+typedef unsigned char uint8_t;
+
+
+typedef short unsigned int uint16_t;
+
+
+typedef long unsigned int uint32_t;
+
+
+typedef long long unsigned int uint64_t;
+
+
+
+
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef long int int_least32_t;
+typedef long long int int_least64_t;
+typedef unsigned char uint_least8_t;
+typedef short unsigned int uint_least16_t;
+typedef long unsigned int uint_least32_t;
+typedef long long unsigned int uint_least64_t;
+
+
+
+typedef int int_fast8_t;
+typedef int int_fast16_t;
+typedef int int_fast32_t;
+typedef long long int int_fast64_t;
+typedef unsigned int uint_fast8_t;
+typedef unsigned int uint_fast16_t;
+typedef unsigned int uint_fast32_t;
+typedef long long unsigned int uint_fast64_t;
+
+
+
+
+typedef int intptr_t;
+
+
+typedef unsigned int uintptr_t;
+
+
+
+
+typedef long long int intmax_t;
+typedef long long unsigned int uintmax_t;
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
+# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+unsigned long get_cpu_freq(void);
+unsigned long get_timer_freq(void);
+uint64_t get_timer_value(void);
+# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+typedef void (*TaskFunction_t)( void * );
+# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+typedef uint32_t StackType_t;
+typedef int32_t BaseType_t;
+typedef uint32_t UBaseType_t;
+typedef uint32_t TickType_t;
+# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+extern void vTaskSwitchContext( void );
+extern void vEnvironmentCall( uint32_t exception );
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+extern void vTaskEnterCritical( void );
+extern void vTaskExitCritical( void );
+# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+BaseType_t xPortIsInsideInterrupt( void );
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
+# 100 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+  StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters ) ;
+
+
+
+
+typedef struct HeapRegion
+{
+ uint8_t *pucStartAddress;
+ size_t xSizeInBytes;
+} HeapRegion_t;
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
+
+
+
+
+
+void *pvPortMalloc( size_t xSize ) ;
+void *pvPortCalloc(size_t numElements, size_t sizeOfElement); ;
+void *pvPortRealloc(void *pv, size_t xSize) ;
+void vPortFree( void *pv ) ;
+void vPortInitialiseBlocks( void ) ;
+size_t xPortGetFreeHeapSize( void ) ;
+size_t xPortGetMinimumEverFreeHeapSize( void ) ;
+
+
+
+
+
+BaseType_t xPortStartScheduler( void ) ;
+
+
+
+
+
+
+void vPortEndScheduler( void ) ;
+# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+struct xSTATIC_LIST_ITEM
+{
+
+
+
+ TickType_t xDummy2;
+ void *pvDummy3[ 4 ];
+
+
+
+};
+typedef struct xSTATIC_LIST_ITEM StaticListItem_t;
+
+
+struct xSTATIC_MINI_LIST_ITEM
+{
+
+
+
+ TickType_t xDummy2;
+ void *pvDummy3[ 2 ];
+};
+typedef struct xSTATIC_MINI_LIST_ITEM StaticMiniListItem_t;
+
+
+typedef struct xSTATIC_LIST
+{
+
+
+
+ UBaseType_t uxDummy2;
+ void *pvDummy3;
+ StaticMiniListItem_t xDummy4;
+
+
+
+} StaticList_t;
+# 1095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_TCB
+{
+ void *pxDummy1;
+
+
+
+ StaticListItem_t xDummy3[ 2 ];
+ UBaseType_t uxDummy5;
+ void *pxDummy6;
+ uint8_t ucDummy7[ ( 16 ) ];
+
+
+
+
+  UBaseType_t uxDummy9;
+
+
+  UBaseType_t uxDummy10[ 2 ];
+
+
+  UBaseType_t uxDummy12[ 2 ];
+
+
+
+
+
+  void *pvDummy15[ 1 ];
+
+        void *pvDummy15_1[ 1 ];
+# 1133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+  uint32_t ulDummy18;
+  uint8_t ucDummy19;
+
+
+  uint8_t uxDummy20;
+# 1146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+} StaticTask_t;
+# 1162 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_QUEUE
+{
+ void *pvDummy1[ 3 ];
+
+ union
+ {
+  void *pvDummy2;
+  UBaseType_t uxDummy2;
+ } u;
+
+ StaticList_t xDummy3[ 2 ];
+ UBaseType_t uxDummy4[ 3 ];
+ uint8_t ucDummy5[ 2 ];
+
+
+  uint8_t ucDummy6;
+
+
+
+
+
+
+
+  UBaseType_t uxDummy8;
+  uint8_t ucDummy9;
+
+
+} StaticQueue_t;
+typedef StaticQueue_t StaticSemaphore_t;
+# 1206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_EVENT_GROUP
+{
+ TickType_t xDummy1;
+ StaticList_t xDummy2;
+
+
+  UBaseType_t uxDummy3;
+
+
+
+   uint8_t ucDummy4;
+
+
+} StaticEventGroup_t;
+# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_TIMER
+{
+ void *pvDummy1;
+ StaticListItem_t xDummy2;
+ TickType_t xDummy3;
+ void *pvDummy5;
+ TaskFunction_t pvDummy6;
+
+  UBaseType_t uxDummy7;
+
+ uint8_t ucDummy8;
+
+} StaticTimer_t;
+# 1263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_STREAM_BUFFER
+{
+ size_t uxDummy1[ 4 ];
+ void * pvDummy2[ 3 ];
+ uint8_t ucDummy3;
+
+  UBaseType_t uxDummy4;
+
+} StaticStreamBuffer_t;
+
+
+typedef StaticStreamBuffer_t StaticMessageBuffer_t;
+# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+struct xLIST;
+struct xLIST_ITEM
+{
+
+ TickType_t xItemValue;
+ struct xLIST_ITEM * pxNext;
+ struct xLIST_ITEM * pxPrevious;
+ void * pvOwner;
+ struct xLIST * pvContainer;
+
+};
+typedef struct xLIST_ITEM ListItem_t;
+
+struct xMINI_LIST_ITEM
+{
+
+ TickType_t xItemValue;
+ struct xLIST_ITEM * pxNext;
+ struct xLIST_ITEM * pxPrevious;
+};
+typedef struct xMINI_LIST_ITEM MiniListItem_t;
+
+
+
+
+typedef struct xLIST
+{
+
+ volatile UBaseType_t uxNumberOfItems;
+ ListItem_t * pxIndex;
+ MiniListItem_t xListEnd;
+
+} List_t;
+# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInitialise( List_t * const pxList ) ;
+# 356 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInitialiseItem( ListItem_t * const pxItem ) ;
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
+# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
+# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+struct tskTaskControlBlock;
+typedef struct tskTaskControlBlock* TaskHandle_t;
+
+
+
+
+
+typedef BaseType_t (*TaskHookFunction_t)( void * );
+
+
+typedef enum
+{
+ eRunning = 0,
+ eReady,
+ eBlocked,
+ eSuspended,
+ eDeleted,
+ eInvalid
+} eTaskState;
+
+
+typedef enum
+{
+ eNoAction = 0,
+ eSetBits,
+ eIncrement,
+ eSetValueWithOverwrite,
+ eSetValueWithoutOverwrite
+} eNotifyAction;
+
+
+
+
+typedef struct xTIME_OUT
+{
+ BaseType_t xOverflowCount;
+ TickType_t xTimeOnEntering;
+} TimeOut_t;
+
+
+
+
+typedef struct xMEMORY_REGION
+{
+ void *pvBaseAddress;
+ uint32_t ulLengthInBytes;
+ uint32_t ulParameters;
+} MemoryRegion_t;
+
+
+
+
+typedef struct xTASK_PARAMETERS
+{
+ TaskFunction_t pvTaskCode;
+ const char * const pcName;
+ uint16_t usStackDepth;
+ void *pvParameters;
+ UBaseType_t uxPriority;
+ StackType_t *puxStackBuffer;
+ MemoryRegion_t xRegions[ 1 ];
+
+
+
+} TaskParameters_t;
+
+
+
+typedef struct xTASK_STATUS
+{
+ TaskHandle_t xHandle;
+ const char *pcTaskName;
+ UBaseType_t xTaskNumber;
+ eTaskState eCurrentState;
+ UBaseType_t uxCurrentPriority;
+ UBaseType_t uxBasePriority;
+ uint32_t ulRunTimeCounter;
+ StackType_t *pxStackBase;
+ uint16_t usStackHighWaterMark;
+} TaskStatus_t;
+
+
+typedef enum
+{
+ eAbortSleep = 0,
+ eStandardSleep,
+ eNoTasksWaitingTimeout
+} eSleepModeStatus;
+# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+       const char * const pcName,
+       const uint16_t usStackDepth,
+       void * const pvParameters,
+       UBaseType_t uxPriority,
+       TaskHandle_t * const pxCreatedTask ) ;
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
+         const char * const pcName,
+         const uint32_t ulStackDepth,
+         void * const pvParameters,
+         UBaseType_t uxPriority,
+         StackType_t * const puxStackBuffer,
+         StaticTask_t * const pxTaskBuffer ) ;
+# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskAllocateMPURegions( TaskHandle_t xTask, const MemoryRegion_t * const pxRegions ) ;
+# 706 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelete( TaskHandle_t xTaskToDelete ) ;
+# 758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelay( const TickType_t xTicksToDelay ) ;
+# 817 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelayUntil( TickType_t * const pxPreviousWakeTime, const TickType_t xTimeIncrement ) ;
+# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) ;
+# 889 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
+
+
+
+
+
+
+
+UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
+# 915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+eTaskState eTaskGetState( TaskHandle_t xTask ) ;
+# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskGetInfo( TaskHandle_t xTask, TaskStatus_t *pxTaskStatus, BaseType_t xGetFreeStackSpace, eTaskState eState ) ;
+# 1013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority ) ;
+# 1064 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
+# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskResume( TaskHandle_t xTaskToResume ) ;
+# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
+# 1175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskStartScheduler( void ) ;
+# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskEndScheduler( void ) ;
+# 1282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskSuspendAll( void ) ;
+# 1336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskResumeAll( void ) ;
+# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetTickCount( void ) ;
+BaseType_t xTaskGetTickCount2( TickType_t *ticks, BaseType_t *overflow ) ;
+# 1368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetTickCountFromISR( void ) ;
+# 1382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetNumberOfTasks( void ) ;
+# 1395 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+char *pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
+# 1411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TaskHandle_t xTaskGetHandle( const char *pcNameToQuery ) ;
+# 1438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
+# 1465 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
+# 1513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue ) ;
+ void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) ;
+
+
+
+
+
+
+        typedef void (*TlsDeleteCallbackFunction_t)( int, void * );
+
+
+
+
+        UBaseType_t vTaskSetThreadLocalStoragePointerAndDelCallback( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue, TlsDeleteCallbackFunction_t pvDelCallback);
+# 1541 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask, void *pvParameter ) ;
+# 1550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TaskHandle_t xTaskGetIdleTaskHandle( void ) ;
+# 1649 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime ) ;
+UBaseType_t xAddTasksToAllList( void ) ;
+List_t * pxTaskGetAllList( void ) ;
+# 1698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskList( char * pcWriteBuffer ) ;
+# 1752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskGetRunTimeStats( char *pcWriteBuffer ) ;
+# 1782 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetIdleRunTimeCounter( void ) ;
+# 1863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) ;
+# 1954 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) ;
+# 2031 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait ) ;
+# 2132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken ) ;
+# 2201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) ;
+# 2217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
+# 2238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskIncrementTick( void ) ;
+# 2271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPlaceOnEventList( List_t * const pxEventList, const TickType_t xTicksToWait ) ;
+void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickType_t xTicksToWait ) ;
+# 2285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPlaceOnEventListRestricted( List_t * const pxEventList, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
+# 2311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
+void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem, const TickType_t xItemValue ) ;
+# 2322 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ void vTaskSwitchContext( void ) ;
+
+
+
+
+
+TickType_t uxTaskResetEventItemValue( void ) ;
+
+
+
+
+TaskHandle_t xTaskGetCurrentTaskHandle( void ) ;
+
+
+
+
+void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+
+
+
+
+
+BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut, TickType_t * const pxTicksToWait ) ;
+
+
+
+
+
+void vTaskMissedYield( void ) ;
+
+
+
+
+
+BaseType_t xTaskGetSchedulerState( void ) ;
+
+
+
+
+
+BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
+
+
+
+
+
+BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
+# 2378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder, UBaseType_t uxHighestPriorityWaitingTask ) ;
+
+
+
+
+UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
+
+
+
+
+
+void vTaskSetTaskNumber( TaskHandle_t xTask, const UBaseType_t uxHandle ) ;
+# 2399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskStepTick( const TickType_t xTicksToJump ) ;
+void vTaskStepTickSafe( const TickType_t xTicksToJump ) ;
+# 2416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
+
+
+
+
+
+TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
+
+
+
+
+
+void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
+
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    typedef struct
+    {
+        void *hdl;
+    } aos_hdl_t;
+
+    typedef aos_hdl_t aos_task_t;
+    typedef aos_hdl_t aos_mutex_t;
+    typedef aos_hdl_t aos_sem_t;
+    typedef aos_hdl_t aos_queue_t;
+    typedef aos_hdl_t aos_timer_t;
+    typedef aos_hdl_t aos_work_t;
+
+    typedef struct
+    {
+        void *hdl;
+        void *stk;
+    } aos_workqueue_t;
+
+    typedef unsigned int aos_task_key_t;
+
+
+
+
+    void aos_reboot(void);
+
+
+
+
+
+
+    int aos_get_hz(void);
+
+
+
+
+
+
+    const char *aos_version_get(void);
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new(const char *name, void (*fn)(void *), void *arg,
+                     int stack_size);
+# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new_ext(aos_task_t *task, const char *name, void (*fn)(void *),
+                         void *arg, int stack_size, int prio);
+
+
+
+
+
+
+    void aos_task_exit(int code);
+
+
+
+
+
+
+    const char *aos_task_name(void);
+# 113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_key_create(aos_task_key_t *key);
+
+
+
+
+
+
+    void aos_task_key_delete(aos_task_key_t key);
+# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_setspecific(aos_task_key_t key, void *vp);
+
+
+
+
+
+
+    void *aos_task_getspecific(aos_task_key_t key);
+# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_new(aos_mutex_t *mutex);
+
+
+
+
+
+
+
+    void aos_mutex_free(aos_mutex_t *mutex);
+# 167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_lock(aos_mutex_t *mutex, unsigned int timeout);
+# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_unlock(aos_mutex_t *mutex);
+# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_is_valid(aos_mutex_t *mutex);
+# 197 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_new(aos_sem_t *sem, int count);
+
+
+
+
+
+
+
+    void aos_sem_free(aos_sem_t *sem);
+# 216 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_wait(aos_sem_t *sem, unsigned int timeout);
+
+
+
+
+
+
+
+    void aos_sem_signal(aos_sem_t *sem);
+# 233 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_is_valid(aos_sem_t *sem);
+
+
+
+
+
+
+
+    void aos_sem_signal_all(aos_sem_t *sem);
+# 254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_new(aos_queue_t *queue, void *buf, unsigned int size,
+                      int max_msg);
+
+
+
+
+
+
+    void aos_queue_free(aos_queue_t *queue);
+# 273 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_send(aos_queue_t *queue, void *msg, unsigned int size);
+# 285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_recv(aos_queue_t *queue, unsigned int ms, void *msg,
+                       unsigned int *size);
+# 295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_is_valid(aos_queue_t *queue);
+# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_queue_buf_ptr(aos_queue_t *queue);
+# 317 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new(aos_timer_t *timer, void (*fn)(void *, void *), void *arg,
+                      int ms, int repeat);
+# 332 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new_ext(aos_timer_t *timer, void (*fn)(void *, void *),
+                          void *arg, int ms, int repeat,
+                          unsigned char auto_run);
+
+
+
+
+
+
+    void aos_timer_free(aos_timer_t *timer);
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_start(aos_timer_t *timer);
+# 359 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_stop(aos_timer_t *timer);
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_change(aos_timer_t *timer, int ms);
+# 380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_workqueue_create(aos_workqueue_t *workqueue, int pri,
+                             int stack_size);
+# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_init(aos_work_t *work, void (*fn)(void *), void *arg, int dly);
+
+
+
+
+
+
+    void aos_work_destroy(aos_work_t *work);
+# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_run(aos_workqueue_t *workqueue, aos_work_t *work);
+# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_sched(aos_work_t *work);
+# 428 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_cancel(aos_work_t *work);
+# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_realloc(void *mem, unsigned int size);
+# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_malloc(unsigned int size);
+# 457 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_calloc(unsigned int nitems, unsigned int size);
+# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_zalloc(unsigned int size);
+
+
+
+
+
+
+
+    void aos_alloc_trace(void *addr, size_t allocator);
+
+
+
+
+
+
+    void aos_free(void *mem);
+
+
+
+
+
+
+    long long aos_now(void);
+
+
+
+
+
+
+    long long aos_now_ms(void);
+# 512 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    char *aos_now_time_str(char *buffer, const int len);
+
+
+
+
+
+
+    void aos_msleep(int ms);
+
+
+
+
+    void aos_init(void);
+
+
+
+
+    void aos_start(void);
+# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h" 1
+
+
+
+
+
+typedef enum {
+    BL_RST_POWER_OFF = 0,
+    BL_RST_HARDWARE_WATCHDOG,
+    BL_RST_FATAL_EXCEPTION,
+    BL_RST_SOFTWARE_WATCHDOG,
+    BL_RST_SOFTWARE,
+} BL_RST_REASON_E;
+
+BL_RST_REASON_E bl_sys_rstinfo_get(void);
+int bl_sys_rstinfo_set(BL_RST_REASON_E val);
+int bl_sys_rstinfo_getsting(char *info);
+void bl_sys_rstinfo_init(void);
+int bl_sys_logall_enable(void);
+int bl_sys_logall_disable(void);
+void bl_sys_mfg_config(void);
+int bl_sys_reset_por(void);
+void bl_sys_reset_system(void);
+int bl_sys_isxipaddr(uint32_t addr);
+int bl_sys_early_init(void);
+int bl_sys_init(void);
+# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 1
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h" 1
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+typedef void (*hosal_dma_irq_t)(void *p_arg, uint32_t flag);
+
+
+
+
+struct hosal_dma_chan {
+    uint8_t used;
+    hosal_dma_irq_t callback;
+    void *p_arg;
+};
+
+
+
+
+typedef struct hosal_dma_dev {
+    int max_chans;
+    struct hosal_dma_chan *used_chan;
+    void *priv;
+} hosal_dma_dev_t;
+
+
+
+
+typedef int hosal_dma_chan_t;
+
+
+
+
+
+
+int hosal_dma_init(void);
+# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+hosal_dma_chan_t hosal_dma_chan_request(int flag);
+# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_chan_release(hosal_dma_chan_t chan);
+# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_chan_start(hosal_dma_chan_t chan);
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_chan_stop(hosal_dma_chan_t chan);
+# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_irq_callback_set(hosal_dma_chan_t chan, hosal_dma_irq_t pfn, void *p_arg);
+# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_finalize(void);
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 2
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+typedef int (*hosal_uart_callback_t)(void *p_arg);
+
+
+
+
+typedef enum {
+    HOSAL_DATA_WIDTH_5BIT,
+    HOSAL_DATA_WIDTH_6BIT,
+    HOSAL_DATA_WIDTH_7BIT,
+    HOSAL_DATA_WIDTH_8BIT,
+    HOSAL_DATA_WIDTH_9BIT
+} hosal_uart_data_width_t;
+
+
+
+
+typedef enum {
+    HOSAL_STOP_BITS_1,
+    HOSAL_STOP_BITS_1_5,
+    HOSAL_STOP_BITS_2
+} hosal_uart_stop_bits_t;
+
+
+
+
+typedef enum {
+    HOSAL_FLOW_CONTROL_DISABLED,
+    HOSAL_FLOW_CONTROL_CTS,
+    HOSAL_FLOW_CONTROL_RTS,
+    HOSAL_FLOW_CONTROL_CTS_RTS
+} hosal_uart_flow_control_t;
+
+
+
+
+typedef enum {
+    HOSAL_NO_PARITY,
+    HOSAL_ODD_PARITY,
+    HOSAL_EVEN_PARITY
+} hosal_uart_parity_t;
+
+
+
+
+typedef enum {
+    HOSAL_UART_MODE_POLL,
+    HOSAL_UART_MODE_INT_TX,
+    HOSAL_UART_MODE_INT_RX,
+    HOSAL_UART_MODE_INT,
+} hosal_uart_mode_t;
+
+
+
+
+typedef struct {
+
+
+
+
+
+    uint8_t *dma_buf;
+
+    uint32_t dma_buf_size;
+} hosal_uart_dma_cfg_t;
+
+
+
+
+typedef struct {
+    uint8_t uart_id;
+    uint8_t tx_pin;
+    uint8_t rx_pin;
+    uint8_t cts_pin;
+    uint8_t rts_pin;
+    uint32_t baud_rate;
+    hosal_uart_data_width_t data_width;
+    hosal_uart_parity_t parity;
+    hosal_uart_stop_bits_t stop_bits;
+    hosal_uart_flow_control_t flow_control;
+    hosal_uart_mode_t mode;
+} hosal_uart_config_t;
+
+
+
+
+typedef struct {
+    uint8_t port;
+    hosal_uart_config_t config;
+    hosal_uart_callback_t tx_cb;
+    void *p_txarg;
+    hosal_uart_callback_t rx_cb;
+    void *p_rxarg;
+    hosal_uart_callback_t txdma_cb;
+    void *p_txdma_arg;
+    hosal_uart_callback_t rxdma_cb;
+    void *p_rxdma_arg;
+    hosal_dma_chan_t dma_tx_chan;
+    hosal_dma_chan_t dma_rx_chan;
+    void *priv;
+} hosal_uart_dev_t;
+# 221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_abr_get(hosal_uart_dev_t *uart, uint8_t mode);
+# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_init(hosal_uart_dev_t *uart);
+int hosal_uart_init_only_tx(hosal_uart_dev_t *uart);
+# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_send(hosal_uart_dev_t *uart, const void *txbuf, uint32_t size);
+# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_receive(hosal_uart_dev_t *uart, void *data, uint32_t expect_size);
+# 293 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_ioctl (hosal_uart_dev_t *uart, int ctl, void *p_arg);
+# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_callback_set (hosal_uart_dev_t *uart,
+                           int callback_type,
+                           hosal_uart_callback_t pfn_callback,
+                           void *arg);
+# 325 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_finalize(hosal_uart_dev_t *uart);
+# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h" 1
+# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+struct __locale_t;
+typedef struct __locale_t *locale_t;
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+
+
+int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
+void bcopy(const void *, void *, size_t);
+void bzero(void *, size_t);
+
+
+void explicit_bzero(void *, size_t);
+
+
+int ffs(int) __attribute__((__const__));
+
+
+int ffsl(long) __attribute__((__const__));
+int ffsll(long long) __attribute__((__const__));
+int fls(int) __attribute__((__const__));
+int flsl(long) __attribute__((__const__));
+int flsll(long long) __attribute__((__const__));
+
+
+char *index(const char *, int) __attribute__((__pure__));
+char *rindex(const char *, int) __attribute__((__pure__));
+
+int strcasecmp(const char *, const char *) __attribute__((__pure__));
+int strncasecmp(const char *, const char *, size_t) __attribute__((__pure__));
+
+
+int strcasecmp_l (const char *, const char *, locale_t);
+int strncasecmp_l (const char *, const char *, size_t, locale_t);
+
+
+# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+
+
+void * memchr (const void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void * memcpy (void *restrict, const void *restrict, size_t);
+void * memmove (void *, const void *, size_t);
+void * memset (void *, int, size_t);
+char *strcat (char *restrict, const char *restrict);
+char *strchr (const char *, int);
+int strcmp (const char *, const char *);
+int strcoll (const char *, const char *);
+char *strcpy (char *restrict, const char *restrict);
+size_t strcspn (const char *, const char *);
+char *strerror (int);
+size_t strlen (const char *);
+char *strncat (char *restrict, const char *restrict, size_t);
+int strncmp (const char *, const char *, size_t);
+char *strncpy (char *restrict, const char *restrict, size_t);
+char *strpbrk (const char *, const char *);
+char *strrchr (const char *, int);
+size_t strspn (const char *, const char *);
+char *strstr (const char *, const char *);
+
+char *strtok (char *restrict, const char *restrict);
+
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+
+int strcoll_l (const char *, const char *, locale_t);
+char *strerror_l (int, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+
+
+int timingsafe_bcmp (const void *, const void *, size_t);
+int timingsafe_memcmp (const void *, const void *, size_t);
+
+
+void * memccpy (void *restrict, const void *restrict, int, size_t);
+
+
+void * mempcpy (void *, const void *, size_t);
+void * memmem (const void *, size_t, const void *, size_t);
+void * memrchr (const void *, int, size_t);
+void * rawmemchr (const void *, int);
+
+
+char *stpcpy (char *restrict, const char *restrict);
+char *stpncpy (char *restrict, const char *restrict, size_t);
+
+
+char *strcasestr (const char *, const char *);
+char *strchrnul (const char *, int);
+
+
+char *strdup (const char *) __attribute__((__malloc__)) __attribute__((__warn_unused_result__));
+
+char *_strdup_r (struct _reent *, const char *);
+
+char *strndup (const char *, size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__));
+
+char *_strndup_r (struct _reent *, const char *, size_t);
+
+
+
+
+
+
+char *strerror_r (int, char *, size_t);
+# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+char * _strerror_r (struct _reent *, int, int, int *);
+
+
+size_t strlcat (char *, const char *, size_t);
+size_t strlcpy (char *, const char *, size_t);
+
+
+size_t strnlen (const char *, size_t);
+
+
+char *strsep (char **, const char *);
+
+
+char *strnstr(const char *, const char *, size_t) __attribute__((__pure__));
+
+
+
+char *strlwr (char *);
+char *strupr (char *);
+
+
+
+char *strsignal (int __signo);
+
+
+
+
+
+
+
+int strverscmp (const char *, const char *);
+# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+static __inline unsigned long __libc_detect_null(unsigned long w)
+{
+  unsigned long mask = 0x7f7f7f7f;
+  if (sizeof (long) == 8)
+    mask = ((mask << 16) << 16) | mask;
+  return ~(((w & mask) + mask) | w | mask);
+}
+# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 1
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h" 2
+
 
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 1
 
@@ -1970,13 +3000,6 @@ static inline sys_dnode_t *sys_dlist_get(sys_dlist_t *list)
 
 
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
-unsigned long get_cpu_freq(void);
-unsigned long get_timer_freq(void);
-uint64_t get_timer_value(void);
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
 # 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/config.h" 2
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
 
@@ -2620,7 +3643,7 @@ struct net_buf {
  };
 
 
- u8_t user_data[10] 
+ u8_t user_data[4] 
 # 608 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h" 3
                                               __attribute__((__aligned__(
 # 608 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
@@ -6390,1070 +7413,7 @@ int bt_br_write_local_name(char *name);
 
 
 int bt_br_write_eir(u8_t fec, u8_t *data);
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 2
-
-typedef int (*ble_gatt_conn_cb_t)(struct bt_conn *conn, uint8_t code);
-
-void ble_reverse_byte(uint8_t *arr, uint32_t size);
-int ble_server_init();
-int ble_server_deinit(void);
-void ble_stack_start(void);
-int ble_uuid1_notify_data(void *handle, void *data, uint16_t length);
-int ble_uuid2_notify_data(void *handle, void *data, uint16_t length);
-
-
-struct bt_conn *ble_get_conn_cur(void);
-int ble_regist_conn(ble_gatt_conn_cb_t cb);
-int ble_regist_disconn(ble_gatt_conn_cb_t cb);
-int ble_slave_init();
-int ble_slave_deinit(void);
-int UUID1_SendNotify(uint16_t len, uint8_t *data);
-int UUID2_SendNotify(uint16_t len, uint8_t *data);
-int ble_slave_init();
-int ble_slave_deinit(void);
-int ble_salve_adv();
-void apps_ble_stop();
-void apps_ble_start();
-uint8_t BleSetMtu();
-# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
-typedef void (*TaskFunction_t)( void * );
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-
-
-
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-typedef uint32_t StackType_t;
-typedef int32_t BaseType_t;
-typedef uint32_t UBaseType_t;
-typedef uint32_t TickType_t;
-# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-extern void vTaskSwitchContext( void );
-extern void vEnvironmentCall( uint32_t exception );
-# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-extern void vTaskEnterCritical( void );
-extern void vTaskExitCritical( void );
-# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-BaseType_t xPortIsInsideInterrupt( void );
-# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
-# 100 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-  StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters ) ;
-
-
-
-
-typedef struct HeapRegion
-{
- uint8_t *pucStartAddress;
- size_t xSizeInBytes;
-} HeapRegion_t;
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
-
-
-
-
-
-void *pvPortMalloc( size_t xSize ) ;
-void *pvPortCalloc(size_t numElements, size_t sizeOfElement); ;
-void *pvPortRealloc(void *pv, size_t xSize) ;
-void vPortFree( void *pv ) ;
-void vPortInitialiseBlocks( void ) ;
-size_t xPortGetFreeHeapSize( void ) ;
-size_t xPortGetMinimumEverFreeHeapSize( void ) ;
-
-
-
-
-
-BaseType_t xPortStartScheduler( void ) ;
-
-
-
-
-
-
-void vPortEndScheduler( void ) ;
-# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-struct xSTATIC_LIST_ITEM
-{
-
-
-
- TickType_t xDummy2;
- void *pvDummy3[ 4 ];
-
-
-
-};
-typedef struct xSTATIC_LIST_ITEM StaticListItem_t;
-
-
-struct xSTATIC_MINI_LIST_ITEM
-{
-
-
-
- TickType_t xDummy2;
- void *pvDummy3[ 2 ];
-};
-typedef struct xSTATIC_MINI_LIST_ITEM StaticMiniListItem_t;
-
-
-typedef struct xSTATIC_LIST
-{
-
-
-
- UBaseType_t uxDummy2;
- void *pvDummy3;
- StaticMiniListItem_t xDummy4;
-
-
-
-} StaticList_t;
-# 1095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-typedef struct xSTATIC_TCB
-{
- void *pxDummy1;
-
-
-
- StaticListItem_t xDummy3[ 2 ];
- UBaseType_t uxDummy5;
- void *pxDummy6;
- uint8_t ucDummy7[ ( 16 ) ];
-
-
-
-
-  UBaseType_t uxDummy9;
-
-
-  UBaseType_t uxDummy10[ 2 ];
-
-
-  UBaseType_t uxDummy12[ 2 ];
-
-
-
-
-
-  void *pvDummy15[ 1 ];
-
-        void *pvDummy15_1[ 1 ];
-# 1133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-  uint32_t ulDummy18;
-  uint8_t ucDummy19;
-
-
-  uint8_t uxDummy20;
-# 1146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-} StaticTask_t;
-# 1162 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-typedef struct xSTATIC_QUEUE
-{
- void *pvDummy1[ 3 ];
-
- union
- {
-  void *pvDummy2;
-  UBaseType_t uxDummy2;
- } u;
-
- StaticList_t xDummy3[ 2 ];
- UBaseType_t uxDummy4[ 3 ];
- uint8_t ucDummy5[ 2 ];
-
-
-  uint8_t ucDummy6;
-
-
-
-
-
-
-
-  UBaseType_t uxDummy8;
-  uint8_t ucDummy9;
-
-
-} StaticQueue_t;
-typedef StaticQueue_t StaticSemaphore_t;
-# 1206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-typedef struct xSTATIC_EVENT_GROUP
-{
- TickType_t xDummy1;
- StaticList_t xDummy2;
-
-
-  UBaseType_t uxDummy3;
-
-
-
-   uint8_t ucDummy4;
-
-
-} StaticEventGroup_t;
-# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-typedef struct xSTATIC_TIMER
-{
- void *pvDummy1;
- StaticListItem_t xDummy2;
- TickType_t xDummy3;
- void *pvDummy5;
- TaskFunction_t pvDummy6;
-
-  UBaseType_t uxDummy7;
-
- uint8_t ucDummy8;
-
-} StaticTimer_t;
-# 1263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-typedef struct xSTATIC_STREAM_BUFFER
-{
- size_t uxDummy1[ 4 ];
- void * pvDummy2[ 3 ];
- uint8_t ucDummy3;
-
-  UBaseType_t uxDummy4;
-
-} StaticStreamBuffer_t;
-
-
-typedef StaticStreamBuffer_t StaticMessageBuffer_t;
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 1
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-struct xLIST;
-struct xLIST_ITEM
-{
-
- TickType_t xItemValue;
- struct xLIST_ITEM * pxNext;
- struct xLIST_ITEM * pxPrevious;
- void * pvOwner;
- struct xLIST * pvContainer;
-
-};
-typedef struct xLIST_ITEM ListItem_t;
-
-struct xMINI_LIST_ITEM
-{
-
- TickType_t xItemValue;
- struct xLIST_ITEM * pxNext;
- struct xLIST_ITEM * pxPrevious;
-};
-typedef struct xMINI_LIST_ITEM MiniListItem_t;
-
-
-
-
-typedef struct xLIST
-{
-
- volatile UBaseType_t uxNumberOfItems;
- ListItem_t * pxIndex;
- MiniListItem_t xListEnd;
-
-} List_t;
-# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-void vListInitialise( List_t * const pxList ) ;
-# 356 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-void vListInitialiseItem( ListItem_t * const pxItem ) ;
-# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
-# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
-# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
-# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-struct tskTaskControlBlock;
-typedef struct tskTaskControlBlock* TaskHandle_t;
-
-
-
-
-
-typedef BaseType_t (*TaskHookFunction_t)( void * );
-
-
-typedef enum
-{
- eRunning = 0,
- eReady,
- eBlocked,
- eSuspended,
- eDeleted,
- eInvalid
-} eTaskState;
-
-
-typedef enum
-{
- eNoAction = 0,
- eSetBits,
- eIncrement,
- eSetValueWithOverwrite,
- eSetValueWithoutOverwrite
-} eNotifyAction;
-
-
-
-
-typedef struct xTIME_OUT
-{
- BaseType_t xOverflowCount;
- TickType_t xTimeOnEntering;
-} TimeOut_t;
-
-
-
-
-typedef struct xMEMORY_REGION
-{
- void *pvBaseAddress;
- uint32_t ulLengthInBytes;
- uint32_t ulParameters;
-} MemoryRegion_t;
-
-
-
-
-typedef struct xTASK_PARAMETERS
-{
- TaskFunction_t pvTaskCode;
- const char * const pcName;
- uint16_t usStackDepth;
- void *pvParameters;
- UBaseType_t uxPriority;
- StackType_t *puxStackBuffer;
- MemoryRegion_t xRegions[ 1 ];
-
-
-
-} TaskParameters_t;
-
-
-
-typedef struct xTASK_STATUS
-{
- TaskHandle_t xHandle;
- const char *pcTaskName;
- UBaseType_t xTaskNumber;
- eTaskState eCurrentState;
- UBaseType_t uxCurrentPriority;
- UBaseType_t uxBasePriority;
- uint32_t ulRunTimeCounter;
- StackType_t *pxStackBase;
- uint16_t usStackHighWaterMark;
-} TaskStatus_t;
-
-
-typedef enum
-{
- eAbortSleep = 0,
- eStandardSleep,
- eNoTasksWaitingTimeout
-} eSleepModeStatus;
-# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
- BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
-       const char * const pcName,
-       const uint16_t usStackDepth,
-       void * const pvParameters,
-       UBaseType_t uxPriority,
-       TaskHandle_t * const pxCreatedTask ) ;
-# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
- TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
-         const char * const pcName,
-         const uint32_t ulStackDepth,
-         void * const pvParameters,
-         UBaseType_t uxPriority,
-         StackType_t * const puxStackBuffer,
-         StaticTask_t * const pxTaskBuffer ) ;
-# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskAllocateMPURegions( TaskHandle_t xTask, const MemoryRegion_t * const pxRegions ) ;
-# 706 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskDelete( TaskHandle_t xTaskToDelete ) ;
-# 758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskDelay( const TickType_t xTicksToDelay ) ;
-# 817 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskDelayUntil( TickType_t * const pxPreviousWakeTime, const TickType_t xTimeIncrement ) ;
-# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) ;
-# 889 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
-
-
-
-
-
-
-
-UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
-# 915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-eTaskState eTaskGetState( TaskHandle_t xTask ) ;
-# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskGetInfo( TaskHandle_t xTask, TaskStatus_t *pxTaskStatus, BaseType_t xGetFreeStackSpace, eTaskState eState ) ;
-# 1013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority ) ;
-# 1064 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
-# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskResume( TaskHandle_t xTaskToResume ) ;
-# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
-# 1175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskStartScheduler( void ) ;
-# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskEndScheduler( void ) ;
-# 1282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskSuspendAll( void ) ;
-# 1336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskResumeAll( void ) ;
-# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-TickType_t xTaskGetTickCount( void ) ;
-BaseType_t xTaskGetTickCount2( TickType_t *ticks, BaseType_t *overflow ) ;
-# 1368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-TickType_t xTaskGetTickCountFromISR( void ) ;
-# 1382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-UBaseType_t uxTaskGetNumberOfTasks( void ) ;
-# 1395 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-char *pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
-# 1411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-TaskHandle_t xTaskGetHandle( const char *pcNameToQuery ) ;
-# 1438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
-# 1465 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
-# 1513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
- void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue ) ;
- void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) ;
-
-
-
-
-
-
-        typedef void (*TlsDeleteCallbackFunction_t)( int, void * );
-
-
-
-
-        UBaseType_t vTaskSetThreadLocalStoragePointerAndDelCallback( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue, TlsDeleteCallbackFunction_t pvDelCallback);
-# 1541 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask, void *pvParameter ) ;
-# 1550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-TaskHandle_t xTaskGetIdleTaskHandle( void ) ;
-# 1649 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime ) ;
-UBaseType_t xAddTasksToAllList( void ) ;
-List_t * pxTaskGetAllList( void ) ;
-# 1698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskList( char * pcWriteBuffer ) ;
-# 1752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskGetRunTimeStats( char *pcWriteBuffer ) ;
-# 1782 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-TickType_t xTaskGetIdleRunTimeCounter( void ) ;
-# 1863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) ;
-# 1954 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 2031 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait ) ;
-# 2132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 2201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) ;
-# 2217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
-# 2238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskIncrementTick( void ) ;
-# 2271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskPlaceOnEventList( List_t * const pxEventList, const TickType_t xTicksToWait ) ;
-void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickType_t xTicksToWait ) ;
-# 2285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskPlaceOnEventListRestricted( List_t * const pxEventList, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
-# 2311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
-void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem, const TickType_t xItemValue ) ;
-# 2322 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
- void vTaskSwitchContext( void ) ;
-
-
-
-
-
-TickType_t uxTaskResetEventItemValue( void ) ;
-
-
-
-
-TaskHandle_t xTaskGetCurrentTaskHandle( void ) ;
-
-
-
-
-void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
-
-
-
-
-
-BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut, TickType_t * const pxTicksToWait ) ;
-
-
-
-
-
-void vTaskMissedYield( void ) ;
-
-
-
-
-
-BaseType_t xTaskGetSchedulerState( void ) ;
-
-
-
-
-
-BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
-
-
-
-
-
-BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
-# 2378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder, UBaseType_t uxHighestPriorityWaitingTask ) ;
-
-
-
-
-UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
-
-
-
-
-
-void vTaskSetTaskNumber( TaskHandle_t xTask, const UBaseType_t uxHandle ) ;
-# 2399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-void vTaskStepTick( const TickType_t xTicksToJump ) ;
-void vTaskStepTickSafe( const TickType_t xTicksToJump ) ;
-# 2416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
-
-
-
-
-
-TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
-
-
-
-
-
-void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 2
-
-
-
-
-
-
-struct QueueDefinition;
-typedef struct QueueDefinition * QueueHandle_t;
-
-
-
-
-
-
-typedef struct QueueDefinition * QueueSetHandle_t;
-
-
-
-
-
-
-typedef struct QueueDefinition * QueueSetMemberHandle_t;
-# 650 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueGenericSend( QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait, const BaseType_t xCopyPosition ) ;
-# 744 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueuePeek( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
-# 777 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueuePeekFromISR( QueueHandle_t xQueue, void * const pvBuffer ) ;
-# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
-# 883 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-UBaseType_t uxQueueMessagesWaiting( const QueueHandle_t xQueue ) ;
-# 900 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-UBaseType_t uxQueueSpacesAvailable( const QueueHandle_t xQueue ) ;
-# 914 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-void vQueueDelete( QueueHandle_t xQueue ) ;
-# 1295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueGenericSendFromISR( QueueHandle_t xQueue, const void * const pvItemToQueue, BaseType_t * const pxHigherPriorityTaskWoken, const BaseType_t xCopyPosition ) ;
-BaseType_t xQueueGiveFromISR( QueueHandle_t xQueue, BaseType_t * const pxHigherPriorityTaskWoken ) ;
-# 1385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueReceiveFromISR( QueueHandle_t xQueue, void * const pvBuffer, BaseType_t * const pxHigherPriorityTaskWoken ) ;
-
-
-
-
-
-BaseType_t xQueueIsQueueEmptyFromISR( const QueueHandle_t xQueue ) ;
-BaseType_t xQueueIsQueueFullFromISR( const QueueHandle_t xQueue ) ;
-UBaseType_t uxQueueMessagesWaitingFromISR( const QueueHandle_t xQueue ) ;
-# 1404 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueCRSendFromISR( QueueHandle_t xQueue, const void *pvItemToQueue, BaseType_t xCoRoutinePreviouslyWoken );
-BaseType_t xQueueCRReceiveFromISR( QueueHandle_t xQueue, void *pvBuffer, BaseType_t *pxTaskWoken );
-BaseType_t xQueueCRSend( QueueHandle_t xQueue, const void *pvItemToQueue, TickType_t xTicksToWait );
-BaseType_t xQueueCRReceive( QueueHandle_t xQueue, void *pvBuffer, TickType_t xTicksToWait );
-
-
-
-
-
-
-QueueHandle_t xQueueCreateMutex( const uint8_t ucQueueType ) ;
-QueueHandle_t xQueueCreateMutexStatic( const uint8_t ucQueueType, StaticQueue_t *pxStaticQueue ) ;
-QueueHandle_t xQueueCreateCountingSemaphore( const UBaseType_t uxMaxCount, const UBaseType_t uxInitialCount ) ;
-QueueHandle_t xQueueCreateCountingSemaphoreStatic( const UBaseType_t uxMaxCount, const UBaseType_t uxInitialCount, StaticQueue_t *pxStaticQueue ) ;
-BaseType_t xQueueSemaphoreTake( QueueHandle_t xQueue, TickType_t xTicksToWait ) ;
-TaskHandle_t xQueueGetMutexHolder( QueueHandle_t xSemaphore ) ;
-TaskHandle_t xQueueGetMutexHolderFromISR( QueueHandle_t xSemaphore ) ;
-
-
-
-
-
-BaseType_t xQueueTakeMutexRecursive( QueueHandle_t xMutex, TickType_t xTicksToWait ) ;
-BaseType_t xQueueGiveMutexRecursive( QueueHandle_t xMutex ) ;
-# 1458 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
- void vQueueAddToRegistry( QueueHandle_t xQueue, const char *pcQueueName ) ;
-# 1472 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
- void vQueueUnregisterQueue( QueueHandle_t xQueue ) ;
-# 1487 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
- const char *pcQueueGetName( QueueHandle_t xQueue ) ;
-# 1496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
- QueueHandle_t xQueueGenericCreate( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, const uint8_t ucQueueType ) ;
-# 1505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
- QueueHandle_t xQueueGenericCreateStatic( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, uint8_t *pucQueueStorage, StaticQueue_t *pxStaticQueue, const uint8_t ucQueueType ) ;
-# 1556 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-QueueSetHandle_t xQueueCreateSet( const UBaseType_t uxEventQueueLength ) ;
-# 1580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueAddToSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
-# 1599 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-BaseType_t xQueueRemoveFromSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
-# 1635 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-QueueSetMemberHandle_t xQueueSelectFromSet( QueueSetHandle_t xQueueSet, const TickType_t xTicksToWait ) ;
-
-
-
-
-QueueSetMemberHandle_t xQueueSelectFromSetFromISR( QueueSetHandle_t xQueueSet ) ;
-
-
-void vQueueWaitForMessageRestricted( QueueHandle_t xQueue, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
-BaseType_t xQueueGenericReset( QueueHandle_t xQueue, BaseType_t xNewQueue ) ;
-void vQueueSetQueueNumber( QueueHandle_t xQueue, UBaseType_t uxQueueNumber ) ;
-UBaseType_t uxQueueGetQueueNumber( QueueHandle_t xQueue ) ;
-uint8_t ucQueueGetQueueType( QueueHandle_t xQueue ) ;
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 2
-
-typedef QueueHandle_t SemaphoreHandle_t;
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 1
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/../../bluetooth/buf.h" 1
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 2
-
-
-
-
-
-enum {
-
- BT_QUIRK_NO_RESET = (1UL << (0)),
-};
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-static inline 
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
-             _Bool 
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-                  bt_hci_evt_is_prio(u8_t evt)
-{
- switch (evt) {
- case 0x0e:
- case 0x0f:
-
-
- case 0x13:
- case 0x1a:
-
-  return 
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
-        1
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-            ;
- default:
-  return 
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
-        0
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-             ;
- }
-}
-# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-int bt_recv(struct net_buf *buf);
-# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-int bt_recv_prio(struct net_buf *buf);
-
-
-enum bt_hci_driver_bus {
- BT_HCI_DRIVER_BUS_VIRTUAL = 0,
- BT_HCI_DRIVER_BUS_USB = 1,
- BT_HCI_DRIVER_BUS_PCCARD = 2,
- BT_HCI_DRIVER_BUS_UART = 3,
- BT_HCI_DRIVER_BUS_RS232 = 4,
- BT_HCI_DRIVER_BUS_PCI = 5,
- BT_HCI_DRIVER_BUS_SDIO = 6,
- BT_HCI_DRIVER_BUS_SPI = 7,
- BT_HCI_DRIVER_BUS_I2C = 8,
- BT_HCI_DRIVER_BUS_IPM = 9,
-};
-
-
-
-
-
-
-
-struct bt_hci_driver {
-
- const char *name;
-
-
- enum bt_hci_driver_bus bus;
-
-
-
-
-
-
- u32_t quirks;
-# 144 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
- int (*open)(void);
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
- int (*send)(struct net_buf *buf);
-};
-# 171 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-int bt_hci_driver_register(const struct bt_hci_driver *drv);
-# 193 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-void hci_driver_enque_recvq(struct net_buf *buf);
-
-int hci_driver_init(void);
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 1
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-enum {
- BT_EVENT_CMD_TX,
- BT_EVENT_CONN_TX_QUEUE,
-
-
-
-
-};
-
-
-enum {
- BT_DEV_ENABLE,
- BT_DEV_READY,
- BT_DEV_PRESET_ID,
- BT_DEV_USER_ID_ADDR,
- BT_DEV_HAS_PUB_KEY,
- BT_DEV_PUB_KEY_BUSY,
-
- BT_DEV_ADVERTISING,
- BT_DEV_ADVERTISING_NAME,
- BT_DEV_ADVERTISING_CONNECTABLE,
- BT_DEV_KEEP_ADVERTISING,
- BT_DEV_SCANNING,
- BT_DEV_EXPLICIT_SCAN,
- BT_DEV_ACTIVE_SCAN,
- BT_DEV_SCAN_FILTER_DUP,
- BT_DEV_SCAN_WL,
- BT_DEV_AUTO_CONN,
-
- BT_DEV_RPA_VALID,
-
- BT_DEV_ID_PENDING,
-# 80 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-    BT_DEV_ASSIST_RUN,
-
-
-
-
- BT_DEV_NUM_FLAGS,
-};
-
-
-
-
-
-
-struct bt_dev_le {
-
- u8_t features[8];
-
- u64_t states;
-
-
-
- u16_t mtu;
- struct k_sem pkts;
-
-
-
-
- u8_t rl_size;
-
-
-
- u8_t rl_entries;
-
-
-
-
- u8_t wl_size;
-
- u8_t wl_entries;
-
-};
-# 140 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-struct bt_dev {
-
- bt_addr_le_t id_addr[1];
- u8_t id_count;
-
-
- u8_t adv_id;
-
-
- bt_addr_le_t random_addr;
-
-
- u8_t hci_version;
- u8_t lmp_version;
- u16_t hci_revision;
- u16_t lmp_subversion;
- u16_t manufacturer;
-
-
- u8_t features[1][8];
-
-
- u8_t supported_commands[64];
-
-
-
-
-
-
-
- struct k_work init;
-
- atomic_t flags[1 + ((BT_DEV_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8)];
-
-
- struct bt_dev_le le;
-
-
-
-
-
-
-
- struct k_sem ncmd_sem;
-
-
- struct net_buf *sent_cmd;
-
-
-
-
-
-
-
- struct k_fifo cmd_tx_queue;
-
-
- const struct bt_hci_driver *drv;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
- char name[29 + 1];
-
-};
-# 237 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-extern struct bt_dev bt_dev;
-
-extern const struct bt_conn_auth_cb *bt_auth;
-
-
-
-# 242 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
-_Bool 
-# 242 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-    bt_le_conn_params_valid(const struct bt_le_conn_param *param);
-
-int bt_le_scan_update(
-# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
-                     _Bool 
-# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-                          fast_scan);
-
-int bt_le_auto_conn(const struct bt_le_conn_param *conn_param);
-int bt_le_auto_conn_cancel(void);
-
-
-# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
-_Bool 
-# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-    bt_addr_le_is_bonded(u8_t id, const bt_addr_le_t *addr);
-const bt_addr_le_t *bt_lookup_id_addr(u8_t id, const bt_addr_le_t *addr);
-
-int bt_send(struct net_buf *buf);
-
-
-struct bt_keys;
-void bt_id_add(struct bt_keys *keys);
-void bt_id_del(struct bt_keys *keys);
-
-int bt_setup_id_addr(void);
-void bt_finalize_init(void);
-
-int bt_le_adv_start_internal(const struct bt_le_adv_param *param,
-        const struct bt_data *ad, size_t ad_len,
-        const struct bt_data *sd, size_t sd_len,
-        const bt_addr_le_t *peer);
-# 274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-int bt_le_read_rssi(u16_t handle,int8_t *rssi);
-int set_ad_and_rsp_d(u16_t hci_op, u8_t *data, u32_t ad_len);
-int set_adv_enable(
-# 276 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
-                  _Bool 
-# 276 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-                       enable);
-int set_adv_param(const struct bt_le_adv_param *param);
-int set_adv_channel_map(u8_t channel);
-int bt_get_local_public_address(bt_addr_le_t *adv_addr);
-int bt_get_local_ramdon_address(bt_addr_le_t *adv_addr);
-int bt_le_set_data_len(struct bt_conn *conn, u16_t tx_octets, u16_t tx_time);
-int hci_le_set_phy(struct bt_conn *conn, uint8_t all_phys,
-    uint8_t pref_tx_phy, uint8_t pref_rx_phy, uint8_t phy_opts);
-int hci_le_set_default_phy(u8_t default_phy);
-
-
-
-int bt_set_bd_addr(const bt_addr_t *addr);
-
-
-
-int bt_set_tx_pwr(int8_t power);
-
-
-
-struct blhast_cb{
-    void (*le_scan_cb)(const struct bt_le_scan_param *param, bt_le_scan_cb_t cb);
-    void (*le_adv_cb)(const struct bt_le_adv_param *param, const struct bt_data *ad,
-  size_t ad_len, const struct bt_data *sd, size_t sd_len);
-};
-int bt_set_flow_control(void);
-int bt_set_event_mask(void);
-int bt_le_set_event_mask(void);
-void bt_hci_reset_complete(struct net_buf *buf);
-void bt_register_host_assist_cb(struct blhast_cb *cb);
-
-
-typedef void (*bredr_name_callback)(const char *name);
-int remote_name_req(const bt_addr_t *addr, bredr_name_callback cb);
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h" 1
-
-
-
-
-
-
-void ble_controller_init(uint8_t task_priority);
-void ble_controller_deinit(void);
-
-
-
-
-void ble_controller_reset(void);
-
-char * ble_controller_get_lib_ver(void);
-
-
-
-int8_t ble_controller_set_scan_filter_table_size(uint8_t size);
-
-
-
-
-int32_t ble_controller_sleep(int32_t max_sleep_cycles);
-void ble_controller_sleep_restore(void);
-
-# 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h" 3 4
-_Bool 
-# 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
-    ble_controller_sleep_is_ongoing(void);
-void ble_controller_set_tx_pwr(int ble_tx_power);
-void ble_rf_set_tx_channel(uint16_t tx_channel);
-void ble_controller_disable_adv_random_delay(
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h" 3 4
-                                            _Bool 
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
-                                                 disable);
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 1
 # 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 struct bt_conn;
@@ -7498,8 +7458,6 @@ _Bool
 # 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
     le_check_valid_conn(void);
 void notify_disconnected(struct bt_conn *conn);
-
-void bt_notify_disconnected(void);
 # 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn);
 # 133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
@@ -7685,14 +7643,7 @@ _Bool
      u16_t latency, u16_t timeout);
 # 504 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
  void (*le_phy_updated)(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy);
-# 515 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
- void (*identity_resolved)(struct bt_conn *conn,
-      const bt_addr_le_t *rpa,
-      const bt_addr_le_t *identity);
-# 529 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
- void (*security_changed)(struct bt_conn *conn, bt_security_t level,
-     enum bt_security_err err);
-
+# 532 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
  struct bt_conn_cb *_next;
 };
 # 558 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
@@ -7808,1450 +7759,361 @@ struct bt_conn *bt_conn_create_br(const bt_addr_t *peer,
       const struct bt_br_conn_param *param);
 # 946 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer);
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h" 1
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-typedef enum 
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h" 3
-            __attribute__((__packed__)) 
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-                     {
- BT_CONN_DISCONNECTED,
- BT_CONN_CONNECT_SCAN,
- BT_CONN_CONNECT_DIR_ADV,
- BT_CONN_CONNECT,
- BT_CONN_CONNECTED,
- BT_CONN_DISCONNECT,
-} bt_conn_state_t;
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 1
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/../../bluetooth/buf.h" 1
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 2
+
+
+
 
 
 enum {
- BT_CONN_AUTO_CONNECT,
- BT_CONN_BR_LEGACY_SECURE,
- BT_CONN_USER,
- BT_CONN_BR_PAIRING,
- BT_CONN_BR_NOBOND,
- BT_CONN_BR_PAIRING_INITIATOR,
- BT_CONN_CLEANUP,
- BT_CONN_AUTO_PHY_UPDATE,
- BT_CONN_SLAVE_PARAM_UPDATE,
- BT_CONN_SLAVE_PARAM_SET,
- BT_CONN_SLAVE_PARAM_L2CAP,
- BT_CONN_FORCE_PAIR,
 
- BT_CONN_AUTO_PHY_COMPLETE,
- BT_CONN_AUTO_FEATURE_EXCH,
- BT_CONN_AUTO_VERSION_INFO,
+ BT_QUIRK_NO_RESET = (1UL << (0)),
+};
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+static inline 
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
+             _Bool 
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+                  bt_hci_evt_is_prio(u8_t evt)
+{
+ switch (evt) {
+ case 0x0e:
+ case 0x0f:
 
 
- BT_CONN_NUM_FLAGS,
+ case 0x13:
+ case 0x1a:
+
+  return 
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
+        1
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+            ;
+ default:
+  return 
+# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
+        0
+# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+             ;
+ }
+}
+# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+int bt_recv(struct net_buf *buf);
+# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+int bt_recv_prio(struct net_buf *buf);
+
+
+enum bt_hci_driver_bus {
+ BT_HCI_DRIVER_BUS_VIRTUAL = 0,
+ BT_HCI_DRIVER_BUS_USB = 1,
+ BT_HCI_DRIVER_BUS_PCCARD = 2,
+ BT_HCI_DRIVER_BUS_UART = 3,
+ BT_HCI_DRIVER_BUS_RS232 = 4,
+ BT_HCI_DRIVER_BUS_PCI = 5,
+ BT_HCI_DRIVER_BUS_SDIO = 6,
+ BT_HCI_DRIVER_BUS_SPI = 7,
+ BT_HCI_DRIVER_BUS_I2C = 8,
+ BT_HCI_DRIVER_BUS_IPM = 9,
 };
 
-struct bt_conn_le {
- bt_addr_le_t dst;
 
- bt_addr_le_t init_addr;
- bt_addr_le_t resp_addr;
 
- u16_t interval;
- u16_t interval_min;
- u16_t interval_max;
 
- u16_t latency;
- u16_t timeout;
- u16_t pending_latency;
- u16_t pending_timeout;
+
+
+
+struct bt_hci_driver {
+
+ const char *name;
+
+
+ enum bt_hci_driver_bus bus;
+
+
+
+
+
+
+ u32_t quirks;
+# 144 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+ int (*open)(void);
+# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+ int (*send)(struct net_buf *buf);
+};
+# 171 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+int bt_hci_driver_register(const struct bt_hci_driver *drv);
+# 193 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+void hci_driver_enque_recvq(struct net_buf *buf);
+
+int hci_driver_init(void);
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 1
+# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+enum {
+ BT_EVENT_CMD_TX,
+ BT_EVENT_CONN_TX_QUEUE,
+
+
+
+
+};
+
+
+enum {
+ BT_DEV_ENABLE,
+ BT_DEV_READY,
+ BT_DEV_PRESET_ID,
+ BT_DEV_USER_ID_ADDR,
+ BT_DEV_HAS_PUB_KEY,
+ BT_DEV_PUB_KEY_BUSY,
+
+ BT_DEV_ADVERTISING,
+ BT_DEV_ADVERTISING_NAME,
+ BT_DEV_ADVERTISING_CONNECTABLE,
+ BT_DEV_KEEP_ADVERTISING,
+ BT_DEV_SCANNING,
+ BT_DEV_EXPLICIT_SCAN,
+ BT_DEV_ACTIVE_SCAN,
+ BT_DEV_SCAN_FILTER_DUP,
+ BT_DEV_SCAN_WL,
+ BT_DEV_AUTO_CONN,
+
+ BT_DEV_RPA_VALID,
+
+ BT_DEV_ID_PENDING,
+# 85 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+ BT_DEV_NUM_FLAGS,
+};
+
+
+
+
+
+
+struct bt_dev_le {
 
  u8_t features[8];
 
- struct bt_keys *keys;
+ u64_t states;
 
 
 
+ u16_t mtu;
+ struct k_sem pkts;
+# 116 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+ u8_t wl_size;
 
+ u8_t wl_entries;
 
 };
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-struct bt_conn_iso {
+# 140 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+struct bt_dev {
 
- struct bt_conn *acl;
+ bt_addr_le_t id_addr[1];
+ u8_t id_count;
 
- uint8_t cig_id;
 
- uint8_t cis_id;
+ u8_t adv_id;
+
+
+ bt_addr_le_t random_addr;
+
+
+ u8_t hci_version;
+ u8_t lmp_version;
+ u16_t hci_revision;
+ u16_t lmp_subversion;
+ u16_t manufacturer;
+
+
+ u8_t features[1][8];
+
+
+ u8_t supported_commands[64];
+
+
+
+
+
+
+
+ struct k_work init;
+
+ atomic_t flags[1 + ((BT_DEV_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8)];
+
+
+ struct bt_dev_le le;
+
+
+
+
+
+
+
+ struct k_sem ncmd_sem;
+
+
+ struct net_buf *sent_cmd;
+
+
+
+
+
+
+
+ struct k_fifo cmd_tx_queue;
+
+
+ const struct bt_hci_driver *drv;
+# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+ char name[29 + 1];
+
 };
+# 237 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+extern struct bt_dev bt_dev;
 
-typedef void (*bt_conn_tx_cb_t)(struct bt_conn *conn, void *user_data);
 
-struct bt_conn_tx {
- sys_snode_t node;
 
- bt_conn_tx_cb_t cb;
- void *user_data;
 
 
- u32_t pending_no_cb;
-};
-
-struct bt_conn {
- u16_t handle;
- u8_t type;
- u8_t role;
-
- atomic_t flags[1 + ((BT_CONN_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8)];
-
-
- u8_t id;
-
-
- bt_security_t sec_level;
- bt_security_t required_sec_level;
- u8_t encrypt;
-
-
-
- u8_t err;
-
- bt_conn_state_t state;
-
- u16_t rx_len;
- struct net_buf *rx;
-
-
- sys_slist_t tx_pending;
-
-
-
- u32_t pending_no_cb;
-
-
- sys_slist_t tx_complete;
- struct k_work tx_complete_work;
-
-
-
- struct k_fifo tx_queue;
-
-
- sys_slist_t channels;
-
- atomic_t ref;
-
-
- struct k_delayed_work update_work;
-
- union {
-  struct bt_conn_le le;
-
-
-
-
-
-
-
- };
-# 175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-};
-
-void bt_conn_reset_rx_state(struct bt_conn *conn);
-
-
-void bt_conn_recv(struct bt_conn *conn, struct net_buf *buf, u8_t flags);
-
-
-int bt_conn_send_cb(struct bt_conn *conn, struct net_buf *buf,
-      bt_conn_tx_cb_t cb, void *user_data);
-
-static inline int bt_conn_send(struct bt_conn *conn, struct net_buf *buf)
-{
- return bt_conn_send_cb(conn, buf, 
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h" 3 4
-                                  ((void *)0)
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-                                      , 
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h" 3 4
-                                        ((void *)0)
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-                                            );
-}
-
-
-struct bt_conn *bt_conn_add_le(u8_t id, const bt_addr_le_t *peer);
-
-
-struct bt_iso_create_param {
- uint8_t id;
- uint8_t num_conns;
- struct bt_conn **conns;
- struct bt_iso_chan **chans;
-};
-
-
-int bt_conn_bind_iso(struct bt_iso_create_param *param);
-
-
-int bt_conn_connect_iso(struct bt_conn **conns, uint8_t num_conns);
-
-
-struct bt_conn *bt_conn_add_iso(struct bt_conn *acl);
-
-
-void bt_iso_cleanup(struct bt_conn *iso_conn);
-
-
-struct bt_conn *iso_conn_new(struct bt_conn *conns, size_t size);
-
-
-struct bt_conn *bt_conn_add_br(const bt_addr_t *peer);
-
-
-struct bt_conn *bt_conn_add_sco(const bt_addr_t *peer, int link_type);
-
-
-void bt_sco_cleanup(struct bt_conn *sco_conn);
-
-
-struct bt_conn *bt_conn_lookup_addr_sco(const bt_addr_t *peer);
-
-
-struct bt_conn *bt_conn_lookup_addr_br(const bt_addr_t *peer);
-
-void bt_conn_pin_code_req(struct bt_conn *conn);
-u8_t bt_conn_get_io_capa(void);
-u8_t bt_conn_ssp_get_auth(const struct bt_conn *conn);
-void bt_conn_ssp_auth(struct bt_conn *conn, u32_t passkey);
-void bt_conn_ssp_auth_complete(struct bt_conn *conn, u8_t status);
-
-void bt_conn_disconnect_all(u8_t id);
-
-
-struct bt_conn *bt_conn_lookup_handle(u16_t handle);
-
-
-int bt_conn_addr_le_cmp(const struct bt_conn *conn, const bt_addr_le_t *peer);
-
-
-
-
-
-
-
-struct bt_conn *bt_conn_lookup_id(u8_t id);
-
-
-
-
-struct bt_conn *bt_conn_lookup_state_le(const bt_addr_le_t *peer,
-     const bt_conn_state_t state);
-
-
-void bt_conn_set_state(struct bt_conn *conn, bt_conn_state_t state);
-
-int bt_conn_le_conn_update(struct bt_conn *conn,
-      const struct bt_le_conn_param *param);
-
-void notify_remote_info(struct bt_conn *conn);
-
-void notify_le_param_updated(struct bt_conn *conn);
-
-void notify_le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy);
-
-
-# 272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h" 3 4
+# 242 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
 _Bool 
-# 272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-    le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param);
+# 242 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+    bt_le_conn_params_valid(const struct bt_le_conn_param *param);
+
+int bt_le_scan_update(
+# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
+                     _Bool 
+# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+                          fast_scan);
+
+int bt_le_auto_conn(const struct bt_le_conn_param *conn_param);
+int bt_le_auto_conn_cancel(void);
+
+
+# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
+_Bool 
+# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+    bt_addr_le_is_bonded(u8_t id, const bt_addr_le_t *addr);
+const bt_addr_le_t *bt_lookup_id_addr(u8_t id, const bt_addr_le_t *addr);
+
+int bt_send(struct net_buf *buf);
+
+
+struct bt_keys;
+void bt_id_add(struct bt_keys *keys);
+void bt_id_del(struct bt_keys *keys);
+
+int bt_setup_id_addr(void);
+void bt_finalize_init(void);
+
+int bt_le_adv_start_internal(const struct bt_le_adv_param *param,
+        const struct bt_data *ad, size_t ad_len,
+        const struct bt_data *sd, size_t sd_len,
+        const bt_addr_le_t *peer);
+# 274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+int bt_le_read_rssi(u16_t handle,int8_t *rssi);
+int set_ad_and_rsp_d(u16_t hci_op, u8_t *data, u32_t ad_len);
+int set_adv_enable(
+# 276 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 3 4
+                  _Bool 
+# 276 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+                       enable);
+int set_adv_param(const struct bt_le_adv_param *param);
+int set_adv_channel_map(u8_t channel);
+int bt_get_local_public_address(bt_addr_le_t *adv_addr);
+int bt_get_local_ramdon_address(bt_addr_le_t *adv_addr);
+int bt_le_set_data_len(struct bt_conn *conn, u16_t tx_octets, u16_t tx_time);
+int hci_le_set_phy(struct bt_conn *conn, uint8_t all_phys,
+    uint8_t pref_tx_phy, uint8_t pref_rx_phy, uint8_t phy_opts);
+int hci_le_set_default_phy(u8_t default_phy);
 
 
 
-int bt_conn_le_start_encryption(struct bt_conn *conn, u8_t rand[8],
-    u8_t ediv[2], const u8_t *ltk, size_t len);
-
-
-void bt_conn_identity_resolved(struct bt_conn *conn);
-
-
-
-
-void bt_conn_security_changed(struct bt_conn *conn, enum bt_security_err err);
-# 301 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-struct net_buf *bt_conn_create_pdu_timeout(struct net_buf_pool *pool,
-        size_t reserve, s32_t timeout);
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-struct net_buf *bt_conn_create_frag_timeout(size_t reserve, s32_t timeout);
+int bt_set_bd_addr(const bt_addr_t *addr);
+# 308 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+typedef void (*bredr_name_callback)(const char *name);
+int remote_name_req(const bt_addr_t *addr, bredr_name_callback cb);
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h" 1
 
 
 
 
 
 
-int bt_conn_init(void);
+void ble_controller_init(uint8_t task_priority);
+void ble_controller_deinit(void);
 
-
-struct k_sem *bt_conn_get_pkts(struct bt_conn *conn);
-
-
-int bt_conn_prepare_events(struct k_poll_event events[]);
+void blecontroller_main(void);
 
 
 
 
-void bt_conn_process_tx(struct bt_conn *conn);
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-int bt_hci_get_conn_handle(const struct bt_conn *conn, u16_t *conn_handle);
+char * ble_controller_get_lib_ver(void);
+
+
+
+int8_t ble_controller_set_scan_filter_table_size(uint8_t size);
+
+
+
+
+int32_t ble_controller_sleep(int32_t max_sleep_cycles);
+void ble_controller_sleep_restore(void);
+
+# 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h" 3 4
+_Bool 
+# 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
+    ble_controller_sleep_is_ongoing(void);
+void ble_controller_set_tx_pwr(int ble_tx_power);
+void ble_rf_set_tx_channel(uint16_t tx_channel);
+void ble_controller_disable_adv_random_delay(
+# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h" 3 4
+                                            _Bool 
+# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
+                                                 disable);
 # 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 1
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 2
 
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_config.h" 1
+# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_adv.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h" 1
-# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
-enum {
- BT_UUID_TYPE_16,
- BT_UUID_TYPE_32,
- BT_UUID_TYPE_128,
-};
 
 
-struct bt_uuid {
- u8_t type;
-};
 
-struct bt_uuid_16 {
- struct bt_uuid uuid;
- u16_t val;
-};
+int ble_adv_start(void);
+int ble_adv_stop(void);
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 1
 
-struct bt_uuid_32 {
- struct bt_uuid uuid;
- u32_t val;
-};
 
-struct bt_uuid_128 {
- struct bt_uuid uuid;
- u8_t val[16];
-};
-# 566 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
-int bt_uuid_cmp(const struct bt_uuid *u1, const struct bt_uuid *u2);
-# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
 
-# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h" 3 4
-_Bool 
-# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
-    bt_uuid_create(struct bt_uuid *uuid, const u8_t *data, u8_t data_len);
-# 594 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
-void bt_uuid_to_str(const struct bt_uuid *uuid, char *str, size_t len);
 
-const char *bt_uuid_str_real(const struct bt_uuid *uuid);
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h" 1
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h"
-typedef void (*bt_att_func_t)(struct bt_conn *conn, u8_t err,
-         const void *pdu, u16_t length,
-         void *user_data);
-typedef void (*bt_att_destroy_t)(void *user_data);
+void ble_stack_init(void);
 
 
-struct bt_att_req {
- sys_snode_t node;
- bt_att_func_t func;
- bt_att_destroy_t destroy;
- struct net_buf_simple_state state;
- struct net_buf *buf;
-
- 
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h" 3 4
-_Bool 
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h"
-     retrying;
-
-};
-struct bt_att_req *bt_att_get_att_req(struct bt_conn *conn);
-# 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 2
-
-
-
-
-
-enum {
-
- BT_GATT_PERM_NONE = 0,
-
-
- BT_GATT_PERM_READ = (1UL << (0)),
-
-
- BT_GATT_PERM_WRITE = (1UL << (1)),
-
-
-
-
-
- BT_GATT_PERM_READ_ENCRYPT = (1UL << (2)),
-
-
-
-
-
- BT_GATT_PERM_WRITE_ENCRYPT = (1UL << (3)),
-
-
-
-
-
-
- BT_GATT_PERM_READ_AUTHEN = (1UL << (4)),
-
-
-
-
-
-
- BT_GATT_PERM_WRITE_AUTHEN = (1UL << (5)),
-
-
-
-
-
-
- BT_GATT_PERM_PREPARE_WRITE = (1UL << (6)),
-};
-# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-enum {
-
-
-
-
-
- BT_GATT_WRITE_FLAG_PREPARE = (1UL << (0)),
-
-
-
-
-
-
- BT_GATT_WRITE_FLAG_CMD = (1UL << (1)),
-};
-
-
-struct bt_gatt_attr {
-
- const struct bt_uuid *uuid;
-# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
- ssize_t (*read)(struct bt_conn *conn,
-     const struct bt_gatt_attr *attr,
-     void *buf, u16_t len,
-     u16_t offset);
-# 141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
- ssize_t (*write)(struct bt_conn *conn,
-      const struct bt_gatt_attr *attr,
-      const void *buf, u16_t len,
-      u16_t offset, u8_t flags);
-
-
- void *user_data;
-
- u16_t handle;
-
- u8_t perm;
-};
-
-
-struct bt_gatt_service_static {
-
- const struct bt_gatt_attr *attrs;
-
- size_t attr_count;
-};
-
-
-struct bt_gatt_service {
-
- struct bt_gatt_attr *attrs;
-
- size_t attr_count;
- sys_snode_t node;
-};
-
-
-struct bt_gatt_service_val {
-
- const struct bt_uuid *uuid;
-
- u16_t end_handle;
-};
-
-
-struct bt_gatt_include {
-
- const struct bt_uuid *uuid;
-
- u16_t start_handle;
-
- u16_t end_handle;
-};
-# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-struct bt_gatt_chrc {
-
- const struct bt_uuid *uuid;
-
- u16_t value_handle;
-
- u8_t properties;
-};
-
-
-
-
-
-
-struct bt_gatt_cep {
-
- u16_t properties;
-};
-# 279 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-struct bt_gatt_ccc {
-
- u16_t flags;
-};
-
-
-struct bt_gatt_cpf {
-
- u8_t format;
-
-
-
- s8_t exponent;
-
- u16_t unit;
-
- u8_t name_space;
-
- u16_t description;
-} 
-# 298 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3
- __attribute__((__packed__))
-# 298 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-         ;
-# 316 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_service_register(struct bt_gatt_service *svc);
-
-
-
-
-
-
-
-int bt_gatt_service_unregister(struct bt_gatt_service *svc);
-
-enum {
- BT_GATT_ITER_STOP = 0,
- BT_GATT_ITER_CONTINUE,
-};
-# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef u8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
-           void *user_data);
-# 355 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-void bt_gatt_foreach_attr_type(u16_t start_handle, u16_t end_handle,
-          const struct bt_uuid *uuid,
-          const void *attr_data, uint16_t num_matches,
-          bt_gatt_attr_func_t func,
-          void *user_data);
-# 370 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-static inline void bt_gatt_foreach_attr(u16_t start_handle, u16_t end_handle,
-     bt_gatt_attr_func_t func,
-     void *user_data)
-{
- bt_gatt_foreach_attr_type(start_handle, end_handle, 
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-                                                    ((void *)0)
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-                                                        , 
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-                                                          ((void *)0)
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-                                                              , 0, func,
-      user_data);
-}
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-struct bt_gatt_attr *bt_gatt_attr_next(const struct bt_gatt_attr *attr);
-# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-uint16_t bt_gatt_attr_value_handle(const struct bt_gatt_attr *attr);
-# 413 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-     void *buf, u16_t buf_len, u16_t offset,
-     const void *value, u16_t value_len);
-# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_service(struct bt_conn *conn,
-      const struct bt_gatt_attr *attr,
-      void *buf, u16_t len, u16_t offset);
-# 498 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_included(struct bt_conn *conn,
-       const struct bt_gatt_attr *attr,
-       void *buf, u16_t len, u16_t offset);
-# 528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_chrc(struct bt_conn *conn,
-          const struct bt_gatt_attr *attr, void *buf,
-          u16_t len, u16_t offset);
-# 572 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-struct bt_gatt_ccc_cfg {
- u8_t id;
- bt_addr_le_t peer;
- u16_t value;
-};
-
-
-struct _bt_gatt_ccc {
- struct bt_gatt_ccc_cfg cfg[(1)];
- u16_t value;
- void (*cfg_changed)(const struct bt_gatt_attr *attr,
-            u16_t value);
- 
-# 584 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-_Bool 
-# 584 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-       (*cfg_write)(struct bt_conn *conn,
-          const struct bt_gatt_attr *attr,
-          u16_t value);
- 
-# 587 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-_Bool 
-# 587 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-       (*cfg_match)(struct bt_conn *conn,
-          const struct bt_gatt_attr *attr);
-};
-# 606 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_ccc(struct bt_conn *conn,
-         const struct bt_gatt_attr *attr, void *buf,
-         u16_t len, u16_t offset);
-# 625 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_write_ccc(struct bt_conn *conn,
-          const struct bt_gatt_attr *attr, const void *buf,
-          u16_t len, u16_t offset, u8_t flags);
-# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_cep(struct bt_conn *conn,
-         const struct bt_gatt_attr *attr, void *buf,
-         u16_t len, u16_t offset);
-# 718 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_cud(struct bt_conn *conn,
-         const struct bt_gatt_attr *attr, void *buf,
-         u16_t len, u16_t offset);
-# 749 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-ssize_t bt_gatt_attr_read_cpf(struct bt_conn *conn,
-         const struct bt_gatt_attr *attr, void *buf,
-         u16_t len, u16_t offset);
-# 803 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef void (*bt_gatt_complete_func_t) (struct bt_conn *conn, void *user_data);
-
-struct bt_gatt_notify_params {
-
- const struct bt_uuid *uuid;
-
- const struct bt_gatt_attr *attr;
-
- const void *data;
-
- u16_t len;
-
- bt_gatt_complete_func_t func;
-
- void *user_data;
-};
-# 840 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_notify_cb(struct bt_conn *conn,
-        struct bt_gatt_notify_params *params);
-# 862 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-static inline int bt_gatt_notify(struct bt_conn *conn,
-     const struct bt_gatt_attr *attr,
-     const void *data, u16_t len)
-{
- struct bt_gatt_notify_params params;
-
- memset(&params, 0, sizeof(params));
-
- params.attr = attr;
- params.data = data;
- params.len = len;
-
- return bt_gatt_notify_cb(conn, &params);
-}
-# 886 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef void (*bt_gatt_indicate_func_t)(struct bt_conn *conn,
-     const struct bt_gatt_attr *attr,
-     u8_t err);
-
-
-struct bt_gatt_indicate_params {
- struct bt_att_req _req;
-
- const struct bt_uuid *uuid;
-
- const struct bt_gatt_attr *attr;
-
- bt_gatt_indicate_func_t func;
-
- const void *data;
-
- u16_t len;
-};
-# 931 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_indicate(struct bt_conn *conn,
-       struct bt_gatt_indicate_params *params);
-# 955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-
-# 955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-_Bool 
-# 955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-    bt_gatt_is_subscribed(struct bt_conn *conn,
-      const struct bt_gatt_attr *attr, u16_t ccc_value);
-# 967 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-u16_t bt_gatt_get_mtu(struct bt_conn *conn);
-# 978 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-struct bt_gatt_exchange_params {
- struct bt_att_req _req;
-
- void (*func)(struct bt_conn *conn, u8_t err,
-       struct bt_gatt_exchange_params *params);
-};
-# 997 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_exchange_mtu(struct bt_conn *conn,
-    struct bt_gatt_exchange_params *params);
-
-
-
-
-
-struct bt_gatt_discover_params;
-# 1021 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef u8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
-     const struct bt_gatt_attr *attr,
-     struct bt_gatt_discover_params *params);
-
-
-enum {
-
- BT_GATT_DISCOVER_PRIMARY,
-
- BT_GATT_DISCOVER_SECONDARY,
-
- BT_GATT_DISCOVER_INCLUDE,
-
-
-
-
- BT_GATT_DISCOVER_CHARACTERISTIC,
-# 1046 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
- BT_GATT_DISCOVER_DESCRIPTOR,
-# 1055 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
- BT_GATT_DISCOVER_ATTRIBUTE,
-};
-
-
-struct bt_gatt_discover_params {
- struct bt_att_req _req;
-
- struct bt_uuid *uuid;
-
- bt_gatt_discover_func_t func;
- union {
-  struct {
-
-   u16_t attr_handle;
-
-   u16_t start_handle;
-
-   u16_t end_handle;
-  } _included;
-
-  u16_t start_handle;
- };
-
- u16_t end_handle;
-
- u8_t type;
-};
-# 1108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_discover(struct bt_conn *conn,
-       struct bt_gatt_discover_params *params);
-
-struct bt_gatt_read_params;
-# 1122 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef u8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, u8_t err,
-        struct bt_gatt_read_params *params,
-        const void *data, u16_t length);
-# 1140 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-struct bt_gatt_read_params {
- struct bt_att_req _req;
- bt_gatt_read_func_t func;
- size_t handle_count;
- union {
-  struct {
-   u16_t handle;
-   u16_t offset;
-  } single;
-  u16_t *handles;
-  struct {
-   u16_t start_handle;
-   u16_t end_handle;
-   struct bt_uuid *uuid;
-  } by_uuid;
- };
-};
-# 1178 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_read(struct bt_conn *conn, struct bt_gatt_read_params *params);
-
-struct bt_gatt_write_params;
-# 1189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, u8_t err,
-         struct bt_gatt_write_params *params);
-
-
-struct bt_gatt_write_params {
- struct bt_att_req _req;
-
- bt_gatt_write_func_t func;
-
- u16_t handle;
-
- u16_t offset;
-
- const void *data;
-
- u16_t length;
-};
-# 1220 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_write(struct bt_conn *conn, struct bt_gatt_write_params *params);
-# 1252 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_write_without_response_cb(struct bt_conn *conn, u16_t handle,
-          const void *data, u16_t length,
-          
-# 1254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-         _Bool 
-# 1254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-              sign, bt_gatt_complete_func_t func,
-          void *user_data);
-# 1270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-static inline int bt_gatt_write_without_response(struct bt_conn *conn,
-       u16_t handle, const void *data,
-       u16_t length, 
-# 1272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-                    _Bool 
-# 1272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-                         sign)
-{
- return bt_gatt_write_without_response_cb(conn, handle, data, length,
-       sign, 
-# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-            ((void *)0)
-# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-                , 
-# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
-                  ((void *)0)
-# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-                      );
-}
-
-struct bt_gatt_subscribe_params;
-# 1289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-typedef u8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
-          struct bt_gatt_subscribe_params *params,
-          const void *data, u16_t length);
-
-
-enum {
-# 1304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
- BT_GATT_SUBSCRIBE_FLAG_VOLATILE,
-
-
-
-
-
-
- BT_GATT_SUBSCRIBE_FLAG_WRITE_PENDING,
-
- BT_GATT_SUBSCRIBE_NUM_FLAGS
-};
-
-
-struct bt_gatt_subscribe_params {
- struct bt_att_req _req;
- bt_addr_le_t _peer;
-
- bt_gatt_notify_func_t notify;
-
- u16_t value_handle;
-
- u16_t ccc_handle;
-
- u16_t value;
-
- atomic_t flags[1 + ((BT_GATT_SUBSCRIBE_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8)];
-
- sys_snode_t node;
-};
-# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_subscribe(struct bt_conn *conn,
-        struct bt_gatt_subscribe_params *params);
-# 1366 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatt_unsubscribe(struct bt_conn *conn,
-   struct bt_gatt_subscribe_params *params);
-
-
-
-
-
-
-void bt_gatt_cancel(struct bt_conn *conn, void *params);
-
-
-typedef void (*bt_gatt_mtu_changed_cb_t)(struct bt_conn *conn, int mtu);
-void bt_gatt_register_mtu_callback(bt_gatt_mtu_changed_cb_t cb);
-
-
-
-typedef void(*bt_notification_all_cb_t)(struct bt_conn *conn, u16_t handle,const void *data, u16_t length);
-void bt_gatt_register_notification_callback(bt_notification_all_cb_t cb);
-# 1392 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-void bt_gatt_ccc_load(void);
-
-
-
-struct simple_svc_info{
-
-    uint16_t idx;
-
-    uint8_t state;
-
-    uint8_t type;
-
-    char uuid[37];
-};
-
-struct char_info{
-
-    uint16_t svc_idx;
-
-    uint16_t char_idx;
-
-    char uuid[37];
-
-    uint8_t prop;
-};
-
-struct descrip_info{
-
-    uint16_t svc_idx;
-
-    uint16_t char_idx;
-
-    uint16_t desp_idx;
-
-    char uuid[37];
-};
-
-struct add_gatts_attr{
-    struct bt_gatt_attr *attr;
-    sys_snode_t node;
-};
-
-struct customer_svc_list{
-    struct bt_gatt_service *svc;
-    uint16_t svc_idx;
-    sys_snode_t node;
-};
-# 1447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-int bt_gatts_add_serv_attr(const struct bt_uuid *uuid, uint8_t is_primary,uint32_t number_attrs);
-
-
-
-
-
-
-int bt_gatts_add_char(const struct bt_gatt_attr *char_attr,uint32_t val_prop);
-
-
-
-
-
-int bt_gatts_add_desc(const struct bt_gatt_attr *desp_attr);
-
-
-
-
-
-
-int bt_gatts_get_service_simple_info(uint16_t svc_id,struct simple_svc_info *info,uint16_t info_num);
-
-
-
-
-
-
-int bt_gatts_get_service_char(uint16_t svc_id,struct char_info *info,uint16_t char_num);
-
-
-
-
-
-
-int bt_gatts_get_service_desc(uint16_t svc_id,struct descrip_info *info,uint16_t desp_num);
-
-
-
-uint16_t bt_gatts_add_service(void);
-
-
-
-
-
-int bt_gatts_del_service(uint16_t svc_id);
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.h" 1
-
-
-
-
-void led_init(void);
-void led_on(void);
-void led_off(void);
-void led_toggle(void);
-void led_blink(int times, int delay_ms);
-int led_get_state(void);
+void ble_test_adv(void);
 # 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h" 1
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_conn.h" 1
 
 
 
 
 
-void relay_init(void);
-void relay_on(void);
-void relay_off(void);
-void relay_toggle(void);
-uint8_t relay_get_state(void);
+typedef int (*ble_conn_cb_t)(struct bt_conn *conn, uint8_t err);
+struct bt_conn* ble_conn_get_current(void);
+void ble_conn_register_callbacks(ble_conn_cb_t conn_cb, ble_conn_cb_t disconn_cb);
+void ble_conn_init(void);
+
+uint8_t ble_conn_set_mtu(void);
 # 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/led_state/led_state_machine.h" 1
 
-
-
-typedef enum {
-    LED_STATE_ON = 0,
-    LED_STATE_OFF,
-}led_state_t;
-
-typedef enum {
-    LED_EVENT_ON,
-    LED_EVENT_OFF,
-}led_event_t;
-
-typedef void (*action_led_t) (void);
-
-typedef struct
-{
-    led_event_t event;
-    led_state_t current_state;
-    led_state_t next_state;
-    action_led_t action;
-}led_ctx_t;
-
-void led_state_init(void);
-void led_handle_action(led_event_t event);
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/relay_state/relay_state_machine.h" 1
-
-
-
-
-
-typedef enum {
-    RELAY_EVENT_ON,
-    RELAY_EVENT_OFF,
-}relay_event_t;
-
-typedef enum {
-    RELAY_STATE_ON,
-    RELAY_STATE_OFF,
-}relay_state_t;
-
-
-typedef void (*relay_action_t) (void);
-
-typedef struct
-{
-    relay_event_t event;
-    relay_state_t current_state;
-    relay_state_t next_state;
-    relay_action_t action;
-}relay_ctx_t;
-
-
-
-void relay_state_init(void);
-void relay_handle_event(relay_event_t event);
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-static struct bt_conn *conn_cur;
-ble_gatt_conn_cb_t conn_cb;
-ble_gatt_conn_cb_t disconn_cb;
-
-
-
-static const struct bt_data salve_adv[] = {
-    { .type = (0x01), .data_len = (sizeof((u8_t []) { (0x02 | 0x04) })), .data = (const u8_t *)(((u8_t []) { (0x02 | 0x04) })), },
-    { .type = (0x09), .data_len = (sizeof("HNN_intern") - 1), .data = (const u8_t *)("HNN_intern"), },
-
-};
-
-static ssize_t ble_uuid1_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-                                   const void *buf, u16_t len, u16_t offset, u8_t flags);
-static ssize_t ble_uuid2_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-                                   const void *buf, u16_t len, u16_t offset, u8_t flags);
-static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr,
-                                u16_t value);
-
-static struct bt_gatt_attr salve_uuid1_server[] = {
-
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2800), }})), .read = bt_gatt_attr_read_service, .write = 
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x9fafd205e455) >> 0) & 0xFF), (((0x9fafd205e455) >> 8) & 0xFF), (((0x9fafd205e455) >> 16) & 0xFF), (((0x9fafd205e455) >> 24) & 0xFF), (((0x9fafd205e455) >> 32) & 0xFF), (((0x9fafd205e455) >> 40) & 0xFF), (((0x8fa9) >> 0) & 0xFF), (((0x8fa9) >> 8) & 0xFF), (((0x4ae5) >> 0) & 0xFF), (((0x4ae5) >> 8) & 0xFF), (((0xfe7d) >> 0) & 0xFF), (((0xfe7d) >> 8) & 0xFF), (((0x55535343) >> 0) & 0xFF), (((0x55535343) >> 8) & 0xFF), (((0x55535343) >> 16) & 0xFF), (((0x55535343) >> 24) & 0xFF) }, }})), .handle = 0, .perm = BT_GATT_PERM_READ, },
-
-
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2803), }})), .read = bt_gatt_attr_read_chrc, .write = 
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = ((struct bt_gatt_chrc[]) { { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0xecbe34729bb3) >> 0) & 0xFF), (((0xecbe34729bb3) >> 8) & 0xFF), (((0xecbe34729bb3) >> 16) & 0xFF), (((0xecbe34729bb3) >> 24) & 0xFF), (((0xecbe34729bb3) >> 32) & 0xFF), (((0xecbe34729bb3) >> 40) & 0xFF), (((0xa8d4) >> 0) & 0xFF), (((0xa8d4) >> 8) & 0xFF), (((0x43f4) >> 0) & 0xFF), (((0x43f4) >> 8) & 0xFF), (((0x8841) >> 0) & 0xFF), (((0x8841) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .value_handle = 0U, .properties = 0x10, }, }), .handle = 0, .perm = BT_GATT_PERM_READ, }, { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0xecbe34729bb3) >> 0) & 0xFF), (((0xecbe34729bb3) >> 8) & 0xFF), (((0xecbe34729bb3) >> 16) & 0xFF), (((0xecbe34729bb3) >> 24) & 0xFF), (((0xecbe34729bb3) >> 32) & 0xFF), (((0xecbe34729bb3) >> 40) & 0xFF), (((0xa8d4) >> 0) & 0xFF), (((0xa8d4) >> 8) & 0xFF), (((0x43f4) >> 0) & 0xFF), (((0x43f4) >> 8) & 0xFF), (((0x8841) >> 0) & 0xFF), (((0x8841) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .read = 
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .write = 
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = 
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .handle = 0, .perm = BT_GATT_PERM_READ, }
-
-
-                                ,
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2902), }})), .read = bt_gatt_attr_read_ccc, .write = bt_gatt_attr_write_ccc, .user_data = (&(struct _bt_gatt_ccc) { .cfg = {}, .cfg_changed = ble_ccc_cfg_changed, .cfg_write = 
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .cfg_match = 
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , }), .handle = 0, .perm = BT_GATT_PERM_READ | BT_GATT_PERM_WRITE, },
-
-
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2803), }})), .read = bt_gatt_attr_read_chrc, .write = 
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = ((struct bt_gatt_chrc[]) { { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x23c647249616) >> 0) & 0xFF), (((0x23c647249616) >> 8) & 0xFF), (((0x23c647249616) >> 16) & 0xFF), (((0x23c647249616) >> 24) & 0xFF), (((0x23c647249616) >> 32) & 0xFF), (((0x23c647249616) >> 40) & 0xFF), (((0xba61) >> 0) & 0xFF), (((0xba61) >> 8) & 0xFF), (((0x4bd9) >> 0) & 0xFF), (((0x4bd9) >> 8) & 0xFF), (((0x1e4d) >> 0) & 0xFF), (((0x1e4d) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .value_handle = 0U, .properties = 0x04, }, }), .handle = 0, .perm = BT_GATT_PERM_READ, }, { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x23c647249616) >> 0) & 0xFF), (((0x23c647249616) >> 8) & 0xFF), (((0x23c647249616) >> 16) & 0xFF), (((0x23c647249616) >> 24) & 0xFF), (((0x23c647249616) >> 32) & 0xFF), (((0x23c647249616) >> 40) & 0xFF), (((0xba61) >> 0) & 0xFF), (((0xba61) >> 8) & 0xFF), (((0x4bd9) >> 0) & 0xFF), (((0x4bd9) >> 8) & 0xFF), (((0x1e4d) >> 0) & 0xFF), (((0x1e4d) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .read = 
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .write = ble_uuid1_write_val, .user_data = 
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .handle = 0, .perm = BT_GATT_PERM_WRITE, }
-
-
-                                ,
-};
-
-static struct bt_gatt_attr salve_uuid2_server[] = {
-
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2800), }})), .read = bt_gatt_attr_read_service, .write = 
-# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x050403020100) >> 0) & 0xFF), (((0x050403020100) >> 8) & 0xFF), (((0x050403020100) >> 16) & 0xFF), (((0x050403020100) >> 24) & 0xFF), (((0x050403020100) >> 32) & 0xFF), (((0x050403020100) >> 40) & 0xFF), (((0x0706) >> 0) & 0xFF), (((0x0706) >> 8) & 0xFF), (((0x0908) >> 0) & 0xFF), (((0x0908) >> 8) & 0xFF), (((0x0b0a) >> 0) & 0xFF), (((0x0b0a) >> 8) & 0xFF), (((0x10190d0c) >> 0) & 0xFF), (((0x10190d0c) >> 8) & 0xFF), (((0x10190d0c) >> 16) & 0xFF), (((0x10190d0c) >> 24) & 0xFF) }, }})), .handle = 0, .perm = BT_GATT_PERM_READ, },
-
-
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2803), }})), .read = bt_gatt_attr_read_chrc, .write = 
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = ((struct bt_gatt_chrc[]) { { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x050403020100) >> 0) & 0xFF), (((0x050403020100) >> 8) & 0xFF), (((0x050403020100) >> 16) & 0xFF), (((0x050403020100) >> 24) & 0xFF), (((0x050403020100) >> 32) & 0xFF), (((0x050403020100) >> 40) & 0xFF), (((0x0706) >> 0) & 0xFF), (((0x0706) >> 8) & 0xFF), (((0x0908) >> 0) & 0xFF), (((0x0908) >> 8) & 0xFF), (((0x0b0a) >> 0) & 0xFF), (((0x0b0a) >> 8) & 0xFF), (((0x102B0d0c) >> 0) & 0xFF), (((0x102B0d0c) >> 8) & 0xFF), (((0x102B0d0c) >> 16) & 0xFF), (((0x102B0d0c) >> 24) & 0xFF) }, }})), .value_handle = 0U, .properties = 0x10, }, }), .handle = 0, .perm = BT_GATT_PERM_READ, }, { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x050403020100) >> 0) & 0xFF), (((0x050403020100) >> 8) & 0xFF), (((0x050403020100) >> 16) & 0xFF), (((0x050403020100) >> 24) & 0xFF), (((0x050403020100) >> 32) & 0xFF), (((0x050403020100) >> 40) & 0xFF), (((0x0706) >> 0) & 0xFF), (((0x0706) >> 8) & 0xFF), (((0x0908) >> 0) & 0xFF), (((0x0908) >> 8) & 0xFF), (((0x0b0a) >> 0) & 0xFF), (((0x0b0a) >> 8) & 0xFF), (((0x102B0d0c) >> 0) & 0xFF), (((0x102B0d0c) >> 8) & 0xFF), (((0x102B0d0c) >> 16) & 0xFF), (((0x102B0d0c) >> 24) & 0xFF) }, }})), .read = 
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .write = 
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = 
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .handle = 0, .perm = BT_GATT_PERM_READ, }
-
-
-                                ,
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2902), }})), .read = bt_gatt_attr_read_ccc, .write = bt_gatt_attr_write_ccc, .user_data = (&(struct _bt_gatt_ccc) { .cfg = {}, .cfg_changed = ble_ccc_cfg_changed, .cfg_write = 
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .cfg_match = 
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , }), .handle = 0, .perm = BT_GATT_PERM_READ | BT_GATT_PERM_WRITE, },
-
-
-    { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2803), }})), .read = bt_gatt_attr_read_chrc, .write = 
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .user_data = ((struct bt_gatt_chrc[]) { { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x050403020100) >> 0) & 0xFF), (((0x050403020100) >> 8) & 0xFF), (((0x050403020100) >> 16) & 0xFF), (((0x050403020100) >> 24) & 0xFF), (((0x050403020100) >> 32) & 0xFF), (((0x050403020100) >> 40) & 0xFF), (((0x0706) >> 0) & 0xFF), (((0x0706) >> 8) & 0xFF), (((0x0908) >> 0) & 0xFF), (((0x0908) >> 8) & 0xFF), (((0x0b0a) >> 0) & 0xFF), (((0x0b0a) >> 8) & 0xFF), (((0x102B0d0d) >> 0) & 0xFF), (((0x102B0d0d) >> 8) & 0xFF), (((0x102B0d0d) >> 16) & 0xFF), (((0x102B0d0d) >> 24) & 0xFF) }, }})), .value_handle = 0U, .properties = 0x04, }, }), .handle = 0, .perm = BT_GATT_PERM_READ, }, { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x050403020100) >> 0) & 0xFF), (((0x050403020100) >> 8) & 0xFF), (((0x050403020100) >> 16) & 0xFF), (((0x050403020100) >> 24) & 0xFF), (((0x050403020100) >> 32) & 0xFF), (((0x050403020100) >> 40) & 0xFF), (((0x0706) >> 0) & 0xFF), (((0x0706) >> 8) & 0xFF), (((0x0908) >> 0) & 0xFF), (((0x0908) >> 8) & 0xFF), (((0x0b0a) >> 0) & 0xFF), (((0x0b0a) >> 8) & 0xFF), (((0x102B0d0d) >> 0) & 0xFF), (((0x102B0d0d) >> 8) & 0xFF), (((0x102B0d0d) >> 16) & 0xFF), (((0x102B0d0d) >> 24) & 0xFF) }, }})), .read = 
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .write = ble_uuid2_write_val, .user_data = 
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-   ((void *)0)
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-   , .handle = 0, .perm = BT_GATT_PERM_WRITE, }
-
-
-                                ,
-};
-
-static struct bt_gatt_service ble_uuid1_server = { .attrs = salve_uuid1_server, .attr_count = ((unsigned long) (((int) sizeof(char[1 - 2 * !(!__builtin_types_compatible_p(__typeof__(salve_uuid1_server), __typeof__(&(salve_uuid1_server)[0])))]) - 1) + (sizeof(salve_uuid1_server) / sizeof((salve_uuid1_server)[0])))), };
-static struct bt_gatt_service ble_uuid2_server = { .attrs = salve_uuid2_server, .attr_count = ((unsigned long) (((int) sizeof(char[1 - 2 * !(!__builtin_types_compatible_p(__typeof__(salve_uuid2_server), __typeof__(&(salve_uuid2_server)[0])))]) - 1) + (sizeof(salve_uuid2_server) / sizeof((salve_uuid2_server)[0])))), };
-
-static ssize_t ble_uuid1_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-                                   const void *buf, u16_t len, u16_t offset,
-                                   u8_t flags)
-{
-    uint8_t *recv_buffer;
-    recv_buffer = pvPortMalloc(sizeof(uint8_t) * len);
-    memcpy(recv_buffer, buf, len);
-    printf("recv ble data len: %d\r\n", len);
-    for (size_t i = 0; i < len; i++)
-    {
-        printf("0x%x ", recv_buffer[i]);
-    }
-    printf("\r\n");
-    vPortFree(recv_buffer);
-
-    return len;
-}
-
-static ssize_t ble_uuid2_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-                                   const void *buf, u16_t len, u16_t offset,
-                                   u8_t flags)
-{
-    uint8_t *recv_buffer;
-    recv_buffer = pvPortMalloc(sizeof(uint8_t) * len);
-    memcpy(recv_buffer, buf, len);
-    printf("recv ble data len: %d\r\n", len);
-    for (size_t i = 0; i < len; i++)
-    {
-        printf("0x%x ", recv_buffer[i]);
-    }
-    printf("\r\n");
-    vPortFree(recv_buffer);
-    return len;
-}
-
-static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr,
-                                u16_t value)
-{
-    char *str = "disabled";
-
-    if (value == 0x0001)
-    {
-        str = "notify";
-    }
-    else if (value == 0x0002)
-    {
-        str = "indicate";
-    }
-
-    printf("[BLE] ccc change %s", str);
-}
-
-static void _connected(struct bt_conn *conn, u8_t err)
-{
-    if (conn_cb)
-    {
-        if (conn_cb(conn, err) != 0)
-        {
-            return;
-        }
-    }
-
-    if (conn->type != BT_CONN_TYPE_LE)
-    {
-        return;
-    }
-
-    conn_cur = conn;
-
-    printf("[BLE] connected \r\n");
-    BleSetMtu();
-    return;
-}
-
-static void _disconnected(struct bt_conn *conn, u8_t reason)
-{
-    if (disconn_cb)
-    {
-        if (disconn_cb(conn, reason) != 0)
-        {
-            return;
-        }
-    }
-
-    if (conn->type != BT_CONN_TYPE_LE)
-    {
-        return;
-    }
-
-    conn_cur = 
-# 180 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-              ((void *)0)
-# 180 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                  ;
-
-    printf("[BLE] disconnected, reason:%d \r\n", reason);
-}
-
-static 
-# 185 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-      _Bool 
-# 185 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-           _le_param_req(struct bt_conn *conn,
-                          struct bt_le_conn_param *param)
-{
-    printf("[BLE] conn param request: int 0x%04x-0x%04x lat %d to %d \r\n",
-           param->interval_min,
-           param->interval_max,
-           param->latency,
-           param->timeout);
-
-    return 
-# 194 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-          1
-# 194 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-              ;
-}
-
-static void _le_param_updated(struct bt_conn *conn, u16_t interval,
-                              u16_t latency, u16_t timeout)
-{
-    printf("[BLE] conn param updated: int 0x%04x lat %d to %d \r\n", interval, latency, timeout);
-}
-
-static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
-{
-    printf("[BLE] phy updated: rx_phy %d, rx_phy %d \r\n", tx_phy, rx_phy);
-}
-
-static struct bt_conn_cb conn_callbacks = {
-    .connected = _connected,
-    .disconnected = _disconnected,
-    .le_param_req = _le_param_req,
-    .le_param_updated = _le_param_updated,
-    .le_phy_updated = _le_phy_updated,
-};
-
-static void ble_disconnect_all(struct bt_conn *conn, void *data)
-{
-    if (conn->state == BT_CONN_CONNECTED)
-    {
-        printf("[BLE] disconn id:%d \r\n", conn->id);
-        bt_conn_disconnect(conn, 0x13);
-    }
-}
-
-static void _ble_mtu_changed_cb(struct bt_conn *conn, int mtu)
-{
-    printf("[BLE] mtu updated:%d \r\n", mtu);
-}
-
-struct bt_conn *ble_get_conn_cur(void)
-{
-    return conn_cur;
-}
-
-int ble_regist_conn(ble_gatt_conn_cb_t cb)
-{
-    conn_cb = cb;
-
-    return 0;
-}
-
-int ble_regist_disconn(ble_gatt_conn_cb_t cb)
-{
-    disconn_cb = cb;
-
-    return 0;
-}
-
-static int ble_salve_conn_cb(struct bt_conn *conn, uint8_t code)
-{
-    int err;
-
-    struct bt_le_conn_param param;
-    param.interval_max = 24;
-    param.interval_min = 24;
-    param.latency = 0;
-    param.timeout = 600;
-    err = bt_conn_le_param_update(conn, &param);
-
-    return 0;
-}
-
-static int ble_salve_disconn_cb(struct bt_conn *conn, uint8_t code)
-{
-    if (set_adv_enable(
-# 265 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                      1
-# 265 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                          ))
-    {
-        printf("[BLE] Restart adv fail. \r\n");
-    }
-    else
-    {
-        printf("[BLE] Restart adv success. \r\n");
-    }
-
-    return 0;
-}
-
-int ble_salve_adv()
-{
-    int err = -1;
-    err = bt_le_adv_start((&(struct bt_le_adv_param) { .options = (BT_LE_ADV_OPT_CONNECTABLE), .interval_min = (0x00a0), .interval_max = (0x00f0), }), salve_adv, ((unsigned long) (((int) sizeof(char[1 - 2 * !(!__builtin_types_compatible_p(__typeof__(salve_adv), __typeof__(&(salve_adv)[0])))]) - 1) + (sizeof(salve_adv) / sizeof((salve_adv)[0])))), 
-# 280 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                                                                           ((void *)0)
-# 280 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                                                                               , 0);
-    if (err)
-    {
-        printf("[BLE] adv fail(err %d) \r\n", err);
-        return -1;
-    }
-
-    return 0;
-}
 
 static void bt_enable_cb(int err)
 {
@@ -9265,356 +8127,29 @@ static void bt_enable_cb(int err)
         bt_addr.a.val[2] = 0x88;
         bt_addr.a.val[1] = 0x88;
         bt_addr.a.val[0] = 0x88;
-        printf("BD_ADDR:(MSB)%02x:%02x:%02x:%02x:%02x:%02x(LSB) \r\n",
+        printf(">>>MAC: %02x:%02x:%02x:%02x:%02x:%02x \r\n",
                bt_addr.a.val[5], bt_addr.a.val[4], bt_addr.a.val[3], bt_addr.a.val[2], bt_addr.a.val[1], bt_addr.a.val[0]);
     }
 }
 
-void ble_reverse_byte(uint8_t *arr, uint32_t size)
-{
-    uint8_t i, tmp;
 
-    for (i = 0; i < size / 2; i++)
-    {
-        tmp = arr[i];
-        arr[i] = arr[size - 1 - i];
-        arr[size - 1 - i] = tmp;
-    }
-}
-
-int ble_uuid1_notify_data(void *handle, void *data, uint16_t length)
-{
-    int ret;
-    uint16_t mtu;
-    uint16_t offset;
-    uint16_t send_len;
-
-    offset = 0;
-    mtu = bt_gatt_get_mtu(handle) - 3;
-    while (length > 0)
-    {
-
-        send_len = length > mtu ? mtu : length;
-
-        ret = bt_gatt_notify(handle, &salve_uuid1_server[2], data + offset, send_len);
-
-        offset += send_len;
-        length -= send_len;
-
-        printf("[BLE] notify len:%d \r\n", send_len);
-
-        if (ret != 0)
-        {
-            break;
-        }
-    }
-
-    return ret;
-}
-
-int ble_uuid2_notify_data(void *handle, void *data, uint16_t length)
-{
-    int ret;
-    uint16_t mtu;
-    uint16_t offset;
-    uint16_t send_len;
-
-    offset = 0;
-    mtu = bt_gatt_get_mtu(handle) - 3;
-    while (length > 0)
-    {
-
-        send_len = length > mtu ? mtu : length;
-
-        ret = bt_gatt_notify(handle, &salve_uuid2_server[2], data + offset, send_len);
-
-        offset += send_len;
-        length -= send_len;
-
-        printf("[BLE] notify len:%d \r\n", send_len);
-
-        if (ret != 0)
-        {
-            break;
-        }
-    }
-
-    return ret;
-}
-# 389 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-int UUID1_SendNotify(uint16_t len, uint8_t *data)
-{
-    int ret;
-    struct bt_conn *conn;
-
-    conn = ble_get_conn_cur();
-    if (conn == 
-# 395 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-               ((void *)0)
-# 395 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                   )
-    {
-        return -1;
-    }
-
-    ret = ble_uuid1_notify_data(conn, (void *)data, len);
-    if (ret != 0)
-    {
-        return -4;
-    }
-
-    return len;
-}
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-int UUID2_SendNotify(uint16_t len, uint8_t *data)
-{
-    int ret;
-    struct bt_conn *conn;
-
-    conn = ble_get_conn_cur();
-    if (conn == 
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-               ((void *)0)
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                   )
-    {
-        return -1;
-    }
-
-    ret = ble_uuid2_notify_data(conn, (void *)data, len);
-    if (ret != 0)
-    {
-        return -4;
-    }
-
-    return len;
-}
-
-static void exchange_func(struct bt_conn *conn, u8_t err,
-                          struct bt_gatt_exchange_params *params)
-{
-    if (conn)
-    {
-        printf("[BLE] Exchange %s MTU Size =%d \r\n", err == 0U ? "successful" : "failed", bt_gatt_get_mtu(conn));
-    }
-}
-
-static struct bt_gatt_exchange_params exchange_params;
-
-uint8_t BleSetMtu()
-{
-    int ret = -1;
-    if (conn_cur == 
-# 453 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                   ((void *)0)
-# 453 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                       )
-    {
-        return 1;
-    }
-
-    exchange_params.func = exchange_func;
-    ret = bt_gatt_exchange_mtu(conn_cur, &exchange_params);
-    if (ret != 0)
-    {
-        return 1;
-    }
-
-    return 0;
-}
-
-int ble_slave_init()
-{
-
-    ble_regist_conn(ble_salve_conn_cb);
-    ble_regist_disconn(ble_salve_disconn_cb);
-
-    ble_server_init();
-    ble_salve_adv();
-
-    return 0;
-}
-
-int ble_slave_deinit(void)
-{
-
-    bt_le_adv_stop();
-    ble_regist_conn(
-# 484 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                   ((void *)0)
-# 484 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                       );
-    ble_regist_disconn(
-# 485 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                      ((void *)0)
-# 485 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                          );
-
-    return 0;
-}
-
-int ble_server_init()
-{
-    int ret = 0;
-
-    ret = bt_gatt_service_register(&ble_uuid1_server);
-    ret |= bt_gatt_service_register(&ble_uuid2_server);
-
-    return ret;
-}
-
-int ble_server_deinit(void)
-{
-    int ret = 0;
-
-    ret = bt_gatt_service_unregister(&ble_uuid1_server);
-    ret |= bt_gatt_service_unregister(&ble_uuid2_server);
-
-    return ret;
-}
-
-void ble_stack_start(void)
+void ble_stack_init(void)
 {
 
     ble_controller_init(( 32 ) - 1);
 
+
     hci_driver_init();
     bt_enable(bt_enable_cb);
+
 }
 
-
-
-void apps_ble_start()
+void ble_test_adv(void)
 {
-    ble_stack_start();
-    ble_slave_init();
-    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
-    bt_conn_cb_register(&conn_callbacks);
 
-    conn_callbacks._next = 
-# 528 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                          ((void *)0)
-# 528 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                              ;
-}
-
-
-
-void apps_ble_stop()
-{
-    ble_slave_deinit();
-
-    bt_conn_foreach(BT_CONN_TYPE_ALL, ble_disconnect_all, 
-# 537 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                                                         ((void *)0)
-# 537 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                                                             );
-
-    int disconn_cnt = 0;
-    while (le_check_valid_conn() && disconn_cnt++ < 10)
-    {
-        printf("[BLE] wait for ble_disconnect_all\r\n");
-        vTaskDelay(( ( TickType_t ) ( ( ( TickType_t ) ( 500 ) * ( TickType_t ) ( ( TickType_t ) 1000 ) ) / ( TickType_t ) 1000 ) ));
-    }
-    bt_disable();
-}
-
-
-void ble_init(void)
-{
-    ble_server_init();
-}
-
-void ble_start(void)
-{
-    apps_ble_start();
-}
-
-void ble_stop(void)
-{
-    apps_ble_stop();
-}
-
-int ble_send_data(uint16_t len, uint8_t *data)
-{
-    return UUID1_SendNotify(len, data);
-}
-
-
-# 569 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-_Bool 
-# 569 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-    ble_is_connected(void)
-{
-    return (ble_get_conn_cur() != 
-# 571 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
-                                 ((void *)0)
-# 571 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-                                     );
-}
-
-
-void ble_process_command(uint8_t *data, uint16_t len)
-{
-    if (len < 1) return;
-
-    uint8_t cmd = data[0];
-    uint8_t response[2];
-
-    response[0] = cmd;
-    response[1] = 0x00;
-
-    printf("[BLE] Processing command: 0x%02X\r\n", cmd);
-
-    switch (cmd) {
-        case 0x01:
-            printf("[BLE] LED ON command\r\n");
-            led_handle_action(LED_EVENT_ON);
-            break;
-
-        case 0x02:
-            printf("[BLE] LED OFF command\r\n");
-            led_handle_action(LED_EVENT_OFF);
-            break;
-
-        case 0x03:
-            printf("[BLE] LED TOGGLE command\r\n");
-            led_toggle();
-            break;
-
-        case 0x04:
-            printf("[BLE] RELAY ON command\r\n");
-            relay_handle_event(RELAY_EVENT_ON);
-            break;
-
-        case 0x05:
-            printf("[BLE] RELAY OFF command\r\n");
-            relay_handle_event(RELAY_EVENT_OFF);
-            break;
-
-        case 0x06:
-            printf("[BLE] RELAY TOGGLE command\r\n");
-            relay_toggle();
-            break;
-
-        case 0x07:
-            printf("[BLE] GET STATUS command\r\n");
-            {
-                uint8_t status_data[4];
-                status_data[0] = 0x07;
-                status_data[1] = 0x00;
-                status_data[2] = led_get_state();
-                status_data[3] = relay_get_state();
-                ble_send_data(4, status_data);
-                return;
-            }
-
-        default:
-            printf("[BLE] Unknown command: 0x%02X\r\n", cmd);
-            response[1] = 0xFF;
-            break;
+    if (ble_adv_start() == 0) {
+        printf(">>> Device name: %s\r\n", "HNN_intern");
+        ble_conn_init();
     }
 
-
-    ble_send_data(2, response);
 }

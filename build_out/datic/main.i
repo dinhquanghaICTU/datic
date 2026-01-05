@@ -1890,41 +1890,20 @@ void relay_handle_event(relay_event_t event);
 
 
 
-typedef struct
-{
-    const char *device_name;
-    uint16_t adv_interval_min;
-    uint16_t adv_interval_max;
-    uint16_t service_uuid;
-    int8_t tx_power;
-}ble_adv_param_t;
 
-
-
-typedef int (*ble_gatt_conn_cb_t)(struct bt_conn *conn, uint8_t code);
-
-void ble_reverse_byte(uint8_t *arr, uint32_t size);
-int ble_server_init();
-int ble_server_deinit(void);
-void ble_stack_start(void);
-int ble_uuid1_notify_data(void *handle, void *data, uint16_t length);
-int ble_uuid2_notify_data(void *handle, void *data, uint16_t length);
-
-
-struct bt_conn *ble_get_conn_cur(void);
-int ble_regist_conn(ble_gatt_conn_cb_t cb);
-int ble_regist_disconn(ble_gatt_conn_cb_t cb);
-int ble_slave_init();
-int ble_slave_deinit(void);
-int UUID1_SendNotify(uint16_t len, uint8_t *data);
-int UUID2_SendNotify(uint16_t len, uint8_t *data);
-int ble_slave_init();
-int ble_slave_deinit(void);
-int ble_salve_adv();
-void apps_ble_stop();
-void apps_ble_start();
-uint8_t BleSetMtu();
+int ble_adv_start(void);
+int ble_adv_stop(void);
 # 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 1
+
+
+
+
+void ble_stack_init(void);
+
+
+void ble_test_adv(void);
+# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
 
 
 
@@ -1951,13 +1930,16 @@ int main(void)
     led_state_init();
     relay_state_init();
 
-    ble_start();
 
     printf("DATiC BLE Device Started\r\n");
     printf("LED and Relay control via BLE enabled\r\n");
 
     printf(">>> check init \r\n");
-    ble_slave_init();
+
+    ble_stack_init();
+    ble_test_adv();
+
+
 
     while (1)
     {

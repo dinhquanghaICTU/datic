@@ -6,6 +6,7 @@
 #include "led_state_machine.h"
 #include "relay_state_machine.h"
 #include "ble_adv.h"
+#include "ble_interface.h"
 
 
 
@@ -37,7 +38,11 @@ int main(void)
     printf("LED and Relay control via BLE enabled\r\n");
 
     printf(">>> check init \r\n");
-    ble_slave_init();
+    // ble_slave_init();
+    ble_stack_init();
+    ble_test_adv();
+    // ble_adv_stop();
+
 
     while (1)
     {

@@ -1,26 +1,41 @@
-#
-# "main" pseudo-component makefile.
-#
-# (Uses default behaviour of compiling all source files in directory, adding 'include' to include path.)
 
-include $(BL60X_SDK_PATH)/components/network/ble/ble_common.mk
+COMPONENT_SRCS += ble_adv.c
+COMPONENT_SRCS += ble_interface.c
+COMPONENT_SRCS += ble_conn.c
 
-ifeq ($(CONFIG_ENABLE_PSM_RAM),1)
-CPPFLAGS += -DCONF_USER_ENABLE_PSRAM
-endif
 
-ifeq ($(CONFIG_ENABLE_CAMERA),1)
-CPPFLAGS += -DCONF_USER_ENABLE_CAMERA
-endif
+COMPONENT_ADD_INCLUDEDIRS += .
+COMPONENT_ADD_INCLUDEDIRS += ../../../components/network/ble/blestack/src/include
+COMPONENT_ADD_INCLUDEDIRS += ../../../components/network/ble/blestack/src/common/include
+COMPONENT_ADD_INCLUDEDIRS += ../../../components/network/ble/blestack/src/host
+COMPONENT_ADD_INCLUDEDIRS += ../../../components/network/ble/blestack/src/include/drivers
+COMPONENT_ADD_INCLUDEDIRS += ../../../components/platform/soc/bl702/bl702_std/MCU_Common/device
+COMPONENT_PRIV_INCLUDEDIRS +=
 
-ifeq ($(CONFIG_ENABLE_BLSYNC),1)
-CPPFLAGS += -DCONF_USER_ENABLE_BLSYNC
-endif
+## Component dependencies
+COMPONENT_DEPENDS += blestack
 
-ifeq ($(CONFIG_ENABLE_VFS_SPI),1)
-CPPFLAGS += -DCONF_USER_ENABLE_VFS_SPI
-endif
+## BLE Configuration defines needed for blestack headers
 
-ifeq ($(CONFIG_ENABLE_VFS_ROMFS),1)
-CPPFLAGS += -DCONF_USER_ENABLE_VFS_ROMFS
-endif
+
+# chu config cai nakhi khoi tao stack
+CPPFLAGS += -DCONFIG_NET_BUF_USER_DATA_SIZE=4
+CPPFLAGS += -DCONFIG_BT_ID_MAX=1
+CPPFLAGS += -DCONFIG_BT_MAX_PAIRED=0
+CPPFLAGS += -DCONFIG_BT_GATT_CCC_MAX=1
+CPPFLAGS += -DCONFIG_BT_CONN=1
+CPPFLAGS += -DCONFIG_BT=1
+CPPFLAGS += -DCONFIG_BT_CENTRAL=1
+CPPFLAGS += -DCONFIG_BT_OBSERVER=1
+CPPFLAGS += -DCONFIG_BT_PERIPHERAL=1
+CPPFLAGS += -DBFLB_BLE
+
+
+#conn can co cai nay chu y 
+CPPFLAGS += -DCFG_CON=1
+
+
+
+
+
+#chu y them dependent
