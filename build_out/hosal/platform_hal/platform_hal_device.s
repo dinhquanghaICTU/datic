@@ -11743,6 +11743,8 @@ platform_hal_device_init:
 	.string	"configMIN(a,b) ( ( ( a ) < ( b ) ) ? ( a ) : ( b ) )"
 .LASF609:
 	.string	"__unlocks(...) __lock_annotate(unlock_function(__VA_ARGS__))"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767608700"
 .LASF1354:
 	.string	"tracePEND_FUNC_CALL_FROM_ISR(xFunctionToPend,pvParameter1,ulParameter2,ret) "
 .LASF107:
@@ -12063,8 +12065,6 @@ platform_hal_device_init:
 	.string	"__min_size(x) (x)"
 .LASF807:
 	.string	"__u_int_defined "
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767599924"
 .LASF1443:
 	.string	"listSECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE "
 .LASF1490:

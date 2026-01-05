@@ -159,33 +159,37 @@ ble_test_adv:
 .LFB71:
 	.loc 1 53 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 55 5
+	.loc 1 54 8
 	.loc 1 53 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
-	sw	s0,8(sp)
 	sw	ra,12(sp)
-	.cfi_offset 8, -8
+	sw	s0,8(sp)
 	.cfi_offset 1, -4
+	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 55 9
-	call	ble_adv_start
+	.loc 1 54 8
+	call	ble_stack_init
 .LVL9:
-	.loc 1 55 8
+	.loc 1 57 5 is_stmt 1
+	.loc 1 57 9 is_stmt 0
+	call	ble_adv_start
+.LVL10:
+	.loc 1 57 8
 	bne	a0,zero,.L9
-	.loc 1 56 9 is_stmt 1
+	.loc 1 58 9 is_stmt 1
 	lui	a1,%hi(.LC1)
 	lui	a0,%hi(.LC2)
 	addi	a1,a1,%lo(.LC1)
 	addi	a0,a0,%lo(.LC2)
 	call	printf
-.LVL10:
-	.loc 1 57 9
-	call	ble_conn_init
 .LVL11:
-	.loc 1 58 9
-	.loc 1 61 1 is_stmt 0
+	.loc 1 59 9
+	call	ble_conn_init
+.LVL12:
+	.loc 1 60 9
+	.loc 1 63 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -194,12 +198,12 @@ ble_test_adv:
 	.cfi_restore 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 58 9
+	.loc 1 60 9
 	tail	ble_wifi_init
-.LVL12:
+.LVL13:
 .L9:
 	.cfi_restore_state
-	.loc 1 61 1
+	.loc 1 63 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -225,7 +229,7 @@ ble_test_adv:
 	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x298
+	.4byte	0x2a1
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -354,14 +358,17 @@ ble_test_adv:
 	.4byte	.LFE71-.LFB71
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x138
+	.4byte	0x141
 	.byte	0xb
 	.4byte	.LVL9
-	.4byte	0x23a
-	.byte	0xc
+	.4byte	0x141
+	.byte	0xb
 	.4byte	.LVL10
-	.4byte	0x246
-	.4byte	0x125
+	.4byte	0x243
+	.byte	0xc
+	.4byte	.LVL11
+	.4byte	0x24f
+	.4byte	0x12e
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -376,11 +383,11 @@ ble_test_adv:
 	.4byte	.LC1
 	.byte	0
 	.byte	0xb
-	.4byte	.LVL11
-	.4byte	0x252
-	.byte	0xe
 	.4byte	.LVL12
-	.4byte	0x25e
+	.4byte	0x25b
+	.byte	0xe
+	.4byte	.LVL13
+	.4byte	0x267
 	.byte	0
 	.byte	0xa
 	.4byte	.LASF16
@@ -391,11 +398,11 @@ ble_test_adv:
 	.4byte	.LFE70-.LFB70
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x17e
+	.4byte	0x187
 	.byte	0xc
 	.4byte	.LVL6
-	.4byte	0x26a
-	.4byte	0x161
+	.4byte	0x273
+	.4byte	0x16a
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -404,10 +411,10 @@ ble_test_adv:
 	.byte	0
 	.byte	0xb
 	.4byte	.LVL7
-	.4byte	0x276
+	.4byte	0x27f
 	.byte	0xf
 	.4byte	.LVL8
-	.4byte	0x282
+	.4byte	0x28b
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -422,7 +429,7 @@ ble_test_adv:
 	.byte	0x17
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x1a6
+	.4byte	0x1af
 	.byte	0x11
 	.string	"err"
 	.byte	0x1
@@ -439,37 +446,37 @@ ble_test_adv:
 	.byte	0
 	.byte	0
 	.byte	0x14
-	.4byte	0x17e
+	.4byte	0x187
 	.4byte	.LFB69
 	.4byte	.LFE69-.LFB69
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x23a
+	.4byte	0x243
 	.byte	0x15
-	.4byte	0x18b
+	.4byte	0x194
 	.4byte	.LLST0
 	.byte	0x16
-	.4byte	0x17e
+	.4byte	0x187
 	.4byte	.LBB6
 	.4byte	.Ldebug_ranges0+0
 	.byte	0x1
 	.byte	0x17
 	.byte	0xd
 	.byte	0x15
-	.4byte	0x18b
+	.4byte	0x194
 	.4byte	.LLST1
 	.byte	0x17
-	.4byte	0x197
+	.4byte	0x1a0
 	.4byte	.Ldebug_ranges0+0x18
 	.byte	0x18
-	.4byte	0x198
+	.4byte	0x1a1
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0xc
 	.4byte	.LVL3
-	.4byte	0x28e
-	.4byte	0x200
+	.4byte	0x297
+	.4byte	0x209
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a
@@ -479,7 +486,7 @@ ble_test_adv:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL4
-	.4byte	0x246
+	.4byte	0x24f
 	.byte	0xd
 	.byte	0x1
 	.byte	0x5a

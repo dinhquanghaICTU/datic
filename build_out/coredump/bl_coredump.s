@@ -1757,7 +1757,7 @@ bl_coredump_run:
 	.type	_$coredump_binary_id$_, @object
 	.size	_$coredump_binary_id$_, 4
 _$coredump_binary_id$_:
-	.word	1767599923
+	.word	1767608699
 	.section	.rodata.dump_handler_list,"a"
 	.align	2
 	.set	.LANCHOR0,. + 0

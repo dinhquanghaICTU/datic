@@ -50,7 +50,9 @@ void ble_stack_init(void)
 }
 
 void ble_test_adv(void)
-{
+{   
+       ble_stack_init();
+    // ble_test_adv();
     
     if (ble_adv_start() == 0) {
         printf(">>> Device name: %s\r\n", BLE_DEVICE_NAME);

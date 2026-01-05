@@ -64,6 +64,8 @@ INCLUDE_COMPONENTS += hardware/relay
 INCLUDE_COMPONENTS += middle/state_machine/led_state
 INCLUDE_COMPONENTS += middle/state_machine/relay_state
 INCLUDE_COMPONENTS += middle/ble
+INCLUDE_COMPONENTS += hardware/button
+INCLUDE_COMPONENTS += third_party/lib_button
 ifeq ($(CONFIG_BT),1)
 INCLUDE_COMPONENTS += $(COMPONENTS_BLE)
 ifeq ($(CONFIG_BT_MESH),1)

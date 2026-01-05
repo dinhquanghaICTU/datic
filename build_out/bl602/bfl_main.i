@@ -10263,7 +10263,7 @@ static void _dump_boot_info(void)
     puts("Jan  5 2026");
     puts("\r\n");
     puts("Build Time: ");
-    puts("14:58:41");
+    puts("17:24:57");
     puts("\r\n");
 }
 

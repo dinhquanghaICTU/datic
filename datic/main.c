@@ -7,6 +7,8 @@
 #include "relay_state_machine.h"
 #include "ble_adv.h"
 #include "ble_interface.h"
+#include "button.h"  
+#include "led.h"     
 
 
 
@@ -25,6 +27,21 @@ hosal_uart_dev_t uart_dev_log = {
     },
 };
 
+void button_event_handler(int button_id, app_btn_event_t event) {
+    printf("Button %d event received: %d\r\n", button_id, event);
+
+    if (event == APP_BTN_EVT_PRESSED) {
+
+        printf(">>> PRESS: Toggle LED\r\n");
+        led_toggle();
+    }
+    else if (event == APP_BTN_EVT_HOLD) {
+        printf(">>> HOLD: Enter BLE mode\r\n");
+
+        ble_test_adv();
+    }
+}
+
 int main(void)
 {
     bl_sys_init();
@@ -34,14 +51,20 @@ int main(void)
     relay_state_init();
 
 
+    button_driver_init();
+
+
+    button_register_callback(APP_BTN_EVT_PRESSED, button_event_handler);
+    button_register_callback(APP_BTN_EVT_HOLD, button_event_handler);
+
     printf("DATiC BLE Device Started\r\n");
     printf("LED and Relay control via BLE enabled\r\n");
 
     printf(">>> check init \r\n");
-    // ble_slave_init();
-    ble_stack_init();
-    ble_test_adv();
-    // ble_adv_stop();
+
+    // ble_stack_init();
+    // ble_test_adv();
+
 
 
     while (1)

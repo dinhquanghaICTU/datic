@@ -1904,6 +1904,104 @@ void ble_stack_init(void);
 
 void ble_test_adv(void);
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/button/button.h" 1
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/lib_button/app_btn.h" 1
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/common/hardware.h" 1
+# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/lib_button/app_btn.h" 2
+# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/lib_button/app_btn.h"
+typedef enum
+{
+    APP_BTN_EVT_PRESSED = 0,
+    APP_BTN_EVT_RELEASED,
+    APP_BTN_EVT_HOLD,
+    APP_BTN_EVT_HOLD_LONG,
+    APP_BTN_EVT_DOUBLE_CLICK,
+    APP_BTN_EVT_TRIPLE_CLICK,
+    APP_BTN_EVT_IDLE,
+    APP_BTN_EVT_IDLE_BREAK,
+    APP_BTN_EVT_MAX
+} app_btn_event_t;
+
+typedef struct
+{
+    uint32_t pin;
+    uint8_t last_state;
+    uint32_t idle_level;
+    uint8_t debounce_val;
+    uint8_t debounce_counter;
+} app_btn_hw_config_t;
+
+typedef uint32_t (*app_btn_get_tick_cb)(void);
+typedef void (*app_btn_initialize_cb)(uint32_t btn_num);
+typedef uint32_t (*app_btn_get_level_cb)(uint32_t btn_num);
+
+typedef struct
+{
+    app_btn_hw_config_t *config;
+    uint8_t btn_count;
+    app_btn_get_tick_cb get_tick_cb;
+    app_btn_initialize_cb btn_initialize;
+    app_btn_get_level_cb btn_read;
+} app_btn_config_t;
+
+
+typedef void (*app_btn_evt_handler_t)(int, int, void *);
+
+
+
+
+
+
+void app_btn_initialize(app_btn_config_t *config);
+
+
+
+
+
+void app_btn_scan(void *params);
+
+
+
+
+
+
+
+void app_btn_register_callback(app_btn_event_t event, app_btn_evt_handler_t cb, void *data);
+
+
+
+
+void app_btn_reset_state(void);
+# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/button/button.h" 2
+
+
+typedef void (*button_callback_t)(int button_id, app_btn_event_t event);
+
+void button_driver_init(void);
+void button_register_callback(app_btn_event_t event, button_callback_t callback);
+
+void button_gpio_init(uint32_t pin);
+uint32_t button_read_level(uint32_t pin);
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.h" 1
+
+
+
+
+void led_init(void);
+void led_on(void);
+void led_off(void);
+void led_toggle(void);
+void led_blink(int times, int delay_ms);
+int led_get_state(void);
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
 
 
 
@@ -1922,6 +2020,22 @@ hosal_uart_dev_t uart_dev_log = {
     },
 };
 
+
+void button_event_handler(int button_id, app_btn_event_t event) {
+    printf("Button %d event received: %d\r\n", button_id, event);
+
+    if (event == APP_BTN_EVT_PRESSED) {
+
+        printf(">>> PRESS: Toggle LED\r\n");
+        led_toggle();
+    }
+    else if (event == APP_BTN_EVT_HOLD) {
+        printf(">>> HOLD: Enter BLE mode\r\n");
+
+        ble_test_adv();
+    }
+}
+
 int main(void)
 {
     bl_sys_init();
@@ -1931,13 +2045,19 @@ int main(void)
     relay_state_init();
 
 
+    button_driver_init();
+
+
+    button_register_callback(APP_BTN_EVT_PRESSED, button_event_handler);
+    button_register_callback(APP_BTN_EVT_HOLD, button_event_handler);
+
     printf("DATiC BLE Device Started\r\n");
     printf("LED and Relay control via BLE enabled\r\n");
 
     printf(">>> check init \r\n");
 
-    ble_stack_init();
-    ble_test_adv();
+
+
 
 
 
