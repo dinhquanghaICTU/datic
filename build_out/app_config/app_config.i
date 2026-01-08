@@ -76,21 +76,16 @@ typedef long long unsigned int uintmax_t;
 # 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 2
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
 
-
-
-
-
-
-
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
 typedef struct {
     char ssid[32 + 1];
     char password[64 + 1];
     
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 3 4
    _Bool 
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
         is_valid;
 } wifi_config_t;
 
@@ -99,10 +94,22 @@ int app_config_load_wifi(wifi_config_t *config);
 int app_config_save_wifi(const char *ssid, const char *password);
 int app_config_clear_wifi(void);
 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 3 4
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 3 4
 _Bool 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
     app_config_has_wifi(void);
+
+
+int app_config_save_relay_settings(uint8_t default_state, 
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 3 4
+                                                         _Bool 
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
+                                                              lock_button);
+int app_config_load_relay_settings(uint8_t *default_state, 
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h" 3 4
+                                                          _Bool 
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
+                                                               *lock_button);
 # 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
 # 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
@@ -1573,6 +1580,313 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
 
 
 # 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
+# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+
+
+typedef struct
+{
+  int quot;
+  int rem;
+} div_t;
+
+typedef struct
+{
+  long quot;
+  long rem;
+} ldiv_t;
+
+
+typedef struct
+{
+  long long int quot;
+  long long int rem;
+} lldiv_t;
+
+
+
+
+typedef int (*__compar_fn_t) (const void *, const void *);
+
+
+
+
+
+
+
+int __locale_mb_cur_max (void);
+
+
+
+void abort (void) __attribute__ ((__noreturn__));
+int abs (int);
+
+__uint32_t arc4random (void);
+__uint32_t arc4random_uniform (__uint32_t);
+void arc4random_buf (void *, size_t);
+
+int atexit (void (*__func)(void));
+double atof (const char *__nptr);
+
+float atoff (const char *__nptr);
+
+int atoi (const char *__nptr);
+int _atoi_r (struct _reent *, const char *__nptr);
+long atol (const char *__nptr);
+long _atol_r (struct _reent *, const char *__nptr);
+void * bsearch (const void *__key,
+         const void *__base,
+         size_t __nmemb,
+         size_t __size,
+         __compar_fn_t _compar);
+void *calloc(size_t, size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__))
+      __attribute__((__alloc_size__(1, 2))) ;
+div_t div (int __numer, int __denom);
+void exit (int __status) __attribute__ ((__noreturn__));
+void free (void *) ;
+char * getenv (const char *__string);
+char * _getenv_r (struct _reent *, const char *__string);
+
+char * secure_getenv (const char *__string);
+
+char * _findenv (const char *, int *);
+char * _findenv_r (struct _reent *, const char *, int *);
+
+extern char *suboptarg;
+int getsubopt (char **, char * const *, char **);
+
+long labs (long);
+ldiv_t ldiv (long __numer, long __denom);
+void *malloc(size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(1))) ;
+int mblen (const char *, size_t);
+int _mblen_r (struct _reent *, const char *, size_t, _mbstate_t *);
+int mbtowc (wchar_t *restrict, const char *restrict, size_t);
+int _mbtowc_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
+int wctomb (char *, wchar_t);
+int _wctomb_r (struct _reent *, char *, wchar_t, _mbstate_t *);
+size_t mbstowcs (wchar_t *restrict, const char *restrict, size_t);
+size_t _mbstowcs_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
+size_t wcstombs (char *restrict, const wchar_t *restrict, size_t);
+size_t _wcstombs_r (struct _reent *, char *restrict, const wchar_t *restrict, size_t, _mbstate_t *);
+
+
+char * mkdtemp (char *);
+
+
+int mkostemp (char *, int);
+int mkostemps (char *, int, int);
+
+
+int mkstemp (char *);
+
+
+int mkstemps (char *, int);
+
+
+char * mktemp (char *) __attribute__ ((__deprecated__("the use of `mktemp' is dangerous; use `mkstemp' instead")));
+
+
+char * _mkdtemp_r (struct _reent *, char *);
+int _mkostemp_r (struct _reent *, char *, int);
+int _mkostemps_r (struct _reent *, char *, int, int);
+int _mkstemp_r (struct _reent *, char *);
+int _mkstemps_r (struct _reent *, char *, int);
+char * _mktemp_r (struct _reent *, char *) __attribute__ ((__deprecated__("the use of `mktemp' is dangerous; use `mkstemp' instead")));
+void qsort (void *__base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+int rand (void);
+void *realloc(void *, size_t) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(2))) ;
+
+void *reallocarray(void *, size_t, size_t) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(2, 3)));
+void *reallocf(void *, size_t) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(2)));
+
+
+char * realpath (const char *restrict path, char *restrict resolved_path);
+
+
+int rpmatch (const char *response);
+
+
+void setkey (const char *__key);
+
+void srand (unsigned __seed);
+double strtod (const char *restrict __n, char **restrict __end_PTR);
+double _strtod_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR);
+
+float strtof (const char *restrict __n, char **restrict __end_PTR);
+
+
+
+
+
+
+
+long strtol (const char *restrict __n, char **restrict __end_PTR, int __base);
+long _strtol_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
+unsigned long strtoul (const char *restrict __n, char **restrict __end_PTR, int __base);
+unsigned long _strtoul_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+double strtod_l (const char *restrict, char **restrict, locale_t);
+float strtof_l (const char *restrict, char **restrict, locale_t);
+
+extern long double strtold_l (const char *restrict, char **restrict,
+         locale_t);
+
+long strtol_l (const char *restrict, char **restrict, int, locale_t);
+unsigned long strtoul_l (const char *restrict, char **restrict, int,
+    locale_t __loc);
+long long strtoll_l (const char *restrict, char **restrict, int, locale_t);
+unsigned long long strtoull_l (const char *restrict, char **restrict, int,
+          locale_t __loc);
+
+
+int system (const char *__string);
+
+
+long a64l (const char *__input);
+char * l64a (long __input);
+char * _l64a_r (struct _reent *,long __input);
+
+
+int on_exit (void (*__func)(int, void *),void *__arg);
+
+
+void _Exit (int __status) __attribute__ ((__noreturn__));
+
+
+int putenv (char *__string);
+
+int _putenv_r (struct _reent *, char *__string);
+void * _reallocf_r (struct _reent *, void *, size_t);
+
+int setenv (const char *__string, const char *__value, int __overwrite);
+
+int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
+# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+char * __itoa (int, char *, int);
+char * __utoa (unsigned, char *, int);
+
+char * itoa (int, char *, int);
+char * utoa (unsigned, char *, int);
+
+
+int rand_r (unsigned *__seed);
+
+
+
+double drand48 (void);
+double _drand48_r (struct _reent *);
+double erand48 (unsigned short [3]);
+double _erand48_r (struct _reent *, unsigned short [3]);
+long jrand48 (unsigned short [3]);
+long _jrand48_r (struct _reent *, unsigned short [3]);
+void lcong48 (unsigned short [7]);
+void _lcong48_r (struct _reent *, unsigned short [7]);
+long lrand48 (void);
+long _lrand48_r (struct _reent *);
+long mrand48 (void);
+long _mrand48_r (struct _reent *);
+long nrand48 (unsigned short [3]);
+long _nrand48_r (struct _reent *, unsigned short [3]);
+unsigned short *
+       seed48 (unsigned short [3]);
+unsigned short *
+       _seed48_r (struct _reent *, unsigned short [3]);
+void srand48 (long);
+void _srand48_r (struct _reent *, long);
+
+
+char * initstate (unsigned, char *, size_t);
+long random (void);
+char * setstate (char *);
+void srandom (unsigned);
+
+
+long long atoll (const char *__nptr);
+
+long long _atoll_r (struct _reent *, const char *__nptr);
+
+long long llabs (long long);
+lldiv_t lldiv (long long __numer, long long __denom);
+long long strtoll (const char *restrict __n, char **restrict __end_PTR, int __base);
+
+long long _strtoll_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
+
+unsigned long long strtoull (const char *restrict __n, char **restrict __end_PTR, int __base);
+
+unsigned long long _strtoull_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+
+void cfree (void *);
+
+
+int unsetenv (const char *__string);
+
+int _unsetenv_r (struct _reent *, const char *__string);
+
+
+
+int posix_memalign (void **, size_t, size_t) __attribute__((__nonnull__ (1)))
+     __attribute__((__warn_unused_result__));
+
+
+char * _dtoa_r (struct _reent *, double, int, int, int *, int*, char**);
+
+void * _malloc_r (struct _reent *, size_t) ;
+void * _calloc_r (struct _reent *, size_t, size_t) ;
+void _free_r (struct _reent *, void *) ;
+void * _realloc_r (struct _reent *, void *, size_t) ;
+void _mstats_r (struct _reent *, char *);
+
+int _system_r (struct _reent *, const char *);
+
+void __eprintf (const char *, const char *, unsigned int, const char *);
+
+
+
+
+
+
+void qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
+# 322 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+extern long double _strtold_r (struct _reent *, const char *restrict, char **restrict);
+
+extern long double strtold (const char *restrict, char **restrict);
+
+
+
+
+
+
+
+void * aligned_alloc(size_t, size_t) __attribute__((__malloc__)) __attribute__((__alloc_align__(1)))
+     __attribute__((__alloc_size__(2))) __attribute__((__warn_unused_result__));
+int at_quick_exit(void (*)(void));
+__attribute__((__noreturn__)) void
+ quick_exit(int);
+
+
+
+# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 1
 # 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
@@ -1695,7 +2009,7 @@ void ef_log_info(const char *format, ...);
 void ef_print(const char *format, ...);
 
 int easyflash_cli_init(void);
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 2
+# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 2
 
 int app_config_init(void)
 {
@@ -1708,9 +2022,9 @@ int app_config_load_wifi(wifi_config_t *config)
     size_t len;
 
     if (config == 
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                  ((void *)0)
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                      ) {
         return -1;
     }
@@ -1718,9 +2032,9 @@ int app_config_load_wifi(wifi_config_t *config)
     memset(config, 0, sizeof(wifi_config_t));
 
     len = ef_get_env_blob("wifi_ssid", config->ssid, 32, 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                           ((void *)0)
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                               );
     if (len > 0 && len <= 32) {
         config->ssid[len] = '\0';
@@ -1729,16 +2043,16 @@ int app_config_load_wifi(wifi_config_t *config)
     }
 
     len = ef_get_env_blob("wifi_pass", config->password, 64, 
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                       ((void *)0)
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                           );
     if (len > 0 && len <= 64) {
         config->password[len] = '\0';
         config->is_valid = 
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                           1
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                               ;
         return 0;
     }
@@ -1749,13 +2063,13 @@ int app_config_load_wifi(wifi_config_t *config)
 int app_config_save_wifi(const char *ssid, const char *password)
 {
     if (ssid == 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                ((void *)0) 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                     || password == 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                    ((void *)0)
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                        ) {
         return -1;
     }
@@ -1780,9 +2094,9 @@ int app_config_clear_wifi(void)
 }
 
 
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
 _Bool 
-# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
     app_config_has_wifi(void)
 {
     size_t len_ssid, len_pass;
@@ -1790,17 +2104,93 @@ _Bool
     char password[64 + 1];
 
     len_ssid = ef_get_env_blob("wifi_ssid", ssid, 32, 
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                        ((void *)0)
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                            );
     len_pass = ef_get_env_blob("wifi_pass", password, 64, 
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                    ((void *)0)
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                        );
 
 
     return (len_ssid > 0 && len_ssid <= 32 &&
             len_pass > 0 && len_pass <= 64);
+}
+
+int app_config_save_relay_settings(uint8_t default_state, 
+# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                                                         _Bool 
+# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                                                              lock_button)
+{
+    char state_str[4];
+    char lock_str[4];
+
+    snprintf(state_str, sizeof(state_str), "%d", default_state);
+    snprintf(lock_str, sizeof(lock_str), "%d", lock_button ? 1 : 0);
+
+    ef_set_env("relay_def", state_str);
+    ef_set_env("relay_lock", lock_str);
+    ef_save_env();
+
+    printf("[APP_CONFIG] Saved relay settings: defaultState=%d, lockButton=%d\r\n", default_state, lock_button);
+    return 0;
+}
+
+int app_config_load_relay_settings(uint8_t *default_state, 
+# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                                                          _Bool 
+# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                                                               *lock_button)
+{
+    char state_str[4];
+    char lock_str[4];
+    size_t len;
+
+    if (default_state == 
+# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                        ((void *)0) 
+# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                             || lock_button == 
+# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                                               ((void *)0)
+# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                                                   ) {
+        return -1;
+    }
+
+
+    len = ef_get_env_blob("relay_def", state_str, sizeof(state_str) - 1, 
+# 106 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                                                                                          ((void *)0)
+# 106 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                                                                                              );
+    if (len > 0 && len < sizeof(state_str)) {
+        state_str[len] = '\0';
+        *default_state = (uint8_t)atoi(state_str);
+    } else {
+        *default_state = 0;
+    }
+
+
+    len = ef_get_env_blob("relay_lock", lock_str, sizeof(lock_str) - 1, 
+# 115 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                                                                                      ((void *)0)
+# 115 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                                                                                          );
+    if (len > 0 && len < sizeof(lock_str)) {
+        lock_str[len] = '\0';
+        *lock_button = (atoi(lock_str) != 0);
+    } else {
+        *lock_button = 
+# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+                      0
+# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+                           ;
+    }
+
+    printf("[APP_CONFIG] Loaded relay settings: defaultState=%d, lockButton=%d\r\n", *default_state, *lock_button);
+    return 0;
 }

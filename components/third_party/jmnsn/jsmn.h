@@ -25,7 +25,7 @@
 #define JSMN_H
 
 #include <stddef.h>
-#include "tl_common.h"
+/* #include "tl_common.h" */ /* Commented out - not needed for this project */
 
 #ifdef __cplusplus
 extern "C" {

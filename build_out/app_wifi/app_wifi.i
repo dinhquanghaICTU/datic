@@ -77,16 +77,16 @@ typedef long long unsigned int uintmax_t;
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/app_wifi.h" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 1
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
 
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
 typedef struct {
     char ssid[32 + 1];
     char password[64 + 1];
     
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 3 4
    _Bool 
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
         is_valid;
 } wifi_config_t;
 
@@ -95,10 +95,22 @@ int app_config_load_wifi(wifi_config_t *config);
 int app_config_save_wifi(const char *ssid, const char *password);
 int app_config_clear_wifi(void);
 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 3 4
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 3 4
 _Bool 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
     app_config_has_wifi(void);
+
+
+int app_config_save_relay_settings(uint8_t default_state, 
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 3 4
+                                                         _Bool 
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
+                                                              lock_button);
+int app_config_load_relay_settings(uint8_t *default_state, 
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h" 3 4
+                                                          _Bool 
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/../app_config/app_config.h"
+                                                               *lock_button);
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_wifi/app_wifi.h" 2
 
 typedef void (*app_wifi_connected_cb_t)(void);

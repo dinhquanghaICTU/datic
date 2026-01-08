@@ -21,6 +21,7 @@ app_api.o: \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_ble/app_ble.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_task/app_task.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/app_callback.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/../app_event/app_event.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../../hardware/led/led.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../../hardware/relay/relay.h
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.h:
@@ -44,6 +45,7 @@ app_api.o: \
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_ble/app_ble.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_task/app_task.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/app_callback.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/../app_event/app_event.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../../hardware/led/led.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../../hardware/relay/relay.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/./app_api.c:

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiFi Config via BLE</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .status {
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .status.disconnected {
+            background: #fee;
+            color: #c33;
+        }
+
+        .status.connected {
+            background: #efe;
+            color: #3c3;
+        }
+
+        .status.scanning {
+            background: #eef;
+            color: #33c;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover:not(:disabled) {
+            background: #e0e0e0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .device-list {
+            max-height: 200px;
+            overflow-y: auto;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .device-list.show {
+            display: block;
+        }
+
+        .device-item {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .device-item:hover {
+            background: #f5f5f5;
+        }
+
+        .device-item:last-child {
+            border-bottom: none;
+        }
+
+        .device-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .device-id {
+            font-size: 12px;
+            color: #999;
+            margin-top: 4px;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 15px;
+            display: none;
+        }
+
+        .success.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔌 WiFi Configuration</h1>
+        <p class="subtitle">Configure your device via Bluetooth</p>
+
+        <div id="browserCheck" style="display: none; background: #fff3cd; color: #856404; padding: 12px; border-radius: 8px; margin-bottom: 20px; font-size: 13px; line-height: 1.6;">
+            <strong>⚠️ Lưu ý:</strong> Web Bluetooth chỉ hoạt động trên Chrome/Edge và phải chạy trên HTTPS hoặc localhost.
+        </div>
+
+        <div id="status" class="status disconnected">Disconnected</div>
+
+        <button id="scanBtn" class="btn btn-primary">
+            Scan for Devices
+        </button>
+
+        <div id="deviceList" class="device-list"></div>
+
+        <form id="wifiForm" style="display: none;">
+            <div class="form-group">
+                <label for="ssid">WiFi SSID</label>
+                <input type="text" id="ssid" placeholder="Enter WiFi network name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">WiFi Password</label>
+                <input type="password" id="password" placeholder="Enter WiFi password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="sendBtn">
+                Send Configuration
+            </button>
+        </form>
+
+        <button id="disconnectBtn" class="btn btn-secondary" style="display: none;">
+            Disconnect
+        </button>
+
+        <div id="success" class="success"></div>
+    </div>
+
+    <script>
+        const WIFI_CONFIG_SERVICE_UUID = '55535343-fe7d-4ae5-8fa9-9fafd205e455';
+        const WIFI_CONFIG_CHAR_SSID_UUID = '49535343-8841-43f4-a8d4-ecbe34729bb3';
+        const WIFI_CONFIG_CHAR_PASS_UUID = '49535343-1e4d-4bd9-ba61-23c647249616';
+
+        let device = null;
+        let server = null;
+        let ssidCharacteristic = null;
+        let passwordCharacteristic = null;
+
+        const statusDiv = document.getElementById('status');
+        const scanBtn = document.getElementById('scanBtn');
+        const deviceList = document.getElementById('deviceList');
+        const wifiForm = document.getElementById('wifiForm');
+        const disconnectBtn = document.getElementById('disconnectBtn');
+        const successDiv = document.getElementById('success');
+
+        function updateStatus(text, className) {
+            statusDiv.textContent = text;
+            statusDiv.className = `status ${className}`;
+        }
+
+        function showSuccess(message) {
+            successDiv.textContent = message;
+            successDiv.classList.add('show');
+            setTimeout(() => {
+                successDiv.classList.remove('show');
+            }, 5000);
+        }
+
+        function checkWebBluetoothSupport() {
+            if (!navigator.bluetooth) {
+                const errorMsg = `
+Web Bluetooth không được hỗ trợ trong browser này!
+
+Yêu cầu:
+1. Sử dụng Chrome (từ version 56+) hoặc Edge (từ version 79+)
+2. Phải chạy trên HTTPS hoặc localhost (không phải HTTP thông thường)
+3. Trên mobile: Chrome Android hoặc Edge Android
+
+Nếu đang dùng Chrome/Edge:
+- Đảm bảo đang chạy trên https:// hoặc http://localhost
+- Kiểm tra chrome://flags/#enable-experimental-web-platform-features (phải bật)
+                `;
+                alert(errorMsg);
+                updateStatus('Web Bluetooth không được hỗ trợ', 'disconnected');
+                return false;
+            }
+            return true;
+        }
+
+        async function scanForDevices() {
+            if (!checkWebBluetoothSupport()) {
+                return;
+            }
+
+            updateStatus('Scanning for devices...', 'scanning');
+            scanBtn.disabled = true;
+            scanBtn.innerHTML = 'Scanning<span class="loading"></span>';
+
+            try {
+                // Try to find device with service UUID first
+                // If not found, allow user to select from all devices
+                device = await navigator.bluetooth.requestDevice({
+                    acceptAllDevices: true,
+                    optionalServices: [WIFI_CONFIG_SERVICE_UUID]
+                });
+
+                device.addEventListener('gattserverdisconnected', onDisconnected);
+
+                updateStatus('Connecting...', 'scanning');
+                await connectToDevice();
+            } catch (error) {
+                if (error.name === 'NotFoundError') {
+                    updateStatus('Không tìm thấy device. Đảm bảo device đang advertise BLE', 'disconnected');
+                } else if (error.name === 'SecurityError') {
+                    alert('Lỗi bảo mật: Phải chạy trên HTTPS hoặc localhost');
+                    updateStatus('Lỗi bảo mật', 'disconnected');
+                } else {
+                    console.error('Error:', error);
+                    alert('Lỗi: ' + error.message + '\n\nChi tiết: ' + error.name);
+                    updateStatus('Lỗi kết nối', 'disconnected');
+                }
+                scanBtn.disabled = false;
+                scanBtn.textContent = 'Scan for Devices';
+            }
+        }
+
+        async function connectToDevice() {
+            try {
+                server = await device.gatt.connect();
+                updateStatus(`Connected: ${device.name || 'Unknown'}`, 'connected');
+
+                const service = await server.getPrimaryService(WIFI_CONFIG_SERVICE_UUID);
+                ssidCharacteristic = await service.getCharacteristic(WIFI_CONFIG_CHAR_SSID_UUID);
+                passwordCharacteristic = await service.getCharacteristic(WIFI_CONFIG_CHAR_PASS_UUID);
+
+                scanBtn.style.display = 'none';
+                wifiForm.style.display = 'block';
+                disconnectBtn.style.display = 'block';
+            } catch (error) {
+                console.error('Connection error:', error);
+                alert('Failed to connect: ' + error.message);
+                updateStatus('Disconnected', 'disconnected');
+                scanBtn.disabled = false;
+                scanBtn.textContent = 'Scan for Devices';
+            }
+        }
+
+        function onDisconnected() {
+            updateStatus('Disconnected', 'disconnected');
+            scanBtn.style.display = 'block';
+            scanBtn.disabled = false;
+            scanBtn.textContent = 'Scan for Devices';
+            wifiForm.style.display = 'none';
+            disconnectBtn.style.display = 'none';
+            device = null;
+            server = null;
+            ssidCharacteristic = null;
+            passwordCharacteristic = null;
+        }
+
+        async function sendConfiguration() {
+            const ssid = document.getElementById('ssid').value.trim();
+            const password = document.getElementById('password').value.trim();
+
+            if (!ssid || !password) {
+                alert('Please enter both SSID and password');
+                return;
+            }
+
+            if (!ssidCharacteristic || !passwordCharacteristic) {
+                alert('Not connected to device');
+                return;
+            }
+
+            const sendBtn = document.getElementById('sendBtn');
+            sendBtn.disabled = true;
+            sendBtn.textContent = 'Sending...';
+
+            try {
+                const ssidEncoder = new TextEncoder();
+                const passwordEncoder = new TextEncoder();
+
+                const ssidData = ssidEncoder.encode(ssid);
+                const passwordData = passwordEncoder.encode(password);
+
+                await ssidCharacteristic.writeValue(ssidData);
+                await passwordCharacteristic.writeValue(passwordData);
+
+                showSuccess('✅ Configuration sent successfully!');
+                document.getElementById('ssid').value = '';
+                document.getElementById('password').value = '';
+            } catch (error) {
+                console.error('Send error:', error);
+                alert('Failed to send configuration: ' + error.message);
+            } finally {
+                sendBtn.disabled = false;
+                sendBtn.textContent = 'Send Configuration';
+            }
+        }
+
+        async function disconnect() {
+            if (device && device.gatt.connected) {
+                device.gatt.disconnect();
+            }
+        }
+
+        // Check browser support on page load
+        window.addEventListener('load', () => {
+            if (!navigator.bluetooth) {
+                document.getElementById('browserCheck').style.display = 'block';
+                scanBtn.disabled = true;
+                scanBtn.textContent = 'Web Bluetooth không được hỗ trợ';
+            } else {
+                // Check if running on HTTPS or localhost
+                const isSecure = window.location.protocol === 'https:' || 
+                                window.location.hostname === 'localhost' || 
+                                window.location.hostname === '127.0.0.1';
+                if (!isSecure) {
+                    document.getElementById('browserCheck').style.display = 'block';
+                    document.getElementById('browserCheck').innerHTML = 
+                        '<strong>⚠️ Cảnh báo:</strong> Web Bluetooth yêu cầu HTTPS hoặc localhost. ' +
+                        'Hiện tại đang chạy trên: ' + window.location.protocol + '//' + window.location.hostname;
+                }
+            }
+        });
+
+        scanBtn.addEventListener('click', scanForDevices);
+        disconnectBtn.addEventListener('click', disconnect);
+        wifiForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            sendConfiguration();
+        });
+    </script>
+</body>
+</html>

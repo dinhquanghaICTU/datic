@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT Relay Control</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .status-connected {
+            background: #4caf50;
+            color: white;
+        }
+
+        .status-disconnected {
+            background: #f44336;
+            color: white;
+        }
+
+        .config-panel {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .config-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        input, select {
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-success {
+            background: #4caf50;
+            color: white;
+        }
+
+        .btn-danger {
+            background: #f44336;
+            color: white;
+        }
+
+        .btn-secondary {
+            background: #757575;
+            color: white;
+        }
+
+        .btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .main-control {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .relay-switch {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 30px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .relay-switch.disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .switch-circle {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .switch-circle.on {
+            background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+        }
+
+        .switch-circle.off {
+            background: linear-gradient(135deg, #757575 0%, #616161 100%);
+        }
+
+        .switch-circle:hover:not(.disabled) {
+            transform: scale(1.05);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .feature-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 30px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 30px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 22px;
+            width: 22px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: #667eea;
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(30px);
+        }
+
+        .log-panel {
+            background: #1e1e1e;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            max-height: 400px;
+            overflow-y: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+        }
+
+        .log-entry {
+            padding: 5px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .log-entry:last-child {
+            border-bottom: none;
+        }
+
+        .log-time {
+            color: #888;
+            margin-right: 10px;
+        }
+
+        .log-direction {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .log-down {
+            color: #4caf50;
+        }
+
+        .log-up {
+            color: #2196f3;
+        }
+
+        .log-message {
+            color: #fff;
+        }
+
+        .timer-display {
+            font-size: 32px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .timer-active {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: none;
+        }
+
+        .alert.show {
+            display: block;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                🔌 MQTT Relay Control
+                <span id="connectionStatus" class="status-badge status-disconnected">Disconnected</span>
+            </h1>
+            <p style="color: #666; margin-top: 10px;">Điều khiển relay qua MQTT</p>
+        </div>
+
+        <div id="alert" class="alert"></div>
+
+        <div class="config-panel">
+            <h3 style="margin-bottom: 15px; color: #333;">MQTT Configuration</h3>
+            <div class="config-row">
+                <div class="form-group">
+                    <label>MQTT Broker</label>
+                    <input type="text" id="mqttBroker" value="ws://localhost:9001" placeholder="ws://broker:port">
+                </div>
+                <div class="form-group">
+                    <label>Client ID</label>
+                    <input type="text" id="clientId" value="web_client_" placeholder="web_client_">
+                </div>
+                <div class="form-group">
+                    <label>Device Topic Prefix</label>
+                    <input type="text" id="topicPrefix" value="device/relay01" placeholder="device/relay01">
+                </div>
+            </div>
+            <button id="connectBtn" class="btn btn-primary">Connect</button>
+            <button id="disconnectBtn" class="btn btn-secondary" style="display: none;">Disconnect</button>
+        </div>
+
+        <div class="main-control">
+            <div id="relaySwitch" class="relay-switch">
+                <div id="switchCircle" class="switch-circle off">
+                    <div>
+                        <div style="font-size: 48px;">⚡</div>
+                        <div id="relayStateText">OFF</div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <button id="toggleBtn" class="btn btn-primary" disabled>Toggle Relay</button>
+            </div>
+        </div>
+
+        <div class="features-grid">
+            <div class="feature-card">
+                <h3>⏰ Hẹn giờ</h3>
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label>Thời gian (giây)</label>
+                    <input type="number" id="timerSeconds" value="60" min="1">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <button id="timerOnBtn" class="btn btn-success" style="width: 100%; margin-bottom: 10px;" disabled>Hẹn giờ BẬT</button>
+                    <button id="timerOffBtn" class="btn btn-danger" style="width: 100%;" disabled>Hẹn giờ TẮT</button>
+                </div>
+                <div id="timerDisplay" class="timer-display" style="display: none;">
+                    <div id="timerValue">00:00</div>
+                    <button id="cancelTimerBtn" class="btn btn-secondary" style="margin-top: 10px; width: 100%;">Hủy hẹn giờ</button>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔄 Bật/Tắt liên tục</h3>
+                <div style="margin-bottom: 15px;">
+                    <label>Khoảng thời gian (giây)</label>
+                    <input type="number" id="autoToggleInterval" value="5" min="1" style="margin-top: 5px;">
+                </div>
+                <button id="autoToggleBtn" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;" disabled>Bắt đầu</button>
+                <button id="stopAutoToggleBtn" class="btn btn-danger" style="width: 100%; display: none;">Dừng</button>
+                <div id="autoToggleStatus" style="color: #666; font-size: 14px; margin-top: 10px;"></div>
+            </div>
+
+            <div class="feature-card">
+                <h3>⚙️ Cài đặt</h3>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Default State (khi cấp điện)</span>
+                        <select id="defaultState" style="width: 100px;">
+                            <option value="OFF">OFF</option>
+                            <option value="ON">ON</option>
+                        </select>
+                    </label>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Khóa nút nhấn cứng</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="lockButton">
+                            <span class="slider"></span>
+                        </label>
+                    </label>
+                </div>
+                <button id="saveSettingsBtn" class="btn btn-primary" style="width: 100%;" disabled>Lưu cài đặt</button>
+            </div>
+        </div>
+
+        <div class="feature-card">
+            <h3>📋 Log trạng thái</h3>
+            <button id="clearLogBtn" class="btn btn-secondary" style="margin-bottom: 15px;">Xóa log</button>
+            <div id="logPanel" class="log-panel"></div>
+        </div>
+    </div>
+
+    <script>
+        // MQTT Configuration
+        let mqttClient = null;
+        let isConnected = false;
+        let relayState = 'OFF';
+        let timerInterval = null;
+        let autoToggleInterval = null;
+        let timerEndTime = null;
+        let timerAction = null; // Lưu action của timer để biết cần tắt gì khi hết giờ
+
+        // Topics
+        const TOPICS = {
+            command: '/command',
+            state: '/state',
+            settings: '/settings',
+            timer: '/timer',
+            autoToggle: '/auto_toggle',
+            lockButton: '/lock_button'
+        };
+
+        function getTopic(suffix) {
+            const prefix = document.getElementById('topicPrefix').value || 'device/relay01';
+            return prefix + suffix;
+        }
+
+        function showAlert(message, type = 'success') {
+            const alert = document.getElementById('alert');
+            alert.textContent = message;
+            alert.className = `alert alert-${type} show`;
+            setTimeout(() => {
+                alert.classList.remove('show');
+            }, 3000);
+        }
+
+        function addLog(direction, message) {
+            const logPanel = document.getElementById('logPanel');
+            const time = new Date().toLocaleTimeString();
+            const entry = document.createElement('div');
+            entry.className = 'log-entry';
+            entry.innerHTML = `
+                <span class="log-time">[${time}]</span>
+                <span class="log-direction log-${direction}">${direction === 'down' ? '⬇️' : '⬆️'}</span>
+                <span class="log-message">${message}</span>
+            `;
+            logPanel.insertBefore(entry, logPanel.firstChild);
+            
+            // Giới hạn số lượng log
+            while (logPanel.children.length > 100) {
+                logPanel.removeChild(logPanel.lastChild);
+            }
+        }
+
+        function updateConnectionStatus(connected) {
+            isConnected = connected;
+            const statusBadge = document.getElementById('connectionStatus');
+            const connectBtn = document.getElementById('connectBtn');
+            const disconnectBtn = document.getElementById('disconnectBtn');
+            
+            if (connected) {
+                statusBadge.textContent = 'Connected';
+                statusBadge.className = 'status-badge status-connected';
+                connectBtn.style.display = 'none';
+                disconnectBtn.style.display = 'inline-block';
+                enableControls();
+            } else {
+                statusBadge.textContent = 'Disconnected';
+                statusBadge.className = 'status-badge status-disconnected';
+                connectBtn.style.display = 'inline-block';
+                disconnectBtn.style.display = 'none';
+                disableControls();
+            }
+        }
+
+        function enableControls() {
+            document.getElementById('toggleBtn').disabled = false;
+            document.getElementById('timerOnBtn').disabled = false;
+            document.getElementById('timerOffBtn').disabled = false;
+            document.getElementById('autoToggleBtn').disabled = false;
+            document.getElementById('saveSettingsBtn').disabled = false;
+            document.getElementById('relaySwitch').classList.remove('disabled');
+        }
+
+        function disableControls() {
+            document.getElementById('toggleBtn').disabled = true;
+            document.getElementById('timerOnBtn').disabled = true;
+            document.getElementById('timerOffBtn').disabled = true;
+            document.getElementById('autoToggleBtn').disabled = true;
+            document.getElementById('saveSettingsBtn').disabled = true;
+            document.getElementById('relaySwitch').classList.add('disabled');
+        }
+
+        function updateRelayState(state) {
+            relayState = state;
+            const switchCircle = document.getElementById('switchCircle');
+            const stateText = document.getElementById('relayStateText');
+            
+            if (state === 'ON') {
+                switchCircle.className = 'switch-circle on';
+                stateText.textContent = 'ON';
+            } else {
+                switchCircle.className = 'switch-circle off';
+                stateText.textContent = 'OFF';
+            }
+        }
+
+        function connectMQTT() {
+            const broker = document.getElementById('mqttBroker').value;
+            const clientId = document.getElementById('clientId').value + Date.now();
+            
+            if (!broker) {
+                showAlert('Vui lòng nhập MQTT Broker!', 'error');
+                return;
+            }
+
+            try {
+                mqttClient = mqtt.connect(broker, {
+                    clientId: clientId,
+                    clean: true,
+                    reconnectPeriod: 1000
+                });
+
+                mqttClient.on('connect', () => {
+                    updateConnectionStatus(true);
+                    showAlert('Đã kết nối MQTT!', 'success');
+                    addLog('down', 'Connected to MQTT broker');
+                    
+                    // Subscribe to state topic
+                    const stateTopic = getTopic(TOPICS.state);
+                    mqttClient.subscribe(stateTopic, (err) => {
+                        if (!err) {
+                            addLog('down', `Subscribed to ${stateTopic}`);
+                        }
+                    });
+                });
+
+                mqttClient.on('message', (topic, message) => {
+                    const msg = message.toString();
+                    addLog('up', `${topic}: ${msg}`);
+                    
+                    // Parser JSON giống bên thiết bị để render UI hợp lý
+                    if (topic.endsWith(TOPICS.state)) {
+                        let parsed = null;
+                        try {
+                            parsed = JSON.parse(msg);
+                        } catch (e) {
+                            parsed = null;
+                        }
+
+                        if (parsed && typeof parsed === 'object') {
+                            // Ưu tiên field state trong JSON
+                            if (parsed.state) {
+                                updateRelayState(parsed.state.toUpperCase());
+                            }
+                            // Nếu kèm theo defaultState và lockButton thì sync luôn UI cài đặt
+                            if (parsed.defaultState) {
+                                const sel = document.getElementById('defaultState');
+                                if (sel) sel.value = parsed.defaultState.toUpperCase() === 'ON' ? 'ON' : 'OFF';
+                            }
+                            if (typeof parsed.lockButton === 'boolean') {
+                                const cb = document.getElementById('lockButton');
+                                if (cb) cb.checked = parsed.lockButton;
+                            }
+                        } else {
+                            // Trường hợp payload chỉ là 'ON' / 'OFF' dạng text đơn giản
+                            updateRelayState(msg.trim().toUpperCase());
+                        }
+                    }
+                });
+
+                mqttClient.on('error', (error) => {
+                    showAlert('MQTT Error: ' + error.message, 'error');
+                    addLog('down', `Error: ${error.message}`);
+                });
+
+                mqttClient.on('close', () => {
+                    updateConnectionStatus(false);
+                    showAlert('Đã ngắt kết nối MQTT', 'error');
+                    addLog('down', 'Disconnected from MQTT broker');
+                    // Dừng các timer khi disconnect
+                    if (timerInterval) {
+                        clearInterval(timerInterval);
+                        timerInterval = null;
+                    }
+                    if (autoToggleInterval) {
+                        clearInterval(autoToggleInterval);
+                        autoToggleInterval = null;
+                    }
+                });
+
+            } catch (error) {
+                showAlert('Lỗi kết nối: ' + error.message, 'error');
+            }
+        }
+
+        function disconnectMQTT() {
+            if (mqttClient) {
+                mqttClient.end();
+                mqttClient = null;
+            }
+            // Dừng các timer/interval khi disconnect
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            if (autoToggleInterval) {
+                clearInterval(autoToggleInterval);
+                autoToggleInterval = null;
+            }
+            cancelTimer();
+            stopAutoToggle();
+        }
+
+        function sendCommand(command, data = {}) {
+            if (!mqttClient || !isConnected) {
+                showAlert('Chưa kết nối MQTT!', 'error');
+                return;
+            }
+
+            const topic = getTopic(TOPICS.command);
+            const payload = JSON.stringify({ command, ...data });
+            mqttClient.publish(topic, payload);
+            addLog('down', `${topic}: ${payload}`);
+        }
+
+        function toggleRelay() {
+            sendCommand('TOGGLE');
+        }
+
+        function setRelay(state) {
+            sendCommand('SET', { state });
+        }
+
+        function startTimer(action, seconds) {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+            }
+
+            timerAction = action; // Lưu action
+            timerEndTime = Date.now() + (seconds * 1000);
+            const timerDisplay = document.getElementById('timerDisplay');
+            timerDisplay.style.display = 'block';
+
+            // Gửi lệnh SET ngay lập tức
+            setRelay(action);
+            addLog('down', `Timer started: ${action} for ${seconds}s`);
+
+            // Đếm ngược và khi hết giờ thì tắt
+            timerInterval = setInterval(() => {
+                const remaining = Math.max(0, Math.floor((timerEndTime - Date.now()) / 1000));
+                const minutes = Math.floor(remaining / 60);
+                const secs = remaining % 60;
+                document.getElementById('timerValue').textContent = 
+                    `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+                
+                if (remaining === 0) {
+                    // Hết giờ, gửi lệnh đảo ngược
+                    const reverseAction = (action === 'ON') ? 'OFF' : 'ON';
+                    setRelay(reverseAction);
+                    addLog('down', `Timer expired: ${reverseAction}`);
+                    cancelTimer();
+                }
+            }, 1000);
+        }
+
+        function cancelTimer() {
+            if (timerInterval) {
+                clearInterval(timerInterval);
+                timerInterval = null;
+            }
+            timerAction = null;
+            document.getElementById('timerDisplay').style.display = 'none';
+            addLog('down', 'Timer cancelled');
+            // Không cần gửi lệnh, chỉ cần dừng timer ở web
+        }
+
+        function startAutoToggle() {
+            const interval = parseInt(document.getElementById('autoToggleInterval').value) || 5;
+            
+            // Bắt đầu toggle ngay
+            toggleRelay();
+            addLog('down', `Auto toggle started: every ${interval}s`);
+            
+            document.getElementById('autoToggleBtn').style.display = 'none';
+            document.getElementById('stopAutoToggleBtn').style.display = 'block';
+            document.getElementById('autoToggleStatus').textContent = `Đang bật/tắt mỗi ${interval}s`;
+            
+            // Tự động toggle mỗi interval giây
+            autoToggleInterval = setInterval(() => {
+                toggleRelay();
+            }, interval * 1000);
+        }
+
+        function stopAutoToggle() {
+            if (autoToggleInterval) {
+                clearInterval(autoToggleInterval);
+                autoToggleInterval = null;
+            }
+            document.getElementById('autoToggleBtn').style.display = 'block';
+            document.getElementById('stopAutoToggleBtn').style.display = 'none';
+            document.getElementById('autoToggleStatus').textContent = '';
+            addLog('down', 'Auto toggle stopped');
+            // Không cần gửi lệnh, chỉ cần dừng interval ở web
+        }
+
+        function saveSettings() {
+            const defaultState = document.getElementById('defaultState').value;
+            const lockButton = document.getElementById('lockButton').checked;
+            
+            sendCommand('SETTINGS', {
+                defaultState,
+                lockButton
+            });
+            
+            showAlert('Đã lưu cài đặt!', 'success');
+        }
+
+        // Event Listeners
+        document.getElementById('connectBtn').addEventListener('click', connectMQTT);
+        document.getElementById('disconnectBtn').addEventListener('click', disconnectMQTT);
+        document.getElementById('toggleBtn').addEventListener('click', toggleRelay);
+        document.getElementById('relaySwitch').addEventListener('click', () => {
+            if (isConnected && !document.getElementById('relaySwitch').classList.contains('disabled')) {
+                toggleRelay();
+            }
+        });
+
+        document.getElementById('timerOnBtn').addEventListener('click', () => {
+            const seconds = parseInt(document.getElementById('timerSeconds').value) || 60;
+            startTimer('ON', seconds);
+        });
+
+        document.getElementById('timerOffBtn').addEventListener('click', () => {
+            const seconds = parseInt(document.getElementById('timerSeconds').value) || 60;
+            startTimer('OFF', seconds);
+        });
+
+        document.getElementById('cancelTimerBtn').addEventListener('click', cancelTimer);
+
+        document.getElementById('autoToggleBtn').addEventListener('click', startAutoToggle);
+        document.getElementById('stopAutoToggleBtn').addEventListener('click', stopAutoToggle);
+
+        document.getElementById('saveSettingsBtn').addEventListener('click', saveSettings);
+        document.getElementById('clearLogBtn').addEventListener('click', () => {
+            document.getElementById('logPanel').innerHTML = '';
+        });
+    </script>
+</body>
+</html>

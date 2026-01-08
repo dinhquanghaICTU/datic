@@ -9,6 +9,7 @@
 #include "../app_state/app_state.h"
 #include "../app_event/app_event.h"
 #include "../app_config/app_config.h"
+#include "../app_mqtt/app_mqtt.h"
 #include "../../hardware/led/led.h"
 #include "../../hardware/relay/relay.h"
 #include "../../third_party/lib_button/app_btn.h"
@@ -22,9 +23,7 @@ static TaskHandle_t g_task_button_handle = NULL;
 static TaskHandle_t g_task_led_handle = NULL;
 static TaskHandle_t g_task_wifi_handle = NULL;
 static TaskHandle_t g_task_main_handle = NULL;
-
 static bool g_led_blink_enable = false;
-
 uint8_t g_btn_filter_cnt = MIN_BTN_FILTER_CNT;
 
 static uint32_t app_get_tick_ms(void)
@@ -43,7 +42,6 @@ void app_task_init(void)
 void app_task_button(void *params)
 {
     (void)params;
-    
     app_btn_hw_config_t btn_config[1] = {0};
     app_btn_config_t btn_cfg = {0};
     
@@ -75,9 +73,7 @@ void app_task_button(void *params)
 void app_task_led(void *params)
 {
     (void)params;
-    
     led_init();
-    
     while (1) {
         if (app_wifi_is_connected()) {
             led_on();
@@ -92,18 +88,32 @@ void app_task_led(void *params)
 void app_task_wifi(void *params)
 {
     (void)params;
-    
     app_wifi_task(params);
 }
 
 void app_task_main(void *params)
 {
     (void)params;
-    
     wifi_config_t wifi_cfg;
     app_event_t event = {0};
     
     app_state_init();
+    app_mqtt_init();
+    
+    {
+        extern int app_config_load_relay_settings(uint8_t *default_state, bool *lock_button);
+        extern void app_callback_update_lock_button(bool locked);
+        uint8_t default_state = 0;
+        bool lock_button = false;
+        if (app_config_load_relay_settings(&default_state, &lock_button) == 0) {
+            if (default_state) {
+                relay_on();
+            } else {
+                relay_off();
+            }
+            app_callback_update_lock_button(lock_button);
+        }
+    }
     
     event.type = APP_EVENT_NONE;
     app_state_process_event(&event);
@@ -132,38 +142,93 @@ void app_task_main(void *params)
             app_state_process_event(&event);
         }
     }
+    
     while (1) {
+        extern app_event_t g_event_queue[10];
+        extern int g_event_queue_head;
+        extern int g_event_queue_tail;
+
+        if (g_event_queue_head != g_event_queue_tail) {
+            event = g_event_queue[g_event_queue_head];
+            g_event_queue_head = (g_event_queue_head + 1) % 10;
+        } else {
+            event.type = APP_EVENT_NONE;
+            event.data = NULL;
+        }
+
         app_state_t current_state = app_state_get_current();
+        
+        if (event.type == APP_EVENT_MQTT_TOGGLE) {
+            relay_toggle();
+            if (app_mqtt_is_connected()) {
+                uint8_t relay_state = relay_get_state();
+                app_mqtt_publish_state(relay_state ? "ON" : "OFF");
+            }
+            event.type = APP_EVENT_NONE;
+        } else if (event.type == APP_EVENT_MQTT_SET_ON) {
+            relay_on();
+            if (app_mqtt_is_connected()) {
+                app_mqtt_publish_state("ON");
+            }
+            event.type = APP_EVENT_NONE;
+        } else if (event.type == APP_EVENT_MQTT_SET_OFF) {
+            relay_off();
+            if (app_mqtt_is_connected()) {
+                app_mqtt_publish_state("OFF");
+            }
+            event.type = APP_EVENT_NONE;
+        } else if (event.type == APP_EVENT_RELAY_STATE_CHANGED) {
+            if (app_mqtt_is_connected()) {
+                uint8_t relay_state = relay_get_state();
+                app_mqtt_publish_state(relay_state ? "ON" : "OFF");
+            }
+            event.type = APP_EVENT_NONE;
+        }
         
         switch (current_state) {
             case APP_STATE_CHECK_FLASH:
                 break;
-                
             case APP_STATE_BLE_CONFIG:
                 if (!app_ble_is_running()) {
                     aos_msleep(200);
                     app_ble_start();
                 }
                 break;
-                
             case APP_STATE_WIFI_CONNECTING:
                 if (app_ble_is_running()) {
                     app_ble_stop();
                 }
                 break;
-                
             case APP_STATE_WIFI_CONNECTED:
                 if (app_ble_is_running()) {
                     app_ble_stop();
                 }
+                {
+                    static bool mqtt_connect_attempted = false;
+                    static uint32_t mqtt_last_attempt = 0;
+                    uint32_t now = aos_now_ms();
+                    
+                    if (!app_mqtt_is_connected() && !mqtt_connect_attempted) {
+                        const char *mqtt_broker = "172.20.10.3";
+                        app_mqtt_start(mqtt_broker, 1883, NULL);
+                        mqtt_connect_attempted = true;
+                        mqtt_last_attempt = now;
+                    } else if (!app_mqtt_is_connected() && mqtt_connect_attempted) {
+                        if (now - mqtt_last_attempt > 10000) {
+                            const char *mqtt_broker = "172.20.10.3";
+                            app_mqtt_start(mqtt_broker, 1883, NULL);
+                            mqtt_last_attempt = now;
+                        }
+                    } else if (app_mqtt_is_connected()) {
+                        mqtt_connect_attempted = false;
+                    }
+                }
                 break;
-                
             case APP_STATE_WIFI_FAILED:
                 if (app_ble_is_running()) {
                     app_ble_stop();
                 }
                 break;
-                
             default:
                 break;
         }

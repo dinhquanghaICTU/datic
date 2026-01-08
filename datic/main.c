@@ -22,27 +22,27 @@ hosal_uart_dev_t uart_dev_log = {
 
 void main(void)
 {
-    // Initialize system
+
     bl_sys_init();
     
-    // Initialize UART for logging
+
     hosal_uart_init(&uart_dev_log);
     
     blog_info("System starting...\r\n");
     
-    // Initialize TCP/IP stack
+
     blog_info("Starting TCP/IP Stack...\r\n");
     tcpip_init(NULL, NULL);
     
-    // Wait a bit for TCP/IP stack to initialize
+
     aos_msleep(100);
     
-    // Run the IoT application
+
     app_run();
     
     blog_info("Main loop started\r\n");
     
-    // Main loop
+
     while (1) {
         aos_msleep(1000);
     }

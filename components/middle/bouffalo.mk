@@ -7,4 +7,4 @@ COMPONENT_ADD_INCLUDEDIRS += .
 COMPONENT_PRIV_INCLUDEDIRS +=
 
 ## Sub-components in the middle layer
-COMPONENT_SUBMODULES := ble event_drivent state_machine
+COMPONENT_SUBMODULES := ble event_drivent state_machine wifi_if mqtt_if mqtt_cmd_parser

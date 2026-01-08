@@ -1,6 +1,7 @@
 #include "app_config.h"
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include <easyflash.h>
 
 int app_config_init(void)
@@ -70,7 +71,50 @@ bool app_config_has_wifi(void)
     len_ssid = ef_get_env_blob(FLASH_KEY_SSID, ssid, WIFI_SSID_MAX_LEN, NULL);
     len_pass = ef_get_env_blob(FLASH_KEY_PASSWORD, password, WIFI_PASSWORD_MAX_LEN, NULL);
     
-    // Both SSID and password must exist and be valid
     return (len_ssid > 0 && len_ssid <= WIFI_SSID_MAX_LEN && 
             len_pass > 0 && len_pass <= WIFI_PASSWORD_MAX_LEN);
+}
+
+int app_config_save_relay_settings(uint8_t default_state, bool lock_button)
+{
+    char state_str[4];
+    char lock_str[4];
+    
+    snprintf(state_str, sizeof(state_str), "%d", default_state);
+    snprintf(lock_str, sizeof(lock_str), "%d", lock_button ? 1 : 0);
+    
+    ef_set_env(FLASH_KEY_RELAY_DEFAULT_STATE, state_str);
+    ef_set_env(FLASH_KEY_RELAY_LOCK_BUTTON, lock_str);
+    ef_save_env();
+    
+    return 0;
+}
+
+int app_config_load_relay_settings(uint8_t *default_state, bool *lock_button)
+{
+    char state_str[4];
+    char lock_str[4];
+    size_t len;
+    
+    if (default_state == NULL || lock_button == NULL) {
+        return -1;
+    }
+    
+    len = ef_get_env_blob(FLASH_KEY_RELAY_DEFAULT_STATE, state_str, sizeof(state_str) - 1, NULL);
+    if (len > 0 && len < sizeof(state_str)) {
+        state_str[len] = '\0';
+        *default_state = (uint8_t)atoi(state_str);
+    } else {
+        *default_state = 0;
+    }
+    
+    len = ef_get_env_blob(FLASH_KEY_RELAY_LOCK_BUTTON, lock_str, sizeof(lock_str) - 1, NULL);
+    if (len > 0 && len < sizeof(lock_str)) {
+        lock_str[len] = '\0';
+        *lock_button = (atoi(lock_str) != 0);
+    } else {
+        *lock_button = false;
+    }
+    
+    return 0;
 }

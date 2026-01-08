@@ -3,119 +3,8 @@
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h" 1
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
-
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
-typedef signed char int8_t;
-
-
-typedef short int int16_t;
-
-
-typedef long int int32_t;
-
-
-typedef long long int int64_t;
-
-
-typedef unsigned char uint8_t;
-
-
-typedef short unsigned int uint16_t;
-
-
-typedef long unsigned int uint32_t;
-
-
-typedef long long unsigned int uint64_t;
-
-
-
-
-typedef signed char int_least8_t;
-typedef short int int_least16_t;
-typedef long int int_least32_t;
-typedef long long int int_least64_t;
-typedef unsigned char uint_least8_t;
-typedef short unsigned int uint_least16_t;
-typedef long unsigned int uint_least32_t;
-typedef long long unsigned int uint_least64_t;
-
-
-
-typedef int int_fast8_t;
-typedef int int_fast16_t;
-typedef int int_fast32_t;
-typedef long long int int_fast64_t;
-typedef unsigned int uint_fast8_t;
-typedef unsigned int uint_fast16_t;
-typedef unsigned int uint_fast32_t;
-typedef long long unsigned int uint_fast64_t;
-
-
-
-
-typedef int intptr_t;
-
-
-typedef unsigned int uintptr_t;
-
-
-
-
-typedef long long int intmax_t;
-typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h" 2
-
-
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
-typedef struct _gpio_ctx_desc {
-    struct _gpio_ctx_desc *next;
-    void (*gpio_handler)(void *);
-    void *arg;
-
-    uint8_t gpioPin;
-    uint8_t intCtrlMod;
-    uint8_t intTrgMod;
-} gpio_ctx_t;
-
-int bl_gpio_enable_output(uint8_t pin, uint8_t pullup, uint8_t pulldown);
-int bl_gpio_enable_input(uint8_t pin, uint8_t pullup, uint8_t pulldown);
-int bl_gpio_output_set(uint8_t pin, uint8_t value);
-int bl_gpio_input_get(uint8_t pin, uint8_t *value);
-int bl_gpio_input_get_value(uint8_t pin);
-int bl_gpio_int_clear(uint8_t gpioPin,uint8_t intClear);
-void bl_gpio_intmask(uint8_t gpiopin, uint8_t mask);
-void bl_set_gpio_intmod(uint8_t gpioPin, uint8_t intCtrlMod, uint8_t intTrgMod);
-void bl_gpio_register(gpio_ctx_t *pstnode);
-# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
-
-
-
-
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef int ptrdiff_t;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef int wchar_t;
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
@@ -132,10 +21,17 @@ typedef int wchar_t;
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
 # 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+
+
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
 # 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+
 # 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
@@ -191,32 +87,36 @@ typedef unsigned int __uintptr_t;
 # 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
 
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef unsigned int size_t;
 # 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef int ptrdiff_t;
+# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef int wchar_t;
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
-typedef __uint8_t u_int8_t;
-
-
-typedef __uint16_t u_int16_t;
-
-
-typedef __uint32_t u_int32_t;
-
-
-typedef __uint64_t u_int64_t;
-
-typedef __intptr_t register_t;
-
-
-
-
-
+typedef __gnuc_va_list va_list;
+# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
 # 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
@@ -225,7 +125,8 @@ typedef unsigned int wint_t;
 # 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -369,7 +270,267 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+
+
+
+
+
+
+typedef unsigned long __ULong;
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+typedef int _LOCK_T;
+typedef int _LOCK_RECURSIVE_T;
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+typedef _LOCK_RECURSIVE_T _flock_t;
+
+
+
+
+
+
+
+struct _reent;
+
+struct __locale_t;
+
+
+
+
+
+
+struct _Bigint
+{
+  struct _Bigint *_next;
+  int _k, _maxwds, _sign, _wds;
+  __ULong _x[1];
+};
+
+
+struct __tm
+{
+  int __tm_sec;
+  int __tm_min;
+  int __tm_hour;
+  int __tm_mday;
+  int __tm_mon;
+  int __tm_year;
+  int __tm_wday;
+  int __tm_yday;
+  int __tm_isdst;
+};
+
+
+
+
+
+
+
+struct _on_exit_args {
+ void * _fnargs[32];
+ void * _dso_handle[32];
+
+ __ULong _fntypes;
+
+
+ __ULong _is_cxa;
+};
+# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+struct _atexit {
+ struct _atexit *_next;
+ int _ind;
+
+ void (*_fns[32])(void);
+        struct _on_exit_args _on_exit_args;
+};
+# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+struct __sbuf {
+ unsigned char *_base;
+ int _size;
+};
+# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+struct __sFILE {
+  unsigned char *_p;
+  int _r;
+  int _w;
+  short _flags;
+  short _file;
+  struct __sbuf _bf;
+  int _lbfsize;
+
+
+
+
+
+
+  void * _cookie;
+
+  _ssize_t (*_read) (struct _reent *, void *,
+        char *, int);
+  _ssize_t (*_write) (struct _reent *, void *,
+         const char *,
+         int);
+  _fpos_t (*_seek) (struct _reent *, void *, _fpos_t, int);
+  int (*_close) (struct _reent *, void *);
+
+
+  struct __sbuf _ub;
+  unsigned char *_up;
+  int _ur;
+
+
+  unsigned char _ubuf[3];
+  unsigned char _nbuf[1];
+
+
+  struct __sbuf _lb;
+
+
+  int _blksize;
+  _off_t _offset;
+
+
+  struct _reent *_data;
+
+
+
+  _flock_t _lock;
+
+  _mbstate_t _mbstate;
+  int _flags2;
+};
+# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+typedef struct __sFILE __FILE;
+
+
+
+struct _glue
+{
+  struct _glue *_next;
+  int _niobs;
+  __FILE *_iobs;
+};
+# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+struct _rand48 {
+  unsigned short _seed[3];
+  unsigned short _mult[3];
+  unsigned short _add;
+
+
+
+
+};
+# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+struct _reent
+{
+  int _errno;
+
+
+
+
+  __FILE *_stdin, *_stdout, *_stderr;
+
+  int _inc;
+  char _emergency[25];
+
+
+  int _unspecified_locale_info;
+  struct __locale_t *_locale;
+
+  int __sdidinit;
+
+  void (*__cleanup) (struct _reent *);
+
+
+  struct _Bigint *_result;
+  int _result_k;
+  struct _Bigint *_p5s;
+  struct _Bigint **_freelist;
+
+
+  int _cvtlen;
+  char *_cvtbuf;
+
+  union
+    {
+      struct
+        {
+          unsigned int _unused_rand;
+          char * _strtok_last;
+          char _asctime_buf[26];
+          struct __tm _localtime_buf;
+          int _gamma_signgam;
+          __extension__ unsigned long long _rand_next;
+          struct _rand48 _r48;
+          _mbstate_t _mblen_state;
+          _mbstate_t _mbtowc_state;
+          _mbstate_t _wctomb_state;
+          char _l64a_buf[8];
+          char _signal_buf[24];
+          int _getdate_err;
+          _mbstate_t _mbrlen_state;
+          _mbstate_t _mbrtowc_state;
+          _mbstate_t _mbsrtowcs_state;
+          _mbstate_t _wcrtomb_state;
+          _mbstate_t _wcsrtombs_state;
+   int _h_errno;
+        } _reent;
+
+
+
+      struct
+        {
+
+          unsigned char * _nextf[30];
+          unsigned int _nmalloc[30];
+        } _unused;
+    } _new;
+
+
+
+  struct _atexit *_atexit;
+  struct _atexit _atexit0;
+
+
+
+  void (**(_sig_func))(int);
+
+
+
+
+  struct _glue __sglue;
+
+  __FILE __sf[3];
+
+};
+# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+extern struct _reent *_impure_ptr ;
+extern struct _reent *const _global_impure_ptr ;
+
+void _reclaim_reent (struct _reent *);
+# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+typedef __uint8_t u_int8_t;
+
+
+typedef __uint16_t u_int16_t;
+
+
+typedef __uint32_t u_int32_t;
+
+
+typedef __uint64_t u_int64_t;
+
+typedef __intptr_t register_t;
+
+
+
+
+
+
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
 # 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
 typedef __int8_t int8_t ;
@@ -710,549 +871,7 @@ typedef struct {
 # 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
 # 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-   typedef struct
-    {
-        void *hdl;
-    } aos_hdl_t;
-
-    typedef aos_hdl_t aos_task_t;
-    typedef aos_hdl_t aos_mutex_t;
-    typedef aos_hdl_t aos_sem_t;
-    typedef aos_hdl_t aos_queue_t;
-    typedef aos_hdl_t aos_timer_t;
-    typedef aos_hdl_t aos_work_t;
-
-    typedef struct
-    {
-        void *hdl;
-        void *stk;
-    } aos_workqueue_t;
-
-    typedef unsigned int aos_task_key_t;
-
-
-
-
-    void aos_reboot(void);
-
-
-
-
-
-
-    int aos_get_hz(void);
-
-
-
-
-
-
-    const char *aos_version_get(void);
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_task_new(const char *name, void (*fn)(void *), void *arg,
-                     int stack_size);
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_task_new_ext(aos_task_t *task, const char *name, void (*fn)(void *),
-                         void *arg, int stack_size, int prio);
-
-
-
-
-
-
-    void aos_task_exit(int code);
-
-
-
-
-
-
-    const char *aos_task_name(void);
-# 113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_task_key_create(aos_task_key_t *key);
-
-
-
-
-
-
-    void aos_task_key_delete(aos_task_key_t key);
-# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_task_setspecific(aos_task_key_t key, void *vp);
-
-
-
-
-
-
-    void *aos_task_getspecific(aos_task_key_t key);
-# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_mutex_new(aos_mutex_t *mutex);
-
-
-
-
-
-
-
-    void aos_mutex_free(aos_mutex_t *mutex);
-# 167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_mutex_lock(aos_mutex_t *mutex, unsigned int timeout);
-# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_mutex_unlock(aos_mutex_t *mutex);
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_mutex_is_valid(aos_mutex_t *mutex);
-# 197 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_sem_new(aos_sem_t *sem, int count);
-
-
-
-
-
-
-
-    void aos_sem_free(aos_sem_t *sem);
-# 216 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_sem_wait(aos_sem_t *sem, unsigned int timeout);
-
-
-
-
-
-
-
-    void aos_sem_signal(aos_sem_t *sem);
-# 233 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_sem_is_valid(aos_sem_t *sem);
-
-
-
-
-
-
-
-    void aos_sem_signal_all(aos_sem_t *sem);
-# 254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_queue_new(aos_queue_t *queue, void *buf, unsigned int size,
-                      int max_msg);
-
-
-
-
-
-
-    void aos_queue_free(aos_queue_t *queue);
-# 273 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_queue_send(aos_queue_t *queue, void *msg, unsigned int size);
-# 285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_queue_recv(aos_queue_t *queue, unsigned int ms, void *msg,
-                       unsigned int *size);
-# 295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_queue_is_valid(aos_queue_t *queue);
-# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    void *aos_queue_buf_ptr(aos_queue_t *queue);
-# 317 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_timer_new(aos_timer_t *timer, void (*fn)(void *, void *), void *arg,
-                      int ms, int repeat);
-# 332 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_timer_new_ext(aos_timer_t *timer, void (*fn)(void *, void *),
-                          void *arg, int ms, int repeat,
-                          unsigned char auto_run);
-
-
-
-
-
-
-    void aos_timer_free(aos_timer_t *timer);
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_timer_start(aos_timer_t *timer);
-# 359 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_timer_stop(aos_timer_t *timer);
-# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_timer_change(aos_timer_t *timer, int ms);
-# 380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_workqueue_create(aos_workqueue_t *workqueue, int pri,
-                             int stack_size);
-# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_work_init(aos_work_t *work, void (*fn)(void *), void *arg, int dly);
-
-
-
-
-
-
-    void aos_work_destroy(aos_work_t *work);
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_work_run(aos_workqueue_t *workqueue, aos_work_t *work);
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_work_sched(aos_work_t *work);
-# 428 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    int aos_work_cancel(aos_work_t *work);
-# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    void *aos_realloc(void *mem, unsigned int size);
-# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    void *aos_malloc(unsigned int size);
-# 457 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    void *aos_calloc(unsigned int nitems, unsigned int size);
-# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    void *aos_zalloc(unsigned int size);
-
-
-
-
-
-
-
-    void aos_alloc_trace(void *addr, size_t allocator);
-
-
-
-
-
-
-    void aos_free(void *mem);
-
-
-
-
-
-
-    long long aos_now(void);
-
-
-
-
-
-
-    long long aos_now_ms(void);
-# 512 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    char *aos_now_time_str(char *buffer, const int len);
-
-
-
-
-
-
-    void aos_msleep(int ms);
-
-
-
-
-    void aos_init(void);
-
-
-
-
-    void aos_start(void);
-# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h" 1
-
-
-
-
-
-typedef enum {
-    BL_RST_POWER_OFF = 0,
-    BL_RST_HARDWARE_WATCHDOG,
-    BL_RST_FATAL_EXCEPTION,
-    BL_RST_SOFTWARE_WATCHDOG,
-    BL_RST_SOFTWARE,
-} BL_RST_REASON_E;
-
-BL_RST_REASON_E bl_sys_rstinfo_get(void);
-int bl_sys_rstinfo_set(BL_RST_REASON_E val);
-int bl_sys_rstinfo_getsting(char *info);
-void bl_sys_rstinfo_init(void);
-int bl_sys_logall_enable(void);
-int bl_sys_logall_disable(void);
-void bl_sys_mfg_config(void);
-int bl_sys_reset_por(void);
-void bl_sys_reset_system(void);
-int bl_sys_isxipaddr(uint32_t addr);
-int bl_sys_early_init(void);
-int bl_sys_init(void);
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 1
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-
-
-
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
-
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
-typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-
-
-
-
-
-typedef __gnuc_va_list va_list;
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-
-
-
-
-
-
-
-typedef unsigned long __ULong;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
-typedef int _LOCK_T;
-typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-typedef _LOCK_RECURSIVE_T _flock_t;
-
-
-
-
-
-
-
-struct _reent;
-
-struct __locale_t;
-
-
-
-
-
-
-struct _Bigint
-{
-  struct _Bigint *_next;
-  int _k, _maxwds, _sign, _wds;
-  __ULong _x[1];
-};
-
-
-struct __tm
-{
-  int __tm_sec;
-  int __tm_min;
-  int __tm_hour;
-  int __tm_mday;
-  int __tm_mon;
-  int __tm_year;
-  int __tm_wday;
-  int __tm_yday;
-  int __tm_isdst;
-};
-
-
-
-
-
-
-
-struct _on_exit_args {
- void * _fnargs[32];
- void * _dso_handle[32];
-
- __ULong _fntypes;
-
-
- __ULong _is_cxa;
-};
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-struct _atexit {
- struct _atexit *_next;
- int _ind;
-
- void (*_fns[32])(void);
-        struct _on_exit_args _on_exit_args;
-};
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-struct __sbuf {
- unsigned char *_base;
- int _size;
-};
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-struct __sFILE {
-  unsigned char *_p;
-  int _r;
-  int _w;
-  short _flags;
-  short _file;
-  struct __sbuf _bf;
-  int _lbfsize;
-
-
-
-
-
-
-  void * _cookie;
-
-  _ssize_t (*_read) (struct _reent *, void *,
-        char *, int);
-  _ssize_t (*_write) (struct _reent *, void *,
-         const char *,
-         int);
-  _fpos_t (*_seek) (struct _reent *, void *, _fpos_t, int);
-  int (*_close) (struct _reent *, void *);
-
-
-  struct __sbuf _ub;
-  unsigned char *_up;
-  int _ur;
-
-
-  unsigned char _ubuf[3];
-  unsigned char _nbuf[1];
-
-
-  struct __sbuf _lb;
-
-
-  int _blksize;
-  _off_t _offset;
-
-
-  struct _reent *_data;
-
-
-
-  _flock_t _lock;
-
-  _mbstate_t _mbstate;
-  int _flags2;
-};
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-typedef struct __sFILE __FILE;
-
-
-
-struct _glue
-{
-  struct _glue *_next;
-  int _niobs;
-  __FILE *_iobs;
-};
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-struct _rand48 {
-  unsigned short _seed[3];
-  unsigned short _mult[3];
-  unsigned short _add;
-
-
-
-
-};
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-struct _reent
-{
-  int _errno;
-
-
-
-
-  __FILE *_stdin, *_stdout, *_stderr;
-
-  int _inc;
-  char _emergency[25];
-
-
-  int _unspecified_locale_info;
-  struct __locale_t *_locale;
-
-  int __sdidinit;
-
-  void (*__cleanup) (struct _reent *);
-
-
-  struct _Bigint *_result;
-  int _result_k;
-  struct _Bigint *_p5s;
-  struct _Bigint **_freelist;
-
-
-  int _cvtlen;
-  char *_cvtbuf;
-
-  union
-    {
-      struct
-        {
-          unsigned int _unused_rand;
-          char * _strtok_last;
-          char _asctime_buf[26];
-          struct __tm _localtime_buf;
-          int _gamma_signgam;
-          __extension__ unsigned long long _rand_next;
-          struct _rand48 _r48;
-          _mbstate_t _mblen_state;
-          _mbstate_t _mbtowc_state;
-          _mbstate_t _wctomb_state;
-          char _l64a_buf[8];
-          char _signal_buf[24];
-          int _getdate_err;
-          _mbstate_t _mbrlen_state;
-          _mbstate_t _mbrtowc_state;
-          _mbstate_t _mbsrtowcs_state;
-          _mbstate_t _wcrtomb_state;
-          _mbstate_t _wcsrtombs_state;
-   int _h_errno;
-        } _reent;
-
-
-
-      struct
-        {
-
-          unsigned char * _nextf[30];
-          unsigned int _nmalloc[30];
-        } _unused;
-    } _new;
-
-
-
-  struct _atexit *_atexit;
-  struct _atexit _atexit0;
-
-
-
-  void (**(_sig_func))(int);
-
-
-
-
-  struct _glue __sglue;
-
-  __FILE __sf[3];
-
-};
-# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-extern struct _reent *_impure_ptr ;
-extern struct _reent *const _global_impure_ptr ;
-
-void _reclaim_reent (struct _reent *);
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
@@ -1682,175 +1301,371 @@ _putchar_unlocked(int _c)
 }
 # 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 2
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h" 1
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-typedef void (*hosal_dma_irq_t)(void *p_arg, uint32_t flag);
+# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h" 1
 
 
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+typedef signed char int8_t;
 
 
-struct hosal_dma_chan {
-    uint8_t used;
-    hosal_dma_irq_t callback;
-    void *p_arg;
-};
+typedef short int int16_t;
 
 
+typedef long int int32_t;
 
 
-typedef struct hosal_dma_dev {
-    int max_chans;
-    struct hosal_dma_chan *used_chan;
-    void *priv;
-} hosal_dma_dev_t;
+typedef long long int int64_t;
 
 
+typedef unsigned char uint8_t;
 
 
-typedef int hosal_dma_chan_t;
+typedef short unsigned int uint16_t;
 
 
+typedef long unsigned int uint32_t;
+
+
+typedef long long unsigned int uint64_t;
 
 
 
 
-int hosal_dma_init(void);
-# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-hosal_dma_chan_t hosal_dma_chan_request(int flag);
-# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_chan_release(hosal_dma_chan_t chan);
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_chan_start(hosal_dma_chan_t chan);
-# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_chan_stop(hosal_dma_chan_t chan);
-# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_irq_callback_set(hosal_dma_chan_t chan, hosal_dma_irq_t pfn, void *p_arg);
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_finalize(void);
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 2
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-typedef int (*hosal_uart_callback_t)(void *p_arg);
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef long int int_least32_t;
+typedef long long int int_least64_t;
+typedef unsigned char uint_least8_t;
+typedef short unsigned int uint_least16_t;
+typedef long unsigned int uint_least32_t;
+typedef long long unsigned int uint_least64_t;
+
+
+
+typedef int int_fast8_t;
+typedef int int_fast16_t;
+typedef int int_fast32_t;
+typedef long long int int_fast64_t;
+typedef unsigned int uint_fast8_t;
+typedef unsigned int uint_fast16_t;
+typedef unsigned int uint_fast32_t;
+typedef long long unsigned int uint_fast64_t;
+
+
+
+
+typedef int intptr_t;
+
+
+typedef unsigned int uintptr_t;
+
+
+
+
+typedef long long int intmax_t;
+typedef long long unsigned int uintmax_t;
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h" 2
+
+
+# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+typedef struct _gpio_ctx_desc {
+    struct _gpio_ctx_desc *next;
+    void (*gpio_handler)(void *);
+    void *arg;
+
+    uint8_t gpioPin;
+    uint8_t intCtrlMod;
+    uint8_t intTrgMod;
+} gpio_ctx_t;
+
+int bl_gpio_enable_output(uint8_t pin, uint8_t pullup, uint8_t pulldown);
+int bl_gpio_enable_input(uint8_t pin, uint8_t pullup, uint8_t pulldown);
+int bl_gpio_output_set(uint8_t pin, uint8_t value);
+int bl_gpio_input_get(uint8_t pin, uint8_t *value);
+int bl_gpio_input_get_value(uint8_t pin);
+int bl_gpio_int_clear(uint8_t gpioPin,uint8_t intClear);
+void bl_gpio_intmask(uint8_t gpiopin, uint8_t mask);
+void bl_set_gpio_intmod(uint8_t gpioPin, uint8_t intCtrlMod, uint8_t intTrgMod);
+void bl_gpio_register(gpio_ctx_t *pstnode);
+# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
+
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    typedef struct
+    {
+        void *hdl;
+    } aos_hdl_t;
+
+    typedef aos_hdl_t aos_task_t;
+    typedef aos_hdl_t aos_mutex_t;
+    typedef aos_hdl_t aos_sem_t;
+    typedef aos_hdl_t aos_queue_t;
+    typedef aos_hdl_t aos_timer_t;
+    typedef aos_hdl_t aos_work_t;
+
+    typedef struct
+    {
+        void *hdl;
+        void *stk;
+    } aos_workqueue_t;
+
+    typedef unsigned int aos_task_key_t;
+
+
+
+
+    void aos_reboot(void);
+
+
+
+
+
+
+    int aos_get_hz(void);
+
+
+
+
+
+
+    const char *aos_version_get(void);
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new(const char *name, void (*fn)(void *), void *arg,
+                     int stack_size);
+# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new_ext(aos_task_t *task, const char *name, void (*fn)(void *),
+                         void *arg, int stack_size, int prio);
+
+
+
+
+
+
+    void aos_task_exit(int code);
+
+
+
+
+
+
+    const char *aos_task_name(void);
+# 113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_key_create(aos_task_key_t *key);
+
+
+
+
+
+
+    void aos_task_key_delete(aos_task_key_t key);
+# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_setspecific(aos_task_key_t key, void *vp);
+
+
+
+
+
+
+    void *aos_task_getspecific(aos_task_key_t key);
+# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_new(aos_mutex_t *mutex);
+
+
+
+
+
+
+
+    void aos_mutex_free(aos_mutex_t *mutex);
+# 167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_lock(aos_mutex_t *mutex, unsigned int timeout);
+# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_unlock(aos_mutex_t *mutex);
+# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_is_valid(aos_mutex_t *mutex);
+# 197 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_new(aos_sem_t *sem, int count);
+
+
+
+
+
+
+
+    void aos_sem_free(aos_sem_t *sem);
+# 216 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_wait(aos_sem_t *sem, unsigned int timeout);
+
+
+
+
+
+
+
+    void aos_sem_signal(aos_sem_t *sem);
+# 233 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_is_valid(aos_sem_t *sem);
+
+
+
+
+
+
+
+    void aos_sem_signal_all(aos_sem_t *sem);
+# 254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_new(aos_queue_t *queue, void *buf, unsigned int size,
+                      int max_msg);
+
+
+
+
+
+
+    void aos_queue_free(aos_queue_t *queue);
+# 273 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_send(aos_queue_t *queue, void *msg, unsigned int size);
+# 285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_recv(aos_queue_t *queue, unsigned int ms, void *msg,
+                       unsigned int *size);
+# 295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_is_valid(aos_queue_t *queue);
+# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_queue_buf_ptr(aos_queue_t *queue);
+# 317 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new(aos_timer_t *timer, void (*fn)(void *, void *), void *arg,
+                      int ms, int repeat);
+# 332 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new_ext(aos_timer_t *timer, void (*fn)(void *, void *),
+                          void *arg, int ms, int repeat,
+                          unsigned char auto_run);
+
+
+
+
+
+
+    void aos_timer_free(aos_timer_t *timer);
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_start(aos_timer_t *timer);
+# 359 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_stop(aos_timer_t *timer);
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_change(aos_timer_t *timer, int ms);
+# 380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_workqueue_create(aos_workqueue_t *workqueue, int pri,
+                             int stack_size);
+# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_init(aos_work_t *work, void (*fn)(void *), void *arg, int dly);
+
+
+
+
+
+
+    void aos_work_destroy(aos_work_t *work);
+# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_run(aos_workqueue_t *workqueue, aos_work_t *work);
+# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_sched(aos_work_t *work);
+# 428 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_cancel(aos_work_t *work);
+# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_realloc(void *mem, unsigned int size);
+# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_malloc(unsigned int size);
+# 457 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_calloc(unsigned int nitems, unsigned int size);
+# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_zalloc(unsigned int size);
+
+
+
+
+
+
+
+    void aos_alloc_trace(void *addr, size_t allocator);
+
+
+
+
+
+
+    void aos_free(void *mem);
+
+
+
+
+
+
+    long long aos_now(void);
+
+
+
+
+
+
+    long long aos_now_ms(void);
+# 512 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    char *aos_now_time_str(char *buffer, const int len);
+
+
+
+
+
+
+    void aos_msleep(int ms);
+
+
+
+
+    void aos_init(void);
+
+
+
+
+    void aos_start(void);
+# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h" 1
+
 
 
 
 
 typedef enum {
-    HOSAL_DATA_WIDTH_5BIT,
-    HOSAL_DATA_WIDTH_6BIT,
-    HOSAL_DATA_WIDTH_7BIT,
-    HOSAL_DATA_WIDTH_8BIT,
-    HOSAL_DATA_WIDTH_9BIT
-} hosal_uart_data_width_t;
+    BL_RST_POWER_OFF = 0,
+    BL_RST_HARDWARE_WATCHDOG,
+    BL_RST_FATAL_EXCEPTION,
+    BL_RST_SOFTWARE_WATCHDOG,
+    BL_RST_SOFTWARE,
+} BL_RST_REASON_E;
 
-
-
-
-typedef enum {
-    HOSAL_STOP_BITS_1,
-    HOSAL_STOP_BITS_1_5,
-    HOSAL_STOP_BITS_2
-} hosal_uart_stop_bits_t;
-
-
-
-
-typedef enum {
-    HOSAL_FLOW_CONTROL_DISABLED,
-    HOSAL_FLOW_CONTROL_CTS,
-    HOSAL_FLOW_CONTROL_RTS,
-    HOSAL_FLOW_CONTROL_CTS_RTS
-} hosal_uart_flow_control_t;
-
-
-
-
-typedef enum {
-    HOSAL_NO_PARITY,
-    HOSAL_ODD_PARITY,
-    HOSAL_EVEN_PARITY
-} hosal_uart_parity_t;
-
-
-
-
-typedef enum {
-    HOSAL_UART_MODE_POLL,
-    HOSAL_UART_MODE_INT_TX,
-    HOSAL_UART_MODE_INT_RX,
-    HOSAL_UART_MODE_INT,
-} hosal_uart_mode_t;
-
-
-
-
-typedef struct {
-
-
-
-
-
-    uint8_t *dma_buf;
-
-    uint32_t dma_buf_size;
-} hosal_uart_dma_cfg_t;
-
-
-
-
-typedef struct {
-    uint8_t uart_id;
-    uint8_t tx_pin;
-    uint8_t rx_pin;
-    uint8_t cts_pin;
-    uint8_t rts_pin;
-    uint32_t baud_rate;
-    hosal_uart_data_width_t data_width;
-    hosal_uart_parity_t parity;
-    hosal_uart_stop_bits_t stop_bits;
-    hosal_uart_flow_control_t flow_control;
-    hosal_uart_mode_t mode;
-} hosal_uart_config_t;
-
-
-
-
-typedef struct {
-    uint8_t port;
-    hosal_uart_config_t config;
-    hosal_uart_callback_t tx_cb;
-    void *p_txarg;
-    hosal_uart_callback_t rx_cb;
-    void *p_rxarg;
-    hosal_uart_callback_t txdma_cb;
-    void *p_txdma_arg;
-    hosal_uart_callback_t rxdma_cb;
-    void *p_rxdma_arg;
-    hosal_dma_chan_t dma_tx_chan;
-    hosal_dma_chan_t dma_rx_chan;
-    void *priv;
-} hosal_uart_dev_t;
-# 221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_abr_get(hosal_uart_dev_t *uart, uint8_t mode);
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_init(hosal_uart_dev_t *uart);
-int hosal_uart_init_only_tx(hosal_uart_dev_t *uart);
-# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_send(hosal_uart_dev_t *uart, const void *txbuf, uint32_t size);
-# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_receive(hosal_uart_dev_t *uart, void *data, uint32_t expect_size);
-# 293 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_ioctl (hosal_uart_dev_t *uart, int ctl, void *p_arg);
-# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_callback_set (hosal_uart_dev_t *uart,
-                           int callback_type,
-                           hosal_uart_callback_t pfn_callback,
-                           void *arg);
-# 325 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_finalize(hosal_uart_dev_t *uart);
+BL_RST_REASON_E bl_sys_rstinfo_get(void);
+int bl_sys_rstinfo_set(BL_RST_REASON_E val);
+int bl_sys_rstinfo_getsting(char *info);
+void bl_sys_rstinfo_init(void);
+int bl_sys_logall_enable(void);
+int bl_sys_logall_disable(void);
+void bl_sys_mfg_config(void);
+int bl_sys_reset_por(void);
+void bl_sys_reset_system(void);
+int bl_sys_isxipaddr(uint32_t addr);
+int bl_sys_early_init(void);
+int bl_sys_init(void);
 # 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/common/hardware.h" 1
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
@@ -1868,29 +1683,35 @@ uint8_t relay_get_state(void);
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
 
 
+static uint8_t s_relay_state = 0;
+
 void relay_init(void){
     bl_gpio_enable_output(22 , 0, 0 );
-    bl_gpio_output_set(22, 0);
+    s_relay_state = 0;
+    bl_gpio_output_set(22, s_relay_state);
 }
 
 void relay_on(void){
     printf(">>> relay on\r\n");
-    bl_gpio_output_set(22, 1);
+    s_relay_state = 1;
+    bl_gpio_output_set(22, s_relay_state);
 }
 
 void relay_off(void){
     printf(">>> relay off\r\n");
-    bl_gpio_output_set(22, 0);
+    s_relay_state = 0;
+    bl_gpio_output_set(22, s_relay_state);
 }
 
 void relay_toggle(void){
     printf(">>> relay toggle\r\n");
-    static uint8_t relay_state = 0;
-    relay_state = !relay_state;
-    bl_gpio_output_set(22, relay_state);
+    s_relay_state = !s_relay_state;
+    bl_gpio_output_set(22, s_relay_state);
 }
 
 uint8_t relay_get_state(void){
 
-    return bl_gpio_input_get_value(22);
+    uint8_t logical_state = (s_relay_state == 1) ? 1 : 0;
+    printf(">>> relay_get_state: hw=%d, logical=%d\r\n", s_relay_state, logical_state);
+    return logical_state;
 }

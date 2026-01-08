@@ -2166,14 +2166,14 @@ typedef struct _blog_info {
     int blog_set_level_log_component(char* level, char* component_name);
 # 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 1
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
 typedef struct {
     char ssid[32 + 1];
     char password[64 + 1];
     
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 3 4
    _Bool 
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
         is_valid;
 } wifi_config_t;
 
@@ -2182,10 +2182,22 @@ int app_config_load_wifi(wifi_config_t *config);
 int app_config_save_wifi(const char *ssid, const char *password);
 int app_config_clear_wifi(void);
 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 3 4
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 3 4
 _Bool 
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
     app_config_has_wifi(void);
+
+
+int app_config_save_relay_settings(uint8_t default_state, 
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 3 4
+                                                         _Bool 
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
+                                                              lock_button);
+int app_config_load_relay_settings(uint8_t *default_state, 
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h" 3 4
+                                                          _Bool 
+# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_config/app_config.h"
+                                                               *lock_button);
 # 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_wifi/app_wifi.h" 1
 
@@ -2253,12 +2265,53 @@ void app_set_led_blink(
 
 
 
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/../app_event/app_event.h" 1
+
+
+
+
+
+typedef enum {
+    APP_EVENT_NONE = 0,
+    APP_EVENT_BUTTON_HOLD,
+    APP_EVENT_BUTTON_PRESS,
+    APP_EVENT_WIFI_CONNECTED,
+    APP_EVENT_WIFI_DISCONNECTED,
+    APP_EVENT_WIFI_CONNECT_FAILED,
+    APP_EVENT_BLE_CONFIG_DONE,
+    APP_EVENT_BLE_CONFIG_TIMEOUT,
+    APP_EVENT_MQTT_TOGGLE,
+    APP_EVENT_MQTT_SET_ON,
+    APP_EVENT_MQTT_SET_OFF,
+    APP_EVENT_RELAY_STATE_CHANGED,
+    APP_EVENT_MAX
+} app_event_type_t;
+
+typedef struct {
+    app_event_type_t type;
+    void *data;
+} app_event_t;
+# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/app_callback.h" 2
+
 void app_button_hold_callback(int pin, int event, void *data);
 void app_button_press_callback(int pin, int event, void *data);
 void app_wifi_connected_callback(void);
 void app_wifi_disconnected_callback(void);
 void app_wifi_connect_failed_callback(void);
 void app_ble_config_done_callback(const char *ssid, const char *password);
+
+
+void app_event_post(app_event_type_t type, void *data);
+app_event_t *app_event_get_queue(void);
+int *app_event_get_queue_head(void);
+int *app_event_get_queue_tail(void);
+
+
+void app_callback_update_lock_button(
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/app_callback.h" 3 4
+                                    _Bool 
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../app_callback/app_callback.h"
+                                         locked);
 # 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/../../hardware/led/led.h" 1
 

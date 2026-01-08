@@ -11,10 +11,10 @@
 
 #include "jsmn.h"
 #include <stdio.h>
-#include "vendor/b85m_ble_sample/user/common/system_typedef.h"
-// #include "proj/tl_common.h"
-// #include <stdlib.h>
-// #include <string.h>
+#include <stdlib.h>
+#include <string.h>
+/* #include "vendor/b85m_ble_sample/user/common/system_typedef.h" */ /* Commented out - not needed */
+/* #include "proj/tl_common.h" */
 
 JSMN_API void jsmn_init(jsmn_parser *parser)
 {
@@ -475,13 +475,13 @@ int json_parser(const char *json, jsmn_parser *parser, jsmntok_t *token,
 
     r = jsmn_parse(parser, json, strlen(json), token, num_token);
     if (r < 0) {
-        os_trace("Failed to parse JSON", 0);
+        /* os_trace("Failed to parse JSON", 0); */ /* Commented out - os_trace not available */
         return -1;
     }
 
     /* Assume the top-level element is an object */
     if (r < 1 || token[0].type != JSMN_OBJECT) {
-        os_trace("Object expected", 0);
+        /* os_trace("Object expected", 0); */ /* Commented out - os_trace not available */
         return -1;
     }
 

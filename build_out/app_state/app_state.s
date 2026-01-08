@@ -489,15 +489,15 @@ g_state_machine:
 	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x3aa
+	.4byte	0x3c2
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF50
+	.4byte	.LASF54
 	.byte	0xc
-	.4byte	.LASF51
-	.4byte	.LASF52
+	.4byte	.LASF55
+	.4byte	.LASF56
 	.4byte	.Ldebug_ranges0+0
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -548,7 +548,7 @@ g_state_machine:
 	.byte	0x2
 	.byte	0x6
 	.byte	0xe
-	.4byte	0xb0
+	.4byte	0xc8
 	.byte	0x5
 	.4byte	.LASF9
 	.byte	0
@@ -576,42 +576,54 @@ g_state_machine:
 	.byte	0x5
 	.4byte	.LASF17
 	.byte	0x8
+	.byte	0x5
+	.4byte	.LASF18
+	.byte	0x9
+	.byte	0x5
+	.4byte	.LASF19
+	.byte	0xa
+	.byte	0x5
+	.4byte	.LASF20
+	.byte	0xb
+	.byte	0x5
+	.4byte	.LASF21
+	.byte	0xc
 	.byte	0
 	.byte	0x6
-	.4byte	.LASF20
+	.4byte	.LASF24
 	.byte	0x2
-	.byte	0x10
+	.byte	0x14
 	.byte	0x3
 	.4byte	0x6b
 	.byte	0x7
 	.byte	0x8
 	.byte	0x2
-	.byte	0x12
-	.byte	0x9
-	.4byte	0xe0
-	.byte	0x8
-	.4byte	.LASF18
-	.byte	0x2
-	.byte	0x13
 	.byte	0x16
-	.4byte	0xb0
+	.byte	0x9
+	.4byte	0xf8
+	.byte	0x8
+	.4byte	.LASF22
+	.byte	0x2
+	.byte	0x17
+	.byte	0x16
+	.4byte	0xc8
 	.byte	0
 	.byte	0x8
-	.4byte	.LASF19
+	.4byte	.LASF23
 	.byte	0x2
-	.byte	0x14
+	.byte	0x18
 	.byte	0xb
-	.4byte	0xe0
+	.4byte	0xf8
 	.byte	0x4
 	.byte	0
 	.byte	0x9
 	.byte	0x4
 	.byte	0x6
-	.4byte	.LASF21
+	.4byte	.LASF25
 	.byte	0x2
-	.byte	0x15
+	.byte	0x19
 	.byte	0x3
-	.4byte	0xbc
+	.4byte	0xd4
 	.byte	0x4
 	.byte	0x7
 	.byte	0x4
@@ -619,254 +631,254 @@ g_state_machine:
 	.byte	0x3
 	.byte	0x7
 	.byte	0xe
-	.4byte	0x127
-	.byte	0x5
-	.4byte	.LASF22
-	.byte	0
-	.byte	0x5
-	.4byte	.LASF23
-	.byte	0x1
-	.byte	0x5
-	.4byte	.LASF24
-	.byte	0x2
-	.byte	0x5
-	.4byte	.LASF25
-	.byte	0x3
+	.4byte	0x13f
 	.byte	0x5
 	.4byte	.LASF26
-	.byte	0x4
+	.byte	0
 	.byte	0x5
 	.4byte	.LASF27
-	.byte	0x5
+	.byte	0x1
 	.byte	0x5
 	.4byte	.LASF28
+	.byte	0x2
+	.byte	0x5
+	.4byte	.LASF29
+	.byte	0x3
+	.byte	0x5
+	.4byte	.LASF30
+	.byte	0x4
+	.byte	0x5
+	.4byte	.LASF31
+	.byte	0x5
+	.byte	0x5
+	.4byte	.LASF32
 	.byte	0x6
 	.byte	0
 	.byte	0x6
-	.4byte	.LASF29
+	.4byte	.LASF33
 	.byte	0x3
 	.byte	0xf
 	.byte	0x3
-	.4byte	0xee
+	.4byte	0x106
 	.byte	0x7
 	.byte	0x8
 	.byte	0x3
 	.byte	0x11
 	.byte	0x9
-	.4byte	0x157
+	.4byte	0x16f
 	.byte	0x8
-	.4byte	.LASF30
+	.4byte	.LASF34
 	.byte	0x3
 	.byte	0x12
 	.byte	0x11
-	.4byte	0x127
+	.4byte	0x13f
 	.byte	0
 	.byte	0x8
-	.4byte	.LASF31
+	.4byte	.LASF35
 	.byte	0x3
 	.byte	0x13
 	.byte	0x11
-	.4byte	0x127
+	.4byte	0x13f
 	.byte	0x4
 	.byte	0
 	.byte	0x6
-	.4byte	.LASF32
+	.4byte	.LASF36
 	.byte	0x3
 	.byte	0x14
 	.byte	0x3
-	.4byte	0x133
+	.4byte	0x14b
 	.byte	0x6
-	.4byte	.LASF33
+	.4byte	.LASF37
 	.byte	0x3
 	.byte	0x16
 	.byte	0x17
-	.4byte	0x16f
+	.4byte	0x187
 	.byte	0xa
 	.byte	0x4
-	.4byte	0x175
+	.4byte	0x18d
 	.byte	0xb
-	.4byte	0x127
-	.4byte	0x184
+	.4byte	0x13f
+	.4byte	0x19c
 	.byte	0xc
-	.4byte	0x184
+	.4byte	0x19c
 	.byte	0
 	.byte	0xa
 	.byte	0x4
-	.4byte	0xe2
+	.4byte	0xfa
 	.byte	0x2
 	.byte	0x1
 	.byte	0x8
-	.4byte	.LASF34
+	.4byte	.LASF38
 	.byte	0xd
-	.4byte	.LASF35
+	.4byte	.LASF39
 	.byte	0x1
 	.byte	0x5
 	.byte	0x1c
-	.4byte	0x157
+	.4byte	0x16f
 	.byte	0x5
 	.byte	0x3
 	.4byte	g_state_machine
 	.byte	0xe
-	.4byte	0x163
-	.4byte	0x1b3
+	.4byte	0x17b
+	.4byte	0x1cb
 	.byte	0xf
 	.4byte	0x64
 	.byte	0x5
 	.byte	0
 	.byte	0xd
-	.4byte	.LASF36
+	.4byte	.LASF40
 	.byte	0x1
 	.byte	0x11
 	.byte	0x1c
-	.4byte	0x1a3
+	.4byte	0x1bb
 	.byte	0x5
 	.byte	0x3
 	.4byte	state_handlers
 	.byte	0x10
-	.4byte	.LASF37
+	.4byte	.LASF41
 	.byte	0x1
 	.byte	0x81
 	.byte	0x14
-	.4byte	0x127
+	.4byte	0x13f
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1f0
+	.4byte	0x208
 	.byte	0x11
-	.4byte	.LASF39
+	.4byte	.LASF43
 	.byte	0x1
 	.byte	0x81
 	.byte	0x3b
-	.4byte	0x184
+	.4byte	0x19c
 	.4byte	.LLST6
-	.byte	0
-	.byte	0x10
-	.4byte	.LASF38
-	.byte	0x1
-	.byte	0x75
-	.byte	0x14
-	.4byte	0x127
-	.4byte	.LFB13
-	.4byte	.LFE13-.LFB13
-	.byte	0x1
-	.byte	0x9c
-	.4byte	0x21b
-	.byte	0x11
-	.4byte	.LASF39
-	.byte	0x1
-	.byte	0x75
-	.byte	0x3e
-	.4byte	0x184
-	.4byte	.LLST5
-	.byte	0
-	.byte	0x10
-	.4byte	.LASF40
-	.byte	0x1
-	.byte	0x65
-	.byte	0x14
-	.4byte	0x127
-	.4byte	.LFB12
-	.4byte	.LFE12-.LFB12
-	.byte	0x1
-	.byte	0x9c
-	.4byte	0x246
-	.byte	0x11
-	.4byte	.LASF39
-	.byte	0x1
-	.byte	0x65
-	.byte	0x3f
-	.4byte	0x184
-	.4byte	.LLST4
-	.byte	0
-	.byte	0x10
-	.4byte	.LASF41
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x14
-	.4byte	0x127
-	.4byte	.LFB11
-	.4byte	.LFE11-.LFB11
-	.byte	0x1
-	.byte	0x9c
-	.4byte	0x271
-	.byte	0x11
-	.4byte	.LASF39
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x3a
-	.4byte	0x184
-	.4byte	.LLST3
 	.byte	0
 	.byte	0x10
 	.4byte	.LASF42
 	.byte	0x1
-	.byte	0x4b
+	.byte	0x75
 	.byte	0x14
-	.4byte	0x127
-	.4byte	.LFB10
-	.4byte	.LFE10-.LFB10
+	.4byte	0x13f
+	.4byte	.LFB13
+	.4byte	.LFE13-.LFB13
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x2ac
+	.4byte	0x233
 	.byte	0x11
-	.4byte	.LASF39
-	.byte	0x1
-	.byte	0x4b
-	.byte	0x3b
-	.4byte	0x184
-	.4byte	.LLST1
-	.byte	0x12
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x54
-	.byte	0x11
-	.4byte	0x127
-	.4byte	.LLST2
+	.byte	0x75
+	.byte	0x3e
+	.4byte	0x19c
+	.4byte	.LLST5
 	.byte	0
 	.byte	0x10
 	.4byte	.LASF44
 	.byte	0x1
+	.byte	0x65
+	.byte	0x14
+	.4byte	0x13f
+	.4byte	.LFB12
+	.4byte	.LFE12-.LFB12
+	.byte	0x1
+	.byte	0x9c
+	.4byte	0x25e
+	.byte	0x11
+	.4byte	.LASF43
+	.byte	0x1
+	.byte	0x65
+	.byte	0x3f
+	.4byte	0x19c
+	.4byte	.LLST4
+	.byte	0
+	.byte	0x10
+	.4byte	.LASF45
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x14
+	.4byte	0x13f
+	.4byte	.LFB11
+	.4byte	.LFE11-.LFB11
+	.byte	0x1
+	.byte	0x9c
+	.4byte	0x289
+	.byte	0x11
+	.4byte	.LASF43
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x3a
+	.4byte	0x19c
+	.4byte	.LLST3
+	.byte	0
+	.byte	0x10
+	.4byte	.LASF46
+	.byte	0x1
+	.byte	0x4b
+	.byte	0x14
+	.4byte	0x13f
+	.4byte	.LFB10
+	.4byte	.LFE10-.LFB10
+	.byte	0x1
+	.byte	0x9c
+	.4byte	0x2c4
+	.byte	0x11
+	.4byte	.LASF43
+	.byte	0x1
+	.byte	0x4b
+	.byte	0x3b
+	.4byte	0x19c
+	.4byte	.LLST1
+	.byte	0x12
+	.4byte	.LASF47
+	.byte	0x1
+	.byte	0x54
+	.byte	0x11
+	.4byte	0x13f
+	.4byte	.LLST2
+	.byte	0
+	.byte	0x10
+	.4byte	.LASF48
+	.byte	0x1
 	.byte	0x44
 	.byte	0x14
-	.4byte	0x127
+	.4byte	0x13f
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x2d7
+	.4byte	0x2ef
 	.byte	0x11
-	.4byte	.LASF39
+	.4byte	.LASF43
 	.byte	0x1
 	.byte	0x44
 	.byte	0x34
-	.4byte	0x184
+	.4byte	0x19c
 	.4byte	.LLST0
 	.byte	0
 	.byte	0x13
-	.4byte	.LASF53
+	.4byte	.LASF57
 	.byte	0x1
 	.byte	0x30
 	.byte	0xd
-	.4byte	0x127
+	.4byte	0x13f
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x31f
+	.4byte	0x337
 	.byte	0x11
-	.4byte	.LASF39
+	.4byte	.LASF43
 	.byte	0x1
 	.byte	0x30
 	.byte	0x32
-	.4byte	0x184
+	.4byte	0x19c
 	.4byte	.LLST7
 	.byte	0x12
-	.4byte	.LASF45
+	.4byte	.LASF49
 	.byte	0x1
 	.byte	0x3a
 	.byte	0x11
-	.4byte	0x127
+	.4byte	0x13f
 	.4byte	.LLST8
 	.byte	0x14
 	.4byte	.LVL17
@@ -880,7 +892,7 @@ g_state_machine:
 	.byte	0
 	.byte	0
 	.byte	0x16
-	.4byte	.LASF48
+	.4byte	.LASF52
 	.byte	0x1
 	.byte	0x2b
 	.byte	0x6
@@ -888,38 +900,38 @@ g_state_machine:
 	.4byte	.LFE7-.LFB7
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x344
+	.4byte	0x35c
 	.byte	0x17
-	.4byte	.LASF31
+	.4byte	.LASF35
 	.byte	0x1
 	.byte	0x2b
 	.byte	0x25
-	.4byte	0x127
+	.4byte	0x13f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0
 	.byte	0x18
-	.4byte	.LASF46
+	.4byte	.LASF50
 	.byte	0x1
 	.byte	0x26
 	.byte	0xd
-	.4byte	0x127
+	.4byte	0x13f
 	.4byte	.LFB6
 	.4byte	.LFE6-.LFB6
 	.byte	0x1
 	.byte	0x9c
 	.byte	0x18
-	.4byte	.LASF47
+	.4byte	.LASF51
 	.byte	0x1
 	.byte	0x21
 	.byte	0xd
-	.4byte	0x127
+	.4byte	0x13f
 	.4byte	.LFB5
 	.4byte	.LFE5-.LFB5
 	.byte	0x1
 	.byte	0x9c
 	.byte	0x16
-	.4byte	.LASF49
+	.4byte	.LASF53
 	.byte	0x1
 	.byte	0x1a
 	.byte	0x6
@@ -927,10 +939,10 @@ g_state_machine:
 	.4byte	.LFE4-.LFB4
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x3a1
+	.4byte	0x3b9
 	.byte	0x19
 	.4byte	.LVL14
-	.4byte	0x3a1
+	.4byte	0x3b9
 	.byte	0x15
 	.byte	0x1
 	.byte	0x5a
@@ -950,8 +962,8 @@ g_state_machine:
 	.byte	0
 	.byte	0
 	.byte	0x1a
-	.4byte	.LASF54
-	.4byte	.LASF54
+	.4byte	.LASF58
+	.4byte	.LASF58
 	.byte	0x4
 	.byte	0x21
 	.byte	0x8
@@ -1525,114 +1537,122 @@ g_state_machine:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF24:
+.LASF28:
 	.string	"APP_STATE_BLE_CONFIG"
-.LASF22:
+.LASF33:
+	.string	"app_state_t"
+.LASF26:
 	.string	"APP_STATE_INIT"
-.LASF43:
+.LASF47:
 	.string	"next"
-.LASF45:
-	.string	"new_state"
-.LASF50:
-	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF20:
+	.string	"APP_EVENT_RELAY_STATE_CHANGED"
+.LASF49:
+	.string	"new_state"
+.LASF54:
+	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF24:
 	.string	"app_event_type_t"
 .LASF9:
 	.string	"APP_EVENT_NONE"
 .LASF16:
 	.string	"APP_EVENT_BLE_CONFIG_TIMEOUT"
-.LASF26:
+.LASF30:
 	.string	"APP_STATE_WIFI_CONNECTED"
-.LASF42:
+.LASF46:
 	.string	"state_check_flash_handler"
-.LASF35:
+.LASF39:
 	.string	"g_state_machine"
-.LASF25:
+.LASF29:
 	.string	"APP_STATE_WIFI_CONNECTING"
-.LASF31:
+.LASF35:
 	.string	"next_state"
-.LASF47:
+.LASF51:
 	.string	"app_state_get_current"
-.LASF48:
+.LASF52:
 	.string	"app_state_set_next"
 .LASF14:
 	.string	"APP_EVENT_WIFI_CONNECT_FAILED"
-.LASF23:
+.LASF27:
 	.string	"APP_STATE_CHECK_FLASH"
-.LASF19:
+.LASF23:
 	.string	"data"
-.LASF37:
+.LASF41:
 	.string	"state_wifi_failed_handler"
 .LASF6:
 	.string	"long unsigned int"
 .LASF5:
 	.string	"short unsigned int"
-.LASF44:
-	.string	"state_init_handler"
-.LASF29:
-	.string	"app_state_t"
-.LASF4:
-	.string	"unsigned char"
-.LASF54:
-	.string	"memset"
-.LASF36:
-	.string	"state_handlers"
-.LASF28:
-	.string	"APP_STATE_MAX"
-.LASF30:
-	.string	"current_state"
 .LASF13:
 	.string	"APP_EVENT_WIFI_DISCONNECTED"
-.LASF39:
+.LASF48:
+	.string	"state_init_handler"
+.LASF19:
+	.string	"APP_EVENT_MQTT_SET_OFF"
+.LASF4:
+	.string	"unsigned char"
+.LASF58:
+	.string	"memset"
+.LASF40:
+	.string	"state_handlers"
+.LASF32:
+	.string	"APP_STATE_MAX"
+.LASF34:
+	.string	"current_state"
+.LASF18:
+	.string	"APP_EVENT_MQTT_SET_ON"
+.LASF43:
 	.string	"event"
-.LASF52:
+.LASF56:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/app_state"
+.LASF17:
+	.string	"APP_EVENT_MQTT_TOGGLE"
 .LASF8:
 	.string	"unsigned int"
-.LASF38:
+.LASF42:
 	.string	"state_wifi_connected_handler"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF40:
+.LASF44:
 	.string	"state_wifi_connecting_handler"
-.LASF33:
+.LASF37:
 	.string	"app_state_handler_t"
-.LASF41:
+.LASF45:
 	.string	"state_ble_config_handler"
-.LASF27:
+.LASF31:
 	.string	"APP_STATE_WIFI_FAILED"
-.LASF21:
+.LASF25:
 	.string	"app_event_t"
 .LASF15:
 	.string	"APP_EVENT_BLE_CONFIG_DONE"
 .LASF3:
 	.string	"long long int"
-.LASF46:
+.LASF50:
 	.string	"app_state_get_next"
-.LASF34:
+.LASF38:
 	.string	"char"
 .LASF11:
 	.string	"APP_EVENT_BUTTON_PRESS"
 .LASF12:
 	.string	"APP_EVENT_WIFI_CONNECTED"
-.LASF18:
+.LASF22:
 	.string	"type"
 .LASF1:
 	.string	"short int"
-.LASF51:
+.LASF55:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
 .LASF2:
 	.string	"long int"
-.LASF17:
+.LASF21:
 	.string	"APP_EVENT_MAX"
 .LASF10:
 	.string	"APP_EVENT_BUTTON_HOLD"
 .LASF0:
 	.string	"signed char"
-.LASF53:
+.LASF57:
 	.string	"app_state_process_event"
-.LASF32:
+.LASF36:
 	.string	"app_state_machine_t"
-.LASF49:
+.LASF53:
 	.string	"app_state_init"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"
