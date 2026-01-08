@@ -3,9 +3,85 @@
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.h" 1
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+
+
+int app_run(void);
+# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 1
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+typedef signed char int8_t;
+
+
+typedef short int int16_t;
+
+
+typedef long int int32_t;
+
+
+typedef long long int int64_t;
+
+
+typedef unsigned char uint8_t;
+
+
+typedef short unsigned int uint16_t;
+
+
+typedef long unsigned int uint32_t;
+
+
+typedef long long unsigned int uint64_t;
+
+
+
+
+typedef signed char int_least8_t;
+typedef short int int_least16_t;
+typedef long int int_least32_t;
+typedef long long int int_least64_t;
+typedef unsigned char uint_least8_t;
+typedef short unsigned int uint_least16_t;
+typedef long unsigned int uint_least32_t;
+typedef long long unsigned int uint_least64_t;
+
+
+
+typedef int int_fast8_t;
+typedef int int_fast16_t;
+typedef int int_fast32_t;
+typedef long long int int_fast64_t;
+typedef unsigned int uint_fast8_t;
+typedef unsigned int uint_fast16_t;
+typedef unsigned int uint_fast32_t;
+typedef long long unsigned int uint_fast64_t;
+
+
+
+
+typedef int intptr_t;
+
+
+typedef unsigned int uintptr_t;
+
+
+
+
+typedef long long int intmax_t;
+typedef long long unsigned int uintmax_t;
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
@@ -22,17 +98,35 @@
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
 # 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
 # 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef int ptrdiff_t;
+# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef unsigned int size_t;
+# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef int wchar_t;
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+typedef unsigned int wint_t;
+# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
+
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
-
 # 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
@@ -85,48 +179,7 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef unsigned int size_t;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef int ptrdiff_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef int wchar_t;
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
-typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-
-
-
-
-
-typedef __gnuc_va_list va_list;
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
-typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 2 3
 # 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
@@ -511,7 +564,788 @@ extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+struct __locale_t;
+typedef struct __locale_t *locale_t;
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+
+
+int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
+void bcopy(const void *, void *, size_t);
+void bzero(void *, size_t);
+
+
+void explicit_bzero(void *, size_t);
+
+
+int ffs(int) __attribute__((__const__));
+
+
+int ffsl(long) __attribute__((__const__));
+int ffsll(long long) __attribute__((__const__));
+int fls(int) __attribute__((__const__));
+int flsl(long) __attribute__((__const__));
+int flsll(long long) __attribute__((__const__));
+
+
+char *index(const char *, int) __attribute__((__pure__));
+char *rindex(const char *, int) __attribute__((__pure__));
+
+int strcasecmp(const char *, const char *) __attribute__((__pure__));
+int strncasecmp(const char *, const char *, size_t) __attribute__((__pure__));
+
+
+int strcasecmp_l (const char *, const char *, locale_t);
+int strncasecmp_l (const char *, const char *, size_t, locale_t);
+
+
+# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+
+
+void * memchr (const void *, int, size_t);
+int memcmp (const void *, const void *, size_t);
+void * memcpy (void *restrict, const void *restrict, size_t);
+void * memmove (void *, const void *, size_t);
+void * memset (void *, int, size_t);
+char *strcat (char *restrict, const char *restrict);
+char *strchr (const char *, int);
+int strcmp (const char *, const char *);
+int strcoll (const char *, const char *);
+char *strcpy (char *restrict, const char *restrict);
+size_t strcspn (const char *, const char *);
+char *strerror (int);
+size_t strlen (const char *);
+char *strncat (char *restrict, const char *restrict, size_t);
+int strncmp (const char *, const char *, size_t);
+char *strncpy (char *restrict, const char *restrict, size_t);
+char *strpbrk (const char *, const char *);
+char *strrchr (const char *, int);
+size_t strspn (const char *, const char *);
+char *strstr (const char *, const char *);
+
+char *strtok (char *restrict, const char *restrict);
+
+size_t strxfrm (char *restrict, const char *restrict, size_t);
+
+
+int strcoll_l (const char *, const char *, locale_t);
+char *strerror_l (int, locale_t);
+size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
+
+
+char *strtok_r (char *restrict, const char *restrict, char **restrict);
+
+
+int timingsafe_bcmp (const void *, const void *, size_t);
+int timingsafe_memcmp (const void *, const void *, size_t);
+
+
+void * memccpy (void *restrict, const void *restrict, int, size_t);
+
+
+void * mempcpy (void *, const void *, size_t);
+void * memmem (const void *, size_t, const void *, size_t);
+void * memrchr (const void *, int, size_t);
+void * rawmemchr (const void *, int);
+
+
+char *stpcpy (char *restrict, const char *restrict);
+char *stpncpy (char *restrict, const char *restrict, size_t);
+
+
+char *strcasestr (const char *, const char *);
+char *strchrnul (const char *, int);
+
+
+char *strdup (const char *) __attribute__((__malloc__)) __attribute__((__warn_unused_result__));
+
+char *_strdup_r (struct _reent *, const char *);
+
+char *strndup (const char *, size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__));
+
+char *_strndup_r (struct _reent *, const char *, size_t);
+
+
+
+
+
+
+char *strerror_r (int, char *, size_t);
+# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+char * _strerror_r (struct _reent *, int, int, int *);
+
+
+size_t strlcat (char *, const char *, size_t);
+size_t strlcpy (char *, const char *, size_t);
+
+
+size_t strnlen (const char *, size_t);
+
+
+char *strsep (char **, const char *);
+
+
+char *strnstr(const char *, const char *, size_t) __attribute__((__pure__));
+
+
+
+char *strlwr (char *);
+char *strupr (char *);
+
+
+
+char *strsignal (int __signo);
+
+
+
+
+
+
+
+int strverscmp (const char *, const char *);
+# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+static __inline unsigned long __libc_detect_null(unsigned long w)
+{
+  unsigned long mask = 0x7f7f7f7f;
+  if (sizeof (long) == 8)
+    mask = ((mask << 16) << 16) | mask;
+  return ~(((w & mask) + mask) | w | mask);
+}
+# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+
+
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
+# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+unsigned long get_cpu_freq(void);
+unsigned long get_timer_freq(void);
+uint64_t get_timer_value(void);
+# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+typedef void (*TaskFunction_t)( void * );
+# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+typedef uint32_t StackType_t;
+typedef int32_t BaseType_t;
+typedef uint32_t UBaseType_t;
+typedef uint32_t TickType_t;
+# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+extern void vTaskSwitchContext( void );
+extern void vEnvironmentCall( uint32_t exception );
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+extern void vTaskEnterCritical( void );
+extern void vTaskExitCritical( void );
+# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+BaseType_t xPortIsInsideInterrupt( void );
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
+# 100 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+  StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters ) ;
+
+
+
+
+typedef struct HeapRegion
+{
+ uint8_t *pucStartAddress;
+ size_t xSizeInBytes;
+} HeapRegion_t;
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
+
+
+
+
+
+void *pvPortMalloc( size_t xSize ) ;
+void *pvPortCalloc(size_t numElements, size_t sizeOfElement); ;
+void *pvPortRealloc(void *pv, size_t xSize) ;
+void vPortFree( void *pv ) ;
+void vPortInitialiseBlocks( void ) ;
+size_t xPortGetFreeHeapSize( void ) ;
+size_t xPortGetMinimumEverFreeHeapSize( void ) ;
+
+
+
+
+
+BaseType_t xPortStartScheduler( void ) ;
+
+
+
+
+
+
+void vPortEndScheduler( void ) ;
+# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+struct xSTATIC_LIST_ITEM
+{
+
+
+
+ TickType_t xDummy2;
+ void *pvDummy3[ 4 ];
+
+
+
+};
+typedef struct xSTATIC_LIST_ITEM StaticListItem_t;
+
+
+struct xSTATIC_MINI_LIST_ITEM
+{
+
+
+
+ TickType_t xDummy2;
+ void *pvDummy3[ 2 ];
+};
+typedef struct xSTATIC_MINI_LIST_ITEM StaticMiniListItem_t;
+
+
+typedef struct xSTATIC_LIST
+{
+
+
+
+ UBaseType_t uxDummy2;
+ void *pvDummy3;
+ StaticMiniListItem_t xDummy4;
+
+
+
+} StaticList_t;
+# 1095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_TCB
+{
+ void *pxDummy1;
+
+
+
+ StaticListItem_t xDummy3[ 2 ];
+ UBaseType_t uxDummy5;
+ void *pxDummy6;
+ uint8_t ucDummy7[ ( 16 ) ];
+
+
+
+
+  UBaseType_t uxDummy9;
+
+
+  UBaseType_t uxDummy10[ 2 ];
+
+
+  UBaseType_t uxDummy12[ 2 ];
+
+
+
+
+
+  void *pvDummy15[ 1 ];
+
+        void *pvDummy15_1[ 1 ];
+# 1133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+  uint32_t ulDummy18;
+  uint8_t ucDummy19;
+
+
+  uint8_t uxDummy20;
+# 1146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+} StaticTask_t;
+# 1162 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_QUEUE
+{
+ void *pvDummy1[ 3 ];
+
+ union
+ {
+  void *pvDummy2;
+  UBaseType_t uxDummy2;
+ } u;
+
+ StaticList_t xDummy3[ 2 ];
+ UBaseType_t uxDummy4[ 3 ];
+ uint8_t ucDummy5[ 2 ];
+
+
+  uint8_t ucDummy6;
+
+
+
+
+
+
+
+  UBaseType_t uxDummy8;
+  uint8_t ucDummy9;
+
+
+} StaticQueue_t;
+typedef StaticQueue_t StaticSemaphore_t;
+# 1206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_EVENT_GROUP
+{
+ TickType_t xDummy1;
+ StaticList_t xDummy2;
+
+
+  UBaseType_t uxDummy3;
+
+
+
+   uint8_t ucDummy4;
+
+
+} StaticEventGroup_t;
+# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_TIMER
+{
+ void *pvDummy1;
+ StaticListItem_t xDummy2;
+ TickType_t xDummy3;
+ void *pvDummy5;
+ TaskFunction_t pvDummy6;
+
+  UBaseType_t uxDummy7;
+
+ uint8_t ucDummy8;
+
+} StaticTimer_t;
+# 1263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_STREAM_BUFFER
+{
+ size_t uxDummy1[ 4 ];
+ void * pvDummy2[ 3 ];
+ uint8_t ucDummy3;
+
+  UBaseType_t uxDummy4;
+
+} StaticStreamBuffer_t;
+
+
+typedef StaticStreamBuffer_t StaticMessageBuffer_t;
+# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+struct xLIST;
+struct xLIST_ITEM
+{
+
+ TickType_t xItemValue;
+ struct xLIST_ITEM * pxNext;
+ struct xLIST_ITEM * pxPrevious;
+ void * pvOwner;
+ struct xLIST * pvContainer;
+
+};
+typedef struct xLIST_ITEM ListItem_t;
+
+struct xMINI_LIST_ITEM
+{
+
+ TickType_t xItemValue;
+ struct xLIST_ITEM * pxNext;
+ struct xLIST_ITEM * pxPrevious;
+};
+typedef struct xMINI_LIST_ITEM MiniListItem_t;
+
+
+
+
+typedef struct xLIST
+{
+
+ volatile UBaseType_t uxNumberOfItems;
+ ListItem_t * pxIndex;
+ MiniListItem_t xListEnd;
+
+} List_t;
+# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInitialise( List_t * const pxList ) ;
+# 356 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInitialiseItem( ListItem_t * const pxItem ) ;
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
+# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
+# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+struct tskTaskControlBlock;
+typedef struct tskTaskControlBlock* TaskHandle_t;
+
+
+
+
+
+typedef BaseType_t (*TaskHookFunction_t)( void * );
+
+
+typedef enum
+{
+ eRunning = 0,
+ eReady,
+ eBlocked,
+ eSuspended,
+ eDeleted,
+ eInvalid
+} eTaskState;
+
+
+typedef enum
+{
+ eNoAction = 0,
+ eSetBits,
+ eIncrement,
+ eSetValueWithOverwrite,
+ eSetValueWithoutOverwrite
+} eNotifyAction;
+
+
+
+
+typedef struct xTIME_OUT
+{
+ BaseType_t xOverflowCount;
+ TickType_t xTimeOnEntering;
+} TimeOut_t;
+
+
+
+
+typedef struct xMEMORY_REGION
+{
+ void *pvBaseAddress;
+ uint32_t ulLengthInBytes;
+ uint32_t ulParameters;
+} MemoryRegion_t;
+
+
+
+
+typedef struct xTASK_PARAMETERS
+{
+ TaskFunction_t pvTaskCode;
+ const char * const pcName;
+ uint16_t usStackDepth;
+ void *pvParameters;
+ UBaseType_t uxPriority;
+ StackType_t *puxStackBuffer;
+ MemoryRegion_t xRegions[ 1 ];
+
+
+
+} TaskParameters_t;
+
+
+
+typedef struct xTASK_STATUS
+{
+ TaskHandle_t xHandle;
+ const char *pcTaskName;
+ UBaseType_t xTaskNumber;
+ eTaskState eCurrentState;
+ UBaseType_t uxCurrentPriority;
+ UBaseType_t uxBasePriority;
+ uint32_t ulRunTimeCounter;
+ StackType_t *pxStackBase;
+ uint16_t usStackHighWaterMark;
+} TaskStatus_t;
+
+
+typedef enum
+{
+ eAbortSleep = 0,
+ eStandardSleep,
+ eNoTasksWaitingTimeout
+} eSleepModeStatus;
+# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+       const char * const pcName,
+       const uint16_t usStackDepth,
+       void * const pvParameters,
+       UBaseType_t uxPriority,
+       TaskHandle_t * const pxCreatedTask ) ;
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
+         const char * const pcName,
+         const uint32_t ulStackDepth,
+         void * const pvParameters,
+         UBaseType_t uxPriority,
+         StackType_t * const puxStackBuffer,
+         StaticTask_t * const pxTaskBuffer ) ;
+# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskAllocateMPURegions( TaskHandle_t xTask, const MemoryRegion_t * const pxRegions ) ;
+# 706 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelete( TaskHandle_t xTaskToDelete ) ;
+# 758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelay( const TickType_t xTicksToDelay ) ;
+# 817 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelayUntil( TickType_t * const pxPreviousWakeTime, const TickType_t xTimeIncrement ) ;
+# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) ;
+# 889 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
+
+
+
+
+
+
+
+UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
+# 915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+eTaskState eTaskGetState( TaskHandle_t xTask ) ;
+# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskGetInfo( TaskHandle_t xTask, TaskStatus_t *pxTaskStatus, BaseType_t xGetFreeStackSpace, eTaskState eState ) ;
+# 1013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority ) ;
+# 1064 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
+# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskResume( TaskHandle_t xTaskToResume ) ;
+# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
+# 1175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskStartScheduler( void ) ;
+# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskEndScheduler( void ) ;
+# 1282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskSuspendAll( void ) ;
+# 1336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskResumeAll( void ) ;
+# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetTickCount( void ) ;
+BaseType_t xTaskGetTickCount2( TickType_t *ticks, BaseType_t *overflow ) ;
+# 1368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetTickCountFromISR( void ) ;
+# 1382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetNumberOfTasks( void ) ;
+# 1395 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+char *pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
+# 1411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TaskHandle_t xTaskGetHandle( const char *pcNameToQuery ) ;
+# 1438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
+# 1465 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
+# 1513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue ) ;
+ void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) ;
+
+
+
+
+
+
+        typedef void (*TlsDeleteCallbackFunction_t)( int, void * );
+
+
+
+
+        UBaseType_t vTaskSetThreadLocalStoragePointerAndDelCallback( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue, TlsDeleteCallbackFunction_t pvDelCallback);
+# 1541 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask, void *pvParameter ) ;
+# 1550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TaskHandle_t xTaskGetIdleTaskHandle( void ) ;
+# 1649 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime ) ;
+UBaseType_t xAddTasksToAllList( void ) ;
+List_t * pxTaskGetAllList( void ) ;
+# 1698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskList( char * pcWriteBuffer ) ;
+# 1752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskGetRunTimeStats( char *pcWriteBuffer ) ;
+# 1782 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetIdleRunTimeCounter( void ) ;
+# 1863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) ;
+# 1954 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) ;
+# 2031 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait ) ;
+# 2132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken ) ;
+# 2201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) ;
+# 2217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
+# 2238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskIncrementTick( void ) ;
+# 2271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPlaceOnEventList( List_t * const pxEventList, const TickType_t xTicksToWait ) ;
+void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickType_t xTicksToWait ) ;
+# 2285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPlaceOnEventListRestricted( List_t * const pxEventList, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
+# 2311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
+void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem, const TickType_t xItemValue ) ;
+# 2322 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ void vTaskSwitchContext( void ) ;
+
+
+
+
+
+TickType_t uxTaskResetEventItemValue( void ) ;
+
+
+
+
+TaskHandle_t xTaskGetCurrentTaskHandle( void ) ;
+
+
+
+
+void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+
+
+
+
+
+BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut, TickType_t * const pxTicksToWait ) ;
+
+
+
+
+
+void vTaskMissedYield( void ) ;
+
+
+
+
+
+BaseType_t xTaskGetSchedulerState( void ) ;
+
+
+
+
+
+BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
+
+
+
+
+
+BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
+# 2378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder, UBaseType_t uxHighestPriorityWaitingTask ) ;
+
+
+
+
+UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
+
+
+
+
+
+void vTaskSetTaskNumber( TaskHandle_t xTask, const UBaseType_t uxHandle ) ;
+# 2399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskStepTick( const TickType_t xTicksToJump ) ;
+void vTaskStepTickSafe( const TickType_t xTicksToJump ) ;
+# 2416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
+
+
+
+
+
+TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
+
+
+
+
+
+void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h" 1
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+typedef __builtin_va_list __gnuc_va_list;
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+
+
+typedef __gnuc_va_list va_list;
+# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
 # 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
@@ -1302,7 +2136,242 @@ _putchar_unlocked(int _c)
 }
 # 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
+# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h" 2
+# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+
+# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+typedef enum LOG_BUF_OUT_DATA_TYPE {
+    LOG_BUF_OUT_DATA_TYPE_HEX,
+    LOG_BUF_OUT_DATA_TYPE_INT8,
+    LOG_BUF_OUT_DATA_TYPE_UNT8,
+} LOG_BUF_OUT_DATA_TYPE_T;
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+int log_buf_out(const char *file, int line, const void *inbuf, int len, LOG_BUF_OUT_DATA_TYPE_T type);
+
+void bl_printk(const char *format, ...);
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h" 1
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h"
+typedef enum _blog_leve {
+    BLOG_LEVEL_ALL = 0,
+    BLOG_LEVEL_DEBUG,
+    BLOG_LEVEL_INFO,
+    BLOG_LEVEL_WARN,
+    BLOG_LEVEL_ERROR,
+    BLOG_LEVEL_ASSERT,
+    BLOG_LEVEL_NEVER,
+} blog_level_t;
+
+typedef struct _blog_info {
+    blog_level_t *level;
+    char *name;
+} blog_info_t;
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog_cfg.h" 1
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h"
+    void blog_init(void);
+
+    void blog_hexdump_out(const char* name, uint8_t width, uint8_t* buf, uint16_t size);
+
+    int blog_set_level_log_component(char* level, char* component_name);
 # 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h" 1
+
+
+
+
+
+typedef enum {
+    BL_RST_POWER_OFF = 0,
+    BL_RST_HARDWARE_WATCHDOG,
+    BL_RST_FATAL_EXCEPTION,
+    BL_RST_SOFTWARE_WATCHDOG,
+    BL_RST_SOFTWARE,
+} BL_RST_REASON_E;
+
+BL_RST_REASON_E bl_sys_rstinfo_get(void);
+int bl_sys_rstinfo_set(BL_RST_REASON_E val);
+int bl_sys_rstinfo_getsting(char *info);
+void bl_sys_rstinfo_init(void);
+int bl_sys_logall_enable(void);
+int bl_sys_logall_disable(void);
+void bl_sys_mfg_config(void);
+int bl_sys_reset_por(void);
+void bl_sys_reset_system(void);
+int bl_sys_isxipaddr(uint32_t addr);
+int bl_sys_early_init(void);
+int bl_sys_init(void);
+# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 1
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h" 1
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+typedef void (*hosal_dma_irq_t)(void *p_arg, uint32_t flag);
+
+
+
+
+struct hosal_dma_chan {
+    uint8_t used;
+    hosal_dma_irq_t callback;
+    void *p_arg;
+};
+
+
+
+
+typedef struct hosal_dma_dev {
+    int max_chans;
+    struct hosal_dma_chan *used_chan;
+    void *priv;
+} hosal_dma_dev_t;
+
+
+
+
+typedef int hosal_dma_chan_t;
+
+
+
+
+
+
+int hosal_dma_init(void);
+# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+hosal_dma_chan_t hosal_dma_chan_request(int flag);
+# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_chan_release(hosal_dma_chan_t chan);
+# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_chan_start(hosal_dma_chan_t chan);
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_chan_stop(hosal_dma_chan_t chan);
+# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_irq_callback_set(hosal_dma_chan_t chan, hosal_dma_irq_t pfn, void *p_arg);
+# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+int hosal_dma_finalize(void);
+# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 2
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+typedef int (*hosal_uart_callback_t)(void *p_arg);
+
+
+
+
+typedef enum {
+    HOSAL_DATA_WIDTH_5BIT,
+    HOSAL_DATA_WIDTH_6BIT,
+    HOSAL_DATA_WIDTH_7BIT,
+    HOSAL_DATA_WIDTH_8BIT,
+    HOSAL_DATA_WIDTH_9BIT
+} hosal_uart_data_width_t;
+
+
+
+
+typedef enum {
+    HOSAL_STOP_BITS_1,
+    HOSAL_STOP_BITS_1_5,
+    HOSAL_STOP_BITS_2
+} hosal_uart_stop_bits_t;
+
+
+
+
+typedef enum {
+    HOSAL_FLOW_CONTROL_DISABLED,
+    HOSAL_FLOW_CONTROL_CTS,
+    HOSAL_FLOW_CONTROL_RTS,
+    HOSAL_FLOW_CONTROL_CTS_RTS
+} hosal_uart_flow_control_t;
+
+
+
+
+typedef enum {
+    HOSAL_NO_PARITY,
+    HOSAL_ODD_PARITY,
+    HOSAL_EVEN_PARITY
+} hosal_uart_parity_t;
+
+
+
+
+typedef enum {
+    HOSAL_UART_MODE_POLL,
+    HOSAL_UART_MODE_INT_TX,
+    HOSAL_UART_MODE_INT_RX,
+    HOSAL_UART_MODE_INT,
+} hosal_uart_mode_t;
+
+
+
+
+typedef struct {
+
+
+
+
+
+    uint8_t *dma_buf;
+
+    uint32_t dma_buf_size;
+} hosal_uart_dma_cfg_t;
+
+
+
+
+typedef struct {
+    uint8_t uart_id;
+    uint8_t tx_pin;
+    uint8_t rx_pin;
+    uint8_t cts_pin;
+    uint8_t rts_pin;
+    uint32_t baud_rate;
+    hosal_uart_data_width_t data_width;
+    hosal_uart_parity_t parity;
+    hosal_uart_stop_bits_t stop_bits;
+    hosal_uart_flow_control_t flow_control;
+    hosal_uart_mode_t mode;
+} hosal_uart_config_t;
+
+
+
+
+typedef struct {
+    uint8_t port;
+    hosal_uart_config_t config;
+    hosal_uart_callback_t tx_cb;
+    void *p_txarg;
+    hosal_uart_callback_t rx_cb;
+    void *p_rxarg;
+    hosal_uart_callback_t txdma_cb;
+    void *p_txdma_arg;
+    hosal_uart_callback_t rxdma_cb;
+    void *p_rxdma_arg;
+    hosal_dma_chan_t dma_tx_chan;
+    hosal_dma_chan_t dma_rx_chan;
+    void *priv;
+} hosal_uart_dev_t;
+# 221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_abr_get(hosal_uart_dev_t *uart, uint8_t mode);
+# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_init(hosal_uart_dev_t *uart);
+int hosal_uart_init_only_tx(hosal_uart_dev_t *uart);
+# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_send(hosal_uart_dev_t *uart, const void *txbuf, uint32_t size);
+# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_receive(hosal_uart_dev_t *uart, void *data, uint32_t expect_size);
+# 293 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_ioctl (hosal_uart_dev_t *uart, int ctl, void *p_arg);
+# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_callback_set (hosal_uart_dev_t *uart,
+                           int callback_type,
+                           hosal_uart_callback_t pfn_callback,
+                           void *arg);
+# 325 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+int hosal_uart_finalize(hosal_uart_dev_t *uart);
+# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
 
 
@@ -1314,9 +2383,7 @@ _putchar_unlocked(int _c)
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
 # 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
 # 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-    
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-   typedef struct
+    typedef struct
     {
         void *hdl;
     } aos_hdl_t;
@@ -1551,459 +2618,1737 @@ _putchar_unlocked(int _c)
 
 
     void aos_start(void);
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h" 1
+# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h" 1
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h" 1
+# 400 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
+extern int bl_rand();
+# 413 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
+void *sys_thread_sem_get(void);
+void sys_thread_sem_init(void);
+void sys_thread_sem_deinit(void);
+# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 1
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 1
+# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h" 1
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cpu.h" 1
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h" 2
 
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
-
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
-typedef signed char int8_t;
-
-
-typedef short int int16_t;
-
-
-typedef long int int32_t;
-
-
-typedef long long int int64_t;
-
-
-typedef unsigned char uint8_t;
-
-
-typedef short unsigned int uint16_t;
-
-
-typedef long unsigned int uint32_t;
-
-
-typedef long long unsigned int uint64_t;
+typedef int sys_prot_t;
+# 49 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 83 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
+# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
-typedef signed char int_least8_t;
-typedef short int int_least16_t;
-typedef long int int_least32_t;
-typedef long long int int_least64_t;
-typedef unsigned char uint_least8_t;
-typedef short unsigned int uint_least16_t;
-typedef long unsigned int uint_least32_t;
-typedef long long unsigned int uint_least64_t;
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
-typedef int int_fast8_t;
-typedef int int_fast16_t;
-typedef int int_fast32_t;
-typedef long long int int_fast64_t;
-typedef unsigned int uint_fast8_t;
-typedef unsigned int uint_fast16_t;
-typedef unsigned int uint_fast32_t;
-typedef long long unsigned int uint_fast64_t;
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+
+
+
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+typedef struct
+{
+  int quot;
+  int rem;
+} div_t;
+
+typedef struct
+{
+  long quot;
+  long rem;
+} ldiv_t;
+
+
+typedef struct
+{
+  long long int quot;
+  long long int rem;
+} lldiv_t;
 
 
 
 
-typedef int intptr_t;
-
-
-typedef unsigned int uintptr_t;
+typedef int (*__compar_fn_t) (const void *, const void *);
 
 
 
 
-typedef long long int intmax_t;
-typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h" 2
 
 
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
+
+int __locale_mb_cur_max (void);
+
+
+
+void abort (void) __attribute__ ((__noreturn__));
+int abs (int);
+
+__uint32_t arc4random (void);
+__uint32_t arc4random_uniform (__uint32_t);
+void arc4random_buf (void *, size_t);
+
+int atexit (void (*__func)(void));
+double atof (const char *__nptr);
+
+float atoff (const char *__nptr);
+
+int atoi (const char *__nptr);
+int _atoi_r (struct _reent *, const char *__nptr);
+long atol (const char *__nptr);
+long _atol_r (struct _reent *, const char *__nptr);
+void * bsearch (const void *__key,
+         const void *__base,
+         size_t __nmemb,
+         size_t __size,
+         __compar_fn_t _compar);
+void *calloc(size_t, size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__))
+      __attribute__((__alloc_size__(1, 2))) ;
+div_t div (int __numer, int __denom);
+void exit (int __status) __attribute__ ((__noreturn__));
+void free (void *) ;
+char * getenv (const char *__string);
+char * _getenv_r (struct _reent *, const char *__string);
+
+char * secure_getenv (const char *__string);
+
+char * _findenv (const char *, int *);
+char * _findenv_r (struct _reent *, const char *, int *);
+
+extern char *suboptarg;
+int getsubopt (char **, char * const *, char **);
+
+long labs (long);
+ldiv_t ldiv (long __numer, long __denom);
+void *malloc(size_t) __attribute__((__malloc__)) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(1))) ;
+int mblen (const char *, size_t);
+int _mblen_r (struct _reent *, const char *, size_t, _mbstate_t *);
+int mbtowc (wchar_t *restrict, const char *restrict, size_t);
+int _mbtowc_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
+int wctomb (char *, wchar_t);
+int _wctomb_r (struct _reent *, char *, wchar_t, _mbstate_t *);
+size_t mbstowcs (wchar_t *restrict, const char *restrict, size_t);
+size_t _mbstowcs_r (struct _reent *, wchar_t *restrict, const char *restrict, size_t, _mbstate_t *);
+size_t wcstombs (char *restrict, const wchar_t *restrict, size_t);
+size_t _wcstombs_r (struct _reent *, char *restrict, const wchar_t *restrict, size_t, _mbstate_t *);
+
+
+char * mkdtemp (char *);
+
+
+int mkostemp (char *, int);
+int mkostemps (char *, int, int);
+
+
+int mkstemp (char *);
+
+
+int mkstemps (char *, int);
+
+
+char * mktemp (char *) __attribute__ ((__deprecated__("the use of `mktemp' is dangerous; use `mkstemp' instead")));
+
+
+char * _mkdtemp_r (struct _reent *, char *);
+int _mkostemp_r (struct _reent *, char *, int);
+int _mkostemps_r (struct _reent *, char *, int, int);
+int _mkstemp_r (struct _reent *, char *);
+int _mkstemps_r (struct _reent *, char *, int);
+char * _mktemp_r (struct _reent *, char *) __attribute__ ((__deprecated__("the use of `mktemp' is dangerous; use `mkstemp' instead")));
+void qsort (void *__base, size_t __nmemb, size_t __size, __compar_fn_t _compar);
+int rand (void);
+void *realloc(void *, size_t) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(2))) ;
+
+void *reallocarray(void *, size_t, size_t) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(2, 3)));
+void *reallocf(void *, size_t) __attribute__((__warn_unused_result__)) __attribute__((__alloc_size__(2)));
+
+
+char * realpath (const char *restrict path, char *restrict resolved_path);
+
+
+int rpmatch (const char *response);
+
+
+void setkey (const char *__key);
+
+void srand (unsigned __seed);
+double strtod (const char *restrict __n, char **restrict __end_PTR);
+double _strtod_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR);
+
+float strtof (const char *restrict __n, char **restrict __end_PTR);
+
+
+
+
+
+
+
+long strtol (const char *restrict __n, char **restrict __end_PTR, int __base);
+long _strtol_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
+unsigned long strtoul (const char *restrict __n, char **restrict __end_PTR, int __base);
+unsigned long _strtoul_r (struct _reent *,const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+double strtod_l (const char *restrict, char **restrict, locale_t);
+float strtof_l (const char *restrict, char **restrict, locale_t);
+
+extern long double strtold_l (const char *restrict, char **restrict,
+         locale_t);
+
+long strtol_l (const char *restrict, char **restrict, int, locale_t);
+unsigned long strtoul_l (const char *restrict, char **restrict, int,
+    locale_t __loc);
+long long strtoll_l (const char *restrict, char **restrict, int, locale_t);
+unsigned long long strtoull_l (const char *restrict, char **restrict, int,
+          locale_t __loc);
+
+
+int system (const char *__string);
+
+
+long a64l (const char *__input);
+char * l64a (long __input);
+char * _l64a_r (struct _reent *,long __input);
+
+
+int on_exit (void (*__func)(int, void *),void *__arg);
+
+
+void _Exit (int __status) __attribute__ ((__noreturn__));
+
+
+int putenv (char *__string);
+
+int _putenv_r (struct _reent *, char *__string);
+void * _reallocf_r (struct _reent *, void *, size_t);
+
+int setenv (const char *__string, const char *__value, int __overwrite);
+
+int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
+# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+char * __itoa (int, char *, int);
+char * __utoa (unsigned, char *, int);
+
+char * itoa (int, char *, int);
+char * utoa (unsigned, char *, int);
+
+
+int rand_r (unsigned *__seed);
+
+
+
+double drand48 (void);
+double _drand48_r (struct _reent *);
+double erand48 (unsigned short [3]);
+double _erand48_r (struct _reent *, unsigned short [3]);
+long jrand48 (unsigned short [3]);
+long _jrand48_r (struct _reent *, unsigned short [3]);
+void lcong48 (unsigned short [7]);
+void _lcong48_r (struct _reent *, unsigned short [7]);
+long lrand48 (void);
+long _lrand48_r (struct _reent *);
+long mrand48 (void);
+long _mrand48_r (struct _reent *);
+long nrand48 (unsigned short [3]);
+long _nrand48_r (struct _reent *, unsigned short [3]);
+unsigned short *
+       seed48 (unsigned short [3]);
+unsigned short *
+       _seed48_r (struct _reent *, unsigned short [3]);
+void srand48 (long);
+void _srand48_r (struct _reent *, long);
+
+
+char * initstate (unsigned, char *, size_t);
+long random (void);
+char * setstate (char *);
+void srandom (unsigned);
+
+
+long long atoll (const char *__nptr);
+
+long long _atoll_r (struct _reent *, const char *__nptr);
+
+long long llabs (long long);
+lldiv_t lldiv (long long __numer, long long __denom);
+long long strtoll (const char *restrict __n, char **restrict __end_PTR, int __base);
+
+long long _strtoll_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
+
+unsigned long long strtoull (const char *restrict __n, char **restrict __end_PTR, int __base);
+
+unsigned long long _strtoull_r (struct _reent *, const char *restrict __n, char **restrict __end_PTR, int __base);
+
+
+
+void cfree (void *);
+
+
+int unsetenv (const char *__string);
+
+int _unsetenv_r (struct _reent *, const char *__string);
+
+
+
+int posix_memalign (void **, size_t, size_t) __attribute__((__nonnull__ (1)))
+     __attribute__((__warn_unused_result__));
+
+
+char * _dtoa_r (struct _reent *, double, int, int, int *, int*, char**);
+
+void * _malloc_r (struct _reent *, size_t) ;
+void * _calloc_r (struct _reent *, size_t, size_t) ;
+void _free_r (struct _reent *, void *) ;
+void * _realloc_r (struct _reent *, void *, size_t) ;
+void _mstats_r (struct _reent *, char *);
+
+int _system_r (struct _reent *, const char *);
+
+void __eprintf (const char *, const char *, unsigned int, const char *);
+
+
+
+
+
+
+void qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
+# 322 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+extern long double _strtold_r (struct _reent *, const char *restrict, char **restrict);
+
+extern long double strtold (const char *restrict, char **restrict);
+
+
+
+
+
+
+
+void * aligned_alloc(size_t, size_t) __attribute__((__malloc__)) __attribute__((__alloc_align__(1)))
+     __attribute__((__alloc_size__(2))) __attribute__((__warn_unused_result__));
+int at_quick_exit(void (*)(void));
+__attribute__((__noreturn__)) void
+ quick_exit(int);
+
+
+
+# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 107 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 125 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+
+# 125 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+typedef uint8_t u8_t;
+typedef int8_t s8_t;
+typedef uint16_t u16_t;
+typedef int16_t s16_t;
+typedef uint32_t u32_t;
+typedef int32_t s32_t;
+
+typedef uint64_t u64_t;
+typedef int64_t s64_t;
+
+typedef uintptr_t mem_ptr_t;
+# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 1 3
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 1 3
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 3
+       
+       
+       
+       
+       
+       
+       
+       
+# 190 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 3
+       
+       
+       
+       
+       
+       
+       
+       
+# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 2 3
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 2 3
+# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
+
+# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
+typedef struct {
+  intmax_t quot;
+  intmax_t rem;
+} imaxdiv_t;
+
+struct _reent;
+
+
+
+
+
+extern intmax_t imaxabs(intmax_t);
+extern imaxdiv_t imaxdiv(intmax_t numer, intmax_t denomer);
+extern intmax_t strtoimax(const char *restrict, char **restrict, int);
+extern intmax_t _strtoimax_r(struct _reent *, const char *restrict, char **restrict, int);
+extern uintmax_t strtoumax(const char *restrict, char **restrict, int);
+extern uintmax_t _strtoumax_r(struct _reent *, const char *restrict, char **restrict, int);
+extern intmax_t wcstoimax(const wchar_t *restrict, wchar_t **restrict, int);
+extern intmax_t _wcstoimax_r(struct _reent *, const wchar_t *restrict, wchar_t **restrict, int);
+extern uintmax_t wcstoumax(const wchar_t *restrict, wchar_t **restrict, int);
+extern uintmax_t _wcstoumax_r(struct _reent *, const wchar_t *restrict, wchar_t **restrict, int);
+
+
+extern intmax_t strtoimax_l(const char *restrict, char **_restrict, int, locale_t);
+extern uintmax_t strtoumax_l(const char *restrict, char **_restrict, int, locale_t);
+extern intmax_t wcstoimax_l(const wchar_t *restrict, wchar_t **_restrict, int, locale_t);
+extern uintmax_t wcstoumax_l(const wchar_t *restrict, wchar_t **_restrict, int, locale_t);
+# 149 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 185 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
+# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 196 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 203 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+
+# 203 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+typedef int ssize_t;
+# 230 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 1 3
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+
+
+
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+int isalnum (int __c);
+int isalpha (int __c);
+int iscntrl (int __c);
+int isdigit (int __c);
+int isgraph (int __c);
+int islower (int __c);
+int isprint (int __c);
+int ispunct (int __c);
+int isspace (int __c);
+int isupper (int __c);
+int isxdigit (int __c);
+int tolower (int __c);
+int toupper (int __c);
+
+
+int isblank (int __c);
+
+
+
+int isascii (int __c);
+int toascii (int __c);
+
+
+
+
+
+extern int isalnum_l (int __c, locale_t __l);
+extern int isalpha_l (int __c, locale_t __l);
+extern int isblank_l (int __c, locale_t __l);
+extern int iscntrl_l (int __c, locale_t __l);
+extern int isdigit_l (int __c, locale_t __l);
+extern int isgraph_l (int __c, locale_t __l);
+extern int islower_l (int __c, locale_t __l);
+extern int isprint_l (int __c, locale_t __l);
+extern int ispunct_l (int __c, locale_t __l);
+extern int isspace_l (int __c, locale_t __l);
+extern int isupper_l (int __c, locale_t __l);
+extern int isxdigit_l(int __c, locale_t __l);
+extern int tolower_l (int __c, locale_t __l);
+extern int toupper_l (int __c, locale_t __l);
+
+
+
+extern int isascii_l (int __c, locale_t __l);
+extern int toascii_l (int __c, locale_t __l);
+# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+extern const char _ctype_[];
+# 114 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+static __inline const char *
+__locale_ctype_ptr_l(locale_t _l)
+{
+ (void)_l;
+ return _ctype_;
+}
+# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+
+# 231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 2
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 2
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h" 2
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h" 1
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
 typedef enum {
-    BL_RST_POWER_OFF = 0,
-    BL_RST_HARDWARE_WATCHDOG,
-    BL_RST_FATAL_EXCEPTION,
-    BL_RST_SOFTWARE_WATCHDOG,
-    BL_RST_SOFTWARE,
-} BL_RST_REASON_E;
 
-BL_RST_REASON_E bl_sys_rstinfo_get(void);
-int bl_sys_rstinfo_set(BL_RST_REASON_E val);
-int bl_sys_rstinfo_getsting(char *info);
-void bl_sys_rstinfo_init(void);
-int bl_sys_logall_enable(void);
-int bl_sys_logall_disable(void);
-void bl_sys_mfg_config(void);
-int bl_sys_reset_por(void);
-void bl_sys_reset_system(void);
-int bl_sys_isxipaddr(uint32_t addr);
-int bl_sys_early_init(void);
-int bl_sys_init(void);
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 1
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h" 1
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-typedef void (*hosal_dma_irq_t)(void *p_arg, uint32_t flag);
+  ERR_OK = 0,
+
+  ERR_MEM = -1,
+
+  ERR_BUF = -2,
+
+  ERR_TIMEOUT = -3,
+
+  ERR_RTE = -4,
+
+  ERR_INPROGRESS = -5,
+
+  ERR_VAL = -6,
+
+  ERR_WOULDBLOCK = -7,
+
+  ERR_USE = -8,
+
+  ERR_ALREADY = -9,
+
+  ERR_ISCONN = -10,
+
+  ERR_CONN = -11,
+
+  ERR_IF = -12,
+
+
+  ERR_ABRT = -13,
+
+  ERR_RST = -14,
+
+  ERR_CLSD = -15,
+
+  ERR_ARG = -16
+} err_enum_t;
 
 
 
 
-struct hosal_dma_chan {
-    uint8_t used;
-    hosal_dma_irq_t callback;
-    void *p_arg;
+
+
+typedef s8_t err_t;
+# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+int err_to_errno(err_t err);
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h" 1
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h" 1
+# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h" 1
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 1
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 2
+
+
+
+
+
+
+struct QueueDefinition;
+typedef struct QueueDefinition * QueueHandle_t;
+
+
+
+
+
+
+typedef struct QueueDefinition * QueueSetHandle_t;
+
+
+
+
+
+
+typedef struct QueueDefinition * QueueSetMemberHandle_t;
+# 650 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueGenericSend( QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait, const BaseType_t xCopyPosition ) ;
+# 744 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueuePeek( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
+# 777 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueuePeekFromISR( QueueHandle_t xQueue, void * const pvBuffer ) ;
+# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
+# 883 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+UBaseType_t uxQueueMessagesWaiting( const QueueHandle_t xQueue ) ;
+# 900 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+UBaseType_t uxQueueSpacesAvailable( const QueueHandle_t xQueue ) ;
+# 914 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+void vQueueDelete( QueueHandle_t xQueue ) ;
+# 1295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueGenericSendFromISR( QueueHandle_t xQueue, const void * const pvItemToQueue, BaseType_t * const pxHigherPriorityTaskWoken, const BaseType_t xCopyPosition ) ;
+BaseType_t xQueueGiveFromISR( QueueHandle_t xQueue, BaseType_t * const pxHigherPriorityTaskWoken ) ;
+# 1385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueReceiveFromISR( QueueHandle_t xQueue, void * const pvBuffer, BaseType_t * const pxHigherPriorityTaskWoken ) ;
+
+
+
+
+
+BaseType_t xQueueIsQueueEmptyFromISR( const QueueHandle_t xQueue ) ;
+BaseType_t xQueueIsQueueFullFromISR( const QueueHandle_t xQueue ) ;
+UBaseType_t uxQueueMessagesWaitingFromISR( const QueueHandle_t xQueue ) ;
+# 1404 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueCRSendFromISR( QueueHandle_t xQueue, const void *pvItemToQueue, BaseType_t xCoRoutinePreviouslyWoken );
+BaseType_t xQueueCRReceiveFromISR( QueueHandle_t xQueue, void *pvBuffer, BaseType_t *pxTaskWoken );
+BaseType_t xQueueCRSend( QueueHandle_t xQueue, const void *pvItemToQueue, TickType_t xTicksToWait );
+BaseType_t xQueueCRReceive( QueueHandle_t xQueue, void *pvBuffer, TickType_t xTicksToWait );
+
+
+
+
+
+
+QueueHandle_t xQueueCreateMutex( const uint8_t ucQueueType ) ;
+QueueHandle_t xQueueCreateMutexStatic( const uint8_t ucQueueType, StaticQueue_t *pxStaticQueue ) ;
+QueueHandle_t xQueueCreateCountingSemaphore( const UBaseType_t uxMaxCount, const UBaseType_t uxInitialCount ) ;
+QueueHandle_t xQueueCreateCountingSemaphoreStatic( const UBaseType_t uxMaxCount, const UBaseType_t uxInitialCount, StaticQueue_t *pxStaticQueue ) ;
+BaseType_t xQueueSemaphoreTake( QueueHandle_t xQueue, TickType_t xTicksToWait ) ;
+TaskHandle_t xQueueGetMutexHolder( QueueHandle_t xSemaphore ) ;
+TaskHandle_t xQueueGetMutexHolderFromISR( QueueHandle_t xSemaphore ) ;
+
+
+
+
+
+BaseType_t xQueueTakeMutexRecursive( QueueHandle_t xMutex, TickType_t xTicksToWait ) ;
+BaseType_t xQueueGiveMutexRecursive( QueueHandle_t xMutex ) ;
+# 1458 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ void vQueueAddToRegistry( QueueHandle_t xQueue, const char *pcQueueName ) ;
+# 1472 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ void vQueueUnregisterQueue( QueueHandle_t xQueue ) ;
+# 1487 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ const char *pcQueueGetName( QueueHandle_t xQueue ) ;
+# 1496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ QueueHandle_t xQueueGenericCreate( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, const uint8_t ucQueueType ) ;
+# 1505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ QueueHandle_t xQueueGenericCreateStatic( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, uint8_t *pucQueueStorage, StaticQueue_t *pxStaticQueue, const uint8_t ucQueueType ) ;
+# 1556 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+QueueSetHandle_t xQueueCreateSet( const UBaseType_t uxEventQueueLength ) ;
+# 1580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueAddToSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
+# 1599 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueRemoveFromSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
+# 1635 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+QueueSetMemberHandle_t xQueueSelectFromSet( QueueSetHandle_t xQueueSet, const TickType_t xTicksToWait ) ;
+
+
+
+
+QueueSetMemberHandle_t xQueueSelectFromSetFromISR( QueueSetHandle_t xQueueSet ) ;
+
+
+void vQueueWaitForMessageRestricted( QueueHandle_t xQueue, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
+BaseType_t xQueueGenericReset( QueueHandle_t xQueue, BaseType_t xNewQueue ) ;
+void vQueueSetQueueNumber( QueueHandle_t xQueue, UBaseType_t uxQueueNumber ) ;
+UBaseType_t uxQueueGetQueueNumber( QueueHandle_t xQueue ) ;
+uint8_t ucQueueGetQueueType( QueueHandle_t xQueue ) ;
+# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 1
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 1
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 2
+
+typedef QueueHandle_t SemaphoreHandle_t;
+# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h" 2
+
+
+
+
+
+typedef SemaphoreHandle_t sys_sem_t;
+typedef SemaphoreHandle_t sys_mutex_t;
+typedef QueueHandle_t sys_mbox_t;
+typedef TaskHandle_t sys_thread_t;
+
+typedef struct _sys_arch_state_t
+{
+
+ char cTaskName[( 16 )];
+ unsigned short nStackDepth;
+ unsigned short nTaskCount;
+} sys_arch_state_t;
+# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h" 2
+
+
+typedef void (*lwip_thread_fn)(void *arg);
+# 137 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+err_t sys_mutex_new(sys_mutex_t *mutex);
+
+
+
+
+
+void sys_mutex_lock(sys_mutex_t *mutex);
+
+
+
+
+
+void sys_mutex_unlock(sys_mutex_t *mutex);
+
+
+
+
+
+void sys_mutex_free(sys_mutex_t *mutex);
+# 164 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+int sys_mutex_valid(sys_mutex_t *mutex);
+# 174 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_mutex_set_invalid(sys_mutex_t *mutex);
+# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+err_t sys_sem_new(sys_sem_t *sem, u8_t count);
+
+
+
+
+
+void sys_sem_signal(sys_sem_t *sem);
+# 219 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+u32_t sys_arch_sem_wait(sys_sem_t *sem, u32_t timeout);
+
+
+
+
+
+void sys_sem_free(sys_sem_t *sem);
+# 236 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+int sys_sem_valid(sys_sem_t *sem);
+# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_sem_set_invalid(sys_sem_t *sem);
+# 266 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_msleep(u32_t ms);
+# 285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+err_t sys_mbox_new(sys_mbox_t *mbox, int size);
+# 294 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_mbox_post(sys_mbox_t *mbox, void *msg);
+# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+err_t sys_mbox_trypost(sys_mbox_t *mbox, void *msg);
+# 314 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+err_t sys_mbox_trypost_fromisr(sys_mbox_t *mbox, void *msg);
+# 336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+u32_t sys_arch_mbox_fetch(sys_mbox_t *mbox, void **msg, u32_t timeout);
+# 355 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+u32_t sys_arch_mbox_tryfetch(sys_mbox_t *mbox, void **msg);
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_mbox_free(sys_mbox_t *mbox);
+# 379 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+int sys_mbox_valid(sys_mbox_t *mbox);
+# 389 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_mbox_set_invalid(sys_mbox_t *mbox);
+# 420 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+sys_thread_t sys_thread_new(const char *name, lwip_thread_fn thread, void *arg, int stacksize, int prio);
+# 429 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+void sys_init(void);
+
+
+
+
+
+u32_t sys_jiffies(void);
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+u32_t sys_now(void);
+# 492 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+sys_prot_t sys_arch_protect(void);
+void sys_arch_unprotect(sys_prot_t pval);
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h" 2
+# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
+typedef void (* lwip_cyclic_timer_handler)(void);
+
+
+
+struct lwip_cyclic_timer {
+  u32_t interval_ms;
+  lwip_cyclic_timer_handler handler;
+
+
+
+};
+
+
+
+extern const struct lwip_cyclic_timer lwip_cyclic_timers[];
+
+extern const int lwip_num_cyclic_timers;
+# 91 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
+typedef void (* sys_timeout_handler)(void *arg);
+
+struct sys_timeo {
+  struct sys_timeo *next;
+  u32_t time;
+  sys_timeout_handler h;
+  void *arg;
+
+
+
+};
+
+void sys_timeouts_init(void);
+
+
+
+
+
+void sys_timeout(u32_t msecs, sys_timeout_handler handler, void *arg);
+
+
+void sys_untimeout(sys_timeout_handler handler, void *arg);
+void sys_restart_timeouts(void);
+void sys_check_timeouts(void);
+u32_t sys_timeouts_sleeptime(void);
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 1
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 1
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h" 1
+# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+u16_t lwip_htons(u16_t x);
+
+
+
+
+u32_t lwip_htonl(u32_t x);
+# 133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+void lwip_itoa(char* result, size_t bufsize, int number);
+
+
+
+int lwip_strnicmp(const char* str1, const char* str2, size_t len);
+
+
+
+int lwip_stricmp(const char* str1, const char* str2);
+
+
+
+char* lwip_strnstr(const char* buffer, const char* token, size_t n);
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h" 1
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+struct ip4_addr {
+  u32_t addr;
+};
+
+
+
+typedef struct ip4_addr ip4_addr_t;
+
+
+struct netif;
+# 151 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+u8_t ip4_addr_isbroadcast_u32(u32_t addr, const struct netif *netif);
+
+
+u8_t ip4_addr_netmask_valid(u32_t netmask);
+# 204 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+u32_t ipaddr_addr(const char *cp);
+int ip4addr_aton(const char *cp, ip4_addr_t *addr);
+
+char *ip4addr_ntoa(const ip4_addr_t *addr);
+char *ip4addr_ntoa_r(const ip4_addr_t *addr, char *buf, int buflen);
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h" 1
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h" 1
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h" 2
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
+# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+enum lwip_ip_addr_type {
+
+  IPADDR_TYPE_V4 = 0U,
+
+  IPADDR_TYPE_V6 = 6U,
+
+  IPADDR_TYPE_ANY = 46U
+};
+# 270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+typedef ip4_addr_t ip_addr_t;
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+extern const ip_addr_t ip_addr_any;
+extern const ip_addr_t ip_addr_broadcast;
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 1
+# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+typedef enum {
+
+
+
+  PBUF_TRANSPORT = 128u + (14 + 0) + 20 + 20,
+
+
+
+  PBUF_IP = 128u + (14 + 0) + 20,
+
+
+
+
+  PBUF_LINK = 128u + (14 + 0),
+
+
+
+
+
+  PBUF_RAW_TX = 128u,
+
+
+  PBUF_RAW = 0
+} pbuf_layer;
+# 145 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+typedef enum {
+
+
+
+
+
+
+  PBUF_RAM = (0x0200 | 0x80 | 0x00),
+
+
+
+  PBUF_ROM = 0x01,
+
+
+
+  PBUF_REF = (0x40 | 0x01),
+
+
+
+
+
+
+  PBUF_POOL = (0x0100 | 0x80 | 0x02)
+} pbuf_type;
+# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+struct pbuf {
+
+  struct pbuf *next;
+
+
+  void *payload;
+# 200 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+  u16_t tot_len;
+
+
+  u16_t len;
+
+
+
+
+  u8_t type_internal;
+
+
+  u8_t flags;
+
+
+
+
+
+
+  u8_t ref;
+
+
+  u8_t if_idx;
 };
 
 
 
 
-typedef struct hosal_dma_dev {
-    int max_chans;
-    struct hosal_dma_chan *used_chan;
-    void *priv;
-} hosal_dma_dev_t;
+
+
+struct pbuf_rom {
+
+  struct pbuf *next;
+
+
+  const void *payload;
+};
 
 
 
-
-typedef int hosal_dma_chan_t;
-
+typedef void (*pbuf_free_custom_fn)(struct pbuf *p);
 
 
+struct pbuf_custom {
 
+  struct pbuf pbuf;
 
+  pbuf_free_custom_fn custom_free_function;
+};
+# 272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+struct pbuf *pbuf_alloc(pbuf_layer l, u16_t length, pbuf_type type);
+struct pbuf *pbuf_alloc_reference(void *payload, u16_t length, pbuf_type type);
 
-int hosal_dma_init(void);
-# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-hosal_dma_chan_t hosal_dma_chan_request(int flag);
-# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_chan_release(hosal_dma_chan_t chan);
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_chan_start(hosal_dma_chan_t chan);
-# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_chan_stop(hosal_dma_chan_t chan);
-# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_irq_callback_set(hosal_dma_chan_t chan, hosal_dma_irq_t pfn, void *p_arg);
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-int hosal_dma_finalize(void);
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h" 2
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-typedef int (*hosal_uart_callback_t)(void *p_arg);
+struct pbuf *pbuf_alloced_custom(pbuf_layer l, u16_t length, pbuf_type type,
+                                 struct pbuf_custom *p, void *payload_mem,
+                                 u16_t payload_mem_len);
+
+void pbuf_realloc(struct pbuf *p, u16_t size);
 
 
 
+u8_t pbuf_header(struct pbuf *p, s16_t header_size);
+u8_t pbuf_header_force(struct pbuf *p, s16_t header_size);
+u8_t pbuf_add_header(struct pbuf *p, size_t header_size_increment);
+u8_t pbuf_add_header_force(struct pbuf *p, size_t header_size_increment);
+u8_t pbuf_remove_header(struct pbuf *p, size_t header_size);
+struct pbuf *pbuf_free_header(struct pbuf *q, u16_t size);
+void pbuf_ref(struct pbuf *p);
+u8_t pbuf_free(struct pbuf *p);
+u16_t pbuf_clen(const struct pbuf *p);
+void pbuf_cat(struct pbuf *head, struct pbuf *tail);
+void pbuf_chain(struct pbuf *head, struct pbuf *tail);
+struct pbuf *pbuf_dechain(struct pbuf *p);
+err_t pbuf_copy(struct pbuf *p_to, const struct pbuf *p_from);
+u16_t pbuf_copy_partial(const struct pbuf *p, void *dataptr, u16_t len, u16_t offset);
+void *pbuf_get_contiguous(const struct pbuf *p, void *buffer, size_t bufsize, u16_t len, u16_t offset);
+err_t pbuf_take(struct pbuf *buf, const void *dataptr, u16_t len);
+err_t pbuf_take_at(struct pbuf *buf, const void *dataptr, u16_t len, u16_t offset);
+struct pbuf *pbuf_skip(struct pbuf* in, u16_t in_offset, u16_t* out_offset);
+struct pbuf *pbuf_coalesce(struct pbuf *p, pbuf_layer layer);
+struct pbuf *pbuf_clone(pbuf_layer l, pbuf_type type, struct pbuf *p);
 
-typedef enum {
-    HOSAL_DATA_WIDTH_5BIT,
-    HOSAL_DATA_WIDTH_6BIT,
-    HOSAL_DATA_WIDTH_7BIT,
-    HOSAL_DATA_WIDTH_8BIT,
-    HOSAL_DATA_WIDTH_9BIT
-} hosal_uart_data_width_t;
-
-
-
-
-typedef enum {
-    HOSAL_STOP_BITS_1,
-    HOSAL_STOP_BITS_1_5,
-    HOSAL_STOP_BITS_2
-} hosal_uart_stop_bits_t;
-
-
-
-
-typedef enum {
-    HOSAL_FLOW_CONTROL_DISABLED,
-    HOSAL_FLOW_CONTROL_CTS,
-    HOSAL_FLOW_CONTROL_RTS,
-    HOSAL_FLOW_CONTROL_CTS_RTS
-} hosal_uart_flow_control_t;
-
-
-
-
-typedef enum {
-    HOSAL_NO_PARITY,
-    HOSAL_ODD_PARITY,
-    HOSAL_EVEN_PARITY
-} hosal_uart_parity_t;
-
-
-
-
-typedef enum {
-    HOSAL_UART_MODE_POLL,
-    HOSAL_UART_MODE_INT_TX,
-    HOSAL_UART_MODE_INT_RX,
-    HOSAL_UART_MODE_INT,
-} hosal_uart_mode_t;
-
-
-
-
-typedef struct {
+err_t pbuf_fill_chksum(struct pbuf *p, u16_t start_offset, const void *dataptr,
+                       u16_t len, u16_t *chksum);
 
 
 
 
 
-    uint8_t *dma_buf;
-
-    uint32_t dma_buf_size;
-} hosal_uart_dma_cfg_t;
-
-
-
-
-typedef struct {
-    uint8_t uart_id;
-    uint8_t tx_pin;
-    uint8_t rx_pin;
-    uint8_t cts_pin;
-    uint8_t rts_pin;
-    uint32_t baud_rate;
-    hosal_uart_data_width_t data_width;
-    hosal_uart_parity_t parity;
-    hosal_uart_stop_bits_t stop_bits;
-    hosal_uart_flow_control_t flow_control;
-    hosal_uart_mode_t mode;
-} hosal_uart_config_t;
+u8_t pbuf_get_at(const struct pbuf* p, u16_t offset);
+int pbuf_try_get_at(const struct pbuf* p, u16_t offset);
+void pbuf_put_at(struct pbuf* p, u16_t offset, u8_t data);
+u16_t pbuf_memcmp(const struct pbuf* p, u16_t offset, const void* s2, u16_t n);
+u16_t pbuf_memfind(const struct pbuf* p, const void* mem, u16_t mem_len, u16_t start_offset);
+u16_t pbuf_strstr(const struct pbuf* p, const char* substr);
+# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 1
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h" 1
+# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
+typedef u16_t mem_size_t;
 
 
 
 
-typedef struct {
-    uint8_t port;
-    hosal_uart_config_t config;
-    hosal_uart_callback_t tx_cb;
-    void *p_txarg;
-    hosal_uart_callback_t rx_cb;
-    void *p_rxarg;
-    hosal_uart_callback_t txdma_cb;
-    void *p_txdma_arg;
-    hosal_uart_callback_t rxdma_cb;
-    void *p_rxdma_arg;
-    hosal_dma_chan_t dma_tx_chan;
-    hosal_dma_chan_t dma_rx_chan;
-    void *priv;
-} hosal_uart_dev_t;
-# 221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_abr_get(hosal_uart_dev_t *uart, uint8_t mode);
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_init(hosal_uart_dev_t *uart);
-int hosal_uart_init_only_tx(hosal_uart_dev_t *uart);
-# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_send(hosal_uart_dev_t *uart, const void *txbuf, uint32_t size);
-# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_receive(hosal_uart_dev_t *uart, void *data, uint32_t expect_size);
-# 293 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_ioctl (hosal_uart_dev_t *uart, int ctl, void *p_arg);
-# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_callback_set (hosal_uart_dev_t *uart,
-                           int callback_type,
-                           hosal_uart_callback_t pfn_callback,
-                           void *arg);
-# 325 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-int hosal_uart_finalize(hosal_uart_dev_t *uart);
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/led_state/led_state_machine.h" 1
+void mem_init(void);
+void *mem_trim(void *mem, mem_size_t size);
+void *mem_malloc(mem_size_t size);
+void *mem_calloc(mem_size_t count, mem_size_t size);
+void mem_free(void *mem);
+# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 1
+# 49 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h" 1
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+
+
+
+
+
+
+# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+
+# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+
+
+
+
+
+
+
+
+
+# 133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+
+
+# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
 
 
 typedef enum {
-    LED_STATE_ON = 0,
-    LED_STATE_OFF,
-}led_state_t;
 
-typedef enum {
-    LED_EVENT_ON,
-    LED_EVENT_OFF,
-}led_event_t;
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h" 1
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+MEMP_RAW_PCB,
 
-typedef void (*action_led_t) (void);
 
-typedef struct
+
+MEMP_UDP_PCB,
+
+
+
+MEMP_TCP_PCB,
+MEMP_TCP_PCB_LISTEN,
+MEMP_TCP_SEG,
+
+
+
+MEMP_ALTCP_PCB,
+# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+MEMP_NETBUF,
+MEMP_NETCONN,
+
+
+
+MEMP_TCPIP_MSG_API,
+# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+MEMP_TCPIP_MSG_INPKT,
+# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+MEMP_IGMP_GROUP,
+
+
+
+MEMP_SYS_TIMEOUT,
+
+
+
+MEMP_NETDB,
+# 133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+MEMP_PBUF,
+MEMP_PBUF_POOL,
+# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+  MEMP_MAX
+} memp_t;
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h" 1
+# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/mem_priv.h" 1
+# 49 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h" 2
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+struct memp {
+  struct memp *next;
+
+
+
+
+};
+# 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+struct memp_desc {
+
+
+
+
+
+
+  struct stats_mem *stats;
+
+
+
+  u16_t size;
+
+
+
+  u16_t num;
+
+
+  u8_t *base;
+
+
+  struct memp **tab;
+
+};
+# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+void memp_init_pool(const struct memp_desc *desc);
+
+
+
+
+
+void *memp_malloc_pool(const struct memp_desc *desc);
+
+void memp_free_pool(const struct memp_desc* desc, void *mem);
+# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 1
+# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+
+extern const struct memp_desc* const memp_pools[MEMP_MAX];
+# 141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+void memp_init(void);
+
+
+
+
+
+void *memp_malloc(memp_t type);
+
+void memp_free(memp_t type, void *mem);
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 2
+# 64 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+struct stats_proto {
+  u16_t xmit;
+  u16_t recv;
+  u16_t fw;
+  u16_t drop;
+  u16_t chkerr;
+  u16_t lenerr;
+  u16_t memerr;
+  u16_t rterr;
+  u16_t proterr;
+  u16_t opterr;
+  u16_t err;
+  u16_t cachehit;
+};
+
+
+struct stats_igmp {
+  u16_t xmit;
+  u16_t recv;
+  u16_t drop;
+  u16_t chkerr;
+  u16_t lenerr;
+  u16_t memerr;
+  u16_t proterr;
+  u16_t rx_v1;
+  u16_t rx_group;
+  u16_t rx_general;
+  u16_t rx_report;
+  u16_t tx_join;
+  u16_t tx_leave;
+  u16_t tx_report;
+};
+
+
+struct stats_mem {
+
+
+
+  u16_t err;
+  mem_size_t avail;
+  mem_size_t used;
+  mem_size_t max;
+  u16_t illegal;
+};
+
+
+struct stats_syselem {
+  u16_t used;
+  u16_t max;
+  u16_t err;
+};
+
+
+struct stats_sys {
+  struct stats_syselem sem;
+  struct stats_syselem mutex;
+  struct stats_syselem mbox;
+};
+
+
+struct stats_mib2 {
+
+  u32_t ipinhdrerrors;
+  u32_t ipinaddrerrors;
+  u32_t ipinunknownprotos;
+  u32_t ipindiscards;
+  u32_t ipindelivers;
+  u32_t ipoutrequests;
+  u32_t ipoutdiscards;
+  u32_t ipoutnoroutes;
+  u32_t ipreasmoks;
+  u32_t ipreasmfails;
+  u32_t ipfragoks;
+  u32_t ipfragfails;
+  u32_t ipfragcreates;
+  u32_t ipreasmreqds;
+  u32_t ipforwdatagrams;
+  u32_t ipinreceives;
+
+
+  u32_t tcpactiveopens;
+  u32_t tcppassiveopens;
+  u32_t tcpattemptfails;
+  u32_t tcpestabresets;
+  u32_t tcpoutsegs;
+  u32_t tcpretranssegs;
+  u32_t tcpinsegs;
+  u32_t tcpinerrs;
+  u32_t tcpoutrsts;
+
+
+  u32_t udpindatagrams;
+  u32_t udpnoports;
+  u32_t udpinerrors;
+  u32_t udpoutdatagrams;
+
+
+  u32_t icmpinmsgs;
+  u32_t icmpinerrors;
+  u32_t icmpindestunreachs;
+  u32_t icmpintimeexcds;
+  u32_t icmpinparmprobs;
+  u32_t icmpinsrcquenchs;
+  u32_t icmpinredirects;
+  u32_t icmpinechos;
+  u32_t icmpinechoreps;
+  u32_t icmpintimestamps;
+  u32_t icmpintimestampreps;
+  u32_t icmpinaddrmasks;
+  u32_t icmpinaddrmaskreps;
+  u32_t icmpoutmsgs;
+  u32_t icmpouterrors;
+  u32_t icmpoutdestunreachs;
+  u32_t icmpouttimeexcds;
+  u32_t icmpoutechos;
+  u32_t icmpoutechoreps;
+};
+
+
+
+
+
+struct stats_mib2_netif_ctrs {
+
+  u32_t ifinoctets;
+
+
+  u32_t ifinucastpkts;
+
+
+  u32_t ifinnucastpkts;
+
+
+
+  u32_t ifindiscards;
+
+
+
+
+  u32_t ifinerrors;
+
+
+
+
+
+
+  u32_t ifinunknownprotos;
+
+  u32_t ifoutoctets;
+
+
+
+  u32_t ifoutucastpkts;
+
+
+
+  u32_t ifoutnucastpkts;
+
+
+
+  u32_t ifoutdiscards;
+
+
+
+  u32_t ifouterrors;
+};
+
+
+struct stats_ {
+
+
+  struct stats_proto link;
+
+
+
+  struct stats_proto etharp;
+
+
+
+
+
+
+
+  struct stats_proto ip;
+
+
+
+  struct stats_proto icmp;
+
+
+
+  struct stats_igmp igmp;
+
+
+
+  struct stats_proto udp;
+
+
+
+  struct stats_proto tcp;
+
+
+
+  struct stats_mem mem;
+
+
+
+  struct stats_mem *memp[MEMP_MAX];
+
+
+
+  struct stats_sys sys;
+# 301 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+};
+
+
+extern struct stats_ lwip_stats;
+
+
+void stats_init(void);
+# 488 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+void stats_netstat(void *ctx);
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
+# 113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+enum lwip_internal_netif_client_data_index
 {
-    led_event_t event;
-    led_state_t current_state;
-    led_state_t next_state;
-    action_led_t action;
-}led_ctx_t;
 
-void led_state_init(void);
-void led_handle_action(led_event_t event);
+
+   LWIP_NETIF_CLIENT_DATA_INDEX_DHCP,
+
+
+
+
+
+   LWIP_NETIF_CLIENT_DATA_INDEX_IGMP,
+# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+   LWIP_NETIF_CLIENT_DATA_INDEX_MAX
+};
+# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+struct netif;
+
+
+
+enum netif_mac_filter_action {
+
+  NETIF_DEL_MAC_FILTER = 0,
+
+  NETIF_ADD_MAC_FILTER = 1
+};
+
+
+
+
+
+
+typedef err_t (*netif_init_fn)(struct netif *netif);
+# 178 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef err_t (*netif_input_fn)(struct pbuf *p, struct netif *inp);
+# 189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef err_t (*netif_output_fn)(struct netif *netif, struct pbuf *p,
+       const ip4_addr_t *ipaddr);
+# 212 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef err_t (*netif_linkoutput_fn)(struct netif *netif, struct pbuf *p);
+
+typedef void (*netif_status_callback_fn)(struct netif *netif);
+
+
+typedef err_t (*netif_igmp_mac_filter_fn)(struct netif *netif,
+       const ip4_addr_t *group, enum netif_mac_filter_action action);
+# 228 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+u8_t netif_alloc_client_data_id(void);
+# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef u8_t netif_addr_idx_t;
+# 260 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+struct netif {
+
+
+  struct netif *next;
+
+
+
+
+  ip_addr_t ip_addr;
+  ip_addr_t netmask;
+  ip_addr_t gw;
+# 289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+  netif_input_fn input;
+
+
+
+
+
+  netif_output_fn output;
+
+
+
+
+  netif_linkoutput_fn linkoutput;
+# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+  netif_status_callback_fn status_callback;
+
+
+
+
+  netif_status_callback_fn link_callback;
+
+
+
+
+
+
+
+  void *state;
+
+  void* client_data[LWIP_NETIF_CLIENT_DATA_INDEX_MAX + 1];
+
+
+
+  const char* hostname;
+
+
+
+
+
+  u16_t mtu;
+
+
+
+
+
+  u8_t hwaddr[6U];
+
+  u8_t hwaddr_len;
+
+  u8_t flags;
+
+  char name[2];
+
+
+  u8_t num;
+
+
+
+
+
+
+  u8_t rs_count;
+# 373 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+  netif_igmp_mac_filter_fn igmp_mac_filter;
+# 385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+  struct pbuf *loop_first;
+  struct pbuf *loop_last;
+
+
+
+
+};
+# 406 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+extern struct netif *netif_list;
+
+
+
+extern struct netif *netif_default;
+
+void netif_init(void);
+
+struct netif *netif_add_noaddr(struct netif *netif, void *state, netif_init_fn init, netif_input_fn input);
+
+
+struct netif *netif_add(struct netif *netif,
+                            const ip4_addr_t *ipaddr, const ip4_addr_t *netmask, const ip4_addr_t *gw,
+                            void *state, netif_init_fn init, netif_input_fn input);
+void netif_set_addr(struct netif *netif, const ip4_addr_t *ipaddr, const ip4_addr_t *netmask,
+                    const ip4_addr_t *gw);
+
+
+
+void netif_remove(struct netif * netif);
+
+
+
+
+
+struct netif *netif_find(const char *name);
+
+void netif_set_default(struct netif *netif);
+
+
+void netif_set_ipaddr(struct netif *netif, const ip4_addr_t *ipaddr);
+void netif_set_netmask(struct netif *netif, const ip4_addr_t *netmask);
+void netif_set_gw(struct netif *netif, const ip4_addr_t *gw);
+# 457 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+void netif_set_up(struct netif *netif);
+void netif_set_down(struct netif *netif);
+
+
+
+
+
+
+void netif_set_status_callback(struct netif *netif, netif_status_callback_fn status_callback);
+
+
+
+
+
+void netif_set_link_up(struct netif *netif);
+void netif_set_link_down(struct netif *netif);
+
+
+
+
+void netif_set_link_callback(struct netif *netif, netif_status_callback_fn link_callback);
+# 501 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+err_t netif_loop_output(struct netif *netif, struct pbuf *p);
+void netif_poll(struct netif *netif);
+
+
+
+
+
+err_t netif_input(struct pbuf *p, struct netif *inp);
+# 552 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+u8_t netif_name_to_index(const char *name);
+char * netif_index_to_name(u8_t idx, char *name);
+struct netif* netif_get_by_index(u8_t idx);
+# 565 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef u16_t netif_nsc_reason_t;
+# 595 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef union
+{
+
+  struct link_changed_s
+  {
+
+    u8_t state;
+  } link_changed;
+
+  struct status_changed_s
+  {
+
+    u8_t state;
+  } status_changed;
+
+  struct ipv4_changed_s
+  {
+
+    const ip_addr_t* old_address;
+    const ip_addr_t* old_netmask;
+    const ip_addr_t* old_gw;
+  } ipv4_changed;
+
+  struct ipv6_set_s
+  {
+
+    s8_t addr_index;
+
+    const ip_addr_t* old_address;
+  } ipv6_set;
+
+  struct ipv6_addr_state_changed_s
+  {
+
+    s8_t addr_index;
+
+    u8_t old_state;
+
+    const ip_addr_t* address;
+  } ipv6_addr_state_changed;
+} netif_ext_callback_args_t;
+# 645 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+typedef void (*netif_ext_callback_fn)(struct netif* netif, netif_nsc_reason_t reason, const netif_ext_callback_args_t* args);
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h" 2
+# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
+struct pbuf;
+struct netif;
+
+
+typedef void (*tcpip_init_done_fn)(void *arg);
+
+typedef void (*tcpip_callback_fn)(void *ctx);
+
+
+struct tcpip_callback_msg;
+
+void tcpip_init(tcpip_init_done_fn tcpip_init_done, void *arg);
+
+err_t tcpip_inpkt(struct pbuf *p, struct netif *inp, netif_input_fn input_fn);
+err_t tcpip_input(struct pbuf *p, struct netif *inp);
+
+err_t tcpip_try_callback(tcpip_callback_fn function, void *ctx);
+err_t tcpip_callback(tcpip_callback_fn function, void *ctx);
+
+
+
+
+
+struct tcpip_callback_msg* tcpip_callbackmsg_new(tcpip_callback_fn function, void *ctx);
+void tcpip_callbackmsg_delete(struct tcpip_callback_msg* msg);
+err_t tcpip_callbackmsg_trycallback(struct tcpip_callback_msg* msg);
+err_t tcpip_callbackmsg_trycallback_fromisr(struct tcpip_callback_msg* msg);
+
+
+err_t pbuf_free_callback(struct pbuf *p);
+err_t mem_free_callback(void *m);
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/relay_state/relay_state_machine.h" 1
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h" 1
-
-
-
-
-
-void relay_init(void);
-void relay_on(void);
-void relay_off(void);
-void relay_toggle(void);
-uint8_t relay_get_state(void);
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/state_machine/relay_state/relay_state_machine.h" 2
-
-typedef enum {
-    RELAY_EVENT_ON,
-    RELAY_EVENT_OFF,
-}relay_event_t;
-
-typedef enum {
-    RELAY_STATE_ON,
-    RELAY_STATE_OFF,
-}relay_state_t;
-
-
-typedef void (*relay_action_t) (void);
-
-typedef struct
-{
-    relay_event_t event;
-    relay_state_t current_state;
-    relay_state_t next_state;
-    relay_action_t action;
-}relay_ctx_t;
-
-
-
-void relay_state_init(void);
-void relay_handle_event(relay_event_t event);
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_adv.h" 1
-
-
-
-
-
-int ble_adv_start(void);
-int ble_adv_stop(void);
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 1
-
-
-
-
-void ble_stack_init(void);
-
-
-void ble_test_adv(void);
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/button/button.h" 1
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/lib_button/app_btn.h" 1
-
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/common/hardware.h" 1
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/lib_button/app_btn.h" 2
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/lib_button/app_btn.h"
-typedef enum
-{
-    APP_BTN_EVT_PRESSED = 0,
-    APP_BTN_EVT_RELEASED,
-    APP_BTN_EVT_HOLD,
-    APP_BTN_EVT_HOLD_LONG,
-    APP_BTN_EVT_DOUBLE_CLICK,
-    APP_BTN_EVT_TRIPLE_CLICK,
-    APP_BTN_EVT_IDLE,
-    APP_BTN_EVT_IDLE_BREAK,
-    APP_BTN_EVT_MAX
-} app_btn_event_t;
-
-typedef struct
-{
-    uint32_t pin;
-    uint8_t last_state;
-    uint32_t idle_level;
-    uint8_t debounce_val;
-    uint8_t debounce_counter;
-} app_btn_hw_config_t;
-
-typedef uint32_t (*app_btn_get_tick_cb)(void);
-typedef void (*app_btn_initialize_cb)(uint32_t btn_num);
-typedef uint32_t (*app_btn_get_level_cb)(uint32_t btn_num);
-
-typedef struct
-{
-    app_btn_hw_config_t *config;
-    uint8_t btn_count;
-    app_btn_get_tick_cb get_tick_cb;
-    app_btn_initialize_cb btn_initialize;
-    app_btn_get_level_cb btn_read;
-} app_btn_config_t;
-
-
-typedef void (*app_btn_evt_handler_t)(int, int, void *);
-
-
-
-
-
-
-void app_btn_initialize(app_btn_config_t *config);
-
-
-
-
-
-void app_btn_scan(void *params);
-
-
-
-
-
-
-
-void app_btn_register_callback(app_btn_event_t event, app_btn_evt_handler_t cb, void *data);
-
-
-
-
-void app_btn_reset_state(void);
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/button/button.h" 2
-
-
-typedef void (*button_callback_t)(int button_id, app_btn_event_t event);
-
-void button_driver_init(void);
-void button_register_callback(app_btn_event_t event, button_callback_t callback);
-
-void button_gpio_init(uint32_t pin);
-uint32_t button_read_level(uint32_t pin);
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.h" 1
-
-
-
-
-void led_init(void);
-void led_on(void);
-void led_off(void);
-void led_toggle(void);
-void led_blink(int times, int delay_ms);
-int led_get_state(void);
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
-
-
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -2020,51 +4365,38 @@ hosal_uart_dev_t uart_dev_log = {
     },
 };
 
-
-void button_event_handler(int button_id, app_btn_event_t event) {
-    printf("Button %d event received: %d\r\n", button_id, event);
-
-    if (event == APP_BTN_EVT_PRESSED) {
-
-        printf(">>> PRESS: Toggle LED\r\n");
-        led_toggle();
-    }
-    else if (event == APP_BTN_EVT_HOLD) {
-        printf(">>> HOLD: Enter BLE mode\r\n");
-
-        ble_test_adv();
-    }
-}
-
-int main(void)
+void main(void)
 {
+
     bl_sys_init();
+
+
     hosal_uart_init(&uart_dev_log);
 
-    led_state_init();
-    relay_state_init();
+    ;
 
 
-    button_driver_init();
+    ;
+    tcpip_init(
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+              ((void *)0)
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+                  , 
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+                    ((void *)0)
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+                        );
 
 
-    button_register_callback(APP_BTN_EVT_PRESSED, button_event_handler);
-    button_register_callback(APP_BTN_EVT_HOLD, button_event_handler);
-
-    printf("DATiC BLE Device Started\r\n");
-    printf("LED and Relay control via BLE enabled\r\n");
-
-    printf(">>> check init \r\n");
+    aos_msleep(100);
 
 
+    app_run();
+
+    ;
 
 
-
-
-    while (1)
-    {
-
+    while (1) {
         aos_msleep(1000);
     }
-
 }

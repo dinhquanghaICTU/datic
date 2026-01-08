@@ -1,16 +1,9 @@
-
-#include <stdio.h>
-#include <aos/kernel.h>
+#include "app_api.h"
+#include "blog.h"
 #include <bl_sys.h>
 #include <hosal_uart.h>
-#include "led_state_machine.h"
-#include "relay_state_machine.h"
-#include "ble_adv.h"
-#include "ble_interface.h"
-#include "button.h"  
-#include "led.h"     
-
-
+#include <aos/kernel.h>
+#include <lwip/tcpip.h>
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -27,50 +20,30 @@ hosal_uart_dev_t uart_dev_log = {
     },
 };
 
-void button_event_handler(int button_id, app_btn_event_t event) {
-    printf("Button %d event received: %d\r\n", button_id, event);
-
-    if (event == APP_BTN_EVT_PRESSED) {
-
-        printf(">>> PRESS: Toggle LED\r\n");
-        led_toggle();
-    }
-    else if (event == APP_BTN_EVT_HOLD) {
-        printf(">>> HOLD: Enter BLE mode\r\n");
-
-        ble_test_adv();
-    }
-}
-
-int main(void)
+void main(void)
 {
+    // Initialize system
     bl_sys_init();
+    
+    // Initialize UART for logging
     hosal_uart_init(&uart_dev_log);
-
-    led_state_init();
-    relay_state_init();
-
-
-    button_driver_init();
-
-
-    button_register_callback(APP_BTN_EVT_PRESSED, button_event_handler);
-    button_register_callback(APP_BTN_EVT_HOLD, button_event_handler);
-
-    printf("DATiC BLE Device Started\r\n");
-    printf("LED and Relay control via BLE enabled\r\n");
-
-    printf(">>> check init \r\n");
-
-    // ble_stack_init();
-    // ble_test_adv();
-
-
-
-    while (1)
-    {
-
+    
+    blog_info("System starting...\r\n");
+    
+    // Initialize TCP/IP stack
+    blog_info("Starting TCP/IP Stack...\r\n");
+    tcpip_init(NULL, NULL);
+    
+    // Wait a bit for TCP/IP stack to initialize
+    aos_msleep(100);
+    
+    // Run the IoT application
+    app_run();
+    
+    blog_info("Main loop started\r\n");
+    
+    // Main loop
+    while (1) {
         aos_msleep(1000);
     }
-
 }

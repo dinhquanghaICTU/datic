@@ -1865,13 +1865,13 @@ void led_init(void)
 
 void led_on(void)
 {
-    printf(">>>>> led on\r\n");
+
     bl_gpio_output_set(17, 0);
 }
 
 void led_off(void)
 {
-    printf(">>>>> led off\r\n");
+
     bl_gpio_output_set(17, 1);
 }
 

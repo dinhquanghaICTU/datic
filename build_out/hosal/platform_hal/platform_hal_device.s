@@ -11743,8 +11743,6 @@ platform_hal_device_init:
 	.string	"configMIN(a,b) ( ( ( a ) < ( b ) ) ? ( a ) : ( b ) )"
 .LASF609:
 	.string	"__unlocks(...) __lock_annotate(unlock_function(__VA_ARGS__))"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767608700"
 .LASF1354:
 	.string	"tracePEND_FUNC_CALL_FROM_ISR(xFunctionToPend,pvParameter1,ulParameter2,ret) "
 .LASF107:
@@ -12744,6 +12742,8 @@ platform_hal_device_init:
 	.string	"INT_LEAST16_MAX __INT_LEAST16_MAX__"
 .LASF686:
 	.string	"_ATEXIT_INIT {_NULL, 0, {_NULL}, {{_NULL}, {_NULL}, 0, 0}}"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767882413"
 .LASF1302:
 	.string	"traceQUEUE_CREATE(pxNewQueue) "
 .LASF1007:
