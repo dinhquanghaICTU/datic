@@ -2341,41 +2341,27 @@ uint8_t relay_get_state(void);
 int app_run(void)
 {
     ;
-
-
     led_init();
     relay_init();
-
-
     if (app_config_init() != 0) {
         ;
         return -1;
     }
-
-
     if (app_wifi_init() != 0) {
         ;
         return -1;
     }
-
-
     app_wifi_set_connected_cb(app_wifi_connected_callback);
     app_wifi_set_disconnected_cb(app_wifi_disconnected_callback);
     app_wifi_set_connect_failed_cb(app_wifi_connect_failed_callback);
-
 
     if (app_ble_init() != 0) {
         ;
         return -1;
     }
-
-
     app_ble_set_config_done_cb(app_ble_config_done_callback);
 
-
     app_task_init();
-
-    ;
 
     return 0;
 }

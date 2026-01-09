@@ -186,7 +186,7 @@ app_mqtt_init:
 .LFB7:
 	.loc 1 71 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 72 5
+	.loc 1 73 5
 	.loc 1 71 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
@@ -200,25 +200,25 @@ app_mqtt_init:
 	.cfi_def_cfa 8, 0
 	sw	s2,0(sp)
 	.cfi_offset 18, -16
-	.loc 1 72 5
+	.loc 1 73 5
 	call	mqtt_if_init
 .LVL12:
-	.loc 1 73 5 is_stmt 1
+	.loc 1 74 5 is_stmt 1
 	lui	a0,%hi(mqtt_connected_handler)
 	addi	a0,a0,%lo(mqtt_connected_handler)
 	call	mqtt_if_set_connected_cb
 .LVL13:
-	.loc 1 74 5
+	.loc 1 75 5
 	lui	a0,%hi(mqtt_disconnected_handler)
 	addi	a0,a0,%lo(mqtt_disconnected_handler)
 	call	mqtt_if_set_disconnected_cb
 .LVL14:
-	.loc 1 75 5
+	.loc 1 76 5
 	lui	a0,%hi(mqtt_message_handler)
 	addi	a0,a0,%lo(mqtt_message_handler)
 	call	mqtt_if_set_message_cb
 .LVL15:
-	.loc 1 77 5
+	.loc 1 78 5
 	lui	s2,%hi(.LANCHOR0)
 	lui	s1,%hi(.LC1)
 	lui	a4,%hi(.LC0)
@@ -230,7 +230,7 @@ app_mqtt_init:
 	addi	a0,a0,%lo(.LANCHOR1)
 	call	snprintf
 .LVL16:
-	.loc 1 78 5
+	.loc 1 79 5
 	lui	a4,%hi(.LC2)
 	lui	a0,%hi(.LANCHOR2)
 	addi	a3,s2,%lo(.LANCHOR0)
@@ -240,8 +240,8 @@ app_mqtt_init:
 	addi	a0,a0,%lo(.LANCHOR2)
 	call	snprintf
 .LVL17:
-	.loc 1 80 5
-	.loc 1 81 1 is_stmt 0
+	.loc 1 81 5
+	.loc 1 82 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -268,13 +268,13 @@ app_mqtt_init:
 	.type	app_mqtt_start, @function
 app_mqtt_start:
 .LFB8:
-	.loc 1 84 1 is_stmt 1
+	.loc 1 85 1 is_stmt 1
 	.cfi_startproc
 .LVL18:
-	.loc 1 85 5
-	.loc 1 85 8 is_stmt 0
+	.loc 1 86 5
+	.loc 1 86 8 is_stmt 0
 	beq	a0,zero,.L21
-	.loc 1 84 1
+	.loc 1 85 1
 	addi	sp,sp,-368
 	.cfi_def_cfa_offset 368
 	sw	s0,360(sp)
@@ -291,57 +291,57 @@ app_mqtt_start:
 	.cfi_offset 1, -4
 	mv	s3,a0
 	mv	s1,a1
-	.loc 1 89 22
+	.loc 1 90 22
 	li	a1,0
 .LVL19:
 	mv	s2,a2
-	.loc 1 89 5 is_stmt 1
-	.loc 1 89 22 is_stmt 0
+	.loc 1 90 5 is_stmt 1
+	.loc 1 90 22 is_stmt 0
 	addi	a0,s0,-360
 .LVL20:
 	li	a2,328
 .LVL21:
 	call	memset
 .LVL22:
-	.loc 1 90 5 is_stmt 1
+	.loc 1 91 5 is_stmt 1
 	li	a2,127
 	mv	a1,s3
 	addi	a0,s0,-360
 	call	strncpy
 .LVL23:
-	.loc 1 91 5
-	.loc 1 91 35 is_stmt 0
+	.loc 1 92 5
+	.loc 1 92 35 is_stmt 0
 	bgt	s1,zero,.L18
 	li	s1,1883
 .LVL24:
 .L18:
-	.loc 1 91 17 discriminator 4
+	.loc 1 92 17 discriminator 4
 	sw	s1,-232(s0)
-	.loc 1 93 5 is_stmt 1 discriminator 4
-	.loc 1 93 8 is_stmt 0 discriminator 4
+	.loc 1 94 5 is_stmt 1 discriminator 4
+	.loc 1 94 8 is_stmt 0 discriminator 4
 	beq	s2,zero,.L19
-	.loc 1 94 9 is_stmt 1
+	.loc 1 95 9 is_stmt 1
 	li	a2,63
 	mv	a1,s2
 	addi	a0,s0,-228
 	call	strncpy
 .LVL25:
 .L20:
-	.loc 1 99 5
-	.loc 1 99 22 is_stmt 0
-	li	a5,60
 	.loc 1 100 5
+	.loc 1 100 22 is_stmt 0
+	li	a5,60
+	.loc 1 101 5
 	addi	a0,s0,-360
-	.loc 1 99 22
+	.loc 1 100 22
 	sw	a5,-36(s0)
-	.loc 1 100 5 is_stmt 1
+	.loc 1 101 5 is_stmt 1
 	call	mqtt_if_set_config
 .LVL26:
-	.loc 1 101 5
-	.loc 1 101 12 is_stmt 0
+	.loc 1 102 5
+	.loc 1 102 12 is_stmt 0
 	call	mqtt_if_connect
 .LVL27:
-	.loc 1 102 1
+	.loc 1 103 1
 	lw	ra,364(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -362,15 +362,15 @@ app_mqtt_start:
 .LVL30:
 .L19:
 	.cfi_restore_state
-	.loc 1 96 9 is_stmt 1
-	.loc 1 96 80 is_stmt 0
+	.loc 1 97 9 is_stmt 1
+	.loc 1 97 80 is_stmt 0
 	call	aos_now_ms
 .LVL31:
-	.loc 1 96 9
+	.loc 1 97 9
 	lui	a2,%hi(.LC3)
-	.loc 1 96 80
+	.loc 1 97 80
 	mv	a3,a0
-	.loc 1 96 9
+	.loc 1 97 9
 	addi	a2,a2,%lo(.LC3)
 	li	a1,64
 	addi	a0,s0,-228
@@ -385,10 +385,10 @@ app_mqtt_start:
 	.cfi_restore 9
 	.cfi_restore 18
 	.cfi_restore 19
-	.loc 1 86 16
+	.loc 1 87 16
 	li	a0,-1
 .LVL34:
-	.loc 1 102 1
+	.loc 1 103 1
 	ret
 	.cfi_endproc
 .LFE8:
@@ -399,23 +399,23 @@ app_mqtt_start:
 	.type	app_mqtt_stop, @function
 app_mqtt_stop:
 .LFB9:
-	.loc 1 105 1 is_stmt 1
+	.loc 1 106 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 106 5
-	.loc 1 105 1 is_stmt 0
+	.loc 1 107 5
+	.loc 1 106 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 107 1
+	.loc 1 108 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 106 12
+	.loc 1 107 12
 	tail	mqtt_if_disconnect
 .LVL35:
 	.cfi_endproc
@@ -427,24 +427,23 @@ app_mqtt_stop:
 	.type	app_mqtt_is_connected, @function
 app_mqtt_is_connected:
 .LFB10:
-	.loc 1 110 1 is_stmt 1
+	.loc 1 111 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 111 5
-	.loc 1 112 5
-	.loc 1 110 1 is_stmt 0
+	.loc 1 113 5
+	.loc 1 111 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 113 1
+	.loc 1 114 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 112 12
+	.loc 1 113 12
 	tail	mqtt_if_is_connected
 .LVL36:
 	.cfi_endproc
@@ -456,11 +455,11 @@ app_mqtt_is_connected:
 	.type	app_mqtt_publish_state, @function
 app_mqtt_publish_state:
 .LFB11:
-	.loc 1 116 1 is_stmt 1
+	.loc 1 117 1 is_stmt 1
 	.cfi_startproc
 .LVL37:
-	.loc 1 117 5
-	.loc 1 116 1 is_stmt 0
+	.loc 1 118 5
+	.loc 1 117 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -471,50 +470,50 @@ app_mqtt_publish_state:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 116 1
+	.loc 1 117 1
 	mv	s1,a0
-	.loc 1 117 10
+	.loc 1 118 10
 	call	mqtt_if_is_connected
 .LVL38:
-	.loc 1 117 8
+	.loc 1 118 8
 	beq	a0,zero,.L30
-	.loc 1 117 33 discriminator 1
+	.loc 1 118 33 discriminator 1
 	beq	s1,zero,.L30
-	.loc 1 120 5 is_stmt 1
-	.loc 1 120 50 is_stmt 0
+	.loc 1 121 5 is_stmt 1
+	.loc 1 121 50 is_stmt 0
 	mv	a0,s1
 	call	strlen
 .LVL39:
-	.loc 1 121 1
+	.loc 1 122 1
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 120 12
+	.loc 1 121 12
 	mv	a1,s1
-	.loc 1 121 1
+	.loc 1 122 1
 	lw	s1,4(sp)
 	.cfi_restore 9
 .LVL40:
-	.loc 1 120 50
+	.loc 1 121 50
 	mv	a2,a0
-	.loc 1 120 12
+	.loc 1 121 12
 	lui	a0,%hi(.LANCHOR2)
-	.loc 1 121 1
-	.loc 1 120 12
+	.loc 1 122 1
+	.loc 1 121 12
 	li	a3,1
 	addi	a0,a0,%lo(.LANCHOR2)
-	.loc 1 121 1
+	.loc 1 122 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 120 12
+	.loc 1 121 12
 	tail	mqtt_if_publish
 .LVL41:
 .L30:
 	.cfi_restore_state
-	.loc 1 121 1
+	.loc 1 122 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -599,23 +598,23 @@ mqtt_connected_handler:
 	.type	app_mqtt_get_command_topic, @function
 app_mqtt_get_command_topic:
 .LFB12:
-	.loc 1 124 1 is_stmt 1
+	.loc 1 125 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 125 5
-	.loc 1 124 1 is_stmt 0
+	.loc 1 126 5
+	.loc 1 125 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 126 1
+	.loc 1 127 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 125 12
+	.loc 1 126 12
 	lui	a0,%hi(.LANCHOR1)
-	.loc 1 126 1
+	.loc 1 127 1
 	addi	a0,a0,%lo(.LANCHOR1)
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -629,23 +628,23 @@ app_mqtt_get_command_topic:
 	.type	app_mqtt_get_state_topic, @function
 app_mqtt_get_state_topic:
 .LFB13:
-	.loc 1 129 1 is_stmt 1
+	.loc 1 130 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 130 5
-	.loc 1 129 1 is_stmt 0
+	.loc 1 131 5
+	.loc 1 130 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 131 1
+	.loc 1 132 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 130 12
+	.loc 1 131 12
 	lui	a0,%hi(.LANCHOR2)
-	.loc 1 131 1
+	.loc 1 132 1
 	addi	a0,a0,%lo(.LANCHOR2)
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -1125,7 +1124,7 @@ s_topic_prefix:
 	.byte	0x13
 	.4byte	.LASF64
 	.byte	0x1
-	.byte	0x80
+	.byte	0x81
 	.byte	0xd
 	.4byte	0x25
 	.4byte	.LFB13
@@ -1135,7 +1134,7 @@ s_topic_prefix:
 	.byte	0x13
 	.4byte	.LASF65
 	.byte	0x1
-	.byte	0x7b
+	.byte	0x7c
 	.byte	0xd
 	.4byte	0x25
 	.4byte	.LFB12
@@ -1145,7 +1144,7 @@ s_topic_prefix:
 	.byte	0x14
 	.4byte	.LASF66
 	.byte	0x1
-	.byte	0x73
+	.byte	0x74
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB11
@@ -1156,7 +1155,7 @@ s_topic_prefix:
 	.byte	0x15
 	.4byte	.LASF35
 	.byte	0x1
-	.byte	0x73
+	.byte	0x74
 	.byte	0x28
 	.4byte	0x25
 	.4byte	.LLST10
@@ -1200,7 +1199,7 @@ s_topic_prefix:
 	.byte	0x14
 	.4byte	.LASF67
 	.byte	0x1
-	.byte	0x6d
+	.byte	0x6e
 	.byte	0x5
 	.4byte	0x231
 	.4byte	.LFB10
@@ -1215,7 +1214,7 @@ s_topic_prefix:
 	.byte	0x14
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x68
+	.byte	0x69
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB9
@@ -1230,7 +1229,7 @@ s_topic_prefix:
 	.byte	0x14
 	.4byte	.LASF69
 	.byte	0x1
-	.byte	0x53
+	.byte	0x54
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB8
@@ -1241,28 +1240,28 @@ s_topic_prefix:
 	.byte	0x15
 	.4byte	.LASF1
 	.byte	0x1
-	.byte	0x53
+	.byte	0x54
 	.byte	0x20
 	.4byte	0x25
 	.4byte	.LLST7
 	.byte	0x15
 	.4byte	.LASF2
 	.byte	0x1
-	.byte	0x53
+	.byte	0x54
 	.byte	0x2c
 	.4byte	0x37
 	.4byte	.LLST8
 	.byte	0x15
 	.4byte	.LASF3
 	.byte	0x1
-	.byte	0x53
+	.byte	0x54
 	.byte	0x3e
 	.4byte	0x25
 	.4byte	.LLST9
 	.byte	0x12
 	.4byte	.LASF70
 	.byte	0x1
-	.byte	0x59
+	.byte	0x5a
 	.byte	0x16
 	.4byte	0xc0
 	.byte	0x3

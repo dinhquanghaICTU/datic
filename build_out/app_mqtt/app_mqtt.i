@@ -2741,6 +2741,7 @@ static void mqtt_disconnected_handler(void)
 
 int app_mqtt_init(void)
 {
+
     mqtt_if_init();
     mqtt_if_set_connected_cb(mqtt_connected_handler);
     mqtt_if_set_disconnected_cb(mqtt_disconnected_handler);
@@ -2755,9 +2756,9 @@ int app_mqtt_init(void)
 int app_mqtt_start(const char *broker, int port, const char *client_id)
 {
     if (broker == 
-# 85 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
+# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
                  ((void *)0)
-# 85 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
+# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
                      ) {
         return -1;
     }
@@ -2783,28 +2784,28 @@ int app_mqtt_stop(void)
 }
 
 
-# 109 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
+# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
 _Bool 
-# 109 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
+# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
     app_mqtt_is_connected(void)
 {
-    ;
+
     return mqtt_if_is_connected();
 }
 
 int app_mqtt_publish_state(const char *state)
 {
     if (!mqtt_if_is_connected() || state == 
-# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
+# 118 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
                                            ((void *)0)
-# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
+# 118 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
                                                ) {
         return -1;
     }
     return mqtt_if_publish(s_state_topic, state, strlen(state), 
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
+# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c" 3 4
                                                                1
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
+# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
                                                                    );
 }
 

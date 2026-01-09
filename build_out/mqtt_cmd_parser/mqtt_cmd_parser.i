@@ -3027,14 +3027,15 @@ static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_toke
 
 int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
 {
+   printf("====================== resspont recive : %s \r\n============================",json_str);
     if (json_str == 
-# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                    ((void *)0) 
-# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                         || cmd == 
-# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                                   ((void *)0)
-# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                       ) {
         return -1;
     }
@@ -3055,7 +3056,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
     }
 
     if (num_tokens < 1 || tokens[0].type != JSMN_OBJECT) {
-        printf("[MQTT_CMD] Expected JSON object\r\n");
+        printf("MQTT_CMD] Expected JSON object\r\n");
         return -1;
     }
 
@@ -3076,11 +3077,13 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         char state_str[16];
         if (json_get_string_value(json_str, tokens, num_tokens, "state", state_str, sizeof(state_str)) >= 0) {
             if (strcmp(state_str, "ON") == 0) {
+
                 cmd->params.set.state = RELAY_STATE_ON;
             } else if (strcmp(state_str, "OFF") == 0) {
+
                 cmd->params.set.state = RELAY_STATE_OFF;
             } else {
-                printf("[MQTT_CMD] Invalid state: %s\r\n", state_str);
+                printf("MQTT_CMD] Invalid state: %s\r\n", state_str);
                 return -1;
             }
         } else {
@@ -3142,13 +3145,13 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
 
 
         
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
        _Bool 
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
             lock_button = 
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                           0
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                ;
         json_get_bool_value(json_str, tokens, num_tokens, "lockButton", &lock_button);
         cmd->params.settings.lock_button = lock_button;

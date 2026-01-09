@@ -69,6 +69,7 @@ static void mqtt_disconnected_handler(void)
 
 int app_mqtt_init(void)
 {
+    
     mqtt_if_init();
     mqtt_if_set_connected_cb(mqtt_connected_handler);
     mqtt_if_set_disconnected_cb(mqtt_disconnected_handler);
@@ -108,7 +109,7 @@ int app_mqtt_stop(void)
 
 bool app_mqtt_is_connected(void)
 {
-    blog_debug("connected\r\ns");
+    
     return mqtt_if_is_connected();
 }
 

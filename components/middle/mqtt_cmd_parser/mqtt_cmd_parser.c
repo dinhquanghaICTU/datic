@@ -93,6 +93,7 @@ static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_toke
 
 int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
 {
+   printf("====================== resspont recive : %s \r\n============================",json_str);
     if (json_str == NULL || cmd == NULL) {
         return -1;
     }
@@ -113,7 +114,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
     }
     
     if (num_tokens < 1 || tokens[0].type != JSMN_OBJECT) {
-        printf("[MQTT_CMD] Expected JSON object\r\n");
+        printf("MQTT_CMD] Expected JSON object\r\n");
         return -1;
     }
 
@@ -134,11 +135,13 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         char state_str[16];
         if (json_get_string_value(json_str, tokens, num_tokens, "state", state_str, sizeof(state_str)) >= 0) {
             if (strcmp(state_str, "ON") == 0) {
+                
                 cmd->params.set.state = RELAY_STATE_ON;
             } else if (strcmp(state_str, "OFF") == 0) {
+                
                 cmd->params.set.state = RELAY_STATE_OFF;
             } else {
-                printf("[MQTT_CMD] Invalid state: %s\r\n", state_str);
+                printf("MQTT_CMD] Invalid state: %s\r\n", state_str);
                 return -1;
             }
         } else {

@@ -16,7 +16,7 @@ app_run:
 	.loc 1 13 1
 	.cfi_startproc
 	.loc 1 14 5
-	.loc 1 17 5
+	.loc 1 15 5
 	.loc 1 13 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
@@ -28,23 +28,23 @@ app_run:
 	.cfi_offset 9, -12
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 17 5
+	.loc 1 15 5
 	call	led_init
 .LVL0:
-	.loc 1 18 5 is_stmt 1
+	.loc 1 16 5 is_stmt 1
 	call	relay_init
 .LVL1:
-	.loc 1 21 5
-	.loc 1 21 9 is_stmt 0
+	.loc 1 17 5
+	.loc 1 17 9 is_stmt 0
 	call	app_config_init
 .LVL2:
-	.loc 1 21 8
+	.loc 1 17 8
 	beq	a0,zero,.L2
 .L4:
-	.loc 1 23 16
+	.loc 1 19 16
 	li	s1,-1
 .L1:
-	.loc 1 52 1
+	.loc 1 38 1
 	lw	ra,12(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -59,45 +59,44 @@ app_run:
 	jr	ra
 .L2:
 	.cfi_restore_state
-	.loc 1 27 5 is_stmt 1
-	.loc 1 27 9 is_stmt 0
+	.loc 1 21 5 is_stmt 1
+	.loc 1 21 9 is_stmt 0
 	call	app_wifi_init
 .LVL3:
-	.loc 1 27 8
+	.loc 1 21 8
 	bne	a0,zero,.L4
-	.loc 1 33 5 is_stmt 1
+	.loc 1 25 5 is_stmt 1
 	lui	a0,%hi(app_wifi_connected_callback)
 	addi	a0,a0,%lo(app_wifi_connected_callback)
 	call	app_wifi_set_connected_cb
 .LVL4:
-	.loc 1 34 5
+	.loc 1 26 5
 	lui	a0,%hi(app_wifi_disconnected_callback)
 	addi	a0,a0,%lo(app_wifi_disconnected_callback)
 	call	app_wifi_set_disconnected_cb
 .LVL5:
-	.loc 1 35 5
+	.loc 1 27 5
 	lui	a0,%hi(app_wifi_connect_failed_callback)
 	addi	a0,a0,%lo(app_wifi_connect_failed_callback)
 	call	app_wifi_set_connect_failed_cb
 .LVL6:
-	.loc 1 38 5
-	.loc 1 38 9 is_stmt 0
+	.loc 1 29 5
+	.loc 1 29 9 is_stmt 0
 	call	app_ble_init
 .LVL7:
 	mv	s1,a0
-	.loc 1 38 8
+	.loc 1 29 8
 	bne	a0,zero,.L4
-	.loc 1 44 5 is_stmt 1
+	.loc 1 33 5 is_stmt 1
 	lui	a0,%hi(app_ble_config_done_callback)
 	addi	a0,a0,%lo(app_ble_config_done_callback)
 	call	app_ble_set_config_done_cb
 .LVL8:
-	.loc 1 47 5
+	.loc 1 35 5
 	call	app_task_init
 .LVL9:
-	.loc 1 49 5
-	.loc 1 51 5
-	.loc 1 51 12 is_stmt 0
+	.loc 1 37 5
+	.loc 1 37 12 is_stmt 0
 	j	.L1
 	.cfi_endproc
 .LFE4:

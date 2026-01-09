@@ -12207,8 +12207,6 @@ platform_hal_device_init:
 	.string	"xTaskGetCurrentTaskHandle"
 .LASF1464:
 	.string	"listIS_CONTAINED_WITHIN(pxList,pxListItem) ( ( ( pxListItem )->pxContainer == ( pxList ) ) ? ( pdTRUE ) : ( pdFALSE ) )"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767927842"
 .LASF1234:
 	.string	"portTICK_TYPE_IS_ATOMIC 1"
 .LASF893:
@@ -12219,6 +12217,8 @@ platform_hal_device_init:
 	.string	"UINT8_MAX"
 .LASF1123:
 	.string	"configTICK_RATE_HZ ( ( TickType_t ) 1000 )"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767936880"
 .LASF509:
 	.string	"__END_DECLS }"
 .LASF1212:
