@@ -1682,7 +1682,6 @@ void relay_toggle(void);
 uint8_t relay_get_state(void);
 # 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c" 2
 
-
 static uint8_t s_relay_state = 0;
 
 void relay_init(void){
@@ -1692,26 +1691,20 @@ void relay_init(void){
 }
 
 void relay_on(void){
-    printf(">>> relay on\r\n");
     s_relay_state = 1;
     bl_gpio_output_set(22, s_relay_state);
 }
 
 void relay_off(void){
-    printf(">>> relay off\r\n");
     s_relay_state = 0;
     bl_gpio_output_set(22, s_relay_state);
 }
 
 void relay_toggle(void){
-    printf(">>> relay toggle\r\n");
     s_relay_state = !s_relay_state;
     bl_gpio_output_set(22, s_relay_state);
 }
 
 uint8_t relay_get_state(void){
-
-    uint8_t logical_state = (s_relay_state == 1) ? 1 : 0;
-    printf(">>> relay_get_state: hw=%d, logical=%d\r\n", s_relay_state, logical_state);
-    return logical_state;
+    return (s_relay_state == 1) ? 1 : 0;
 }

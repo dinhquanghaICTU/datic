@@ -2255,6 +2255,7 @@ static app_state_handler_t state_handlers[APP_STATE_MAX] = {
 
 void app_state_init(void)
 {
+    ;
     memset(&g_state_machine, 0, sizeof(app_state_machine_t));
     g_state_machine.current_state = APP_STATE_INIT;
     g_state_machine.next_state = APP_STATE_INIT;
@@ -2278,9 +2279,9 @@ void app_state_set_next(app_state_t next_state)
 app_state_t app_state_process_event(app_event_t *event)
 {
     if (event == 
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c" 3 4
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c" 3 4
                 ((void *)0)
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
                     ) {
         return g_state_machine.current_state;
     }

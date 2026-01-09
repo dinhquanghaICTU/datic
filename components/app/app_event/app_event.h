@@ -24,4 +24,4 @@ typedef struct {
     void *data;
 } app_event_t;
 
-#endif /* __APP_EVENT_H__ */
+#endif //__APP_EVENT_H__

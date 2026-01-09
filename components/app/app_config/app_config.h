@@ -23,8 +23,8 @@ int app_config_save_wifi(const char *ssid, const char *password);
 int app_config_clear_wifi(void);
 bool app_config_has_wifi(void);
 
-/* Relay settings */
+
 int app_config_save_relay_settings(uint8_t default_state, bool lock_button);
 int app_config_load_relay_settings(uint8_t *default_state, bool *lock_button);
 
-#endif /* __APP_CONFIG_H__ */
+#endif //__APP_CONFIG_H__

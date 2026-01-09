@@ -3,4 +3,4 @@
 
 int app_run(void);
 
-#endif /* __APP_API_H__ */
+#endif //__APP_API_H__

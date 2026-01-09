@@ -6,341 +6,177 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.rodata.mqtt_disconnected_handler.str1.4,"aMS",@progbits,1
-	.align	2
-.LC0:
-	.string	"[APP][MQTT] Disconnected\r\n"
 	.section	.text.mqtt_disconnected_handler,"ax",@progbits
 	.align	1
 	.type	mqtt_disconnected_handler, @function
 mqtt_disconnected_handler:
 .LFB6:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
-	.loc 1 101 1
+	.loc 1 67 1
 	.cfi_startproc
-	.loc 1 102 5
-	.loc 1 101 1 is_stmt 0
+	.loc 1 68 1
+	.loc 1 67 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 103 1
+	.loc 1 68 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 102 5
-	lui	a0,%hi(.LC0)
-	addi	a0,a0,%lo(.LC0)
-	.loc 1 103 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 102 5
-	tail	printf
-.LVL0:
+	jr	ra
 	.cfi_endproc
 .LFE6:
 	.size	mqtt_disconnected_handler, .-mqtt_disconnected_handler
 	.section	.rodata.mqtt_message_handler.str1.4,"aMS",@progbits,1
 	.align	2
-.LC1:
-	.string	"ON"
-	.align	2
-.LC2:
-	.string	"OFF"
-	.align	2
-.LC3:
-	.string	"true"
-	.align	2
-.LC4:
-	.string	"false"
-	.align	2
-.LC5:
-	.string	"[APP][MQTT] Message received: %s = %.*s\r\n"
-	.align	2
-.LC6:
+.LC0:
 	.string	"/command"
-	.align	2
-.LC7:
-	.string	"[APP][MQTT] Parsed command: %s\r\n"
-	.align	2
-.LC8:
-	.string	"[APP][MQTT] Command: TOGGLE\r\n"
-	.align	2
-.LC9:
-	.string	"[APP][MQTT] Command: SET ON\r\n"
-	.align	2
-.LC10:
-	.string	"[APP][MQTT] Command: SET OFF\r\n"
-	.align	2
-.LC11:
-	.string	"[APP][MQTT] Settings: defaultState=%s, lockButton=%s\r\n"
-	.align	2
-.LC12:
-	.string	"[APP][MQTT] Settings saved to flash\r\n"
-	.align	2
-.LC13:
-	.string	"[APP][MQTT] Command %s \304\221\306\260\341\273\243c x\341\273\255 l\303\275 \341\273\237 web, b\341\273\217 qua\r\n"
-	.align	2
-.LC14:
-	.string	"[APP][MQTT] Invalid command\r\n"
-	.align	2
-.LC15:
-	.string	"[APP][MQTT] Failed to parse command\r\n"
 	.section	.text.mqtt_message_handler,"ax",@progbits
 	.align	1
 	.type	mqtt_message_handler, @function
 mqtt_message_handler:
 .LFB4:
-	.loc 1 26 1 is_stmt 1
+	.loc 1 24 1 is_stmt 1
 	.cfi_startproc
-.LVL1:
-	.loc 1 27 5
-	.loc 1 26 1 is_stmt 0
-	addi	sp,sp,-48
-	.cfi_def_cfa_offset 48
-	sw	s0,40(sp)
-	sw	s1,36(sp)
-	sw	s2,32(sp)
-	sw	s3,28(sp)
-	sw	ra,44(sp)
+.LVL0:
+	.loc 1 25 5
+	.loc 1 24 1 is_stmt 0
+	addi	sp,sp,-32
+	.cfi_def_cfa_offset 32
+	sw	s0,24(sp)
+	sw	s1,20(sp)
+	sw	s2,16(sp)
+	sw	ra,28(sp)
 	.cfi_offset 8, -8
 	.cfi_offset 9, -12
 	.cfi_offset 18, -16
-	.cfi_offset 19, -20
 	.cfi_offset 1, -4
-	addi	s0,sp,48
+	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	mv	s2,a0
-	.loc 1 27 5
-	mv	a3,a1
-	.loc 1 26 1
 	mv	s1,a1
-	.loc 1 27 5
-	mv	a1,a0
-.LVL2:
-	lui	a0,%hi(.LC5)
-.LVL3:
-	.loc 1 26 1
-	.loc 1 27 5
-	addi	a0,a0,%lo(.LC5)
-	.loc 1 26 1
-	mv	s3,a2
-	.loc 1 27 5
-	call	printf
-.LVL4:
-	.loc 1 30 5 is_stmt 1
-	.loc 1 30 9 is_stmt 0
-	lui	a1,%hi(.LC6)
-	addi	a1,a1,%lo(.LC6)
-	mv	a0,s2
+	.loc 1 25 9
+	lui	a1,%hi(.LC0)
+.LVL1:
+	.loc 1 24 1
+	.loc 1 25 9
+	addi	a1,a1,%lo(.LC0)
+	.loc 1 24 1
+	mv	s2,a2
+	.loc 1 25 9
 	call	strstr
-.LVL5:
-	.loc 1 30 8
+.LVL2:
+	.loc 1 25 8
 	beq	a0,zero,.L3
-.LVL6:
+.LVL3:
 .LBB10:
 .LBB11:
 .LBB12:
-	.loc 1 32 9 is_stmt 1
-	.loc 1 33 9
-	.loc 1 33 13 is_stmt 0
-	addi	a2,s0,-44
-	mv	a1,s3
+	.loc 1 26 9 is_stmt 1
+	.loc 1 27 9
+	.loc 1 27 13 is_stmt 0
+	addi	a2,s0,-28
+	mv	a1,s2
 	mv	a0,s1
 	call	mqtt_cmd_parse
-.LVL7:
-	.loc 1 33 12
-	bne	a0,zero,.L5
-	.loc 1 34 13 is_stmt 1
-	lw	a0,-44(s0)
-	call	mqtt_cmd_type_to_string
-.LVL8:
-	mv	a1,a0
-	lui	a0,%hi(.LC7)
-	addi	a0,a0,%lo(.LC7)
-	call	printf
-.LVL9:
-	.loc 1 36 13
-	.loc 1 36 24 is_stmt 0
-	lw	a0,-44(s0)
-	.loc 1 36 13
-	li	a5,6
-	bgtu	a0,a5,.L6
+.LVL4:
+	.loc 1 27 12
+	bne	a0,zero,.L3
+	.loc 1 28 13 is_stmt 1
+	.loc 1 28 24 is_stmt 0
+	lw	a5,-28(s0)
+	.loc 1 28 13
 	li	a4,2
-	bgtu	a0,a4,.L7
-	li	a5,1
-	beq	a0,a5,.L8
-	beq	a0,a4,.L9
-.L10:
-	.loc 1 79 21 is_stmt 1
-	lui	a0,%hi(.LC14)
-	addi	a0,a0,%lo(.LC14)
-.L23:
-	.loc 1 83 13 is_stmt 0
-	call	printf
-.LVL10:
+	beq	a5,a4,.L6
+	li	a4,7
+	beq	a5,a4,.L7
+	li	a4,1
+	bne	a5,a4,.L3
+	.loc 1 30 21 is_stmt 1
+	li	a1,0
+	li	a0,8
+.L13:
+	.loc 1 36 25 is_stmt 0
+	call	app_event_post
+.LVL5:
+.L3:
 .LBE12:
 .LBE11:
 .LBE10:
-	.loc 1 86 1
-	j	.L3
-.LVL11:
-.L6:
-.LBB18:
-.LBB16:
-.LBB14:
-	.loc 1 36 13
-	li	a5,7
-	bne	a0,a5,.L10
-	.loc 1 53 21 is_stmt 1
-	lw	a4,-40(s0)
-	li	a5,1
-	beq	a4,a5,.L16
-	lui	a1,%hi(.LC2)
-	addi	a1,a1,%lo(.LC2)
-.L14:
-	lbu	a5,-36(s0)
-	bne	a5,zero,.L17
-	lui	a2,%hi(.LC4)
-	addi	a2,a2,%lo(.LC4)
-.L15:
-	lui	a0,%hi(.LC11)
-	addi	a0,a0,%lo(.LC11)
-	call	printf
-.LVL12:
-.LBB13:
-	.loc 1 58 25
-	.loc 1 59 25
-	.loc 1 58 107 is_stmt 0
-	lw	a0,-40(s0)
-	.loc 1 59 25
-	lbu	a1,-36(s0)
-	.loc 1 58 107
-	addi	a0,a0,-1
-	.loc 1 59 25
-	seqz	a0,a0
-	call	app_config_save_relay_settings
-.LVL13:
-	.loc 1 60 25 is_stmt 1
-	lui	a0,%hi(.LC12)
-	addi	a0,a0,%lo(.LC12)
-	call	printf
-.LVL14:
-	.loc 1 63 25
-	.loc 1 64 25
-	lbu	a0,-36(s0)
-	call	app_callback_update_lock_button
-.LVL15:
-.LBE13:
-	.loc 1 66 21
-	j	.L3
-.L8:
-	.loc 1 38 21
-	lui	a0,%hi(.LC8)
-	addi	a0,a0,%lo(.LC8)
-	call	printf
-.LVL16:
-	.loc 1 39 21
-	li	a1,0
-	li	a0,8
-.L22:
-	.loc 1 45 25 is_stmt 0
-	call	app_event_post
-.LVL17:
-.L3:
-.LBE14:
-.LBE16:
-.LBE18:
-	.loc 1 86 1
-	lw	ra,44(sp)
+	.loc 1 57 1
+	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
-	lw	s0,40(sp)
+	lw	s0,24(sp)
 	.cfi_restore 8
-	.cfi_def_cfa 2, 48
-	lw	s1,36(sp)
+	.cfi_def_cfa 2, 32
+	lw	s1,20(sp)
 	.cfi_restore 9
-.LVL18:
-	lw	s2,32(sp)
+.LVL6:
+	lw	s2,16(sp)
 	.cfi_restore 18
-.LVL19:
-	lw	s3,28(sp)
-	.cfi_restore 19
-.LVL20:
-	addi	sp,sp,48
+.LVL7:
+	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL21:
-.L9:
+.LVL8:
+.L6:
 	.cfi_restore_state
-.LBB19:
-.LBB17:
+.LBB16:
 .LBB15:
-	.loc 1 43 21 is_stmt 1
-	.loc 1 43 24 is_stmt 0
-	lw	a4,-40(s0)
-	bne	a4,a5,.L13
-	.loc 1 44 25 is_stmt 1
-	lui	a0,%hi(.LC9)
-	addi	a0,a0,%lo(.LC9)
-	call	printf
-.LVL22:
-	.loc 1 45 25
+.LBB14:
+	.loc 1 33 21 is_stmt 1
+	.loc 1 33 24 is_stmt 0
+	lw	a4,-24(s0)
+	li	a5,1
+	.loc 1 34 25
 	li	a1,0
 	li	a0,9
-	j	.L22
-.L13:
-	.loc 1 47 25
-	lui	a0,%hi(.LC10)
-	addi	a0,a0,%lo(.LC10)
-	call	printf
-.LVL23:
-	.loc 1 48 25
-	li	a1,0
+	.loc 1 33 24
+	beq	a4,a5,.L13
+	.loc 1 36 25 is_stmt 1
 	li	a0,10
-	j	.L22
-.L16:
-	.loc 1 53 21 is_stmt 0
-	lui	a1,%hi(.LC1)
-	addi	a1,a1,%lo(.LC1)
-	j	.L14
-.L17:
-	lui	a2,%hi(.LC3)
-	addi	a2,a2,%lo(.LC3)
-	j	.L15
+	j	.L13
 .L7:
-	.loc 1 73 21 is_stmt 1
-	call	mqtt_cmd_type_to_string
-.LVL24:
-	mv	a1,a0
-	lui	a0,%hi(.LC13)
-	addi	a0,a0,%lo(.LC13)
-	call	printf
-.LVL25:
-	.loc 1 75 21
-	j	.L3
-.L5:
-	.loc 1 83 13
-	lui	a0,%hi(.LC15)
-	addi	a0,a0,%lo(.LC15)
-	j	.L23
+.LBB13:
+	.loc 1 41 25
+.LVL9:
+	.loc 1 42 25
+	.loc 1 41 107 is_stmt 0
+	lw	a0,-24(s0)
+	.loc 1 42 25
+	lbu	a1,-20(s0)
+	.loc 1 41 107
+	addi	a0,a0,-1
+	.loc 1 42 25
+	seqz	a0,a0
+	call	app_config_save_relay_settings
+.LVL10:
+	.loc 1 43 25 is_stmt 1
+	.loc 1 44 25
+	lbu	a0,-20(s0)
+	call	app_callback_update_lock_button
+.LVL11:
+.LBE13:
+	.loc 1 46 21
+.LBE14:
 .LBE15:
-.LBE17:
-.LBE19:
+.LBE16:
+	.loc 1 57 1 is_stmt 0
+	j	.L3
 	.cfi_endproc
 .LFE4:
 	.size	mqtt_message_handler, .-mqtt_message_handler
 	.section	.rodata.app_mqtt_init.str1.4,"aMS",@progbits,1
 	.align	2
-.LC16:
-	.string	"[APP][MQTT] Initializing MQTT app layer\r\n"
-	.align	2
-.LC17:
+.LC1:
 	.string	"%s%s"
 	.align	2
-.LC18:
+.LC2:
 	.string	"/state"
 	.section	.text.app_mqtt_init,"ax",@progbits
 	.align	1
@@ -348,10 +184,10 @@ mqtt_message_handler:
 	.type	app_mqtt_init, @function
 app_mqtt_init:
 .LFB7:
-	.loc 1 106 1
+	.loc 1 71 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 107 5
-	.loc 1 106 1 is_stmt 0
+	.loc 1 72 5
+	.loc 1 71 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -363,56 +199,49 @@ app_mqtt_init:
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
 	sw	s2,0(sp)
-	.loc 1 107 5
-	lui	a0,%hi(.LC16)
-	.loc 1 106 1
 	.cfi_offset 18, -16
-	.loc 1 107 5
-	addi	a0,a0,%lo(.LC16)
-	call	printf
-.LVL26:
-	.loc 1 110 5 is_stmt 1
+	.loc 1 72 5
 	call	mqtt_if_init
-.LVL27:
-	.loc 1 113 5
+.LVL12:
+	.loc 1 73 5 is_stmt 1
 	lui	a0,%hi(mqtt_connected_handler)
 	addi	a0,a0,%lo(mqtt_connected_handler)
 	call	mqtt_if_set_connected_cb
-.LVL28:
-	.loc 1 114 5
+.LVL13:
+	.loc 1 74 5
 	lui	a0,%hi(mqtt_disconnected_handler)
 	addi	a0,a0,%lo(mqtt_disconnected_handler)
 	call	mqtt_if_set_disconnected_cb
-.LVL29:
-	.loc 1 115 5
+.LVL14:
+	.loc 1 75 5
 	lui	a0,%hi(mqtt_message_handler)
 	addi	a0,a0,%lo(mqtt_message_handler)
 	call	mqtt_if_set_message_cb
-.LVL30:
-	.loc 1 118 5
+.LVL15:
+	.loc 1 77 5
 	lui	s2,%hi(.LANCHOR0)
-	lui	s1,%hi(.LC17)
-	lui	a4,%hi(.LC6)
+	lui	s1,%hi(.LC1)
+	lui	a4,%hi(.LC0)
 	lui	a0,%hi(.LANCHOR1)
 	addi	a3,s2,%lo(.LANCHOR0)
-	addi	a2,s1,%lo(.LC17)
-	addi	a4,a4,%lo(.LC6)
+	addi	a2,s1,%lo(.LC1)
+	addi	a4,a4,%lo(.LC0)
 	li	a1,128
 	addi	a0,a0,%lo(.LANCHOR1)
 	call	snprintf
-.LVL31:
-	.loc 1 119 5
-	lui	a4,%hi(.LC18)
+.LVL16:
+	.loc 1 78 5
+	lui	a4,%hi(.LC2)
 	lui	a0,%hi(.LANCHOR2)
 	addi	a3,s2,%lo(.LANCHOR0)
-	addi	a2,s1,%lo(.LC17)
-	addi	a4,a4,%lo(.LC18)
+	addi	a2,s1,%lo(.LC1)
+	addi	a4,a4,%lo(.LC2)
 	li	a1,128
 	addi	a0,a0,%lo(.LANCHOR2)
 	call	snprintf
-.LVL32:
-	.loc 1 121 5
-	.loc 1 122 1 is_stmt 0
+.LVL17:
+	.loc 1 80 5
+	.loc 1 81 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -431,13 +260,7 @@ app_mqtt_init:
 	.size	app_mqtt_init, .-app_mqtt_init
 	.section	.rodata.app_mqtt_start.str1.4,"aMS",@progbits,1
 	.align	2
-.LC19:
-	.string	"[APP][MQTT] Broker address required\r\n"
-	.align	2
-.LC20:
-	.string	"[APP][MQTT] Starting MQTT connection...\r\n"
-	.align	2
-.LC21:
+.LC3:
 	.string	"device_%d"
 	.section	.text.app_mqtt_start,"ax",@progbits
 	.align	1
@@ -445,38 +268,80 @@ app_mqtt_init:
 	.type	app_mqtt_start, @function
 app_mqtt_start:
 .LFB8:
-	.loc 1 125 1 is_stmt 1
+	.loc 1 84 1 is_stmt 1
 	.cfi_startproc
-.LVL33:
-	.loc 1 126 5
-	.loc 1 125 1 is_stmt 0
+.LVL18:
+	.loc 1 85 5
+	.loc 1 85 8 is_stmt 0
+	beq	a0,zero,.L21
+	.loc 1 84 1
 	addi	sp,sp,-368
 	.cfi_def_cfa_offset 368
 	sw	s0,360(sp)
-	sw	ra,364(sp)
 	sw	s1,356(sp)
-	sw	s2,352(sp)
-	sw	s3,348(sp)
 	.cfi_offset 8, -8
-	.cfi_offset 1, -4
 	.cfi_offset 9, -12
-	.cfi_offset 18, -16
-	.cfi_offset 19, -20
 	addi	s0,sp,368
 	.cfi_def_cfa 8, 0
-	.loc 1 126 8
-	bne	a0,zero,.L27
-	.loc 1 127 9 is_stmt 1
-	lui	a0,%hi(.LC19)
-.LVL34:
-	addi	a0,a0,%lo(.LC19)
-	call	printf
-.LVL35:
-	.loc 1 128 9
-	.loc 1 128 16 is_stmt 0
-	li	a0,-1
-.L26:
-	.loc 1 150 1
+	sw	s2,352(sp)
+	sw	s3,348(sp)
+	sw	ra,364(sp)
+	.cfi_offset 18, -16
+	.cfi_offset 19, -20
+	.cfi_offset 1, -4
+	mv	s3,a0
+	mv	s1,a1
+	.loc 1 89 22
+	li	a1,0
+.LVL19:
+	mv	s2,a2
+	.loc 1 89 5 is_stmt 1
+	.loc 1 89 22 is_stmt 0
+	addi	a0,s0,-360
+.LVL20:
+	li	a2,328
+.LVL21:
+	call	memset
+.LVL22:
+	.loc 1 90 5 is_stmt 1
+	li	a2,127
+	mv	a1,s3
+	addi	a0,s0,-360
+	call	strncpy
+.LVL23:
+	.loc 1 91 5
+	.loc 1 91 35 is_stmt 0
+	bgt	s1,zero,.L18
+	li	s1,1883
+.LVL24:
+.L18:
+	.loc 1 91 17 discriminator 4
+	sw	s1,-232(s0)
+	.loc 1 93 5 is_stmt 1 discriminator 4
+	.loc 1 93 8 is_stmt 0 discriminator 4
+	beq	s2,zero,.L19
+	.loc 1 94 9 is_stmt 1
+	li	a2,63
+	mv	a1,s2
+	addi	a0,s0,-228
+	call	strncpy
+.LVL25:
+.L20:
+	.loc 1 99 5
+	.loc 1 99 22 is_stmt 0
+	li	a5,60
+	.loc 1 100 5
+	addi	a0,s0,-360
+	.loc 1 99 22
+	sw	a5,-36(s0)
+	.loc 1 100 5 is_stmt 1
+	call	mqtt_if_set_config
+.LVL26:
+	.loc 1 101 5
+	.loc 1 101 12 is_stmt 0
+	call	mqtt_if_connect
+.LVL27:
+	.loc 1 102 1
 	lw	ra,364(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -487,130 +352,72 @@ app_mqtt_start:
 	.cfi_restore 9
 	lw	s2,352(sp)
 	.cfi_restore 18
+.LVL28:
 	lw	s3,348(sp)
 	.cfi_restore 19
+.LVL29:
 	addi	sp,sp,368
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL36:
-.L27:
+.LVL30:
+.L19:
 	.cfi_restore_state
-	mv	s3,a0
-	.loc 1 131 5
-	lui	a0,%hi(.LC20)
-.LVL37:
-	addi	a0,a0,%lo(.LC20)
-	mv	s1,a1
-	mv	s2,a2
-	.loc 1 131 5 is_stmt 1
-	call	printf
-.LVL38:
-	.loc 1 134 5
-	.loc 1 134 22 is_stmt 0
-	li	a2,328
-	li	a1,0
-	addi	a0,s0,-360
-	call	memset
-.LVL39:
-	.loc 1 135 5 is_stmt 1
-	li	a2,127
-	mv	a1,s3
-	addi	a0,s0,-360
-	call	strncpy
-.LVL40:
-	.loc 1 136 5
-	.loc 1 136 35 is_stmt 0
-	bgt	s1,zero,.L29
-	li	s1,1883
-.LVL41:
-.L29:
-	.loc 1 136 17 discriminator 4
-	sw	s1,-232(s0)
-	.loc 1 138 5 is_stmt 1 discriminator 4
-	.loc 1 138 8 is_stmt 0 discriminator 4
-	beq	s2,zero,.L30
-	.loc 1 139 9 is_stmt 1
-	li	a2,63
-	mv	a1,s2
-	addi	a0,s0,-228
-	call	strncpy
-.LVL42:
-.L31:
-	.loc 1 144 5
-	.loc 1 144 22 is_stmt 0
-	li	a5,60
-	.loc 1 146 5
-	addi	a0,s0,-360
-	.loc 1 144 22
-	sw	a5,-36(s0)
-	.loc 1 146 5 is_stmt 1
-	call	mqtt_if_set_config
-.LVL43:
-	.loc 1 149 5
-	.loc 1 149 12 is_stmt 0
-	call	mqtt_if_connect
-.LVL44:
-	j	.L26
-.L30:
-	.loc 1 141 9 is_stmt 1
-	.loc 1 141 80 is_stmt 0
+	.loc 1 96 9 is_stmt 1
+	.loc 1 96 80 is_stmt 0
 	call	aos_now_ms
-.LVL45:
-	.loc 1 141 9
-	lui	a2,%hi(.LC21)
-	.loc 1 141 80
+.LVL31:
+	.loc 1 96 9
+	lui	a2,%hi(.LC3)
+	.loc 1 96 80
 	mv	a3,a0
-	.loc 1 141 9
-	addi	a2,a2,%lo(.LC21)
+	.loc 1 96 9
+	addi	a2,a2,%lo(.LC3)
 	li	a1,64
 	addi	a0,s0,-228
 	call	snprintf
-.LVL46:
-	j	.L31
+.LVL32:
+	j	.L20
+.LVL33:
+.L21:
+	.cfi_def_cfa_register 2
+	.cfi_restore 1
+	.cfi_restore 8
+	.cfi_restore 9
+	.cfi_restore 18
+	.cfi_restore 19
+	.loc 1 86 16
+	li	a0,-1
+.LVL34:
+	.loc 1 102 1
+	ret
 	.cfi_endproc
 .LFE8:
 	.size	app_mqtt_start, .-app_mqtt_start
-	.section	.rodata.app_mqtt_stop.str1.4,"aMS",@progbits,1
-	.align	2
-.LC22:
-	.string	"[APP][MQTT] Stopping MQTT...\r\n"
 	.section	.text.app_mqtt_stop,"ax",@progbits
 	.align	1
 	.globl	app_mqtt_stop
 	.type	app_mqtt_stop, @function
 app_mqtt_stop:
 .LFB9:
-	.loc 1 153 1 is_stmt 1
+	.loc 1 105 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 154 5
-	.loc 1 153 1 is_stmt 0
+	.loc 1 106 5
+	.loc 1 105 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
-	sw	s0,8(sp)
-	sw	ra,12(sp)
-	.cfi_offset 8, -8
-	.cfi_offset 1, -4
+	sw	s0,12(sp)
+	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 154 5
-	lui	a0,%hi(.LC22)
-	.loc 1 153 1
-	.loc 1 154 5
-	addi	a0,a0,%lo(.LC22)
-	call	printf
-.LVL47:
-	.loc 1 155 5 is_stmt 1
-	.loc 1 156 1 is_stmt 0
-	lw	s0,8(sp)
+	.loc 1 107 1
+	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	lw	ra,12(sp)
-	.cfi_restore 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 155 12
+	.loc 1 106 12
 	tail	mqtt_if_disconnect
-.LVL48:
+.LVL35:
 	.cfi_endproc
 .LFE9:
 	.size	app_mqtt_stop, .-app_mqtt_stop
@@ -620,43 +427,40 @@ app_mqtt_stop:
 	.type	app_mqtt_is_connected, @function
 app_mqtt_is_connected:
 .LFB10:
-	.loc 1 159 1 is_stmt 1
+	.loc 1 110 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 160 5
-	.loc 1 159 1 is_stmt 0
+	.loc 1 111 5
+	.loc 1 112 5
+	.loc 1 110 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 161 1
+	.loc 1 113 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 160 12
+	.loc 1 112 12
 	tail	mqtt_if_is_connected
-.LVL49:
+.LVL36:
 	.cfi_endproc
 .LFE10:
 	.size	app_mqtt_is_connected, .-app_mqtt_is_connected
-	.section	.rodata.app_mqtt_publish_state.str1.4,"aMS",@progbits,1
-	.align	2
-.LC23:
-	.string	"[APP][MQTT] Publishing state: %s\r\n"
 	.section	.text.app_mqtt_publish_state,"ax",@progbits
 	.align	1
 	.globl	app_mqtt_publish_state
 	.type	app_mqtt_publish_state, @function
 app_mqtt_publish_state:
 .LFB11:
-	.loc 1 164 1 is_stmt 1
+	.loc 1 116 1 is_stmt 1
 	.cfi_startproc
-.LVL50:
-	.loc 1 165 5
-	.loc 1 164 1 is_stmt 0
+.LVL37:
+	.loc 1 117 5
+	.loc 1 116 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -667,56 +471,50 @@ app_mqtt_publish_state:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 164 1
+	.loc 1 116 1
 	mv	s1,a0
-	.loc 1 165 10
+	.loc 1 117 10
 	call	mqtt_if_is_connected
-.LVL51:
-	.loc 1 165 8
-	beq	a0,zero,.L37
-	.loc 1 165 33 discriminator 1
-	beq	s1,zero,.L37
-	.loc 1 169 5 is_stmt 1
-	lui	a0,%hi(.LC23)
-	mv	a1,s1
-	addi	a0,a0,%lo(.LC23)
-	call	printf
-.LVL52:
-	.loc 1 170 5
-	.loc 1 170 50 is_stmt 0
+.LVL38:
+	.loc 1 117 8
+	beq	a0,zero,.L30
+	.loc 1 117 33 discriminator 1
+	beq	s1,zero,.L30
+	.loc 1 120 5 is_stmt 1
+	.loc 1 120 50 is_stmt 0
 	mv	a0,s1
 	call	strlen
-.LVL53:
-	.loc 1 171 1
+.LVL39:
+	.loc 1 121 1
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 170 12
+	.loc 1 120 12
 	mv	a1,s1
-	.loc 1 171 1
+	.loc 1 121 1
 	lw	s1,4(sp)
 	.cfi_restore 9
-.LVL54:
-	.loc 1 170 50
+.LVL40:
+	.loc 1 120 50
 	mv	a2,a0
-	.loc 1 170 12
+	.loc 1 120 12
 	lui	a0,%hi(.LANCHOR2)
-	.loc 1 171 1
-	.loc 1 170 12
+	.loc 1 121 1
+	.loc 1 120 12
 	li	a3,1
 	addi	a0,a0,%lo(.LANCHOR2)
-	.loc 1 171 1
+	.loc 1 121 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 170 12
+	.loc 1 120 12
 	tail	mqtt_if_publish
-.LVL55:
-.L37:
+.LVL41:
+.L30:
 	.cfi_restore_state
-	.loc 1 171 1
+	.loc 1 121 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -724,7 +522,7 @@ app_mqtt_publish_state:
 	.cfi_def_cfa 2, 16
 	lw	s1,4(sp)
 	.cfi_restore 9
-.LVL56:
+.LVL42:
 	li	a0,-1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -734,48 +532,46 @@ app_mqtt_publish_state:
 	.size	app_mqtt_publish_state, .-app_mqtt_publish_state
 	.section	.rodata.mqtt_connected_handler.str1.4,"aMS",@progbits,1
 	.align	2
-.LC24:
-	.string	"[APP][MQTT] Connected, subscribing to command topic...\r\n"
+.LC4:
+	.string	"ON"
+	.align	2
+.LC5:
+	.string	"OFF"
 	.section	.text.mqtt_connected_handler,"ax",@progbits
 	.align	1
 	.type	mqtt_connected_handler, @function
 mqtt_connected_handler:
 .LFB5:
-	.loc 1 89 1 is_stmt 1
+	.loc 1 60 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 90 5
-	.loc 1 89 1 is_stmt 0
+	.loc 1 61 5
+	.loc 1 60 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
 	sw	s0,8(sp)
-	.loc 1 90 5
-	lui	a0,%hi(.LC24)
+	.loc 1 61 5
+	lui	a0,%hi(.LANCHOR1)
 	.cfi_offset 1, -4
 	.cfi_offset 8, -8
-	.loc 1 89 1
+	.loc 1 60 1
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 90 5
-	addi	a0,a0,%lo(.LC24)
-	call	printf
-.LVL57:
-	.loc 1 93 5 is_stmt 1
-	lui	a0,%hi(.LANCHOR1)
+	.loc 1 61 5
 	addi	a0,a0,%lo(.LANCHOR1)
 	call	mqtt_if_subscribe
-.LVL58:
-	.loc 1 96 5
-	.loc 1 96 27 is_stmt 0
+.LVL43:
+	.loc 1 62 5 is_stmt 1
+	.loc 1 62 27 is_stmt 0
 	call	relay_get_state
-.LVL59:
-	.loc 1 97 5 is_stmt 1
-	bne	a0,zero,.L46
-	lui	a0,%hi(.LC2)
-.LVL60:
-	addi	a0,a0,%lo(.LC2)
-.L45:
-	.loc 1 98 1 is_stmt 0 discriminator 4
+.LVL44:
+	.loc 1 63 5 is_stmt 1
+	bne	a0,zero,.L39
+	lui	a0,%hi(.LC5)
+.LVL45:
+	addi	a0,a0,%lo(.LC5)
+.L38:
+	.loc 1 64 1 is_stmt 0 discriminator 4
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -784,16 +580,16 @@ mqtt_connected_handler:
 	.cfi_restore 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 97 5 discriminator 4
+	.loc 1 63 5 discriminator 4
 	tail	app_mqtt_publish_state
-.LVL61:
-.L46:
+.LVL46:
+.L39:
 	.cfi_restore_state
-	.loc 1 97 5
-	lui	a0,%hi(.LC1)
-.LVL62:
-	addi	a0,a0,%lo(.LC1)
-	j	.L45
+	.loc 1 63 5
+	lui	a0,%hi(.LC4)
+.LVL47:
+	addi	a0,a0,%lo(.LC4)
+	j	.L38
 	.cfi_endproc
 .LFE5:
 	.size	mqtt_connected_handler, .-mqtt_connected_handler
@@ -803,23 +599,23 @@ mqtt_connected_handler:
 	.type	app_mqtt_get_command_topic, @function
 app_mqtt_get_command_topic:
 .LFB12:
-	.loc 1 174 1 is_stmt 1
+	.loc 1 124 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 175 5
-	.loc 1 174 1 is_stmt 0
+	.loc 1 125 5
+	.loc 1 124 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 176 1
+	.loc 1 126 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 175 12
+	.loc 1 125 12
 	lui	a0,%hi(.LANCHOR1)
-	.loc 1 176 1
+	.loc 1 126 1
 	addi	a0,a0,%lo(.LANCHOR1)
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -833,23 +629,23 @@ app_mqtt_get_command_topic:
 	.type	app_mqtt_get_state_topic, @function
 app_mqtt_get_state_topic:
 .LFB13:
-	.loc 1 179 1 is_stmt 1
+	.loc 1 129 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 180 5
-	.loc 1 179 1 is_stmt 0
+	.loc 1 130 5
+	.loc 1 129 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 181 1
+	.loc 1 131 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 180 12
+	.loc 1 130 12
 	lui	a0,%hi(.LANCHOR2)
-	.loc 1 181 1
+	.loc 1 131 1
 	addi	a0,a0,%lo(.LANCHOR2)
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -885,24 +681,24 @@ s_topic_prefix:
 	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
 	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/../app_event/app_event.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/../../hardware/relay/relay.h"
 	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/../app_config/app_config.h"
 	.file 11 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0xa23
+	.4byte	0x883
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF100
+	.4byte	.LASF96
 	.byte	0xc
-	.4byte	.LASF101
-	.4byte	.LASF102
-	.4byte	.Ldebug_ranges0+0x40
+	.4byte	.LASF97
+	.4byte	.LASF98
+	.4byte	.Ldebug_ranges0+0x30
 	.4byte	0
 	.4byte	.Ldebug_line0
 	.byte	0x2
@@ -1302,7 +1098,7 @@ s_topic_prefix:
 	.byte	0x12
 	.4byte	.LASF61
 	.byte	0x1
-	.byte	0x14
+	.byte	0x13
 	.byte	0xd
 	.4byte	0x99
 	.byte	0x5
@@ -1311,7 +1107,7 @@ s_topic_prefix:
 	.byte	0x12
 	.4byte	.LASF62
 	.byte	0x1
-	.byte	0x15
+	.byte	0x14
 	.byte	0xd
 	.4byte	0x99
 	.byte	0x5
@@ -1320,7 +1116,7 @@ s_topic_prefix:
 	.byte	0x12
 	.4byte	.LASF63
 	.byte	0x1
-	.byte	0x16
+	.byte	0x15
 	.byte	0xd
 	.4byte	0xb0
 	.byte	0x5
@@ -1329,7 +1125,7 @@ s_topic_prefix:
 	.byte	0x13
 	.4byte	.LASF64
 	.byte	0x1
-	.byte	0xb2
+	.byte	0x80
 	.byte	0xd
 	.4byte	0x25
 	.4byte	.LFB13
@@ -1339,7 +1135,7 @@ s_topic_prefix:
 	.byte	0x13
 	.4byte	.LASF65
 	.byte	0x1
-	.byte	0xad
+	.byte	0x7b
 	.byte	0xd
 	.4byte	0x25
 	.4byte	.LFB12
@@ -1349,45 +1145,28 @@ s_topic_prefix:
 	.byte	0x14
 	.4byte	.LASF66
 	.byte	0x1
-	.byte	0xa3
+	.byte	0x73
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x3e5
+	.4byte	0x3c8
 	.byte	0x15
 	.4byte	.LASF35
 	.byte	0x1
-	.byte	0xa3
+	.byte	0x73
 	.byte	0x28
 	.4byte	0x25
 	.4byte	.LLST10
 	.byte	0x16
-	.4byte	.LVL51
-	.4byte	0x911
+	.4byte	.LVL38
+	.4byte	0x789
 	.byte	0x17
-	.4byte	.LVL52
-	.4byte	0x91d
-	.4byte	0x3b1
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC23
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL53
-	.4byte	0x929
-	.4byte	0x3c5
+	.4byte	.LVL39
+	.4byte	0x795
+	.4byte	0x3a8
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1396,8 +1175,8 @@ s_topic_prefix:
 	.byte	0
 	.byte	0
 	.byte	0x19
-	.4byte	.LVL55
-	.4byte	0x935
+	.4byte	.LVL41
+	.4byte	0x7a1
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1421,111 +1200,78 @@ s_topic_prefix:
 	.byte	0x14
 	.4byte	.LASF67
 	.byte	0x1
-	.byte	0x9e
+	.byte	0x6d
 	.byte	0x5
 	.4byte	0x231
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x409
+	.4byte	0x3ec
 	.byte	0x1a
-	.4byte	.LVL49
-	.4byte	0x911
+	.4byte	.LVL36
+	.4byte	0x789
 	.byte	0
 	.byte	0x14
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x98
+	.byte	0x68
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x444
-	.byte	0x17
-	.4byte	.LVL47
-	.4byte	0x91d
-	.4byte	0x43a
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC22
-	.byte	0
+	.4byte	0x410
 	.byte	0x1a
-	.4byte	.LVL48
-	.4byte	0x941
+	.4byte	.LVL35
+	.4byte	0x7ad
 	.byte	0
 	.byte	0x14
 	.4byte	.LASF69
 	.byte	0x1
-	.byte	0x7c
+	.byte	0x53
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x577
+	.4byte	0x515
 	.byte	0x15
 	.4byte	.LASF1
 	.byte	0x1
-	.byte	0x7c
+	.byte	0x53
 	.byte	0x20
 	.4byte	0x25
 	.4byte	.LLST7
 	.byte	0x15
 	.4byte	.LASF2
 	.byte	0x1
-	.byte	0x7c
+	.byte	0x53
 	.byte	0x2c
 	.4byte	0x37
 	.4byte	.LLST8
 	.byte	0x15
 	.4byte	.LASF3
 	.byte	0x1
-	.byte	0x7c
+	.byte	0x53
 	.byte	0x3e
 	.4byte	0x25
 	.4byte	.LLST9
 	.byte	0x12
 	.4byte	.LASF70
 	.byte	0x1
-	.byte	0x86
+	.byte	0x59
 	.byte	0x16
 	.4byte	0xc0
 	.byte	0x3
 	.byte	0x91
 	.byte	0x98,0x7d
 	.byte	0x17
-	.4byte	.LVL35
-	.4byte	0x91d
-	.4byte	0x4b5
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC19
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL38
-	.4byte	0x91d
-	.4byte	0x4cc
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC20
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL39
-	.4byte	0x94d
-	.4byte	0x4ed
+	.4byte	.LVL22
+	.4byte	0x7b9
+	.4byte	0x48b
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1545,9 +1291,9 @@ s_topic_prefix:
 	.2byte	0x148
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL40
-	.4byte	0x958
-	.4byte	0x50e
+	.4byte	.LVL23
+	.4byte	0x7c4
+	.4byte	0x4ac
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1568,9 +1314,9 @@ s_topic_prefix:
 	.byte	0x7f
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL42
-	.4byte	0x958
-	.4byte	0x52f
+	.4byte	.LVL25
+	.4byte	0x7c4
+	.4byte	0x4cd
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1591,9 +1337,9 @@ s_topic_prefix:
 	.byte	0x3f
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL43
-	.4byte	0x964
-	.4byte	0x544
+	.4byte	.LVL26
+	.4byte	0x7d0
+	.4byte	0x4e2
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1602,14 +1348,14 @@ s_topic_prefix:
 	.byte	0x98,0x7d
 	.byte	0
 	.byte	0x16
-	.4byte	.LVL44
-	.4byte	0x970
+	.4byte	.LVL27
+	.4byte	0x7dc
 	.byte	0x16
-	.4byte	.LVL45
-	.4byte	0x97c
+	.4byte	.LVL31
+	.4byte	0x7e8
 	.byte	0x1b
-	.4byte	.LVL46
-	.4byte	0x989
+	.4byte	.LVL32
+	.4byte	0x7f5
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1627,38 +1373,27 @@ s_topic_prefix:
 	.byte	0x5c
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC21
+	.4byte	.LC3
 	.byte	0
 	.byte	0
 	.byte	0x14
 	.4byte	.LASF71
 	.byte	0x1
-	.byte	0x69
+	.byte	0x46
 	.byte	0x5
 	.4byte	0x37
 	.4byte	.LFB7
 	.4byte	.LFE7-.LFB7
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x663
-	.byte	0x17
-	.4byte	.LVL26
-	.4byte	0x91d
-	.4byte	0x5a8
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC16
-	.byte	0
+	.4byte	0x5ea
 	.byte	0x16
-	.4byte	.LVL27
-	.4byte	0x996
+	.4byte	.LVL12
+	.4byte	0x802
 	.byte	0x17
-	.4byte	.LVL28
-	.4byte	0x9a2
-	.4byte	0x5c8
+	.4byte	.LVL13
+	.4byte	0x80e
+	.4byte	0x54f
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1667,9 +1402,9 @@ s_topic_prefix:
 	.4byte	mqtt_connected_handler
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL29
-	.4byte	0x9ae
-	.4byte	0x5df
+	.4byte	.LVL14
+	.4byte	0x81a
+	.4byte	0x566
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1678,9 +1413,9 @@ s_topic_prefix:
 	.4byte	mqtt_disconnected_handler
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL30
-	.4byte	0x9ba
-	.4byte	0x5f6
+	.4byte	.LVL15
+	.4byte	0x826
+	.4byte	0x57d
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1689,9 +1424,9 @@ s_topic_prefix:
 	.4byte	mqtt_message_handler
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL31
-	.4byte	0x989
-	.4byte	0x62e
+	.4byte	.LVL16
+	.4byte	0x7f5
+	.4byte	0x5b5
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1709,7 +1444,7 @@ s_topic_prefix:
 	.byte	0x5c
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC17
+	.4byte	.LC1
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5d
@@ -1721,11 +1456,11 @@ s_topic_prefix:
 	.byte	0x5e
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC6
+	.4byte	.LC0
 	.byte	0
 	.byte	0x1b
-	.4byte	.LVL32
-	.4byte	0x989
+	.4byte	.LVL17
+	.4byte	0x7f5
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1743,7 +1478,7 @@ s_topic_prefix:
 	.byte	0x5c
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC17
+	.4byte	.LC1
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5d
@@ -1755,62 +1490,39 @@ s_topic_prefix:
 	.byte	0x5e
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC18
+	.4byte	.LC2
 	.byte	0
 	.byte	0
 	.byte	0x1c
-	.4byte	.LASF72
+	.4byte	.LASF99
 	.byte	0x1
-	.byte	0x64
+	.byte	0x42
 	.byte	0xd
 	.4byte	.LFB6
 	.4byte	.LFE6-.LFB6
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x68d
-	.byte	0x19
-	.4byte	.LVL0
-	.4byte	0x91d
-	.byte	0x18
+	.byte	0x1d
+	.4byte	.LASF100
 	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC0
-	.byte	0
-	.byte	0
-	.byte	0x1c
-	.4byte	.LASF73
-	.byte	0x1
-	.byte	0x58
+	.byte	0x3b
 	.byte	0xd
 	.4byte	.LFB5
 	.4byte	.LFE5-.LFB5
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x6f4
-	.byte	0x1d
-	.4byte	.LASF74
+	.4byte	0x64c
+	.byte	0x1e
+	.4byte	.LASF72
 	.byte	0x1
-	.byte	0x60
+	.byte	0x3e
 	.byte	0xd
 	.4byte	0xe8
 	.4byte	.LLST11
 	.byte	0x17
-	.4byte	.LVL57
-	.4byte	0x91d
-	.4byte	0x6ca
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC24
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL58
-	.4byte	0x9c6
-	.4byte	0x6e1
+	.4byte	.LVL43
+	.4byte	0x832
+	.4byte	0x639
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1819,133 +1531,122 @@ s_topic_prefix:
 	.4byte	.LANCHOR1
 	.byte	0
 	.byte	0x16
-	.4byte	.LVL59
-	.4byte	0x9d2
+	.4byte	.LVL44
+	.4byte	0x83e
 	.byte	0x1a
-	.4byte	.LVL61
+	.4byte	.LVL46
 	.4byte	0x361
 	.byte	0
-	.byte	0x1e
-	.4byte	.LASF103
+	.byte	0x1f
+	.4byte	.LASF101
 	.byte	0x1
-	.byte	0x19
+	.byte	0x17
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x750
-	.byte	0x1f
-	.4byte	.LASF75
+	.4byte	0x6a8
+	.byte	0x20
+	.4byte	.LASF73
 	.byte	0x1
-	.byte	0x19
+	.byte	0x17
 	.byte	0x2e
 	.4byte	0x25
-	.byte	0x1f
-	.4byte	.LASF76
+	.byte	0x20
+	.4byte	.LASF74
 	.byte	0x1
-	.byte	0x19
+	.byte	0x17
 	.byte	0x41
 	.4byte	0x25
-	.byte	0x1f
-	.4byte	.LASF77
+	.byte	0x20
+	.4byte	.LASF75
 	.byte	0x1
-	.byte	0x19
+	.byte	0x17
 	.byte	0x4e
 	.4byte	0x37
-	.byte	0x20
 	.byte	0x21
+	.byte	0x22
 	.string	"cmd"
 	.byte	0x1
-	.byte	0x20
+	.byte	0x1a
 	.byte	0x14
 	.4byte	0x296
-	.byte	0x20
-	.byte	0x22
+	.byte	0x21
+	.byte	0x23
 	.4byte	.LASF39
 	.byte	0x1
-	.byte	0x3a
+	.byte	0x29
 	.byte	0x21
 	.4byte	0xe8
-	.byte	0x23
-	.4byte	.LASF95
-	.byte	0x1
-	.byte	0x3f
-	.byte	0x25
 	.byte	0x24
+	.4byte	.LASF92
+	.byte	0x1
+	.byte	0x2b
+	.byte	0x25
+	.byte	0x25
 	.4byte	0x231
 	.byte	0
 	.byte	0
 	.byte	0
 	.byte	0
-	.byte	0x25
-	.4byte	0x6f4
+	.byte	0x26
+	.4byte	0x64c
 	.4byte	.LFB4
 	.4byte	.LFE4-.LFB4
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x911
-	.byte	0x26
-	.4byte	0x701
-	.4byte	.LLST0
-	.byte	0x26
-	.4byte	0x70d
-	.4byte	.LLST1
-	.byte	0x26
-	.4byte	0x719
-	.4byte	.LLST2
+	.4byte	0x789
 	.byte	0x27
-	.4byte	0x6f4
+	.4byte	0x659
+	.4byte	.LLST0
+	.byte	0x27
+	.4byte	0x665
+	.4byte	.LLST1
+	.byte	0x27
+	.4byte	0x671
+	.4byte	.LLST2
+	.byte	0x28
+	.4byte	0x64c
 	.4byte	.LBB10
 	.4byte	.Ldebug_ranges0+0
 	.byte	0x1
-	.byte	0x19
+	.byte	0x17
 	.byte	0xd
-	.4byte	0x8ce
-	.byte	0x26
-	.4byte	0x701
+	.4byte	0x76e
+	.byte	0x27
+	.4byte	0x659
 	.4byte	.LLST3
-	.byte	0x26
-	.4byte	0x719
+	.byte	0x27
+	.4byte	0x671
 	.4byte	.LLST4
-	.byte	0x26
-	.4byte	0x70d
+	.byte	0x27
+	.4byte	0x665
 	.4byte	.LLST5
-	.byte	0x28
-	.4byte	0x725
-	.4byte	.Ldebug_ranges0+0x20
 	.byte	0x29
-	.4byte	0x726
+	.4byte	0x67d
+	.4byte	.Ldebug_ranges0+0x18
+	.byte	0x2a
+	.4byte	0x67e
 	.byte	0x2
 	.byte	0x91
-	.byte	0x54
-	.byte	0x2a
-	.4byte	0x732
+	.byte	0x64
+	.byte	0x2b
+	.4byte	0x68a
 	.4byte	.LBB13
 	.4byte	.LBE13-.LBB13
-	.4byte	0x802
-	.byte	0x2b
-	.4byte	0x733
+	.4byte	0x743
+	.byte	0x2c
+	.4byte	0x68b
 	.4byte	.LLST6
 	.byte	0x16
-	.4byte	.LVL13
-	.4byte	0x9de
-	.byte	0x17
-	.4byte	.LVL14
-	.4byte	0x91d
-	.4byte	0x7f8
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC12
-	.byte	0
+	.4byte	.LVL10
+	.4byte	0x84a
 	.byte	0x16
-	.4byte	.LVL15
-	.4byte	0x9ea
+	.4byte	.LVL11
+	.4byte	0x856
 	.byte	0
 	.byte	0x17
-	.4byte	.LVL7
-	.4byte	0x9f6
-	.4byte	0x822
+	.4byte	.LVL4
+	.4byte	0x862
+	.4byte	0x763
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -1956,275 +1657,161 @@ s_topic_prefix:
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
-	.byte	0x83
+	.byte	0x82
 	.byte	0
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x78
-	.byte	0x54
+	.byte	0x64
 	.byte	0
 	.byte	0x16
-	.4byte	.LVL8
-	.4byte	0xa02
-	.byte	0x17
-	.4byte	.LVL9
-	.4byte	0x91d
-	.4byte	0x842
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC7
-	.byte	0
-	.byte	0x16
-	.4byte	.LVL10
-	.4byte	0x91d
-	.byte	0x17
-	.4byte	.LVL12
-	.4byte	0x91d
-	.4byte	0x862
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC11
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL16
-	.4byte	0x91d
-	.4byte	0x879
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC8
-	.byte	0
-	.byte	0x16
-	.4byte	.LVL17
-	.4byte	0xa0e
-	.byte	0x17
-	.4byte	.LVL22
-	.4byte	0x91d
-	.4byte	0x899
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC9
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL23
-	.4byte	0x91d
-	.4byte	0x8b0
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC10
-	.byte	0
-	.byte	0x16
-	.4byte	.LVL24
-	.4byte	0xa02
-	.byte	0x1b
-	.4byte	.LVL25
-	.4byte	0x91d
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC13
-	.byte	0
-	.byte	0
-	.byte	0
-	.byte	0x17
-	.4byte	.LVL4
-	.4byte	0x91d
-	.4byte	0x8f7
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC5
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x82
-	.byte	0
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x2
-	.byte	0x83
-	.byte	0
-	.byte	0x18
-	.byte	0x1
-	.byte	0x5d
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0
-	.byte	0x1b
 	.4byte	.LVL5
-	.4byte	0xa1a
+	.4byte	0x86e
+	.byte	0
+	.byte	0
+	.byte	0x1b
+	.4byte	.LVL2
+	.4byte	0x87a
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
-	.byte	0x2
-	.byte	0x82
-	.byte	0
+	.byte	0x3
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC6
+	.4byte	.LC0
 	.byte	0
 	.byte	0
-	.byte	0x2c
-	.4byte	.LASF78
-	.4byte	.LASF78
+	.byte	0x2d
+	.4byte	.LASF76
+	.4byte	.LASF76
 	.byte	0x2
 	.byte	0x22
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF79
-	.4byte	.LASF79
+	.byte	0x2d
+	.4byte	.LASF77
+	.4byte	.LASF77
 	.byte	0x6
-	.byte	0xc8
-	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF80
-	.4byte	.LASF80
-	.byte	0x7
 	.byte	0x29
 	.byte	0x8
-	.byte	0x2c
-	.4byte	.LASF81
-	.4byte	.LASF81
+	.byte	0x2d
+	.4byte	.LASF78
+	.4byte	.LASF78
 	.byte	0x2
 	.byte	0x2b
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF82
-	.4byte	.LASF82
+	.byte	0x2d
+	.4byte	.LASF79
+	.4byte	.LASF79
 	.byte	0x2
 	.byte	0x1f
 	.byte	0x5
-	.byte	0x2d
-	.4byte	.LASF104
-	.4byte	.LASF105
+	.byte	0x2e
+	.4byte	.LASF102
+	.4byte	.LASF103
 	.byte	0xb
 	.byte	0
+	.byte	0x2d
+	.4byte	.LASF80
+	.4byte	.LASF80
+	.byte	0x6
 	.byte	0x2c
-	.4byte	.LASF83
-	.4byte	.LASF83
 	.byte	0x7
-	.byte	0x2c
-	.byte	0x7
-	.byte	0x2c
-	.4byte	.LASF84
-	.4byte	.LASF84
+	.byte	0x2d
+	.4byte	.LASF81
+	.4byte	.LASF81
 	.byte	0x2
 	.byte	0x19
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF85
-	.4byte	.LASF85
+	.byte	0x2d
+	.4byte	.LASF82
+	.4byte	.LASF82
 	.byte	0x2
 	.byte	0x1c
 	.byte	0x5
-	.byte	0x2e
-	.4byte	.LASF86
-	.4byte	.LASF86
-	.byte	0x8
+	.byte	0x2f
+	.4byte	.LASF83
+	.4byte	.LASF83
+	.byte	0x7
 	.2byte	0x1ef
 	.byte	0xf
-	.byte	0x2e
-	.4byte	.LASF87
-	.4byte	.LASF87
-	.byte	0x6
+	.byte	0x2f
+	.4byte	.LASF84
+	.4byte	.LASF84
+	.byte	0x8
 	.2byte	0x10a
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF88
-	.4byte	.LASF88
+	.byte	0x2d
+	.4byte	.LASF85
+	.4byte	.LASF85
 	.byte	0x2
 	.byte	0x16
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF89
-	.4byte	.LASF89
+	.byte	0x2d
+	.4byte	.LASF86
+	.4byte	.LASF86
 	.byte	0x2
 	.byte	0x2e
 	.byte	0x6
-	.byte	0x2c
-	.4byte	.LASF90
-	.4byte	.LASF90
+	.byte	0x2d
+	.4byte	.LASF87
+	.4byte	.LASF87
 	.byte	0x2
 	.byte	0x2f
 	.byte	0x6
-	.byte	0x2c
-	.4byte	.LASF91
-	.4byte	.LASF91
+	.byte	0x2d
+	.4byte	.LASF88
+	.4byte	.LASF88
 	.byte	0x2
 	.byte	0x30
 	.byte	0x6
-	.byte	0x2c
-	.4byte	.LASF92
-	.4byte	.LASF92
+	.byte	0x2d
+	.4byte	.LASF89
+	.4byte	.LASF89
 	.byte	0x2
 	.byte	0x25
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF93
-	.4byte	.LASF93
+	.byte	0x2d
+	.4byte	.LASF90
+	.4byte	.LASF90
 	.byte	0x9
 	.byte	0xa
 	.byte	0x9
-	.byte	0x2c
-	.4byte	.LASF94
-	.4byte	.LASF94
+	.byte	0x2d
+	.4byte	.LASF91
+	.4byte	.LASF91
 	.byte	0xa
 	.byte	0x1b
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF95
-	.4byte	.LASF95
+	.byte	0x2d
+	.4byte	.LASF92
+	.4byte	.LASF92
 	.byte	0x1
-	.byte	0x3f
+	.byte	0x2b
 	.byte	0x25
-	.byte	0x2c
-	.4byte	.LASF96
-	.4byte	.LASF96
+	.byte	0x2d
+	.4byte	.LASF93
+	.4byte	.LASF93
 	.byte	0x4
 	.byte	0x36
 	.byte	0x5
-	.byte	0x2c
-	.4byte	.LASF97
-	.4byte	.LASF97
-	.byte	0x4
-	.byte	0x39
-	.byte	0xd
-	.byte	0x2c
-	.4byte	.LASF98
-	.4byte	.LASF98
+	.byte	0x2d
+	.4byte	.LASF94
+	.4byte	.LASF94
 	.byte	0x1
 	.byte	0xd
 	.byte	0xd
-	.byte	0x2c
-	.4byte	.LASF99
-	.4byte	.LASF99
-	.byte	0x7
+	.byte	0x2d
+	.4byte	.LASF95
+	.4byte	.LASF95
+	.byte	0x6
 	.byte	0x30
 	.byte	0x7
 	.byte	0
@@ -2609,6 +2196,29 @@ s_topic_prefix:
 	.byte	0
 	.byte	0x1c
 	.byte	0x2e
+	.byte	0
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x27
+	.byte	0x19
+	.byte	0x11
+	.byte	0x1
+	.byte	0x12
+	.byte	0x6
+	.byte	0x40
+	.byte	0x18
+	.byte	0x97,0x42
+	.byte	0x19
+	.byte	0
+	.byte	0
+	.byte	0x1d
+	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
 	.byte	0xe
@@ -2632,7 +2242,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x1d
+	.byte	0x1e
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -2649,7 +2259,7 @@ s_topic_prefix:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x1e
+	.byte	0x1f
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
@@ -2668,7 +2278,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x1f
+	.byte	0x20
 	.byte	0x5
 	.byte	0
 	.byte	0x3
@@ -2683,12 +2293,12 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x20
+	.byte	0x21
 	.byte	0xb
 	.byte	0x1
 	.byte	0
 	.byte	0
-	.byte	0x21
+	.byte	0x22
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -2703,7 +2313,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x22
+	.byte	0x23
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -2718,7 +2328,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x23
+	.byte	0x24
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3f
@@ -2737,14 +2347,14 @@ s_topic_prefix:
 	.byte	0x19
 	.byte	0
 	.byte	0
-	.byte	0x24
+	.byte	0x25
 	.byte	0x5
 	.byte	0
 	.byte	0x49
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x25
+	.byte	0x26
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x31
@@ -2761,7 +2371,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x26
+	.byte	0x27
 	.byte	0x5
 	.byte	0
 	.byte	0x31
@@ -2770,7 +2380,7 @@ s_topic_prefix:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x27
+	.byte	0x28
 	.byte	0x1d
 	.byte	0x1
 	.byte	0x31
@@ -2789,7 +2399,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x28
+	.byte	0x29
 	.byte	0xb
 	.byte	0x1
 	.byte	0x31
@@ -2798,7 +2408,7 @@ s_topic_prefix:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x29
+	.byte	0x2a
 	.byte	0x34
 	.byte	0
 	.byte	0x31
@@ -2807,7 +2417,7 @@ s_topic_prefix:
 	.byte	0x18
 	.byte	0
 	.byte	0
-	.byte	0x2a
+	.byte	0x2b
 	.byte	0xb
 	.byte	0x1
 	.byte	0x31
@@ -2820,7 +2430,7 @@ s_topic_prefix:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x2b
+	.byte	0x2c
 	.byte	0x34
 	.byte	0
 	.byte	0x31
@@ -2829,7 +2439,7 @@ s_topic_prefix:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x2c
+	.byte	0x2d
 	.byte	0x2e
 	.byte	0
 	.byte	0x3f
@@ -2848,7 +2458,7 @@ s_topic_prefix:
 	.byte	0xb
 	.byte	0
 	.byte	0
-	.byte	0x2d
+	.byte	0x2e
 	.byte	0x2e
 	.byte	0
 	.byte	0x3f
@@ -2865,7 +2475,7 @@ s_topic_prefix:
 	.byte	0xb
 	.byte	0
 	.byte	0
-	.byte	0x2e
+	.byte	0x2f
 	.byte	0x2e
 	.byte	0
 	.byte	0x3f
@@ -2888,30 +2498,30 @@ s_topic_prefix:
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 .LLST10:
-	.4byte	.LVL50
-	.4byte	.LVL51-1
+	.4byte	.LVL37
+	.4byte	.LVL38-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL51-1
-	.4byte	.LVL54
+	.4byte	.LVL38-1
+	.4byte	.LVL40
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL54
-	.4byte	.LVL55-1
+	.4byte	.LVL40
+	.4byte	.LVL41-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL55-1
-	.4byte	.LVL55
+	.4byte	.LVL41-1
+	.4byte	.LVL41
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL55
-	.4byte	.LVL56
+	.4byte	.LVL41
+	.4byte	.LVL42
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL56
+	.4byte	.LVL42
 	.4byte	.LFE11
 	.2byte	0x4
 	.byte	0xf3
@@ -2921,210 +2531,200 @@ s_topic_prefix:
 	.4byte	0
 	.4byte	0
 .LLST7:
-	.4byte	.LVL33
-	.4byte	.LVL34
+	.4byte	.LVL18
+	.4byte	.LVL20
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL34
-	.4byte	.LVL36
+	.4byte	.LVL20
+	.4byte	.LVL29
+	.2byte	0x1
+	.byte	0x63
+	.4byte	.LVL29
+	.4byte	.LVL30
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL36
-	.4byte	.LVL37
-	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL37
-	.4byte	.LFE8
+	.4byte	.LVL30
+	.4byte	.LVL33
 	.2byte	0x1
 	.byte	0x63
+	.4byte	.LVL33
+	.4byte	.LVL34
+	.2byte	0x1
+	.byte	0x5a
+	.4byte	.LVL34
+	.4byte	.LFE8
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST8:
-	.4byte	.LVL33
-	.4byte	.LVL35-1
+	.4byte	.LVL18
+	.4byte	.LVL19
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL35-1
-	.4byte	.LVL36
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x9f
-	.4byte	.LVL36
-	.4byte	.LVL38-1
-	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL38-1
-	.4byte	.LVL41
+	.4byte	.LVL19
+	.4byte	.LVL24
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL41
-	.4byte	.LFE8
+	.4byte	.LVL24
+	.4byte	.LVL33
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
+	.4byte	.LVL33
+	.4byte	.LFE8
+	.2byte	0x1
+	.byte	0x5b
 	.4byte	0
 	.4byte	0
 .LLST9:
-	.4byte	.LVL33
-	.4byte	.LVL35-1
+	.4byte	.LVL18
+	.4byte	.LVL21
 	.2byte	0x1
 	.byte	0x5c
-	.4byte	.LVL35-1
-	.4byte	.LVL36
+	.4byte	.LVL21
+	.4byte	.LVL28
+	.2byte	0x1
+	.byte	0x62
+	.4byte	.LVL28
+	.4byte	.LVL30
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x9f
-	.4byte	.LVL36
-	.4byte	.LVL38-1
-	.2byte	0x1
-	.byte	0x5c
-	.4byte	.LVL38-1
-	.4byte	.LFE8
+	.4byte	.LVL30
+	.4byte	.LVL33
 	.2byte	0x1
 	.byte	0x62
+	.4byte	.LVL33
+	.4byte	.LFE8
+	.2byte	0x1
+	.byte	0x5c
 	.4byte	0
 	.4byte	0
 .LLST11:
-	.4byte	.LVL59
-	.4byte	.LVL60
+	.4byte	.LVL44
+	.4byte	.LVL45
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL61
-	.4byte	.LVL62
+	.4byte	.LVL46
+	.4byte	.LVL47
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST0:
-	.4byte	.LVL1
-	.4byte	.LVL3
+	.4byte	.LVL0
+	.4byte	.LVL2-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL3
-	.4byte	.LVL4-1
-	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL4-1
-	.4byte	.LVL19
-	.2byte	0x1
-	.byte	0x62
-	.4byte	.LVL19
-	.4byte	.LVL21
+	.4byte	.LVL2-1
+	.4byte	.LFE4
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL21
-	.4byte	.LFE4
-	.2byte	0x1
-	.byte	0x62
 	.4byte	0
 	.4byte	0
 .LLST1:
+	.4byte	.LVL0
 	.4byte	.LVL1
-	.4byte	.LVL2
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL2
-	.4byte	.LVL18
+	.4byte	.LVL1
+	.4byte	.LVL6
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL18
-	.4byte	.LVL21
+	.4byte	.LVL6
+	.4byte	.LVL8
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL21
+	.4byte	.LVL8
 	.4byte	.LFE4
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST2:
-	.4byte	.LVL1
-	.4byte	.LVL4-1
+	.4byte	.LVL0
+	.4byte	.LVL2-1
 	.2byte	0x1
 	.byte	0x5c
-	.4byte	.LVL4-1
-	.4byte	.LVL20
+	.4byte	.LVL2-1
+	.4byte	.LVL7
 	.2byte	0x1
-	.byte	0x63
-	.4byte	.LVL20
-	.4byte	.LVL21
+	.byte	0x62
+	.4byte	.LVL7
+	.4byte	.LVL8
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x9f
-	.4byte	.LVL21
+	.4byte	.LVL8
 	.4byte	.LFE4
 	.2byte	0x1
-	.byte	0x63
+	.byte	0x62
 	.4byte	0
 	.4byte	0
 .LLST3:
-	.4byte	.LVL6
-	.4byte	.LVL10
-	.2byte	0x1
-	.byte	0x62
+	.4byte	.LVL3
+	.4byte	.LVL5
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x9f
+	.4byte	.LVL8
 	.4byte	.LVL11
-	.4byte	.LVL17
-	.2byte	0x1
-	.byte	0x62
-	.4byte	.LVL21
-	.4byte	.LFE4
-	.2byte	0x1
-	.byte	0x62
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST4:
-	.4byte	.LVL6
-	.4byte	.LVL10
+	.4byte	.LVL3
+	.4byte	.LVL5
 	.2byte	0x1
-	.byte	0x63
+	.byte	0x62
+	.4byte	.LVL8
 	.4byte	.LVL11
-	.4byte	.LVL17
 	.2byte	0x1
-	.byte	0x63
-	.4byte	.LVL21
-	.4byte	.LFE4
-	.2byte	0x1
-	.byte	0x63
+	.byte	0x62
 	.4byte	0
 	.4byte	0
 .LLST5:
-	.4byte	.LVL6
-	.4byte	.LVL10
+	.4byte	.LVL3
+	.4byte	.LVL5
 	.2byte	0x1
 	.byte	0x59
+	.4byte	.LVL8
 	.4byte	.LVL11
-	.4byte	.LVL17
-	.2byte	0x1
-	.byte	0x59
-	.4byte	.LVL21
-	.4byte	.LFE4
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST6:
-	.4byte	.LVL12
-	.4byte	.LVL13-1
+	.4byte	.LVL9
+	.4byte	.LVL10-1
 	.2byte	0x6
 	.byte	0x78
-	.byte	0x58
+	.byte	0x68
 	.byte	0x6
 	.byte	0x31
 	.byte	0x29
@@ -3165,18 +2765,14 @@ s_topic_prefix:
 .Ldebug_ranges0:
 	.4byte	.LBB10
 	.4byte	.LBE10
-	.4byte	.LBB18
-	.4byte	.LBE18
-	.4byte	.LBB19
-	.4byte	.LBE19
+	.4byte	.LBB16
+	.4byte	.LBE16
 	.4byte	0
 	.4byte	0
 	.4byte	.LBB12
 	.4byte	.LBE12
 	.4byte	.LBB14
 	.4byte	.LBE14
-	.4byte	.LBB15
-	.4byte	.LBE15
 	.4byte	0
 	.4byte	0
 	.4byte	.LFB6
@@ -3206,17 +2802,17 @@ s_topic_prefix:
 	.section	.debug_str,"MS",@progbits,1
 .LASF56:
 	.string	"APP_EVENT_MQTT_TOGGLE"
-.LASF91:
+.LASF88:
 	.string	"mqtt_if_set_message_cb"
-.LASF83:
+.LASF80:
 	.string	"strncpy"
 .LASF61:
 	.string	"s_command_topic"
-.LASF75:
+.LASF73:
 	.string	"topic"
-.LASF88:
-	.string	"mqtt_if_init"
 .LASF85:
+	.string	"mqtt_if_init"
+.LASF82:
 	.string	"mqtt_if_connect"
 .LASF35:
 	.string	"state"
@@ -3224,25 +2820,25 @@ s_topic_prefix:
 	.string	"client_id"
 .LASF9:
 	.string	"short int"
-.LASF102:
+.LASF98:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/app_mqtt"
-.LASF101:
+.LASF97:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_mqtt/app_mqtt.c"
 .LASF5:
 	.string	"password"
 .LASF62:
 	.string	"s_state_topic"
-.LASF97:
-	.string	"mqtt_cmd_type_to_string"
+.LASF52:
+	.string	"APP_EVENT_WIFI_DISCONNECTED"
 .LASF30:
 	.string	"RELAY_STATE_ON"
-.LASF95:
+.LASF92:
 	.string	"app_callback_update_lock_button"
 .LASF70:
 	.string	"config"
 .LASF45:
 	.string	"type"
-.LASF105:
+.LASF103:
 	.string	"__builtin_memset"
 .LASF68:
 	.string	"app_mqtt_stop"
@@ -3264,7 +2860,7 @@ s_topic_prefix:
 	.string	"app_mqtt_publish_state"
 .LASF49:
 	.string	"APP_EVENT_BUTTON_HOLD"
-.LASF86:
+.LASF83:
 	.string	"aos_now_ms"
 .LASF34:
 	.string	"timer_action_t"
@@ -3272,18 +2868,14 @@ s_topic_prefix:
 	.string	"MQTT_CMD_AUTO_TOGGLE_START"
 .LASF11:
 	.string	"long long int"
-.LASF103:
+.LASF101:
 	.string	"mqtt_message_handler"
 .LASF36:
 	.string	"action"
-.LASF104:
+.LASF102:
 	.string	"memset"
 .LASF71:
 	.string	"app_mqtt_init"
-.LASF79:
-	.string	"printf"
-.LASF52:
-	.string	"APP_EVENT_WIFI_DISCONNECTED"
 .LASF53:
 	.string	"APP_EVENT_WIFI_CONNECT_FAILED"
 .LASF29:
@@ -3292,9 +2884,9 @@ s_topic_prefix:
 	.string	"MQTT_CMD_INVALID"
 .LASF14:
 	.string	"unsigned char"
-.LASF90:
+.LASF87:
 	.string	"mqtt_if_set_disconnected_cb"
-.LASF89:
+.LASF86:
 	.string	"mqtt_if_set_connected_cb"
 .LASF1:
 	.string	"broker"
@@ -3302,21 +2894,21 @@ s_topic_prefix:
 	.string	"timer"
 .LASF46:
 	.string	"params"
-.LASF87:
+.LASF84:
 	.string	"snprintf"
 .LASF57:
 	.string	"APP_EVENT_MQTT_SET_ON"
-.LASF72:
+.LASF99:
 	.string	"mqtt_disconnected_handler"
 .LASF39:
 	.string	"default_state"
-.LASF81:
+.LASF78:
 	.string	"mqtt_if_publish"
 .LASF67:
 	.string	"app_mqtt_is_connected"
 .LASF47:
 	.string	"mqtt_cmd_t"
-.LASF82:
+.LASF79:
 	.string	"mqtt_if_disconnect"
 .LASF8:
 	.string	"signed char"
@@ -3324,15 +2916,15 @@ s_topic_prefix:
 	.string	"long long unsigned int"
 .LASF16:
 	.string	"uint32_t"
-.LASF98:
+.LASF94:
 	.string	"app_event_post"
 .LASF64:
 	.string	"app_mqtt_get_state_topic"
-.LASF93:
+.LASF90:
 	.string	"relay_get_state"
 .LASF33:
 	.string	"TIMER_ACTION_OFF"
-.LASF94:
+.LASF91:
 	.string	"app_config_save_relay_settings"
 .LASF23:
 	.string	"MQTT_CMD_TIMER_CANCEL"
@@ -3348,7 +2940,7 @@ s_topic_prefix:
 	.string	"long int"
 .LASF12:
 	.string	"mqtt_if_config_t"
-.LASF80:
+.LASF77:
 	.string	"strlen"
 .LASF41:
 	.string	"_Bool"
@@ -3356,11 +2948,11 @@ s_topic_prefix:
 	.string	"MQTT_CMD_TOGGLE"
 .LASF6:
 	.string	"keepalive"
-.LASF73:
+.LASF100:
 	.string	"mqtt_connected_handler"
 .LASF59:
 	.string	"APP_EVENT_RELAY_STATE_CHANGED"
-.LASF96:
+.LASF93:
 	.string	"mqtt_cmd_parse"
 .LASF2:
 	.string	"port"
@@ -3378,7 +2970,7 @@ s_topic_prefix:
 	.string	"APP_EVENT_NONE"
 .LASF55:
 	.string	"APP_EVENT_BLE_CONFIG_TIMEOUT"
-.LASF100:
+.LASF96:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF19:
 	.string	"MQTT_CMD_NONE"
@@ -3390,15 +2982,15 @@ s_topic_prefix:
 	.string	"s_topic_prefix"
 .LASF58:
 	.string	"APP_EVENT_MQTT_SET_OFF"
-.LASF99:
+.LASF95:
 	.string	"strstr"
-.LASF77:
+.LASF75:
 	.string	"payload_len"
-.LASF92:
+.LASF89:
 	.string	"mqtt_if_subscribe"
 .LASF7:
 	.string	"unsigned int"
-.LASF74:
+.LASF72:
 	.string	"relay_state"
 .LASF65:
 	.string	"app_mqtt_get_command_topic"
@@ -3406,14 +2998,14 @@ s_topic_prefix:
 	.string	"MQTT_CMD_SET"
 .LASF26:
 	.string	"MQTT_CMD_SETTINGS"
-.LASF84:
+.LASF81:
 	.string	"mqtt_if_set_config"
 .LASF60:
 	.string	"APP_EVENT_MAX"
-.LASF76:
+.LASF74:
 	.string	"payload"
 .LASF32:
 	.string	"TIMER_ACTION_ON"
-.LASF78:
+.LASF76:
 	.string	"mqtt_if_is_connected"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

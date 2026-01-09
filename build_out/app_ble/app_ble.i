@@ -6431,7 +6431,6 @@ int ble_server_init();
 int ble_server_deinit(void);
 void ble_stack_start(void);
 
-
 struct bt_conn *ble_get_conn_cur(void);
 int ble_regist_conn(ble_gatt_conn_cb_t cb);
 int ble_regist_disconn(ble_gatt_conn_cb_t cb);

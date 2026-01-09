@@ -2114,15 +2114,14 @@ _Bool
 # 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                        );
 
-
     return (len_ssid > 0 && len_ssid <= 32 &&
             len_pass > 0 && len_pass <= 64);
 }
 
 int app_config_save_relay_settings(uint8_t default_state, 
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 78 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                          _Bool 
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 78 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                               lock_button)
 {
     char state_str[4];
@@ -2135,14 +2134,13 @@ int app_config_save_relay_settings(uint8_t default_state,
     ef_set_env("relay_lock", lock_str);
     ef_save_env();
 
-    printf("[APP_CONFIG] Saved relay settings: defaultState=%d, lockButton=%d\r\n", default_state, lock_button);
     return 0;
 }
 
 int app_config_load_relay_settings(uint8_t *default_state, 
-# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 93 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                           _Bool 
-# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 93 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                *lock_button)
 {
     char state_str[4];
@@ -2150,22 +2148,21 @@ int app_config_load_relay_settings(uint8_t *default_state,
     size_t len;
 
     if (default_state == 
-# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                         ((void *)0) 
-# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                              || lock_button == 
-# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                ((void *)0)
-# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                    ) {
         return -1;
     }
 
-
     len = ef_get_env_blob("relay_def", state_str, sizeof(state_str) - 1, 
-# 106 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                           ((void *)0)
-# 106 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                               );
     if (len > 0 && len < sizeof(state_str)) {
         state_str[len] = '\0';
@@ -2174,23 +2171,21 @@ int app_config_load_relay_settings(uint8_t *default_state,
         *default_state = 0;
     }
 
-
     len = ef_get_env_blob("relay_lock", lock_str, sizeof(lock_str) - 1, 
-# 115 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 111 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                       ((void *)0)
-# 115 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 111 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                           );
     if (len > 0 && len < sizeof(lock_str)) {
         lock_str[len] = '\0';
         *lock_button = (atoi(lock_str) != 0);
     } else {
         *lock_button = 
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 116 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                       0
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 116 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                            ;
     }
 
-    printf("[APP_CONFIG] Loaded relay settings: defaultState=%d, lockButton=%d\r\n", *default_state, *lock_button);
     return 0;
 }

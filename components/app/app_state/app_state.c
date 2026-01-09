@@ -25,6 +25,7 @@ static app_state_handler_t state_handlers[APP_STATE_MAX] = {
 
 void app_state_init(void)
 {
+    blog_debug("in log init state\r\n");
     memset(&g_state_machine, 0, sizeof(app_state_machine_t));
     g_state_machine.current_state = APP_STATE_INIT;
     g_state_machine.next_state = APP_STATE_INIT;
@@ -75,15 +76,15 @@ static app_state_t state_init_handler(app_event_t *event)
 static app_state_t state_check_flash_handler(app_event_t *event)
 {
     if (event->type == APP_EVENT_BUTTON_HOLD) {
-        /* User holds button while in CHECK_FLASH: enter BLE config mode */
+        
         blog_info("State: CHECK_FLASH -> BLE_CONFIG (button hold)\r\n");
         return APP_STATE_BLE_CONFIG;
     }
     blog_info("State: CHECK_FLASH (waiting for button hold)\r\n");
-    // Next state is set by main task based on flash check result
+    
     app_state_t next = g_state_machine.next_state;
     if (next == APP_STATE_INIT) {
-        // Stay in CHECK_FLASH if next state not set (waiting for button hold)
+        
         return APP_STATE_CHECK_FLASH;
     }
     return next;
@@ -101,7 +102,7 @@ static app_state_t state_ble_config_handler(app_event_t *event)
 static app_state_t state_wifi_connecting_handler(app_event_t *event)
 {
     if (event->type == APP_EVENT_BUTTON_HOLD) {
-        /* User holds button while connecting: give priority to BLE config */
+        
         blog_info("State: WIFI_CONNECTING -> BLE_CONFIG (button hold)\r\n");
         return APP_STATE_BLE_CONFIG;
     } else if (event->type == APP_EVENT_WIFI_CONNECTED) {

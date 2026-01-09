@@ -27,4 +27,5 @@ app_state_t app_state_get_next(void);
 void app_state_set_next(app_state_t next_state);
 app_state_t app_state_process_event(app_event_t *event);
 
-#endif /* __APP_STATE_H__ */
+#endif //__APP_STATE_H__
+

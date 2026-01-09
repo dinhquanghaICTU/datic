@@ -96,7 +96,7 @@ void app_task_main(void *params)
     (void)params;
     wifi_config_t wifi_cfg;
     app_event_t event = {0};
-    
+    blog_debug("task main \r\n");
     app_state_init();
     app_mqtt_init();
     

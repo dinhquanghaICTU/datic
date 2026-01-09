@@ -1996,9 +1996,946 @@ __attribute__((__noreturn__)) void
 
 
 
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
+# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+
+# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+unsigned long get_cpu_freq(void);
+unsigned long get_timer_freq(void);
+uint64_t get_timer_value(void);
+# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
 
 
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+typedef void (*TaskFunction_t)( void * );
+# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
+# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
+# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+typedef uint32_t StackType_t;
+typedef int32_t BaseType_t;
+typedef uint32_t UBaseType_t;
+typedef uint32_t TickType_t;
+# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+extern void vTaskSwitchContext( void );
+extern void vEnvironmentCall( uint32_t exception );
+# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+extern void vTaskEnterCritical( void );
+extern void vTaskExitCritical( void );
+# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+BaseType_t xPortIsInsideInterrupt( void );
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
+# 100 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+  StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters ) ;
+
+
+
+
+typedef struct HeapRegion
+{
+ uint8_t *pucStartAddress;
+ size_t xSizeInBytes;
+} HeapRegion_t;
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
+
+
+
+
+
+void *pvPortMalloc( size_t xSize ) ;
+void *pvPortCalloc(size_t numElements, size_t sizeOfElement); ;
+void *pvPortRealloc(void *pv, size_t xSize) ;
+void vPortFree( void *pv ) ;
+void vPortInitialiseBlocks( void ) ;
+size_t xPortGetFreeHeapSize( void ) ;
+size_t xPortGetMinimumEverFreeHeapSize( void ) ;
+
+
+
+
+
+BaseType_t xPortStartScheduler( void ) ;
+
+
+
+
+
+
+void vPortEndScheduler( void ) ;
+# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+struct xSTATIC_LIST_ITEM
+{
+
+
+
+ TickType_t xDummy2;
+ void *pvDummy3[ 4 ];
+
+
+
+};
+typedef struct xSTATIC_LIST_ITEM StaticListItem_t;
+
+
+struct xSTATIC_MINI_LIST_ITEM
+{
+
+
+
+ TickType_t xDummy2;
+ void *pvDummy3[ 2 ];
+};
+typedef struct xSTATIC_MINI_LIST_ITEM StaticMiniListItem_t;
+
+
+typedef struct xSTATIC_LIST
+{
+
+
+
+ UBaseType_t uxDummy2;
+ void *pvDummy3;
+ StaticMiniListItem_t xDummy4;
+
+
+
+} StaticList_t;
+# 1095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_TCB
+{
+ void *pxDummy1;
+
+
+
+ StaticListItem_t xDummy3[ 2 ];
+ UBaseType_t uxDummy5;
+ void *pxDummy6;
+ uint8_t ucDummy7[ ( 16 ) ];
+
+
+
+
+  UBaseType_t uxDummy9;
+
+
+  UBaseType_t uxDummy10[ 2 ];
+
+
+  UBaseType_t uxDummy12[ 2 ];
+
+
+
+
+
+  void *pvDummy15[ 1 ];
+
+        void *pvDummy15_1[ 1 ];
+# 1133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+  uint32_t ulDummy18;
+  uint8_t ucDummy19;
+
+
+  uint8_t uxDummy20;
+# 1146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+} StaticTask_t;
+# 1162 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_QUEUE
+{
+ void *pvDummy1[ 3 ];
+
+ union
+ {
+  void *pvDummy2;
+  UBaseType_t uxDummy2;
+ } u;
+
+ StaticList_t xDummy3[ 2 ];
+ UBaseType_t uxDummy4[ 3 ];
+ uint8_t ucDummy5[ 2 ];
+
+
+  uint8_t ucDummy6;
+
+
+
+
+
+
+
+  UBaseType_t uxDummy8;
+  uint8_t ucDummy9;
+
+
+} StaticQueue_t;
+typedef StaticQueue_t StaticSemaphore_t;
+# 1206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_EVENT_GROUP
+{
+ TickType_t xDummy1;
+ StaticList_t xDummy2;
+
+
+  UBaseType_t uxDummy3;
+
+
+
+   uint8_t ucDummy4;
+
+
+} StaticEventGroup_t;
+# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_TIMER
+{
+ void *pvDummy1;
+ StaticListItem_t xDummy2;
+ TickType_t xDummy3;
+ void *pvDummy5;
+ TaskFunction_t pvDummy6;
+
+  UBaseType_t uxDummy7;
+
+ uint8_t ucDummy8;
+
+} StaticTimer_t;
+# 1263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+typedef struct xSTATIC_STREAM_BUFFER
+{
+ size_t uxDummy1[ 4 ];
+ void * pvDummy2[ 3 ];
+ uint8_t ucDummy3;
+
+  UBaseType_t uxDummy4;
+
+} StaticStreamBuffer_t;
+
+
+typedef StaticStreamBuffer_t StaticMessageBuffer_t;
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 1
+# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 1
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+struct xLIST;
+struct xLIST_ITEM
+{
+
+ TickType_t xItemValue;
+ struct xLIST_ITEM * pxNext;
+ struct xLIST_ITEM * pxPrevious;
+ void * pvOwner;
+ struct xLIST * pvContainer;
+
+};
+typedef struct xLIST_ITEM ListItem_t;
+
+struct xMINI_LIST_ITEM
+{
+
+ TickType_t xItemValue;
+ struct xLIST_ITEM * pxNext;
+ struct xLIST_ITEM * pxPrevious;
+};
+typedef struct xMINI_LIST_ITEM MiniListItem_t;
+
+
+
+
+typedef struct xLIST
+{
+
+ volatile UBaseType_t uxNumberOfItems;
+ ListItem_t * pxIndex;
+ MiniListItem_t xListEnd;
+
+} List_t;
+# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInitialise( List_t * const pxList ) ;
+# 356 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInitialiseItem( ListItem_t * const pxItem ) ;
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
+# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
+# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+struct tskTaskControlBlock;
+typedef struct tskTaskControlBlock* TaskHandle_t;
+
+
+
+
+
+typedef BaseType_t (*TaskHookFunction_t)( void * );
+
+
+typedef enum
+{
+ eRunning = 0,
+ eReady,
+ eBlocked,
+ eSuspended,
+ eDeleted,
+ eInvalid
+} eTaskState;
+
+
+typedef enum
+{
+ eNoAction = 0,
+ eSetBits,
+ eIncrement,
+ eSetValueWithOverwrite,
+ eSetValueWithoutOverwrite
+} eNotifyAction;
+
+
+
+
+typedef struct xTIME_OUT
+{
+ BaseType_t xOverflowCount;
+ TickType_t xTimeOnEntering;
+} TimeOut_t;
+
+
+
+
+typedef struct xMEMORY_REGION
+{
+ void *pvBaseAddress;
+ uint32_t ulLengthInBytes;
+ uint32_t ulParameters;
+} MemoryRegion_t;
+
+
+
+
+typedef struct xTASK_PARAMETERS
+{
+ TaskFunction_t pvTaskCode;
+ const char * const pcName;
+ uint16_t usStackDepth;
+ void *pvParameters;
+ UBaseType_t uxPriority;
+ StackType_t *puxStackBuffer;
+ MemoryRegion_t xRegions[ 1 ];
+
+
+
+} TaskParameters_t;
+
+
+
+typedef struct xTASK_STATUS
+{
+ TaskHandle_t xHandle;
+ const char *pcTaskName;
+ UBaseType_t xTaskNumber;
+ eTaskState eCurrentState;
+ UBaseType_t uxCurrentPriority;
+ UBaseType_t uxBasePriority;
+ uint32_t ulRunTimeCounter;
+ StackType_t *pxStackBase;
+ uint16_t usStackHighWaterMark;
+} TaskStatus_t;
+
+
+typedef enum
+{
+ eAbortSleep = 0,
+ eStandardSleep,
+ eNoTasksWaitingTimeout
+} eSleepModeStatus;
+# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
+       const char * const pcName,
+       const uint16_t usStackDepth,
+       void * const pvParameters,
+       UBaseType_t uxPriority,
+       TaskHandle_t * const pxCreatedTask ) ;
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
+         const char * const pcName,
+         const uint32_t ulStackDepth,
+         void * const pvParameters,
+         UBaseType_t uxPriority,
+         StackType_t * const puxStackBuffer,
+         StaticTask_t * const pxTaskBuffer ) ;
+# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskAllocateMPURegions( TaskHandle_t xTask, const MemoryRegion_t * const pxRegions ) ;
+# 706 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelete( TaskHandle_t xTaskToDelete ) ;
+# 758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelay( const TickType_t xTicksToDelay ) ;
+# 817 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskDelayUntil( TickType_t * const pxPreviousWakeTime, const TickType_t xTimeIncrement ) ;
+# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) ;
+# 889 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
+
+
+
+
+
+
+
+UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
+# 915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+eTaskState eTaskGetState( TaskHandle_t xTask ) ;
+# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskGetInfo( TaskHandle_t xTask, TaskStatus_t *pxTaskStatus, BaseType_t xGetFreeStackSpace, eTaskState eState ) ;
+# 1013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority ) ;
+# 1064 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
+# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskResume( TaskHandle_t xTaskToResume ) ;
+# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
+# 1175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskStartScheduler( void ) ;
+# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskEndScheduler( void ) ;
+# 1282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskSuspendAll( void ) ;
+# 1336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskResumeAll( void ) ;
+# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetTickCount( void ) ;
+BaseType_t xTaskGetTickCount2( TickType_t *ticks, BaseType_t *overflow ) ;
+# 1368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetTickCountFromISR( void ) ;
+# 1382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetNumberOfTasks( void ) ;
+# 1395 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+char *pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
+# 1411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TaskHandle_t xTaskGetHandle( const char *pcNameToQuery ) ;
+# 1438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
+# 1465 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
+# 1513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue ) ;
+ void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) ;
+
+
+
+
+
+
+        typedef void (*TlsDeleteCallbackFunction_t)( int, void * );
+
+
+
+
+        UBaseType_t vTaskSetThreadLocalStoragePointerAndDelCallback( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue, TlsDeleteCallbackFunction_t pvDelCallback);
+# 1541 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask, void *pvParameter ) ;
+# 1550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TaskHandle_t xTaskGetIdleTaskHandle( void ) ;
+# 1649 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime ) ;
+UBaseType_t xAddTasksToAllList( void ) ;
+List_t * pxTaskGetAllList( void ) ;
+# 1698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskList( char * pcWriteBuffer ) ;
+# 1752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskGetRunTimeStats( char *pcWriteBuffer ) ;
+# 1782 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+TickType_t xTaskGetIdleRunTimeCounter( void ) ;
+# 1863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) ;
+# 1954 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) ;
+# 2031 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait ) ;
+# 2132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken ) ;
+# 2201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) ;
+# 2217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
+# 2238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskIncrementTick( void ) ;
+# 2271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPlaceOnEventList( List_t * const pxEventList, const TickType_t xTicksToWait ) ;
+void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickType_t xTicksToWait ) ;
+# 2285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPlaceOnEventListRestricted( List_t * const pxEventList, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
+# 2311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
+void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem, const TickType_t xItemValue ) ;
+# 2322 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+ void vTaskSwitchContext( void ) ;
+
+
+
+
+
+TickType_t uxTaskResetEventItemValue( void ) ;
+
+
+
+
+TaskHandle_t xTaskGetCurrentTaskHandle( void ) ;
+
+
+
+
+void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+
+
+
+
+
+BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut, TickType_t * const pxTicksToWait ) ;
+
+
+
+
+
+void vTaskMissedYield( void ) ;
+
+
+
+
+
+BaseType_t xTaskGetSchedulerState( void ) ;
+
+
+
+
+
+BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
+
+
+
+
+
+BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
+# 2378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder, UBaseType_t uxHighestPriorityWaitingTask ) ;
+
+
+
+
+UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
+
+
+
+
+
+void vTaskSetTaskNumber( TaskHandle_t xTask, const UBaseType_t uxHandle ) ;
+# 2399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+void vTaskStepTick( const TickType_t xTicksToJump ) ;
+void vTaskStepTickSafe( const TickType_t xTicksToJump ) ;
+# 2416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
+
+
+
+
+
+TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
+
+
+
+
+
+void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 2
+
+
+
+
+
+
+struct QueueDefinition;
+typedef struct QueueDefinition * QueueHandle_t;
+
+
+
+
+
+
+typedef struct QueueDefinition * QueueSetHandle_t;
+
+
+
+
+
+
+typedef struct QueueDefinition * QueueSetMemberHandle_t;
+# 650 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueGenericSend( QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait, const BaseType_t xCopyPosition ) ;
+# 744 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueuePeek( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
+# 777 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueuePeekFromISR( QueueHandle_t xQueue, void * const pvBuffer ) ;
+# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
+# 883 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+UBaseType_t uxQueueMessagesWaiting( const QueueHandle_t xQueue ) ;
+# 900 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+UBaseType_t uxQueueSpacesAvailable( const QueueHandle_t xQueue ) ;
+# 914 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+void vQueueDelete( QueueHandle_t xQueue ) ;
+# 1295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueGenericSendFromISR( QueueHandle_t xQueue, const void * const pvItemToQueue, BaseType_t * const pxHigherPriorityTaskWoken, const BaseType_t xCopyPosition ) ;
+BaseType_t xQueueGiveFromISR( QueueHandle_t xQueue, BaseType_t * const pxHigherPriorityTaskWoken ) ;
+# 1385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueReceiveFromISR( QueueHandle_t xQueue, void * const pvBuffer, BaseType_t * const pxHigherPriorityTaskWoken ) ;
+
+
+
+
+
+BaseType_t xQueueIsQueueEmptyFromISR( const QueueHandle_t xQueue ) ;
+BaseType_t xQueueIsQueueFullFromISR( const QueueHandle_t xQueue ) ;
+UBaseType_t uxQueueMessagesWaitingFromISR( const QueueHandle_t xQueue ) ;
+# 1404 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueCRSendFromISR( QueueHandle_t xQueue, const void *pvItemToQueue, BaseType_t xCoRoutinePreviouslyWoken );
+BaseType_t xQueueCRReceiveFromISR( QueueHandle_t xQueue, void *pvBuffer, BaseType_t *pxTaskWoken );
+BaseType_t xQueueCRSend( QueueHandle_t xQueue, const void *pvItemToQueue, TickType_t xTicksToWait );
+BaseType_t xQueueCRReceive( QueueHandle_t xQueue, void *pvBuffer, TickType_t xTicksToWait );
+
+
+
+
+
+
+QueueHandle_t xQueueCreateMutex( const uint8_t ucQueueType ) ;
+QueueHandle_t xQueueCreateMutexStatic( const uint8_t ucQueueType, StaticQueue_t *pxStaticQueue ) ;
+QueueHandle_t xQueueCreateCountingSemaphore( const UBaseType_t uxMaxCount, const UBaseType_t uxInitialCount ) ;
+QueueHandle_t xQueueCreateCountingSemaphoreStatic( const UBaseType_t uxMaxCount, const UBaseType_t uxInitialCount, StaticQueue_t *pxStaticQueue ) ;
+BaseType_t xQueueSemaphoreTake( QueueHandle_t xQueue, TickType_t xTicksToWait ) ;
+TaskHandle_t xQueueGetMutexHolder( QueueHandle_t xSemaphore ) ;
+TaskHandle_t xQueueGetMutexHolderFromISR( QueueHandle_t xSemaphore ) ;
+
+
+
+
+
+BaseType_t xQueueTakeMutexRecursive( QueueHandle_t xMutex, TickType_t xTicksToWait ) ;
+BaseType_t xQueueGiveMutexRecursive( QueueHandle_t xMutex ) ;
+# 1458 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ void vQueueAddToRegistry( QueueHandle_t xQueue, const char *pcQueueName ) ;
+# 1472 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ void vQueueUnregisterQueue( QueueHandle_t xQueue ) ;
+# 1487 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ const char *pcQueueGetName( QueueHandle_t xQueue ) ;
+# 1496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ QueueHandle_t xQueueGenericCreate( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, const uint8_t ucQueueType ) ;
+# 1505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+ QueueHandle_t xQueueGenericCreateStatic( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, uint8_t *pucQueueStorage, StaticQueue_t *pxStaticQueue, const uint8_t ucQueueType ) ;
+# 1556 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+QueueSetHandle_t xQueueCreateSet( const UBaseType_t uxEventQueueLength ) ;
+# 1580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueAddToSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
+# 1599 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+BaseType_t xQueueRemoveFromSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
+# 1635 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+QueueSetMemberHandle_t xQueueSelectFromSet( QueueSetHandle_t xQueueSet, const TickType_t xTicksToWait ) ;
+
+
+
+
+QueueSetMemberHandle_t xQueueSelectFromSetFromISR( QueueSetHandle_t xQueueSet ) ;
+
+
+void vQueueWaitForMessageRestricted( QueueHandle_t xQueue, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
+BaseType_t xQueueGenericReset( QueueHandle_t xQueue, BaseType_t xNewQueue ) ;
+void vQueueSetQueueNumber( QueueHandle_t xQueue, UBaseType_t uxQueueNumber ) ;
+UBaseType_t uxQueueGetQueueNumber( QueueHandle_t xQueue ) ;
+uint8_t ucQueueGetQueueType( QueueHandle_t xQueue ) ;
+# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 2
+
+typedef QueueHandle_t SemaphoreHandle_t;
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
+
+
+
+
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    typedef struct
+    {
+        void *hdl;
+    } aos_hdl_t;
+
+    typedef aos_hdl_t aos_task_t;
+    typedef aos_hdl_t aos_mutex_t;
+    typedef aos_hdl_t aos_sem_t;
+    typedef aos_hdl_t aos_queue_t;
+    typedef aos_hdl_t aos_timer_t;
+    typedef aos_hdl_t aos_work_t;
+
+    typedef struct
+    {
+        void *hdl;
+        void *stk;
+    } aos_workqueue_t;
+
+    typedef unsigned int aos_task_key_t;
+
+
+
+
+    void aos_reboot(void);
+
+
+
+
+
+
+    int aos_get_hz(void);
+
+
+
+
+
+
+    const char *aos_version_get(void);
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new(const char *name, void (*fn)(void *), void *arg,
+                     int stack_size);
+# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new_ext(aos_task_t *task, const char *name, void (*fn)(void *),
+                         void *arg, int stack_size, int prio);
+
+
+
+
+
+
+    void aos_task_exit(int code);
+
+
+
+
+
+
+    const char *aos_task_name(void);
+# 113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_key_create(aos_task_key_t *key);
+
+
+
+
+
+
+    void aos_task_key_delete(aos_task_key_t key);
+# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_setspecific(aos_task_key_t key, void *vp);
+
+
+
+
+
+
+    void *aos_task_getspecific(aos_task_key_t key);
+# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_new(aos_mutex_t *mutex);
+
+
+
+
+
+
+
+    void aos_mutex_free(aos_mutex_t *mutex);
+# 167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_lock(aos_mutex_t *mutex, unsigned int timeout);
+# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_unlock(aos_mutex_t *mutex);
+# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_is_valid(aos_mutex_t *mutex);
+# 197 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_new(aos_sem_t *sem, int count);
+
+
+
+
+
+
+
+    void aos_sem_free(aos_sem_t *sem);
+# 216 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_wait(aos_sem_t *sem, unsigned int timeout);
+
+
+
+
+
+
+
+    void aos_sem_signal(aos_sem_t *sem);
+# 233 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_is_valid(aos_sem_t *sem);
+
+
+
+
+
+
+
+    void aos_sem_signal_all(aos_sem_t *sem);
+# 254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_new(aos_queue_t *queue, void *buf, unsigned int size,
+                      int max_msg);
+
+
+
+
+
+
+    void aos_queue_free(aos_queue_t *queue);
+# 273 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_send(aos_queue_t *queue, void *msg, unsigned int size);
+# 285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_recv(aos_queue_t *queue, unsigned int ms, void *msg,
+                       unsigned int *size);
+# 295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_is_valid(aos_queue_t *queue);
+# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_queue_buf_ptr(aos_queue_t *queue);
+# 317 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new(aos_timer_t *timer, void (*fn)(void *, void *), void *arg,
+                      int ms, int repeat);
+# 332 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new_ext(aos_timer_t *timer, void (*fn)(void *, void *),
+                          void *arg, int ms, int repeat,
+                          unsigned char auto_run);
+
+
+
+
+
+
+    void aos_timer_free(aos_timer_t *timer);
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_start(aos_timer_t *timer);
+# 359 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_stop(aos_timer_t *timer);
+# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_change(aos_timer_t *timer, int ms);
+# 380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_workqueue_create(aos_workqueue_t *workqueue, int pri,
+                             int stack_size);
+# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_init(aos_work_t *work, void (*fn)(void *), void *arg, int dly);
+
+
+
+
+
+
+    void aos_work_destroy(aos_work_t *work);
+# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_run(aos_workqueue_t *workqueue, aos_work_t *work);
+# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_sched(aos_work_t *work);
+# 428 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_cancel(aos_work_t *work);
+# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_realloc(void *mem, unsigned int size);
+# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_malloc(unsigned int size);
+# 457 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_calloc(unsigned int nitems, unsigned int size);
+# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_zalloc(unsigned int size);
+
+
+
+
+
+
+
+    void aos_alloc_trace(void *addr, size_t allocator);
+
+
+
+
+
+
+    void aos_free(void *mem);
+
+
+
+
+
+
+    long long aos_now(void);
+
+
+
+
+
+
+    long long aos_now_ms(void);
+# 512 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    char *aos_now_time_str(char *buffer, const int len);
+
+
+
+
+
+
+    void aos_msleep(int ms);
+
+
+
+
+    void aos_init(void);
+
+
+
+
+    void aos_start(void);
+# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 2
+
+
+
+
 static int json_str_eq(const char *json, jsmntok_t *tok, const char *key)
 {
     if (tok->type == JSMN_STRING &&
@@ -2056,9 +2993,9 @@ static int json_get_int_value(const char *json, jsmntok_t *tokens, int num_token
 
 static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_tokens,
                                const char *key, 
-# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 73 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                                                _Bool 
-# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 73 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                                     *value)
 {
     for (int i = 1; i < num_tokens; i++) {
@@ -2068,16 +3005,16 @@ static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_toke
                 int len = tokens[i + 1].end - tokens[i + 1].start;
                 if (len == 4 && strncmp(json + tokens[i + 1].start, "true", 4) == 0) {
                     *value = 
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                             1
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                 ;
                     return 0;
                 } else if (len == 5 && strncmp(json + tokens[i + 1].start, "false", 5) == 0) {
                     *value = 
-# 78 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                             0
-# 78 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                  ;
                     return 0;
                 }
@@ -2091,17 +3028,16 @@ static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_toke
 int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
 {
     if (json_str == 
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                    ((void *)0) 
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                         || cmd == 
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                                   ((void *)0)
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                       ) {
         return -1;
     }
-
 
     memset(cmd, 0, sizeof(mqtt_cmd_t));
     cmd->type = MQTT_CMD_INVALID;
@@ -2170,7 +3106,6 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
             return -1;
         }
 
-
         int seconds = 0;
         if (json_get_int_value(json_str, tokens, num_tokens, "seconds", &seconds) >= 0) {
             cmd->params.timer.seconds = (uint32_t)seconds;
@@ -2182,7 +3117,6 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         cmd->type = MQTT_CMD_TIMER_CANCEL;
     } else if (strcmp(cmd_str, "AUTO_TOGGLE_START") == 0) {
         cmd->type = MQTT_CMD_AUTO_TOGGLE_START;
-
 
         int interval = 0;
         if (json_get_int_value(json_str, tokens, num_tokens, "interval", &interval) >= 0) {
@@ -2208,13 +3142,13 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
 
 
         
-# 199 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
        _Bool 
-# 199 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
             lock_button = 
-# 199 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
+# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c" 3 4
                           0
-# 199 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
+# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
                                ;
         json_get_bool_value(json_str, tokens, num_tokens, "lockButton", &lock_button);
         cmd->params.settings.lock_button = lock_button;

@@ -12,20 +12,20 @@
 state_init_handler:
 .LFB9:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
-	.loc 1 69 1
+	.loc 1 70 1
 	.cfi_startproc
 .LVL0:
-	.loc 1 70 5
 	.loc 1 71 5
 	.loc 1 72 5
-	.loc 1 69 1 is_stmt 0
+	.loc 1 73 5
+	.loc 1 70 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 73 1
+	.loc 1 74 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -42,37 +42,37 @@ state_init_handler:
 	.type	state_check_flash_handler, @function
 state_check_flash_handler:
 .LFB10:
-	.loc 1 76 1 is_stmt 1
+	.loc 1 77 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
-	.loc 1 77 5
-	.loc 1 76 1 is_stmt 0
+	.loc 1 78 5
+	.loc 1 77 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 77 8
+	.loc 1 78 8
 	lw	a4,0(a0)
 	li	a5,1
-	.loc 1 80 16
+	.loc 1 81 16
 	li	a0,2
 .LVL3:
-	.loc 1 77 8
+	.loc 1 78 8
 	beq	a4,a5,.L3
-	.loc 1 82 5 is_stmt 1
-	.loc 1 84 5
-.LVL4:
+	.loc 1 83 5 is_stmt 1
 	.loc 1 85 5
-	.loc 1 84 17 is_stmt 0
+.LVL4:
+	.loc 1 86 5
+	.loc 1 85 17 is_stmt 0
 	lui	a5,%hi(.LANCHOR0+4)
 	lw	a0,%lo(.LANCHOR0+4)(a5)
 	bne	a0,zero,.L3
 	li	a0,1
 .LVL5:
 .L3:
-	.loc 1 90 1
+	.loc 1 91 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -87,29 +87,29 @@ state_check_flash_handler:
 	.type	state_ble_config_handler, @function
 state_ble_config_handler:
 .LFB11:
-	.loc 1 93 1 is_stmt 1
+	.loc 1 94 1 is_stmt 1
 	.cfi_startproc
 .LVL6:
-	.loc 1 94 5
-	.loc 1 93 1 is_stmt 0
+	.loc 1 95 5
+	.loc 1 94 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 94 8
+	.loc 1 95 8
 	lw	a4,0(a0)
 	li	a5,6
-	.loc 1 96 16
+	.loc 1 97 16
 	li	a0,3
 .LVL7:
-	.loc 1 94 8
+	.loc 1 95 8
 	beq	a4,a5,.L8
-	.loc 1 98 12
+	.loc 1 99 12
 	li	a0,2
 .L8:
-	.loc 1 99 1
+	.loc 1 100 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -124,33 +124,33 @@ state_ble_config_handler:
 	.type	state_wifi_connecting_handler, @function
 state_wifi_connecting_handler:
 .LFB12:
-	.loc 1 102 1 is_stmt 1
+	.loc 1 103 1 is_stmt 1
 	.cfi_startproc
 .LVL8:
-	.loc 1 103 5
-	.loc 1 102 1 is_stmt 0
+	.loc 1 104 5
+	.loc 1 103 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 103 14
+	.loc 1 104 14
 	lw	a0,0(a0)
 .LVL9:
-	.loc 1 103 8
+	.loc 1 104 8
 	li	a5,1
 	beq	a0,a5,.L14
-	.loc 1 107 12 is_stmt 1
-	.loc 1 107 15 is_stmt 0
+	.loc 1 108 12 is_stmt 1
+	.loc 1 108 15 is_stmt 0
 	li	a5,3
 	beq	a0,a5,.L15
-	.loc 1 110 12 is_stmt 1
-	.loc 1 110 15 is_stmt 0
+	.loc 1 111 12 is_stmt 1
+	.loc 1 111 15 is_stmt 0
 	li	a5,5
 	bne	a0,a5,.L16
 .L12:
-	.loc 1 115 1
+	.loc 1 116 1
 	lw	s0,12(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -160,15 +160,15 @@ state_wifi_connecting_handler:
 	jr	ra
 .L14:
 	.cfi_restore_state
-	.loc 1 106 16
+	.loc 1 107 16
 	li	a0,2
 	j	.L12
 .L15:
-	.loc 1 109 16
+	.loc 1 110 16
 	li	a0,4
 	j	.L12
 .L16:
-	.loc 1 114 12
+	.loc 1 115 12
 	li	a0,3
 	j	.L12
 	.cfi_endproc
@@ -179,35 +179,35 @@ state_wifi_connecting_handler:
 	.type	state_wifi_connected_handler, @function
 state_wifi_connected_handler:
 .LFB13:
-	.loc 1 118 1 is_stmt 1
+	.loc 1 119 1 is_stmt 1
 	.cfi_startproc
 .LVL10:
-	.loc 1 119 5
-	.loc 1 118 1 is_stmt 0
+	.loc 1 120 5
+	.loc 1 119 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 119 14
+	.loc 1 120 14
 	lw	a5,0(a0)
-	.loc 1 119 8
+	.loc 1 120 8
 	li	a4,1
-	.loc 1 121 16
+	.loc 1 122 16
 	li	a0,2
 .LVL11:
-	.loc 1 119 8
+	.loc 1 120 8
 	beq	a5,a4,.L18
-	.loc 1 122 12 is_stmt 1
-	.loc 1 126 12 is_stmt 0
+	.loc 1 123 12 is_stmt 1
+	.loc 1 127 12 is_stmt 0
 	li	a0,4
-	.loc 1 122 15
+	.loc 1 123 15
 	bne	a5,a0,.L18
-	.loc 1 124 16
+	.loc 1 125 16
 	li	a0,3
 .L18:
-	.loc 1 127 1
+	.loc 1 128 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -222,29 +222,29 @@ state_wifi_connected_handler:
 	.type	state_wifi_failed_handler, @function
 state_wifi_failed_handler:
 .LFB14:
-	.loc 1 130 1 is_stmt 1
+	.loc 1 131 1 is_stmt 1
 	.cfi_startproc
 .LVL12:
-	.loc 1 131 5
-	.loc 1 130 1 is_stmt 0
+	.loc 1 132 5
+	.loc 1 131 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 131 8
+	.loc 1 132 8
 	lw	a4,0(a0)
 	li	a5,1
-	.loc 1 133 16
+	.loc 1 134 16
 	li	a0,2
 .LVL13:
-	.loc 1 131 8
+	.loc 1 132 8
 	beq	a4,a5,.L23
-	.loc 1 135 12
+	.loc 1 136 12
 	li	a0,5
 .L23:
-	.loc 1 136 1
+	.loc 1 137 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -263,6 +263,7 @@ app_state_init:
 	.loc 1 27 1 is_stmt 1
 	.cfi_startproc
 	.loc 1 28 5
+	.loc 1 29 5
 	.loc 1 27 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
@@ -274,29 +275,29 @@ app_state_init:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 28 5
+	.loc 1 29 5
 	lui	a0,%hi(.LANCHOR0)
 	.loc 1 27 1
-	.loc 1 28 5
+	.loc 1 29 5
 	addi	s1,a0,%lo(.LANCHOR0)
 	li	a2,8
 	li	a1,0
 	addi	a0,a0,%lo(.LANCHOR0)
 	call	memset
 .LVL14:
-	.loc 1 29 5 is_stmt 1
-	.loc 1 31 1 is_stmt 0
+	.loc 1 30 5 is_stmt 1
+	.loc 1 32 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 29 35
+	.loc 1 30 35
 	sw	zero,0(s1)
-	.loc 1 30 5 is_stmt 1
-	.loc 1 30 32 is_stmt 0
+	.loc 1 31 5 is_stmt 1
+	.loc 1 31 32 is_stmt 0
 	sw	zero,4(s1)
-	.loc 1 31 1
+	.loc 1 32 1
 	lw	s1,4(sp)
 	.cfi_restore 9
 	addi	sp,sp,16
@@ -311,17 +312,17 @@ app_state_init:
 	.type	app_state_get_current, @function
 app_state_get_current:
 .LFB5:
-	.loc 1 34 1 is_stmt 1
+	.loc 1 35 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 35 5
-	.loc 1 34 1 is_stmt 0
+	.loc 1 36 5
+	.loc 1 35 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 36 1
+	.loc 1 37 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -339,17 +340,17 @@ app_state_get_current:
 	.type	app_state_get_next, @function
 app_state_get_next:
 .LFB6:
-	.loc 1 39 1 is_stmt 1
+	.loc 1 40 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 40 5
-	.loc 1 39 1 is_stmt 0
+	.loc 1 41 5
+	.loc 1 40 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 41 1
+	.loc 1 42 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -367,25 +368,25 @@ app_state_get_next:
 	.type	app_state_set_next, @function
 app_state_set_next:
 .LFB7:
-	.loc 1 44 1 is_stmt 1
+	.loc 1 45 1 is_stmt 1
 	.cfi_startproc
 .LVL15:
-	.loc 1 45 5
-	.loc 1 44 1 is_stmt 0
+	.loc 1 46 5
+	.loc 1 45 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 46 1
+	.loc 1 47 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 45 32
+	.loc 1 46 32
 	lui	a5,%hi(.LANCHOR0+4)
 	sw	a0,%lo(.LANCHOR0+4)(a5)
-	.loc 1 46 1
+	.loc 1 47 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -398,11 +399,11 @@ app_state_set_next:
 	.type	app_state_process_event, @function
 app_state_process_event:
 .LFB8:
-	.loc 1 49 1 is_stmt 1
+	.loc 1 50 1 is_stmt 1
 	.cfi_startproc
 .LVL16:
-	.loc 1 50 5
-	.loc 1 49 1 is_stmt 0
+	.loc 1 51 5
+	.loc 1 50 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -413,42 +414,42 @@ app_state_process_event:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 51 31
+	.loc 1 52 31
 	lui	s1,%hi(.LANCHOR0)
 	lw	a5,%lo(.LANCHOR0)(s1)
-	.loc 1 50 8
+	.loc 1 51 8
 	beq	a0,zero,.L35
-	.loc 1 54 5 is_stmt 1
-	.loc 1 54 8 is_stmt 0
+	.loc 1 55 5 is_stmt 1
+	.loc 1 55 8 is_stmt 0
 	li	a4,5
 	bgtu	a5,a4,.L35
-	.loc 1 58 43
+	.loc 1 59 43
 	lui	a4,%hi(.LANCHOR1)
 	addi	a4,a4,%lo(.LANCHOR1)
 	slli	a5,a5,2
 	add	a5,a4,a5
-	.loc 1 58 29
+	.loc 1 59 29
 	lw	a5,0(a5)
 	addi	s1,s1,%lo(.LANCHOR0)
-	.loc 1 58 5 is_stmt 1
-	.loc 1 58 29 is_stmt 0
+	.loc 1 59 5 is_stmt 1
+	.loc 1 59 29 is_stmt 0
 	jalr	a5
 .LVL17:
-	.loc 1 60 5 is_stmt 1
-	.loc 1 60 8 is_stmt 0
+	.loc 1 61 5 is_stmt 1
+	.loc 1 61 8 is_stmt 0
 	lw	a5,0(s1)
 	beq	a5,a0,.L37
-	.loc 1 61 9 is_stmt 1
-	.loc 1 62 9
-	.loc 1 62 39 is_stmt 0
+	.loc 1 62 9 is_stmt 1
+	.loc 1 63 9
+	.loc 1 63 39 is_stmt 0
 	sw	a0,0(s1)
 .L37:
-	.loc 1 65 5 is_stmt 1
-	.loc 1 65 27 is_stmt 0
+	.loc 1 66 5 is_stmt 1
+	.loc 1 66 27 is_stmt 0
 	lw	a5,0(s1)
 .LVL18:
 .L35:
-	.loc 1 66 1
+	.loc 1 67 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -737,7 +738,7 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF41
 	.byte	0x1
-	.byte	0x81
+	.byte	0x82
 	.byte	0x14
 	.4byte	0x13f
 	.4byte	.LFB14
@@ -748,7 +749,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x81
+	.byte	0x82
 	.byte	0x3b
 	.4byte	0x19c
 	.4byte	.LLST6
@@ -756,7 +757,7 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF42
 	.byte	0x1
-	.byte	0x75
+	.byte	0x76
 	.byte	0x14
 	.4byte	0x13f
 	.4byte	.LFB13
@@ -767,7 +768,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x75
+	.byte	0x76
 	.byte	0x3e
 	.4byte	0x19c
 	.4byte	.LLST5
@@ -775,7 +776,7 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF44
 	.byte	0x1
-	.byte	0x65
+	.byte	0x66
 	.byte	0x14
 	.4byte	0x13f
 	.4byte	.LFB12
@@ -786,7 +787,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x65
+	.byte	0x66
 	.byte	0x3f
 	.4byte	0x19c
 	.4byte	.LLST4
@@ -794,7 +795,7 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF45
 	.byte	0x1
-	.byte	0x5c
+	.byte	0x5d
 	.byte	0x14
 	.4byte	0x13f
 	.4byte	.LFB11
@@ -805,7 +806,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x5c
+	.byte	0x5d
 	.byte	0x3a
 	.4byte	0x19c
 	.4byte	.LLST3
@@ -813,7 +814,7 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF46
 	.byte	0x1
-	.byte	0x4b
+	.byte	0x4c
 	.byte	0x14
 	.4byte	0x13f
 	.4byte	.LFB10
@@ -824,14 +825,14 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x4b
+	.byte	0x4c
 	.byte	0x3b
 	.4byte	0x19c
 	.4byte	.LLST1
 	.byte	0x12
 	.4byte	.LASF47
 	.byte	0x1
-	.byte	0x54
+	.byte	0x55
 	.byte	0x11
 	.4byte	0x13f
 	.4byte	.LLST2
@@ -839,7 +840,7 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF48
 	.byte	0x1
-	.byte	0x44
+	.byte	0x45
 	.byte	0x14
 	.4byte	0x13f
 	.4byte	.LFB9
@@ -850,7 +851,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x44
+	.byte	0x45
 	.byte	0x34
 	.4byte	0x19c
 	.4byte	.LLST0
@@ -858,7 +859,7 @@ g_state_machine:
 	.byte	0x13
 	.4byte	.LASF57
 	.byte	0x1
-	.byte	0x30
+	.byte	0x31
 	.byte	0xd
 	.4byte	0x13f
 	.4byte	.LFB8
@@ -869,14 +870,14 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x30
+	.byte	0x31
 	.byte	0x32
 	.4byte	0x19c
 	.4byte	.LLST7
 	.byte	0x12
 	.4byte	.LASF49
 	.byte	0x1
-	.byte	0x3a
+	.byte	0x3b
 	.byte	0x11
 	.4byte	0x13f
 	.4byte	.LLST8
@@ -894,7 +895,7 @@ g_state_machine:
 	.byte	0x16
 	.4byte	.LASF52
 	.byte	0x1
-	.byte	0x2b
+	.byte	0x2c
 	.byte	0x6
 	.4byte	.LFB7
 	.4byte	.LFE7-.LFB7
@@ -904,7 +905,7 @@ g_state_machine:
 	.byte	0x17
 	.4byte	.LASF35
 	.byte	0x1
-	.byte	0x2b
+	.byte	0x2c
 	.byte	0x25
 	.4byte	0x13f
 	.byte	0x1
@@ -913,7 +914,7 @@ g_state_machine:
 	.byte	0x18
 	.4byte	.LASF50
 	.byte	0x1
-	.byte	0x26
+	.byte	0x27
 	.byte	0xd
 	.4byte	0x13f
 	.4byte	.LFB6
@@ -923,7 +924,7 @@ g_state_machine:
 	.byte	0x18
 	.4byte	.LASF51
 	.byte	0x1
-	.byte	0x21
+	.byte	0x22
 	.byte	0xd
 	.4byte	0x13f
 	.4byte	.LFB5

@@ -2698,25 +2698,23 @@ void app_btn_reset_state(void);
 app_event_t g_event_queue[10];
 int g_event_queue_head = 0;
 int g_event_queue_tail = 0;
-
-
 static 
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
       _Bool 
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
            g_lock_button = 
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                            0
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                 ;
 static 
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
       _Bool 
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
            g_lock_button_loaded = 
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                   0
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                        ;
 
 void app_event_post(app_event_type_t type, void *data)
@@ -2732,8 +2730,6 @@ void app_button_hold_callback(int pin, int event, void *data)
     (void)event;
     (void)data;
 
-    ;
-
     if (app_ble_is_running()) {
         app_ble_stop();
         aos_msleep(500);
@@ -2744,9 +2740,9 @@ void app_button_hold_callback(int pin, int event, void *data)
     app_config_clear_wifi();
 
     app_event_t evt = {.type = APP_EVENT_BUTTON_HOLD, .data = 
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                                              ((void *)0)
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                                                  };
     app_state_process_event(&evt);
 }
@@ -2757,24 +2753,21 @@ void app_button_press_callback(int pin, int event, void *data)
     (void)event;
     (void)data;
 
-
     if (!g_lock_button_loaded) {
         uint8_t dummy_state;
         app_config_load_relay_settings(&dummy_state, &g_lock_button);
         g_lock_button_loaded = 
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                               1
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                   ;
     }
 
     if (g_lock_button) {
-        printf("[APP] Button is locked, ignoring press\r\n");
         return;
     }
 
     relay_toggle();
-
 
     if (app_mqtt_is_connected()) {
         uint8_t relay_state = relay_get_state();
@@ -2782,39 +2775,37 @@ void app_button_press_callback(int pin, int event, void *data)
     }
 
     app_event_post(APP_EVENT_BUTTON_PRESS, 
-# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                           ((void *)0)
-# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                               );
     app_event_post(APP_EVENT_RELAY_STATE_CHANGED, 
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                                  ((void *)0)
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                                      );
 }
 
-
 void app_callback_update_lock_button(
-# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 73 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                     _Bool 
-# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 73 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                          locked)
 {
     g_lock_button = locked;
     g_lock_button_loaded = 
-# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                           1
-# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                               ;
-    printf("[APP] Lock button updated: %s\r\n", locked ? "LOCKED" : "UNLOCKED");
 }
 
 void app_wifi_connected_callback(void)
 {
     app_event_t evt = {.type = APP_EVENT_WIFI_CONNECTED, .data = 
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                                                 ((void *)0)
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 81 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                                                     };
     app_state_process_event(&evt);
 }
@@ -2822,9 +2813,9 @@ void app_wifi_connected_callback(void)
 void app_wifi_disconnected_callback(void)
 {
     app_event_t evt = {.type = APP_EVENT_WIFI_DISCONNECTED, .data = 
-# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 87 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                                                    ((void *)0)
-# 96 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 87 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                                                        };
     app_state_process_event(&evt);
 }
@@ -2832,9 +2823,9 @@ void app_wifi_disconnected_callback(void)
 void app_wifi_connect_failed_callback(void)
 {
     app_event_t evt = {.type = APP_EVENT_WIFI_CONNECT_FAILED, .data = 
-# 102 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 93 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                                                      ((void *)0)
-# 102 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 93 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                                                          };
     app_state_process_event(&evt);
 }
@@ -2844,9 +2835,9 @@ void app_ble_config_done_callback(const char *ssid, const char *password)
     (void)ssid;
     (void)password;
     app_event_t evt = {.type = APP_EVENT_BLE_CONFIG_DONE, .data = 
-# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
+# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c" 3 4
                                                                  ((void *)0)
-# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
+# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_callback/app_callback.c"
                                                                      };
     app_state_process_event(&evt);
 }

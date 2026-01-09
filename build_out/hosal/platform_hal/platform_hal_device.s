@@ -11727,8 +11727,6 @@ platform_hal_device_init:
 	.string	"__GCC_ATOMIC_INT_LOCK_FREE 1"
 .LASF256:
 	.string	"__FLT64_MAX_EXP__ 1024"
-.LASF557:
-	.string	"__min_size(x) (x)"
 .LASF345:
 	.string	"__riscv_i 2000000"
 .LASF604:
@@ -12061,8 +12059,8 @@ platform_hal_device_init:
 	.string	"_POSIX_C_SOURCE 200809L"
 .LASF760:
 	.string	"_LITTLE_ENDIAN 1234"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767894931"
+.LASF557:
+	.string	"__min_size(x) (x)"
 .LASF807:
 	.string	"__u_int_defined "
 .LASF1443:
@@ -12209,6 +12207,8 @@ platform_hal_device_init:
 	.string	"xTaskGetCurrentTaskHandle"
 .LASF1464:
 	.string	"listIS_CONTAINED_WITHIN(pxList,pxListItem) ( ( ( pxListItem )->pxContainer == ( pxList ) ) ? ( pdTRUE ) : ( pdFALSE ) )"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767927842"
 .LASF1234:
 	.string	"portTICK_TYPE_IS_ATOMIC 1"
 .LASF893:

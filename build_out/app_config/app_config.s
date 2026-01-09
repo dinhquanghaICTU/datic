@@ -357,19 +357,19 @@ app_config_has_wifi:
 	addi	a0,a0,%lo(.LC1)
 	call	ef_get_env_blob
 .LVL30:
-	.loc 1 75 5 is_stmt 1
-	.loc 1 75 26 is_stmt 0
+	.loc 1 74 5 is_stmt 1
+	.loc 1 74 26 is_stmt 0
 	addi	s1,s1,-1
 .LVL31:
-	.loc 1 76 26
+	.loc 1 75 26
 	li	a4,31
 	bgtu	s1,a4,.L25
-	.loc 1 75 44
+	.loc 1 74 44
 	addi	a5,a0,-1
 	sltiu	a0,a5,64
 .LVL32:
 .L23:
-	.loc 1 77 1 discriminator 5
+	.loc 1 76 1 discriminator 5
 	lw	ra,124(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -401,120 +401,101 @@ app_config_has_wifi:
 	.align	2
 .LC4:
 	.string	"relay_lock"
-	.align	2
-.LC5:
-	.string	"[APP_CONFIG] Saved relay settings: defaultState=%d, lockButton=%d\r\n"
 	.section	.text.app_config_save_relay_settings,"ax",@progbits
 	.align	1
 	.globl	app_config_save_relay_settings
 	.type	app_config_save_relay_settings, @function
 app_config_save_relay_settings:
 .LFB9:
-	.loc 1 80 1 is_stmt 1
+	.loc 1 79 1 is_stmt 1
 	.cfi_startproc
 .LVL36:
+	.loc 1 80 5
 	.loc 1 81 5
-	.loc 1 82 5
-	.loc 1 84 5
-	.loc 1 80 1 is_stmt 0
-	addi	sp,sp,-48
-	.cfi_def_cfa_offset 48
-	sw	ra,44(sp)
-	sw	s0,40(sp)
-	sw	s1,36(sp)
+	.loc 1 83 5
+	.loc 1 79 1 is_stmt 0
+	addi	sp,sp,-32
+	.cfi_def_cfa_offset 32
+	sw	ra,28(sp)
+	sw	s0,24(sp)
+	sw	s1,20(sp)
 	.cfi_offset 1, -4
 	.cfi_offset 8, -8
 	.cfi_offset 9, -12
-	addi	s0,sp,48
+	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	sw	s2,32(sp)
-	sw	s3,28(sp)
+	sw	s2,16(sp)
 	.cfi_offset 18, -16
-	.cfi_offset 19, -20
-	.loc 1 84 5
-	lui	s3,%hi(.LC2)
-	.loc 1 80 1
-	.loc 1 80 1
-	mv	s2,a1
-	mv	s1,a0
-	.loc 1 84 5
+	.loc 1 83 5
+	lui	s2,%hi(.LC2)
+	.loc 1 79 1
+	.loc 1 79 1
 	mv	a3,a0
-	addi	a2,s3,%lo(.LC2)
+	mv	s1,a1
+	.loc 1 83 5
+	addi	a2,s2,%lo(.LC2)
 	li	a1,4
 .LVL37:
-	addi	a0,s0,-40
+	addi	a0,s0,-24
 .LVL38:
 	call	snprintf
 .LVL39:
-	.loc 1 85 5 is_stmt 1
-	mv	a3,s2
-	addi	a2,s3,%lo(.LC2)
+	.loc 1 84 5 is_stmt 1
+	mv	a3,s1
+	addi	a2,s2,%lo(.LC2)
 	li	a1,4
-	addi	a0,s0,-36
+	addi	a0,s0,-20
 	call	snprintf
 .LVL40:
-	.loc 1 87 5
+	.loc 1 86 5
 	lui	a0,%hi(.LC3)
-	addi	a1,s0,-40
+	addi	a1,s0,-24
 	addi	a0,a0,%lo(.LC3)
 	call	ef_set_env
 .LVL41:
-	.loc 1 88 5
+	.loc 1 87 5
 	lui	a0,%hi(.LC4)
-	addi	a1,s0,-36
+	addi	a1,s0,-20
 	addi	a0,a0,%lo(.LC4)
 	call	ef_set_env
 .LVL42:
-	.loc 1 89 5
+	.loc 1 88 5
 	call	ef_save_env
 .LVL43:
-	.loc 1 91 5
-	lui	a0,%hi(.LC5)
-	mv	a2,s2
-	mv	a1,s1
-	addi	a0,a0,%lo(.LC5)
-	call	printf
-.LVL44:
-	.loc 1 92 5
-	.loc 1 93 1 is_stmt 0
-	lw	ra,44(sp)
+	.loc 1 90 5
+	.loc 1 91 1 is_stmt 0
+	lw	ra,28(sp)
 	.cfi_restore 1
-	lw	s0,40(sp)
+	lw	s0,24(sp)
 	.cfi_restore 8
-	.cfi_def_cfa 2, 48
-	lw	s1,36(sp)
+	.cfi_def_cfa 2, 32
+	lw	s1,20(sp)
 	.cfi_restore 9
-	lw	s2,32(sp)
+	lw	s2,16(sp)
 	.cfi_restore 18
-	lw	s3,28(sp)
-	.cfi_restore 19
 	li	a0,0
-	addi	sp,sp,48
+	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
 	.cfi_endproc
 .LFE9:
 	.size	app_config_save_relay_settings, .-app_config_save_relay_settings
-	.section	.rodata.app_config_load_relay_settings.str1.4,"aMS",@progbits,1
-	.align	2
-.LC6:
-	.string	"[APP_CONFIG] Loaded relay settings: defaultState=%d, lockButton=%d\r\n"
 	.section	.text.app_config_load_relay_settings,"ax",@progbits
 	.align	1
 	.globl	app_config_load_relay_settings
 	.type	app_config_load_relay_settings, @function
 app_config_load_relay_settings:
 .LFB10:
-	.loc 1 96 1 is_stmt 1
+	.loc 1 94 1 is_stmt 1
 	.cfi_startproc
-.LVL45:
+.LVL44:
+	.loc 1 95 5
+	.loc 1 96 5
 	.loc 1 97 5
-	.loc 1 98 5
 	.loc 1 99 5
-	.loc 1 101 5
-	.loc 1 101 8 is_stmt 0
-	beq	a0,zero,.L35
-	.loc 1 96 1 discriminator 1
+	.loc 1 99 8 is_stmt 0
+	beq	a0,zero,.L34
+	.loc 1 94 1 discriminator 1
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -527,85 +508,77 @@ app_config_load_relay_settings:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	mv	s1,a0
-	mv	s2,a1
-	.loc 1 102 16 discriminator 1
+	mv	s2,a0
+	mv	s1,a1
+	.loc 1 100 16 discriminator 1
 	li	a0,-1
-.LVL46:
-	.loc 1 101 30 discriminator 1
+.LVL45:
+	.loc 1 99 30 discriminator 1
 	beq	a1,zero,.L29
-	.loc 1 106 5 is_stmt 1
-	.loc 1 106 11 is_stmt 0
+	.loc 1 103 5 is_stmt 1
+	.loc 1 103 11 is_stmt 0
 	lui	a0,%hi(.LC3)
 	li	a3,0
 	li	a2,3
 	addi	a1,s0,-24
-.LVL47:
+.LVL46:
 	addi	a0,a0,%lo(.LC3)
 	call	ef_get_env_blob
-.LVL48:
-	.loc 1 107 5 is_stmt 1
-	.loc 1 107 17 is_stmt 0
+.LVL47:
+	.loc 1 104 5 is_stmt 1
+	.loc 1 104 17 is_stmt 0
 	addi	a4,a0,-1
-	.loc 1 107 8
+	.loc 1 104 8
 	li	a5,2
 	bgtu	a4,a5,.L31
-	.loc 1 108 9 is_stmt 1
-	.loc 1 108 24 is_stmt 0
+	.loc 1 105 9 is_stmt 1
+	.loc 1 105 24 is_stmt 0
 	addi	a5,s0,-16
-	add	a0,a5,a0
-.LVL49:
-	sb	zero,-8(a0)
-	.loc 1 109 9 is_stmt 1
-	.loc 1 109 35 is_stmt 0
+	add	a5,a5,a0
+	sb	zero,-8(a5)
+	.loc 1 106 9 is_stmt 1
+	.loc 1 106 35 is_stmt 0
 	addi	a0,s0,-24
+.LVL48:
 	call	atoi
-.LVL50:
-	.loc 1 109 26
-	sb	a0,0(s1)
+.LVL49:
+	.loc 1 106 26
+	sb	a0,0(s2)
 .L32:
-	.loc 1 115 5 is_stmt 1
-	.loc 1 115 11 is_stmt 0
+	.loc 1 111 5 is_stmt 1
+	.loc 1 111 11 is_stmt 0
 	lui	a0,%hi(.LC4)
 	li	a3,0
 	li	a2,3
 	addi	a1,s0,-20
 	addi	a0,a0,%lo(.LC4)
 	call	ef_get_env_blob
-.LVL51:
-	.loc 1 116 5 is_stmt 1
-	.loc 1 116 17 is_stmt 0
+.LVL50:
+	.loc 1 112 5 is_stmt 1
+	.loc 1 112 17 is_stmt 0
 	addi	a4,a0,-1
-	.loc 1 116 8
+	.loc 1 112 8
 	li	a5,2
 	bgtu	a4,a5,.L33
-	.loc 1 117 9 is_stmt 1
-	.loc 1 117 23 is_stmt 0
+	.loc 1 113 9 is_stmt 1
+	.loc 1 113 23 is_stmt 0
 	addi	a5,s0,-16
 	add	a0,a5,a0
-.LVL52:
+.LVL51:
 	sb	zero,-4(a0)
-	.loc 1 118 9 is_stmt 1
-	.loc 1 118 25 is_stmt 0
+	.loc 1 114 9 is_stmt 1
+	.loc 1 114 25 is_stmt 0
 	addi	a0,s0,-20
 	call	atoi
-.LVL53:
-	.loc 1 118 40
+.LVL52:
+	.loc 1 114 40
 	snez	a0,a0
-	sb	a0,0(s2)
-.L34:
-	.loc 1 123 5 is_stmt 1
-	lbu	a2,0(s2)
-	lbu	a1,0(s1)
-	lui	a0,%hi(.LC6)
-	addi	a0,a0,%lo(.LC6)
-	call	printf
-.LVL54:
-	.loc 1 124 5
-	.loc 1 124 12 is_stmt 0
+	sb	a0,0(s1)
+.L40:
+	.loc 1 119 12
 	li	a0,0
 .L29:
-	.loc 1 125 1
+	.loc 1 120 1
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -614,36 +587,36 @@ app_config_load_relay_settings:
 	.cfi_def_cfa 2, 32
 	lw	s1,20(sp)
 	.cfi_restore 9
-.LVL55:
+.LVL53:
 	lw	s2,16(sp)
 	.cfi_restore 18
-.LVL56:
+.LVL54:
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL57:
+.LVL55:
 .L31:
 	.cfi_restore_state
-	.loc 1 111 9 is_stmt 1
-	.loc 1 111 24 is_stmt 0
-	sb	zero,0(s1)
+	.loc 1 108 9 is_stmt 1
+	.loc 1 108 24 is_stmt 0
+	sb	zero,0(s2)
 	j	.L32
 .L33:
-	.loc 1 120 9 is_stmt 1
-	.loc 1 120 22 is_stmt 0
-	sb	zero,0(s2)
-	j	.L34
-.LVL58:
-.L35:
+	.loc 1 116 9 is_stmt 1
+	.loc 1 116 22 is_stmt 0
+	sb	zero,0(s1)
+	j	.L40
+.LVL56:
+.L34:
 	.cfi_def_cfa_register 2
 	.cfi_restore 1
 	.cfi_restore 8
 	.cfi_restore 9
 	.cfi_restore 18
-	.loc 1 102 16
+	.loc 1 100 16
 	li	a0,-1
-.LVL59:
-	.loc 1 125 1
+.LVL57:
+	.loc 1 120 1
 	ret
 	.cfi_endproc
 .LFE10:
@@ -659,15 +632,15 @@ app_config_load_relay_settings:
 	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x62d
+	.4byte	0x5e5
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF42
+	.4byte	.LASF41
 	.byte	0xc
+	.4byte	.LASF42
 	.4byte	.LASF43
-	.4byte	.LASF44
 	.4byte	.Ldebug_ranges0+0
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -787,56 +760,56 @@ app_config_load_relay_settings:
 	.byte	0xb
 	.4byte	.LASF21
 	.byte	0x1
-	.byte	0x5f
+	.byte	0x5d
 	.byte	0x5
 	.4byte	0x69
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1eb
+	.4byte	0x1d4
 	.byte	0xc
 	.4byte	.LASF17
 	.byte	0x1
-	.byte	0x5f
+	.byte	0x5d
 	.byte	0x2d
-	.4byte	0x1eb
+	.4byte	0x1d4
 	.4byte	.LLST8
 	.byte	0xc
 	.4byte	.LASF18
 	.byte	0x1
-	.byte	0x5f
+	.byte	0x5d
 	.byte	0x41
-	.4byte	0x1f1
+	.4byte	0x1da
 	.4byte	.LLST9
 	.byte	0xd
 	.4byte	.LASF19
 	.byte	0x1
-	.byte	0x61
+	.byte	0x5f
 	.byte	0xa
-	.4byte	0x1f7
+	.4byte	0x1e0
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0xd
 	.4byte	.LASF20
 	.byte	0x1
-	.byte	0x62
+	.byte	0x60
 	.byte	0xa
-	.4byte	0x1f7
+	.4byte	0x1e0
 	.byte	0x2
 	.byte	0x91
 	.byte	0x6c
 	.byte	0xe
 	.string	"len"
 	.byte	0x1
-	.byte	0x63
+	.byte	0x61
 	.byte	0xc
 	.4byte	0xe7
 	.4byte	.LLST10
 	.byte	0xf
-	.4byte	.LVL48
-	.4byte	0x5ab
+	.4byte	.LVL47
+	.4byte	0x56f
 	.4byte	0x188
 	.byte	0x10
 	.byte	0x1
@@ -862,8 +835,8 @@ app_config_load_relay_settings:
 	.byte	0x30
 	.byte	0
 	.byte	0xf
-	.4byte	.LVL50
-	.4byte	0x5b7
+	.4byte	.LVL49
+	.4byte	0x57b
 	.4byte	0x19c
 	.byte	0x10
 	.byte	0x1
@@ -873,8 +846,8 @@ app_config_load_relay_settings:
 	.byte	0x68
 	.byte	0
 	.byte	0xf
-	.4byte	.LVL51
-	.4byte	0x5ab
+	.4byte	.LVL50
+	.4byte	0x56f
 	.4byte	0x1c3
 	.byte	0x10
 	.byte	0x1
@@ -899,26 +872,15 @@ app_config_load_relay_settings:
 	.byte	0x1
 	.byte	0x30
 	.byte	0
-	.byte	0xf
-	.4byte	.LVL53
-	.4byte	0x5b7
-	.4byte	0x1d7
+	.byte	0x11
+	.4byte	.LVL52
+	.4byte	0x57b
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x78
 	.byte	0x6c
-	.byte	0
-	.byte	0x11
-	.4byte	.LVL54
-	.4byte	0x5c3
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC6
 	.byte	0
 	.byte	0
 	.byte	0xa
@@ -929,7 +891,7 @@ app_config_load_relay_settings:
 	.4byte	0xd4
 	.byte	0x7
 	.4byte	0xb8
-	.4byte	0x207
+	.4byte	0x1f0
 	.byte	0x8
 	.4byte	0x70
 	.byte	0x3
@@ -937,56 +899,78 @@ app_config_load_relay_settings:
 	.byte	0xb
 	.4byte	.LASF22
 	.byte	0x1
-	.byte	0x4f
+	.byte	0x4e
 	.byte	0x5
 	.4byte	0x69
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x312
+	.4byte	0x2d6
 	.byte	0xc
 	.4byte	.LASF17
 	.byte	0x1
-	.byte	0x4f
+	.byte	0x4e
 	.byte	0x2c
 	.4byte	0x41
 	.4byte	.LLST6
 	.byte	0xc
 	.4byte	.LASF18
 	.byte	0x1
-	.byte	0x4f
+	.byte	0x4e
 	.byte	0x3f
 	.4byte	0xd4
 	.4byte	.LLST7
 	.byte	0xd
 	.4byte	.LASF19
 	.byte	0x1
-	.byte	0x51
+	.byte	0x50
 	.byte	0xa
-	.4byte	0x1f7
+	.4byte	0x1e0
 	.byte	0x2
 	.byte	0x91
-	.byte	0x58
+	.byte	0x68
 	.byte	0xd
 	.4byte	.LASF20
 	.byte	0x1
-	.byte	0x52
+	.byte	0x51
 	.byte	0xa
-	.4byte	0x1f7
+	.4byte	0x1e0
 	.byte	0x2
 	.byte	0x91
-	.byte	0x5c
+	.byte	0x6c
 	.byte	0xf
 	.4byte	.LVL39
-	.4byte	0x5cf
-	.4byte	0x287
+	.4byte	0x587
+	.4byte	0x26a
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x78
-	.byte	0x58
+	.byte	0x68
+	.byte	0x10
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x1
+	.byte	0x34
+	.byte	0x10
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC2
+	.byte	0
+	.byte	0xf
+	.4byte	.LVL40
+	.4byte	0x587
+	.4byte	0x292
+	.byte	0x10
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x2
+	.byte	0x78
+	.byte	0x6c
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5b
@@ -1006,37 +990,9 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0
 	.byte	0xf
-	.4byte	.LVL40
-	.4byte	0x5cf
-	.4byte	0x2af
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x2
-	.byte	0x78
-	.byte	0x5c
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x1
-	.byte	0x34
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC2
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5d
-	.byte	0x2
-	.byte	0x82
-	.byte	0
-	.byte	0
-	.byte	0xf
 	.4byte	.LVL41
-	.4byte	0x5dc
-	.4byte	0x2cc
+	.4byte	0x594
+	.4byte	0x2af
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1048,12 +1004,12 @@ app_config_load_relay_settings:
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x78
-	.byte	0x58
+	.byte	0x68
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL42
-	.4byte	0x5dc
-	.4byte	0x2e9
+	.4byte	0x594
+	.4byte	0x2cc
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1065,33 +1021,11 @@ app_config_load_relay_settings:
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x78
-	.byte	0x5c
+	.byte	0x6c
 	.byte	0
 	.byte	0x12
 	.4byte	.LVL43
-	.4byte	0x5e8
-	.byte	0x11
-	.4byte	.LVL44
-	.4byte	0x5c3
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC5
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0x10
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x2
-	.byte	0x82
-	.byte	0
-	.byte	0
+	.4byte	0x5a0
 	.byte	0
 	.byte	0xb
 	.4byte	.LASF23
@@ -1103,7 +1037,7 @@ app_config_load_relay_settings:
 	.4byte	.LFE8-.LFB8
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x3bb
+	.4byte	0x37f
 	.byte	0x13
 	.4byte	.LASF24
 	.byte	0x1
@@ -1138,8 +1072,8 @@ app_config_load_relay_settings:
 	.byte	0xac,0x7f
 	.byte	0xf
 	.4byte	.LVL28
-	.4byte	0x5ab
-	.4byte	0x395
+	.4byte	0x56f
+	.4byte	0x359
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1166,7 +1100,7 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0x11
 	.4byte	.LVL30
-	.4byte	0x5ab
+	.4byte	0x56f
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1202,11 +1136,11 @@ app_config_load_relay_settings:
 	.4byte	.LFE7-.LFB7
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x40d
+	.4byte	0x3d1
 	.byte	0xf
 	.4byte	.LVL25
-	.4byte	0x5f4
-	.4byte	0x3ec
+	.4byte	0x5ac
+	.4byte	0x3b0
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1216,8 +1150,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL26
-	.4byte	0x5f4
-	.4byte	0x403
+	.4byte	0x5ac
+	.4byte	0x3c7
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1227,7 +1161,7 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0x12
 	.4byte	.LVL27
-	.4byte	0x5e8
+	.4byte	0x5a0
 	.byte	0
 	.byte	0xb
 	.4byte	.LASF27
@@ -1239,7 +1173,7 @@ app_config_load_relay_settings:
 	.4byte	.LFE6-.LFB6
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x4db
+	.4byte	0x49f
 	.byte	0xc
 	.4byte	.LASF9
 	.byte	0x1
@@ -1256,8 +1190,8 @@ app_config_load_relay_settings:
 	.4byte	.LLST3
 	.byte	0xf
 	.4byte	.LVL18
-	.4byte	0x600
-	.4byte	0x45b
+	.4byte	0x5b8
+	.4byte	0x41f
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1267,8 +1201,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL19
-	.4byte	0x600
-	.4byte	0x46f
+	.4byte	0x5b8
+	.4byte	0x433
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1278,8 +1212,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL20
-	.4byte	0x600
-	.4byte	0x483
+	.4byte	0x5b8
+	.4byte	0x447
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1289,8 +1223,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL21
-	.4byte	0x60c
-	.4byte	0x4a0
+	.4byte	0x5c4
+	.4byte	0x464
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1306,8 +1240,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL22
-	.4byte	0x600
-	.4byte	0x4b4
+	.4byte	0x5b8
+	.4byte	0x478
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1317,8 +1251,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL23
-	.4byte	0x60c
-	.4byte	0x4d1
+	.4byte	0x5c4
+	.4byte	0x495
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1334,7 +1268,7 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0x12
 	.4byte	.LVL24
-	.4byte	0x5e8
+	.4byte	0x5a0
 	.byte	0
 	.byte	0xb
 	.4byte	.LASF28
@@ -1346,13 +1280,13 @@ app_config_load_relay_settings:
 	.4byte	.LFE5-.LFB5
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x581
+	.4byte	0x545
 	.byte	0xc
 	.4byte	.LASF29
 	.byte	0x1
 	.byte	0xd
 	.byte	0x29
-	.4byte	0x581
+	.4byte	0x545
 	.4byte	.LLST0
 	.byte	0xe
 	.string	"len"
@@ -1363,8 +1297,8 @@ app_config_load_relay_settings:
 	.4byte	.LLST1
 	.byte	0xf
 	.4byte	.LVL7
-	.4byte	0x618
-	.4byte	0x534
+	.4byte	0x5d0
+	.4byte	0x4f8
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1385,8 +1319,8 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0xf
 	.4byte	.LVL8
-	.4byte	0x5ab
-	.4byte	0x55c
+	.4byte	0x56f
+	.4byte	0x520
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1413,7 +1347,7 @@ app_config_load_relay_settings:
 	.byte	0
 	.byte	0x11
 	.4byte	.LVL10
-	.4byte	0x5ab
+	.4byte	0x56f
 	.byte	0x10
 	.byte	0x1
 	.byte	0x5a
@@ -1452,10 +1386,10 @@ app_config_load_relay_settings:
 	.4byte	.LFE4-.LFB4
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x5ab
+	.4byte	0x56f
 	.byte	0x12
 	.4byte	.LVL0
-	.4byte	0x624
+	.4byte	0x5dc
 	.byte	0
 	.byte	0x14
 	.4byte	.LASF31
@@ -1469,57 +1403,51 @@ app_config_load_relay_settings:
 	.byte	0x6
 	.byte	0x51
 	.byte	0x5
-	.byte	0x14
-	.4byte	.LASF33
-	.4byte	.LASF33
-	.byte	0x7
-	.byte	0xc8
-	.byte	0x5
 	.byte	0x15
-	.4byte	.LASF34
-	.4byte	.LASF34
+	.4byte	.LASF33
+	.4byte	.LASF33
 	.byte	0x7
 	.2byte	0x10a
 	.byte	0x5
 	.byte	0x14
-	.4byte	.LASF35
-	.4byte	.LASF35
+	.4byte	.LASF34
+	.4byte	.LASF34
 	.byte	0x5
 	.byte	0x3d
 	.byte	0xb
 	.byte	0x14
-	.4byte	.LASF36
-	.4byte	.LASF36
+	.4byte	.LASF35
+	.4byte	.LASF35
 	.byte	0x5
 	.byte	0x3f
 	.byte	0xb
 	.byte	0x14
-	.4byte	.LASF37
-	.4byte	.LASF37
+	.4byte	.LASF36
+	.4byte	.LASF36
 	.byte	0x5
 	.byte	0x3e
 	.byte	0xb
 	.byte	0x14
-	.4byte	.LASF38
-	.4byte	.LASF38
+	.4byte	.LASF37
+	.4byte	.LASF37
 	.byte	0x8
 	.byte	0x29
 	.byte	0x8
 	.byte	0x14
-	.4byte	.LASF39
-	.4byte	.LASF39
+	.4byte	.LASF38
+	.4byte	.LASF38
 	.byte	0x5
 	.byte	0x33
 	.byte	0xb
 	.byte	0x14
-	.4byte	.LASF40
-	.4byte	.LASF40
+	.4byte	.LASF39
+	.4byte	.LASF39
 	.byte	0x8
 	.byte	0x21
 	.byte	0x8
 	.byte	0x14
-	.4byte	.LASF41
-	.4byte	.LASF41
+	.4byte	.LASF40
+	.4byte	.LASF40
 	.byte	0x5
 	.byte	0x2c
 	.byte	0xb
@@ -1825,30 +1753,30 @@ app_config_load_relay_settings:
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 .LLST8:
+	.4byte	.LVL44
 	.4byte	.LVL45
-	.4byte	.LVL46
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL46
-	.4byte	.LVL55
+	.4byte	.LVL45
+	.4byte	.LVL54
 	.2byte	0x1
-	.byte	0x59
+	.byte	0x62
+	.4byte	.LVL54
 	.4byte	.LVL55
-	.4byte	.LVL57
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL57
-	.4byte	.LVL58
+	.4byte	.LVL55
+	.4byte	.LVL56
 	.2byte	0x1
-	.byte	0x59
-	.4byte	.LVL58
-	.4byte	.LVL59
+	.byte	0x62
+	.4byte	.LVL56
+	.4byte	.LVL57
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL59
+	.4byte	.LVL57
 	.4byte	.LFE10
 	.2byte	0x4
 	.byte	0xf3
@@ -1858,54 +1786,54 @@ app_config_load_relay_settings:
 	.4byte	0
 	.4byte	0
 .LLST9:
-	.4byte	.LVL45
-	.4byte	.LVL47
+	.4byte	.LVL44
+	.4byte	.LVL46
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL47
-	.4byte	.LVL56
+	.4byte	.LVL46
+	.4byte	.LVL53
 	.2byte	0x1
-	.byte	0x62
-	.4byte	.LVL56
-	.4byte	.LVL57
+	.byte	0x59
+	.4byte	.LVL53
+	.4byte	.LVL55
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL57
-	.4byte	.LVL58
+	.4byte	.LVL55
+	.4byte	.LVL56
 	.2byte	0x1
-	.byte	0x62
-	.4byte	.LVL58
+	.byte	0x59
+	.4byte	.LVL56
 	.4byte	.LFE10
 	.2byte	0x1
 	.byte	0x5b
 	.4byte	0
 	.4byte	0
 .LLST10:
+	.4byte	.LVL47
 	.4byte	.LVL48
-	.4byte	.LVL49
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL49
-	.4byte	.LVL50-1
+	.4byte	.LVL48
+	.4byte	.LVL49-1
 	.2byte	0x3
 	.byte	0x7e
 	.byte	0x1
 	.byte	0x9f
+	.4byte	.LVL50
 	.4byte	.LVL51
-	.4byte	.LVL52
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL52
-	.4byte	.LVL53-1
+	.4byte	.LVL51
+	.4byte	.LVL52-1
 	.2byte	0x3
 	.byte	0x7e
 	.byte	0x1
 	.byte	0x9f
-	.4byte	.LVL57
-	.4byte	.LVL58
+	.4byte	.LVL55
+	.4byte	.LVL56
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -2123,25 +2051,25 @@ app_config_load_relay_settings:
 	.section	.debug_str,"MS",@progbits,1
 .LASF17:
 	.string	"default_state"
-.LASF42:
+.LASF41:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF40:
-	.string	"memset"
-.LASF34:
-	.string	"snprintf"
 .LASF39:
+	.string	"memset"
+.LASF33:
+	.string	"snprintf"
+.LASF38:
 	.string	"ef_set_env_blob"
 .LASF30:
 	.string	"app_config_init"
-.LASF37:
+.LASF36:
 	.string	"ef_del_env"
 .LASF28:
 	.string	"app_config_load_wifi"
-.LASF38:
+.LASF37:
 	.string	"strlen"
 .LASF15:
 	.string	"wifi_config_t"
-.LASF44:
+.LASF43:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/app_config"
 .LASF19:
 	.string	"state_str"
@@ -2155,7 +2083,7 @@ app_config_load_relay_settings:
 	.string	"app_config_save_relay_settings"
 .LASF4:
 	.string	"unsigned char"
-.LASF35:
+.LASF34:
 	.string	"ef_set_env"
 .LASF24:
 	.string	"len_ssid"
@@ -2169,7 +2097,7 @@ app_config_load_relay_settings:
 	.string	"long long unsigned int"
 .LASF14:
 	.string	"uint8_t"
-.LASF36:
+.LASF35:
 	.string	"ef_save_env"
 .LASF26:
 	.string	"app_config_clear_wifi"
@@ -2177,18 +2105,16 @@ app_config_load_relay_settings:
 	.string	"atoi"
 .LASF27:
 	.string	"app_config_save_wifi"
-.LASF43:
+.LASF42:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
 .LASF3:
 	.string	"long long int"
 .LASF12:
 	.string	"char"
-.LASF41:
+.LASF40:
 	.string	"easyflash_init"
 .LASF21:
 	.string	"app_config_load_relay_settings"
-.LASF33:
-	.string	"printf"
 .LASF11:
 	.string	"is_valid"
 .LASF9:

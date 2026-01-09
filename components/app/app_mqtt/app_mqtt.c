@@ -7,6 +7,7 @@
 #include "../../hardware/relay/relay.h"
 #include <stdio.h>
 #include <string.h>
+#include "blog.h"
 #include <aos/kernel.h>
 
 extern void app_event_post(app_event_type_t type, void *data);
@@ -107,6 +108,7 @@ int app_mqtt_stop(void)
 
 bool app_mqtt_is_connected(void)
 {
+    blog_debug("connected\r\ns");
     return mqtt_if_is_connected();
 }
 

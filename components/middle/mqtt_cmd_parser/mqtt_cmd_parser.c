@@ -5,9 +5,15 @@
 #include <stdlib.h>
 #include <stddef.h>
 
+#include <stdio.h>
+#include <string.h>
+#include <FreeRTOS.h>
+#include <semphr.h>
+#include <aos/kernel.h>
+
 #define MAX_TOKENS 64
 
-/* Helper function to compare JSON string with key */
+
 static int json_str_eq(const char *json, jsmntok_t *tok, const char *key)
 {
     if (tok->type == JSMN_STRING && 
@@ -18,13 +24,13 @@ static int json_str_eq(const char *json, jsmntok_t *tok, const char *key)
     return -1;
 }
 
-/* Get string value from JSON */
+
 static int json_get_string_value(const char *json, jsmntok_t *tokens, int num_tokens, 
                                  const char *key, char *buf, int buf_size)
 {
     for (int i = 1; i < num_tokens; i++) {
         if (json_str_eq(json, &tokens[i], key) == 0) {
-            /* Found key, next token is value */
+
             if (i + 1 < num_tokens && tokens[i + 1].type == JSMN_STRING) {
                 int len = tokens[i + 1].end - tokens[i + 1].start;
                 if (len < buf_size) {
@@ -39,13 +45,13 @@ static int json_get_string_value(const char *json, jsmntok_t *tokens, int num_to
     return -1;
 }
 
-/* Get integer value from JSON */
+
 static int json_get_int_value(const char *json, jsmntok_t *tokens, int num_tokens, 
                               const char *key, int *value)
 {
     for (int i = 1; i < num_tokens; i++) {
         if (json_str_eq(json, &tokens[i], key) == 0) {
-            /* Found key, next token is value */
+
             if (i + 1 < num_tokens && tokens[i + 1].type == JSMN_PRIMITIVE) {
                 char num_str[32];
                 int len = tokens[i + 1].end - tokens[i + 1].start;
@@ -62,13 +68,13 @@ static int json_get_int_value(const char *json, jsmntok_t *tokens, int num_token
     return -1;
 }
 
-/* Get boolean value from JSON */
+
 static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_tokens, 
                                const char *key, bool *value)
 {
     for (int i = 1; i < num_tokens; i++) {
         if (json_str_eq(json, &tokens[i], key) == 0) {
-            /* Found key, next token is value */
+
             if (i + 1 < num_tokens && tokens[i + 1].type == JSMN_PRIMITIVE) {
                 int len = tokens[i + 1].end - tokens[i + 1].start;
                 if (len == 4 && strncmp(json + tokens[i + 1].start, "true", 4) == 0) {
@@ -91,11 +97,10 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         return -1;
     }
 
-    /* Initialize command */
     memset(cmd, 0, sizeof(mqtt_cmd_t));
     cmd->type = MQTT_CMD_INVALID;
 
-    /* Parse JSON */
+
     jsmn_parser parser;
     jsmntok_t tokens[MAX_TOKENS];
     
@@ -112,20 +117,20 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         return -1;
     }
 
-    /* Get command type */
+
     char cmd_str[32];
     if (json_get_string_value(json_str, tokens, num_tokens, "command", cmd_str, sizeof(cmd_str)) < 0) {
         printf("[MQTT_CMD] Missing 'command' field\r\n");
         return -1;
     }
 
-    /* Parse command type */
+
     if (strcmp(cmd_str, "TOGGLE") == 0) {
         cmd->type = MQTT_CMD_TOGGLE;
     } else if (strcmp(cmd_str, "SET") == 0) {
         cmd->type = MQTT_CMD_SET;
         
-        /* Get state */
+
         char state_str[16];
         if (json_get_string_value(json_str, tokens, num_tokens, "state", state_str, sizeof(state_str)) >= 0) {
             if (strcmp(state_str, "ON") == 0) {
@@ -143,7 +148,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
     } else if (strcmp(cmd_str, "TIMER") == 0) {
         cmd->type = MQTT_CMD_TIMER;
         
-        /* Get action */
+
         char action_str[16];
         if (json_get_string_value(json_str, tokens, num_tokens, "action", action_str, sizeof(action_str)) >= 0) {
             if (strcmp(action_str, "ON") == 0) {
@@ -158,8 +163,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
             printf("[MQTT_CMD] Missing 'action' field for TIMER command\r\n");
             return -1;
         }
-        
-        /* Get seconds */
+
         int seconds = 0;
         if (json_get_int_value(json_str, tokens, num_tokens, "seconds", &seconds) >= 0) {
             cmd->params.timer.seconds = (uint32_t)seconds;
@@ -171,8 +175,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         cmd->type = MQTT_CMD_TIMER_CANCEL;
     } else if (strcmp(cmd_str, "AUTO_TOGGLE_START") == 0) {
         cmd->type = MQTT_CMD_AUTO_TOGGLE_START;
-        
-        /* Get interval */
+
         int interval = 0;
         if (json_get_int_value(json_str, tokens, num_tokens, "interval", &interval) >= 0) {
             cmd->params.auto_toggle.interval = (uint32_t)interval;
@@ -185,7 +188,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
     } else if (strcmp(cmd_str, "SETTINGS") == 0) {
         cmd->type = MQTT_CMD_SETTINGS;
         
-        /* Get defaultState */
+
         char default_state_str[16];
         if (json_get_string_value(json_str, tokens, num_tokens, "defaultState", default_state_str, sizeof(default_state_str)) >= 0) {
             if (strcmp(default_state_str, "ON") == 0) {
@@ -195,7 +198,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
             }
         }
         
-        /* Get lockButton */
+
         bool lock_button = false;
         json_get_bool_value(json_str, tokens, num_tokens, "lockButton", &lock_button);
         cmd->params.settings.lock_button = lock_button;

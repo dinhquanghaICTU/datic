@@ -62,7 +62,6 @@ void mqtt_if_set_connected_cb(mqtt_if_connected_cb_t cb);
 void mqtt_if_set_disconnected_cb(mqtt_if_disconnected_cb_t cb);
 void mqtt_if_set_message_cb(mqtt_if_message_cb_t cb);
 # 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
-
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
 # 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
@@ -1361,7 +1360,7 @@ _putchar_unlocked(int _c)
 }
 # 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
 # 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
@@ -1531,7 +1530,7 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
 # 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
@@ -1838,7 +1837,7 @@ __attribute__((__noreturn__)) void
 
 
 
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
 
 
@@ -2087,7 +2086,7 @@ __attribute__((__noreturn__)) void
 
 
     void aos_start(void);
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h" 1
 # 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
@@ -2235,7 +2234,7 @@ void *aos_loop_schedule_work(int ms, aos_call_t action, void *arg1,
                              aos_call_t fini_cb, void *arg2);
 # 271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 void aos_cancel_work(void *work, aos_call_t action, void *arg1);
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
 # 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
@@ -2473,7 +2472,7 @@ typedef struct xSTATIC_STREAM_BUFFER
 
 
 typedef StaticStreamBuffer_t StaticMessageBuffer_t;
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
 # 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
@@ -2810,7 +2809,7 @@ TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
 
 
 void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sockets.h" 1
 # 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sockets.h"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
@@ -4088,7 +4087,7 @@ int lwip_ioctl(int s, long cmd, void *argp);
 int lwip_fcntl(int s, int cmd, int val);
 const char *lwip_inet_ntop(int af, const void *src, char *dst, socklen_t size);
 int lwip_inet_pton(int af, const char *src, void *dst);
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netdb.h" 1
 # 92 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netdb.h"
 struct hostent {
@@ -4129,7 +4128,7 @@ int lwip_getaddrinfo(const char *nodename,
        const char *servname,
        const struct addrinfo *hints,
        struct addrinfo **res);
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcp.h" 1
 # 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcp.h"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpbase.h" 1
@@ -4507,7 +4506,7 @@ err_t tcp_output (struct tcp_pcb *pcb);
 err_t tcp_tcp_get_tcp_addrinfo(struct tcp_pcb *pcb, int local, ip_addr_t *addr, u16_t *port);
 # 495 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcp.h"
 int tcp_get_pcbs(struct tcp_pcb **const**list);
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/errno.h" 1 3
 
@@ -4530,56 +4529,51 @@ extern int *__errno (void);
 extern const char * const _sys_errlist[];
 extern int _sys_nerr;
 # 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/errno.h" 2 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
+# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 2
 
 
-
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
 static 
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
       _Bool 
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
            s_mqtt_connected = 
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                               0
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                    ;
 static 
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
       _Bool 
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
            s_mqtt_connecting = 
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                0
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                     ;
 static mqtt_if_config_t s_mqtt_config = {0};
 static int s_mqtt_socket = -1;
-
-
 static mqtt_if_connected_cb_t s_connected_cb = 
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                               ((void *)0)
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                   ;
 static mqtt_if_disconnected_cb_t s_disconnected_cb = 
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                                     ((void *)0)
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                         ;
 static mqtt_if_message_cb_t s_message_cb = 
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                           ((void *)0)
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                               ;
-
-
 static TaskHandle_t s_mqtt_task_handle = 
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                         ((void *)0)
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                             ;
-# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
 static int mqtt_encode_string(uint8_t *buf, const char *str)
 {
     uint16_t len = strlen(str);
@@ -4588,7 +4582,6 @@ static int mqtt_encode_string(uint8_t *buf, const char *str)
     memcpy(&buf[2], str, len);
     return len + 2;
 }
-
 
 static int mqtt_encode_remaining_length(uint8_t *buf, uint32_t length)
 {
@@ -4604,25 +4597,17 @@ static int mqtt_encode_remaining_length(uint8_t *buf, uint32_t length)
     return i;
 }
 
-
 static int mqtt_send_connect(void)
 {
     uint8_t packet[256];
     int pos = 0;
 
-
     packet[pos++] = 0x10;
-
-
     int rem_len_pos = pos;
     pos += 4;
 
-
     pos += mqtt_encode_string(&packet[pos], "MQTT");
-
-
     packet[pos++] = 0x04;
-
 
     uint8_t flags = 0x02;
     if (s_mqtt_config.username[0] != '\0') {
@@ -4633,68 +4618,49 @@ static int mqtt_send_connect(void)
     }
     packet[pos++] = flags;
 
-
     uint16_t keepalive = s_mqtt_config.keepalive > 0 ? s_mqtt_config.keepalive : 60;
     packet[pos++] = (keepalive >> 8) & 0xFF;
     packet[pos++] = keepalive & 0xFF;
 
-
     pos += mqtt_encode_string(&packet[pos], s_mqtt_config.client_id);
-
 
     if (s_mqtt_config.username[0] != '\0') {
         pos += mqtt_encode_string(&packet[pos], s_mqtt_config.username);
     }
 
-
     if (s_mqtt_config.password[0] != '\0') {
         pos += mqtt_encode_string(&packet[pos], s_mqtt_config.password);
     }
 
-
     uint32_t remaining_length = pos - rem_len_pos - 4;
     int rem_len_bytes = mqtt_encode_remaining_length(&packet[rem_len_pos], remaining_length);
-
 
     if (rem_len_bytes < 4) {
         memmove(&packet[rem_len_pos + rem_len_bytes], &packet[rem_len_pos + 4], remaining_length);
     }
 
-
     int total_len = rem_len_pos + rem_len_bytes + remaining_length;
     int sent = lwip_send(s_mqtt_socket,packet,total_len,0);
 
     if (sent != total_len) {
-        printf("[MQTT_IF] Failed to send CONNECT packet\r\n");
         return -1;
     }
 
-    printf("[MQTT_IF] CONNECT packet sent (%d bytes)\r\n", total_len);
     return 0;
 }
-
 
 static int mqtt_send_subscribe(const char *topic)
 {
     uint8_t packet[256];
     int pos = 0;
 
-
     packet[pos++] = 0x82;
-
-
-
-
-
-
     int vh_pos = 2;
-
 
     static uint16_t packet_id = 1;
     packet[vh_pos++] = (packet_id >> 8) & 0xFF;
     packet[vh_pos++] = packet_id & 0xFF;
     packet_id++;
-
 
     int topic_len = strlen(topic);
     packet[vh_pos++] = (topic_len >> 8) & 0xFF;
@@ -4702,15 +4668,10 @@ static int mqtt_send_subscribe(const char *topic)
     memcpy(&packet[vh_pos], topic, topic_len);
     vh_pos += topic_len;
 
-
     packet[vh_pos++] = 0x01;
 
-
     uint32_t remaining_length = vh_pos - 2;
-
-
     int rem_len_bytes = mqtt_encode_remaining_length(&packet[1], remaining_length);
-
 
     if (rem_len_bytes > 1) {
         memmove(&packet[1 + rem_len_bytes], &packet[2], remaining_length);
@@ -4720,24 +4681,20 @@ static int mqtt_send_subscribe(const char *topic)
     int sent = lwip_send(s_mqtt_socket,packet,total_len,0);
 
     if (sent != total_len) {
-        printf("[MQTT_IF] Failed to send SUBSCRIBE packet\r\n");
         return -1;
     }
 
-    printf("[MQTT_IF] SUBSCRIBE sent: %s (len=%d)\r\n", topic, total_len);
     return 0;
 }
 
-
 static int mqtt_send_publish(const char *topic, const char *payload, int payload_len, 
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                                                                      _Bool 
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                                                           retain)
 {
     uint8_t packet[512];
     int pos = 0;
-
 
     uint8_t fixed_header = 0x30;
     if (retain) {
@@ -4746,10 +4703,8 @@ static int mqtt_send_publish(const char *topic, const char *payload, int payload
     fixed_header |= 0x02;
     packet[pos++] = fixed_header;
 
-
     int rem_len_pos = pos;
     pos += 4;
-
 
     int topic_len = strlen(topic);
     packet[pos++] = (topic_len >> 8) & 0xFF;
@@ -4757,18 +4712,15 @@ static int mqtt_send_publish(const char *topic, const char *payload, int payload
     memcpy(&packet[pos], topic, topic_len);
     pos += topic_len;
 
-
     static uint16_t pub_packet_id = 1;
     packet[pos++] = (pub_packet_id >> 8) & 0xFF;
     packet[pos++] = pub_packet_id & 0xFF;
     pub_packet_id++;
 
-
     if (payload && payload_len > 0) {
         memcpy(&packet[pos], payload, payload_len);
         pos += payload_len;
     }
-
 
     uint32_t remaining_length = pos - rem_len_pos - 4;
     int rem_len_bytes = mqtt_encode_remaining_length(&packet[rem_len_pos], remaining_length);
@@ -4781,14 +4733,11 @@ static int mqtt_send_publish(const char *topic, const char *payload, int payload
     int sent = lwip_send(s_mqtt_socket,packet,total_len,0);
 
     if (sent != total_len) {
-        printf("[MQTT_IF] Failed to send PUBLISH packet\r\n");
         return -1;
     }
 
-    printf("[MQTT_IF] PUBLISH sent: %s (%d bytes)\r\n", topic, payload_len);
     return 0;
 }
-
 
 static int mqtt_send_ping(void)
 {
@@ -4803,46 +4752,40 @@ static int mqtt_send_ping(void)
     return 0;
 }
 
-
 static void mqtt_parse_message(uint8_t *data, int len)
 {
     if (len < 2) {
-        printf("[MQTT_IF] Message too short (%d bytes)\r\n", len);
         return;
     }
 
     uint8_t packet_type = data[0] & 0xF0;
-    printf("[MQTT_IF] Received packet type: 0x%02X, len: %d\r\n", packet_type, len);
 
     switch (packet_type) {
         case 0x20:
             if (len >= 4 && data[3] == 0x00) {
-                printf("[MQTT_IF] Connected to broker\r\n");
                 s_mqtt_connected = 
-# 287 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                   1
-# 287 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                       ;
                 s_mqtt_connecting = 
-# 288 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 226 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                    0
-# 288 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 226 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                         ;
                 if (s_connected_cb) {
                     s_connected_cb();
                 }
             } else {
-                printf("[MQTT_IF] Connection refused (code: 0x%02X)\r\n", len >= 4 ? data[3] : 0);
                 s_mqtt_connecting = 
-# 294 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 231 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                    0
-# 294 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 231 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                         ;
             }
             break;
 
         case 0x30: {
-
             int pos = 1;
             uint32_t remaining_length = 0;
             int multiplier = 1;
@@ -4868,16 +4811,12 @@ static void mqtt_parse_message(uint8_t *data, int len)
                 return;
             }
 
-
             if ((data[0] & 0x06) == 0x02) {
                 if (pos + 2 > len) {
-                    printf("[MQTT_IF] Invalid PUBLISH: packet ID out of bounds\r\n");
                     return;
                 }
                 pos += 2;
             }
-
-
 
             int header_len = 1;
             int rem_len_bytes = (remaining_length < 128 ? 1 : remaining_length < 16384 ? 2 : remaining_length < 2097152 ? 3 : 4);
@@ -4898,15 +4837,11 @@ static void mqtt_parse_message(uint8_t *data, int len)
                     memcpy(payload, &data[pos], copy_len);
                     payload[copy_len] = '\0';
 
-                    printf("[MQTT_IF] Received message: %s = %.*s\r\n", topic, copy_len, payload);
-
                     if (s_message_cb) {
                         s_message_cb(topic, payload, copy_len);
                     }
                 }
             } else if (payload_len == 0) {
-
-                printf("[MQTT_IF] Received message: %s (empty)\r\n", topic);
                 if (s_message_cb) {
                     s_message_cb(topic, "", 0);
                 }
@@ -4915,23 +4850,14 @@ static void mqtt_parse_message(uint8_t *data, int len)
         }
 
         case 0xD0:
-            printf("[MQTT_IF] PINGRESP received\r\n");
-            break;
-
         case 0x90:
-            printf("[MQTT_IF] SUBACK received\r\n");
-            break;
-
         case 0x40:
-            printf("[MQTT_IF] PUBACK received\r\n");
             break;
 
         default:
-            printf("[MQTT_IF] Unknown packet type: 0x%02X\r\n", packet_type);
             break;
     }
 }
-
 
 static void mqtt_recv_task(void *params)
 {
@@ -4941,7 +4867,6 @@ static void mqtt_recv_task(void *params)
 
     while (s_mqtt_socket >= 0) {
         if (s_mqtt_connected) {
-
             uint32_t now = aos_now_ms() / 1000;
             uint32_t keepalive = (s_mqtt_config.keepalive > 0 ? s_mqtt_config.keepalive : 60);
             if (last_ping == 0 || (now - last_ping >= keepalive)) {
@@ -4950,156 +4875,128 @@ static void mqtt_recv_task(void *params)
             }
         }
 
-
         fd_set read_fds;
         struct timeval timeout;
         
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 327 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
        do { fd_set *_p; __size_t _n; _p = (
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 327 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
        &read_fds
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 327 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
        ); _n = (((64) + ((((int)sizeof(__fd_mask) * 8)) - 1)) / (((int)sizeof(__fd_mask) * 8))); while (_n > 0) _p->__fds_bits[--_n] = 0; } while (0)
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 327 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                          ;
         if (s_mqtt_socket >= 0) {
             
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
            ((
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
            &read_fds
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
            )->__fds_bits[(
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
            s_mqtt_socket
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
            )/((int)sizeof(__fd_mask) * 8)] |= ((__fd_mask)1 << ((
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
            s_mqtt_socket
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
            ) % ((int)sizeof(__fd_mask) * 8))))
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                            ;
         }
         timeout.tv_sec = 1;
         timeout.tv_usec = 0;
 
         int ret = lwip_select(s_mqtt_socket + 1,&read_fds,
-# 417 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 334 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                  ((void *)0)
-# 417 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 334 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                  ,
-# 417 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 334 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                  ((void *)0)
-# 417 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 334 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                  ,&timeout);
         if (ret > 0 && s_mqtt_socket >= 0 && 
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                                             (((
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                             &read_fds
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                                             )->__fds_bits[(
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                             s_mqtt_socket
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                                             )/((int)sizeof(__fd_mask) * 8)] & ((__fd_mask)1 << ((
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                             s_mqtt_socket
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                                             ) % ((int)sizeof(__fd_mask) * 8)))) != 0)
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                                               ) {
             int recv_len = lwip_recv(s_mqtt_socket,buffer,sizeof(buffer),0);
             if (recv_len > 0) {
                 mqtt_parse_message(buffer, recv_len);
             } else if (recv_len == 0) {
-                printf("[MQTT_IF] Connection closed by broker\r\n");
                 s_mqtt_connected = 
-# 424 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                   0
-# 424 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                        ;
                 s_mqtt_connecting = 
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 341 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                    0
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 341 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                         ;
                 if (s_disconnected_cb) {
                     s_disconnected_cb();
                 }
                 break;
             } else {
-
                 int err = 
-# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 347 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                          (*__errno())
-# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 347 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                               ;
-                if (err == 0) {
-
-                    printf("[MQTT_IF] Connection closed (recv returned < 0, errno=0)\r\n");
+                if (err == 0 || (err != 
+# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+                                       11 
+# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+                                              && err != 
+# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+                                                        11 
+# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+                                                                    && err != 
+# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+                                                                              4
+# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+                                                                                   )) {
                     s_mqtt_connected = 
-# 436 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 349 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                       0
-# 436 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 349 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                            ;
                     s_mqtt_connecting = 
-# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                        0
-# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                            ;
-                    if (s_disconnected_cb) {
-                        s_disconnected_cb();
-                    }
-                    break;
-                } else if (err != 
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
-                                 11 
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                        && err != 
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
-                                                  11 
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                                              && err != 
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
-                                                                        4
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                                                             ) {
-                    printf("[MQTT_IF] Receive error (errno: %d)\r\n", err);
-                    s_mqtt_connected = 
-# 444 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
-                                      0
-# 444 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                           ;
-                    s_mqtt_connecting = 
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
-                                       0
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                             ;
                     if (s_disconnected_cb) {
                         s_disconnected_cb();
                     }
                     break;
                 }
-
             }
         } else if (ret < 0) {
-
             if (
-# 455 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 358 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                (*__errno()) 
-# 455 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 358 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                      != 
-# 455 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
+# 358 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
                         4
-# 455 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 358 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                              ) {
-                printf("[MQTT_IF] Select error (errno: %d)\r\n", 
-# 456 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
-                                                                (*__errno())
-# 456 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                                                     );
                 break;
             }
         }
@@ -5107,23 +5004,20 @@ static void mqtt_recv_task(void *params)
         aos_msleep(100);
     }
 
-    printf("[MQTT_IF] Receive task exited\r\n");
     s_mqtt_task_handle = 
-# 465 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 366 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                         ((void *)0)
-# 465 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 366 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                             ;
     vTaskDelete(
-# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 367 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                ((void *)0)
-# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 367 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                    );
 }
 
-
 int mqtt_if_init(void)
 {
-    printf("[MQTT_IF] Initializing MQTT interface\r\n");
     memset(&s_mqtt_config, 0, sizeof(s_mqtt_config));
     s_mqtt_config.port = 1883;
     s_mqtt_config.keepalive = 60;
@@ -5134,22 +5028,18 @@ int mqtt_if_init(void)
 int mqtt_if_set_config(const mqtt_if_config_t *config)
 {
     if (config == 
-# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                  ((void *)0)
-# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                      ) {
         return -1;
     }
 
     memcpy(&s_mqtt_config, config, sizeof(mqtt_if_config_t));
 
-
     if (s_mqtt_config.client_id[0] == '\0') {
         snprintf(s_mqtt_config.client_id, sizeof(s_mqtt_config.client_id), "device_%d", (int)aos_now_ms());
     }
-
-    printf("[MQTT_IF] Config set: broker=%s:%d, client_id=%s\r\n",
-           s_mqtt_config.broker, s_mqtt_config.port, s_mqtt_config.client_id);
 
     return 0;
 }
@@ -5157,35 +5047,26 @@ int mqtt_if_set_config(const mqtt_if_config_t *config)
 int mqtt_if_connect(void)
 {
     if (s_mqtt_connecting || s_mqtt_connected) {
-        printf("[MQTT_IF] Already connected or connecting\r\n");
         return -1;
     }
 
     if (s_mqtt_config.broker[0] == '\0') {
-        printf("[MQTT_IF] Broker not configured\r\n");
         return -1;
     }
-
-    printf("[MQTT_IF] Connecting to %s:%d...\r\n", s_mqtt_config.broker, s_mqtt_config.port);
-
 
     struct hostent *host = lwip_gethostbyname(s_mqtt_config.broker);
     if (host == 
-# 515 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                ((void *)0)
-# 515 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                    ) {
-        printf("[MQTT_IF] Failed to resolve hostname\r\n");
         return -1;
     }
-
 
     s_mqtt_socket = lwip_socket(2,1,0);
     if (s_mqtt_socket < 0) {
-        printf("[MQTT_IF] Failed to create socket\r\n");
         return -1;
     }
-
 
     struct sockaddr_in server_addr;
     memset(&server_addr, 0, sizeof(server_addr));
@@ -5195,50 +5076,39 @@ int mqtt_if_connect(void)
 
     int connect_result = lwip_connect(s_mqtt_socket,(struct sockaddr *)&server_addr,sizeof(server_addr));
     if (connect_result < 0) {
-        printf("[MQTT_IF] Failed to connect to broker (errno: %d)\r\n", 
-# 536 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3
-                                                                       (*__errno())
-# 536 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
-                                                                            );
-        printf("[MQTT_IF] Make sure MQTT broker is running on %s:%d\r\n", s_mqtt_config.broker, s_mqtt_config.port);
         lwip_close(s_mqtt_socket);
         s_mqtt_socket = -1;
         return -1;
     }
 
-    printf("[MQTT_IF] TCP connected, sending MQTT CONNECT...\r\n");
-
     s_mqtt_connecting = 
-# 545 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 427 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                        1
-# 545 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 427 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                            ;
-
 
     if (mqtt_send_connect() < 0) {
         lwip_close(s_mqtt_socket);
         s_mqtt_socket = -1;
         s_mqtt_connecting = 
-# 551 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                            0
-# 551 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                 ;
         return -1;
     }
 
-
     if (s_mqtt_task_handle == 
-# 556 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 436 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                              ((void *)0)
-# 556 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 436 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                  ) {
         xTaskCreate(mqtt_recv_task, "mqtt_recv", 4096, 
-# 557 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                                       ((void *)0)
-# 557 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                           , 5, &s_mqtt_task_handle);
     }
-
 
     aos_msleep(1000);
 
@@ -5251,9 +5121,6 @@ int mqtt_if_disconnect(void)
         return 0;
     }
 
-    printf("[MQTT_IF] Disconnecting...\r\n");
-
-
     uint8_t packet[2];
     packet[0] = 0xE0;
     packet[1] = 0x00;
@@ -5262,17 +5129,15 @@ int mqtt_if_disconnect(void)
     lwip_close(s_mqtt_socket);
     s_mqtt_socket = -1;
     s_mqtt_connected = 
-# 582 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 458 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                       0
-# 582 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 458 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                            ;
     s_mqtt_connecting = 
-# 583 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 459 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                        0
-# 583 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 459 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                             ;
-
-    printf("[MQTT_IF] Disconnected\r\n");
 
     if (s_disconnected_cb) {
         s_disconnected_cb();
@@ -5282,9 +5147,9 @@ int mqtt_if_disconnect(void)
 }
 
 
-# 594 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 468 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
 _Bool 
-# 594 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 468 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
     mqtt_if_is_connected(void)
 {
     return s_mqtt_connected;
@@ -5293,9 +5158,9 @@ _Bool
 int mqtt_if_subscribe(const char *topic)
 {
     if (!s_mqtt_connected || topic == 
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 475 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                      ((void *)0)
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 475 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                          ) {
         return -1;
     }
@@ -5305,21 +5170,20 @@ int mqtt_if_subscribe(const char *topic)
 
 int mqtt_if_unsubscribe(const char *topic)
 {
-
     (void)topic;
     return 0;
 }
 
 int mqtt_if_publish(const char *topic, const char *payload, int payload_len, 
-# 615 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 488 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                                                             _Bool 
-# 615 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 488 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                                                  retain)
 {
     if (!s_mqtt_connected || topic == 
-# 617 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 490 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                      ((void *)0)
-# 617 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 490 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                          ) {
         return -1;
     }
