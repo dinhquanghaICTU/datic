@@ -8915,56 +8915,56 @@ void bt_gatt_register_mtu_callback(bt_gatt_mtu_changed_cb_t cb);
 # 1392 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
 void bt_gatt_ccc_load(void);
 # 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 2
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
 static struct bt_conn *conn_cur;
 ble_gatt_conn_cb_t conn_cb;
 ble_gatt_conn_cb_t disconn_cb;
 ble_config_done_cb_t config_done_cb = 
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                      ((void *)0)
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                          ;
 
 
 static char temp_ssid[32 + 1] = {0};
 static char temp_password[64 + 1] = {0};
 static 
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
       _Bool 
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
            has_ssid = 
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                       0
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                            ;
 static 
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
       _Bool 
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
            has_password = 
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                           0
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                ;
 
 
 static 
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
       _Bool 
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
            s_ble_enabled = 
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                            0
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                 ;
 static 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
       _Bool 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
            s_ble_service_registered = 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                       0
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                            ;
 
 
@@ -8983,37 +8983,37 @@ static void check_and_save_config(void);
 
 static struct bt_gatt_attr wifi_config_server[] = {
     { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2800), }})), .read = bt_gatt_attr_read_service, .write = 
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .user_data = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x9fafd205e455) >> 0) & 0xFF), (((0x9fafd205e455) >> 8) & 0xFF), (((0x9fafd205e455) >> 16) & 0xFF), (((0x9fafd205e455) >> 24) & 0xFF), (((0x9fafd205e455) >> 32) & 0xFF), (((0x9fafd205e455) >> 40) & 0xFF), (((0x8fa9) >> 0) & 0xFF), (((0x8fa9) >> 8) & 0xFF), (((0x4ae5) >> 0) & 0xFF), (((0x4ae5) >> 8) & 0xFF), (((0xfe7d) >> 0) & 0xFF), (((0xfe7d) >> 8) & 0xFF), (((0x55535343) >> 0) & 0xFF), (((0x55535343) >> 8) & 0xFF), (((0x55535343) >> 16) & 0xFF), (((0x55535343) >> 24) & 0xFF) }, }})), .handle = 0, .perm = BT_GATT_PERM_READ, },
     { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2803), }})), .read = bt_gatt_attr_read_chrc, .write = 
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .user_data = ((struct bt_gatt_chrc[]) { { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0xecbe34729bb3) >> 0) & 0xFF), (((0xecbe34729bb3) >> 8) & 0xFF), (((0xecbe34729bb3) >> 16) & 0xFF), (((0xecbe34729bb3) >> 24) & 0xFF), (((0xecbe34729bb3) >> 32) & 0xFF), (((0xecbe34729bb3) >> 40) & 0xFF), (((0xa8d4) >> 0) & 0xFF), (((0xa8d4) >> 8) & 0xFF), (((0x43f4) >> 0) & 0xFF), (((0x43f4) >> 8) & 0xFF), (((0x8841) >> 0) & 0xFF), (((0x8841) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .value_handle = 0U, .properties = 0x04, }, }), .handle = 0, .perm = BT_GATT_PERM_READ, }, { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0xecbe34729bb3) >> 0) & 0xFF), (((0xecbe34729bb3) >> 8) & 0xFF), (((0xecbe34729bb3) >> 16) & 0xFF), (((0xecbe34729bb3) >> 24) & 0xFF), (((0xecbe34729bb3) >> 32) & 0xFF), (((0xecbe34729bb3) >> 40) & 0xFF), (((0xa8d4) >> 0) & 0xFF), (((0xa8d4) >> 8) & 0xFF), (((0x43f4) >> 0) & 0xFF), (((0x43f4) >> 8) & 0xFF), (((0x8841) >> 0) & 0xFF), (((0x8841) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .read = 
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .write = ble_ssid_write_val, .user_data = 
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .handle = 0, .perm = BT_GATT_PERM_WRITE, }
 
                                                                               ,
     { .uuid = ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2803), }})), .read = bt_gatt_attr_read_chrc, .write = 
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .user_data = ((struct bt_gatt_chrc[]) { { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x23c647249616) >> 0) & 0xFF), (((0x23c647249616) >> 8) & 0xFF), (((0x23c647249616) >> 16) & 0xFF), (((0x23c647249616) >> 24) & 0xFF), (((0x23c647249616) >> 32) & 0xFF), (((0x23c647249616) >> 40) & 0xFF), (((0xba61) >> 0) & 0xFF), (((0xba61) >> 8) & 0xFF), (((0x4bd9) >> 0) & 0xFF), (((0x4bd9) >> 8) & 0xFF), (((0x1e4d) >> 0) & 0xFF), (((0x1e4d) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .value_handle = 0U, .properties = 0x04, }, }), .handle = 0, .perm = BT_GATT_PERM_READ, }, { .uuid = ((struct bt_uuid *) ((struct bt_uuid_128[]) {{ .uuid = { BT_UUID_TYPE_128 }, .val = { (((0x23c647249616) >> 0) & 0xFF), (((0x23c647249616) >> 8) & 0xFF), (((0x23c647249616) >> 16) & 0xFF), (((0x23c647249616) >> 24) & 0xFF), (((0x23c647249616) >> 32) & 0xFF), (((0x23c647249616) >> 40) & 0xFF), (((0xba61) >> 0) & 0xFF), (((0xba61) >> 8) & 0xFF), (((0x4bd9) >> 0) & 0xFF), (((0x4bd9) >> 8) & 0xFF), (((0x1e4d) >> 0) & 0xFF), (((0x1e4d) >> 8) & 0xFF), (((0x49535343) >> 0) & 0xFF), (((0x49535343) >> 8) & 0xFF), (((0x49535343) >> 16) & 0xFF), (((0x49535343) >> 24) & 0xFF) }, }})), .read = 
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .write = ble_password_write_val, .user_data = 
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
    ((void *)0)
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
    , .handle = 0, .perm = BT_GATT_PERM_WRITE, }
 
                                                                                   ,
@@ -9028,6 +9028,22 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     (void)attr;
     (void)flags;
 
+
+
+    bt_addr_le_t *test_mac;
+
+    char addr [30];
+    test_mac = bt_conn_get_dst(conn);
+    if (!test_mac)
+    {
+        printf(" ===============================================================no seach Mac==================== \r\n");
+        return 0;
+    }
+
+    bt_addr_le_to_str(test_mac, addr, sizeof(addr));
+    printf("==========================================Mac : %s==============================\r\n",addr );
+
+
     if (len == 0) {
         return (-(0x0d));
     }
@@ -9036,9 +9052,9 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     if (offset == 0) {
         memset(temp_ssid, 0, sizeof(temp_ssid));
         has_ssid = 
-# 83 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 102 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                   0
-# 83 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 102 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                        ;
     }
 
@@ -9052,9 +9068,9 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     memcpy(temp_ssid + offset, buf, len);
     temp_ssid[offset + len] = '\0';
     has_ssid = 
-# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 114 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
               1
-# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 114 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                   ;
 
     printf("[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_ssid);
@@ -9081,12 +9097,11 @@ static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt
     if (offset == 0) {
         memset(temp_password, 0, sizeof(temp_password));
         has_password = 
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                       0
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                            ;
     }
-
 
     if (offset + len > 64) {
         printf("[BLE] Invalid password length: offset=%d, len=%d, total=%d\r\n", offset, len, offset + len);
@@ -9097,9 +9112,9 @@ static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt
     memcpy(temp_password + offset, buf, len);
     temp_password[offset + len] = '\0';
     has_password = 
-# 132 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 150 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                   1
-# 132 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 150 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                       ;
 
     printf("[BLE] Received password chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_password);
@@ -9122,14 +9137,14 @@ static void check_and_save_config(void)
         memset(temp_ssid, 0, sizeof(temp_ssid));
         memset(temp_password, 0, sizeof(temp_password));
         has_ssid = 
-# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 171 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                   0
-# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 171 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                        ;
         has_password = 
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                       0
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                            ;
     }
 }
@@ -9149,7 +9164,6 @@ static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 
 static void _connected(struct bt_conn *conn, u8_t err)
 {
-
     printf("[BLE] _connected callback called, err=%d\r\n", err);
 
 
@@ -9162,45 +9176,26 @@ static void _disconnected(struct bt_conn *conn, u8_t reason)
 
 
     conn_cur = 
-# 185 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
               ((void *)0)
-# 185 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                   ;
 }
 
 static 
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
       _Bool 
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
            _le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 {
 
     return 
-# 191 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
           1
-# 191 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
               ;
 }
-
-static void _le_param_updated(struct bt_conn *conn, u16_t interval,
-                              u16_t latency, u16_t timeout)
-{
-
-}
-
-static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
-{
-
-}
-
-static struct bt_conn_cb conn_callbacks = {
-    .connected = _connected,
-    .disconnected = _disconnected,
-    .le_param_req = _le_param_req,
-    .le_param_updated = _le_param_updated,
-    .le_phy_updated = _le_phy_updated,
-};
-
+# 230 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
 static void ble_disconnect_all(struct bt_conn *conn, void *data)
 {
     if (conn->state == BT_CONN_CONNECTED) {
@@ -9233,25 +9228,13 @@ int ble_regist_disconn(ble_gatt_conn_cb_t cb)
     disconn_cb = cb;
     return 0;
 }
-
-static int ble_salve_conn_cb(struct bt_conn *conn, uint8_t code)
-{
-    struct bt_le_conn_param param = {
-        .interval_min = 24,
-        .interval_max = 24,
-        .latency = 0,
-        .timeout = 600,
-    };
-    bt_conn_le_param_update(conn, &param);
-    return 0;
-}
-
+# 278 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
 static int ble_salve_disconn_cb(struct bt_conn *conn, uint8_t code)
 {
     if (set_adv_enable(
-# 260 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 280 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                       1
-# 260 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 280 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                           )) {
         printf("[BLE] Restart adv fail.\r\n");
     } else {
@@ -9263,9 +9246,9 @@ static int ble_salve_disconn_cb(struct bt_conn *conn, uint8_t code)
 int ble_salve_adv()
 {
     int err = bt_le_adv_start((&(struct bt_le_adv_param) { .options = (BT_LE_ADV_OPT_CONNECTABLE), .interval_min = (0x00a0), .interval_max = (0x00f0), }), salve_adv, ((unsigned long) (((int) sizeof(char[1 - 2 * !(!__builtin_types_compatible_p(__typeof__(salve_adv), __typeof__(&(salve_adv)[0])))]) - 1) + (sizeof(salve_adv) / sizeof((salve_adv)[0])))), 
-# 270 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 290 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                                                                ((void *)0)
-# 270 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 290 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                                                                    , 0);
     if (err) {
         printf("[BLE] adv fail(err %d)\r\n", err);
@@ -9284,9 +9267,9 @@ int ble_adv_start(void)
     aos_msleep(100);
 
     int err = bt_le_adv_start((&(struct bt_le_adv_param) { .options = (BT_LE_ADV_OPT_CONNECTABLE), .interval_min = (0x00a0), .interval_max = (0x00f0), }), salve_adv, ((unsigned long) (((int) sizeof(char[1 - 2 * !(!__builtin_types_compatible_p(__typeof__(salve_adv), __typeof__(&(salve_adv)[0])))]) - 1) + (sizeof(salve_adv) / sizeof((salve_adv)[0])))), 
-# 287 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 307 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                                                                ((void *)0)
-# 287 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 307 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                                                                    , 0);
     if (err) {
         return -1;
@@ -9305,9 +9288,9 @@ static void bt_enable_cb(int err)
     printf("[BLE] bt_enable_cb called with err=%d\r\n", err);
     if (!err) {
         s_ble_enabled = 
-# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                        1
-# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                            ;
         printf("[BLE] BLE stack enabled successfully\r\n");
         bt_addr_le_t bt_addr;
@@ -9323,12 +9306,14 @@ static void bt_enable_cb(int err)
                bt_addr.a.val[2], bt_addr.a.val[1], bt_addr.a.val[0]);
     } else {
         s_ble_enabled = 
-# 318 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 338 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                        0
-# 318 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 338 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                             ;
         printf("[BLE] bt_enable failed: %d\r\n", err);
     }
+
+
 }
 
 void ble_reverse_byte(uint8_t *arr, uint32_t size)
@@ -9344,29 +9329,7 @@ void ble_set_config_done_cb(ble_config_done_cb_t cb)
 {
     config_done_cb = cb;
 }
-
-static void exchange_func(struct bt_conn *conn, u8_t err,
-                          struct bt_gatt_exchange_params *params)
-{
-    if (conn) {
-        printf("[BLE] Exchange %s MTU Size =%d\r\n",
-               err == 0U ? "successful" : "failed",
-               bt_gatt_get_mtu(conn));
-    }
-}
-
-static struct bt_gatt_exchange_params exchange_params;
-
-uint8_t BleSetMtu()
-{
-    if (!conn_cur) {
-        return 1;
-    }
-    exchange_params.func = exchange_func;
-    int ret = bt_gatt_exchange_mtu(conn_cur, &exchange_params);
-    return ret == 0 ? 0 : 1;
-}
-
+# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
 int ble_slave_init()
 {
 
@@ -9383,14 +9346,14 @@ int ble_slave_deinit(void)
 {
     bt_le_adv_stop();
     ble_regist_conn(
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                    ((void *)0)
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                        );
     ble_regist_disconn(
-# 375 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 397 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                       ((void *)0)
-# 375 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 397 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                           );
 
     return 0;
@@ -9402,14 +9365,14 @@ int ble_server_init()
     memset(temp_ssid, 0, sizeof(temp_ssid));
     memset(temp_password, 0, sizeof(temp_password));
     has_ssid = 
-# 385 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 407 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
               0
-# 385 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 407 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                    ;
     has_password = 
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 408 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                   0
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 408 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                        ;
 
 
@@ -9417,9 +9380,9 @@ int ble_server_init()
         printf("[BLE] Service already registered, unregistering first...\r\n");
         bt_gatt_service_unregister(&wifi_config_service);
         s_ble_service_registered = 
-# 392 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 414 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                   0
-# 392 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 414 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                        ;
         aos_msleep(100);
     }
@@ -9440,16 +9403,16 @@ int ble_server_init()
     if (ret) {
         printf("[BLE] Failed to register WiFi config service: %d\r\n", ret);
         s_ble_service_registered = 
-# 411 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 433 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                   0
-# 411 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 433 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                        ;
     } else {
         printf("[BLE] WiFi config service registered\r\n");
         s_ble_service_registered = 
-# 414 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 436 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                   1
-# 414 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 436 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                       ;
     }
     return ret;
@@ -9461,22 +9424,22 @@ int ble_server_deinit(void)
     memset(temp_ssid, 0, sizeof(temp_ssid));
     memset(temp_password, 0, sizeof(temp_password));
     has_ssid = 
-# 424 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
               0
-# 424 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                    ;
     has_password = 
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                   0
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                        ;
 
     if (s_ble_service_registered) {
         int ret = bt_gatt_service_unregister(&wifi_config_service);
         s_ble_service_registered = 
-# 429 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 451 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                   0
-# 429 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 451 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                        ;
         return ret;
     }
@@ -9487,9 +9450,9 @@ void ble_stack_start(void)
 {
 
     s_ble_enabled = 
-# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                    0
-# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                         ;
     printf("[BLE] Resetting BLE enabled flag\r\n");
 
@@ -9513,9 +9476,9 @@ void apps_ble_start()
         printf("[BLE] Warning: BLE still marked as enabled, forcing stop first...\r\n");
 
         s_ble_enabled = 
-# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                        0
-# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                             ;
         aos_msleep(1000);
     }
@@ -9560,22 +9523,22 @@ void apps_ble_stop()
 
 
     s_ble_enabled = 
-# 503 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 525 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                    0
-# 503 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 525 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                         ;
     s_ble_service_registered = 
-# 504 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 526 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                               0
-# 504 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 526 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                    ;
 
     ble_slave_deinit();
 
     bt_conn_foreach(BT_CONN_TYPE_ALL, ble_disconnect_all, 
-# 508 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
+# 530 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c" 3 4
                                                          ((void *)0)
-# 508 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
+# 530 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
                                                              );
 
     int disconn_cnt = 0;

@@ -11955,6 +11955,8 @@ platform_hal_device_init:
 	.string	"pdFREERTOS_ERRNO_ESPIPE 29"
 .LASF166:
 	.string	"__INTPTR_WIDTH__ 32"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1767946142"
 .LASF948:
 	.string	"INT_LEAST64_MIN (-INT_LEAST64_MAX - 1)"
 .LASF957:
@@ -12217,8 +12219,6 @@ platform_hal_device_init:
 	.string	"UINT8_MAX"
 .LASF1123:
 	.string	"configTICK_RATE_HZ ( ( TickType_t ) 1000 )"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1767936880"
 .LASF509:
 	.string	"__END_DECLS }"
 .LASF1212:

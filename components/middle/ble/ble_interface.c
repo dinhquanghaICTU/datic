@@ -16,6 +16,9 @@
 #include "gatt.h"
 
 
+#define BT_ADDR_LE_STR_LEN  30
+
+
 #define WIFI_CONFIG_SERVICE_UUID BT_UUID_DECLARE_128(BT_UUID_128_ENCODE(0x55535343, 0xfe7d, 0x4ae5, 0x8fa9, 0x9fafd205e455))
 
 #define WIFI_CONFIG_CHAR_SSID_UUID BT_UUID_DECLARE_128(BT_UUID_128_ENCODE(0x49535343, 0x8841, 0x43f4, 0xa8d4, 0xecbe34729bb3))
@@ -73,6 +76,22 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     (void)attr;
     (void)flags;
 
+
+
+    bt_addr_le_t *test_mac;
+
+    char addr [BT_ADDR_LE_STR_LEN];
+    test_mac = bt_conn_get_dst(conn);
+    if (!test_mac)
+    {
+        printf(" ===============================================================no seach Mac==================== \r\n"); 
+        return 0;
+    }
+
+    bt_addr_le_to_str(test_mac, addr, sizeof(addr));
+    printf("==========================================Mac : %s==============================\r\n",addr );    
+
+
     if (len == 0) {
         return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
     }
@@ -120,7 +139,6 @@ static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt
         has_password = false;
     }
 
-    
     if (offset + len > WIFI_PASSWORD_MAX_LEN) {
         printf("[BLE] Invalid password length: offset=%d, len=%d, total=%d\r\n", offset, len, offset + len);
         return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
@@ -170,10 +188,9 @@ static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 
 static void _connected(struct bt_conn *conn, u8_t err)
 {
-    
     printf("[BLE] _connected callback called, err=%d\r\n", err);
-    
-    
+
+        
 }
 
 static void _disconnected(struct bt_conn *conn, u8_t reason)
@@ -191,24 +208,24 @@ static bool _le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
     return true;
 }
 
-static void _le_param_updated(struct bt_conn *conn, u16_t interval,
-                              u16_t latency, u16_t timeout)
-{
+// static void _le_param_updated(struct bt_conn *conn, u16_t interval,
+//                               u16_t latency, u16_t timeout)
+// {
     
-}
+// }
 
-static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
-{
+// static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
+// {
     
-}
+// }
 
-static struct bt_conn_cb conn_callbacks = {
-    .connected = _connected,
-    .disconnected = _disconnected,
-    .le_param_req = _le_param_req,
-    .le_param_updated = _le_param_updated,
-    .le_phy_updated = _le_phy_updated,
-};
+// static struct bt_conn_cb conn_callbacks = {
+//     .connected = _connected,
+//     .disconnected = _disconnected,
+//     .le_param_req = _le_param_req,
+//     .le_param_updated = _le_param_updated,
+//     .le_phy_updated = _le_phy_updated,
+// };
 
 static void ble_disconnect_all(struct bt_conn *conn, void *data)
 {
@@ -243,17 +260,20 @@ int ble_regist_disconn(ble_gatt_conn_cb_t cb)
     return 0;
 }
 
-static int ble_salve_conn_cb(struct bt_conn *conn, uint8_t code)
-{
-    struct bt_le_conn_param param = {
-        .interval_min = 24,
-        .interval_max = 24,
-        .latency = 0,
-        .timeout = 600,
-    };
-    bt_conn_le_param_update(conn, &param);
-    return 0;
-}
+// static int ble_salve_conn_cb(struct bt_conn *conn, uint8_t code)
+// {
+//     struct bt_le_conn_param param = {
+//         .interval_min = 24,
+//         .interval_max = 24,
+//         .latency = 0,
+//         .timeout = 600,
+//     };
+//     bt_conn_le_param_update(conn, &param);
+//     return 0;
+
+
+
+// }
 
 static int ble_salve_disconn_cb(struct bt_conn *conn, uint8_t code)
 {
@@ -318,6 +338,8 @@ static void bt_enable_cb(int err)
         s_ble_enabled = false;
         printf("[BLE] bt_enable failed: %d\r\n", err);
     }
+
+    
 }
 
 void ble_reverse_byte(uint8_t *arr, uint32_t size)
@@ -334,27 +356,27 @@ void ble_set_config_done_cb(ble_config_done_cb_t cb)
     config_done_cb = cb;
 }
 
-static void exchange_func(struct bt_conn *conn, u8_t err,
-                          struct bt_gatt_exchange_params *params)
-{
-    if (conn) {
-        printf("[BLE] Exchange %s MTU Size =%d\r\n",
-               err == 0U ? "successful" : "failed",
-               bt_gatt_get_mtu(conn));
-    }
-}
+// static void exchange_func(struct bt_conn *conn, u8_t err,
+//                           struct bt_gatt_exchange_params *params)
+// {
+//     if (conn) {
+//         printf("[BLE] Exchange %s MTU Size =%d\r\n",
+//                err == 0U ? "successful" : "failed",
+//                bt_gatt_get_mtu(conn));
+//     }
+// }
 
-static struct bt_gatt_exchange_params exchange_params;
+// static struct bt_gatt_exchange_params exchange_params;
 
-uint8_t BleSetMtu()
-{
-    if (!conn_cur) {
-        return 1;
-    }
-    exchange_params.func = exchange_func;
-    int ret = bt_gatt_exchange_mtu(conn_cur, &exchange_params);
-    return ret == 0 ? 0 : 1;
-}
+// uint8_t BleSetMtu()
+// {
+//     if (!conn_cur) {
+//         return 1;
+//     }
+//     exchange_params.func = exchange_func;
+//     int ret = bt_gatt_exchange_mtu(conn_cur, &exchange_params);
+//     return ret == 0 ? 0 : 1;
+// }
 
 int ble_slave_init()
 {
