@@ -13,12 +13,11 @@
 app_task_button:
 .LFB6:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
-	.loc 1 43 1
+	.loc 1 45 1
 	.cfi_startproc
 .LVL0:
-	.loc 1 44 5
-	.loc 1 45 5
-	.loc 1 43 1 is_stmt 0
+	.loc 1 46 5
+	.loc 1 45 1 is_stmt 0
 	addi	sp,sp,-64
 	.cfi_def_cfa_offset 64
 	sw	ra,60(sp)
@@ -27,74 +26,74 @@ app_task_button:
 	.cfi_offset 8, -8
 	addi	s0,sp,64
 	.cfi_def_cfa 8, 0
-	.loc 1 48 23
+	.loc 1 49 23
 	li	a5,4
-	.loc 1 45 25
+	.loc 1 46 25
 	sw	zero,-48(s0)
-	.loc 1 46 22
+	.loc 1 47 22
 	sw	zero,-32(s0)
-	.loc 1 48 23
+	.loc 1 49 23
 	sw	a5,-52(s0)
-	.loc 1 49 30
+	.loc 1 50 30
 	li	a5,1
 	sw	a5,-44(s0)
-	.loc 1 52 30
+	.loc 1 53 30
 	sb	a5,-48(s0)
-	.loc 1 55 23
+	.loc 1 56 23
 	sb	a5,-32(s0)
-	.loc 1 56 25
+	.loc 1 57 25
 	lui	a5,%hi(app_get_tick_ms)
-	.loc 1 54 20
+	.loc 1 55 20
 	addi	a4,s0,-52
-	.loc 1 56 25
+	.loc 1 57 25
 	addi	a5,a5,%lo(app_get_tick_ms)
-	.loc 1 60 5
+	.loc 1 61 5
 	li	a2,0
 	li	a1,0
 	li	a0,4
 .LVL1:
-	.loc 1 54 20
+	.loc 1 55 20
 	sw	a4,-36(s0)
-	.loc 1 56 25
+	.loc 1 57 25
 	sw	a5,-28(s0)
-	.loc 1 45 25
+	.loc 1 46 25
 	sw	zero,-40(s0)
-	.loc 1 46 5 is_stmt 1
-	.loc 1 46 22 is_stmt 0
+	.loc 1 47 5 is_stmt 1
+	.loc 1 47 22 is_stmt 0
 	sw	zero,-24(s0)
 	sw	zero,-20(s0)
-	.loc 1 48 5 is_stmt 1
-	.loc 1 49 5
+	.loc 1 49 5 is_stmt 1
 	.loc 1 50 5
 	.loc 1 51 5
 	.loc 1 52 5
-	.loc 1 54 5
+	.loc 1 53 5
 	.loc 1 55 5
 	.loc 1 56 5
 	.loc 1 57 5
 	.loc 1 58 5
-	.loc 1 60 5
+	.loc 1 59 5
+	.loc 1 61 5
 	call	bl_gpio_enable_input
 .LVL2:
-	.loc 1 61 5
-	.loc 1 61 22 is_stmt 0
+	.loc 1 62 5
+	.loc 1 62 22 is_stmt 0
 	lui	a5,%hi(bl_gpio_input_get_value)
 	addi	a5,a5,%lo(bl_gpio_input_get_value)
-	.loc 1 63 5
+	.loc 1 64 5
 	addi	a0,s0,-36
-	.loc 1 61 22
+	.loc 1 62 22
 	sw	a5,-20(s0)
-	.loc 1 63 5 is_stmt 1
+	.loc 1 64 5 is_stmt 1
 	call	app_btn_initialize
 .LVL3:
-	.loc 1 64 5
+	.loc 1 65 5
 	lui	a1,%hi(app_button_hold_callback)
 	li	a2,0
 	addi	a1,a1,%lo(app_button_hold_callback)
 	li	a0,2
 	call	app_btn_register_callback
 .LVL4:
-	.loc 1 65 5
+	.loc 1 66 5
 	lui	a1,%hi(app_button_press_callback)
 	li	a2,0
 	addi	a1,a1,%lo(app_button_press_callback)
@@ -102,16 +101,16 @@ app_task_button:
 	call	app_btn_register_callback
 .LVL5:
 .L2:
-	.loc 1 67 5 discriminator 1
-	.loc 1 68 9 discriminator 1
+	.loc 1 68 5 discriminator 1
+	.loc 1 69 9 discriminator 1
 	li	a0,0
 	call	app_btn_scan
 .LVL6:
-	.loc 1 69 9 discriminator 1
+	.loc 1 70 9 discriminator 1
 	li	a0,20
 	call	aos_msleep
 .LVL7:
-	.loc 1 67 11 discriminator 1
+	.loc 1 68 11 discriminator 1
 	j	.L2
 	.cfi_endproc
 .LFE6:
@@ -121,10 +120,10 @@ app_task_button:
 	.type	app_get_tick_ms, @function
 app_get_tick_ms:
 .LFB4:
-	.loc 1 30 1
+	.loc 1 32 1
 	.cfi_startproc
-	.loc 1 31 5
-	.loc 1 30 1 is_stmt 0
+	.loc 1 33 5
+	.loc 1 32 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -133,10 +132,10 @@ app_get_tick_ms:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 31 12
+	.loc 1 33 12
 	call	aos_now_ms
 .LVL8:
-	.loc 1 32 1
+	.loc 1 34 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -154,12 +153,11 @@ app_get_tick_ms:
 	.type	app_task_led, @function
 app_task_led:
 .LFB7:
-	.loc 1 74 1 is_stmt 1
+	.loc 1 75 1 is_stmt 1
 	.cfi_startproc
 .LVL9:
-	.loc 1 75 5
 	.loc 1 76 5
-	.loc 1 74 1 is_stmt 0
+	.loc 1 75 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -175,7 +173,7 @@ app_task_led:
 	.loc 1 77 5 is_stmt 1
 	.loc 1 78 9
 	.loc 1 78 13 is_stmt 0
-	call	app_wifi_is_connected
+	call	wifi_if_is_connected
 .LVL11:
 	.loc 1 78 12
 	beq	a0,zero,.L8
@@ -209,7 +207,6 @@ app_task_wifi:
 	.cfi_startproc
 .LVL15:
 	.loc 1 90 5
-	.loc 1 91 5
 	.loc 1 89 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
@@ -217,13 +214,13 @@ app_task_wifi:
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 92 1
+	.loc 1 91 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 91 5
+	.loc 1 90 5
 	tail	app_wifi_task
 .LVL16:
 	.cfi_endproc
@@ -245,13 +242,12 @@ app_task_wifi:
 	.type	app_task_main, @function
 app_task_main:
 .LFB9:
-	.loc 1 95 1 is_stmt 1
+	.loc 1 94 1 is_stmt 1
 	.cfi_startproc
 .LVL17:
+	.loc 1 95 5
 	.loc 1 96 5
-	.loc 1 97 5
-	.loc 1 98 5
-	.loc 1 95 1 is_stmt 0
+	.loc 1 94 1 is_stmt 0
 	addi	sp,sp,-160
 	.cfi_def_cfa_offset 160
 	sw	ra,156(sp)
@@ -274,199 +270,199 @@ app_task_main:
 	.cfi_offset 21, -28
 	.cfi_offset 22, -32
 	.cfi_offset 23, -36
-	.loc 1 98 17
+	.loc 1 96 17
 	sw	zero,-156(s0)
 	sw	zero,-152(s0)
-	.loc 1 99 5 is_stmt 1
-	.loc 1 100 5
+	.loc 1 97 5 is_stmt 1
+	.loc 1 98 5
 	call	app_state_init
 .LVL18:
-	.loc 1 101 5
+	.loc 1 99 5
 	call	app_mqtt_init
 .LVL19:
 .LBB2:
+	.loc 1 102 9
+	.loc 1 103 9
 	.loc 1 104 9
-	.loc 1 105 9
-	.loc 1 106 9
-	.loc 1 108 13 is_stmt 0
+	.loc 1 106 13 is_stmt 0
 	addi	a1,s0,-148
 	addi	a0,s0,-157
-	.loc 1 106 17
+	.loc 1 104 17
 	sb	zero,-157(s0)
-	.loc 1 107 8 is_stmt 1
-	.loc 1 107 13 is_stmt 0
+	.loc 1 105 8 is_stmt 1
+	.loc 1 105 13 is_stmt 0
 	sb	zero,-148(s0)
-	.loc 1 108 9 is_stmt 1
-	.loc 1 108 13 is_stmt 0
+	.loc 1 106 9 is_stmt 1
+	.loc 1 106 13 is_stmt 0
 	call	app_config_load_relay_settings
 .LVL20:
-	.loc 1 108 12
+	.loc 1 106 12
 	bne	a0,zero,.L15
-	.loc 1 109 13 is_stmt 1
-	.loc 1 109 16 is_stmt 0
+	.loc 1 107 13 is_stmt 1
+	.loc 1 107 16 is_stmt 0
 	lbu	a5,-157(s0)
 	beq	a5,zero,.L16
-	.loc 1 110 17 is_stmt 1
+	.loc 1 108 17 is_stmt 1
 	call	relay_on
 .LVL21:
 .L17:
-	.loc 1 114 13
+	.loc 1 112 13
 	lbu	a0,-148(s0)
 	call	app_callback_update_lock_button
 .LVL22:
 .L15:
 .LBE2:
-	.loc 1 118 5
-	.loc 1 119 5 is_stmt 0
+	.loc 1 116 5
+	.loc 1 117 5 is_stmt 0
 	addi	a0,s0,-156
-	.loc 1 118 16
+	.loc 1 116 16
 	sw	zero,-156(s0)
-	.loc 1 119 5 is_stmt 1
-	.loc 1 122 11 is_stmt 0
+	.loc 1 117 5 is_stmt 1
+	.loc 1 120 11 is_stmt 0
 	li	s1,101
-	.loc 1 119 5
+	.loc 1 117 5
 	call	app_state_process_event
 .LVL23:
-	.loc 1 121 5 is_stmt 1
-	.loc 1 122 5
+	.loc 1 119 5 is_stmt 1
+	.loc 1 120 5
 .L18:
-	.loc 1 122 11
-	.loc 1 122 13 is_stmt 0
-	call	app_wifi_is_mgmr_ready
+	.loc 1 120 11
+	.loc 1 120 13 is_stmt 0
+	call	wifi_if_is_mgmr_ready
 .LVL24:
-	.loc 1 122 11
+	.loc 1 120 11
 	bne	a0,zero,.L19
-	.loc 1 122 38 discriminator 1
+	.loc 1 120 37 discriminator 1
 	addi	s1,s1,-1
 .LVL25:
 	bne	s1,zero,.L20
 .LVL26:
 .L19:
-	.loc 1 127 5 is_stmt 1
-	.loc 1 127 9 is_stmt 0
-	call	app_wifi_is_mgmr_ready
+	.loc 1 125 5 is_stmt 1
+	.loc 1 125 9 is_stmt 0
+	call	wifi_if_is_mgmr_ready
 .LVL27:
-	.loc 1 127 8
+	.loc 1 125 8
 	beq	a0,zero,.L21
-	.loc 1 128 9 is_stmt 1
-	.loc 1 128 13 is_stmt 0
+	.loc 1 126 9 is_stmt 1
+	.loc 1 126 13 is_stmt 0
 	call	app_config_has_wifi
 .LVL28:
-	.loc 1 128 12
+	.loc 1 126 12
 	beq	a0,zero,.L22
-	.loc 1 129 13 is_stmt 1
-	.loc 1 129 17 is_stmt 0
+	.loc 1 127 13 is_stmt 1
+	.loc 1 127 17 is_stmt 0
 	addi	a0,s0,-148
 	call	app_config_load_wifi
 .LVL29:
-	.loc 1 129 16
+	.loc 1 127 16
 	bne	a0,zero,.L22
-	.loc 1 130 17 is_stmt 1
+	.loc 1 128 17 is_stmt 1
 	li	a0,3
 	call	app_state_set_next
 .LVL30:
-	.loc 1 131 17
-	.loc 1 132 17 is_stmt 0
+	.loc 1 129 17
+	.loc 1 130 17 is_stmt 0
 	addi	a0,s0,-156
-	.loc 1 131 28
+	.loc 1 129 28
 	sw	zero,-156(s0)
-	.loc 1 132 17 is_stmt 1
+	.loc 1 130 17 is_stmt 1
 	call	app_state_process_event
 .LVL31:
-	.loc 1 133 17
+	.loc 1 131 17
 	addi	a1,s0,-115
 	addi	a0,s0,-148
 	call	app_wifi_connect
 .LVL32:
 .L21:
 .LBB3:
-	.loc 1 152 19 is_stmt 0
+	.loc 1 150 19 is_stmt 0
 	lui	s5,%hi(g_event_queue)
 .LBB4:
-	.loc 1 183 17
+	.loc 1 181 17
 	lui	s2,%hi(.LC0)
 	lui	s3,%hi(.LC1)
 .LBE4:
-	.loc 1 151 32
+	.loc 1 149 32
 	lui	s6,%hi(g_event_queue_head)
 	lui	s7,%hi(g_event_queue_tail)
-	.loc 1 152 19
+	.loc 1 150 19
 	addi	s5,s5,%lo(g_event_queue)
 .LBB5:
-	.loc 1 183 17
+	.loc 1 181 17
 	addi	s2,s2,%lo(.LC0)
 	addi	s3,s3,%lo(.LC1)
 .L44:
 .LBE5:
 .LBE3:
-	.loc 1 146 5 is_stmt 1
+	.loc 1 144 5 is_stmt 1
 .LBB11:
+	.loc 1 145 9
+	.loc 1 146 9
 	.loc 1 147 9
-	.loc 1 148 9
 	.loc 1 149 9
-	.loc 1 151 9
-	.loc 1 151 32 is_stmt 0
+	.loc 1 149 32 is_stmt 0
 	lw	a5,%lo(g_event_queue_head)(s6)
-	.loc 1 151 12
+	.loc 1 149 12
 	lw	a4,%lo(g_event_queue_tail)(s7)
 	beq	a5,a4,.L23
-	.loc 1 152 13 is_stmt 1
-	.loc 1 152 19 is_stmt 0
+	.loc 1 150 13 is_stmt 1
+	.loc 1 150 19 is_stmt 0
 	slli	a4,a5,3
 	add	a4,s5,a4
 	lw	a3,0(a4)
 	lw	a4,4(a4)
-	.loc 1 153 54
+	.loc 1 151 54
 	addi	a5,a5,1
-	.loc 1 152 19
+	.loc 1 150 19
 	sw	a3,-156(s0)
 	sw	a4,-152(s0)
-	.loc 1 153 13 is_stmt 1
-	.loc 1 153 59 is_stmt 0
+	.loc 1 151 13 is_stmt 1
+	.loc 1 151 59 is_stmt 0
 	li	a4,10
 	rem	a5,a5,a4
-	.loc 1 153 32
+	.loc 1 151 32
 	sw	a5,%lo(g_event_queue_head)(s6)
 .L24:
-	.loc 1 159 9 is_stmt 1
-	.loc 1 159 37 is_stmt 0
+	.loc 1 157 9 is_stmt 1
+	.loc 1 157 37 is_stmt 0
 	call	app_state_get_current
 .LVL33:
-	.loc 1 161 18
+	.loc 1 159 18
 	lw	a5,-156(s0)
-	.loc 1 161 12
+	.loc 1 159 12
 	li	a4,8
-	.loc 1 159 37
+	.loc 1 157 37
 	mv	s1,a0
 .LVL34:
-	.loc 1 161 9 is_stmt 1
-	.loc 1 161 12 is_stmt 0
+	.loc 1 159 9 is_stmt 1
+	.loc 1 159 12 is_stmt 0
 	bne	a5,a4,.L25
-	.loc 1 162 13 is_stmt 1
+	.loc 1 160 13 is_stmt 1
 	call	relay_toggle
 .LVL35:
-	.loc 1 163 13
+	.loc 1 161 13
 .L81:
-	.loc 1 181 13
-	.loc 1 181 17 is_stmt 0
-	call	app_mqtt_is_connected
+	.loc 1 179 13
+	.loc 1 179 17 is_stmt 0
+	call	mqtt_if_is_connected
 .LVL36:
-	.loc 1 181 16
+	.loc 1 179 16
 	beq	a0,zero,.L27
 .LBB6:
-	.loc 1 182 17 is_stmt 1
-	.loc 1 182 39 is_stmt 0
+	.loc 1 180 17 is_stmt 1
+	.loc 1 180 39 is_stmt 0
 	call	relay_get_state
 .LVL37:
-	.loc 1 183 17 is_stmt 1
+	.loc 1 181 17 is_stmt 1
 	mv	a5,s2
 	bne	a0,zero,.L28
 .LBE6:
 .LBB7:
-	.loc 1 165 17 is_stmt 0
+	.loc 1 163 17 is_stmt 0
 	mv	a5,s3
 .L28:
-	.loc 1 165 17 discriminator 4
+	.loc 1 163 17 discriminator 4
 	mv	a0,a5
 .LVL38:
 .L75:
@@ -474,11 +470,11 @@ app_task_main:
 .LVL39:
 .L27:
 .LBE7:
-	.loc 1 167 13 is_stmt 1
-	.loc 1 167 24 is_stmt 0
+	.loc 1 165 13 is_stmt 1
+	.loc 1 165 24 is_stmt 0
 	sw	zero,-156(s0)
 .L29:
-	.loc 1 188 9 is_stmt 1
+	.loc 1 186 9 is_stmt 1
 	li	a5,4
 	beq	s1,a5,.L34
 	bgtu	s1,a5,.L35
@@ -489,226 +485,226 @@ app_task_main:
 	beq	s1,a5,.L37
 .LVL40:
 .L38:
-	.loc 1 236 9
+	.loc 1 234 9
 	li	a0,100
 	call	aos_msleep
 .LVL41:
 .LBE11:
-	.loc 1 146 11
-	.loc 1 146 15 is_stmt 0
+	.loc 1 144 11
+	.loc 1 144 15 is_stmt 0
 	j	.L44
 .L16:
 .LBB12:
-	.loc 1 112 17 is_stmt 1
+	.loc 1 110 17 is_stmt 1
 	call	relay_off
 .LVL42:
 	j	.L17
 .LVL43:
 .L20:
 .LBE12:
-	.loc 1 123 9
+	.loc 1 121 9
 	li	a0,100
 	call	aos_msleep
 .LVL44:
-	.loc 1 124 9
+	.loc 1 122 9
 	j	.L18
 .LVL45:
 .L22:
-	.loc 1 135 17
+	.loc 1 133 17
 	li	a0,1
 	call	app_state_set_next
 .LVL46:
-	.loc 1 136 17
-	.loc 1 137 17 is_stmt 0
+	.loc 1 134 17
+	.loc 1 135 17 is_stmt 0
 	addi	a0,s0,-156
-	.loc 1 136 28
+	.loc 1 134 28
 	sw	zero,-156(s0)
-	.loc 1 137 17 is_stmt 1
+	.loc 1 135 17 is_stmt 1
 	call	app_state_process_event
 .LVL47:
 	j	.L21
 .L23:
 .LBB13:
-	.loc 1 155 13
-	.loc 1 155 24 is_stmt 0
+	.loc 1 153 13
+	.loc 1 153 24 is_stmt 0
 	sw	zero,-156(s0)
-	.loc 1 156 13 is_stmt 1
-	.loc 1 156 24 is_stmt 0
+	.loc 1 154 13 is_stmt 1
+	.loc 1 154 24 is_stmt 0
 	sw	zero,-152(s0)
 	j	.L24
 .LVL48:
 .L25:
-	.loc 1 168 16 is_stmt 1
-	.loc 1 168 19 is_stmt 0
+	.loc 1 166 16 is_stmt 1
+	.loc 1 166 19 is_stmt 0
 	li	a4,9
 	bne	a5,a4,.L30
-	.loc 1 169 13 is_stmt 1
+	.loc 1 167 13 is_stmt 1
 	call	relay_on
 .LVL49:
-	.loc 1 170 13
-	.loc 1 170 17 is_stmt 0
-	call	app_mqtt_is_connected
+	.loc 1 168 13
+	.loc 1 168 17 is_stmt 0
+	call	mqtt_if_is_connected
 .LVL50:
-	.loc 1 170 16
+	.loc 1 168 16
 	beq	a0,zero,.L27
-	.loc 1 171 17 is_stmt 1
+	.loc 1 169 17 is_stmt 1
 	mv	a0,s2
 	j	.L75
 .L30:
-	.loc 1 174 16
-	.loc 1 174 19 is_stmt 0
+	.loc 1 172 16
+	.loc 1 172 19 is_stmt 0
 	li	a4,10
 	bne	a5,a4,.L32
-	.loc 1 175 13 is_stmt 1
+	.loc 1 173 13 is_stmt 1
 	call	relay_off
 .LVL51:
-	.loc 1 176 13
-	.loc 1 176 17 is_stmt 0
-	call	app_mqtt_is_connected
+	.loc 1 174 13
+	.loc 1 174 17 is_stmt 0
+	call	mqtt_if_is_connected
 .LVL52:
-	.loc 1 176 16
+	.loc 1 174 16
 	beq	a0,zero,.L27
-	.loc 1 177 17 is_stmt 1
+	.loc 1 175 17 is_stmt 1
 	mv	a0,s3
 	j	.L75
 .L32:
-	.loc 1 180 16
-	.loc 1 180 19 is_stmt 0
+	.loc 1 178 16
+	.loc 1 178 19 is_stmt 0
 	li	a4,11
 	bne	a5,a4,.L29
 	j	.L81
 .L35:
-	.loc 1 188 9
+	.loc 1 186 9
 	li	a5,5
 	j	.L77
 .L36:
-	.loc 1 192 17 is_stmt 1
-	.loc 1 192 22 is_stmt 0
+	.loc 1 190 17 is_stmt 1
+	.loc 1 190 22 is_stmt 0
 	call	app_ble_is_running
 .LVL53:
-	.loc 1 192 20
+	.loc 1 190 20
 	bne	a0,zero,.L38
-	.loc 1 193 21 is_stmt 1
+	.loc 1 191 21 is_stmt 1
 	li	a0,200
 	call	aos_msleep
 .LVL54:
-	.loc 1 194 21
+	.loc 1 192 21
 	call	app_ble_start
 .LVL55:
 	j	.L38
 .L37:
-	.loc 1 198 17
-	.loc 1 198 21 is_stmt 0
+	.loc 1 196 17
+	.loc 1 196 21 is_stmt 0
 	call	app_ble_is_running
 .LVL56:
-	.loc 1 198 20
+	.loc 1 196 20
 	beq	a0,zero,.L38
-	.loc 1 199 21 is_stmt 1
+	.loc 1 197 21 is_stmt 1
 	call	app_ble_stop
 .LVL57:
 	j	.L38
 .L34:
-	.loc 1 203 17
-	.loc 1 203 21 is_stmt 0
+	.loc 1 201 17
+	.loc 1 201 21 is_stmt 0
 	call	app_ble_is_running
 .LVL58:
-	.loc 1 203 20
+	.loc 1 201 20
 	beq	a0,zero,.L41
-	.loc 1 204 21 is_stmt 1
+	.loc 1 202 21 is_stmt 1
 	call	app_ble_stop
 .LVL59:
 .L41:
 .LBB8:
+	.loc 1 205 21
+	.loc 1 206 21
 	.loc 1 207 21
-	.loc 1 208 21
-	.loc 1 209 21
-	.loc 1 209 36 is_stmt 0
+	.loc 1 207 36 is_stmt 0
 	call	aos_now_ms
 .LVL60:
 	mv	s1,a0
 .LVL61:
-	.loc 1 211 21 is_stmt 1
-	.loc 1 211 26 is_stmt 0
-	call	app_mqtt_is_connected
+	.loc 1 209 21 is_stmt 1
+	.loc 1 209 26 is_stmt 0
+	call	mqtt_if_is_connected
 .LVL62:
-	.loc 1 211 24
+	.loc 1 209 24
 	bne	a0,zero,.L42
-	.loc 1 211 53 discriminator 1
+	.loc 1 209 52 discriminator 1
 	lui	s4,%hi(.LANCHOR0)
 	addi	s4,s4,%lo(.LANCHOR0)
-	.loc 1 211 50 discriminator 1
+	.loc 1 209 49 discriminator 1
 	lbu	a5,0(s4)
 	bne	a5,zero,.L42
 .LBB9:
-	.loc 1 212 25 is_stmt 1
+	.loc 1 210 25 is_stmt 1
 .LVL63:
-	.loc 1 213 25
+	.loc 1 211 25
 	lui	a0,%hi(.LC2)
 	li	a2,0
 	li	a1,1883
 	addi	a0,a0,%lo(.LC2)
 	call	app_mqtt_start
 .LVL64:
-	.loc 1 214 25
-	.loc 1 214 48 is_stmt 0
+	.loc 1 212 25
+	.loc 1 212 48 is_stmt 0
 	li	a5,1
 	sb	a5,0(s4)
-	.loc 1 215 25 is_stmt 1
-	.loc 1 215 43 is_stmt 0
+	.loc 1 213 25 is_stmt 1
+	.loc 1 213 43 is_stmt 0
 	lui	a5,%hi(.LANCHOR1)
 	sw	s1,%lo(.LANCHOR1)(a5)
 .LBE9:
-	.loc 1 211 78
+	.loc 1 209 77
 	j	.L38
 .LVL65:
 .L42:
-	.loc 1 216 28 is_stmt 1
-	.loc 1 216 33 is_stmt 0
-	call	app_mqtt_is_connected
+	.loc 1 214 28 is_stmt 1
+	.loc 1 214 33 is_stmt 0
+	call	mqtt_if_is_connected
 .LVL66:
-	.loc 1 216 31
+	.loc 1 214 31
 	bne	a0,zero,.L43
-	.loc 1 216 57 discriminator 1
+	.loc 1 214 56 discriminator 1
 	lui	a5,%hi(.LANCHOR0)
 	lbu	a5,%lo(.LANCHOR0)(a5)
 	beq	a5,zero,.L43
-	.loc 1 217 25 is_stmt 1
-	.loc 1 217 33 is_stmt 0
+	.loc 1 215 25 is_stmt 1
+	.loc 1 215 33 is_stmt 0
 	lui	s4,%hi(.LANCHOR1)
 	addi	s4,s4,%lo(.LANCHOR1)
 	lw	a4,0(s4)
-	.loc 1 217 28
+	.loc 1 215 28
 	li	a5,8192
 	addi	a5,a5,1808
-	.loc 1 217 33
+	.loc 1 215 33
 	sub	a4,s1,a4
-	.loc 1 217 28
+	.loc 1 215 28
 	bleu	a4,a5,.L38
 .LBB10:
-	.loc 1 218 29 is_stmt 1
+	.loc 1 216 29 is_stmt 1
 .LVL67:
-	.loc 1 219 29
+	.loc 1 217 29
 	lui	a0,%hi(.LC2)
 	li	a2,0
 	li	a1,1883
 	addi	a0,a0,%lo(.LC2)
 	call	app_mqtt_start
 .LVL68:
-	.loc 1 220 29
-	.loc 1 220 47 is_stmt 0
+	.loc 1 218 29
+	.loc 1 218 47 is_stmt 0
 	sw	s1,0(s4)
 	j	.L38
 .LVL69:
 .L43:
 .LBE10:
-	.loc 1 222 28 is_stmt 1
-	.loc 1 222 32 is_stmt 0
-	call	app_mqtt_is_connected
+	.loc 1 220 28 is_stmt 1
+	.loc 1 220 32 is_stmt 0
+	call	mqtt_if_is_connected
 .LVL70:
-	.loc 1 222 31
+	.loc 1 220 31
 	beq	a0,zero,.L38
-	.loc 1 223 25 is_stmt 1
-	.loc 1 223 48 is_stmt 0
+	.loc 1 221 25 is_stmt 1
+	.loc 1 221 48 is_stmt 0
 	lui	a5,%hi(.LANCHOR0)
 	sb	zero,%lo(.LANCHOR0)(a5)
 	j	.L38
@@ -736,27 +732,27 @@ app_task_main:
 	.type	app_task_init, @function
 app_task_init:
 .LFB5:
-	.loc 1 35 1 is_stmt 1
+	.loc 1 37 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 36 5
-	.loc 1 35 1 is_stmt 0
+	.loc 1 38 5
+	.loc 1 37 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
 	sw	s0,8(sp)
-	.loc 1 36 5
+	.loc 1 38 5
 	lui	a5,%hi(.LANCHOR2)
 	.cfi_offset 1, -4
 	.cfi_offset 8, -8
-	.loc 1 35 1
+	.loc 1 37 1
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 36 5
+	.loc 1 38 5
 	li	a2,4096
 	lui	a1,%hi(.LC3)
 	lui	a0,%hi(app_task_button)
-	.loc 1 35 1
-	.loc 1 36 5
+	.loc 1 37 1
+	.loc 1 38 5
 	addi	a5,a5,%lo(.LANCHOR2)
 	li	a4,5
 	li	a3,0
@@ -765,7 +761,7 @@ app_task_init:
 	addi	a0,a0,%lo(app_task_button)
 	call	xTaskCreate
 .LVL71:
-	.loc 1 37 5 is_stmt 1
+	.loc 1 39 5 is_stmt 1
 	lui	a5,%hi(.LANCHOR3)
 	lui	a1,%hi(.LC4)
 	lui	a0,%hi(app_task_led)
@@ -777,7 +773,7 @@ app_task_init:
 	addi	a0,a0,%lo(app_task_led)
 	call	xTaskCreate
 .LVL72:
-	.loc 1 38 5
+	.loc 1 40 5
 	lui	a5,%hi(.LANCHOR4)
 	lui	a1,%hi(.LC5)
 	lui	a0,%hi(app_task_wifi)
@@ -789,29 +785,29 @@ app_task_init:
 	addi	a0,a0,%lo(app_task_wifi)
 	call	xTaskCreate
 .LVL73:
-	.loc 1 39 5
-	.loc 1 40 1 is_stmt 0
+	.loc 1 41 5
+	.loc 1 42 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 39 5
+	.loc 1 41 5
 	lui	a5,%hi(.LANCHOR5)
 	lui	a1,%hi(.LC6)
 	lui	a0,%hi(app_task_main)
-	.loc 1 40 1
-	.loc 1 39 5
+	.loc 1 42 1
+	.loc 1 41 5
 	addi	a5,a5,%lo(.LANCHOR5)
 	li	a4,2
 	li	a3,0
 	li	a2,4096
 	addi	a1,a1,%lo(.LC6)
 	addi	a0,a0,%lo(app_task_main)
-	.loc 1 40 1
+	.loc 1 42 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 39 5
+	.loc 1 41 5
 	tail	xTaskCreate
 .LVL74:
 	.cfi_endproc
@@ -823,18 +819,18 @@ app_task_init:
 	.type	app_set_led_blink, @function
 app_set_led_blink:
 .LFB10:
-	.loc 1 241 1 is_stmt 1
+	.loc 1 239 1 is_stmt 1
 	.cfi_startproc
 .LVL75:
-	.loc 1 242 5
-	.loc 1 241 1 is_stmt 0
+	.loc 1 240 5
+	.loc 1 239 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 243 1
+	.loc 1 241 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -895,17 +891,19 @@ g_btn_filter_cnt:
 .Letext0:
 	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_callback/../app_event/app_event.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_wifi/../app_config/app_config.h"
+	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_event/app_event.h"
+	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_config/app_config.h"
 	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_state/app_state.h"
 	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../third_party/lib_button/app_btn.h"
 	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/relay/relay.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_mqtt/app_mqtt.h"
+	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h"
 	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_ble/app_ble.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_wifi/app_wifi.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/led/led.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/mqtt_if/mqtt_if.h"
+	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble.h"
+	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/wifi_if/wifi_if.h"
+	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_wifi.h"
+	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/led/led.h"
+	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xbab
@@ -1344,7 +1342,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF66
 	.byte	0x1
-	.byte	0x16
+	.byte	0x18
 	.byte	0x15
 	.4byte	0x97
 	.byte	0x5
@@ -1353,7 +1351,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF67
 	.byte	0x1
-	.byte	0x17
+	.byte	0x19
 	.byte	0x15
 	.4byte	0x97
 	.byte	0x5
@@ -1362,7 +1360,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x18
+	.byte	0x1a
 	.byte	0x15
 	.4byte	0x97
 	.byte	0x5
@@ -1371,7 +1369,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF69
 	.byte	0x1
-	.byte	0x19
+	.byte	0x1b
 	.byte	0x15
 	.4byte	0x97
 	.byte	0x5
@@ -1380,13 +1378,13 @@ g_btn_filter_cnt:
 	.byte	0x15
 	.4byte	.LASF84
 	.byte	0x1
-	.byte	0x1a
+	.byte	0x1c
 	.byte	0xc
 	.4byte	0x19e
 	.byte	0x16
 	.4byte	.LASF79
 	.byte	0x1
-	.byte	0x1b
+	.byte	0x1d
 	.byte	0x9
 	.4byte	0x41
 	.byte	0x5
@@ -1395,7 +1393,7 @@ g_btn_filter_cnt:
 	.byte	0x17
 	.4byte	.LASF70
 	.byte	0x1
-	.byte	0xf0
+	.byte	0xee
 	.byte	0x6
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
@@ -1405,7 +1403,7 @@ g_btn_filter_cnt:
 	.byte	0x18
 	.4byte	.LASF72
 	.byte	0x1
-	.byte	0xf0
+	.byte	0xee
 	.byte	0x1c
 	.4byte	0x19e
 	.byte	0x1
@@ -1414,7 +1412,7 @@ g_btn_filter_cnt:
 	.byte	0x17
 	.4byte	.LASF71
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x5d
 	.byte	0x6
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
@@ -1424,14 +1422,14 @@ g_btn_filter_cnt:
 	.byte	0x19
 	.4byte	.LASF73
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x5d
 	.byte	0x1a
 	.4byte	0x83
 	.4byte	.LLST3
 	.byte	0x14
 	.4byte	.LASF74
 	.byte	0x1
-	.byte	0x61
+	.byte	0x5f
 	.byte	0x13
 	.4byte	0x1a5
 	.byte	0x3
@@ -1440,7 +1438,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF75
 	.byte	0x1
-	.byte	0x62
+	.byte	0x60
 	.byte	0x11
 	.4byte	0x141
 	.byte	0x3
@@ -1449,7 +1447,7 @@ g_btn_filter_cnt:
 	.byte	0x1a
 	.4byte	.LASF76
 	.byte	0x1
-	.byte	0x79
+	.byte	0x77
 	.byte	0x9
 	.4byte	0x75
 	.4byte	.LLST4
@@ -1459,7 +1457,7 @@ g_btn_filter_cnt:
 	.byte	0x1c
 	.4byte	.LASF95
 	.byte	0x1
-	.byte	0x68
+	.byte	0x66
 	.byte	0x14
 	.4byte	0x75
 	.4byte	0x449
@@ -1471,7 +1469,7 @@ g_btn_filter_cnt:
 	.byte	0x1d
 	.4byte	.LASF97
 	.byte	0x1
-	.byte	0x69
+	.byte	0x67
 	.byte	0x15
 	.4byte	0x45b
 	.byte	0x12
@@ -1480,7 +1478,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF77
 	.byte	0x1
-	.byte	0x6a
+	.byte	0x68
 	.byte	0x11
 	.4byte	0x41
 	.byte	0x3
@@ -1489,7 +1487,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF78
 	.byte	0x1
-	.byte	0x6b
+	.byte	0x69
 	.byte	0xd
 	.4byte	0x19e
 	.byte	0x3
@@ -1528,25 +1526,25 @@ g_btn_filter_cnt:
 	.byte	0x21
 	.4byte	.LASF80
 	.byte	0x1
-	.byte	0x93
+	.byte	0x91
 	.byte	0x1c
 	.4byte	0x78c
 	.byte	0x21
 	.4byte	.LASF81
 	.byte	0x1
-	.byte	0x94
+	.byte	0x92
 	.byte	0x14
 	.4byte	0x75
 	.byte	0x21
 	.4byte	.LASF82
 	.byte	0x1
-	.byte	0x95
+	.byte	0x93
 	.byte	0x14
 	.4byte	0x75
 	.byte	0x1a
 	.4byte	.LASF83
 	.byte	0x1
-	.byte	0x9f
+	.byte	0x9d
 	.byte	0x15
 	.4byte	0x1ea
 	.4byte	.LLST5
@@ -1557,7 +1555,7 @@ g_btn_filter_cnt:
 	.byte	0x15
 	.4byte	.LASF85
 	.byte	0x1
-	.byte	0xa4
+	.byte	0xa2
 	.byte	0x19
 	.4byte	0x41
 	.byte	0x20
@@ -1570,7 +1568,7 @@ g_btn_filter_cnt:
 	.byte	0x1a
 	.4byte	.LASF85
 	.byte	0x1
-	.byte	0xb6
+	.byte	0xb4
 	.byte	0x19
 	.4byte	0x41
 	.4byte	.LLST6
@@ -1585,7 +1583,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF86
 	.byte	0x1
-	.byte	0xcf
+	.byte	0xcd
 	.byte	0x20
 	.4byte	0x19e
 	.byte	0x5
@@ -1594,7 +1592,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF87
 	.byte	0x1
-	.byte	0xd0
+	.byte	0xce
 	.byte	0x25
 	.4byte	0x5b
 	.byte	0x5
@@ -1603,7 +1601,7 @@ g_btn_filter_cnt:
 	.byte	0x23
 	.string	"now"
 	.byte	0x1
-	.byte	0xd1
+	.byte	0xcf
 	.byte	0x1e
 	.4byte	0x5b
 	.byte	0x1
@@ -1615,7 +1613,7 @@ g_btn_filter_cnt:
 	.byte	0x1a
 	.4byte	.LASF88
 	.byte	0x1
-	.byte	0xd4
+	.byte	0xd2
 	.byte	0x25
 	.4byte	0xae
 	.4byte	.LLST7
@@ -1648,7 +1646,7 @@ g_btn_filter_cnt:
 	.byte	0x1a
 	.4byte	.LASF88
 	.byte	0x1
-	.byte	0xda
+	.byte	0xd8
 	.byte	0x29
 	.4byte	0xae
 	.4byte	.LLST8
@@ -1898,7 +1896,7 @@ g_btn_filter_cnt:
 	.byte	0x17
 	.4byte	.LASF90
 	.byte	0x1
-	.byte	0x49
+	.byte	0x4a
 	.byte	0x6
 	.4byte	.LFB7
 	.4byte	.LFE7-.LFB7
@@ -1908,7 +1906,7 @@ g_btn_filter_cnt:
 	.byte	0x19
 	.4byte	.LASF73
 	.byte	0x1
-	.byte	0x49
+	.byte	0x4a
 	.byte	0x19
 	.4byte	0x83
 	.4byte	.LLST1
@@ -1931,7 +1929,7 @@ g_btn_filter_cnt:
 	.byte	0x17
 	.4byte	.LASF91
 	.byte	0x1
-	.byte	0x2a
+	.byte	0x2c
 	.byte	0x6
 	.4byte	.LFB6
 	.4byte	.LFE6-.LFB6
@@ -1941,14 +1939,14 @@ g_btn_filter_cnt:
 	.byte	0x19
 	.4byte	.LASF73
 	.byte	0x1
-	.byte	0x2a
+	.byte	0x2c
 	.byte	0x1c
 	.4byte	0x83
 	.4byte	.LLST0
 	.byte	0x14
 	.4byte	.LASF92
 	.byte	0x1
-	.byte	0x2d
+	.byte	0x2e
 	.byte	0x19
 	.4byte	0x8f0
 	.byte	0x2
@@ -1957,7 +1955,7 @@ g_btn_filter_cnt:
 	.byte	0x14
 	.4byte	.LASF93
 	.byte	0x1
-	.byte	0x2e
+	.byte	0x2f
 	.byte	0x16
 	.4byte	0x338
 	.byte	0x2
@@ -2054,7 +2052,7 @@ g_btn_filter_cnt:
 	.byte	0x17
 	.4byte	.LASF94
 	.byte	0x1
-	.byte	0x22
+	.byte	0x24
 	.byte	0x6
 	.4byte	.LFB5
 	.4byte	.LFE5-.LFB5
@@ -2220,7 +2218,7 @@ g_btn_filter_cnt:
 	.byte	0x26
 	.4byte	.LASF132
 	.byte	0x1
-	.byte	0x1d
+	.byte	0x1f
 	.byte	0x11
 	.4byte	0x5b
 	.4byte	.LFB4
@@ -2236,7 +2234,7 @@ g_btn_filter_cnt:
 	.4byte	.LASF95
 	.4byte	.LASF95
 	.byte	0x1
-	.byte	0x68
+	.byte	0x66
 	.byte	0x14
 	.byte	0x27
 	.4byte	.LASF96
@@ -2248,7 +2246,7 @@ g_btn_filter_cnt:
 	.4byte	.LASF97
 	.4byte	.LASF97
 	.byte	0x1
-	.byte	0x69
+	.byte	0x67
 	.byte	0x15
 	.byte	0x27
 	.4byte	.LASF98
@@ -2283,8 +2281,8 @@ g_btn_filter_cnt:
 	.byte	0x27
 	.4byte	.LASF103
 	.4byte	.LASF103
-	.byte	0x9
-	.byte	0x10
+	.byte	0xb
+	.byte	0x22
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF104
@@ -2307,19 +2305,19 @@ g_btn_filter_cnt:
 	.byte	0x27
 	.4byte	.LASF107
 	.4byte	.LASF107
-	.byte	0xb
+	.byte	0xc
 	.byte	0x11
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF108
 	.4byte	.LASF108
-	.byte	0xb
+	.byte	0xc
 	.byte	0xf
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF109
 	.4byte	.LASF109
-	.byte	0xb
+	.byte	0xc
 	.byte	0x10
 	.byte	0x5
 	.byte	0x27
@@ -2343,8 +2341,8 @@ g_btn_filter_cnt:
 	.byte	0x27
 	.4byte	.LASF113
 	.4byte	.LASF113
-	.byte	0xc
-	.byte	0x12
+	.byte	0xd
+	.byte	0x10
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF114
@@ -2367,43 +2365,43 @@ g_btn_filter_cnt:
 	.byte	0x27
 	.4byte	.LASF117
 	.4byte	.LASF117
-	.byte	0xc
+	.byte	0xe
 	.byte	0xd
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF118
 	.4byte	.LASF118
-	.byte	0xc
+	.byte	0xe
 	.byte	0x16
 	.byte	0x6
 	.byte	0x27
 	.4byte	.LASF119
 	.4byte	.LASF119
-	.byte	0xd
+	.byte	0xf
 	.byte	0x5
 	.byte	0x6
 	.byte	0x27
 	.4byte	.LASF120
 	.4byte	.LASF120
-	.byte	0xc
-	.byte	0x11
+	.byte	0xd
+	.byte	0xf
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF121
 	.4byte	.LASF121
-	.byte	0xd
+	.byte	0xf
 	.byte	0x6
 	.byte	0x6
 	.byte	0x27
 	.4byte	.LASF122
 	.4byte	.LASF122
-	.byte	0xd
+	.byte	0xf
 	.byte	0x8
 	.byte	0x6
 	.byte	0x27
 	.4byte	.LASF123
 	.4byte	.LASF123
-	.byte	0xe
+	.byte	0x10
 	.byte	0x10
 	.byte	0x5
 	.byte	0x27
@@ -3204,6 +3202,8 @@ g_btn_filter_cnt:
 	.string	"app_state_get_current"
 .LASF73:
 	.string	"params"
+.LASF103:
+	.string	"mqtt_if_is_connected"
 .LASF131:
 	.string	"tskTaskControlBlock"
 .LASF130:
@@ -3256,8 +3256,6 @@ g_btn_filter_cnt:
 	.string	"APP_EVENT_MQTT_TOGGLE"
 .LASF84:
 	.string	"g_led_blink_enable"
-.LASF120:
-	.string	"app_wifi_is_connected"
 .LASF70:
 	.string	"app_set_led_blink"
 .LASF115:
@@ -3347,7 +3345,7 @@ g_btn_filter_cnt:
 .LASF110:
 	.string	"app_state_init"
 .LASF113:
-	.string	"app_wifi_is_mgmr_ready"
+	.string	"wifi_if_is_mgmr_ready"
 .LASF25:
 	.string	"APP_EVENT_MAX"
 .LASF95:
@@ -3410,6 +3408,8 @@ g_btn_filter_cnt:
 	.string	"current_state"
 .LASF38:
 	.string	"APP_STATE_WIFI_CONNECTING"
+.LASF120:
+	.string	"wifi_if_is_connected"
 .LASF43:
 	.string	"APP_BTN_EVT_PRESSED"
 .LASF67:
@@ -3424,8 +3424,6 @@ g_btn_filter_cnt:
 	.string	"app_btn_config_t"
 .LASF106:
 	.string	"aos_msleep"
-.LASF103:
-	.string	"app_mqtt_is_connected"
 .LASF108:
 	.string	"app_ble_start"
 .LASF27:

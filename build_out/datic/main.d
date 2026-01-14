@@ -1,5 +1,5 @@
 main.o: /home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c \
- /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h \
@@ -46,7 +46,7 @@ main.o: /home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/mem_priv.h
-/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:

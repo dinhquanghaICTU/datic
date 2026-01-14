@@ -71,15 +71,15 @@ INCLUDE_COMPONENTS += middle/mqtt
 INCLUDE_COMPONENTS += hardware/button
 INCLUDE_COMPONENTS += third_party/lib_button
 INCLUDE_COMPONENTS += third_party/jmnsn
-INCLUDE_COMPONENTS += app/app_api
+
 INCLUDE_COMPONENTS += app/app_state
 INCLUDE_COMPONENTS += app/app_event
 INCLUDE_COMPONENTS += app/app_task
 INCLUDE_COMPONENTS += app/app_callback
 INCLUDE_COMPONENTS += app/app_config
-INCLUDE_COMPONENTS += app/app_wifi
-INCLUDE_COMPONENTS += app/app_ble
-INCLUDE_COMPONENTS += app/app_mqtt
+
+INCLUDE_COMPONENTS += gpio
+
 ifeq ($(CONFIG_BT),1)
 INCLUDE_COMPONENTS += $(COMPONENTS_BLE)
 ifeq ($(CONFIG_BT_MESH),1)

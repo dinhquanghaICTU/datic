@@ -1,7 +1,8 @@
-#include "app_ble.h"
+#include "m_ble.h"
+#include "../../middle/wifi_if/wifi_if.h"
 #include "../../middle/ble/ble_interface.h"
 #include "../app_config/app_config.h"
-#include "../app_wifi/app_wifi.h"
+#include "../gpio/m_wifi.h"
 #include "../app_state/app_state.h"
 #include "../app_event/app_event.h"
 #include <stdio.h>
@@ -37,7 +38,7 @@ int app_ble_init(void)
 
 int app_ble_start(void)
 {
-    app_wifi_disconnect();
+    wifi_if_disconnect();
     aos_msleep(2000);
     
     if (!g_ble_stack_started) {

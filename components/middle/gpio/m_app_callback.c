@@ -1,13 +1,15 @@
-#include "app_callback.h"
+#include "m_app_callback.h"
+#include "../../middle/wifi_if/wifi_if.h"
+#include "../../middle/mqtt_if/mqtt_if.h"
 #include <stdio.h>
 #include <aos/kernel.h>
 #include "blog.h"
 #include "../app_state/app_state.h"
 #include "../app_event/app_event.h"
-#include "../app_wifi/app_wifi.h"
-#include "../app_ble/app_ble.h"
+#include "../gpio/m_wifi.h"
+#include "../gpio/m_ble.h"
 #include "../app_config/app_config.h"
-#include "../app_mqtt/app_mqtt.h"
+#include "../gpio/m_mqtt.h"
 #include "../../hardware/relay/relay.h"
 #include "../../third_party/lib_button/app_btn.h"
 
@@ -26,16 +28,13 @@ void app_event_post(app_event_type_t type, void *data)
 
 void app_button_hold_callback(int pin, int event, void *data)
 {
-    (void)pin;
-    (void)event;
-    (void)data;
     
     if (app_ble_is_running()) {
         app_ble_stop();
         aos_msleep(500);
     }
     
-    app_wifi_disconnect();
+    wifi_if_disconnect();
     aos_msleep(2000);
     app_config_clear_wifi();
     
@@ -45,9 +44,6 @@ void app_button_hold_callback(int pin, int event, void *data)
 
 void app_button_press_callback(int pin, int event, void *data)
 {
-    (void)pin;
-    (void)event;
-    (void)data;
     
     if (!g_lock_button_loaded) {
         uint8_t dummy_state;
@@ -61,7 +57,7 @@ void app_button_press_callback(int pin, int event, void *data)
     
     relay_toggle();
     
-    if (app_mqtt_is_connected()) {
+    if (mqtt_if_is_connected()) {
         uint8_t relay_state = relay_get_state();
         app_mqtt_publish_state(relay_state ? "ON" : "OFF");
     }

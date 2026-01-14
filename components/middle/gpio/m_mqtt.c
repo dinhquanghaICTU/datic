@@ -1,8 +1,8 @@
-#include "app_mqtt.h"
+#include "m_mqtt.h"
 #include "../../middle/mqtt_if/mqtt_if.h"
 #include "../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
 #include "../app_event/app_event.h"
-#include "../app_callback/app_callback.h"
+#include "../gpio/m_app_callback.h"
 #include "../app_config/app_config.h"
 #include "../../hardware/relay/relay.h"
 #include <stdio.h>
@@ -69,7 +69,6 @@ static void mqtt_disconnected_handler(void)
 
 int app_mqtt_init(void)
 {
-    
     mqtt_if_init();
     mqtt_if_set_connected_cb(mqtt_connected_handler);
     mqtt_if_set_disconnected_cb(mqtt_disconnected_handler);
@@ -100,17 +99,6 @@ int app_mqtt_start(const char *broker, int port, const char *client_id)
     config.keepalive = 60;
     mqtt_if_set_config(&config);
     return mqtt_if_connect();
-}
-
-int app_mqtt_stop(void)
-{
-    return mqtt_if_disconnect();
-}
-
-bool app_mqtt_is_connected(void)
-{
-    
-    return mqtt_if_is_connected();
 }
 
 int app_mqtt_publish_state(const char *state)

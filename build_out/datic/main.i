@@ -3,7 +3,7 @@
 # 1 "<built-in>"
 # 1 "<command-line>"
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.h" 1
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h" 1
 
 
 
@@ -4367,9 +4367,7 @@ hosal_uart_dev_t uart_dev_log = {
 
 void main(void)
 {
-
     bl_sys_init();
-
 
     hosal_uart_init(&uart_dev_log);
 
@@ -4378,23 +4376,21 @@ void main(void)
 
     ;
     tcpip_init(
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
               ((void *)0)
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
                   , 
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
                     ((void *)0)
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
                         );
 
 
     aos_msleep(100);
 
-
     app_run();
 
     ;
-
 
     while (1) {
         aos_msleep(1000);

@@ -1,4 +1,4 @@
-#include "app_api.h"
+#include "m_app_api.h"
 #include "blog.h"
 #include <bl_sys.h>
 #include <hosal_uart.h>
@@ -22,10 +22,8 @@ hosal_uart_dev_t uart_dev_log = {
 
 void main(void)
 {
-
     bl_sys_init();
     
-
     hosal_uart_init(&uart_dev_log);
     
     blog_info("System starting...\r\n");
@@ -37,12 +35,10 @@ void main(void)
 
     aos_msleep(100);
     
-
     app_run();
     
     blog_info("Main loop started\r\n");
     
-
     while (1) {
         aos_msleep(1000);
     }

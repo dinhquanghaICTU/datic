@@ -15,7 +15,7 @@ main:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
 	.loc 1 24 1
 	.cfi_startproc
-	.loc 1 26 5
+	.loc 1 25 5
 	.loc 1 24 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
@@ -25,36 +25,36 @@ main:
 	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 26 5
+	.loc 1 25 5
 	call	bl_sys_init
 .LVL0:
-	.loc 1 29 5 is_stmt 1
+	.loc 1 27 5 is_stmt 1
 	lui	a0,%hi(.LANCHOR0)
 	addi	a0,a0,%lo(.LANCHOR0)
 	call	hosal_uart_init
 .LVL1:
-	.loc 1 31 5
-	.loc 1 34 5
-	.loc 1 35 5
+	.loc 1 29 5
+	.loc 1 32 5
+	.loc 1 33 5
 	li	a1,0
 	li	a0,0
 	call	tcpip_init
 .LVL2:
-	.loc 1 38 5
+	.loc 1 36 5
 	li	a0,100
 	call	aos_msleep
 .LVL3:
-	.loc 1 41 5
+	.loc 1 38 5
 	call	app_run
 .LVL4:
 .L2:
-	.loc 1 43 5 discriminator 1
-	.loc 1 46 5 discriminator 1
-	.loc 1 47 9 discriminator 1
+	.loc 1 40 5 discriminator 1
+	.loc 1 42 5 discriminator 1
+	.loc 1 43 9 discriminator 1
 	li	a0,1000
 	call	aos_msleep
 .LVL5:
-	.loc 1 46 11 discriminator 1
+	.loc 1 42 11 discriminator 1
 	j	.L2
 	.cfi_endproc
 .LFE5:
@@ -89,7 +89,7 @@ uart_dev_log:
 	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
 	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
 	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_api/app_api.h"
+	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h"
 	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:

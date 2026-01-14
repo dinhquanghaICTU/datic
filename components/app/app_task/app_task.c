@@ -3,17 +3,19 @@
 #include <FreeRTOS.h>
 #include <task.h>
 #include "blog.h"
-#include "../app_callback/app_callback.h"
-#include "../app_wifi/app_wifi.h"
-#include "../app_ble/app_ble.h"
+#include "../gpio/m_app_callback.h"
+#include "../gpio/m_wifi.h"
+#include "../gpio/m_ble.h"
 #include "../app_state/app_state.h"
 #include "../app_event/app_event.h"
 #include "../app_config/app_config.h"
-#include "../app_mqtt/app_mqtt.h"
+#include "../gpio/m_mqtt.h"
 #include "../../hardware/led/led.h"
 #include "../../hardware/relay/relay.h"
 #include "../../third_party/lib_button/app_btn.h"
 #include "../../hardware/common/hardware.h"
+#include "../../middle/wifi_if/wifi_if.h"
+#include "../../middle/mqtt_if/mqtt_if.h"
 #include <bl_gpio.h>
 #include <bl_sys.h>
 #include <stdbool.h>
@@ -41,7 +43,6 @@ void app_task_init(void)
 
 void app_task_button(void *params)
 {
-    (void)params;
     app_btn_hw_config_t btn_config[1] = {0};
     app_btn_config_t btn_cfg = {0};
     
@@ -72,10 +73,9 @@ void app_task_button(void *params)
 
 void app_task_led(void *params)
 {
-    (void)params;
     led_init();
     while (1) {
-        if (app_wifi_is_connected()) {
+        if (wifi_if_is_connected()) {
             led_on();
             aos_msleep(1000);
         } else {
@@ -87,13 +87,11 @@ void app_task_led(void *params)
 
 void app_task_wifi(void *params)
 {
-    (void)params;
     app_wifi_task(params);
 }
 
 void app_task_main(void *params)
 {
-    (void)params;
     wifi_config_t wifi_cfg;
     app_event_t event = {0};
     blog_debug("task main \r\n");
@@ -119,12 +117,12 @@ void app_task_main(void *params)
     app_state_process_event(&event);
     
     int wait_count = 0;
-    while (!app_wifi_is_mgmr_ready() && wait_count < 100) {
+    while (!wifi_if_is_mgmr_ready() && wait_count < 100) {
         aos_msleep(100);
         wait_count++;
     }
     
-    if (app_wifi_is_mgmr_ready()) {
+    if (wifi_if_is_mgmr_ready()) {
         if (app_config_has_wifi()) {
             if (app_config_load_wifi(&wifi_cfg) == 0) {
                 app_state_set_next(APP_STATE_WIFI_CONNECTING);
@@ -160,25 +158,25 @@ void app_task_main(void *params)
         
         if (event.type == APP_EVENT_MQTT_TOGGLE) {
             relay_toggle();
-            if (app_mqtt_is_connected()) {
+            if (mqtt_if_is_connected()) {
                 uint8_t relay_state = relay_get_state();
                 app_mqtt_publish_state(relay_state ? "ON" : "OFF");
             }
             event.type = APP_EVENT_NONE;
         } else if (event.type == APP_EVENT_MQTT_SET_ON) {
             relay_on();
-            if (app_mqtt_is_connected()) {
+            if (mqtt_if_is_connected()) {
                 app_mqtt_publish_state("ON");
             }
             event.type = APP_EVENT_NONE;
         } else if (event.type == APP_EVENT_MQTT_SET_OFF) {
             relay_off();
-            if (app_mqtt_is_connected()) {
+            if (mqtt_if_is_connected()) {
                 app_mqtt_publish_state("OFF");
             }
             event.type = APP_EVENT_NONE;
         } else if (event.type == APP_EVENT_RELAY_STATE_CHANGED) {
-            if (app_mqtt_is_connected()) {
+            if (mqtt_if_is_connected()) {
                 uint8_t relay_state = relay_get_state();
                 app_mqtt_publish_state(relay_state ? "ON" : "OFF");
             }
@@ -208,18 +206,18 @@ void app_task_main(void *params)
                     static uint32_t mqtt_last_attempt = 0;
                     uint32_t now = aos_now_ms();
                     
-                    if (!app_mqtt_is_connected() && !mqtt_connect_attempted) {
+                    if (!mqtt_if_is_connected() && !mqtt_connect_attempted) {
                         const char *mqtt_broker = "172.20.10.3";
                         app_mqtt_start(mqtt_broker, 1883, NULL);
                         mqtt_connect_attempted = true;
                         mqtt_last_attempt = now;
-                    } else if (!app_mqtt_is_connected() && mqtt_connect_attempted) {
+                    } else if (!mqtt_if_is_connected() && mqtt_connect_attempted) {
                         if (now - mqtt_last_attempt > 10000) {
                             const char *mqtt_broker = "172.20.10.3";
                             app_mqtt_start(mqtt_broker, 1883, NULL);
                             mqtt_last_attempt = now;
                         }
-                    } else if (app_mqtt_is_connected()) {
+                    } else if (mqtt_if_is_connected()) {
                         mqtt_connect_attempted = false;
                     }
                 }

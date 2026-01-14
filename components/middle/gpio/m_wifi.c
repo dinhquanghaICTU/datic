@@ -1,4 +1,4 @@
-#include "app_wifi.h"
+#include "m_wifi.h"
 #include "../../middle/wifi_if/wifi_if.h"
 #include <stdio.h>
 #include <aos/kernel.h>
@@ -7,10 +7,6 @@ static app_wifi_connected_cb_t g_connected_cb = NULL;
 static app_wifi_disconnected_cb_t g_disconnected_cb = NULL;
 static app_wifi_connect_failed_cb_t g_connect_failed_cb = NULL;
 
-int app_wifi_init(void)
-{
-    return wifi_if_init();
-}
 
 int app_wifi_connect(const char *ssid, const char *password)
 {
@@ -29,30 +25,6 @@ int app_wifi_connect(const char *ssid, const char *password)
     return wifi_if_connect(ssid, password);
 }
 
-int app_wifi_disconnect(void)
-{
-    return wifi_if_disconnect();
-}
-
-int app_wifi_disable(void)
-{
-    return wifi_if_disable();
-}
-
-int app_wifi_enable(void)
-{
-    return wifi_if_enable();
-}
-
-bool app_wifi_is_connected(void)
-{
-    return wifi_if_is_connected();
-}
-
-bool app_wifi_is_mgmr_ready(void)
-{
-    return wifi_if_is_mgmr_ready();
-}
 
 void app_wifi_set_connected_cb(app_wifi_connected_cb_t cb)
 {

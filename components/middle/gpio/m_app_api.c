@@ -1,11 +1,12 @@
-#include "app_api.h"
+#include "m_app_api.h"
 #include <stdio.h>
 #include "blog.h"
+#include "../../middle/wifi_if/wifi_if.h"
 #include "../app_config/app_config.h"
-#include "../app_wifi/app_wifi.h"
-#include "../app_ble/app_ble.h"
+#include "../gpio/m_wifi.h"
+#include "../gpio/m_ble.h"
 #include "../app_task/app_task.h"
-#include "../app_callback/app_callback.h"
+#include "../gpio/m_app_callback.h"
 #include "../../hardware/led/led.h"
 #include "../../hardware/relay/relay.h"
 
@@ -18,7 +19,7 @@ int app_run(void)
         blog_error(">>> Failed to init config\r\n");
         return -1;
     }
-    if (app_wifi_init() != 0) {
+    if (wifi_if_init() != 0) {
         blog_error(">>> Failed to init WiFi\r\n");
         return -1;
     }
