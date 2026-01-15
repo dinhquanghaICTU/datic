@@ -1,0 +1,5 @@
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/ble//"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"

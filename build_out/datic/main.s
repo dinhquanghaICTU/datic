@@ -33,6 +33,7 @@ main:
 	addi	a0,a0,%lo(.LANCHOR0)
 	call	hosal_uart_init
 .LVL1:
+	.loc 1 30 5
 	.loc 1 42 5
 	call	handle_ble_scan
 .LVL2:

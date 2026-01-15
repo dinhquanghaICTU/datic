@@ -9245,6 +9245,8 @@ void main(void)
     bl_sys_init();
 
     hosal_uart_init(&uart_dev_log);
+
+    ;
 # 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
     handle_ble_scan();
 

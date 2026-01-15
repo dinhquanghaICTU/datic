@@ -15,18 +15,20 @@
 #include "conn_internal.h"
 #include "gatt.h"
 
-
 #include "relay.h"
 
 
 #define BT_ADDR_LE_STR_LEN  30
 
+#define BT_ATT_INDEX 6
 
 #define WIFI_CONFIG_SERVICE_UUID BT_UUID_DECLARE_128(BT_UUID_128_ENCODE(0x55535343, 0xfe7d, 0x4ae5, 0x8fa9, 0x9fafd205e455))
 
 #define WIFI_CONFIG_CHAR_SSID_UUID BT_UUID_DECLARE_128(BT_UUID_128_ENCODE(0x49535343, 0x8841, 0x43f4, 0xa8d4, 0xecbe34729bb3))
 
 #define WIFI_CONFIG_CHAR_PASS_UUID BT_UUID_DECLARE_128(BT_UUID_128_ENCODE(0x49535343, 0x1e4d, 0x4bd9, 0xba61, 0x23c647249616))
+
+#define NONTIFY_UUID BT_UUID_DECLARE_128(BT_UUID_128_ENCODE(0x49535343, 0x1e4d, 0x4bd9, 0xba61, 0x23c647249718))
 
 #define WIFI_SSID_MAX_LEN 32
 #define WIFI_PASSWORD_MAX_LEN 64
@@ -65,24 +67,33 @@ static struct bt_gatt_attr wifi_config_server[] = {
     BT_GATT_CHARACTERISTIC(WIFI_CONFIG_CHAR_SSID_UUID,
                            BT_GATT_CHRC_WRITE_WITHOUT_RESP,
                            BT_GATT_PERM_WRITE, NULL, ble_ssid_write_val, NULL),
+
     BT_GATT_CHARACTERISTIC(WIFI_CONFIG_CHAR_PASS_UUID,
                            BT_GATT_CHRC_WRITE_WITHOUT_RESP,
                            BT_GATT_PERM_WRITE, NULL, ble_password_write_val, NULL),
+
+
+
+    BT_GATT_CHARACTERISTIC(NONTIFY_UUID, BT_GATT_CHRC_NOTIFY, BT_GATT_PERM_NONE ,NULL, NULL, NULL),
+
+    BT_GATT_CCC(ble_ccc_cfg_changed, BT_GATT_PERM_READ | BT_GATT_PERM_WRITE),
 };
 
 static struct bt_gatt_service wifi_config_service = BT_GATT_SERVICE(wifi_config_server);
 
+
+
+int notify_data(struct bt_conn *conn,
+                          const uint8_t *data,
+                          uint16_t length);
+
+
 static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                                    const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
-    (void)conn;
-    (void)attr;
-    (void)flags;
-
-
-
     bt_addr_le_t *test_mac;
-
+    const char msg[] = "OK ";
+    notify_data(conn, (uint8_t *)msg, sizeof(msg) - 1);
     char addr [BT_ADDR_LE_STR_LEN];
     test_mac = bt_conn_get_dst(conn);
     if (!test_mac)
@@ -92,7 +103,10 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     }
 
     bt_addr_le_to_str(test_mac, addr, sizeof(addr));
-    printf("==========================================Mac : %s==============================\r\n",addr );    
+    printf("==========================================Mac : %s==============================\r\n",addr );   
+    
+    
+    
 
 
     if (len == 0) {
@@ -175,6 +189,43 @@ static void check_and_save_config(void)
         has_password = false;
     }
 }
+
+
+
+//handle nontify
+
+
+int notify_data(struct bt_conn *conn,
+                          const uint8_t *data,
+                          uint16_t length)
+{
+    int ret = 0;
+    uint16_t mtu = bt_gatt_get_mtu(conn) - 3;
+    uint16_t offset = 0;
+
+    while (length > 0) {
+        uint16_t send_len = length > mtu ? mtu : length;
+
+        ret = bt_gatt_notify(
+                conn,
+                &wifi_config_server[BT_ATT_INDEX],
+                data + offset,
+                send_len
+        );
+
+        if (ret) {
+            printf("[BLE] notify failed (%d)\r\n", ret);
+            return ret;
+        }
+
+        offset += send_len;
+        length -= send_len;
+    }
+
+    return 0;
+}
+
+
 
 static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
 {
@@ -383,13 +434,8 @@ void ble_set_config_done_cb(ble_config_done_cb_t cb)
 
 int ble_slave_init()
 {
-    
-    
-    
-
     ble_server_init();
     ble_salve_adv();
-
     return 0;
 }
 
@@ -478,7 +524,6 @@ void ble_stack_start(void)
 
 void apps_ble_start()
 {
-    
     if (s_ble_enabled) {
         printf("[BLE] Warning: BLE still marked as enabled, forcing stop first...\r\n");
         
@@ -595,11 +640,10 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
         }
         if(state == 0){
             relay_off();
+        }else{
+            printf ("state no controler for delay %d\r\n", state);
         }
-        
-        printf ("state no controler for delay %d\r\n", state);
     }
-
     return false; 
 }
 
@@ -619,11 +663,11 @@ static void scan_device_found(const bt_addr_le_t *addr,
                               uint8_t type,
                               struct net_buf_simple *ad)
 {
-    char mac[30];
+    // char mac[30];
 
 
-    bt_addr_le_to_str(addr,mac, sizeof(mac));
-    printf("other device: mac: %s type: %d ,rssi : %d  \r\n",mac, type, rssi);
+    // bt_addr_le_to_str(addr,mac, sizeof(mac));
+    // printf("other device: mac: %s type: %d ,rssi : %d  \r\n",mac, type, rssi);
     bt_data_parse(ad, adv_parse_cb, &rssi);
 }
 

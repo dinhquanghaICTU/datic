@@ -10910,6 +10910,8 @@ platform_hal_device_init:
 	.string	"_PDP_ENDIAN 3412"
 .LASF734:
 	.string	"_REENT_INIT_PTR(var) { memset((var), 0, sizeof(*(var))); _REENT_INIT_PTR_ZEROED(var); }"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1768451423"
 .LASF1246:
 	.string	"portCLEAR_INTERRUPT_MASK_FROM_ISR(uxSavedStatusValue) ( void ) uxSavedStatusValue"
 .LASF965:
@@ -12077,8 +12079,6 @@ platform_hal_device_init:
 	.string	"traceTAKE_MUTEX_RECURSIVE_FAILED(pxMutex) "
 .LASF232:
 	.string	"__FLT16_DENORM_MIN__ 5.96046447753906250000000000000000000e-8F16"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1768447218"
 .LASF1477:
 	.string	"taskYIELD() portYIELD()"
 .LASF1148:

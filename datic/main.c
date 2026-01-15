@@ -27,7 +27,7 @@ void main(void)
     
     hosal_uart_init(&uart_dev_log);
     
-    // blog_info("System starting...\r\n");
+    blog_info("System starting...\r\n");
     
 
     // blog_info("Starting TCP/IP Stack...\r\n");
