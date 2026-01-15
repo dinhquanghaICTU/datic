@@ -43,6 +43,13 @@
 #include "bluetooth.h"
 
 
+#define ADV_COMPANY_ID   0xF55F   
+#define ADV_MAGIC        0xA1
+#define ADV_PRODUCT_RELAY 0x01
+#define ADV_MSG_RELAY_STATE 0x01
+#define ADV_DEVICE_ID    0x0001   
+
+
 struct bt_conn;
 
 typedef int (*ble_gatt_conn_cb_t)(struct bt_conn *conn, uint8_t code);
@@ -65,6 +72,13 @@ int ble_adv_stop(void);
 void apps_ble_stop();
 void apps_ble_start();
 uint8_t BleSetMtu();
+
+
+
+void ble_scan_start(void);
+
+void handle_ble_scan(void);
+
 
 #endif //__BLE_INTERFACE_H__
 

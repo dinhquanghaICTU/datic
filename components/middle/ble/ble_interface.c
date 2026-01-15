@@ -16,6 +16,9 @@
 #include "gatt.h"
 
 
+#include "relay.h"
+
+
 #define BT_ADDR_LE_STR_LEN  30
 
 
@@ -483,8 +486,6 @@ void apps_ble_start()
         aos_msleep(1000); 
     }
     
-    
-    
     printf("[BLE] Waiting for radio to be free...\r\n");
     aos_msleep(3000);  
     
@@ -509,11 +510,6 @@ void apps_ble_start()
     
     printf("[BLE] BLE stack enabled, initializing slave...\r\n");
     ble_slave_init();
-    
-    
-    
-    
-    
     
 }
 
@@ -553,3 +549,129 @@ void apps_ble_stop()
     printf("[BLE] BLE stopped\r\n");
 }
 
+// adv test broadcard scan
+
+/*
+    my funcion is parser fields in  BT_DATA_MANUFACTURER_DATA show signal of a send adv
+    - parameter
+    + data is have flag of packet ble, ble have a lot of flag other should only fill packet have 
+    is flag  BT_DATA_MANUFACTURER_DATA
+    + why data len is 8 ? bacause is max len of fields is 8, for invalib
+
+
+*/
+static bool adv_parse_cb(struct bt_data *data, void *user_data)
+{
+    int8_t rssi = *(int8_t *)user_data;
+
+    if (data->type != BT_DATA_MANUFACTURER_DATA) {
+        return true; 
+    }
+
+    if (data->data_len < 8) {
+        return true;
+    }
+
+    const uint8_t *p = data->data; // create access pointer array data  
+
+    uint16_t company_id = p[0] | (p[1] << 8); //create value company_id  compare  taget device
+    if (company_id != ADV_COMPANY_ID) return true; 
+
+    if (p[2] != ADV_MAGIC) return true; 
+
+    uint8_t product = p[3];
+    uint8_t msg     = p[4];
+    uint16_t dev_id = p[5] | (p[6] << 8);
+    uint8_t state   = p[7];
+
+    if (product == ADV_PRODUCT_RELAY &&
+        msg == ADV_MSG_RELAY_STATE)
+    {
+        printf("[ADV] Relay dev %d state=%d RSSI=%d\r\n",
+               dev_id, state, rssi);
+
+        if(state == 1){
+            relay_on();
+        }
+        if(state == 0){
+            relay_off();
+        }
+        
+        printf ("state no controler for delay %d\r\n", state);
+    }
+
+    return false; 
+}
+
+/*
+    parameter:
+
+    + add is Mac of other device 
+    + rssi is signal strength
+    + type is type of adv
+    + ad is data of  divice other
+
+    - when other send adv, my divice scan parameter call fun bt_data_paser add call back for parsser device taget  
+
+*/
+static void scan_device_found(const bt_addr_le_t *addr,
+                              int8_t rssi,
+                              uint8_t type,
+                              struct net_buf_simple *ad)
+{
+    char mac[30];
+
+
+    bt_addr_le_to_str(addr,mac, sizeof(mac));
+    printf("other device: mac: %s type: %d ,rssi : %d  \r\n",mac, type, rssi);
+    bt_data_parse(ad, adv_parse_cb, &rssi);
+}
+
+
+
+
+/*have tow type scan scan:
++ passive is listen to device taget. save energy
++ acctive is have listen and respon device taget
+
+-fiter duplicate is filter packet duplicate: 
+
++ BT_LE_SCAN_FILTER_DUPLICATE = BIT(0) -> fillter packet duplicate
+
++ BT_LE_SCAN_FILTER_WHITELIST = BIT(1) -> fillter device has in list
+
++ BT_LE_SCAN_FILTER_EXTENDED = BIT(2) -> use when use ble 5.0 add a lot of rule other
+
+- interval is time of point started to next point started
+
+- window is time listen real 
+
+ iddle = interval - window
+*/
+
+void ble_scan_start(void)
+{
+    struct bt_le_scan_param scan_param = {
+        .type       = BT_LE_SCAN_TYPE_PASSIVE,
+        .filter_dup = BT_LE_SCAN_FILTER_DUPLICATE,
+        .interval   = 0x140,   
+        .window     = 0x30,    
+    };
+    /*
+        funciton bt_le_scan_start is setting scan , add parameter callback for handle next step  
+        + value ret is listen error  if err is fall, else scan started
+    */
+    int ret = bt_le_scan_start(&scan_param, scan_device_found);
+    if (ret) {
+        printf("BLE scan start failed (%d)\r\n", ret);
+    } else {
+        printf("BLE scan started\r\n");
+    }
+}
+
+
+void handle_ble_scan(void){
+    relay_init();
+    ble_stack_start();
+    ble_scan_start();
+}

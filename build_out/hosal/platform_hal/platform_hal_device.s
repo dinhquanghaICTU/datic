@@ -12077,6 +12077,8 @@ platform_hal_device_init:
 	.string	"traceTAKE_MUTEX_RECURSIVE_FAILED(pxMutex) "
 .LASF232:
 	.string	"__FLT16_DENORM_MIN__ 5.96046447753906250000000000000000000e-8F16"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1768447218"
 .LASF1477:
 	.string	"taskYIELD() portYIELD()"
 .LASF1148:
@@ -12307,8 +12309,6 @@ platform_hal_device_init:
 	.string	"INCLUDE_xQueueGetMutexHolder 0"
 .LASF578:
 	.string	"__scanflike(fmtarg,firstvararg) __attribute__((__format__ (__scanf__, fmtarg, firstvararg)))"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1768353870"
 .LASF927:
 	.string	"INT_LEAST8_MAX"
 .LASF1084:

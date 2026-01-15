@@ -6449,8 +6449,7 @@ int bt_br_write_local_name(char *name);
 
 int bt_br_write_eir(u8_t fec, u8_t *data);
 # 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_interface.h" 2
-
-
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_interface.h"
 struct bt_conn;
 
 typedef int (*ble_gatt_conn_cb_t)(struct bt_conn *conn, uint8_t code);
@@ -6473,6 +6472,12 @@ int ble_adv_stop(void);
 void apps_ble_stop();
 void apps_ble_start();
 uint8_t BleSetMtu();
+
+
+
+void ble_scan_start(void);
+
+void handle_ble_scan(void);
 # 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 2
 # 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h" 1
 # 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"

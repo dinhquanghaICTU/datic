@@ -46,7 +46,8 @@ ble_interface.o: \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h:
@@ -94,4 +95,5 @@ ble_interface.o: \
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/./ble_interface.c:

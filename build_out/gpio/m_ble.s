@@ -934,25 +934,25 @@ g_config_done_cb:
 	.4byte	.LASF58
 	.4byte	.LASF58
 	.byte	0x8
-	.byte	0x42
+	.byte	0x49
 	.byte	0x6
 	.byte	0x24
 	.4byte	.LASF59
 	.4byte	.LASF59
 	.byte	0x8
-	.byte	0x3f
+	.byte	0x46
 	.byte	0x5
 	.byte	0x24
 	.4byte	.LASF60
 	.4byte	.LASF60
 	.byte	0x8
-	.byte	0x34
+	.byte	0x3b
 	.byte	0x6
 	.byte	0x24
 	.4byte	.LASF61
 	.4byte	.LASF61
 	.byte	0x8
-	.byte	0x40
+	.byte	0x47
 	.byte	0x5
 	.byte	0x24
 	.4byte	.LASF62

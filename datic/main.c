@@ -4,6 +4,7 @@
 #include <hosal_uart.h>
 #include <aos/kernel.h>
 #include <lwip/tcpip.h>
+#include "ble_interface.h"
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -26,18 +27,19 @@ void main(void)
     
     hosal_uart_init(&uart_dev_log);
     
-    blog_info("System starting...\r\n");
+    // blog_info("System starting...\r\n");
     
 
-    blog_info("Starting TCP/IP Stack...\r\n");
-    tcpip_init(NULL, NULL);
+    // blog_info("Starting TCP/IP Stack...\r\n");
+    // tcpip_init(NULL, NULL);
     
 
-    aos_msleep(100);
+    // aos_msleep(100);
     
-    app_run();
+    // app_run();
     
-    blog_info("Main loop started\r\n");
+    // blog_info("Main loop started\r\n");
+    handle_ble_scan();
     
     while (1) {
         aos_msleep(1000);
