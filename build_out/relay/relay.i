@@ -1693,6 +1693,7 @@ void relay_init(void){
 void relay_on(void){
     s_relay_state = 1;
     bl_gpio_output_set(22, s_relay_state);
+
 }
 
 void relay_off(void){

@@ -474,7 +474,7 @@ log_port_reset:
 	.string	"Build Time: "
 	.align	2
 .LC15:
-	.string	"11:30:20"
+	.string	"23:16:07"
 	.align	2
 .LC16:
 	.string	"[OS] Starting aos_loop_proc task...\r\n"

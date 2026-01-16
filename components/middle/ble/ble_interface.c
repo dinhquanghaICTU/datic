@@ -92,8 +92,7 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
                                    const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
     bt_addr_le_t *test_mac;
-    const char msg[] = "OK ";
-    notify_data(conn, (uint8_t *)msg, sizeof(msg) - 1);
+    
     char addr [BT_ADDR_LE_STR_LEN];
     test_mac = bt_conn_get_dst(conn);
     if (!test_mac)
@@ -132,8 +131,17 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
 
     printf("[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_ssid);
 
-    
-    
+    if (strcmp(temp_ssid, "1") == 0) {
+        relay_on();
+        const char msg[] = "relay on ";
+        notify_data(conn, (uint8_t *)msg, sizeof(msg) - 1);
+    }
+    if (strcmp(temp_ssid, "0") == 0)
+    {
+        const char msg[] = "relay off ";
+        notify_data(conn, (uint8_t *)msg, sizeof(msg) - 1);
+        relay_off();
+    }
     check_and_save_config();
 
     return len;
@@ -715,7 +723,7 @@ void ble_scan_start(void)
 
 
 void handle_ble_scan(void){
-    relay_init();
-    ble_stack_start();
+    // relay_init();
+    // ble_stack_start();
     ble_scan_start();
 }

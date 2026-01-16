@@ -34,15 +34,26 @@ main:
 	call	hosal_uart_init
 .LVL1:
 	.loc 1 30 5
-	.loc 1 42 5
-	call	handle_ble_scan
+	.loc 1 33 5
+	.loc 1 34 5
+	li	a1,0
+	li	a0,0
+	call	tcpip_init
 .LVL2:
+	.loc 1 37 5
+	li	a0,100
+	call	aos_msleep
+.LVL3:
+	.loc 1 39 5
+	call	app_run
+.LVL4:
 .L2:
+	.loc 1 41 5 discriminator 1
 	.loc 1 44 5 discriminator 1
 	.loc 1 45 9 discriminator 1
 	li	a0,1000
 	call	aos_msleep
-.LVL3:
+.LVL5:
 	.loc 1 44 11 discriminator 1
 	j	.L2
 	.cfi_endproc
@@ -78,19 +89,20 @@ uart_dev_log:
 	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
 	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h"
+	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
 	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x4a4
+	.4byte	0x4dc
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF101
-	.byte	0xc
 	.4byte	.LASF102
+	.byte	0xc
 	.4byte	.LASF103
+	.4byte	.LASF104
 	.4byte	.Ldebug_ranges0+0
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -630,7 +642,7 @@ uart_dev_log:
 	.byte	0x2
 	.4byte	.LASF96
 	.byte	0xe
-	.4byte	.LASF104
+	.4byte	.LASF105
 	.byte	0x1
 	.byte	0x9
 	.byte	0x12
@@ -639,7 +651,7 @@ uart_dev_log:
 	.byte	0x3
 	.4byte	uart_dev_log
 	.byte	0xf
-	.4byte	.LASF105
+	.4byte	.LASF106
 	.byte	0x1
 	.byte	0x18
 	.byte	0x6
@@ -647,13 +659,13 @@ uart_dev_log:
 	.4byte	.LFE68-.LFB68
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x476
+	.4byte	0x4a2
 	.byte	0x10
 	.4byte	.LVL0
-	.4byte	0x476
+	.4byte	0x4a2
 	.byte	0x11
 	.4byte	.LVL1
-	.4byte	0x482
+	.4byte	0x4ae
 	.4byte	0x45b
 	.byte	0x12
 	.byte	0x1
@@ -662,12 +674,38 @@ uart_dev_log:
 	.byte	0x3
 	.4byte	.LANCHOR0
 	.byte	0
-	.byte	0x10
+	.byte	0x11
 	.4byte	.LVL2
-	.4byte	0x48e
-	.byte	0x13
+	.4byte	0x4ba
+	.4byte	0x473
+	.byte	0x12
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x1
+	.byte	0x30
+	.byte	0x12
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x1
+	.byte	0x30
+	.byte	0
+	.byte	0x11
 	.4byte	.LVL3
-	.4byte	0x49a
+	.4byte	0x4c6
+	.4byte	0x487
+	.byte	0x12
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x2
+	.byte	0x8
+	.byte	0x64
+	.byte	0
+	.byte	0x10
+	.4byte	.LVL4
+	.4byte	0x4d3
+	.byte	0x13
+	.4byte	.LVL5
+	.4byte	0x4c6
 	.byte	0x12
 	.byte	0x1
 	.byte	0x5a
@@ -692,7 +730,7 @@ uart_dev_log:
 	.4byte	.LASF99
 	.4byte	.LASF99
 	.byte	0x9
-	.byte	0x50
+	.byte	0x4d
 	.byte	0x6
 	.byte	0x15
 	.4byte	.LASF100
@@ -700,6 +738,12 @@ uart_dev_log:
 	.byte	0xa
 	.2byte	0x207
 	.byte	0xa
+	.byte	0x14
+	.4byte	.LASF101
+	.4byte	.LASF101
+	.byte	0xb
+	.byte	0x4
+	.byte	0x5
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
 .Ldebug_abbrev0:
@@ -1040,15 +1084,17 @@ uart_dev_log:
 	.string	"HOSAL_STOP_BITS_1"
 .LASF22:
 	.string	"HOSAL_STOP_BITS_2"
+.LASF99:
+	.string	"tcpip_init"
 .LASF56:
 	.string	"txdma_cb"
-.LASF105:
+.LASF106:
 	.string	"main"
 .LASF26:
 	.string	"HOSAL_FLOW_CONTROL_RTS"
 .LASF48:
 	.string	"mode"
-.LASF102:
+.LASF103:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
 .LASF73:
 	.string	"MEMP_TCPIP_MSG_INPKT"
@@ -1136,8 +1182,6 @@ uart_dev_log:
 	.string	"unsigned int"
 .LASF46:
 	.string	"stop_bits"
-.LASF99:
-	.string	"handle_ble_scan"
 .LASF94:
 	.string	"_POLL_STATE_DATA_AVAILABLE"
 .LASF16:
@@ -1166,7 +1210,7 @@ uart_dev_log:
 	.string	"HOSAL_FLOW_CONTROL_CTS_RTS"
 .LASF31:
 	.string	"HOSAL_EVEN_PARITY"
-.LASF103:
+.LASF104:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/datic"
 .LASF96:
 	.string	"_Bool"
@@ -1178,6 +1222,8 @@ uart_dev_log:
 	.string	"uart_id"
 .LASF50:
 	.string	"port"
+.LASF101:
+	.string	"app_run"
 .LASF8:
 	.string	"long unsigned int"
 .LASF92:
@@ -1188,7 +1234,7 @@ uart_dev_log:
 	.string	"dma_tx_chan"
 .LASF28:
 	.string	"hosal_uart_flow_control_t"
-.LASF101:
+.LASF102:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF84:
 	.string	"_poll_types_bits"
@@ -1224,7 +1270,7 @@ uart_dev_log:
 	.string	"HOSAL_ODD_PARITY"
 .LASF69:
 	.string	"MEMP_ALTCP_PCB"
-.LASF104:
+.LASF105:
 	.string	"uart_dev_log"
 .LASF44:
 	.string	"data_width"

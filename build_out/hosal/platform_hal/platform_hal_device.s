@@ -10110,6 +10110,8 @@ platform_hal_device_init:
 	.string	"SEEK_SET 0"
 .LASF395:
 	.string	"_WANT_REGISTER_FINI 1"
+.LASF1199:
+	.string	"pdFREERTOS_ERRNO_EISDIR 21"
 .LASF54:
 	.string	"__INT_LEAST32_TYPE__ long int"
 .LASF203:
@@ -10676,6 +10678,8 @@ platform_hal_device_init:
 	.string	"__SIZEOF_SIZE_T__ 4"
 .LASF243:
 	.string	"__FLT32_MAX__ 3.40282346638528859811704183484516925e+38F32"
+.LASF268:
+	.string	"__FLT128_DIG__ 33"
 .LASF1197:
 	.string	"pdFREERTOS_ERRNO_ENODEV 19"
 .LASF623:
@@ -10910,8 +10914,6 @@ platform_hal_device_init:
 	.string	"_PDP_ENDIAN 3412"
 .LASF734:
 	.string	"_REENT_INIT_PTR(var) { memset((var), 0, sizeof(*(var))); _REENT_INIT_PTR_ZEROED(var); }"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1768451423"
 .LASF1246:
 	.string	"portCLEAR_INTERRUPT_MASK_FROM_ISR(uxSavedStatusValue) ( void ) uxSavedStatusValue"
 .LASF965:
@@ -10954,8 +10956,8 @@ platform_hal_device_init:
 	.string	"__weak_reference(sym,alias) __asm__(\".weak \" #alias); __asm__(\".equ \" #alias \", \" #sym)"
 .LASF466:
 	.string	"___int64_t_defined 1"
-.LASF1199:
-	.string	"pdFREERTOS_ERRNO_EISDIR 21"
+.LASF1403:
+	.string	"portTICK_TYPE_SET_INTERRUPT_MASK_FROM_ISR() 0"
 .LASF397:
 	.string	"_REENT_CHECK_VERIFY 1"
 .LASF522:
@@ -10980,8 +10982,8 @@ platform_hal_device_init:
 	.string	"__GCC_ATOMIC_CHAR32_T_LOCK_FREE 1"
 .LASF45:
 	.string	"__INT16_TYPE__ short int"
-.LASF268:
-	.string	"__FLT128_DIG__ 33"
+.LASF12:
+	.string	"__ATOMIC_RELEASE 3"
 .LASF797:
 	.string	"FD_COPY(f,t) (void)(*(t) = *(f))"
 .LASF1510:
@@ -11977,8 +11979,6 @@ platform_hal_device_init:
 	.string	"__GNUC_PREREQ(maj,min) ((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))"
 .LASF265:
 	.string	"__FLT64_HAS_INFINITY__ 1"
-.LASF1403:
-	.string	"portTICK_TYPE_SET_INTERRUPT_MASK_FROM_ISR() 0"
 .LASF101:
 	.string	"__LONG_LONG_MAX__ 0x7fffffffffffffffLL"
 .LASF1311:
@@ -12750,8 +12750,8 @@ platform_hal_device_init:
 	.string	"INT16_C"
 .LASF250:
 	.string	"__FLT32_HAS_QUIET_NAN__ 1"
-.LASF12:
-	.string	"__ATOMIC_RELEASE 3"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1768493769"
 .LASF1243:
 	.string	"portYIELD_FROM_ISR(x) portEND_SWITCHING_ISR( x )"
 .LASF214:

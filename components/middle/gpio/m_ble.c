@@ -44,6 +44,7 @@ int app_ble_start(void)
     if (!g_ble_stack_started) {
         apps_ble_start();
         aos_msleep(1000);
+        ble_scan_start();
         g_ble_stack_started = true;
     }
     

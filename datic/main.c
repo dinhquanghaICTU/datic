@@ -30,16 +30,16 @@ void main(void)
     blog_info("System starting...\r\n");
     
 
-    // blog_info("Starting TCP/IP Stack...\r\n");
-    // tcpip_init(NULL, NULL);
+    blog_info("Starting TCP/IP Stack...\r\n");
+    tcpip_init(NULL, NULL);
     
 
-    // aos_msleep(100);
+    aos_msleep(100);
     
-    // app_run();
+    app_run();
     
-    // blog_info("Main loop started\r\n");
-    handle_ble_scan();
+    blog_info("Main loop started\r\n");
+    // handle_ble_scan();
     
     while (1) {
         aos_msleep(1000);

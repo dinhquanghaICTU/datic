@@ -15,7 +15,8 @@ void relay_init(void){
 
 void relay_on(void){
     s_relay_state = RELAY_ON;
-    bl_gpio_output_set(RELAY, s_relay_state);   
+    bl_gpio_output_set(RELAY, s_relay_state);
+       
 }
 
 void relay_off(void){

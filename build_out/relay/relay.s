@@ -71,7 +71,7 @@ relay_on:
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 19 1
+	.loc 1 20 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -80,11 +80,11 @@ relay_on:
 	li	a4,1
 	sb	a4,%lo(.LANCHOR0)(a5)
 	.loc 1 18 5 is_stmt 1
-	.loc 1 19 1 is_stmt 0
+	.loc 1 20 1 is_stmt 0
 	.loc 1 18 5
 	li	a1,1
 	li	a0,22
-	.loc 1 19 1
+	.loc 1 20 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	.loc 1 18 5
@@ -99,32 +99,32 @@ relay_on:
 	.type	relay_off, @function
 relay_off:
 .LFB5:
-	.loc 1 21 21 is_stmt 1
+	.loc 1 22 21 is_stmt 1
 	.cfi_startproc
-	.loc 1 22 5
-	.loc 1 21 21 is_stmt 0
+	.loc 1 23 5
+	.loc 1 22 21 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 24 1
+	.loc 1 25 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 22 19
+	.loc 1 23 19
 	lui	a5,%hi(.LANCHOR0)
 	sb	zero,%lo(.LANCHOR0)(a5)
-	.loc 1 23 5 is_stmt 1
-	.loc 1 24 1 is_stmt 0
-	.loc 1 23 5
+	.loc 1 24 5 is_stmt 1
+	.loc 1 25 1 is_stmt 0
+	.loc 1 24 5
 	li	a1,0
 	li	a0,22
-	.loc 1 24 1
+	.loc 1 25 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 23 5
+	.loc 1 24 5
 	tail	bl_gpio_output_set
 .LVL3:
 	.cfi_endproc
@@ -136,36 +136,36 @@ relay_off:
 	.type	relay_toggle, @function
 relay_toggle:
 .LFB6:
-	.loc 1 26 24 is_stmt 1
+	.loc 1 27 24 is_stmt 1
 	.cfi_startproc
-	.loc 1 27 5
-	.loc 1 26 24 is_stmt 0
+	.loc 1 28 5
+	.loc 1 27 24 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
-	.loc 1 27 21
+	.loc 1 28 21
 	lui	a5,%hi(.LANCHOR0)
 	.cfi_offset 8, -4
-	.loc 1 26 24
+	.loc 1 27 24
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 27 21
+	.loc 1 28 21
 	addi	a5,a5,%lo(.LANCHOR0)
 	lbu	a1,0(a5)
-	.loc 1 28 5
+	.loc 1 29 5
 	li	a0,22
-	.loc 1 27 21
+	.loc 1 28 21
 	seqz	a1,a1
-	.loc 1 27 19
+	.loc 1 28 19
 	sb	a1,0(a5)
-	.loc 1 28 5 is_stmt 1
-	.loc 1 29 1 is_stmt 0
+	.loc 1 29 5 is_stmt 1
+	.loc 1 30 1 is_stmt 0
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 28 5
+	.loc 1 29 5
 	tail	bl_gpio_output_set
 .LVL4:
 	.cfi_endproc
@@ -177,26 +177,26 @@ relay_toggle:
 	.type	relay_get_state, @function
 relay_get_state:
 .LFB7:
-	.loc 1 31 30 is_stmt 1
+	.loc 1 32 30 is_stmt 1
 	.cfi_startproc
-	.loc 1 32 5
-	.loc 1 31 30 is_stmt 0
+	.loc 1 33 5
+	.loc 1 32 30 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 32 37
+	.loc 1 33 37
 	lui	a5,%hi(.LANCHOR0)
 	lbu	a0,%lo(.LANCHOR0)(a5)
-	.loc 1 33 1
+	.loc 1 34 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 32 37
+	.loc 1 33 37
 	addi	a0,a0,-1
-	.loc 1 33 1
+	.loc 1 34 1
 	seqz	a0,a0
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -297,7 +297,7 @@ s_relay_state:
 	.byte	0x6
 	.4byte	.LASF22
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x20
 	.byte	0x9
 	.4byte	0x7e
 	.4byte	.LFB7
@@ -307,7 +307,7 @@ s_relay_state:
 	.byte	0x7
 	.4byte	.LASF12
 	.byte	0x1
-	.byte	0x1a
+	.byte	0x1b
 	.byte	0x6
 	.4byte	.LFB6
 	.4byte	.LFE6-.LFB6
@@ -327,7 +327,7 @@ s_relay_state:
 	.byte	0x7
 	.4byte	.LASF13
 	.byte	0x1
-	.byte	0x15
+	.byte	0x16
 	.byte	0x6
 	.4byte	.LFB5
 	.4byte	.LFE5-.LFB5

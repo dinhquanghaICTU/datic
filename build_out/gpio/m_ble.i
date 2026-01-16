@@ -6920,23 +6920,24 @@ int app_ble_start(void)
     if (!g_ble_stack_started) {
         apps_ble_start();
         aos_msleep(1000);
+        ble_scan_start();
         g_ble_stack_started = 
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                              1
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                                  ;
     }
 
     if (ble_adv_start() == 0) {
         g_ble_adv_running = 
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                            1
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                                ;
         g_ble_running = 
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                        1
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                            ;
         return 0;
     }
@@ -6951,22 +6952,22 @@ int app_ble_stop(void)
     }
     ble_adv_stop();
     g_ble_adv_running = 
-# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                        0
-# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                             ;
     g_ble_running = 
-# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                    0
-# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                         ;
     return 0;
 }
 
 
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
 _Bool 
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
     app_ble_is_running(void)
 {
     return g_ble_running;

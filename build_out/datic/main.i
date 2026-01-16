@@ -9247,8 +9247,26 @@ void main(void)
     hosal_uart_init(&uart_dev_log);
 
     ;
-# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
-    handle_ble_scan();
+
+
+    ;
+    tcpip_init(
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+              ((void *)0)
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+                  , 
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+                    ((void *)0)
+# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+                        );
+
+
+    aos_msleep(100);
+
+    app_run();
+
+    ;
+
 
     while (1) {
         aos_msleep(1000);
