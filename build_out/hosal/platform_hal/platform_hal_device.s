@@ -10110,8 +10110,6 @@ platform_hal_device_init:
 	.string	"SEEK_SET 0"
 .LASF395:
 	.string	"_WANT_REGISTER_FINI 1"
-.LASF1199:
-	.string	"pdFREERTOS_ERRNO_EISDIR 21"
 .LASF54:
 	.string	"__INT_LEAST32_TYPE__ long int"
 .LASF203:
@@ -10678,8 +10676,6 @@ platform_hal_device_init:
 	.string	"__SIZEOF_SIZE_T__ 4"
 .LASF243:
 	.string	"__FLT32_MAX__ 3.40282346638528859811704183484516925e+38F32"
-.LASF268:
-	.string	"__FLT128_DIG__ 33"
 .LASF1197:
 	.string	"pdFREERTOS_ERRNO_ENODEV 19"
 .LASF623:
@@ -10874,8 +10870,8 @@ platform_hal_device_init:
 	.string	"IOF_SPI1_MISO (4u)"
 .LASF447:
 	.string	"_BEGIN_STD_C extern \"C\" {"
-.LASF1532:
-	.string	"_ZN12BLLinkedItem6attachERS_"
+.LASF851:
+	.string	"_funlockfile(fp) (((fp)->_flags & __SSTR) ? 0 : __lock_release_recursive((fp)->_lock))"
 .LASF443:
 	.string	"__RAND_MAX 0x7fffffff"
 .LASF1038:
@@ -10956,8 +10952,8 @@ platform_hal_device_init:
 	.string	"__weak_reference(sym,alias) __asm__(\".weak \" #alias); __asm__(\".equ \" #alias \", \" #sym)"
 .LASF466:
 	.string	"___int64_t_defined 1"
-.LASF1403:
-	.string	"portTICK_TYPE_SET_INTERRUPT_MASK_FROM_ISR() 0"
+.LASF1199:
+	.string	"pdFREERTOS_ERRNO_EISDIR 21"
 .LASF397:
 	.string	"_REENT_CHECK_VERIFY 1"
 .LASF522:
@@ -10982,8 +10978,8 @@ platform_hal_device_init:
 	.string	"__GCC_ATOMIC_CHAR32_T_LOCK_FREE 1"
 .LASF45:
 	.string	"__INT16_TYPE__ short int"
-.LASF12:
-	.string	"__ATOMIC_RELEASE 3"
+.LASF268:
+	.string	"__FLT128_DIG__ 33"
 .LASF797:
 	.string	"FD_COPY(f,t) (void)(*(t) = *(f))"
 .LASF1510:
@@ -11160,6 +11156,8 @@ platform_hal_device_init:
 	.string	"traceTASK_NOTIFY_WAIT() "
 .LASF1056:
 	.string	"IOF_SPI1_SS1 (8u)"
+.LASF1532:
+	.string	"_ZN12BLLinkedItem6attachERS_"
 .LASF992:
 	.string	"SIG_ATOMIC_MAX __SIG_ATOMIC_MAX__"
 .LASF702:
@@ -11303,6 +11301,8 @@ platform_hal_device_init:
 	.string	"decltype(nullptr)"
 .LASF1563:
 	.string	"this"
+.LASF983:
+	.string	"INTMAX_MIN"
 .LASF1486:
 	.string	"taskSCHEDULER_RUNNING ( ( BaseType_t ) 2 )"
 .LASF848:
@@ -11621,8 +11621,8 @@ platform_hal_device_init:
 	.string	"_ISOC11_SOURCE 1"
 .LASF26:
 	.string	"__CHAR_BIT__ 8"
-.LASF983:
-	.string	"INTMAX_MIN"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1768639981"
 .LASF428:
 	.string	"_XOPEN_SOURCE_EXTENDED"
 .LASF39:
@@ -11979,6 +11979,8 @@ platform_hal_device_init:
 	.string	"__GNUC_PREREQ(maj,min) ((__GNUC__ << 16) + __GNUC_MINOR__ >= ((maj) << 16) + (min))"
 .LASF265:
 	.string	"__FLT64_HAS_INFINITY__ 1"
+.LASF1403:
+	.string	"portTICK_TYPE_SET_INTERRUPT_MASK_FROM_ISR() 0"
 .LASF101:
 	.string	"__LONG_LONG_MAX__ 0x7fffffffffffffffLL"
 .LASF1311:
@@ -12750,8 +12752,8 @@ platform_hal_device_init:
 	.string	"INT16_C"
 .LASF250:
 	.string	"__FLT32_HAS_QUIET_NAN__ 1"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1768493769"
+.LASF12:
+	.string	"__ATOMIC_RELEASE 3"
 .LASF1243:
 	.string	"portYIELD_FROM_ISR(x) portEND_SWITCHING_ISR( x )"
 .LASF214:
@@ -12966,8 +12968,6 @@ platform_hal_device_init:
 	.string	"operator delete"
 .LASF1503:
 	.string	"unsigned int"
-.LASF851:
-	.string	"_funlockfile(fp) (((fp)->_flags & __SSTR) ? 0 : __lock_release_recursive((fp)->_lock))"
 .LASF875:
 	.string	"FILENAME_MAX 1024"
 .LASF1169:

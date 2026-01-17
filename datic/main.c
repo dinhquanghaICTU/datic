@@ -5,6 +5,8 @@
 #include <aos/kernel.h>
 #include <lwip/tcpip.h>
 #include "ble_interface.h"
+#include "ble_master.h"
+
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -20,6 +22,7 @@ hosal_uart_dev_t uart_dev_log = {
         .mode = HOSAL_UART_MODE_POLL,
     },
 };
+
 
 void main(void)
 {
@@ -40,6 +43,13 @@ void main(void)
     
     blog_info("Main loop started\r\n");
     // handle_ble_scan();
+
+
+
+    // test_ble_master();
+    // handle_ble_scan();
+
+    
     
     while (1) {
         aos_msleep(1000);

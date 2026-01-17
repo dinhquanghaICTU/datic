@@ -9224,6 +9224,1100 @@ void ble_scan_start(void);
 
 void handle_ble_scan(void);
 # 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h" 1
+# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h" 1
+# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 1
+# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn;
+
+
+struct bt_le_conn_param {
+ u16_t interval_min;
+ u16_t interval_max;
+ u16_t latency;
+ u16_t timeout;
+
+
+
+
+};
+# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn *bt_conn_ref(struct bt_conn *conn);
+
+
+
+
+
+
+
+void bt_conn_unref(struct bt_conn *conn);
+
+
+
+
+
+
+
+void bt_conn_foreach(int type, void (*func)(struct bt_conn *conn, void *data),
+       void *data);
+# 105 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn *bt_conn_lookup_addr_le(u8_t id, const bt_addr_le_t *peer);
+
+
+
+# 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3 4
+_Bool 
+# 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+    le_check_valid_conn(void);
+void notify_disconnected(struct bt_conn *conn);
+# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+const bt_addr_le_t *bt_conn_get_dst(const struct bt_conn *conn);
+# 133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+u8_t bt_conn_index(struct bt_conn *conn);
+
+
+enum {
+
+ BT_CONN_TYPE_LE = (1UL << (0)),
+
+ BT_CONN_TYPE_BR = (1UL << (1)),
+
+ BT_CONN_TYPE_SCO = (1UL << (2)),
+
+ BT_CONN_TYPE_ISO = (1UL << (3)),
+
+ BT_CONN_TYPE_ALL = BT_CONN_TYPE_LE | BT_CONN_TYPE_BR |
+      BT_CONN_TYPE_SCO | BT_CONN_TYPE_ISO,
+};
+
+
+struct bt_conn_le_info {
+
+ const bt_addr_le_t *src;
+
+
+
+ const bt_addr_le_t *dst;
+
+ const bt_addr_le_t *local;
+
+ const bt_addr_le_t *remote;
+ u16_t interval;
+ u16_t latency;
+ u16_t timeout;
+};
+
+
+struct bt_conn_br_info {
+ const bt_addr_t *dst;
+};
+
+
+enum {
+ BT_CONN_ROLE_MASTER,
+ BT_CONN_ROLE_SLAVE,
+};
+# 187 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn_info {
+ u8_t type;
+
+ u8_t role;
+
+ u8_t id;
+
+ union {
+  struct bt_conn_le_info le;
+
+  struct bt_conn_br_info br;
+ };
+};
+# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_get_info(const struct bt_conn *conn, struct bt_conn_info *info);
+
+
+
+
+
+
+
+ int bt_conn_get_remote_dev_info(struct bt_conn_info *info);
+# 229 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_le_param_update(struct bt_conn *conn,
+       const struct bt_le_conn_param *param);
+# 241 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_disconnect(struct bt_conn *conn, u8_t reason);
+# 255 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn *bt_conn_create_le(const bt_addr_le_t *peer,
+      const struct bt_le_conn_param *param);
+# 266 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_create_auto_le(const struct bt_le_conn_param *param);
+
+
+
+
+
+int bt_conn_create_auto_stop(void);
+# 288 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_le_set_auto_conn(const bt_addr_le_t *addr,
+   const struct bt_le_conn_param *param);
+# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn *bt_conn_create_slave_le(const bt_addr_le_t *peer,
+     const struct bt_le_adv_param *param);
+
+
+typedef enum 
+# 316 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3
+            __attribute__((__packed__)) 
+# 316 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+                     {
+
+ BT_SECURITY_L0,
+
+ BT_SECURITY_L1,
+
+ BT_SECURITY_L2,
+
+ BT_SECURITY_L3,
+
+ BT_SECURITY_L4,
+
+ BT_SECURITY_NONE __attribute__((deprecated)) = BT_SECURITY_L0,
+ BT_SECURITY_LOW __attribute__((deprecated)) = BT_SECURITY_L1,
+ BT_SECURITY_MEDIUM __attribute__((deprecated)) = BT_SECURITY_L2,
+ BT_SECURITY_HIGH __attribute__((deprecated)) = BT_SECURITY_L3,
+ BT_SECURITY_FIPS __attribute__((deprecated)) = BT_SECURITY_L4,
+
+
+
+
+ BT_SECURITY_FORCE_PAIR = (1UL << (7)),
+} bt_security_t;
+# 363 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_set_security(struct bt_conn *conn, bt_security_t sec);
+
+
+
+
+
+bt_security_t bt_conn_get_security(struct bt_conn *conn);
+
+static inline int __attribute__((deprecated)) bt_conn_security(struct bt_conn *conn,
+      bt_security_t sec)
+{
+ return bt_conn_set_security(conn, sec);
+}
+# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+u8_t bt_conn_enc_key_size(struct bt_conn *conn);
+
+enum bt_security_err {
+
+ BT_SECURITY_ERR_SUCCESS,
+
+
+ BT_SECURITY_ERR_AUTH_FAIL,
+
+
+ BT_SECURITY_ERR_PIN_OR_KEY_MISSING,
+
+
+ BT_SECURITY_ERR_OOB_NOT_AVAILABLE,
+
+
+ BT_SECURITY_ERR_AUTH_REQUIREMENT,
+
+
+ BT_SECURITY_ERR_PAIR_NOT_SUPPORTED,
+
+
+ BT_SECURITY_ERR_PAIR_NOT_ALLOWED,
+
+
+ BT_SECURITY_ERR_INVALID_PARAM,
+
+
+ BT_SECURITY_ERR_UNSPECIFIED,
+};
+# 427 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn_cb {
+# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*connected)(struct bt_conn *conn, u8_t err);
+# 456 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*disconnected)(struct bt_conn *conn, u8_t reason);
+# 479 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ 
+# 479 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3 4
+_Bool 
+# 479 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+     (*le_param_req)(struct bt_conn *conn,
+        struct bt_le_conn_param *param);
+# 492 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*le_param_updated)(struct bt_conn *conn, u16_t interval,
+     u16_t latency, u16_t timeout);
+# 504 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*le_phy_updated)(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy);
+# 532 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ struct bt_conn_cb *_next;
+};
+# 558 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+void bt_conn_cb_register(struct bt_conn_cb *cb);
+# 570 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+void bt_set_bondable(
+# 570 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3 4
+                    _Bool 
+# 570 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+                         enable);
+# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+void bt_set_oob_data_flag(
+# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3 4
+                         _Bool 
+# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+                              enable);
+# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_le_oob_set_sc_data(struct bt_conn *conn,
+     const struct bt_le_oob_sc_data *oobd_local,
+     const struct bt_le_oob_sc_data *oobd_remote);
+# 621 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_le_oob_get_sc_data(struct bt_conn *conn,
+     const struct bt_le_oob_sc_data **oobd_local,
+     const struct bt_le_oob_sc_data **oobd_remote);
+# 645 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_passkey_set(unsigned int passkey);
+
+
+struct bt_conn_oob_info {
+
+ enum {
+
+  BT_CONN_OOB_LE_LEGACY,
+
+
+  BT_CONN_OOB_LE_SC,
+ } type;
+
+ union {
+
+  struct {
+
+   enum {
+
+    BT_CONN_OOB_LOCAL_ONLY,
+
+
+    BT_CONN_OOB_REMOTE_ONLY,
+
+
+    BT_CONN_OOB_BOTH_PEERS,
+
+
+    BT_CONN_OOB_NO_DATA,
+   } oob_config;
+  } lesc;
+ };
+};
+
+
+struct bt_conn_auth_cb {
+# 699 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*passkey_display)(struct bt_conn *conn, unsigned int passkey);
+# 719 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*passkey_entry)(struct bt_conn *conn);
+# 742 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*passkey_confirm)(struct bt_conn *conn, unsigned int passkey);
+# 759 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*oob_data_request)(struct bt_conn *conn,
+     struct bt_conn_oob_info *info);
+# 774 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*cancel)(struct bt_conn *conn);
+# 794 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*pairing_confirm)(struct bt_conn *conn);
+# 826 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+ void (*pairing_complete)(struct bt_conn *conn, 
+# 826 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3 4
+                                               _Bool 
+# 826 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+                                                    bonded);
+
+
+
+
+
+
+ void (*pairing_failed)(struct bt_conn *conn,
+          enum bt_security_err reason);
+};
+# 846 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_auth_cb_register(const struct bt_conn_auth_cb *cb);
+# 858 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_auth_passkey_entry(struct bt_conn *conn, unsigned int passkey);
+# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_auth_cancel(struct bt_conn *conn);
+# 879 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_auth_passkey_confirm(struct bt_conn *conn);
+# 890 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_auth_pairing_confirm(struct bt_conn *conn);
+# 902 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+int bt_conn_auth_pincode_entry(struct bt_conn *conn, const char *pin);
+
+
+struct bt_br_conn_param {
+ 
+# 906 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 3 4
+_Bool 
+# 906 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+     allow_role_switch;
+};
+# 934 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn *bt_conn_create_br(const bt_addr_t *peer,
+      const struct bt_br_conn_param *param);
+# 946 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer);
+# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 1
+# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 2
+
+
+
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h" 1
+# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
+enum {
+ BT_UUID_TYPE_16,
+ BT_UUID_TYPE_32,
+ BT_UUID_TYPE_128,
+};
+
+
+struct bt_uuid {
+ u8_t type;
+};
+
+struct bt_uuid_16 {
+ struct bt_uuid uuid;
+ u16_t val;
+};
+
+struct bt_uuid_32 {
+ struct bt_uuid uuid;
+ u32_t val;
+};
+
+struct bt_uuid_128 {
+ struct bt_uuid uuid;
+ u8_t val[16];
+};
+# 566 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
+int bt_uuid_cmp(const struct bt_uuid *u1, const struct bt_uuid *u2);
+# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
+
+# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h" 3 4
+_Bool 
+# 580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
+    bt_uuid_create(struct bt_uuid *uuid, const u8_t *data, u8_t data_len);
+# 610 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
+static inline void bt_uuid_to_str(const struct bt_uuid *uuid, char *str,
+      size_t len)
+{
+ if (len > 0) {
+  str[0] = '\0';
+ }
+}
+
+static inline const char *bt_uuid_str(const struct bt_uuid *uuid)
+{
+ return "";
+}
+# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h" 1
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h"
+typedef void (*bt_att_func_t)(struct bt_conn *conn, u8_t err,
+         const void *pdu, u16_t length,
+         void *user_data);
+typedef void (*bt_att_destroy_t)(void *user_data);
+
+
+struct bt_att_req {
+ sys_snode_t node;
+ bt_att_func_t func;
+ bt_att_destroy_t destroy;
+ struct net_buf_simple_state state;
+ struct net_buf *buf;
+
+
+
+};
+struct bt_att_req *bt_att_get_att_req(struct bt_conn *conn);
+# 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 2
+
+
+
+
+
+enum {
+
+ BT_GATT_PERM_NONE = 0,
+
+
+ BT_GATT_PERM_READ = (1UL << (0)),
+
+
+ BT_GATT_PERM_WRITE = (1UL << (1)),
+
+
+
+
+
+ BT_GATT_PERM_READ_ENCRYPT = (1UL << (2)),
+
+
+
+
+
+ BT_GATT_PERM_WRITE_ENCRYPT = (1UL << (3)),
+
+
+
+
+
+
+ BT_GATT_PERM_READ_AUTHEN = (1UL << (4)),
+
+
+
+
+
+
+ BT_GATT_PERM_WRITE_AUTHEN = (1UL << (5)),
+
+
+
+
+
+
+ BT_GATT_PERM_PREPARE_WRITE = (1UL << (6)),
+};
+# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+enum {
+
+
+
+
+
+ BT_GATT_WRITE_FLAG_PREPARE = (1UL << (0)),
+
+
+
+
+
+
+ BT_GATT_WRITE_FLAG_CMD = (1UL << (1)),
+};
+
+
+struct bt_gatt_attr {
+
+ const struct bt_uuid *uuid;
+# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ ssize_t (*read)(struct bt_conn *conn,
+     const struct bt_gatt_attr *attr,
+     void *buf, u16_t len,
+     u16_t offset);
+# 141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ ssize_t (*write)(struct bt_conn *conn,
+      const struct bt_gatt_attr *attr,
+      const void *buf, u16_t len,
+      u16_t offset, u8_t flags);
+
+
+ void *user_data;
+
+ u16_t handle;
+
+ u8_t perm;
+};
+
+
+struct bt_gatt_service_static {
+
+ const struct bt_gatt_attr *attrs;
+
+ size_t attr_count;
+};
+
+
+struct bt_gatt_service {
+
+ struct bt_gatt_attr *attrs;
+
+ size_t attr_count;
+ sys_snode_t node;
+};
+
+
+struct bt_gatt_service_val {
+
+ const struct bt_uuid *uuid;
+
+ u16_t end_handle;
+};
+
+
+struct bt_gatt_include {
+
+ const struct bt_uuid *uuid;
+
+ u16_t start_handle;
+
+ u16_t end_handle;
+};
+# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+struct bt_gatt_chrc {
+
+ const struct bt_uuid *uuid;
+
+ u16_t value_handle;
+
+ u8_t properties;
+};
+
+
+
+
+
+
+struct bt_gatt_cep {
+
+ u16_t properties;
+};
+# 279 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+struct bt_gatt_ccc {
+
+ u16_t flags;
+};
+
+
+struct bt_gatt_cpf {
+
+ u8_t format;
+
+
+
+ s8_t exponent;
+
+ u16_t unit;
+
+ u8_t name_space;
+
+ u16_t description;
+} 
+# 298 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3
+ __attribute__((__packed__))
+# 298 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+         ;
+# 316 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_service_register(struct bt_gatt_service *svc);
+
+
+
+
+
+
+
+int bt_gatt_service_unregister(struct bt_gatt_service *svc);
+
+enum {
+ BT_GATT_ITER_STOP = 0,
+ BT_GATT_ITER_CONTINUE,
+};
+# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef u8_t (*bt_gatt_attr_func_t)(const struct bt_gatt_attr *attr,
+           void *user_data);
+# 355 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+void bt_gatt_foreach_attr_type(u16_t start_handle, u16_t end_handle,
+          const struct bt_uuid *uuid,
+          const void *attr_data, uint16_t num_matches,
+          bt_gatt_attr_func_t func,
+          void *user_data);
+# 370 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+static inline void bt_gatt_foreach_attr(u16_t start_handle, u16_t end_handle,
+     bt_gatt_attr_func_t func,
+     void *user_data)
+{
+ bt_gatt_foreach_attr_type(start_handle, end_handle, 
+# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+                                                    ((void *)0)
+# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+                                                        , 
+# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+                                                          ((void *)0)
+# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+                                                              , 0, func,
+      user_data);
+}
+# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+struct bt_gatt_attr *bt_gatt_attr_next(const struct bt_gatt_attr *attr);
+# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+uint16_t bt_gatt_attr_value_handle(const struct bt_gatt_attr *attr);
+# 413 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read(struct bt_conn *conn, const struct bt_gatt_attr *attr,
+     void *buf, u16_t buf_len, u16_t offset,
+     const void *value, u16_t value_len);
+# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_service(struct bt_conn *conn,
+      const struct bt_gatt_attr *attr,
+      void *buf, u16_t len, u16_t offset);
+# 498 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_included(struct bt_conn *conn,
+       const struct bt_gatt_attr *attr,
+       void *buf, u16_t len, u16_t offset);
+# 528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_chrc(struct bt_conn *conn,
+          const struct bt_gatt_attr *attr, void *buf,
+          u16_t len, u16_t offset);
+# 572 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+struct bt_gatt_ccc_cfg {
+ u8_t id;
+ bt_addr_le_t peer;
+ u16_t value;
+};
+
+
+struct _bt_gatt_ccc {
+ struct bt_gatt_ccc_cfg cfg[(0 + 1)];
+ u16_t value;
+ void (*cfg_changed)(const struct bt_gatt_attr *attr,
+            u16_t value);
+ 
+# 584 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+_Bool 
+# 584 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+       (*cfg_write)(struct bt_conn *conn,
+          const struct bt_gatt_attr *attr,
+          u16_t value);
+ 
+# 587 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+_Bool 
+# 587 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+       (*cfg_match)(struct bt_conn *conn,
+          const struct bt_gatt_attr *attr);
+};
+# 606 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_ccc(struct bt_conn *conn,
+         const struct bt_gatt_attr *attr, void *buf,
+         u16_t len, u16_t offset);
+# 625 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_write_ccc(struct bt_conn *conn,
+          const struct bt_gatt_attr *attr, const void *buf,
+          u16_t len, u16_t offset, u8_t flags);
+# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_cep(struct bt_conn *conn,
+         const struct bt_gatt_attr *attr, void *buf,
+         u16_t len, u16_t offset);
+# 718 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_cud(struct bt_conn *conn,
+         const struct bt_gatt_attr *attr, void *buf,
+         u16_t len, u16_t offset);
+# 749 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ssize_t bt_gatt_attr_read_cpf(struct bt_conn *conn,
+         const struct bt_gatt_attr *attr, void *buf,
+         u16_t len, u16_t offset);
+# 803 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef void (*bt_gatt_complete_func_t) (struct bt_conn *conn, void *user_data);
+
+struct bt_gatt_notify_params {
+
+ const struct bt_uuid *uuid;
+
+ const struct bt_gatt_attr *attr;
+
+ const void *data;
+
+ u16_t len;
+
+ bt_gatt_complete_func_t func;
+
+ void *user_data;
+};
+# 840 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_notify_cb(struct bt_conn *conn,
+        struct bt_gatt_notify_params *params);
+# 862 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+static inline int bt_gatt_notify(struct bt_conn *conn,
+     const struct bt_gatt_attr *attr,
+     const void *data, u16_t len)
+{
+ struct bt_gatt_notify_params params;
+
+ memset(&params, 0, sizeof(params));
+
+ params.attr = attr;
+ params.data = data;
+ params.len = len;
+
+ return bt_gatt_notify_cb(conn, &params);
+}
+# 886 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef void (*bt_gatt_indicate_func_t)(struct bt_conn *conn,
+     const struct bt_gatt_attr *attr,
+     u8_t err);
+
+
+struct bt_gatt_indicate_params {
+ struct bt_att_req _req;
+
+ const struct bt_uuid *uuid;
+
+ const struct bt_gatt_attr *attr;
+
+ bt_gatt_indicate_func_t func;
+
+ const void *data;
+
+ u16_t len;
+};
+# 931 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_indicate(struct bt_conn *conn,
+       struct bt_gatt_indicate_params *params);
+# 955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+
+# 955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+_Bool 
+# 955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+    bt_gatt_is_subscribed(struct bt_conn *conn,
+      const struct bt_gatt_attr *attr, u16_t ccc_value);
+# 967 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+u16_t bt_gatt_get_mtu(struct bt_conn *conn);
+# 978 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+struct bt_gatt_exchange_params {
+ struct bt_att_req _req;
+
+ void (*func)(struct bt_conn *conn, u8_t err,
+       struct bt_gatt_exchange_params *params);
+};
+# 997 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_exchange_mtu(struct bt_conn *conn,
+    struct bt_gatt_exchange_params *params);
+
+
+
+
+
+struct bt_gatt_discover_params;
+# 1021 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef u8_t (*bt_gatt_discover_func_t)(struct bt_conn *conn,
+     const struct bt_gatt_attr *attr,
+     struct bt_gatt_discover_params *params);
+
+
+enum {
+
+ BT_GATT_DISCOVER_PRIMARY,
+
+ BT_GATT_DISCOVER_SECONDARY,
+
+ BT_GATT_DISCOVER_INCLUDE,
+
+
+
+
+ BT_GATT_DISCOVER_CHARACTERISTIC,
+# 1046 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ BT_GATT_DISCOVER_DESCRIPTOR,
+# 1055 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ BT_GATT_DISCOVER_ATTRIBUTE,
+};
+
+
+struct bt_gatt_discover_params {
+ struct bt_att_req _req;
+
+ struct bt_uuid *uuid;
+
+ bt_gatt_discover_func_t func;
+ union {
+  struct {
+
+   u16_t attr_handle;
+
+   u16_t start_handle;
+
+   u16_t end_handle;
+  } _included;
+
+  u16_t start_handle;
+ };
+
+ u16_t end_handle;
+
+ u8_t type;
+};
+# 1108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_discover(struct bt_conn *conn,
+       struct bt_gatt_discover_params *params);
+
+struct bt_gatt_read_params;
+# 1122 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef u8_t (*bt_gatt_read_func_t)(struct bt_conn *conn, u8_t err,
+        struct bt_gatt_read_params *params,
+        const void *data, u16_t length);
+# 1140 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+struct bt_gatt_read_params {
+ struct bt_att_req _req;
+ bt_gatt_read_func_t func;
+ size_t handle_count;
+ union {
+  struct {
+   u16_t handle;
+   u16_t offset;
+  } single;
+  u16_t *handles;
+  struct {
+   u16_t start_handle;
+   u16_t end_handle;
+   struct bt_uuid *uuid;
+  } by_uuid;
+ };
+};
+# 1178 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_read(struct bt_conn *conn, struct bt_gatt_read_params *params);
+
+struct bt_gatt_write_params;
+# 1189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef void (*bt_gatt_write_func_t)(struct bt_conn *conn, u8_t err,
+         struct bt_gatt_write_params *params);
+
+
+struct bt_gatt_write_params {
+ struct bt_att_req _req;
+
+ bt_gatt_write_func_t func;
+
+ u16_t handle;
+
+ u16_t offset;
+
+ const void *data;
+
+ u16_t length;
+};
+# 1220 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_write(struct bt_conn *conn, struct bt_gatt_write_params *params);
+# 1252 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_write_without_response_cb(struct bt_conn *conn, u16_t handle,
+          const void *data, u16_t length,
+          
+# 1254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+         _Bool 
+# 1254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+              sign, bt_gatt_complete_func_t func,
+          void *user_data);
+# 1270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+static inline int bt_gatt_write_without_response(struct bt_conn *conn,
+       u16_t handle, const void *data,
+       u16_t length, 
+# 1272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+                    _Bool 
+# 1272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+                         sign)
+{
+ return bt_gatt_write_without_response_cb(conn, handle, data, length,
+       sign, 
+# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+            ((void *)0)
+# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+                , 
+# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 3 4
+                  ((void *)0)
+# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+                      );
+}
+
+struct bt_gatt_subscribe_params;
+# 1289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+typedef u8_t (*bt_gatt_notify_func_t)(struct bt_conn *conn,
+          struct bt_gatt_subscribe_params *params,
+          const void *data, u16_t length);
+
+
+enum {
+# 1304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+ BT_GATT_SUBSCRIBE_FLAG_VOLATILE,
+
+
+
+
+
+
+ BT_GATT_SUBSCRIBE_FLAG_WRITE_PENDING,
+
+ BT_GATT_SUBSCRIBE_NUM_FLAGS
+};
+
+
+struct bt_gatt_subscribe_params {
+ struct bt_att_req _req;
+ bt_addr_le_t _peer;
+
+ bt_gatt_notify_func_t notify;
+
+ u16_t value_handle;
+
+ u16_t ccc_handle;
+
+ u16_t value;
+
+ atomic_t flags[1 + ((BT_GATT_SUBSCRIBE_NUM_FLAGS) - 1) / (sizeof(atomic_val_t) * 8)];
+
+ sys_snode_t node;
+};
+# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_subscribe(struct bt_conn *conn,
+        struct bt_gatt_subscribe_params *params);
+# 1366 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+int bt_gatt_unsubscribe(struct bt_conn *conn,
+   struct bt_gatt_subscribe_params *params);
+
+
+
+
+
+
+void bt_gatt_cancel(struct bt_conn *conn, void *params);
+
+
+typedef void (*bt_gatt_mtu_changed_cb_t)(struct bt_conn *conn, int mtu);
+void bt_gatt_register_mtu_callback(bt_gatt_mtu_changed_cb_t cb);
+# 1392 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+void bt_gatt_ccc_load(void);
+# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h" 2
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 1
+# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/../../bluetooth/buf.h" 1
+# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 2
+
+
+
+
+
+enum {
+
+ BT_QUIRK_NO_RESET = (1UL << (0)),
+};
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+static inline 
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
+             _Bool 
+# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+                  bt_hci_evt_is_prio(u8_t evt)
+{
+ switch (evt) {
+ case 0x0e:
+ case 0x0f:
+
+
+ case 0x13:
+ case 0x1a:
+
+  return 
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
+        1
+# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+            ;
+ default:
+  return 
+# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 3 4
+        0
+# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+             ;
+ }
+}
+# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+int bt_recv(struct net_buf *buf);
+# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+int bt_recv_prio(struct net_buf *buf);
+
+
+enum bt_hci_driver_bus {
+ BT_HCI_DRIVER_BUS_VIRTUAL = 0,
+ BT_HCI_DRIVER_BUS_USB = 1,
+ BT_HCI_DRIVER_BUS_PCCARD = 2,
+ BT_HCI_DRIVER_BUS_UART = 3,
+ BT_HCI_DRIVER_BUS_RS232 = 4,
+ BT_HCI_DRIVER_BUS_PCI = 5,
+ BT_HCI_DRIVER_BUS_SDIO = 6,
+ BT_HCI_DRIVER_BUS_SPI = 7,
+ BT_HCI_DRIVER_BUS_I2C = 8,
+ BT_HCI_DRIVER_BUS_IPM = 9,
+};
+
+
+
+
+
+
+
+struct bt_hci_driver {
+
+ const char *name;
+
+
+ enum bt_hci_driver_bus bus;
+
+
+
+
+
+
+ u32_t quirks;
+# 144 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+ int (*open)(void);
+# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+ int (*send)(struct net_buf *buf);
+};
+# 171 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+int bt_hci_driver_register(const struct bt_hci_driver *drv);
+# 193 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+void hci_driver_enque_recvq(struct net_buf *buf);
+
+int hci_driver_init(void);
+# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h" 2
+# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h"
+typedef struct {
+    struct bt_uuid_16 uuid;
+    uint16_t handle;
+    uint8_t properties;
+} char_info_t;
+
+typedef struct {
+    struct bt_uuid_16 uuid;
+    uint16_t start_handle;
+    uint16_t end_handle;
+    char_info_t chars[10];
+    uint8_t char_count;
+} service_info_t;
+
+typedef struct {
+    service_info_t services[10];
+    uint8_t service_count;
+} discover_result_t;
+# 87 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h"
+void ble_master_init(void);
+
+
+int ble_start_scan(void);
+
+
+int ble_stop_scan(void);
+
+
+void test_ble_master(void);
+
+
+int connect(bt_addr_le_t *addr);
+# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 2
+
 
 hosal_uart_dev_t uart_dev_log = {
     .config = {
@@ -9240,6 +10334,7 @@ hosal_uart_dev_t uart_dev_log = {
     },
 };
 
+
 void main(void)
 {
     bl_sys_init();
@@ -9251,13 +10346,13 @@ void main(void)
 
     ;
     tcpip_init(
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
               ((void *)0)
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
                   , 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
                     ((void *)0)
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
                         );
 
 
@@ -9266,8 +10361,7 @@ void main(void)
     app_run();
 
     ;
-
-
+# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
     while (1) {
         aos_msleep(1000);
     }

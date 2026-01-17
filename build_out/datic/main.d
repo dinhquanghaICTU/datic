@@ -70,7 +70,15 @@ main.o: /home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_err.h \
  /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/buf.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gap.h
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gap.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h \
+ /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/../../bluetooth/buf.h
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
@@ -143,4 +151,12 @@ main.o: /home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c \
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_err.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/buf.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gap.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h:
+/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/../../bluetooth/buf.h:
 /home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/./main.c:

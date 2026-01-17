@@ -17,6 +17,11 @@
 
 #include "relay.h"
 
+#include "ble_master.h"
+// #include "mqtt_if.h"
+#include "m_mqtt.h"
+
+
 
 #define BT_ADDR_LE_STR_LEN  30
 
@@ -130,6 +135,11 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     has_ssid = true;
 
     printf("[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_ssid);
+
+
+    if(strcmp(temp_ssid, "test scan")==0){
+        test_ble_master();
+    }
 
     if (strcmp(temp_ssid, "1") == 0) {
         relay_on();
@@ -384,7 +394,7 @@ static void bt_enable_cb(int err)
     printf("[BLE] bt_enable_cb called with err=%d\r\n", err);
     if (!err) {
         s_ble_enabled = true;
-        printf("[BLE] BLE stack enabled successfully\r\n");
+        printf("check stack ok \r\n");
         bt_addr_le_t bt_addr;
         bt_get_local_public_address(&bt_addr);
         bt_addr.a.val[5] = 0x88;
@@ -613,6 +623,8 @@ void apps_ble_stop()
 
 
 */
+static uint8_t relay_current_state = 0;
+
 static bool adv_parse_cb(struct bt_data *data, void *user_data)
 {
     int8_t rssi = *(int8_t *)user_data;
@@ -640,17 +652,21 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
     if (product == ADV_PRODUCT_RELAY &&
         msg == ADV_MSG_RELAY_STATE)
     {
+        
         printf("[ADV] Relay dev %d state=%d RSSI=%d\r\n",
                dev_id, state, rssi);
-
-        if(state == 1){
-            relay_on();
+        
+        if(state != relay_current_state){
+           relay_toggle();
+           if(relay_current_state == 0){
+            app_mqtt_publish_state("OFF");
+           }
+           else{
+            app_mqtt_publish_state("ON");
+           }
+           relay_current_state = state;
         }
-        if(state == 0){
-            relay_off();
-        }else{
-            printf ("state no controler for delay %d\r\n", state);
-        }
+        
     }
     return false; 
 }
@@ -666,6 +682,9 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
     - when other send adv, my divice scan parameter call fun bt_data_paser add call back for parsser device taget  
 
 */
+
+
+
 static void scan_device_found(const bt_addr_le_t *addr,
                               int8_t rssi,
                               uint8_t type,
@@ -676,6 +695,9 @@ static void scan_device_found(const bt_addr_le_t *addr,
 
     // bt_addr_le_to_str(addr,mac, sizeof(mac));
     // printf("other device: mac: %s type: %d ,rssi : %d  \r\n",mac, type, rssi);
+     
+    // printf("current tim %lu , last time %lu\r\n", current_time, last_adv_time);
+    // last_adv_time = current_time;
     bt_data_parse(ad, adv_parse_cb, &rssi);
 }
 
@@ -706,7 +728,7 @@ void ble_scan_start(void)
     struct bt_le_scan_param scan_param = {
         .type       = BT_LE_SCAN_TYPE_PASSIVE,
         .filter_dup = BT_LE_SCAN_FILTER_DUPLICATE,
-        .interval   = 0x140,   
+        .interval   = 0x50,    
         .window     = 0x30,    
     };
     /*
@@ -723,7 +745,7 @@ void ble_scan_start(void)
 
 
 void handle_ble_scan(void){
-    // relay_init();
-    // ble_stack_start();
+    relay_init();
+    ble_stack_start();
     ble_scan_start();
 }

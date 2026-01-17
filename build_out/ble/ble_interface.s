@@ -25,57 +25,57 @@
 ble_ccc_cfg_changed:
 .LFB79:
 	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
-	.loc 1 239 1
+	.loc 1 249 1
 	.cfi_startproc
 .LVL0:
-	.loc 1 240 5
-	.loc 1 242 5
-	.loc 1 239 1 is_stmt 0
+	.loc 1 250 5
+	.loc 1 252 5
+	.loc 1 249 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 242 8
+	.loc 1 252 8
 	li	a5,1
 	beq	a1,a5,.L3
-	.loc 1 244 12 is_stmt 1
-	.loc 1 244 15 is_stmt 0
+	.loc 1 254 12 is_stmt 1
+	.loc 1 254 15 is_stmt 0
 	li	a5,2
 	bne	a1,a5,.L4
-	.loc 1 245 13
+	.loc 1 255 13
 	lui	a1,%hi(.LC3)
 .LVL1:
 	addi	a1,a1,%lo(.LC3)
 .L2:
 .LVL2:
-	.loc 1 248 5 is_stmt 1
-	.loc 1 249 1 is_stmt 0
+	.loc 1 258 5 is_stmt 1
+	.loc 1 259 1 is_stmt 0
 	lw	s0,12(sp)
 	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 248 5
+	.loc 1 258 5
 	lui	a0,%hi(.LC4)
 .LVL3:
 	addi	a0,a0,%lo(.LC4)
-	.loc 1 249 1
+	.loc 1 259 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 248 5
+	.loc 1 258 5
 	tail	printf
 .LVL4:
 .L3:
 	.cfi_restore_state
-	.loc 1 243 13
+	.loc 1 253 13
 	lui	a1,%hi(.LC1)
 .LVL5:
 	addi	a1,a1,%lo(.LC1)
 	j	.L2
 .LVL6:
 .L4:
-	.loc 1 240 17
+	.loc 1 250 17
 	lui	a1,%hi(.LC2)
 .LVL7:
 	addi	a1,a1,%lo(.LC2)
@@ -83,159 +83,16 @@ ble_ccc_cfg_changed:
 	.cfi_endproc
 .LFE79:
 	.size	ble_ccc_cfg_changed, .-ble_ccc_cfg_changed
-	.section	.rodata.adv_parse_cb.str1.4,"aMS",@progbits,1
-	.align	2
-.LC5:
-	.string	"[ADV] Relay dev %d state=%d RSSI=%d\r\n"
-	.align	2
-.LC6:
-	.string	"state no controler for delay %d\r\n"
-	.section	.text.adv_parse_cb,"ax",@progbits
-	.align	1
-	.type	adv_parse_cb, @function
-adv_parse_cb:
-.LFB102:
-	.loc 1 617 1 is_stmt 1
-	.cfi_startproc
-.LVL8:
-	.loc 1 618 5
-	.loc 1 620 5
-	.loc 1 617 1 is_stmt 0
-	addi	sp,sp,-32
-	.cfi_def_cfa_offset 32
-	sw	s0,24(sp)
-.LVL9:
-	sw	s1,20(sp)
-	sw	ra,28(sp)
-	sw	s2,16(sp)
-	sw	s3,12(sp)
-	.cfi_offset 8, -8
-	.cfi_offset 9, -12
-	.cfi_offset 1, -4
-	.cfi_offset 18, -16
-	.cfi_offset 19, -20
-	addi	s0,sp,32
-	.cfi_def_cfa 8, 0
-	.loc 1 620 8
-	lbu	a4,0(a0)
-	li	a5,255
-	.loc 1 621 15
-	li	s1,1
-	.loc 1 620 8
-	bne	a4,a5,.L7
-	.loc 1 624 5 is_stmt 1
-	.loc 1 624 8 is_stmt 0
-	lbu	a4,1(a0)
-	li	a5,7
-	.loc 1 621 15
-	li	s1,1
-	.loc 1 624 8
-	bleu	a4,a5,.L7
-	.loc 1 628 5 is_stmt 1
-	.loc 1 628 20 is_stmt 0
-	lw	a5,4(a0)
-.LVL10:
-	.loc 1 630 5 is_stmt 1
-	.loc 1 631 5
-	.loc 1 631 8 is_stmt 0
-	lbu	a4,1(a5)
-	lbu	a3,0(a5)
-	slli	a4,a4,8
-	or	a4,a4,a3
-	li	a3,61440
-	addi	a3,a3,1375
-	bne	a4,a3,.L7
-	.loc 1 633 5 is_stmt 1
-	.loc 1 633 8 is_stmt 0
-	lbu	a3,2(a5)
-	li	a4,161
-	bne	a3,a4,.L7
-	.loc 1 635 5 is_stmt 1
-.LVL11:
-	.loc 1 636 5
-	.loc 1 637 5
-	.loc 1 638 5
-	.loc 1 640 5
-	.loc 1 640 8 is_stmt 0
-	lbu	a4,3(a5)
-	li	a3,1
-	.loc 1 655 11
-	li	s1,0
-	.loc 1 640 8
-	bne	a4,a3,.L7
-	.loc 1 640 25 discriminator 1
-	lbu	s3,4(a5)
-	bne	s3,a4,.L7
-	.loc 1 638 13
-	lbu	s2,7(a5)
-	.loc 1 643 9 is_stmt 1
-	lbu	a4,5(a5)
-	lbu	a5,6(a5)
-.LVL12:
-	lb	a3,0(a1)
-	lui	a0,%hi(.LC5)
-.LVL13:
-	slli	a5,a5,8
-	mv	a2,s2
-	or	a1,a5,a4
-.LVL14:
-	addi	a0,a0,%lo(.LC5)
-	call	printf
-.LVL15:
-	.loc 1 646 9
-	.loc 1 646 11 is_stmt 0
-	bne	s2,s3,.L8
-	.loc 1 647 13 is_stmt 1
-	call	relay_on
-.LVL16:
-	.loc 1 649 9
-.L9:
-	.loc 1 652 13
-	lui	a0,%hi(.LC6)
-	mv	a1,s2
-	addi	a0,a0,%lo(.LC6)
-	call	printf
-.LVL17:
-	.loc 1 655 11 is_stmt 0
-	li	s1,0
-	j	.L7
-.L8:
-	.loc 1 649 9 is_stmt 1
-	.loc 1 649 11 is_stmt 0
-	bne	s2,zero,.L9
-	.loc 1 650 13 is_stmt 1
-	call	relay_off
-.LVL18:
-.L7:
-	.loc 1 656 1 is_stmt 0
-	lw	ra,28(sp)
-	.cfi_restore 1
-	lw	s0,24(sp)
-	.cfi_restore 8
-	.cfi_def_cfa 2, 32
-	lw	s2,16(sp)
-	.cfi_restore 18
-	lw	s3,12(sp)
-	.cfi_restore 19
-	mv	a0,s1
-	lw	s1,20(sp)
-	.cfi_restore 9
-	addi	sp,sp,32
-	.cfi_def_cfa_offset 0
-	jr	ra
-	.cfi_endproc
-.LFE102:
-	.size	adv_parse_cb, .-adv_parse_cb
 	.section	.text.scan_device_found,"ax",@progbits
 	.align	1
 	.type	scan_device_found, @function
 scan_device_found:
 .LFB103:
-	.loc 1 673 1 is_stmt 1
+	.loc 1 692 1 is_stmt 1
 	.cfi_startproc
-.LVL19:
-	.loc 1 679 5
-	.loc 1 673 1 is_stmt 0
+.LVL8:
+	.loc 1 701 5
+	.loc 1 692 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -244,19 +101,19 @@ scan_device_found:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 673 1
+	.loc 1 692 1
 	sb	a1,-17(s0)
-	.loc 1 679 5
+	.loc 1 701 5
 	lui	a1,%hi(adv_parse_cb)
-.LVL20:
+.LVL9:
 	addi	a2,s0,-17
-.LVL21:
+.LVL10:
 	addi	a1,a1,%lo(adv_parse_cb)
 	mv	a0,a3
-.LVL22:
+.LVL11:
 	call	bt_data_parse
-.LVL23:
-	.loc 1 680 1
+.LVL12:
+	.loc 1 702 1
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -268,19 +125,186 @@ scan_device_found:
 	.cfi_endproc
 .LFE103:
 	.size	scan_device_found, .-scan_device_found
-	.section	.rodata.check_and_save_config.str1.4,"aMS",@progbits,1
+	.section	.rodata.adv_parse_cb.str1.4,"aMS",@progbits,1
+	.align	2
+.LC5:
+	.string	"[ADV] Relay dev %d state=%d RSSI=%d\r\n"
+	.align	2
+.LC6:
+	.string	"OFF"
 	.align	2
 .LC7:
+	.string	"ON"
+	.section	.text.adv_parse_cb,"ax",@progbits
+	.align	1
+	.type	adv_parse_cb, @function
+adv_parse_cb:
+.LFB102:
+	.loc 1 629 1 is_stmt 1
+	.cfi_startproc
+.LVL13:
+	.loc 1 630 5
+	.loc 1 632 5
+	.loc 1 632 8 is_stmt 0
+	lbu	a3,0(a0)
+	li	a4,255
+	bne	a3,a4,.L14
+	.loc 1 636 8
+	lbu	a3,1(a0)
+	li	a4,7
+	mv	a5,a0
+	.loc 1 636 5 is_stmt 1
+	.loc 1 633 15 is_stmt 0
+	li	a0,1
+.LVL14:
+	.loc 1 636 8
+	bleu	a3,a4,.L19
+	.loc 1 640 5 is_stmt 1
+	.loc 1 640 20 is_stmt 0
+	lw	a5,4(a5)
+.LVL15:
+	.loc 1 642 5 is_stmt 1
+	.loc 1 643 5
+	.loc 1 643 8 is_stmt 0
+	lbu	a4,1(a5)
+	lbu	a3,0(a5)
+	slli	a4,a4,8
+	or	a4,a4,a3
+	li	a3,61440
+	addi	a3,a3,1375
+	bne	a4,a3,.L19
+	.loc 1 645 5 is_stmt 1
+	.loc 1 645 8 is_stmt 0
+	lbu	a3,2(a5)
+	li	a4,161
+	bne	a3,a4,.L19
+	.loc 1 647 5 is_stmt 1
+.LVL16:
+	.loc 1 648 5
+	.loc 1 649 5
+	.loc 1 650 5
+	.loc 1 652 5
+	.loc 1 652 8 is_stmt 0
+	lbu	a4,3(a5)
+	beq	a4,a0,.L10
+.L20:
+	.loc 1 671 11
+	li	a0,0
+.LVL17:
+.L19:
+	.loc 1 672 1
+	ret
+.LVL18:
+.L10:
+	.loc 1 652 25 discriminator 1
+	lbu	a3,4(a5)
+	bne	a3,a4,.L20
+	.loc 1 629 1
+	addi	sp,sp,-16
+	.cfi_def_cfa_offset 16
+	sw	s0,8(sp)
+.LVL19:
+	sw	s1,4(sp)
+	sw	ra,12(sp)
+	sw	s2,0(sp)
+	.cfi_offset 8, -8
+	.cfi_offset 9, -12
+	.cfi_offset 1, -4
+	.cfi_offset 18, -16
+	addi	s0,sp,16
+	.cfi_def_cfa 8, 0
+	.loc 1 650 13
+	lbu	s2,7(a5)
+	.loc 1 656 9 is_stmt 1
+	lbu	a4,5(a5)
+.LVL20:
+	lbu	a5,6(a5)
+.LVL21:
+	lb	a3,0(a1)
+	lui	a0,%hi(.LC5)
+	slli	a5,a5,8
+	or	a1,a5,a4
+.LVL22:
+	mv	a2,s2
+	addi	a0,a0,%lo(.LC5)
+	.loc 1 659 18 is_stmt 0
+	lui	s1,%hi(.LANCHOR0)
+	.loc 1 656 9
+	call	printf
+.LVL23:
+	.loc 1 659 9 is_stmt 1
+	.loc 1 659 11 is_stmt 0
+	lbu	a5,%lo(.LANCHOR0)(s1)
+	addi	s1,s1,%lo(.LANCHOR0)
+	beq	a5,s2,.L24
+	.loc 1 660 12 is_stmt 1
+	call	relay_toggle
+.LVL24:
+	.loc 1 661 12
+	.loc 1 661 14 is_stmt 0
+	lbu	a5,0(s1)
+	bne	a5,zero,.L12
+	.loc 1 662 13 is_stmt 1
+	lui	a0,%hi(.LC6)
+	addi	a0,a0,%lo(.LC6)
+.L23:
+	.loc 1 665 13 is_stmt 0
+	call	app_mqtt_publish_state
+.LVL25:
+	.loc 1 667 12 is_stmt 1
+	.loc 1 667 32 is_stmt 0
+	sb	s2,0(s1)
+.L24:
+	.loc 1 672 1
+	lw	ra,12(sp)
+	.cfi_remember_state
+	.cfi_restore 1
+	lw	s0,8(sp)
+	.cfi_restore 8
+	.cfi_def_cfa 2, 16
+	lw	s1,4(sp)
+	.cfi_restore 9
+	lw	s2,0(sp)
+	.cfi_restore 18
+	.loc 1 671 11
+	li	a0,0
+	.loc 1 672 1
+	addi	sp,sp,16
+	.cfi_def_cfa_offset 0
+	jr	ra
+.L12:
+	.cfi_restore_state
+	.loc 1 665 13 is_stmt 1
+	lui	a0,%hi(.LC7)
+	addi	a0,a0,%lo(.LC7)
+	j	.L23
+.LVL26:
+.L14:
+	.cfi_def_cfa_register 2
+	.cfi_restore 1
+	.cfi_restore 8
+	.cfi_restore 9
+	.cfi_restore 18
+	.loc 1 633 15 is_stmt 0
+	li	a0,1
+.LVL27:
+	ret
+	.cfi_endproc
+.LFE102:
+	.size	adv_parse_cb, .-adv_parse_cb
+	.section	.rodata.check_and_save_config.str1.4,"aMS",@progbits,1
+	.align	2
+.LC8:
 	.string	"[BLE] Both SSID and password received, saving config...\r\n"
 	.section	.text.check_and_save_config,"ax",@progbits
 	.align	1
 	.type	check_and_save_config, @function
 check_and_save_config:
 .LFB77:
-	.loc 1 186 1 is_stmt 1
+	.loc 1 196 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 187 5
-	.loc 1 186 1 is_stmt 0
+	.loc 1 197 5
+	.loc 1 196 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -299,61 +323,61 @@ check_and_save_config:
 	.cfi_offset 21, -28
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 187 9
-	lui	s2,%hi(.LANCHOR0)
-	.loc 1 186 1
-	.loc 1 187 9
-	addi	s2,s2,%lo(.LANCHOR0)
-	.loc 1 187 8
+	.loc 1 197 9
+	lui	s2,%hi(.LANCHOR1)
+	.loc 1 196 1
+	.loc 1 197 9
+	addi	s2,s2,%lo(.LANCHOR1)
+	.loc 1 197 8
 	lbu	a5,0(s2)
-	beq	a5,zero,.L19
-	.loc 1 187 18 discriminator 1
-	lui	s1,%hi(.LANCHOR1)
-	addi	s1,s1,%lo(.LANCHOR1)
+	beq	a5,zero,.L25
+	.loc 1 197 18 discriminator 1
+	lui	s1,%hi(.LANCHOR2)
+	addi	s1,s1,%lo(.LANCHOR2)
 	lbu	a5,0(s1)
-	beq	a5,zero,.L19
-	.loc 1 187 34 discriminator 2
-	lui	s3,%hi(.LANCHOR2)
-	addi	s3,s3,%lo(.LANCHOR2)
+	beq	a5,zero,.L25
+	.loc 1 197 34 discriminator 2
+	lui	s3,%hi(.LANCHOR3)
+	addi	s3,s3,%lo(.LANCHOR3)
 	lw	a5,0(s3)
-	beq	a5,zero,.L19
+	beq	a5,zero,.L25
 .LBB9:
 .LBB10:
-	.loc 1 188 9 is_stmt 1
-	lui	a0,%hi(.LC7)
-	addi	a0,a0,%lo(.LC7)
+	.loc 1 198 9 is_stmt 1
+	lui	a0,%hi(.LC8)
+	addi	a0,a0,%lo(.LC8)
 	call	printf
-.LVL24:
-	.loc 1 191 9
+.LVL28:
+	.loc 1 201 9
 	lw	a5,0(s3)
-	lui	s4,%hi(.LANCHOR3)
-	lui	s5,%hi(.LANCHOR4)
-	addi	a1,s4,%lo(.LANCHOR3)
-	addi	a0,s5,%lo(.LANCHOR4)
+	lui	s4,%hi(.LANCHOR4)
+	lui	s5,%hi(.LANCHOR5)
+	addi	a1,s4,%lo(.LANCHOR4)
+	addi	a0,s5,%lo(.LANCHOR5)
 	jalr	a5
-.LVL25:
-	.loc 1 194 9
+.LVL29:
+	.loc 1 204 9
 	li	a2,33
 	li	a1,0
-	addi	a0,s5,%lo(.LANCHOR4)
+	addi	a0,s5,%lo(.LANCHOR5)
 	call	memset
-.LVL26:
-	.loc 1 195 9
+.LVL30:
+	.loc 1 205 9
 	li	a2,65
 	li	a1,0
-	addi	a0,s4,%lo(.LANCHOR3)
+	addi	a0,s4,%lo(.LANCHOR4)
 	call	memset
-.LVL27:
-	.loc 1 196 9
-	.loc 1 196 18 is_stmt 0
+.LVL31:
+	.loc 1 206 9
+	.loc 1 206 18 is_stmt 0
 	sb	zero,0(s2)
-	.loc 1 197 9 is_stmt 1
-	.loc 1 197 22 is_stmt 0
+	.loc 1 207 9 is_stmt 1
+	.loc 1 207 22 is_stmt 0
 	sb	zero,0(s1)
-.L19:
+.L25:
 .LBE10:
 .LBE9:
-	.loc 1 199 1
+	.loc 1 209 1
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -377,24 +401,24 @@ check_and_save_config:
 	.size	check_and_save_config, .-check_and_save_config
 	.section	.rodata.ble_password_write_val.str1.4,"aMS",@progbits,1
 	.align	2
-.LC8:
+.LC9:
 	.string	"[BLE] Invalid password length: offset=%d, len=%d, total=%d\r\n"
 	.align	2
-.LC9:
+.LC10:
 	.string	"[BLE] Received password chunk: offset=%d, len=%d, total=%s\r\n"
 	.section	.text.ble_password_write_val,"ax",@progbits
 	.align	1
 	.type	ble_password_write_val, @function
 ble_password_write_val:
 .LFB76:
-	.loc 1 152 1 is_stmt 1
+	.loc 1 162 1 is_stmt 1
 	.cfi_startproc
-.LVL28:
-	.loc 1 153 5
-	.loc 1 154 5
-	.loc 1 155 5
-	.loc 1 157 5
-	.loc 1 152 1 is_stmt 0
+.LVL32:
+	.loc 1 163 5
+	.loc 1 164 5
+	.loc 1 165 5
+	.loc 1 167 5
+	.loc 1 162 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -415,54 +439,54 @@ ble_password_write_val:
 	.cfi_offset 22, -32
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 158 16
+	.loc 1 168 16
 	li	s1,-13
-	.loc 1 157 8
-	beq	a3,zero,.L31
+	.loc 1 167 8
+	beq	a3,zero,.L37
 	mv	s5,a2
 	mv	s3,a3
 	mv	s2,a4
-	.loc 1 162 5 is_stmt 1
-	.loc 1 162 8 is_stmt 0
-	bne	a4,zero,.L33
-	.loc 1 163 9 is_stmt 1
-	lui	a0,%hi(.LANCHOR3)
-.LVL29:
+	.loc 1 172 5 is_stmt 1
+	.loc 1 172 8 is_stmt 0
+	bne	a4,zero,.L39
+	.loc 1 173 9 is_stmt 1
+	lui	a0,%hi(.LANCHOR4)
+.LVL33:
 	li	a2,65
-.LVL30:
+.LVL34:
 	li	a1,0
-.LVL31:
-	addi	a0,a0,%lo(.LANCHOR3)
+.LVL35:
+	addi	a0,a0,%lo(.LANCHOR4)
 	call	memset
-.LVL32:
-	.loc 1 164 9
-	.loc 1 164 22 is_stmt 0
-	lui	a5,%hi(.LANCHOR1)
-	sb	zero,%lo(.LANCHOR1)(a5)
-.L33:
-	.loc 1 167 5 is_stmt 1
-	.loc 1 167 16 is_stmt 0
+.LVL36:
+	.loc 1 174 9
+	.loc 1 174 22 is_stmt 0
+	lui	a5,%hi(.LANCHOR2)
+	sb	zero,%lo(.LANCHOR2)(a5)
+.L39:
+	.loc 1 177 5 is_stmt 1
+	.loc 1 177 16 is_stmt 0
 	add	s4,s2,s3
-	.loc 1 167 8
+	.loc 1 177 8
 	li	a5,64
-	.loc 1 167 16
+	.loc 1 177 16
 	mv	s1,s3
-	.loc 1 167 8
-	ble	s4,a5,.L34
-	.loc 1 168 9 is_stmt 1
-	lui	a0,%hi(.LC8)
+	.loc 1 177 8
+	ble	s4,a5,.L40
+	.loc 1 178 9 is_stmt 1
+	lui	a0,%hi(.LC9)
 	mv	a3,s4
 	mv	a2,s3
 	mv	a1,s2
-	addi	a0,a0,%lo(.LC8)
+	addi	a0,a0,%lo(.LC9)
 	call	printf
-.LVL33:
-	.loc 1 169 9
-	.loc 1 169 16 is_stmt 0
+.LVL37:
+	.loc 1 179 9
+	.loc 1 179 16 is_stmt 0
 	li	s1,-13
-.LVL34:
-.L31:
-	.loc 1 183 1
+.LVL38:
+.L37:
+	.loc 1 193 1
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -485,71 +509,71 @@ ble_password_write_val:
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL35:
-.L34:
+.LVL39:
+.L40:
 	.cfi_restore_state
-	.loc 1 173 5 is_stmt 1
-	lui	s6,%hi(.LANCHOR3)
-	addi	s3,s6,%lo(.LANCHOR3)
+	.loc 1 183 5 is_stmt 1
+	lui	s6,%hi(.LANCHOR4)
+	addi	s3,s6,%lo(.LANCHOR4)
 	mv	a2,s1
 	mv	a1,s5
 	add	a0,s3,s2
 	call	memcpy
-.LVL36:
-	.loc 1 174 5
-	.loc 1 174 33 is_stmt 0
+.LVL40:
+	.loc 1 184 5
+	.loc 1 184 33 is_stmt 0
 	add	s3,s3,s4
-	.loc 1 177 5
-	lui	a0,%hi(.LC9)
-	.loc 1 175 18
-	lui	a5,%hi(.LANCHOR1)
+	.loc 1 187 5
+	lui	a0,%hi(.LC10)
+	.loc 1 185 18
+	lui	a5,%hi(.LANCHOR2)
 	li	a4,1
-	.loc 1 177 5
-	addi	a3,s6,%lo(.LANCHOR3)
+	.loc 1 187 5
+	addi	a3,s6,%lo(.LANCHOR4)
 	mv	a2,s1
 	mv	a1,s2
-	.loc 1 174 33
+	.loc 1 184 33
 	sb	zero,0(s3)
-	.loc 1 175 5 is_stmt 1
-	.loc 1 177 5 is_stmt 0
-	addi	a0,a0,%lo(.LC9)
-	.loc 1 175 18
-	sb	a4,%lo(.LANCHOR1)(a5)
-	.loc 1 177 5 is_stmt 1
+	.loc 1 185 5 is_stmt 1
+	.loc 1 187 5 is_stmt 0
+	addi	a0,a0,%lo(.LC10)
+	.loc 1 185 18
+	sb	a4,%lo(.LANCHOR2)(a5)
+	.loc 1 187 5 is_stmt 1
 	call	printf
-.LVL37:
-	.loc 1 180 5
+.LVL41:
+	.loc 1 190 5
 	call	check_and_save_config
-.LVL38:
-	.loc 1 182 5
-	.loc 1 182 12 is_stmt 0
-	j	.L31
+.LVL42:
+	.loc 1 192 5
+	.loc 1 192 12 is_stmt 0
+	j	.L37
 	.cfi_endproc
 .LFE76:
 	.size	ble_password_write_val, .-ble_password_write_val
 	.section	.rodata.bt_enable_cb.str1.4,"aMS",@progbits,1
 	.align	2
-.LC10:
+.LC11:
 	.string	"[BLE] bt_enable_cb called with err=%d\r\n"
 	.align	2
-.LC11:
-	.string	"[BLE] BLE stack enabled successfully\r\n"
-	.align	2
 .LC12:
-	.string	"BD_ADDR:(MSB)%02x:%02x:%02x:%02x:%02x:%02x(LSB)\r\n"
+	.string	"check stack ok \r\n"
 	.align	2
 .LC13:
+	.string	"BD_ADDR:(MSB)%02x:%02x:%02x:%02x:%02x:%02x(LSB)\r\n"
+	.align	2
+.LC14:
 	.string	"[BLE] bt_enable failed: %d\r\n"
 	.section	.text.bt_enable_cb,"ax",@progbits
 	.align	1
 	.type	bt_enable_cb, @function
 bt_enable_cb:
 .LFB92:
-	.loc 1 383 1 is_stmt 1
+	.loc 1 393 1 is_stmt 1
 	.cfi_startproc
-.LVL39:
-	.loc 1 384 5
-	.loc 1 383 1 is_stmt 0
+.LVL43:
+	.loc 1 394 5
+	.loc 1 393 1 is_stmt 0
 	addi	sp,sp,-48
 	.cfi_def_cfa_offset 48
 	sw	s0,40(sp)
@@ -558,133 +582,133 @@ bt_enable_cb:
 	.cfi_offset 1, -4
 	addi	s0,sp,48
 	.cfi_def_cfa 8, 0
-	.loc 1 383 1
+	.loc 1 393 1
 	mv	a1,a0
-	.loc 1 384 5
+	.loc 1 394 5
 	sw	a0,-36(s0)
-	lui	a0,%hi(.LC10)
-.LVL40:
-	addi	a0,a0,%lo(.LC10)
+	lui	a0,%hi(.LC11)
+.LVL44:
+	addi	a0,a0,%lo(.LC11)
 	call	printf
-.LVL41:
-	.loc 1 385 5 is_stmt 1
-	.loc 1 385 8 is_stmt 0
+.LVL45:
+	.loc 1 395 5 is_stmt 1
+	.loc 1 395 8 is_stmt 0
 	lw	a1,-36(s0)
-	lui	a5,%hi(.LANCHOR5)
-	addi	a5,a5,%lo(.LANCHOR5)
-	bne	a1,zero,.L38
-.LVL42:
+	lui	a5,%hi(.LANCHOR6)
+	addi	a5,a5,%lo(.LANCHOR6)
+	bne	a1,zero,.L44
+.LVL46:
 .LBB14:
 .LBB15:
 .LBB16:
-	.loc 1 386 9 is_stmt 1
-	.loc 1 387 9 is_stmt 0
-	lui	a0,%hi(.LC11)
-	.loc 1 386 23
+	.loc 1 396 9 is_stmt 1
+	.loc 1 397 9 is_stmt 0
+	lui	a0,%hi(.LC12)
+	.loc 1 396 23
 	li	a4,1
-	.loc 1 387 9
-	addi	a0,a0,%lo(.LC11)
-	.loc 1 386 23
+	.loc 1 397 9
+	addi	a0,a0,%lo(.LC12)
+	.loc 1 396 23
 	sb	a4,0(a5)
-	.loc 1 387 9 is_stmt 1
+	.loc 1 397 9 is_stmt 1
 	call	printf
-.LVL43:
-	.loc 1 388 9
-	.loc 1 389 9
+.LVL47:
+	.loc 1 398 9
+	.loc 1 399 9
 	addi	a0,s0,-24
 	call	bt_get_local_public_address
-.LVL44:
-	.loc 1 390 9
-	.loc 1 391 9
-	.loc 1 392 9
-	.loc 1 393 9
-	.loc 1 394 9
-	.loc 1 395 9
-	.loc 1 394 26 is_stmt 0
+.LVL48:
+	.loc 1 400 9
+	.loc 1 401 9
+	.loc 1 402 9
+	.loc 1 403 9
+	.loc 1 404 9
+	.loc 1 405 9
+	.loc 1 404 26 is_stmt 0
 	li	a5,-28672
-	.loc 1 395 26
+	.loc 1 405 26
 	li	a4,-120
-	.loc 1 394 26
+	.loc 1 404 26
 	addi	a5,a5,-1912
-	.loc 1 396 9
-	lui	a0,%hi(.LC12)
-	.loc 1 395 26
+	.loc 1 406 9
+	lui	a0,%hi(.LC13)
+	.loc 1 405 26
 	sb	a4,-23(s0)
-	.loc 1 394 26
+	.loc 1 404 26
 	sh	a5,-22(s0)
-	.loc 1 392 26
+	.loc 1 402 26
 	sh	a5,-20(s0)
-	.loc 1 390 26
+	.loc 1 400 26
 	sb	a4,-18(s0)
-	.loc 1 396 9 is_stmt 1
+	.loc 1 406 9 is_stmt 1
 	li	a6,136
 	li	a5,136
 	li	a4,136
 	li	a3,136
 	li	a2,136
 	li	a1,136
-	addi	a0,a0,%lo(.LC12)
+	addi	a0,a0,%lo(.LC13)
 	call	printf
-.LVL45:
+.LVL49:
 .LBE16:
 .LBE15:
 .LBE14:
-	.loc 1 405 1 is_stmt 0
+	.loc 1 415 1 is_stmt 0
 	lw	ra,44(sp)
 	.cfi_remember_state
 	.cfi_restore 1
 	lw	s0,40(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 48
-.LVL46:
+.LVL50:
 	addi	sp,sp,48
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL47:
-.L38:
+.LVL51:
+.L44:
 	.cfi_restore_state
-	.loc 1 400 9 is_stmt 1
-	.loc 1 400 23 is_stmt 0
+	.loc 1 410 9 is_stmt 1
+	.loc 1 410 23 is_stmt 0
 	sb	zero,0(a5)
-	.loc 1 401 9 is_stmt 1
-	.loc 1 405 1 is_stmt 0
+	.loc 1 411 9 is_stmt 1
+	.loc 1 415 1 is_stmt 0
 	lw	s0,40(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 48
 	lw	ra,44(sp)
 	.cfi_restore 1
-	.loc 1 401 9
-	lui	a0,%hi(.LC13)
-	.loc 1 405 1
-	.loc 1 401 9
-	addi	a0,a0,%lo(.LC13)
-	.loc 1 405 1
+	.loc 1 411 9
+	lui	a0,%hi(.LC14)
+	.loc 1 415 1
+	.loc 1 411 9
+	addi	a0,a0,%lo(.LC14)
+	.loc 1 415 1
 	addi	sp,sp,48
 	.cfi_def_cfa_offset 0
-	.loc 1 401 9
+	.loc 1 411 9
 	tail	printf
-.LVL48:
+.LVL52:
 	.cfi_endproc
 .LFE92:
 	.size	bt_enable_cb, .-bt_enable_cb
 	.section	.rodata.ble_disconnect_all.str1.4,"aMS",@progbits,1
 	.align	2
-.LC14:
+.LC15:
 	.string	"[BLE] disconn id:%d\r\n"
 	.section	.text.ble_disconnect_all,"ax",@progbits
 	.align	1
 	.type	ble_disconnect_all, @function
 ble_disconnect_all:
 .LFB83:
-	.loc 1 293 1 is_stmt 1
+	.loc 1 303 1 is_stmt 1
 	.cfi_startproc
-.LVL49:
-	.loc 1 294 5
-	.loc 1 294 8 is_stmt 0
+.LVL53:
+	.loc 1 304 5
+	.loc 1 304 8 is_stmt 0
 	lbu	a4,10(a0)
 	li	a5,4
-	bne	a4,a5,.L42
-	.loc 1 293 1
+	bne	a4,a5,.L48
+	.loc 1 303 1
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -697,21 +721,21 @@ ble_disconnect_all:
 	.cfi_def_cfa 8, 0
 .LBB19:
 .LBB20:
-	.loc 1 295 9
+	.loc 1 305 9
 	lbu	a1,8(a0)
-.LVL50:
+.LVL54:
 	mv	s1,a0
-.LVL51:
-	.loc 1 295 9 is_stmt 1
-	lui	a0,%hi(.LC14)
-.LVL52:
-	addi	a0,a0,%lo(.LC14)
+.LVL55:
+	.loc 1 305 9 is_stmt 1
+	lui	a0,%hi(.LC15)
+.LVL56:
+	addi	a0,a0,%lo(.LC15)
 	call	printf
-.LVL53:
-	.loc 1 296 9
+.LVL57:
+	.loc 1 306 9
 .LBE20:
 .LBE19:
-	.loc 1 298 1 is_stmt 0
+	.loc 1 308 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -719,29 +743,29 @@ ble_disconnect_all:
 	.cfi_restore 1
 .LBB24:
 .LBB21:
-	.loc 1 296 9
+	.loc 1 306 9
 	mv	a0,s1
 .LBE21:
 .LBE24:
-	.loc 1 298 1
+	.loc 1 308 1
 	lw	s1,4(sp)
 	.cfi_restore 9
-.LVL54:
+.LVL58:
 .LBB25:
 .LBB22:
-	.loc 1 296 9
+	.loc 1 306 9
 	li	a1,19
 .LBE22:
 .LBE25:
-	.loc 1 298 1
+	.loc 1 308 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 .LBB26:
 .LBB23:
-	.loc 1 296 9
+	.loc 1 306 9
 	tail	bt_conn_disconnect
-.LVL55:
-.L42:
+.LVL59:
+.L48:
 	ret
 .LBE23:
 .LBE26:
@@ -750,7 +774,7 @@ ble_disconnect_all:
 	.size	ble_disconnect_all, .-ble_disconnect_all
 	.section	.rodata.notify_data.str1.4,"aMS",@progbits,1
 	.align	2
-.LC15:
+.LC16:
 	.string	"[BLE] notify failed (%d)\r\n"
 	.section	.text.notify_data,"ax",@progbits
 	.align	1
@@ -758,12 +782,12 @@ ble_disconnect_all:
 	.type	notify_data, @function
 notify_data:
 .LFB78:
-	.loc 1 209 1 is_stmt 1
+	.loc 1 219 1 is_stmt 1
 	.cfi_startproc
-.LVL56:
-	.loc 1 210 5
-	.loc 1 211 5
-	.loc 1 209 1 is_stmt 0
+.LVL60:
+	.loc 1 220 5
+	.loc 1 221 5
+	.loc 1 219 1 is_stmt 0
 	addi	sp,sp,-80
 	.cfi_def_cfa_offset 80
 	sw	s0,72(sp)
@@ -792,56 +816,56 @@ notify_data:
 	.cfi_offset 25, -44
 	addi	s0,sp,80
 	.cfi_def_cfa 8, 0
-	.loc 1 209 1
+	.loc 1 219 1
 	mv	s5,a0
 	mv	s6,a1
 	mv	s1,a2
-	.loc 1 211 20
+	.loc 1 221 20
 	call	bt_gatt_get_mtu
-.LVL57:
-	.loc 1 211 14
+.LVL61:
+	.loc 1 221 14
 	addi	s3,a0,-3
 	slli	s3,s3,16
 	srli	s3,s3,16
-.LVL58:
-	.loc 1 212 5 is_stmt 1
-	.loc 1 214 5
+.LVL62:
+	.loc 1 222 5 is_stmt 1
+	.loc 1 224 5
 .LBB30:
 .LBB31:
 .LBB32:
 	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
 	.loc 2 870 14 is_stmt 0
-	lui	s7,%hi(.LANCHOR6+120)
+	lui	s7,%hi(.LANCHOR7+120)
 .LBE32:
 .LBE31:
 .LBE30:
-	.loc 1 212 14
+	.loc 1 222 14
 	li	s4,0
 .LBB43:
-	.loc 1 215 18
+	.loc 1 225 18
 	mv	s10,s3
 .LBB38:
 .LBB33:
 	.loc 2 870 14
-	addi	s7,s7,%lo(.LANCHOR6+120)
-.LVL59:
-.L48:
+	addi	s7,s7,%lo(.LANCHOR7+120)
+.LVL63:
+.L54:
 .LBE33:
 .LBE38:
 .LBE43:
-	.loc 1 214 11 is_stmt 1
-	bne	s1,zero,.L52
-	.loc 1 233 12 is_stmt 0
+	.loc 1 224 11 is_stmt 1
+	bne	s1,zero,.L58
+	.loc 1 243 12 is_stmt 0
 	li	s2,0
-	j	.L47
-.L52:
+	j	.L53
+.L58:
 .LBB44:
-	.loc 1 215 9 is_stmt 1
-	.loc 1 215 18 is_stmt 0
+	.loc 1 225 9 is_stmt 1
+	.loc 1 225 18 is_stmt 0
 	mv	s2,s1
-	bleu	s1,s3,.L49
+	bleu	s1,s3,.L55
 	mv	s2,s10
-.L49:
+.L55:
 .LBB39:
 .LBB34:
 	.loc 2 868 2
@@ -849,10 +873,10 @@ notify_data:
 	li	a1,0
 	addi	a0,s0,-72
 	call	memset
-.LVL60:
+.LVL64:
 .LBE34:
 .LBE39:
-	.loc 1 220 22
+	.loc 1 230 22
 	add	s8,s6,s4
 .LBB40:
 .LBB35:
@@ -861,7 +885,7 @@ notify_data:
 	mv	a0,s5
 .LBE35:
 .LBE40:
-	.loc 1 215 18
+	.loc 1 225 18
 	slli	s9,s2,16
 .LBB41:
 .LBB36:
@@ -873,13 +897,13 @@ notify_data:
 	sw	s8,-64(s0)
 	.loc 2 874 9
 	call	bt_gatt_notify_cb
-.LVL61:
+.LVL65:
 .LBE36:
 .LBE41:
-	.loc 1 215 18
+	.loc 1 225 18
 	srli	s9,s9,16
-.LVL62:
-	.loc 1 217 9 is_stmt 1
+.LVL66:
+	.loc 1 227 9 is_stmt 1
 .LBB42:
 .LBB37:
 	.loc 2 866 2
@@ -890,23 +914,23 @@ notify_data:
 	.loc 2 874 2
 	.loc 2 874 9 is_stmt 0
 	mv	s2,a0
-.LVL63:
+.LVL67:
 .LBE37:
 .LBE42:
-	.loc 1 224 9 is_stmt 1
-	.loc 1 224 12 is_stmt 0
-	beq	a0,zero,.L50
-	.loc 1 225 13 is_stmt 1
+	.loc 1 234 9 is_stmt 1
+	.loc 1 234 12 is_stmt 0
+	beq	a0,zero,.L56
+	.loc 1 235 13 is_stmt 1
 	mv	a1,a0
-	lui	a0,%hi(.LC15)
-.LVL64:
-	addi	a0,a0,%lo(.LC15)
+	lui	a0,%hi(.LC16)
+.LVL68:
+	addi	a0,a0,%lo(.LC16)
 	call	printf
-.LVL65:
-	.loc 1 226 13
-.L47:
+.LVL69:
+	.loc 1 236 13
+.L53:
 .LBE44:
-	.loc 1 234 1 is_stmt 0
+	.loc 1 244 1 is_stmt 0
 	lw	ra,76(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -915,19 +939,19 @@ notify_data:
 	.cfi_def_cfa 2, 80
 	lw	s1,68(sp)
 	.cfi_restore 9
-.LVL66:
+.LVL70:
 	lw	s3,60(sp)
 	.cfi_restore 19
-.LVL67:
+.LVL71:
 	lw	s4,56(sp)
 	.cfi_restore 20
-.LVL68:
+.LVL72:
 	lw	s5,52(sp)
 	.cfi_restore 21
-.LVL69:
+.LVL73:
 	lw	s6,48(sp)
 	.cfi_restore 22
-.LVL70:
+.LVL74:
 	lw	s7,44(sp)
 	.cfi_restore 23
 	lw	s8,40(sp)
@@ -936,95 +960,98 @@ notify_data:
 	.cfi_restore 25
 	lw	s10,32(sp)
 	.cfi_restore 26
-.LVL71:
+.LVL75:
 	mv	a0,s2
 	lw	s2,64(sp)
 	.cfi_restore 18
 	addi	sp,sp,80
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL72:
-.L50:
+.LVL76:
+.L56:
 	.cfi_restore_state
 .LBB45:
-	.loc 1 229 9 is_stmt 1
-	.loc 1 229 16 is_stmt 0
+	.loc 1 239 9 is_stmt 1
+	.loc 1 239 16 is_stmt 0
 	add	s4,s4,s9
-.LVL73:
-	.loc 1 230 16
+.LVL77:
+	.loc 1 240 16
 	sub	s1,s1,s9
-.LVL74:
-	.loc 1 229 16
+.LVL78:
+	.loc 1 239 16
 	slli	s4,s4,16
-	.loc 1 230 16
+	.loc 1 240 16
 	slli	s1,s1,16
-	.loc 1 229 16
+	.loc 1 239 16
 	srli	s4,s4,16
-.LVL75:
-	.loc 1 230 9 is_stmt 1
-	.loc 1 230 16 is_stmt 0
+.LVL79:
+	.loc 1 240 9 is_stmt 1
+	.loc 1 240 16 is_stmt 0
 	srli	s1,s1,16
-.LVL76:
-	j	.L48
+.LVL80:
+	j	.L54
 .LBE45:
 	.cfi_endproc
 .LFE78:
 	.size	notify_data, .-notify_data
 	.section	.rodata.ble_ssid_write_val.str1.4,"aMS",@progbits,1
 	.align	2
-.LC16:
+.LC17:
 	.string	" ===============================================================no seach Mac==================== \r\n"
 	.align	2
-.LC17:
+.LC18:
 	.string	"public"
 	.align	2
-.LC18:
+.LC19:
 	.string	"random"
 	.align	2
-.LC19:
+.LC20:
 	.string	"public-id"
 	.align	2
-.LC20:
+.LC21:
 	.string	"random-id"
 	.align	2
-.LC21:
+.LC22:
 	.string	"0x%02x"
 	.align	2
-.LC22:
+.LC23:
 	.string	"%02X:%02X:%02X:%02X:%02X:%02X (%s)"
 	.align	2
-.LC23:
+.LC24:
 	.string	"==========================================Mac : %s==============================\r\n"
 	.align	2
-.LC24:
+.LC25:
 	.string	"[BLE] Invalid SSID length: offset=%d, len=%d, total=%d\r\n"
 	.align	2
-.LC25:
+.LC26:
 	.string	"[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n"
 	.align	2
-.LC26:
-	.string	"1"
+.LC27:
+	.string	"test scan"
 	.align	2
 .LC28:
+	.string	"1"
+	.align	2
+.LC30:
 	.string	"0"
 	.align	2
-.LC27:
+.LC29:
 	.string	"relay on "
 	.align	2
-.LC29:
+.LC31:
 	.string	"relay off "
 	.section	.text.ble_ssid_write_val,"ax",@progbits
 	.align	1
 	.type	ble_ssid_write_val, @function
 ble_ssid_write_val:
 .LFB75:
-	.loc 1 93 1 is_stmt 1
+	.loc 1 98 1 is_stmt 1
 	.cfi_startproc
-.LVL77:
-	.loc 1 94 5
-	.loc 1 96 5
-	.loc 1 97 5
-	.loc 1 93 1 is_stmt 0
+.LVL81:
+	.loc 1 99 5
+	.loc 1 101 5
+	.loc 1 102 5
+	.loc 1 98 1 is_stmt 0
 	addi	sp,sp,-128
 	.cfi_def_cfa_offset 128
 	sw	s0,120(sp)
@@ -1047,28 +1074,28 @@ ble_ssid_write_val:
 	.cfi_offset 22, -32
 	addi	s0,sp,128
 	.cfi_def_cfa 8, 0
-	.loc 1 93 1
+	.loc 1 98 1
 	mv	s5,a0
 	mv	s7,a2
-	mv	s4,a3
-	mv	s3,a4
-	.loc 1 97 16
+	mv	s3,a3
+	mv	s4,a4
+	.loc 1 102 16
 	call	bt_conn_get_dst
-.LVL78:
+.LVL82:
 	mv	s2,a0
-.LVL79:
-	.loc 1 98 5 is_stmt 1
-	.loc 1 98 8 is_stmt 0
-	bne	a0,zero,.L55
-	.loc 1 100 9 is_stmt 1
-	lui	a0,%hi(.LC16)
-.LVL80:
-	addi	a0,a0,%lo(.LC16)
+.LVL83:
+	.loc 1 103 5 is_stmt 1
+	.loc 1 103 8 is_stmt 0
+	bne	a0,zero,.L61
+	.loc 1 105 9 is_stmt 1
+	lui	a0,%hi(.LC17)
+.LVL84:
+	addi	a0,a0,%lo(.LC17)
 	call	printf
-.LVL81:
-	.loc 1 101 9
-.L54:
-	.loc 1 148 1 is_stmt 0
+.LVL85:
+	.loc 1 106 9
+.L60:
+	.loc 1 158 1 is_stmt 0
 	lw	ra,124(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -1083,22 +1110,22 @@ ble_ssid_write_val:
 	.cfi_restore 20
 	lw	s5,100(sp)
 	.cfi_restore 21
-.LVL82:
+.LVL86:
 	lw	s6,96(sp)
 	.cfi_restore 22
 	lw	s7,92(sp)
 	.cfi_restore 23
-.LVL83:
+.LVL87:
 	mv	a0,s2
 	lw	s2,112(sp)
 	.cfi_restore 18
 	addi	sp,sp,128
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL84:
-.L55:
+.LVL88:
+.L61:
 	.cfi_restore_state
-	.loc 1 104 5 is_stmt 1
+	.loc 1 109 5 is_stmt 1
 .LBB50:
 .LBB51:
 	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
@@ -1109,20 +1136,20 @@ ble_ssid_write_val:
 	.loc 3 760 2
 	li	a5,2
 	addi	s1,s0,-92
-	beq	a3,a5,.L57
-	bgtu	a3,a5,.L58
-	bne	a3,zero,.L69
+	beq	a3,a5,.L63
+	bgtu	a3,a5,.L64
+	bne	a3,zero,.L76
 	.loc 3 762 3 is_stmt 1
-	lui	a1,%hi(.LC17)
-	addi	a1,a1,%lo(.LC17)
-.L72:
+	lui	a1,%hi(.LC18)
+	addi	a1,a1,%lo(.LC18)
+.L79:
 	.loc 3 765 3 is_stmt 0
 	mv	a0,s1
-.LVL85:
+.LVL89:
 	call	strcpy
-.LVL86:
+.LVL90:
 	.loc 3 766 3 is_stmt 1
-.L63:
+.L69:
 	.loc 3 778 2
 	.loc 3 778 9 is_stmt 0
 	lbu	a7,2(s2)
@@ -1134,197 +1161,210 @@ ble_ssid_write_val:
 	lbu	a2,1(s2)
 	li	a1,30
 	addi	a0,s0,-80
-.LVL87:
+.LVL91:
 	sw	a2,0(sp)
-	lui	a2,%hi(.LC22)
-	addi	a2,a2,%lo(.LC22)
+	lui	a2,%hi(.LC23)
+	addi	a2,a2,%lo(.LC23)
 	call	snprintf
-.LVL88:
+.LVL92:
 .LBE51:
 .LBE50:
-	.loc 1 105 5 is_stmt 1
-	lui	a0,%hi(.LC23)
-	addi	a1,s0,-80
-	addi	a0,a0,%lo(.LC23)
-	call	printf
-.LVL89:
-	.loc 1 111 5
-	.loc 1 112 16 is_stmt 0
-	li	s2,-13
-.LVL90:
-	.loc 1 111 8
-	beq	s4,zero,.L54
-	.loc 1 116 5 is_stmt 1
-	.loc 1 116 8 is_stmt 0
-	bne	s3,zero,.L64
-	.loc 1 117 9 is_stmt 1
-	lui	a0,%hi(.LANCHOR4)
-	li	a2,33
-	li	a1,0
-	addi	a0,a0,%lo(.LANCHOR4)
-	call	memset
-.LVL91:
-	.loc 1 118 9
-	.loc 1 118 18 is_stmt 0
-	lui	a5,%hi(.LANCHOR0)
-	sb	zero,%lo(.LANCHOR0)(a5)
-.L64:
-	.loc 1 122 5 is_stmt 1
-	.loc 1 122 16 is_stmt 0
-	add	a3,s3,s4
-	.loc 1 122 8
-	li	a5,32
-	.loc 1 122 16
-	mv	s2,s4
-	.loc 1 122 8
-	ble	a3,a5,.L65
-	.loc 1 123 9 is_stmt 1
+	.loc 1 110 5 is_stmt 1
 	lui	a0,%hi(.LC24)
-	mv	a2,s4
-	mv	a1,s3
+	addi	a1,s0,-80
 	addi	a0,a0,%lo(.LC24)
 	call	printf
-.LVL92:
-	.loc 1 124 9
-	.loc 1 124 16 is_stmt 0
-	li	s2,-13
-	j	.L54
 .LVL93:
-.L58:
+	.loc 1 116 5
+	.loc 1 117 16 is_stmt 0
+	li	s2,-13
+.LVL94:
+	.loc 1 116 8
+	beq	s3,zero,.L60
+	.loc 1 121 5 is_stmt 1
+	.loc 1 121 8 is_stmt 0
+	bne	s4,zero,.L70
+	.loc 1 122 9 is_stmt 1
+	lui	a0,%hi(.LANCHOR5)
+	li	a2,33
+	li	a1,0
+	addi	a0,a0,%lo(.LANCHOR5)
+	call	memset
+.LVL95:
+	.loc 1 123 9
+	.loc 1 123 18 is_stmt 0
+	lui	a5,%hi(.LANCHOR1)
+	sb	zero,%lo(.LANCHOR1)(a5)
+.L70:
+	.loc 1 127 5 is_stmt 1
+	.loc 1 127 16 is_stmt 0
+	add	a3,s4,s3
+	.loc 1 127 8
+	li	a5,32
+	.loc 1 127 16
+	mv	s2,s3
+	.loc 1 127 8
+	ble	a3,a5,.L71
+	.loc 1 128 9 is_stmt 1
+	lui	a0,%hi(.LC25)
+	mv	a2,s3
+	mv	a1,s4
+	addi	a0,a0,%lo(.LC25)
+	call	printf
+.LVL96:
+	.loc 1 129 9
+	.loc 1 129 16 is_stmt 0
+	li	s2,-13
+	j	.L60
+.LVL97:
+.L64:
 .LBB53:
 .LBB52:
 	.loc 3 760 2
 	li	a5,3
-	beq	a3,a5,.L61
+	beq	a3,a5,.L67
 	.loc 3 774 3 is_stmt 1
-	lui	a2,%hi(.LC21)
-	addi	a2,a2,%lo(.LC21)
+	lui	a2,%hi(.LC22)
+	addi	a2,a2,%lo(.LC22)
 	li	a1,10
 	mv	a0,s1
-.LVL94:
+.LVL98:
 	call	snprintf
-.LVL95:
+.LVL99:
 	.loc 3 775 3
-	j	.L63
-.LVL96:
-.L69:
+	j	.L69
+.LVL100:
+.L76:
 	.loc 3 765 3
-	lui	a1,%hi(.LC18)
-	addi	a1,a1,%lo(.LC18)
-	j	.L72
-.L57:
-	.loc 3 768 3
 	lui	a1,%hi(.LC19)
 	addi	a1,a1,%lo(.LC19)
-	j	.L72
-.L61:
-	.loc 3 771 3
+	j	.L79
+.L63:
+	.loc 3 768 3
 	lui	a1,%hi(.LC20)
 	addi	a1,a1,%lo(.LC20)
-	j	.L72
-.LVL97:
-.L65:
+	j	.L79
+.L67:
+	.loc 3 771 3
+	lui	a1,%hi(.LC21)
+	addi	a1,a1,%lo(.LC21)
+	j	.L79
+.LVL101:
+.L71:
 .LBE52:
 .LBE53:
-	.loc 1 128 5 is_stmt 0
-	lui	s4,%hi(.LANCHOR4)
-	addi	s6,s4,%lo(.LANCHOR4)
+	.loc 1 133 5 is_stmt 0
+	lui	s3,%hi(.LANCHOR5)
+	addi	s6,s3,%lo(.LANCHOR5)
 	mv	a2,s2
 	mv	a1,s7
-	add	a0,s6,s3
+	add	a0,s6,s4
 	sw	a3,-100(s0)
-	.loc 1 128 5 is_stmt 1
-	call	memcpy
-.LVL98:
-	.loc 1 129 5
-	.loc 1 129 29 is_stmt 0
-	lw	a3,-100(s0)
-	.loc 1 132 5
-	lui	a0,%hi(.LC25)
-	.loc 1 130 14
-	lui	a5,%hi(.LANCHOR0)
-	.loc 1 129 29
-	add	s6,s6,a3
-	.loc 1 130 14
-	li	a4,1
-	.loc 1 132 5
-	mv	a1,s3
-	.loc 1 129 29
-	sb	zero,0(s6)
-	.loc 1 130 5 is_stmt 1
-	.loc 1 132 5 is_stmt 0
-	addi	a3,s4,%lo(.LANCHOR4)
-	mv	a2,s2
-	addi	a0,a0,%lo(.LC25)
-	.loc 1 130 14
-	sb	a4,%lo(.LANCHOR0)(a5)
-	.loc 1 132 5 is_stmt 1
-	call	printf
-.LVL99:
-	.loc 1 134 5
-	.loc 1 134 9 is_stmt 0
-	lui	a1,%hi(.LC26)
-	addi	a1,a1,%lo(.LC26)
-	addi	a0,s4,%lo(.LANCHOR4)
-	call	strcmp
-.LVL100:
-	.loc 1 134 8
-	bne	a0,zero,.L66
-.LBB54:
-	.loc 1 135 9 is_stmt 1
-	call	relay_on
-.LVL101:
-	.loc 1 136 9
-	.loc 1 136 20 is_stmt 0
-	lui	a1,%hi(.LC27)
-	li	a2,10
-	addi	a1,a1,%lo(.LC27)
-	mv	a0,s1
+	.loc 1 133 5 is_stmt 1
 	call	memcpy
 .LVL102:
-	.loc 1 137 9 is_stmt 1
+	.loc 1 134 5
+	.loc 1 134 29 is_stmt 0
+	lw	a3,-100(s0)
+	.loc 1 137 5
+	lui	a0,%hi(.LC26)
+	.loc 1 135 14
+	lui	a5,%hi(.LANCHOR1)
+	.loc 1 134 29
+	add	s6,s6,a3
+	.loc 1 135 14
+	li	a4,1
+	.loc 1 137 5
+	mv	a1,s4
+	.loc 1 134 29
+	sb	zero,0(s6)
+	.loc 1 135 5 is_stmt 1
+	.loc 1 137 5 is_stmt 0
+	addi	a3,s3,%lo(.LANCHOR5)
+	mv	a2,s2
+	addi	a0,a0,%lo(.LC26)
+	.loc 1 135 14
+	sb	a4,%lo(.LANCHOR1)(a5)
+	.loc 1 137 5 is_stmt 1
+	call	printf
+.LVL103:
+	.loc 1 140 5
+	.loc 1 140 8 is_stmt 0
+	lui	a1,%hi(.LC27)
+	addi	a1,a1,%lo(.LC27)
+	addi	a0,s3,%lo(.LANCHOR5)
+	call	strcmp
+.LVL104:
+	.loc 1 140 7
+	bne	a0,zero,.L72
+	.loc 1 141 9 is_stmt 1
+	call	test_ble_master
+.LVL105:
+.L72:
+	.loc 1 144 5
+	.loc 1 144 9 is_stmt 0
+	lui	a1,%hi(.LC28)
+	addi	a1,a1,%lo(.LC28)
+	addi	a0,s3,%lo(.LANCHOR5)
+	call	strcmp
+.LVL106:
+	.loc 1 144 8
+	bne	a0,zero,.L73
+.LBB54:
+	.loc 1 145 9 is_stmt 1
+	call	relay_on
+.LVL107:
+	.loc 1 146 9
+	.loc 1 146 20 is_stmt 0
+	lui	a1,%hi(.LC29)
+	li	a2,10
+	addi	a1,a1,%lo(.LC29)
+	mv	a0,s1
+	call	memcpy
+.LVL108:
+	.loc 1 147 9 is_stmt 1
 	li	a2,9
 	mv	a1,s1
 	mv	a0,s5
 	call	notify_data
-.LVL103:
-.L66:
+.LVL109:
+.L73:
 .LBE54:
-	.loc 1 139 5
-	.loc 1 139 9 is_stmt 0
-	lui	a1,%hi(.LC28)
-	addi	a1,a1,%lo(.LC28)
-	addi	a0,s4,%lo(.LANCHOR4)
+	.loc 1 149 5
+	.loc 1 149 9 is_stmt 0
+	lui	a1,%hi(.LC30)
+	addi	a1,a1,%lo(.LC30)
+	addi	a0,s3,%lo(.LANCHOR5)
 	call	strcmp
-.LVL104:
-	.loc 1 139 8
-	bne	a0,zero,.L67
+.LVL110:
+	.loc 1 149 8
+	bne	a0,zero,.L74
 .LBB55:
-	.loc 1 141 9 is_stmt 1
-	.loc 1 141 20 is_stmt 0
-	lui	a1,%hi(.LC29)
+	.loc 1 151 9 is_stmt 1
+	.loc 1 151 20 is_stmt 0
+	lui	a1,%hi(.LC31)
 	li	a2,11
-	addi	a1,a1,%lo(.LC29)
+	addi	a1,a1,%lo(.LC31)
 	mv	a0,s1
 	call	memcpy
-.LVL105:
-	.loc 1 142 9 is_stmt 1
+.LVL111:
+	.loc 1 152 9 is_stmt 1
 	li	a2,10
 	mv	a1,s1
 	mv	a0,s5
 	call	notify_data
-.LVL106:
-	.loc 1 143 9
+.LVL112:
+	.loc 1 153 9
 	call	relay_off
-.LVL107:
-.L67:
+.LVL113:
+.L74:
 .LBE55:
-	.loc 1 145 5
+	.loc 1 155 5
 	call	check_and_save_config
-.LVL108:
-	.loc 1 147 5
-	.loc 1 147 12 is_stmt 0
-	j	.L54
+.LVL114:
+	.loc 1 157 5
+	.loc 1 157 12 is_stmt 0
+	j	.L60
 	.cfi_endproc
 .LFE75:
 	.size	ble_ssid_write_val, .-ble_ssid_write_val
@@ -1334,17 +1374,17 @@ ble_ssid_write_val:
 	.type	ble_get_conn_cur, @function
 ble_get_conn_cur:
 .LFB85:
-	.loc 1 309 1 is_stmt 1
+	.loc 1 319 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 310 5
-	.loc 1 309 1 is_stmt 0
+	.loc 1 320 5
+	.loc 1 319 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 311 1
+	.loc 1 321 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -1361,28 +1401,28 @@ ble_get_conn_cur:
 	.type	ble_regist_conn, @function
 ble_regist_conn:
 .LFB86:
-	.loc 1 314 1 is_stmt 1
+	.loc 1 324 1 is_stmt 1
 	.cfi_startproc
-.LVL109:
-	.loc 1 315 5
-	.loc 1 314 1 is_stmt 0
+.LVL115:
+	.loc 1 325 5
+	.loc 1 324 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 317 1
+	.loc 1 327 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 315 13
+	.loc 1 325 13
 	lui	a5,%hi(conn_cb)
 	sw	a0,%lo(conn_cb)(a5)
-	.loc 1 316 5 is_stmt 1
-	.loc 1 317 1 is_stmt 0
+	.loc 1 326 5 is_stmt 1
+	.loc 1 327 1 is_stmt 0
 	li	a0,0
-.LVL110:
+.LVL116:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -1395,28 +1435,28 @@ ble_regist_conn:
 	.type	ble_regist_disconn, @function
 ble_regist_disconn:
 .LFB87:
-	.loc 1 320 1 is_stmt 1
+	.loc 1 330 1 is_stmt 1
 	.cfi_startproc
-.LVL111:
-	.loc 1 321 5
-	.loc 1 320 1 is_stmt 0
+.LVL117:
+	.loc 1 331 5
+	.loc 1 330 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 323 1
+	.loc 1 333 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 321 16
+	.loc 1 331 16
 	lui	a5,%hi(disconn_cb)
 	sw	a0,%lo(disconn_cb)(a5)
-	.loc 1 322 5 is_stmt 1
-	.loc 1 323 1 is_stmt 0
+	.loc 1 332 5 is_stmt 1
+	.loc 1 333 1 is_stmt 0
 	li	a0,0
-.LVL112:
+.LVL118:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -1425,7 +1465,7 @@ ble_regist_disconn:
 	.size	ble_regist_disconn, .-ble_regist_disconn
 	.section	.rodata.ble_salve_adv.str1.4,"aMS",@progbits,1
 	.align	2
-.LC30:
+.LC32:
 	.string	"[BLE] adv fail(err %d)\r\n"
 	.section	.text.ble_salve_adv,"ax",@progbits
 	.align	1
@@ -1433,10 +1473,10 @@ ble_regist_disconn:
 	.type	ble_salve_adv, @function
 ble_salve_adv:
 .LFB89:
-	.loc 1 351 1 is_stmt 1
+	.loc 1 361 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 352 5
-	.loc 1 351 1 is_stmt 0
+	.loc 1 362 5
+	.loc 1 361 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -1445,44 +1485,44 @@ ble_salve_adv:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 352 58
+	.loc 1 362 58
 	li	a5,10485760
-	.loc 1 351 1
-	.loc 1 352 58
+	.loc 1 361 1
+	.loc 1 362 58
 	addi	a5,a5,256
-	.loc 1 352 15
-	lui	a1,%hi(.LANCHOR7)
-	.loc 1 352 58
+	.loc 1 362 15
+	lui	a1,%hi(.LANCHOR8)
+	.loc 1 362 58
 	sw	a5,-24(s0)
-	.loc 1 352 15
+	.loc 1 362 15
 	li	a4,0
-	.loc 1 352 58
+	.loc 1 362 58
 	li	a5,240
-	.loc 1 352 15
+	.loc 1 362 15
 	li	a3,0
 	li	a2,2
-	addi	a1,a1,%lo(.LANCHOR7)
+	addi	a1,a1,%lo(.LANCHOR8)
 	addi	a0,s0,-24
-	.loc 1 352 58
+	.loc 1 362 58
 	sh	a5,-20(s0)
-	.loc 1 352 15
+	.loc 1 362 15
 	call	bt_le_adv_start
-.LVL113:
-	.loc 1 353 5 is_stmt 1
-	.loc 1 353 8 is_stmt 0
-	beq	a0,zero,.L79
-	.loc 1 354 9 is_stmt 1
+.LVL119:
+	.loc 1 363 5 is_stmt 1
+	.loc 1 363 8 is_stmt 0
+	beq	a0,zero,.L86
+	.loc 1 364 9 is_stmt 1
 	mv	a1,a0
-	lui	a0,%hi(.LC30)
-.LVL114:
-	addi	a0,a0,%lo(.LC30)
+	lui	a0,%hi(.LC32)
+.LVL120:
+	addi	a0,a0,%lo(.LC32)
 	call	printf
-.LVL115:
-	.loc 1 355 9
-	.loc 1 355 16 is_stmt 0
+.LVL121:
+	.loc 1 365 9
+	.loc 1 365 16 is_stmt 0
 	li	a0,-1
-.L79:
-	.loc 1 358 1
+.L86:
+	.loc 1 368 1
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -1500,15 +1540,15 @@ ble_salve_adv:
 	.type	ble_adv_start, @function
 ble_adv_start:
 .LFB90:
-	.loc 1 361 1 is_stmt 1
+	.loc 1 371 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 362 5
-	.loc 1 362 8 is_stmt 0
-	lui	a5,%hi(.LANCHOR5)
-	lbu	a5,%lo(.LANCHOR5)(a5)
-	beq	a5,zero,.L88
-	.loc 1 366 5 is_stmt 1
-	.loc 1 361 1 is_stmt 0
+	.loc 1 372 5
+	.loc 1 372 8 is_stmt 0
+	lui	a5,%hi(.LANCHOR6)
+	lbu	a5,%lo(.LANCHOR6)(a5)
+	beq	a5,zero,.L95
+	.loc 1 376 5 is_stmt 1
+	.loc 1 371 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	ra,28(sp)
@@ -1517,51 +1557,51 @@ ble_adv_start:
 	.cfi_offset 8, -8
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 366 5
+	.loc 1 376 5
 	call	bt_le_adv_stop
-.LVL116:
-	.loc 1 367 5 is_stmt 1
+.LVL122:
+	.loc 1 377 5 is_stmt 1
 	li	a0,100
 	call	aos_msleep
-.LVL117:
-	.loc 1 369 5
-	.loc 1 369 58 is_stmt 0
+.LVL123:
+	.loc 1 379 5
+	.loc 1 379 58 is_stmt 0
 	li	a5,10485760
 	addi	a5,a5,256
-	.loc 1 369 15
-	lui	a1,%hi(.LANCHOR7)
-	.loc 1 369 58
+	.loc 1 379 15
+	lui	a1,%hi(.LANCHOR8)
+	.loc 1 379 58
 	sw	a5,-24(s0)
-	.loc 1 369 15
+	.loc 1 379 15
 	addi	a0,s0,-24
-	.loc 1 369 58
+	.loc 1 379 58
 	li	a5,240
-	.loc 1 369 15
+	.loc 1 379 15
 	li	a4,0
 	li	a3,0
 	li	a2,2
-	addi	a1,a1,%lo(.LANCHOR7)
-	.loc 1 369 58
+	addi	a1,a1,%lo(.LANCHOR8)
+	.loc 1 379 58
 	sh	a5,-20(s0)
-	.loc 1 369 15
+	.loc 1 379 15
 	call	bt_le_adv_start
-.LVL118:
-	.loc 1 370 5 is_stmt 1
-	.loc 1 374 1 is_stmt 0
+.LVL124:
+	.loc 1 380 5 is_stmt 1
+	.loc 1 384 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 32
-	.loc 1 370 8
+	.loc 1 380 8
 	snez	a0,a0
-.LVL119:
+.LVL125:
 	neg	a0,a0
-	.loc 1 374 1
+	.loc 1 384 1
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.L88:
+.L95:
 	li	a0,-1
 	ret
 	.cfi_endproc
@@ -1573,10 +1613,10 @@ ble_adv_start:
 	.type	ble_adv_stop, @function
 ble_adv_stop:
 .LFB91:
-	.loc 1 377 1 is_stmt 1
+	.loc 1 387 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 378 5
-	.loc 1 377 1 is_stmt 0
+	.loc 1 388 5
+	.loc 1 387 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -1585,11 +1625,11 @@ ble_adv_stop:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 378 5
+	.loc 1 388 5
 	call	bt_le_adv_stop
-.LVL120:
-	.loc 1 379 5 is_stmt 1
-	.loc 1 380 1 is_stmt 0
+.LVL126:
+	.loc 1 389 5 is_stmt 1
+	.loc 1 390 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -1608,14 +1648,14 @@ ble_adv_stop:
 	.type	ble_reverse_byte, @function
 ble_reverse_byte:
 .LFB93:
-	.loc 1 408 1 is_stmt 1
+	.loc 1 418 1 is_stmt 1
 	.cfi_startproc
-.LVL121:
-	.loc 1 409 5
+.LVL127:
+	.loc 1 419 5
 .LBB56:
-	.loc 1 409 10
+	.loc 1 419 10
 .LBE56:
-	.loc 1 408 1 is_stmt 0
+	.loc 1 418 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
@@ -1624,21 +1664,21 @@ ble_reverse_byte:
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
 .LBB58:
-	.loc 1 409 35
+	.loc 1 419 35
 	srli	a1,a1,1
-.LVL122:
+.LVL128:
 .LBE58:
-	.loc 1 408 1
+	.loc 1 418 1
 	add	a1,a0,a1
-.LVL123:
-.L96:
+.LVL129:
+.L103:
 .LBB59:
-	.loc 1 409 26 is_stmt 1 discriminator 1
-	.loc 1 409 5 is_stmt 0 discriminator 1
+	.loc 1 419 26 is_stmt 1 discriminator 1
+	.loc 1 419 5 is_stmt 0 discriminator 1
 	addi	a5,a5,-1
-	bne	a0,a1,.L97
+	bne	a0,a1,.L104
 .LBE59:
-	.loc 1 414 1
+	.loc 1 424 1
 	lw	s0,12(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -1646,28 +1686,28 @@ ble_reverse_byte:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.L97:
+.L104:
 	.cfi_restore_state
 .LBB60:
 .LBB57:
-	.loc 1 410 9 is_stmt 1 discriminator 3
-	.loc 1 411 21 is_stmt 0 discriminator 3
+	.loc 1 420 9 is_stmt 1 discriminator 3
+	.loc 1 421 21 is_stmt 0 discriminator 3
 	lbu	a3,0(a5)
-	.loc 1 410 17 discriminator 3
+	.loc 1 420 17 discriminator 3
 	lbu	a4,0(a0)
-.LVL124:
-	.loc 1 411 9 is_stmt 1 discriminator 3
+.LVL130:
+	.loc 1 421 9 is_stmt 1 discriminator 3
 	addi	a0,a0,1
-.LVL125:
-	.loc 1 411 16 is_stmt 0 discriminator 3
+.LVL131:
+	.loc 1 421 16 is_stmt 0 discriminator 3
 	sb	a3,-1(a0)
-	.loc 1 412 9 is_stmt 1 discriminator 3
-	.loc 1 412 27 is_stmt 0 discriminator 3
+	.loc 1 422 9 is_stmt 1 discriminator 3
+	.loc 1 422 27 is_stmt 0 discriminator 3
 	sb	a4,0(a5)
 .LBE57:
-	.loc 1 409 40 is_stmt 1 discriminator 3
-.LVL126:
-	j	.L96
+	.loc 1 419 40 is_stmt 1 discriminator 3
+.LVL132:
+	j	.L103
 .LBE60:
 	.cfi_endproc
 .LFE93:
@@ -1678,25 +1718,25 @@ ble_reverse_byte:
 	.type	ble_set_config_done_cb, @function
 ble_set_config_done_cb:
 .LFB94:
-	.loc 1 417 1
+	.loc 1 427 1
 	.cfi_startproc
-.LVL127:
-	.loc 1 418 5
-	.loc 1 417 1 is_stmt 0
+.LVL133:
+	.loc 1 428 5
+	.loc 1 427 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 419 1
+	.loc 1 429 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 418 20
-	lui	a5,%hi(.LANCHOR2)
-	sw	a0,%lo(.LANCHOR2)(a5)
-	.loc 1 419 1
+	.loc 1 428 20
+	lui	a5,%hi(.LANCHOR3)
+	sw	a0,%lo(.LANCHOR3)(a5)
+	.loc 1 429 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -1709,10 +1749,10 @@ ble_set_config_done_cb:
 	.type	ble_slave_deinit, @function
 ble_slave_deinit:
 .LFB96:
-	.loc 1 451 1 is_stmt 1
+	.loc 1 461 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 452 5
-	.loc 1 451 1 is_stmt 0
+	.loc 1 462 5
+	.loc 1 461 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -1721,16 +1761,16 @@ ble_slave_deinit:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 452 5
+	.loc 1 462 5
 	call	bt_le_adv_stop
-.LVL128:
-	.loc 1 453 5 is_stmt 1
+.LVL134:
+	.loc 1 463 5 is_stmt 1
 .LBB61:
 .LBB62:
-	.loc 1 315 5
+	.loc 1 325 5
 .LBE62:
 .LBE61:
-	.loc 1 457 1 is_stmt 0
+	.loc 1 467 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -1738,26 +1778,26 @@ ble_slave_deinit:
 	.cfi_def_cfa 2, 16
 .LBB64:
 .LBB63:
-	.loc 1 315 13
+	.loc 1 325 13
 	lui	a5,%hi(conn_cb)
 	sw	zero,%lo(conn_cb)(a5)
-	.loc 1 316 5 is_stmt 1
-.LVL129:
+	.loc 1 326 5 is_stmt 1
+.LVL135:
 .LBE63:
 .LBE64:
-	.loc 1 454 5
+	.loc 1 464 5
 .LBB65:
 .LBB66:
-	.loc 1 321 5
-	.loc 1 321 16 is_stmt 0
+	.loc 1 331 5
+	.loc 1 331 16 is_stmt 0
 	lui	a5,%hi(disconn_cb)
 	sw	zero,%lo(disconn_cb)(a5)
-	.loc 1 322 5 is_stmt 1
-.LVL130:
+	.loc 1 332 5 is_stmt 1
+.LVL136:
 .LBE66:
 .LBE65:
-	.loc 1 456 5
-	.loc 1 457 1 is_stmt 0
+	.loc 1 466 5
+	.loc 1 467 1 is_stmt 0
 	li	a0,0
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -1767,16 +1807,16 @@ ble_slave_deinit:
 	.size	ble_slave_deinit, .-ble_slave_deinit
 	.section	.rodata.ble_server_init.str1.4,"aMS",@progbits,1
 	.align	2
-.LC31:
+.LC33:
 	.string	"[BLE] Service already registered, unregistering first...\r\n"
 	.align	2
-.LC32:
+.LC34:
 	.string	"[BLE] Failed to register WiFi config service: %d\r\n"
 	.align	2
-.LC33:
+.LC35:
 	.string	"[BLE] WiFi config service registered\r\n"
 	.align	2
-.LC34:
+.LC36:
 	.string	"[BLE] BLE stack not enabled, cannot register service\r\n"
 	.section	.text.ble_server_init,"ax",@progbits
 	.align	1
@@ -1784,10 +1824,10 @@ ble_slave_deinit:
 	.type	ble_server_init, @function
 ble_server_init:
 .LFB97:
-	.loc 1 460 1 is_stmt 1
+	.loc 1 470 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 462 5
-	.loc 1 460 1 is_stmt 0
+	.loc 1 472 5
+	.loc 1 470 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	ra,28(sp)
@@ -1800,105 +1840,105 @@ ble_server_init:
 	.cfi_def_cfa 8, 0
 	sw	s1,20(sp)
 	sw	s3,12(sp)
-	.loc 1 462 5
-	lui	a0,%hi(.LANCHOR4)
+	.loc 1 472 5
+	lui	a0,%hi(.LANCHOR5)
 	li	a2,33
 	li	a1,0
-	.loc 1 460 1
+	.loc 1 470 1
 	.cfi_offset 9, -12
 	.cfi_offset 19, -20
-	.loc 1 462 5
-	addi	a0,a0,%lo(.LANCHOR4)
+	.loc 1 472 5
+	addi	a0,a0,%lo(.LANCHOR5)
 	call	memset
-.LVL131:
-	.loc 1 463 5 is_stmt 1
-	lui	a0,%hi(.LANCHOR3)
+.LVL137:
+	.loc 1 473 5 is_stmt 1
+	lui	a0,%hi(.LANCHOR4)
 	li	a2,65
 	li	a1,0
-	addi	a0,a0,%lo(.LANCHOR3)
+	addi	a0,a0,%lo(.LANCHOR4)
 	call	memset
-.LVL132:
-	.loc 1 464 5
-	.loc 1 464 14 is_stmt 0
-	lui	a5,%hi(.LANCHOR0)
-	.loc 1 468 9
-	lui	s2,%hi(.LANCHOR8)
-	.loc 1 464 14
-	sb	zero,%lo(.LANCHOR0)(a5)
-	.loc 1 465 5 is_stmt 1
-	.loc 1 465 18 is_stmt 0
-	lui	a5,%hi(.LANCHOR1)
-	sb	zero,%lo(.LANCHOR1)(a5)
-	.loc 1 468 5 is_stmt 1
-	.loc 1 468 8 is_stmt 0
-	lbu	a5,%lo(.LANCHOR8)(s2)
-	addi	s2,s2,%lo(.LANCHOR8)
-	beq	a5,zero,.L104
-	.loc 1 469 9 is_stmt 1
-	lui	a0,%hi(.LC31)
-	addi	a0,a0,%lo(.LC31)
-	call	printf
-.LVL133:
-	.loc 1 470 9
-	lui	a0,%hi(.LANCHOR9)
-	addi	a0,a0,%lo(.LANCHOR9)
-	call	bt_gatt_service_unregister
-.LVL134:
-	.loc 1 471 9
-	.loc 1 472 9 is_stmt 0
-	li	a0,100
-	.loc 1 471 34
-	sb	zero,0(s2)
-	.loc 1 472 9 is_stmt 1
-	call	aos_msleep
-.LVL135:
-.L104:
-	.loc 1 460 1 is_stmt 0
-	li	s1,51
-	.loc 1 477 12
-	lui	s3,%hi(.LANCHOR5)
-.L105:
-.LVL136:
-	.loc 1 477 11 is_stmt 1
-	lbu	a5,%lo(.LANCHOR5)(s3)
-	bne	a5,zero,.L106
-	.loc 1 477 27 is_stmt 0 discriminator 1
-	addi	s1,s1,-1
-.LVL137:
-	bne	s1,zero,.L107
-	.loc 1 482 5 is_stmt 1
-	.loc 1 483 9
-	lui	a0,%hi(.LC34)
-	addi	a0,a0,%lo(.LC34)
-	call	printf
 .LVL138:
-	.loc 1 484 9
-	.loc 1 484 16 is_stmt 0
-	li	s1,-1
+	.loc 1 474 5
+	.loc 1 474 14 is_stmt 0
+	lui	a5,%hi(.LANCHOR1)
+	.loc 1 478 9
+	lui	s2,%hi(.LANCHOR9)
+	.loc 1 474 14
+	sb	zero,%lo(.LANCHOR1)(a5)
+	.loc 1 475 5 is_stmt 1
+	.loc 1 475 18 is_stmt 0
+	lui	a5,%hi(.LANCHOR2)
+	sb	zero,%lo(.LANCHOR2)(a5)
+	.loc 1 478 5 is_stmt 1
+	.loc 1 478 8 is_stmt 0
+	lbu	a5,%lo(.LANCHOR9)(s2)
+	addi	s2,s2,%lo(.LANCHOR9)
+	beq	a5,zero,.L111
+	.loc 1 479 9 is_stmt 1
+	lui	a0,%hi(.LC33)
+	addi	a0,a0,%lo(.LC33)
+	call	printf
 .LVL139:
-	j	.L103
+	.loc 1 480 9
+	lui	a0,%hi(.LANCHOR10)
+	addi	a0,a0,%lo(.LANCHOR10)
+	call	bt_gatt_service_unregister
 .LVL140:
-.L107:
-	.loc 1 478 9 is_stmt 1
+	.loc 1 481 9
+	.loc 1 482 9 is_stmt 0
 	li	a0,100
+	.loc 1 481 34
+	sb	zero,0(s2)
+	.loc 1 482 9 is_stmt 1
 	call	aos_msleep
 .LVL141:
-	.loc 1 479 9
-	j	.L105
+.L111:
+	.loc 1 470 1 is_stmt 0
+	li	s1,51
+	.loc 1 487 12
+	lui	s3,%hi(.LANCHOR6)
+.L112:
 .LVL142:
-.L110:
-	.loc 1 489 9
-	lui	a0,%hi(.LC32)
-	mv	a1,s1
-	addi	a0,a0,%lo(.LC32)
-	call	printf
+	.loc 1 487 11 is_stmt 1
+	lbu	a5,%lo(.LANCHOR6)(s3)
+	bne	a5,zero,.L113
+	.loc 1 487 27 is_stmt 0 discriminator 1
+	addi	s1,s1,-1
 .LVL143:
-	.loc 1 490 9
-	.loc 1 490 34 is_stmt 0
-	sb	zero,0(s2)
+	bne	s1,zero,.L114
+	.loc 1 492 5 is_stmt 1
+	.loc 1 493 9
+	lui	a0,%hi(.LC36)
+	addi	a0,a0,%lo(.LC36)
+	call	printf
 .LVL144:
-.L103:
-	.loc 1 496 1
+	.loc 1 494 9
+	.loc 1 494 16 is_stmt 0
+	li	s1,-1
+.LVL145:
+	j	.L110
+.LVL146:
+.L114:
+	.loc 1 488 9 is_stmt 1
+	li	a0,100
+	call	aos_msleep
+.LVL147:
+	.loc 1 489 9
+	j	.L112
+.LVL148:
+.L117:
+	.loc 1 499 9
+	lui	a0,%hi(.LC34)
+	mv	a1,s1
+	addi	a0,a0,%lo(.LC34)
+	call	printf
+.LVL149:
+	.loc 1 500 9
+	.loc 1 500 34 is_stmt 0
+	sb	zero,0(s2)
+.LVL150:
+.L110:
+	.loc 1 506 1
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -1915,31 +1955,31 @@ ble_server_init:
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL145:
-.L106:
+.LVL151:
+.L113:
 	.cfi_restore_state
-	.loc 1 482 5 is_stmt 1
-	.loc 1 487 5
-	.loc 1 487 15 is_stmt 0
-	lui	a0,%hi(.LANCHOR9)
-	addi	a0,a0,%lo(.LANCHOR9)
+	.loc 1 492 5 is_stmt 1
+	.loc 1 497 5
+	.loc 1 497 15 is_stmt 0
+	lui	a0,%hi(.LANCHOR10)
+	addi	a0,a0,%lo(.LANCHOR10)
 	call	bt_gatt_service_register
-.LVL146:
+.LVL152:
 	mv	s1,a0
-.LVL147:
-	.loc 1 488 5 is_stmt 1
-	.loc 1 488 8 is_stmt 0
-	bne	a0,zero,.L110
-	.loc 1 492 9 is_stmt 1
-	lui	a0,%hi(.LC33)
-	addi	a0,a0,%lo(.LC33)
+.LVL153:
+	.loc 1 498 5 is_stmt 1
+	.loc 1 498 8 is_stmt 0
+	bne	a0,zero,.L117
+	.loc 1 502 9 is_stmt 1
+	lui	a0,%hi(.LC35)
+	addi	a0,a0,%lo(.LC35)
 	call	printf
-.LVL148:
-	.loc 1 493 9
-	.loc 1 493 34 is_stmt 0
+.LVL154:
+	.loc 1 503 9
+	.loc 1 503 34 is_stmt 0
 	li	a5,1
 	sb	a5,0(s2)
-	j	.L103
+	j	.L110
 	.cfi_endproc
 .LFE97:
 	.size	ble_server_init, .-ble_server_init
@@ -1949,10 +1989,10 @@ ble_server_init:
 	.type	ble_slave_init, @function
 ble_slave_init:
 .LFB95:
-	.loc 1 444 1 is_stmt 1
+	.loc 1 454 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 445 5
-	.loc 1 444 1 is_stmt 0
+	.loc 1 455 5
+	.loc 1 454 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -1961,14 +2001,14 @@ ble_slave_init:
 	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 445 5
+	.loc 1 455 5
 	call	ble_server_init
-.LVL149:
-	.loc 1 446 5 is_stmt 1
+.LVL155:
+	.loc 1 456 5 is_stmt 1
 	call	ble_salve_adv
-.LVL150:
-	.loc 1 447 5
-	.loc 1 448 1 is_stmt 0
+.LVL156:
+	.loc 1 457 5
+	.loc 1 458 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -1987,10 +2027,10 @@ ble_slave_init:
 	.type	ble_server_deinit, @function
 ble_server_deinit:
 .LFB98:
-	.loc 1 499 1 is_stmt 1
+	.loc 1 509 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 501 5
-	.loc 1 499 1 is_stmt 0
+	.loc 1 511 5
+	.loc 1 509 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -2001,55 +2041,55 @@ ble_server_deinit:
 	.cfi_offset 9, -12
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 501 5
-	lui	a0,%hi(.LANCHOR4)
+	.loc 1 511 5
+	lui	a0,%hi(.LANCHOR5)
 	li	a2,33
 	li	a1,0
-	.loc 1 499 1
-	.loc 1 501 5
-	addi	a0,a0,%lo(.LANCHOR4)
+	.loc 1 509 1
+	.loc 1 511 5
+	addi	a0,a0,%lo(.LANCHOR5)
 	call	memset
-.LVL151:
-	.loc 1 502 5 is_stmt 1
-	lui	a0,%hi(.LANCHOR3)
+.LVL157:
+	.loc 1 512 5 is_stmt 1
+	lui	a0,%hi(.LANCHOR4)
 	li	a2,65
 	li	a1,0
-	addi	a0,a0,%lo(.LANCHOR3)
+	addi	a0,a0,%lo(.LANCHOR4)
 	call	memset
-.LVL152:
-	.loc 1 503 5
-	.loc 1 503 14 is_stmt 0
-	lui	a5,%hi(.LANCHOR0)
-	.loc 1 506 9
-	lui	s1,%hi(.LANCHOR8)
-	.loc 1 503 14
-	sb	zero,%lo(.LANCHOR0)(a5)
-	.loc 1 504 5 is_stmt 1
-	.loc 1 506 9 is_stmt 0
-	addi	s1,s1,%lo(.LANCHOR8)
-	.loc 1 504 18
+.LVL158:
+	.loc 1 513 5
+	.loc 1 513 14 is_stmt 0
 	lui	a5,%hi(.LANCHOR1)
+	.loc 1 516 9
+	lui	s1,%hi(.LANCHOR9)
+	.loc 1 513 14
 	sb	zero,%lo(.LANCHOR1)(a5)
-	.loc 1 506 5 is_stmt 1
-	.loc 1 506 8 is_stmt 0
+	.loc 1 514 5 is_stmt 1
+	.loc 1 516 9 is_stmt 0
+	addi	s1,s1,%lo(.LANCHOR9)
+	.loc 1 514 18
+	lui	a5,%hi(.LANCHOR2)
+	sb	zero,%lo(.LANCHOR2)(a5)
+	.loc 1 516 5 is_stmt 1
+	.loc 1 516 8 is_stmt 0
 	lbu	a5,0(s1)
 	li	a0,0
-	beq	a5,zero,.L120
+	beq	a5,zero,.L127
 .LBB67:
-	.loc 1 507 9 is_stmt 1
-	.loc 1 507 19 is_stmt 0
-	lui	a0,%hi(.LANCHOR9)
-	addi	a0,a0,%lo(.LANCHOR9)
+	.loc 1 517 9 is_stmt 1
+	.loc 1 517 19 is_stmt 0
+	lui	a0,%hi(.LANCHOR10)
+	addi	a0,a0,%lo(.LANCHOR10)
 	call	bt_gatt_service_unregister
-.LVL153:
-	.loc 1 508 9 is_stmt 1
-	.loc 1 508 34 is_stmt 0
+.LVL159:
+	.loc 1 518 9 is_stmt 1
+	.loc 1 518 34 is_stmt 0
 	sb	zero,0(s1)
-	.loc 1 509 9 is_stmt 1
-.LVL154:
-.L120:
+	.loc 1 519 9 is_stmt 1
+.LVL160:
+.L127:
 .LBE67:
-	.loc 1 512 1 is_stmt 0
+	.loc 1 522 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -2065,19 +2105,19 @@ ble_server_deinit:
 	.size	ble_server_deinit, .-ble_server_deinit
 	.section	.rodata.ble_stack_start.str1.4,"aMS",@progbits,1
 	.align	2
-.LC35:
+.LC37:
 	.string	"[BLE] Resetting BLE enabled flag\r\n"
 	.align	2
-.LC36:
+.LC38:
 	.string	"[BLE] Initializing BLE controller...\r\n"
 	.align	2
-.LC37:
+.LC39:
 	.string	"[BLE] Initializing HCI driver...\r\n"
 	.align	2
-.LC38:
+.LC40:
 	.string	"[BLE] Calling bt_enable()...\r\n"
 	.align	2
-.LC39:
+.LC41:
 	.string	"[BLE] bt_enable() called, waiting for callback...\r\n"
 	.section	.text.ble_stack_start,"ax",@progbits
 	.align	1
@@ -2085,100 +2125,100 @@ ble_server_deinit:
 	.type	ble_stack_start, @function
 ble_stack_start:
 .LFB99:
-	.loc 1 515 1 is_stmt 1
+	.loc 1 525 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 517 5
-	.loc 1 515 1 is_stmt 0
+	.loc 1 527 5
+	.loc 1 525 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
 	sw	s0,8(sp)
-	.loc 1 518 5
-	lui	a0,%hi(.LC35)
+	.loc 1 528 5
+	lui	a0,%hi(.LC37)
 	.cfi_offset 1, -4
 	.cfi_offset 8, -8
-	.loc 1 515 1
+	.loc 1 525 1
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 517 19
-	lui	a5,%hi(.LANCHOR5)
-	.loc 1 515 1
-	.loc 1 518 5
-	addi	a0,a0,%lo(.LC35)
-	.loc 1 517 19
-	sb	zero,%lo(.LANCHOR5)(a5)
-	.loc 1 518 5 is_stmt 1
-	call	printf
-.LVL155:
-	.loc 1 521 5
-	lui	a0,%hi(.LC36)
-	addi	a0,a0,%lo(.LC36)
-	call	printf
-.LVL156:
-	.loc 1 522 5
-	li	a0,31
-	call	ble_controller_init
-.LVL157:
-	.loc 1 525 5
-	lui	a0,%hi(.LC37)
-	addi	a0,a0,%lo(.LC37)
-	call	printf
-.LVL158:
-	.loc 1 526 5
-	call	hci_driver_init
-.LVL159:
+	.loc 1 527 19
+	lui	a5,%hi(.LANCHOR6)
+	.loc 1 525 1
 	.loc 1 528 5
+	addi	a0,a0,%lo(.LC37)
+	.loc 1 527 19
+	sb	zero,%lo(.LANCHOR6)(a5)
+	.loc 1 528 5 is_stmt 1
+	call	printf
+.LVL161:
+	.loc 1 531 5
 	lui	a0,%hi(.LC38)
 	addi	a0,a0,%lo(.LC38)
 	call	printf
-.LVL160:
-	.loc 1 529 5
+.LVL162:
+	.loc 1 532 5
+	li	a0,31
+	call	ble_controller_init
+.LVL163:
+	.loc 1 535 5
+	lui	a0,%hi(.LC39)
+	addi	a0,a0,%lo(.LC39)
+	call	printf
+.LVL164:
+	.loc 1 536 5
+	call	hci_driver_init
+.LVL165:
+	.loc 1 538 5
+	lui	a0,%hi(.LC40)
+	addi	a0,a0,%lo(.LC40)
+	call	printf
+.LVL166:
+	.loc 1 539 5
 	lui	a0,%hi(bt_enable_cb)
 	addi	a0,a0,%lo(bt_enable_cb)
 	call	bt_enable
-.LVL161:
-	.loc 1 530 5
-	.loc 1 531 1 is_stmt 0
+.LVL167:
+	.loc 1 540 5
+	.loc 1 541 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 530 5
-	lui	a0,%hi(.LC39)
-	.loc 1 531 1
-	.loc 1 530 5
-	addi	a0,a0,%lo(.LC39)
-	.loc 1 531 1
+	.loc 1 540 5
+	lui	a0,%hi(.LC41)
+	.loc 1 541 1
+	.loc 1 540 5
+	addi	a0,a0,%lo(.LC41)
+	.loc 1 541 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 530 5
+	.loc 1 540 5
 	tail	printf
-.LVL162:
+.LVL168:
 	.cfi_endproc
 .LFE99:
 	.size	ble_stack_start, .-ble_stack_start
 	.section	.rodata.apps_ble_start.str1.4,"aMS",@progbits,1
 	.align	2
-.LC40:
+.LC42:
 	.string	"[BLE] Warning: BLE still marked as enabled, forcing stop first...\r\n"
 	.align	2
-.LC41:
+.LC43:
 	.string	"[BLE] Waiting for radio to be free...\r\n"
 	.align	2
-.LC42:
+.LC44:
 	.string	"[BLE] Starting BLE stack...\r\n"
 	.align	2
-.LC43:
+.LC45:
 	.string	"[BLE] Still waiting for BLE stack to enable... (%d/15s)\r\n"
 	.align	2
-.LC44:
+.LC46:
 	.string	"[BLE] BLE stack enable timeout after %d attempts, cannot start BLE\r\n"
 	.align	2
-.LC45:
+.LC47:
 	.string	"[BLE] This may be due to WiFi stack still holding the radio\r\n"
 	.align	2
-.LC46:
+.LC48:
 	.string	"[BLE] BLE stack enabled, initializing slave...\r\n"
 	.section	.text.apps_ble_start,"ax",@progbits
 	.align	1
@@ -2186,10 +2226,10 @@ ble_stack_start:
 	.type	apps_ble_start, @function
 apps_ble_start:
 .LFB100:
-	.loc 1 534 1 is_stmt 1
+	.loc 1 544 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 535 5
-	.loc 1 534 1 is_stmt 0
+	.loc 1 545 5
+	.loc 1 544 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -2210,133 +2250,74 @@ apps_ble_start:
 	.cfi_offset 22, -32
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 535 9
-	lui	s2,%hi(.LANCHOR5)
-	.loc 1 534 1
-	.loc 1 535 8
-	lbu	a5,%lo(.LANCHOR5)(s2)
-	addi	s2,s2,%lo(.LANCHOR5)
-	beq	a5,zero,.L129
-	.loc 1 536 9 is_stmt 1
-	lui	a0,%hi(.LC40)
-	addi	a0,a0,%lo(.LC40)
-	call	printf
-.LVL163:
-	.loc 1 538 9
-	.loc 1 539 9 is_stmt 0
-	li	a0,1000
-	.loc 1 538 23
-	sb	zero,0(s2)
-	.loc 1 539 9 is_stmt 1
-	call	aos_msleep
-.LVL164:
-.L129:
-	.loc 1 542 5
-	lui	a0,%hi(.LC41)
-	addi	a0,a0,%lo(.LC41)
-	call	printf
-.LVL165:
-	.loc 1 543 5
-	li	a0,4096
-	addi	a0,a0,-1096
-	call	aos_msleep
-.LVL166:
-	.loc 1 545 5
+	.loc 1 545 9
+	lui	s2,%hi(.LANCHOR6)
+	.loc 1 544 1
+	.loc 1 545 8
+	lbu	a5,%lo(.LANCHOR6)(s2)
+	addi	s2,s2,%lo(.LANCHOR6)
+	beq	a5,zero,.L136
+	.loc 1 546 9 is_stmt 1
 	lui	a0,%hi(.LC42)
 	addi	a0,a0,%lo(.LC42)
 	call	printf
-.LVL167:
-	.loc 1 546 5
-	call	ble_stack_start
-.LVL168:
-	.loc 1 549 5
-	.loc 1 550 5
-	.loc 1 549 9 is_stmt 0
-	li	s1,0
-	.loc 1 550 27
-	li	s3,150
-	.loc 1 552 19
-	li	s4,20
-	.loc 1 554 13
-	li	s5,10
-	lui	s6,%hi(.LC43)
 .LVL169:
-.L130:
-	.loc 1 550 11 is_stmt 1
-	lbu	a5,0(s2)
-	bne	a5,zero,.L132
-	.loc 1 550 27 is_stmt 0 discriminator 1
-	bne	s1,s3,.L133
-	.loc 1 558 5 is_stmt 1
-	.loc 1 559 9
+	.loc 1 548 9
+	.loc 1 549 9 is_stmt 0
+	li	a0,1000
+	.loc 1 548 23
+	sb	zero,0(s2)
+	.loc 1 549 9 is_stmt 1
+	call	aos_msleep
+.LVL170:
+.L136:
+	.loc 1 552 5
+	lui	a0,%hi(.LC43)
+	addi	a0,a0,%lo(.LC43)
+	call	printf
+.LVL171:
+	.loc 1 553 5
+	li	a0,4096
+	addi	a0,a0,-1096
+	call	aos_msleep
+.LVL172:
+	.loc 1 555 5
 	lui	a0,%hi(.LC44)
-	li	a1,150
 	addi	a0,a0,%lo(.LC44)
 	call	printf
-.LVL170:
-	.loc 1 560 9
-	.loc 1 567 1 is_stmt 0
-	lw	s0,24(sp)
-	.cfi_remember_state
-	.cfi_restore 8
-	.cfi_def_cfa 2, 32
-	lw	ra,28(sp)
-	.cfi_restore 1
-	lw	s1,20(sp)
-	.cfi_restore 9
-.LVL171:
-	lw	s2,16(sp)
-	.cfi_restore 18
-	lw	s3,12(sp)
-	.cfi_restore 19
-	lw	s4,8(sp)
-	.cfi_restore 20
-	lw	s5,4(sp)
-	.cfi_restore 21
-	lw	s6,0(sp)
-	.cfi_restore 22
-	.loc 1 560 9
-	lui	a0,%hi(.LC45)
-	.loc 1 567 1
-	.loc 1 560 9
-	addi	a0,a0,%lo(.LC45)
-	.loc 1 567 1
-	addi	sp,sp,32
-	.cfi_def_cfa_offset 0
-	.loc 1 560 9
-	tail	printf
-.LVL172:
-.L133:
-	.cfi_restore_state
-	.loc 1 551 9 is_stmt 1
-	li	a0,100
-	call	aos_msleep
 .LVL173:
-	.loc 1 552 9
-	.loc 1 552 19 is_stmt 0
-	addi	s1,s1,1
+	.loc 1 556 5
+	call	ble_stack_start
 .LVL174:
-	.loc 1 553 9 is_stmt 1
-	.loc 1 552 19 is_stmt 0
-	rem	a5,s1,s4
-	.loc 1 553 12
-	bne	a5,zero,.L130
-	.loc 1 554 13 is_stmt 1
-	div	a1,s1,s5
-	addi	a0,s6,%lo(.LC43)
-	call	printf
+	.loc 1 559 5
+	.loc 1 560 5
+	.loc 1 559 9 is_stmt 0
+	li	s1,0
+	.loc 1 560 27
+	li	s3,150
+	.loc 1 562 19
+	li	s4,20
+	.loc 1 564 13
+	li	s5,10
+	lui	s6,%hi(.LC45)
 .LVL175:
-	j	.L130
-.L132:
-	.loc 1 558 5
-	.loc 1 564 5
+.L137:
+	.loc 1 560 11 is_stmt 1
+	lbu	a5,0(s2)
+	bne	a5,zero,.L139
+	.loc 1 560 27 is_stmt 0 discriminator 1
+	bne	s1,s3,.L140
+	.loc 1 568 5 is_stmt 1
+	.loc 1 569 9
 	lui	a0,%hi(.LC46)
+	li	a1,150
 	addi	a0,a0,%lo(.LC46)
 	call	printf
 .LVL176:
-	.loc 1 565 5
-	.loc 1 567 1 is_stmt 0
+	.loc 1 570 9
+	.loc 1 577 1 is_stmt 0
 	lw	s0,24(sp)
+	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 32
 	lw	ra,28(sp)
@@ -2354,26 +2335,85 @@ apps_ble_start:
 	.cfi_restore 21
 	lw	s6,0(sp)
 	.cfi_restore 22
+	.loc 1 570 9
+	lui	a0,%hi(.LC47)
+	.loc 1 577 1
+	.loc 1 570 9
+	addi	a0,a0,%lo(.LC47)
+	.loc 1 577 1
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
-	.loc 1 565 5
-	tail	ble_slave_init
+	.loc 1 570 9
+	tail	printf
 .LVL178:
+.L140:
+	.cfi_restore_state
+	.loc 1 561 9 is_stmt 1
+	li	a0,100
+	call	aos_msleep
+.LVL179:
+	.loc 1 562 9
+	.loc 1 562 19 is_stmt 0
+	addi	s1,s1,1
+.LVL180:
+	.loc 1 563 9 is_stmt 1
+	.loc 1 562 19 is_stmt 0
+	rem	a5,s1,s4
+	.loc 1 563 12
+	bne	a5,zero,.L137
+	.loc 1 564 13 is_stmt 1
+	div	a1,s1,s5
+	addi	a0,s6,%lo(.LC45)
+	call	printf
+.LVL181:
+	j	.L137
+.L139:
+	.loc 1 568 5
+	.loc 1 574 5
+	lui	a0,%hi(.LC48)
+	addi	a0,a0,%lo(.LC48)
+	call	printf
+.LVL182:
+	.loc 1 575 5
+	.loc 1 577 1 is_stmt 0
+	lw	s0,24(sp)
+	.cfi_restore 8
+	.cfi_def_cfa 2, 32
+	lw	ra,28(sp)
+	.cfi_restore 1
+	lw	s1,20(sp)
+	.cfi_restore 9
+.LVL183:
+	lw	s2,16(sp)
+	.cfi_restore 18
+	lw	s3,12(sp)
+	.cfi_restore 19
+	lw	s4,8(sp)
+	.cfi_restore 20
+	lw	s5,4(sp)
+	.cfi_restore 21
+	lw	s6,0(sp)
+	.cfi_restore 22
+	addi	sp,sp,32
+	.cfi_def_cfa_offset 0
+	.loc 1 575 5
+	tail	ble_slave_init
+.LVL184:
 	.cfi_endproc
 .LFE100:
 	.size	apps_ble_start, .-apps_ble_start
 	.section	.rodata.apps_ble_stop.str1.4,"aMS",@progbits,1
 	.align	2
-.LC47:
+.LC49:
 	.string	"[BLE] Stopping BLE...\r\n"
 	.align	2
-.LC48:
+.LC50:
 	.string	"[BLE] wait for ble_disconnect_all\r\n"
 	.align	2
-.LC49:
+.LC51:
 	.string	"[BLE] BLE controller deinitialized\r\n"
 	.align	2
-.LC50:
+.LC52:
 	.string	"[BLE] BLE stopped\r\n"
 	.section	.text.apps_ble_stop,"ax",@progbits
 	.align	1
@@ -2381,10 +2421,10 @@ apps_ble_start:
 	.type	apps_ble_stop, @function
 apps_ble_stop:
 .LFB101:
-	.loc 1 570 1 is_stmt 1
+	.loc 1 580 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 571 5
-	.loc 1 570 1 is_stmt 0
+	.loc 1 581 5
+	.loc 1 580 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -2396,75 +2436,75 @@ apps_ble_stop:
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
 	sw	s2,0(sp)
-	.loc 1 571 5
-	lui	a0,%hi(.LC47)
-	.loc 1 570 1
+	.loc 1 581 5
+	lui	a0,%hi(.LC49)
+	.loc 1 580 1
 	.cfi_offset 18, -16
-	.loc 1 571 5
-	addi	a0,a0,%lo(.LC47)
+	.loc 1 581 5
+	addi	a0,a0,%lo(.LC49)
 	call	printf
-.LVL179:
-	.loc 1 574 5 is_stmt 1
-	.loc 1 574 19 is_stmt 0
-	lui	a5,%hi(.LANCHOR5)
-	sb	zero,%lo(.LANCHOR5)(a5)
-	.loc 1 575 5 is_stmt 1
-	.loc 1 575 30 is_stmt 0
-	lui	a5,%hi(.LANCHOR8)
-	sb	zero,%lo(.LANCHOR8)(a5)
-	.loc 1 577 5 is_stmt 1
+.LVL185:
+	.loc 1 584 5 is_stmt 1
+	.loc 1 584 19 is_stmt 0
+	lui	a5,%hi(.LANCHOR6)
+	sb	zero,%lo(.LANCHOR6)(a5)
+	.loc 1 585 5 is_stmt 1
+	.loc 1 585 30 is_stmt 0
+	lui	a5,%hi(.LANCHOR9)
+	sb	zero,%lo(.LANCHOR9)(a5)
+	.loc 1 587 5 is_stmt 1
 	call	ble_slave_deinit
-.LVL180:
-	.loc 1 579 5
+.LVL186:
+	.loc 1 589 5
 	lui	a1,%hi(ble_disconnect_all)
 	li	a2,0
 	addi	a1,a1,%lo(ble_disconnect_all)
 	li	a0,15
 	call	bt_conn_foreach
-.LVL181:
-	.loc 1 581 5
-	.loc 1 582 5
-	.loc 1 582 11 is_stmt 0
-	li	s1,6
-	.loc 1 583 9
-	lui	s2,%hi(.LC48)
-.LVL182:
-.L140:
-	.loc 1 582 11 is_stmt 1
-	.loc 1 582 12 is_stmt 0
-	call	le_check_valid_conn
-.LVL183:
-	.loc 1 582 11
-	beq	a0,zero,.L141
-.LVL184:
-	.loc 1 582 34 discriminator 1
-	addi	s1,s1,-1
-.LVL185:
-	bne	s1,zero,.L142
-.LVL186:
-.L141:
-	.loc 1 589 5 is_stmt 1
-	call	bt_disable
 .LVL187:
+	.loc 1 591 5
 	.loc 1 592 5
+	.loc 1 592 11 is_stmt 0
+	li	s1,6
+	.loc 1 593 9
+	lui	s2,%hi(.LC50)
+.LVL188:
+.L147:
+	.loc 1 592 11 is_stmt 1
+	.loc 1 592 12 is_stmt 0
+	call	le_check_valid_conn
+.LVL189:
+	.loc 1 592 11
+	beq	a0,zero,.L148
+.LVL190:
+	.loc 1 592 34 discriminator 1
+	addi	s1,s1,-1
+.LVL191:
+	bne	s1,zero,.L149
+.LVL192:
+.L148:
+	.loc 1 599 5 is_stmt 1
+	call	bt_disable
+.LVL193:
+	.loc 1 602 5
 	li	a0,1000
 	call	aos_msleep
-.LVL188:
-	.loc 1 595 5
-	.loc 1 596 5
+.LVL194:
+	.loc 1 605 5
+	.loc 1 606 5
 	call	ble_controller_deinit
-.LVL189:
-	.loc 1 597 5
-	lui	a0,%hi(.LC49)
-	addi	a0,a0,%lo(.LC49)
+.LVL195:
+	.loc 1 607 5
+	lui	a0,%hi(.LC51)
+	addi	a0,a0,%lo(.LC51)
 	call	printf
-.LVL190:
-	.loc 1 600 5
+.LVL196:
+	.loc 1 610 5
 	li	a0,500
 	call	aos_msleep
-.LVL191:
-	.loc 1 602 5
-	.loc 1 603 1 is_stmt 0
+.LVL197:
+	.loc 1 612 5
+	.loc 1 613 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -2475,38 +2515,38 @@ apps_ble_stop:
 	.cfi_restore 9
 	lw	s2,0(sp)
 	.cfi_restore 18
-	.loc 1 602 5
-	lui	a0,%hi(.LC50)
-	.loc 1 603 1
-	.loc 1 602 5
-	addi	a0,a0,%lo(.LC50)
-	.loc 1 603 1
+	.loc 1 612 5
+	lui	a0,%hi(.LC52)
+	.loc 1 613 1
+	.loc 1 612 5
+	addi	a0,a0,%lo(.LC52)
+	.loc 1 613 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 602 5
+	.loc 1 612 5
 	tail	printf
-.LVL192:
-.L142:
+.LVL198:
+.L149:
 	.cfi_restore_state
-	.loc 1 583 9 is_stmt 1
-	addi	a0,s2,%lo(.LC48)
+	.loc 1 593 9 is_stmt 1
+	addi	a0,s2,%lo(.LC50)
 	call	printf
-.LVL193:
-	.loc 1 584 9
+.LVL199:
+	.loc 1 594 9
 	li	a0,500
 	call	vTaskDelay
-.LVL194:
-	.loc 1 585 9
-	j	.L140
+.LVL200:
+	.loc 1 595 9
+	j	.L147
 	.cfi_endproc
 .LFE101:
 	.size	apps_ble_stop, .-apps_ble_stop
 	.section	.rodata.ble_scan_start.str1.4,"aMS",@progbits,1
 	.align	2
-.LC51:
+.LC53:
 	.string	"BLE scan start failed (%d)\r\n"
 	.align	2
-.LC52:
+.LC54:
 	.string	"BLE scan started\r\n"
 	.section	.text.ble_scan_start,"ax",@progbits
 	.align	1
@@ -2514,10 +2554,10 @@ apps_ble_stop:
 	.type	ble_scan_start, @function
 ble_scan_start:
 .LFB104:
-	.loc 1 705 1
+	.loc 1 727 1
 	.cfi_startproc
-	.loc 1 706 5
-	.loc 1 705 1 is_stmt 0
+	.loc 1 728 5
+	.loc 1 727 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -2526,36 +2566,36 @@ ble_scan_start:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 706 29
+	.loc 1 728 29
 	lui	a5,%hi(.LC0)
-	.loc 1 705 1
-	.loc 1 706 29
+	.loc 1 727 1
+	.loc 1 728 29
 	addi	a5,a5,%lo(.LC0)
 	lw	a4,0(a5)
 	lhu	a5,4(a5)
-	.loc 1 716 15
+	.loc 1 738 15
 	lui	a1,%hi(scan_device_found)
 	addi	a1,a1,%lo(scan_device_found)
 	addi	a0,s0,-24
-	.loc 1 706 29
+	.loc 1 728 29
 	sw	a4,-24(s0)
 	sh	a5,-20(s0)
-	.loc 1 716 5 is_stmt 1
-	.loc 1 716 15 is_stmt 0
+	.loc 1 738 5 is_stmt 1
+	.loc 1 738 15 is_stmt 0
 	call	bt_le_scan_start
-.LVL195:
-	.loc 1 717 5 is_stmt 1
-	.loc 1 717 8 is_stmt 0
-	beq	a0,zero,.L148
+.LVL201:
+	.loc 1 739 5 is_stmt 1
+	.loc 1 739 8 is_stmt 0
+	beq	a0,zero,.L155
 	mv	a1,a0
-	.loc 1 718 9 is_stmt 1
-	lui	a0,%hi(.LC51)
-.LVL196:
-	addi	a0,a0,%lo(.LC51)
+	.loc 1 740 9 is_stmt 1
+	lui	a0,%hi(.LC53)
+.LVL202:
+	addi	a0,a0,%lo(.LC53)
 	call	printf
-.LVL197:
-.L147:
-	.loc 1 722 1 is_stmt 0
+.LVL203:
+.L154:
+	.loc 1 744 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -2565,17 +2605,17 @@ ble_scan_start:
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL198:
-.L148:
+.LVL204:
+.L155:
 	.cfi_restore_state
-	.loc 1 720 9 is_stmt 1
-	lui	a0,%hi(.LC52)
-.LVL199:
-	addi	a0,a0,%lo(.LC52)
+	.loc 1 742 9 is_stmt 1
+	lui	a0,%hi(.LC54)
+.LVL205:
+	addi	a0,a0,%lo(.LC54)
 	call	printf
-.LVL200:
-	.loc 1 722 1 is_stmt 0
-	j	.L147
+.LVL206:
+	.loc 1 744 1 is_stmt 0
+	j	.L154
 	.cfi_endproc
 .LFE104:
 	.size	ble_scan_start, .-ble_scan_start
@@ -2585,45 +2625,56 @@ ble_scan_start:
 	.type	handle_ble_scan, @function
 handle_ble_scan:
 .LFB105:
-	.loc 1 725 27 is_stmt 1
+	.loc 1 747 27 is_stmt 1
 	.cfi_startproc
-	.loc 1 728 5
-	.loc 1 725 27 is_stmt 0
+	.loc 1 748 5
+	.loc 1 747 27 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
-	sw	s0,12(sp)
-	.cfi_offset 8, -4
+	sw	ra,12(sp)
+	sw	s0,8(sp)
+	.cfi_offset 1, -4
+	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 729 1
-	lw	s0,12(sp)
+	.loc 1 748 5
+	call	relay_init
+.LVL207:
+	.loc 1 749 5 is_stmt 1
+	call	ble_stack_start
+.LVL208:
+	.loc 1 750 5
+	.loc 1 751 1 is_stmt 0
+	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
+	lw	ra,12(sp)
+	.cfi_restore 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 728 5
+	.loc 1 750 5
 	tail	ble_scan_start
-.LVL201:
+.LVL209:
 	.cfi_endproc
 .LFE105:
 	.size	handle_ble_scan, .-handle_ble_scan
 	.section	.rodata.str1.4,"aMS",@progbits,1
 	.align	2
-.LC53:
+.LC55:
 	.string	"HNN_intern"
 	.globl	config_done_cb
 	.comm	disconn_cb,4,4
 	.comm	conn_cb,4,4
 	.section	.bss.temp_password,"aw",@nobits
 	.align	2
-	.set	.LANCHOR3,. + 0
+	.set	.LANCHOR4,. + 0
 	.type	temp_password, @object
 	.size	temp_password, 65
 temp_password:
 	.zero	65
 	.section	.bss.temp_ssid,"aw",@nobits
 	.align	2
-	.set	.LANCHOR4,. + 0
+	.set	.LANCHOR5,. + 0
 	.type	temp_ssid, @object
 	.size	temp_ssid, 33
 temp_ssid:
@@ -2794,7 +2845,7 @@ __compound_literal.9:
 	.byte	73
 	.section	.data.wifi_config_server,"aw"
 	.align	2
-	.set	.LANCHOR6,. + 0
+	.set	.LANCHOR7,. + 0
 	.type	wifi_config_server, @object
 	.size	wifi_config_server, 160
 wifi_config_server:
@@ -2856,7 +2907,7 @@ wifi_config_server:
 	.zero	1
 	.section	.data.wifi_config_service,"aw"
 	.align	2
-	.set	.LANCHOR9,. + 0
+	.set	.LANCHOR10,. + 0
 	.type	wifi_config_service, @object
 	.size	wifi_config_service, 12
 wifi_config_service:
@@ -2865,7 +2916,7 @@ wifi_config_service:
 	.zero	4
 	.section	.rodata.salve_adv,"a"
 	.align	2
-	.set	.LANCHOR7,. + 0
+	.set	.LANCHOR8,. + 0
 	.type	salve_adv, @object
 	.size	salve_adv, 16
 salve_adv:
@@ -2876,34 +2927,40 @@ salve_adv:
 	.byte	9
 	.byte	10
 	.zero	2
-	.word	.LC53
+	.word	.LC55
 	.section	.sbss.config_done_cb,"aw",@nobits
 	.align	2
-	.set	.LANCHOR2,. + 0
+	.set	.LANCHOR3,. + 0
 	.type	config_done_cb, @object
 	.size	config_done_cb, 4
 config_done_cb:
 	.zero	4
 	.section	.sbss.has_password,"aw",@nobits
-	.set	.LANCHOR1,. + 0
+	.set	.LANCHOR2,. + 0
 	.type	has_password, @object
 	.size	has_password, 1
 has_password:
 	.zero	1
 	.section	.sbss.has_ssid,"aw",@nobits
-	.set	.LANCHOR0,. + 0
+	.set	.LANCHOR1,. + 0
 	.type	has_ssid, @object
 	.size	has_ssid, 1
 has_ssid:
 	.zero	1
+	.section	.sbss.relay_current_state,"aw",@nobits
+	.set	.LANCHOR0,. + 0
+	.type	relay_current_state, @object
+	.size	relay_current_state, 1
+relay_current_state:
+	.zero	1
 	.section	.sbss.s_ble_enabled,"aw",@nobits
-	.set	.LANCHOR5,. + 0
+	.set	.LANCHOR6,. + 0
 	.type	s_ble_enabled, @object
 	.size	s_ble_enabled, 1
 s_ble_enabled:
 	.zero	1
 	.section	.sbss.s_ble_service_registered,"aw",@nobits
-	.set	.LANCHOR8,. + 0
+	.set	.LANCHOR9,. + 0
 	.type	s_ble_service_registered, @object
 	.size	s_ble_service_registered, 1
 s_ble_service_registered:
@@ -2986,7 +3043,7 @@ __compound_literal.8:
 .LC0:
 	.byte	0
 	.byte	1
-	.half	320
+	.half	80
 	.half	48
 	.text
 .Letext0:
@@ -3009,25 +3066,27 @@ __compound_literal.8:
 	.file 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
 	.file 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 	.file 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
-	.file 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h"
-	.file 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
-	.file 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-	.file 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 30 "<built-in>"
+	.file 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h"
+	.file 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h"
+	.file 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
+	.file 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+	.file 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h"
+	.file 32 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x2360
+	.4byte	0x23c1
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF293
+	.4byte	.LASF298
 	.byte	0xc
-	.4byte	.LASF294
-	.4byte	.LASF295
+	.4byte	.LASF299
+	.4byte	.LASF300
 	.4byte	.Ldebug_ranges0+0xe0
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -3606,7 +3665,7 @@ __compound_literal.8:
 	.4byte	0x4b6
 	.byte	0
 	.byte	0x17
-	.4byte	.LASF296
+	.4byte	.LASF301
 	.byte	0x14
 	.byte	0x4
 	.byte	0xf
@@ -4419,7 +4478,7 @@ __compound_literal.8:
 	.byte	0x2c
 	.byte	0
 	.byte	0x23
-	.4byte	.LASF297
+	.4byte	.LASF302
 	.byte	0x8
 	.byte	0x4
 	.4byte	0xa78
@@ -4905,15 +4964,15 @@ __compound_literal.8:
 	.byte	0x2
 	.byte	0
 	.byte	0x27
-	.4byte	.LASF242
+	.4byte	.LASF243
 	.byte	0x1
-	.byte	0x24
+	.byte	0x29
 	.byte	0x18
 	.4byte	0x739
 	.byte	0x28
 	.4byte	.LASF211
 	.byte	0x1
-	.byte	0x25
+	.byte	0x2a
 	.byte	0x14
 	.4byte	0x713
 	.byte	0x5
@@ -4922,7 +4981,7 @@ __compound_literal.8:
 	.byte	0x28
 	.4byte	.LASF212
 	.byte	0x1
-	.byte	0x26
+	.byte	0x2b
 	.byte	0x14
 	.4byte	0x713
 	.byte	0x5
@@ -4931,7 +4990,7 @@ __compound_literal.8:
 	.byte	0x28
 	.4byte	.LASF213
 	.byte	0x1
-	.byte	0x27
+	.byte	0x2c
 	.byte	0x16
 	.4byte	0x82e
 	.byte	0x5
@@ -4947,7 +5006,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF214
 	.byte	0x1
-	.byte	0x2a
+	.byte	0x2f
 	.byte	0xd
 	.4byte	0xe79
 	.byte	0x5
@@ -4963,7 +5022,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF215
 	.byte	0x1
-	.byte	0x2b
+	.byte	0x30
 	.byte	0xd
 	.4byte	0xe9b
 	.byte	0x5
@@ -4972,7 +5031,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF216
 	.byte	0x1
-	.byte	0x2c
+	.byte	0x31
 	.byte	0xc
 	.4byte	0x5b0
 	.byte	0x5
@@ -4981,7 +5040,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF217
 	.byte	0x1
-	.byte	0x2d
+	.byte	0x32
 	.byte	0xc
 	.4byte	0x5b0
 	.byte	0x5
@@ -4990,7 +5049,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF218
 	.byte	0x1
-	.byte	0x30
+	.byte	0x35
 	.byte	0xc
 	.4byte	0x5b0
 	.byte	0x5
@@ -4999,7 +5058,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF219
 	.byte	0x1
-	.byte	0x31
+	.byte	0x36
 	.byte	0xc
 	.4byte	0x5b0
 	.byte	0x5
@@ -5017,7 +5076,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF220
 	.byte	0x1
-	.byte	0x35
+	.byte	0x3a
 	.byte	0x1d
 	.4byte	0xf15
 	.byte	0x5
@@ -5033,7 +5092,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF221
 	.byte	0x1
-	.byte	0x41
+	.byte	0x46
 	.byte	0x1c
 	.4byte	0xf2c
 	.byte	0x5
@@ -5042,7 +5101,7 @@ __compound_literal.8:
 	.byte	0x29
 	.4byte	.LASF222
 	.byte	0x1
-	.byte	0x52
+	.byte	0x57
 	.byte	0x1f
 	.4byte	0xc49
 	.byte	0x5
@@ -5051,137 +5110,152 @@ __compound_literal.8:
 	.byte	0x2a
 	.4byte	.LASF223
 	.byte	0x1
-	.2byte	0x2d5
+	.2byte	0x272
+	.byte	0x10
+	.4byte	0x4d
+	.byte	0x5
+	.byte	0x3
+	.4byte	relay_current_state
+	.byte	0x2b
+	.4byte	.LASF224
+	.byte	0x1
+	.2byte	0x2eb
 	.byte	0x6
 	.4byte	.LFB105
 	.4byte	.LFE105-.LFB105
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xf81
-	.byte	0x2b
-	.4byte	.LVL201
-	.4byte	0xf81
+	.4byte	0xfa6
+	.byte	0x2c
+	.4byte	.LVL207
+	.4byte	0x222b
+	.byte	0x2c
+	.4byte	.LVL208
+	.4byte	0x13c6
+	.byte	0x2d
+	.4byte	.LVL209
+	.4byte	0xfa6
 	.byte	0
-	.byte	0x2a
-	.4byte	.LASF224
+	.byte	0x2b
+	.4byte	.LASF225
 	.byte	0x1
-	.2byte	0x2c0
+	.2byte	0x2d6
 	.byte	0x6
 	.4byte	.LFB104
 	.4byte	.LFE104-.LFB104
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1001
-	.byte	0x2c
-	.4byte	.LASF225
+	.4byte	0x1026
+	.byte	0x2a
+	.4byte	.LASF226
 	.byte	0x1
-	.2byte	0x2c2
+	.2byte	0x2d8
 	.byte	0x1d
 	.4byte	0x6cc
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
-	.byte	0x2d
+	.byte	0x2e
 	.string	"ret"
 	.byte	0x1
-	.2byte	0x2cc
+	.2byte	0x2e2
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST62
-	.byte	0x2e
-	.4byte	.LVL195
-	.4byte	0x21fa
-	.4byte	0xfd6
 	.byte	0x2f
+	.4byte	.LVL201
+	.4byte	0x2237
+	.4byte	0xffb
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x78
 	.byte	0x68
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
 	.4byte	scan_device_found
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL197
-	.4byte	0x2207
-	.4byte	0xfed
 	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC51
-	.byte	0
+	.4byte	.LVL203
+	.4byte	0x2244
+	.4byte	0x1012
 	.byte	0x30
-	.4byte	.LVL200
-	.4byte	0x2207
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC52
-	.byte	0
+	.4byte	.LC53
 	.byte	0
 	.byte	0x31
-	.4byte	.LASF252
+	.4byte	.LVL206
+	.4byte	0x2244
+	.byte	0x30
 	.byte	0x1
-	.2byte	0x29d
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC54
+	.byte	0
+	.byte	0
+	.byte	0x32
+	.4byte	.LASF253
+	.byte	0x1
+	.2byte	0x2b0
 	.byte	0xd
 	.4byte	.LFB103
 	.4byte	.LFE103-.LFB103
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x107c
-	.byte	0x32
-	.4byte	.LASF226
-	.byte	0x1
-	.2byte	0x29d
+	.4byte	0x10a1
 	.byte	0x33
-	.4byte	0x688
-	.4byte	.LLST12
-	.byte	0x32
 	.4byte	.LASF227
 	.byte	0x1
-	.2byte	0x29e
+	.2byte	0x2b0
+	.byte	0x33
+	.4byte	0x688
+	.4byte	.LLST3
+	.byte	0x33
+	.4byte	.LASF228
+	.byte	0x1
+	.2byte	0x2b1
 	.byte	0x26
 	.4byte	0x25
-	.4byte	.LLST13
-	.byte	0x32
+	.4byte	.LLST4
+	.byte	0x33
 	.4byte	.LASF74
 	.byte	0x1
-	.2byte	0x29f
+	.2byte	0x2b2
 	.byte	0x27
 	.4byte	0x4d
-	.4byte	.LLST14
-	.byte	0x33
+	.4byte	.LLST5
+	.byte	0x34
 	.string	"ad"
 	.byte	0x1
-	.2byte	0x2a0
+	.2byte	0x2b3
 	.byte	0x36
 	.4byte	0x5b7
-	.4byte	.LLST15
+	.4byte	.LLST6
+	.byte	0x31
+	.4byte	.LVL12
+	.4byte	0x2250
 	.byte	0x30
-	.4byte	.LVL23
-	.4byte	0x2213
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x3
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5d
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
 	.4byte	adv_parse_cb
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
@@ -5189,120 +5263,103 @@ __compound_literal.8:
 	.byte	0x6f
 	.byte	0
 	.byte	0
-	.byte	0x34
-	.4byte	.LASF258
+	.byte	0x35
+	.4byte	.LASF259
 	.byte	0x1
-	.2byte	0x268
+	.2byte	0x274
 	.byte	0xc
 	.4byte	0x5b0
 	.4byte	.LFB102
 	.4byte	.LFE102-.LFB102
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x117b
-	.byte	0x32
+	.4byte	0x1183
+	.byte	0x33
 	.4byte	.LASF67
 	.byte	0x1
-	.2byte	0x268
+	.2byte	0x274
 	.byte	0x29
-	.4byte	0x117b
-	.4byte	.LLST3
-	.byte	0x32
+	.4byte	0x1183
+	.4byte	.LLST7
+	.byte	0x33
 	.4byte	.LASF189
 	.byte	0x1
-	.2byte	0x268
+	.2byte	0x274
 	.byte	0x35
 	.4byte	0x1c4
-	.4byte	.LLST4
-	.byte	0x35
-	.4byte	.LASF227
-	.byte	0x1
-	.2byte	0x26a
-	.byte	0xc
-	.4byte	0x25
-	.4byte	.LLST5
-	.byte	0x2d
-	.string	"p"
-	.byte	0x1
-	.2byte	0x274
-	.byte	0x14
-	.4byte	0x1181
-	.4byte	.LLST6
-	.byte	0x35
+	.4byte	.LLST8
+	.byte	0x36
 	.4byte	.LASF228
 	.byte	0x1
 	.2byte	0x276
-	.byte	0xe
-	.4byte	0x65
-	.4byte	.LLST7
-	.byte	0x35
+	.byte	0xc
+	.4byte	0x25
+	.4byte	.LLST9
+	.byte	0x2e
+	.string	"p"
+	.byte	0x1
+	.2byte	0x280
+	.byte	0x14
+	.4byte	0x1189
+	.4byte	.LLST10
+	.byte	0x36
 	.4byte	.LASF229
 	.byte	0x1
-	.2byte	0x27b
-	.byte	0xd
-	.4byte	0x4d
-	.4byte	.LLST8
-	.byte	0x2d
-	.string	"msg"
-	.byte	0x1
-	.2byte	0x27c
-	.byte	0xd
-	.4byte	0x4d
-	.4byte	.LLST9
-	.byte	0x35
-	.4byte	.LASF230
-	.byte	0x1
-	.2byte	0x27d
+	.2byte	0x282
 	.byte	0xe
 	.4byte	0x65
-	.4byte	.LLST10
-	.byte	0x35
-	.4byte	.LASF105
+	.4byte	.LLST11
+	.byte	0x36
+	.4byte	.LASF230
 	.byte	0x1
-	.2byte	0x27e
+	.2byte	0x287
 	.byte	0xd
 	.4byte	0x4d
-	.4byte	.LLST11
+	.4byte	.LLST12
 	.byte	0x2e
-	.4byte	.LVL15
-	.4byte	0x2207
-	.4byte	0x114b
+	.string	"msg"
+	.byte	0x1
+	.2byte	0x288
+	.byte	0xd
+	.4byte	0x4d
+	.4byte	.LLST13
+	.byte	0x36
+	.4byte	.LASF231
+	.byte	0x1
+	.2byte	0x289
+	.byte	0xe
+	.4byte	0x65
+	.4byte	.LLST14
+	.byte	0x36
+	.4byte	.LASF105
+	.byte	0x1
+	.2byte	0x28a
+	.byte	0xd
+	.4byte	0x4d
+	.4byte	.LLST15
 	.byte	0x2f
+	.4byte	.LVL23
+	.4byte	0x2244
+	.4byte	0x1170
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC5
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x82
 	.byte	0
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL16
-	.4byte	0x2220
-	.byte	0x2e
-	.4byte	.LVL17
-	.4byte	0x2207
-	.4byte	0x1171
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC6
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x82
-	.byte	0
-	.byte	0
-	.byte	0x36
-	.4byte	.LVL18
-	.4byte	0x222c
+	.byte	0x2c
+	.4byte	.LVL24
+	.4byte	0x225d
+	.byte	0x2c
+	.4byte	.LVL25
+	.4byte	0x2269
 	.byte	0
 	.byte	0x8
 	.byte	0x4
@@ -5311,98 +5368,98 @@ __compound_literal.8:
 	.byte	0x4
 	.4byte	0x59
 	.byte	0x37
-	.4byte	.LASF232
+	.4byte	.LASF233
 	.byte	0x1
-	.2byte	0x239
+	.2byte	0x243
 	.byte	0x6
 	.4byte	.LFB101
 	.4byte	.LFE101-.LFB101
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1295
-	.byte	0x35
-	.4byte	.LASF231
+	.4byte	0x129d
+	.byte	0x36
+	.4byte	.LASF232
 	.byte	0x1
-	.2byte	0x245
+	.2byte	0x24f
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST61
 	.byte	0x38
-	.4byte	.LASF274
+	.4byte	.LASF276
 	.byte	0x1
-	.2byte	0x253
+	.2byte	0x25d
 	.byte	0x11
-	.byte	0x2e
-	.4byte	.LVL179
-	.4byte	0x2207
-	.4byte	0x11cf
 	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC47
-	.byte	0
-	.byte	0x36
-	.4byte	.LVL180
-	.4byte	0x163c
-	.byte	0x2e
-	.4byte	.LVL181
-	.4byte	0x2238
-	.4byte	0x11f9
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x1
-	.byte	0x3f
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x5
-	.byte	0x3
-	.4byte	ble_disconnect_all
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x1
-	.byte	0x30
-	.byte	0
-	.byte	0x36
-	.4byte	.LVL183
+	.4byte	.LVL185
 	.4byte	0x2244
-	.byte	0x36
-	.4byte	.LVL187
-	.4byte	0x2250
-	.byte	0x2e
-	.4byte	.LVL188
-	.4byte	0x225d
-	.4byte	0x1220
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x3
-	.byte	0xa
-	.2byte	0x3e8
-	.byte	0
-	.byte	0x36
-	.4byte	.LVL189
-	.4byte	0x226a
-	.byte	0x2e
-	.4byte	.LVL190
-	.4byte	0x2207
-	.4byte	0x1240
-	.byte	0x2f
+	.4byte	0x11d7
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC49
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL191
-	.4byte	0x225d
-	.4byte	0x1255
+	.byte	0x2c
+	.4byte	.LVL186
+	.4byte	0x1644
 	.byte	0x2f
+	.4byte	.LVL187
+	.4byte	0x2275
+	.4byte	0x1201
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x1
+	.byte	0x3f
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x5
+	.byte	0x3
+	.4byte	ble_disconnect_all
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x1
+	.byte	0x30
+	.byte	0
+	.byte	0x2c
+	.4byte	.LVL189
+	.4byte	0x2281
+	.byte	0x2c
+	.4byte	.LVL193
+	.4byte	0x228d
+	.byte	0x2f
+	.4byte	.LVL194
+	.4byte	0x229a
+	.4byte	0x1228
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x3
+	.byte	0xa
+	.2byte	0x3e8
+	.byte	0
+	.byte	0x2c
+	.4byte	.LVL195
+	.4byte	0x22a7
+	.byte	0x2f
+	.4byte	.LVL196
+	.4byte	0x2244
+	.4byte	0x1248
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC51
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL197
+	.4byte	0x229a
+	.4byte	0x125d
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x3
@@ -5410,31 +5467,31 @@ __compound_literal.8:
 	.2byte	0x1f4
 	.byte	0
 	.byte	0x39
-	.4byte	.LVL192
-	.4byte	0x2207
-	.4byte	0x126c
+	.4byte	.LVL198
+	.4byte	0x2244
+	.4byte	0x1274
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC52
+	.byte	0
 	.byte	0x2f
+	.4byte	.LVL199
+	.4byte	0x2244
+	.4byte	0x128b
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC50
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL193
-	.4byte	0x2207
-	.4byte	0x1283
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC48
-	.byte	0
+	.byte	0x31
+	.4byte	.LVL200
+	.4byte	0x22b4
 	.byte	0x30
-	.4byte	.LVL194
-	.4byte	0x2277
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x3
@@ -5443,91 +5500,91 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x37
-	.4byte	.LASF233
+	.4byte	.LASF234
 	.byte	0x1
-	.2byte	0x215
+	.2byte	0x21f
 	.byte	0x6
 	.4byte	.LFB100
 	.4byte	.LFE100-.LFB100
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x13be
-	.byte	0x35
-	.4byte	.LASF234
+	.4byte	0x13c6
+	.byte	0x36
+	.4byte	.LASF235
 	.byte	0x1
-	.2byte	0x225
+	.2byte	0x22f
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST60
-	.byte	0x2e
-	.4byte	.LVL163
-	.4byte	0x2207
-	.4byte	0x12d4
 	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC40
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL164
-	.4byte	0x225d
-	.4byte	0x12e9
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x3
-	.byte	0xa
-	.2byte	0x3e8
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL165
-	.4byte	0x2207
-	.4byte	0x1300
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC41
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL166
-	.4byte	0x225d
-	.4byte	0x1315
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x3
-	.byte	0xa
-	.2byte	0xbb8
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL167
-	.4byte	0x2207
-	.4byte	0x132c
-	.byte	0x2f
+	.4byte	.LVL169
+	.4byte	0x2244
+	.4byte	0x12dc
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC42
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL168
-	.4byte	0x13be
-	.byte	0x2e
-	.4byte	.LVL170
-	.4byte	0x2207
-	.4byte	0x1352
 	.byte	0x2f
+	.4byte	.LVL170
+	.4byte	0x229a
+	.4byte	0x12f1
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x3
+	.byte	0xa
+	.2byte	0x3e8
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL171
+	.4byte	0x2244
+	.4byte	0x1308
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC43
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL172
+	.4byte	0x229a
+	.4byte	0x131d
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x3
+	.byte	0xa
+	.2byte	0xbb8
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL173
+	.4byte	0x2244
+	.4byte	0x1334
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC44
+	.byte	0
+	.byte	0x2c
+	.4byte	.LVL174
+	.4byte	0x13c6
 	.byte	0x2f
+	.4byte	.LVL176
+	.4byte	0x2244
+	.4byte	0x135a
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC46
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
@@ -5535,38 +5592,38 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x39
-	.4byte	.LVL172
-	.4byte	0x2207
-	.4byte	0x1369
-	.byte	0x2f
+	.4byte	.LVL178
+	.4byte	0x2244
+	.4byte	0x1371
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC45
+	.4byte	.LC47
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL173
-	.4byte	0x225d
-	.4byte	0x137d
 	.byte	0x2f
+	.4byte	.LVL179
+	.4byte	0x229a
+	.4byte	0x1385
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x8
 	.byte	0x64
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL175
-	.4byte	0x2207
-	.4byte	0x139d
 	.byte	0x2f
+	.4byte	.LVL181
+	.4byte	0x2244
+	.4byte	0x13a5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC43
-	.byte	0x2f
+	.4byte	.LC45
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
@@ -5576,93 +5633,93 @@ __compound_literal.8:
 	.byte	0
 	.byte	0x1b
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL176
-	.4byte	0x2207
-	.4byte	0x13b4
 	.byte	0x2f
+	.4byte	.LVL182
+	.4byte	0x2244
+	.4byte	0x13bc
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC46
+	.4byte	.LC48
+	.byte	0
+	.byte	0x2d
+	.4byte	.LVL184
+	.4byte	0x16a7
 	.byte	0
 	.byte	0x2b
-	.4byte	.LVL178
-	.4byte	0x169f
-	.byte	0
-	.byte	0x2a
-	.4byte	.LASF235
+	.4byte	.LASF236
 	.byte	0x1
-	.2byte	0x202
+	.2byte	0x20c
 	.byte	0x6
 	.4byte	.LFB99
 	.4byte	.LFE99-.LFB99
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1478
-	.byte	0x2e
-	.4byte	.LVL155
-	.4byte	0x2207
-	.4byte	0x13ec
+	.4byte	0x1480
 	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC35
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL156
-	.4byte	0x2207
-	.4byte	0x1403
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC36
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL157
-	.4byte	0x2284
-	.4byte	0x1416
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x1
-	.byte	0x4f
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL158
-	.4byte	0x2207
-	.4byte	0x142d
-	.byte	0x2f
+	.4byte	.LVL161
+	.4byte	0x2244
+	.4byte	0x13f4
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC37
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL159
-	.4byte	0x2290
-	.byte	0x2e
-	.4byte	.LVL160
-	.4byte	0x2207
-	.4byte	0x144d
 	.byte	0x2f
+	.4byte	.LVL162
+	.4byte	0x2244
+	.4byte	0x140b
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC38
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL161
-	.4byte	0x229c
-	.4byte	0x1464
 	.byte	0x2f
+	.4byte	.LVL163
+	.4byte	0x22c1
+	.4byte	0x141e
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x1
+	.byte	0x4f
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL164
+	.4byte	0x2244
+	.4byte	0x1435
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC39
+	.byte	0
+	.byte	0x2c
+	.4byte	.LVL165
+	.4byte	0x22cd
+	.byte	0x2f
+	.4byte	.LVL166
+	.4byte	0x2244
+	.4byte	0x1455
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC40
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL167
+	.4byte	0x22d9
+	.4byte	0x146c
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
@@ -5670,86 +5727,86 @@ __compound_literal.8:
 	.4byte	bt_enable_cb
 	.byte	0
 	.byte	0x3a
-	.4byte	.LVL162
-	.4byte	0x2207
-	.byte	0x2f
+	.4byte	.LVL168
+	.4byte	0x2244
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC39
+	.4byte	.LC41
 	.byte	0
 	.byte	0
 	.byte	0x3b
-	.4byte	.LASF237
+	.4byte	.LASF238
 	.byte	0x1
-	.2byte	0x1f2
+	.2byte	0x1fc
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB98
 	.4byte	.LFE98-.LFB98
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1506
+	.4byte	0x150e
 	.byte	0x3c
 	.4byte	.LBB67
 	.4byte	.LBE67-.LBB67
-	.4byte	0x14c5
-	.byte	0x2d
+	.4byte	0x14cd
+	.byte	0x2e
 	.string	"ret"
 	.byte	0x1
-	.2byte	0x1fb
+	.2byte	0x205
 	.byte	0xd
 	.4byte	0x92
 	.4byte	.LLST59
+	.byte	0x31
+	.4byte	.LVL159
+	.4byte	0x22e5
 	.byte	0x30
-	.4byte	.LVL153
-	.4byte	0x22a8
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR9
+	.4byte	.LANCHOR10
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL151
-	.4byte	0x22b5
-	.4byte	0x14e7
 	.byte	0x2f
+	.4byte	.LVL157
+	.4byte	0x22f2
+	.4byte	0x14ef
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x21
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL158
+	.4byte	0x22f2
 	.byte	0x30
-	.4byte	.LVL152
-	.4byte	0x22b5
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR3
-	.byte	0x2f
+	.4byte	.LANCHOR4
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
@@ -5758,274 +5815,274 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x3d
-	.4byte	.LASF236
+	.4byte	.LASF237
 	.byte	0x1
-	.2byte	0x1cb
+	.2byte	0x1d5
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB97
 	.4byte	.LFE97-.LFB97
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x163c
-	.byte	0x35
-	.4byte	.LASF234
+	.4byte	0x1644
+	.byte	0x36
+	.4byte	.LASF235
 	.byte	0x1
-	.2byte	0x1dc
+	.2byte	0x1e6
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST57
-	.byte	0x2d
+	.byte	0x2e
 	.string	"ret"
 	.byte	0x1
-	.2byte	0x1e7
+	.2byte	0x1f1
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST58
-	.byte	0x2e
-	.4byte	.LVL131
-	.4byte	0x22b5
-	.4byte	0x1565
 	.byte	0x2f
+	.4byte	.LVL137
+	.4byte	0x22f2
+	.4byte	0x156d
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x21
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL132
-	.4byte	0x22b5
-	.4byte	0x1587
 	.byte	0x2f
+	.4byte	.LVL138
+	.4byte	0x22f2
+	.4byte	0x158f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR3
-	.byte	0x2f
+	.4byte	.LANCHOR4
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x41
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL133
-	.4byte	0x2207
-	.4byte	0x159e
 	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC31
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL134
-	.4byte	0x22a8
-	.4byte	0x15b5
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LANCHOR9
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL135
-	.4byte	0x225d
-	.4byte	0x15c9
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x2
-	.byte	0x8
-	.byte	0x64
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL138
-	.4byte	0x2207
-	.4byte	0x15e0
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC34
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL141
-	.4byte	0x225d
-	.4byte	0x15f4
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x2
-	.byte	0x8
-	.byte	0x64
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL143
-	.4byte	0x2207
-	.4byte	0x1611
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC32
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL146
-	.4byte	0x22c1
-	.4byte	0x1628
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LANCHOR9
-	.byte	0
+	.4byte	.LVL139
+	.4byte	0x2244
+	.4byte	0x15a6
 	.byte	0x30
-	.4byte	.LVL148
-	.4byte	0x2207
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC33
 	.byte	0
+	.byte	0x2f
+	.4byte	.LVL140
+	.4byte	0x22e5
+	.4byte	0x15bd
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LANCHOR10
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL141
+	.4byte	0x229a
+	.4byte	0x15d1
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x2
+	.byte	0x8
+	.byte	0x64
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL144
+	.4byte	0x2244
+	.4byte	0x15e8
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC36
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL147
+	.4byte	0x229a
+	.4byte	0x15fc
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x2
+	.byte	0x8
+	.byte	0x64
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL149
+	.4byte	0x2244
+	.4byte	0x1619
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC34
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x2
+	.byte	0x79
+	.byte	0
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL152
+	.4byte	0x22fe
+	.4byte	0x1630
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LANCHOR10
+	.byte	0
+	.byte	0x31
+	.4byte	.LVL154
+	.4byte	0x2244
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC35
+	.byte	0
 	.byte	0
 	.byte	0x3b
-	.4byte	.LASF238
+	.4byte	.LASF239
 	.byte	0x1
-	.2byte	0x1c2
+	.2byte	0x1cc
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB96
 	.4byte	.LFE96-.LFB96
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x169f
+	.4byte	0x16a7
 	.byte	0x3e
-	.4byte	0x18a8
+	.4byte	0x18b0
 	.4byte	.LBB61
 	.4byte	.Ldebug_ranges0+0xc8
 	.byte	0x1
-	.2byte	0x1c5
+	.2byte	0x1cf
 	.byte	0x5
-	.4byte	0x1676
+	.4byte	0x167e
 	.byte	0x3f
-	.4byte	0x18ba
+	.4byte	0x18c2
 	.4byte	.LLST55
 	.byte	0
 	.byte	0x40
-	.4byte	0x1889
+	.4byte	0x1891
 	.4byte	.LBB65
 	.4byte	.LBE65-.LBB65
 	.byte	0x1
-	.2byte	0x1c6
+	.2byte	0x1d0
 	.byte	0x5
-	.4byte	0x1695
+	.4byte	0x169d
 	.byte	0x3f
-	.4byte	0x189b
+	.4byte	0x18a3
 	.4byte	.LLST56
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL128
-	.4byte	0x22ce
+	.byte	0x2c
+	.4byte	.LVL134
+	.4byte	0x230b
 	.byte	0
 	.byte	0x3d
-	.4byte	.LASF239
+	.4byte	.LASF240
 	.byte	0x1
-	.2byte	0x1bb
+	.2byte	0x1c5
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB95
 	.4byte	.LFE95-.LFB95
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x16cd
-	.byte	0x36
-	.4byte	.LVL149
-	.4byte	0x1506
-	.byte	0x36
-	.4byte	.LVL150
-	.4byte	0x181d
+	.4byte	0x16d5
+	.byte	0x2c
+	.4byte	.LVL155
+	.4byte	0x150e
+	.byte	0x2c
+	.4byte	.LVL156
+	.4byte	0x1825
 	.byte	0
-	.byte	0x2a
-	.4byte	.LASF240
+	.byte	0x2b
+	.4byte	.LASF241
 	.byte	0x1
-	.2byte	0x1a0
+	.2byte	0x1aa
 	.byte	0x6
 	.4byte	.LFB94
 	.4byte	.LFE94-.LFB94
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x16f3
+	.4byte	0x16fb
 	.byte	0x41
 	.string	"cb"
 	.byte	0x1
-	.2byte	0x1a0
+	.2byte	0x1aa
 	.byte	0x32
 	.4byte	0x82e
 	.byte	0x1
 	.byte	0x5a
 	.byte	0
-	.byte	0x2a
-	.4byte	.LASF241
+	.byte	0x2b
+	.4byte	.LASF242
 	.byte	0x1
-	.2byte	0x197
+	.2byte	0x1a1
 	.byte	0x6
 	.4byte	.LFB93
 	.4byte	.LFE93-.LFB93
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x175b
-	.byte	0x33
+	.4byte	0x1763
+	.byte	0x34
 	.string	"arr"
 	.byte	0x1
-	.2byte	0x197
+	.2byte	0x1a1
 	.byte	0x20
 	.4byte	0x85c
 	.4byte	.LLST52
-	.byte	0x32
+	.byte	0x33
 	.4byte	.LASF68
 	.byte	0x1
-	.2byte	0x197
+	.2byte	0x1a1
 	.byte	0x2e
 	.4byte	0x78
 	.4byte	.LLST53
 	.byte	0x42
 	.4byte	.Ldebug_ranges0+0xa0
-	.byte	0x2d
+	.byte	0x2e
 	.string	"i"
 	.byte	0x1
-	.2byte	0x199
+	.2byte	0x1a3
 	.byte	0x13
 	.4byte	0x78
 	.4byte	.LLST54
@@ -6035,7 +6092,7 @@ __compound_literal.8:
 	.byte	0x44
 	.string	"tmp"
 	.byte	0x1
-	.2byte	0x19a
+	.2byte	0x1a4
 	.byte	0x11
 	.4byte	0x4d
 	.byte	0x1
@@ -6044,100 +6101,100 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x45
-	.4byte	.LASF249
+	.4byte	.LASF250
 	.byte	0x1
-	.2byte	0x17e
+	.2byte	0x188
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x1786
+	.4byte	0x178e
 	.byte	0x46
 	.string	"err"
 	.byte	0x1
-	.2byte	0x17e
+	.2byte	0x188
 	.byte	0x1e
 	.4byte	0x92
 	.byte	0x47
 	.byte	0x48
-	.4byte	.LASF243
+	.4byte	.LASF244
 	.byte	0x1
-	.2byte	0x184
+	.2byte	0x18e
 	.byte	0x16
 	.4byte	0x57f
 	.byte	0
 	.byte	0
 	.byte	0x3b
-	.4byte	.LASF244
+	.4byte	.LASF245
 	.byte	0x1
-	.2byte	0x178
+	.2byte	0x182
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB91
 	.4byte	.LFE91-.LFB91
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x17ab
-	.byte	0x36
-	.4byte	.LVL120
-	.4byte	0x22ce
+	.4byte	0x17b3
+	.byte	0x2c
+	.4byte	.LVL126
+	.4byte	0x230b
 	.byte	0
 	.byte	0x3b
-	.4byte	.LASF245
+	.4byte	.LASF246
 	.byte	0x1
-	.2byte	0x168
+	.2byte	0x172
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB90
 	.4byte	.LFE90-.LFB90
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x181d
-	.byte	0x2d
+	.4byte	0x1825
+	.byte	0x2e
 	.string	"err"
 	.byte	0x1
-	.2byte	0x171
+	.2byte	0x17b
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST51
-	.byte	0x36
-	.4byte	.LVL116
-	.4byte	0x22ce
-	.byte	0x2e
-	.4byte	.LVL117
-	.4byte	0x225d
-	.4byte	0x17f4
+	.byte	0x2c
+	.4byte	.LVL122
+	.4byte	0x230b
 	.byte	0x2f
+	.4byte	.LVL123
+	.4byte	0x229a
+	.4byte	0x17fc
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x8
 	.byte	0x64
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL124
+	.4byte	0x2318
 	.byte	0x30
-	.4byte	.LVL118
-	.4byte	0x22db
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x78
 	.byte	0x68
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR7
-	.byte	0x2f
+	.4byte	.LANCHOR8
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x32
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5d
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5e
 	.byte	0x1
@@ -6145,100 +6202,100 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x3d
-	.4byte	.LASF246
+	.4byte	.LASF247
 	.byte	0x1
-	.2byte	0x15e
+	.2byte	0x168
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB89
 	.4byte	.LFE89-.LFB89
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1889
-	.byte	0x2d
+	.4byte	0x1891
+	.byte	0x2e
 	.string	"err"
 	.byte	0x1
-	.2byte	0x160
+	.2byte	0x16a
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST50
-	.byte	0x2e
-	.4byte	.LVL113
-	.4byte	0x22db
-	.4byte	0x1875
 	.byte	0x2f
+	.4byte	.LVL119
+	.4byte	0x2318
+	.4byte	0x187d
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x78
 	.byte	0x68
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR7
-	.byte	0x2f
+	.4byte	.LANCHOR8
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x32
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5d
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5e
 	.byte	0x1
 	.byte	0x30
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL121
+	.4byte	0x2244
 	.byte	0x30
-	.4byte	.LVL115
-	.4byte	0x2207
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC30
+	.4byte	.LC32
 	.byte	0
-	.byte	0
-	.byte	0x49
-	.4byte	.LASF247
-	.byte	0x1
-	.2byte	0x13f
-	.byte	0x5
-	.4byte	0x92
-	.byte	0x1
-	.4byte	0x18a8
-	.byte	0x46
-	.string	"cb"
-	.byte	0x1
-	.2byte	0x13f
-	.byte	0x2b
-	.4byte	0x713
 	.byte	0
 	.byte	0x49
 	.4byte	.LASF248
 	.byte	0x1
-	.2byte	0x139
+	.2byte	0x149
 	.byte	0x5
 	.4byte	0x92
 	.byte	0x1
-	.4byte	0x18c7
+	.4byte	0x18b0
 	.byte	0x46
 	.string	"cb"
 	.byte	0x1
-	.2byte	0x139
+	.2byte	0x149
+	.byte	0x2b
+	.4byte	0x713
+	.byte	0
+	.byte	0x49
+	.4byte	.LASF249
+	.byte	0x1
+	.2byte	0x143
+	.byte	0x5
+	.4byte	0x92
+	.byte	0x1
+	.4byte	0x18cf
+	.byte	0x46
+	.string	"cb"
+	.byte	0x1
+	.2byte	0x143
 	.byte	0x28
 	.4byte	0x713
 	.byte	0
 	.byte	0x4a
-	.4byte	.LASF298
+	.4byte	.LASF303
 	.byte	0x1
-	.2byte	0x134
+	.2byte	0x13e
 	.byte	0x11
 	.4byte	0x739
 	.4byte	.LFB85
@@ -6246,60 +6303,60 @@ __compound_literal.8:
 	.byte	0x1
 	.byte	0x9c
 	.byte	0x45
-	.4byte	.LASF250
-	.byte	0x1
-	.2byte	0x124
-	.byte	0xd
-	.byte	0x1
-	.4byte	0x1907
-	.byte	0x4b
 	.4byte	.LASF251
 	.byte	0x1
-	.2byte	0x124
+	.2byte	0x12e
+	.byte	0xd
+	.byte	0x1
+	.4byte	0x190f
+	.byte	0x4b
+	.4byte	.LASF252
+	.byte	0x1
+	.2byte	0x12e
 	.byte	0x30
 	.4byte	0x739
 	.byte	0x4b
 	.4byte	.LASF67
 	.byte	0x1
-	.2byte	0x124
+	.2byte	0x12e
 	.byte	0x3c
 	.4byte	0x1c4
 	.byte	0
 	.byte	0x4c
-	.4byte	.LASF253
+	.4byte	.LASF254
 	.byte	0x1
-	.byte	0xee
+	.byte	0xf8
 	.byte	0xd
 	.4byte	.LFB79
 	.4byte	.LFE79-.LFB79
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1961
+	.4byte	0x1969
 	.byte	0x4d
 	.4byte	.LASF206
 	.byte	0x1
-	.byte	0xee
+	.byte	0xf8
 	.byte	0x3c
 	.4byte	0xc0f
 	.4byte	.LLST0
 	.byte	0x4d
 	.4byte	.LASF199
 	.byte	0x1
-	.byte	0xee
+	.byte	0xf8
 	.byte	0x48
 	.4byte	0xc9
 	.4byte	.LLST1
 	.byte	0x4e
 	.string	"str"
 	.byte	0x1
-	.byte	0xf0
+	.byte	0xfa
 	.byte	0x11
 	.4byte	0x1d8
 	.4byte	.LLST2
 	.byte	0x3a
 	.4byte	.LVL4
-	.4byte	0x2207
-	.byte	0x2f
+	.4byte	0x2244
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
@@ -6308,125 +6365,125 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x4f
-	.4byte	.LASF254
+	.4byte	.LASF255
 	.byte	0x1
-	.byte	0xce
+	.byte	0xd8
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB78
 	.4byte	.LFE78-.LFB78
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1a99
+	.4byte	0x1aa1
 	.byte	0x4d
-	.4byte	.LASF251
+	.4byte	.LASF252
 	.byte	0x1
-	.byte	0xce
+	.byte	0xd8
 	.byte	0x21
 	.4byte	0x739
 	.4byte	.LLST28
 	.byte	0x4d
 	.4byte	.LASF67
 	.byte	0x1
-	.byte	0xcf
+	.byte	0xd9
 	.byte	0x2a
-	.4byte	0x1181
+	.4byte	0x1189
 	.4byte	.LLST29
 	.byte	0x4d
-	.4byte	.LASF255
+	.4byte	.LASF256
 	.byte	0x1
-	.byte	0xd0
+	.byte	0xda
 	.byte	0x24
 	.4byte	0x65
 	.4byte	.LLST30
 	.byte	0x4e
 	.string	"ret"
 	.byte	0x1
-	.byte	0xd2
+	.byte	0xdc
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST31
 	.byte	0x4e
 	.string	"mtu"
 	.byte	0x1
-	.byte	0xd3
+	.byte	0xdd
 	.byte	0xe
 	.4byte	0x65
 	.4byte	.LLST32
 	.byte	0x50
-	.4byte	.LASF256
+	.4byte	.LASF257
 	.byte	0x1
-	.byte	0xd4
+	.byte	0xde
 	.byte	0xe
 	.4byte	0x65
 	.4byte	.LLST33
 	.byte	0x51
 	.4byte	.Ldebug_ranges0+0x28
-	.4byte	0x1a88
+	.4byte	0x1a90
 	.byte	0x50
-	.4byte	.LASF257
+	.4byte	.LASF258
 	.byte	0x1
-	.byte	0xd7
+	.byte	0xe1
 	.byte	0x12
 	.4byte	0x65
 	.4byte	.LLST34
 	.byte	0x52
-	.4byte	0x1f21
+	.4byte	0x1f52
 	.4byte	.LBB31
 	.4byte	.Ldebug_ranges0+0x50
 	.byte	0x1
-	.byte	0xd9
+	.byte	0xe3
 	.byte	0xf
-	.4byte	0x1a6e
+	.4byte	0x1a76
 	.byte	0x3f
-	.4byte	0x1f40
+	.4byte	0x1f71
 	.4byte	.LLST35
 	.byte	0x3f
-	.4byte	0x1f5a
+	.4byte	0x1f8b
 	.4byte	.LLST34
 	.byte	0x53
-	.4byte	0x1f4d
+	.4byte	0x1f7e
 	.byte	0x3f
-	.4byte	0x1f33
+	.4byte	0x1f64
 	.4byte	.LLST37
 	.byte	0x42
 	.4byte	.Ldebug_ranges0+0x50
 	.byte	0x54
-	.4byte	0x1f67
+	.4byte	0x1f98
 	.byte	0x3
 	.byte	0x91
 	.byte	0xb8,0x7f
-	.byte	0x2e
-	.4byte	.LVL60
-	.4byte	0x22b5
-	.4byte	0x1a55
 	.byte	0x2f
+	.4byte	.LVL64
+	.4byte	0x22f2
+	.4byte	0x1a5d
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x3
 	.byte	0x78
 	.byte	0xb8,0x7f
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x48
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL65
+	.4byte	0x2325
 	.byte	0x30
-	.4byte	.LVL61
-	.4byte	0x22e8
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x85
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x3
@@ -6435,16 +6492,16 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL69
+	.4byte	0x2244
 	.byte	0x30
-	.4byte	.LVL65
-	.4byte	0x2207
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC15
-	.byte	0x2f
+	.4byte	.LC16
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
@@ -6452,10 +6509,10 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL61
+	.4byte	0x2332
 	.byte	0x30
-	.4byte	.LVL57
-	.4byte	0x22f5
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
@@ -6464,120 +6521,120 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x55
-	.4byte	.LASF299
+	.4byte	.LASF304
 	.byte	0x1
-	.byte	0xb9
+	.byte	0xc3
 	.byte	0xd
 	.byte	0x1
 	.byte	0x56
-	.4byte	.LASF259
+	.4byte	.LASF260
 	.byte	0x1
-	.byte	0x96
+	.byte	0xa0
 	.byte	0x10
 	.4byte	0x3e8
 	.4byte	.LFB76
 	.4byte	.LFE76-.LFB76
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1bc0
+	.4byte	0x1bc8
 	.byte	0x4d
-	.4byte	.LASF251
+	.4byte	.LASF252
 	.byte	0x1
-	.byte	0x96
+	.byte	0xa0
 	.byte	0x37
 	.4byte	0x739
 	.4byte	.LLST16
 	.byte	0x4d
 	.4byte	.LASF206
 	.byte	0x1
-	.byte	0x96
+	.byte	0xa0
 	.byte	0x58
 	.4byte	0xc0f
 	.4byte	.LLST17
 	.byte	0x57
 	.string	"buf"
 	.byte	0x1
-	.byte	0x97
+	.byte	0xa1
 	.byte	0x33
 	.4byte	0xb3f
 	.4byte	.LLST18
 	.byte	0x57
 	.string	"len"
 	.byte	0x1
-	.byte	0x97
+	.byte	0xa1
 	.byte	0x3e
 	.4byte	0xc9
 	.4byte	.LLST19
 	.byte	0x4d
-	.4byte	.LASF256
+	.4byte	.LASF257
 	.byte	0x1
-	.byte	0x97
+	.byte	0xa1
 	.byte	0x49
 	.4byte	0xc9
 	.4byte	.LLST20
 	.byte	0x4d
 	.4byte	.LASF64
 	.byte	0x1
-	.byte	0x97
+	.byte	0xa1
 	.byte	0x56
 	.4byte	0xb8
 	.4byte	.LLST21
-	.byte	0x2e
-	.4byte	.LVL32
-	.4byte	0x22b5
-	.4byte	0x1b3e
 	.byte	0x2f
+	.4byte	.LVL36
+	.4byte	0x22f2
+	.4byte	0x1b46
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR3
-	.byte	0x2f
+	.4byte	.LANCHOR4
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x41
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL33
-	.4byte	0x2207
-	.4byte	0x1b67
 	.byte	0x2f
+	.4byte	.LVL37
+	.4byte	0x2244
+	.4byte	0x1b6f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC8
-	.byte	0x2f
+	.4byte	.LC9
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x82
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5d
 	.byte	0x2
 	.byte	0x84
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL36
-	.4byte	0x2302
-	.4byte	0x1b8a
 	.byte	0x2f
+	.4byte	.LVL40
+	.4byte	0x233f
+	.4byte	0x1b92
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
@@ -6586,116 +6643,116 @@ __compound_literal.8:
 	.byte	0x82
 	.byte	0
 	.byte	0x22
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x85
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x79
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL37
-	.4byte	0x2207
-	.4byte	0x1bb6
 	.byte	0x2f
+	.4byte	.LVL41
+	.4byte	0x2244
+	.4byte	0x1bbe
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC9
-	.byte	0x2f
+	.4byte	.LC10
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x82
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5d
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR3
+	.4byte	.LANCHOR4
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL38
-	.4byte	0x1a99
+	.byte	0x2c
+	.4byte	.LVL42
+	.4byte	0x1aa1
 	.byte	0
 	.byte	0x56
-	.4byte	.LASF260
+	.4byte	.LASF261
 	.byte	0x1
-	.byte	0x5b
+	.byte	0x60
 	.byte	0x10
 	.4byte	0x3e8
 	.4byte	.LFB75
 	.4byte	.LFE75-.LFB75
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1ef1
+	.4byte	0x1f22
 	.byte	0x4d
-	.4byte	.LASF251
+	.4byte	.LASF252
 	.byte	0x1
-	.byte	0x5b
+	.byte	0x60
 	.byte	0x33
 	.4byte	0x739
 	.4byte	.LLST38
 	.byte	0x4d
 	.4byte	.LASF206
 	.byte	0x1
-	.byte	0x5b
+	.byte	0x60
 	.byte	0x54
 	.4byte	0xc0f
 	.4byte	.LLST39
 	.byte	0x57
 	.string	"buf"
 	.byte	0x1
-	.byte	0x5c
+	.byte	0x61
 	.byte	0x30
 	.4byte	0xb3f
 	.4byte	.LLST40
 	.byte	0x57
 	.string	"len"
 	.byte	0x1
-	.byte	0x5c
+	.byte	0x61
 	.byte	0x3b
 	.4byte	0xc9
 	.4byte	.LLST41
 	.byte	0x4d
-	.4byte	.LASF256
+	.4byte	.LASF257
 	.byte	0x1
-	.byte	0x5c
+	.byte	0x61
 	.byte	0x46
 	.4byte	0xc9
 	.4byte	.LLST42
 	.byte	0x4d
 	.4byte	.LASF64
 	.byte	0x1
-	.byte	0x5c
+	.byte	0x61
 	.byte	0x53
 	.4byte	0xb8
 	.4byte	.LLST43
 	.byte	0x50
-	.4byte	.LASF261
+	.4byte	.LASF262
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x63
 	.byte	0x13
-	.4byte	0x1ef1
+	.4byte	0x1f22
 	.4byte	.LLST44
 	.byte	0x29
-	.4byte	.LASF226
+	.4byte	.LASF227
 	.byte	0x1
-	.byte	0x60
+	.byte	0x65
 	.byte	0xa
 	.4byte	0x8e3
 	.byte	0x3
@@ -6704,57 +6761,57 @@ __compound_literal.8:
 	.byte	0x3c
 	.4byte	.LBB54
 	.4byte	.LBE54-.LBB54
-	.4byte	0x1cbe
+	.4byte	0x1cc6
 	.byte	0x58
 	.string	"msg"
 	.byte	0x1
-	.byte	0x88
+	.byte	0x92
 	.byte	0x14
-	.4byte	0x1f07
+	.4byte	0x1f38
 	.byte	0x3
 	.byte	0x91
 	.byte	0xa4,0x7f
-	.byte	0x36
-	.4byte	.LVL101
-	.4byte	0x2220
-	.byte	0x2e
-	.4byte	.LVL102
-	.4byte	0x230e
-	.4byte	0x1ca2
+	.byte	0x2c
+	.4byte	.LVL107
+	.4byte	0x234b
 	.byte	0x2f
+	.4byte	.LVL108
+	.4byte	0x2357
+	.4byte	0x1caa
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC27
-	.byte	0x2f
+	.4byte	.LC29
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x3a
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL109
+	.4byte	0x1969
 	.byte	0x30
-	.4byte	.LVL103
-	.4byte	0x1961
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x85
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
@@ -6764,121 +6821,121 @@ __compound_literal.8:
 	.byte	0x3c
 	.4byte	.LBB55
 	.4byte	.LBE55-.LBB55
-	.4byte	0x1d26
+	.4byte	0x1d2e
 	.byte	0x58
 	.string	"msg"
 	.byte	0x1
-	.byte	0x8d
+	.byte	0x97
 	.byte	0x14
-	.4byte	0x1f1c
+	.4byte	0x1f4d
 	.byte	0x3
 	.byte	0x91
 	.byte	0xa4,0x7f
-	.byte	0x2e
-	.4byte	.LVL105
-	.4byte	0x230e
-	.4byte	0x1cfd
 	.byte	0x2f
+	.4byte	.LVL111
+	.4byte	0x2357
+	.4byte	0x1d05
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC29
-	.byte	0x2f
+	.4byte	.LC31
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x3b
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL106
-	.4byte	0x1961
-	.4byte	0x1d1c
 	.byte	0x2f
+	.4byte	.LVL112
+	.4byte	0x1969
+	.4byte	0x1d24
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x85
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x1
 	.byte	0x3a
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL107
-	.4byte	0x222c
+	.byte	0x2c
+	.4byte	.LVL113
+	.4byte	0x2362
 	.byte	0
 	.byte	0x52
-	.4byte	0x1f75
+	.4byte	0x1fa6
 	.4byte	.LBB50
 	.4byte	.Ldebug_ranges0+0x88
 	.byte	0x1
-	.byte	0x68
+	.byte	0x6d
 	.byte	0x5
-	.4byte	0x1dc1
+	.4byte	0x1dc9
 	.byte	0x3f
-	.4byte	0x1fa1
+	.4byte	0x1fd2
 	.4byte	.LLST45
 	.byte	0x3f
-	.4byte	0x1f94
+	.4byte	0x1fc5
 	.4byte	.LLST46
 	.byte	0x3f
-	.4byte	0x1f87
+	.4byte	0x1fb8
 	.4byte	.LLST47
 	.byte	0x42
 	.4byte	.Ldebug_ranges0+0x88
 	.byte	0x54
-	.4byte	0x1fae
+	.4byte	0x1fdf
 	.byte	0x3
 	.byte	0x91
 	.byte	0xa4,0x7f
-	.byte	0x2e
-	.4byte	.LVL86
-	.4byte	0x2319
-	.4byte	0x1d77
 	.byte	0x2f
+	.4byte	.LVL90
+	.4byte	0x236e
+	.4byte	0x1d7f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x79
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL88
-	.4byte	0x2325
-	.4byte	0x1da1
 	.byte	0x2f
+	.4byte	.LVL92
+	.4byte	0x237a
+	.4byte	0x1da9
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x3
 	.byte	0x78
 	.byte	0xb0,0x7f
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x4e
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC22
-	.byte	0x2f
+	.4byte	.LC23
+	.byte	0x30
 	.byte	0x2
 	.byte	0x72
 	.byte	0x4
@@ -6886,246 +6943,266 @@ __compound_literal.8:
 	.byte	0x79
 	.byte	0
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL99
+	.4byte	0x237a
 	.byte	0x30
-	.4byte	.LVL95
-	.4byte	0x2325
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x79
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x3a
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC21
+	.4byte	.LC22
 	.byte	0
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL78
-	.4byte	0x2332
-	.4byte	0x1dd5
 	.byte	0x2f
+	.4byte	.LVL82
+	.4byte	0x2387
+	.4byte	0x1ddd
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x85
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL81
-	.4byte	0x2207
-	.4byte	0x1dec
 	.byte	0x2f
+	.4byte	.LVL85
+	.4byte	0x2244
+	.4byte	0x1df4
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC16
+	.4byte	.LC17
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL89
-	.4byte	0x2207
-	.4byte	0x1e0a
 	.byte	0x2f
+	.4byte	.LVL93
+	.4byte	0x2244
+	.4byte	0x1e12
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC23
-	.byte	0x2f
+	.4byte	.LC24
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x3
 	.byte	0x78
 	.byte	0xb0,0x7f
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL91
-	.4byte	0x22b5
-	.4byte	0x1e2c
 	.byte	0x2f
+	.4byte	.LVL95
+	.4byte	0x22f2
+	.4byte	0x1e34
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x21
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL92
-	.4byte	0x2207
-	.4byte	0x1e58
 	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC24
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x83
-	.byte	0
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x2
-	.byte	0x82
-	.byte	0
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5d
-	.byte	0x5
-	.byte	0x83
-	.byte	0
-	.byte	0x82
-	.byte	0
-	.byte	0x22
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL98
-	.4byte	0x2302
-	.4byte	0x1e7b
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x86
-	.byte	0
-	.byte	0x83
-	.byte	0
-	.byte	0x22
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x2
-	.byte	0x87
-	.byte	0
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x2
-	.byte	0x82
-	.byte	0
-	.byte	0
-	.byte	0x2e
-	.4byte	.LVL99
-	.4byte	0x2207
-	.4byte	0x1ea7
-	.byte	0x2f
+	.4byte	.LVL96
+	.4byte	0x2244
+	.4byte	0x1e60
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC25
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
-	.byte	0x83
+	.byte	0x84
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x82
 	.byte	0
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5d
+	.byte	0x5
+	.byte	0x84
+	.byte	0
+	.byte	0x82
+	.byte	0
+	.byte	0x22
+	.byte	0
 	.byte	0x2f
+	.4byte	.LVL102
+	.4byte	0x233f
+	.4byte	0x1e83
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x86
+	.byte	0
+	.byte	0x84
+	.byte	0
+	.byte	0x22
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x2
+	.byte	0x87
+	.byte	0
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x2
+	.byte	0x82
+	.byte	0
+	.byte	0
+	.byte	0x2f
+	.4byte	.LVL103
+	.4byte	0x2244
+	.4byte	0x1eaf
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC26
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x2
+	.byte	0x84
+	.byte	0
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x2
+	.byte	0x82
+	.byte	0
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5d
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
+	.4byte	.LANCHOR5
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL100
-	.4byte	0x233e
-	.4byte	0x1ec7
 	.byte	0x2f
+	.4byte	.LVL104
+	.4byte	0x2393
+	.4byte	0x1ecf
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC26
+	.4byte	.LC27
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL104
-	.4byte	0x233e
-	.4byte	0x1ee7
+	.byte	0x2c
+	.4byte	.LVL105
+	.4byte	0x239f
 	.byte	0x2f
+	.4byte	.LVL106
+	.4byte	0x2393
+	.4byte	0x1ef8
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC28
 	.byte	0
-	.byte	0x36
-	.4byte	.LVL108
-	.4byte	0x1a99
+	.byte	0x2f
+	.4byte	.LVL110
+	.4byte	0x2393
+	.4byte	0x1f18
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LANCHOR5
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC30
+	.byte	0
+	.byte	0x2c
+	.4byte	.LVL114
+	.4byte	0x1aa1
 	.byte	0
 	.byte	0x8
 	.byte	0x4
 	.4byte	0x57f
 	.byte	0x13
 	.4byte	0x1d3
-	.4byte	0x1f07
+	.4byte	0x1f38
 	.byte	0x14
 	.4byte	0x99
 	.byte	0x9
 	.byte	0
 	.byte	0x4
-	.4byte	0x1ef7
+	.4byte	0x1f28
 	.byte	0x13
 	.4byte	0x1d3
-	.4byte	0x1f1c
+	.4byte	0x1f4d
 	.byte	0x14
 	.4byte	0x99
 	.byte	0xa
 	.byte	0
 	.byte	0x4
-	.4byte	0x1f0c
+	.4byte	0x1f3d
 	.byte	0x59
-	.4byte	.LASF263
+	.4byte	.LASF264
 	.byte	0x2
 	.2byte	0x35e
 	.byte	0x13
 	.4byte	0x92
 	.byte	0x3
-	.4byte	0x1f75
+	.4byte	0x1fa6
 	.byte	0x4b
-	.4byte	.LASF251
+	.4byte	.LASF252
 	.byte	0x2
 	.2byte	0x35e
 	.byte	0x32
@@ -7149,22 +7226,22 @@ __compound_literal.8:
 	.byte	0x1e
 	.4byte	0xc9
 	.byte	0x48
-	.4byte	.LASF262
+	.4byte	.LASF263
 	.byte	0x2
 	.2byte	0x362
 	.byte	0x1f
 	.4byte	0xdb2
 	.byte	0
 	.byte	0x59
-	.4byte	.LASF264
+	.4byte	.LASF265
 	.byte	0x3
 	.2byte	0x2f3
 	.byte	0x13
 	.4byte	0x92
 	.byte	0x3
-	.4byte	0x1fbc
+	.4byte	0x1fed
 	.byte	0x4b
-	.4byte	.LASF226
+	.4byte	.LASF227
 	.byte	0x3
 	.2byte	0x2f3
 	.byte	0x39
@@ -7186,93 +7263,93 @@ __compound_literal.8:
 	.byte	0x3
 	.2byte	0x2f6
 	.byte	0x7
-	.4byte	0x1fbc
+	.4byte	0x1fed
 	.byte	0
 	.byte	0x13
 	.4byte	0x1cc
-	.4byte	0x1fcc
+	.4byte	0x1ffd
 	.byte	0x14
 	.4byte	0x99
 	.byte	0x9
 	.byte	0
 	.byte	0x5a
-	.4byte	0x1a99
+	.4byte	0x1aa1
 	.4byte	.LFB77
 	.4byte	.LFE77-.LFB77
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x2064
+	.4byte	0x2095
 	.byte	0x5b
-	.4byte	0x1a99
+	.4byte	0x1aa1
 	.4byte	.LBB9
 	.4byte	.LBE9-.LBB9
 	.byte	0x1
-	.byte	0xb9
+	.byte	0xc3
 	.byte	0xd
-	.byte	0x2e
-	.4byte	.LVL24
-	.4byte	0x2207
-	.4byte	0x2006
 	.byte	0x2f
+	.4byte	.LVL28
+	.4byte	0x2244
+	.4byte	0x2037
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC7
+	.4byte	.LC8
 	.byte	0
 	.byte	0x5c
-	.4byte	.LVL25
-	.4byte	0x2022
-	.byte	0x2f
+	.4byte	.LVL29
+	.4byte	0x2053
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR3
+	.4byte	.LANCHOR4
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL26
-	.4byte	0x22b5
-	.4byte	0x2044
 	.byte	0x2f
+	.4byte	.LVL30
+	.4byte	0x22f2
+	.4byte	0x2075
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR4
-	.byte	0x2f
+	.4byte	.LANCHOR5
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x21
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL31
+	.4byte	0x22f2
 	.byte	0x30
-	.4byte	.LVL27
-	.4byte	0x22b5
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LANCHOR3
-	.byte	0x2f
+	.4byte	.LANCHOR4
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
 	.byte	0x30
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
@@ -7282,97 +7359,97 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x5a
-	.4byte	0x175b
+	.4byte	0x1763
 	.4byte	.LFB92
 	.4byte	.LFE92-.LFB92
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x2149
+	.4byte	0x217a
 	.byte	0x3f
-	.4byte	0x1769
+	.4byte	0x1771
 	.4byte	.LLST22
 	.byte	0x40
-	.4byte	0x175b
+	.4byte	0x1763
 	.4byte	.LBB14
 	.4byte	.LBE14-.LBB14
 	.byte	0x1
-	.2byte	0x17e
+	.2byte	0x188
 	.byte	0xd
-	.4byte	0x2117
+	.4byte	0x2148
 	.byte	0x3f
-	.4byte	0x1769
+	.4byte	0x1771
 	.4byte	.LLST23
 	.byte	0x5d
-	.4byte	0x1776
+	.4byte	0x177e
 	.4byte	.LBB16
 	.4byte	.LBE16-.LBB16
 	.byte	0x54
-	.4byte	0x1777
+	.4byte	0x177f
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
-	.byte	0x2e
-	.4byte	.LVL43
-	.4byte	0x2207
-	.4byte	0x20ca
 	.byte	0x2f
+	.4byte	.LVL47
+	.4byte	0x2244
+	.4byte	0x20fb
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC11
+	.4byte	.LC12
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL44
-	.4byte	0x234a
-	.4byte	0x20de
 	.byte	0x2f
+	.4byte	.LVL48
+	.4byte	0x23ab
+	.4byte	0x210f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
 	.byte	0x78
 	.byte	0x68
 	.byte	0
+	.byte	0x31
+	.4byte	.LVL49
+	.4byte	0x2244
 	.byte	0x30
-	.4byte	.LVL45
-	.4byte	0x2207
-	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC12
-	.byte	0x2f
+	.4byte	.LC13
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x2
 	.byte	0x8
 	.byte	0x88
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x2
 	.byte	0x8
 	.byte	0x88
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5d
 	.byte	0x2
 	.byte	0x8
 	.byte	0x88
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5e
 	.byte	0x2
 	.byte	0x8
 	.byte	0x88
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5f
 	.byte	0x2
 	.byte	0x8
 	.byte	0x88
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x60
 	.byte	0x2
@@ -7381,17 +7458,17 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0
-	.byte	0x2e
-	.4byte	.LVL41
-	.4byte	0x2207
-	.4byte	0x2135
 	.byte	0x2f
+	.4byte	.LVL45
+	.4byte	0x2244
+	.4byte	0x2166
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC10
-	.byte	0x2f
+	.4byte	.LC11
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x3
@@ -7400,64 +7477,64 @@ __compound_literal.8:
 	.byte	0x6
 	.byte	0
 	.byte	0x3a
-	.4byte	.LVL48
-	.4byte	0x2207
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC13
-	.byte	0
-	.byte	0
-	.byte	0x5a
-	.4byte	0x18de
-	.4byte	.LFB83
-	.4byte	.LFE83-.LFB83
-	.byte	0x1
-	.byte	0x9c
-	.4byte	0x21c0
-	.byte	0x3f
-	.4byte	0x18ec
-	.4byte	.LLST24
-	.byte	0x3f
-	.4byte	0x18f9
-	.4byte	.LLST25
-	.byte	0x5e
-	.4byte	0x18de
-	.4byte	.LBB19
-	.4byte	.Ldebug_ranges0+0
-	.byte	0x1
-	.2byte	0x124
-	.byte	0xd
-	.byte	0x3f
-	.4byte	0x18f9
-	.4byte	.LLST26
-	.byte	0x3f
-	.4byte	0x18ec
-	.4byte	.LLST27
-	.byte	0x2e
-	.4byte	.LVL53
-	.4byte	0x2207
-	.4byte	0x21a8
-	.byte	0x2f
+	.4byte	.LVL52
+	.4byte	0x2244
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
 	.4byte	.LC14
 	.byte	0
-	.byte	0x3a
-	.4byte	.LVL55
-	.4byte	0x2357
+	.byte	0
+	.byte	0x5a
+	.4byte	0x18e6
+	.4byte	.LFB83
+	.4byte	.LFE83-.LFB83
+	.byte	0x1
+	.byte	0x9c
+	.4byte	0x21f1
+	.byte	0x3f
+	.4byte	0x18f4
+	.4byte	.LLST24
+	.byte	0x3f
+	.4byte	0x1901
+	.4byte	.LLST25
+	.byte	0x5e
+	.4byte	0x18e6
+	.4byte	.LBB19
+	.4byte	.Ldebug_ranges0+0
+	.byte	0x1
+	.2byte	0x12e
+	.byte	0xd
+	.byte	0x3f
+	.4byte	0x1901
+	.4byte	.LLST26
+	.byte	0x3f
+	.4byte	0x18f4
+	.4byte	.LLST27
 	.byte	0x2f
+	.4byte	.LVL57
+	.4byte	0x2244
+	.4byte	0x21d9
+	.byte	0x30
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC15
+	.byte	0
+	.byte	0x3a
+	.4byte	.LVL59
+	.4byte	0x23b8
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x3
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1
@@ -7466,197 +7543,221 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x5a
-	.4byte	0x18a8
+	.4byte	0x18b0
 	.4byte	.LFB86
 	.4byte	.LFE86-.LFB86
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x21dd
+	.4byte	0x220e
 	.byte	0x3f
-	.4byte	0x18ba
+	.4byte	0x18c2
 	.4byte	.LLST48
 	.byte	0
 	.byte	0x5a
-	.4byte	0x1889
+	.4byte	0x1891
 	.4byte	.LFB87
 	.4byte	.LFE87-.LFB87
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x21fa
+	.4byte	0x222b
 	.byte	0x3f
-	.4byte	0x189b
+	.4byte	0x18a3
 	.4byte	.LLST49
 	.byte	0
 	.byte	0x5f
-	.4byte	.LASF265
-	.4byte	.LASF265
+	.4byte	.LASF266
+	.4byte	.LASF266
+	.byte	0x17
+	.byte	0x6
+	.byte	0x6
+	.byte	0x60
+	.4byte	.LASF267
+	.4byte	.LASF267
 	.byte	0x3
 	.2byte	0x1f2
 	.byte	0x5
-	.byte	0x60
-	.4byte	.LASF266
-	.4byte	.LASF266
-	.byte	0x17
+	.byte	0x5f
+	.4byte	.LASF268
+	.4byte	.LASF268
+	.byte	0x18
 	.byte	0xc8
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF267
-	.4byte	.LASF267
+	.byte	0x60
+	.4byte	.LASF269
+	.4byte	.LASF269
 	.byte	0x3
 	.2byte	0x23f
 	.byte	0x6
-	.byte	0x60
-	.4byte	.LASF268
-	.4byte	.LASF268
-	.byte	0x18
-	.byte	0x7
-	.byte	0x6
-	.byte	0x60
-	.4byte	.LASF269
-	.4byte	.LASF269
-	.byte	0x18
-	.byte	0x8
-	.byte	0x6
-	.byte	0x60
+	.byte	0x5f
 	.4byte	.LASF270
 	.4byte	.LASF270
+	.byte	0x17
+	.byte	0x9
+	.byte	0x6
+	.byte	0x5f
+	.4byte	.LASF271
+	.4byte	.LASF271
+	.byte	0x19
+	.byte	0x13
+	.byte	0x5
+	.byte	0x5f
+	.4byte	.LASF272
+	.4byte	.LASF272
 	.byte	0x15
 	.byte	0x5b
 	.byte	0x6
-	.byte	0x60
-	.4byte	.LASF271
-	.4byte	.LASF271
+	.byte	0x5f
+	.4byte	.LASF273
+	.4byte	.LASF273
 	.byte	0x15
 	.byte	0x6c
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF272
-	.4byte	.LASF272
+	.byte	0x60
+	.4byte	.LASF274
+	.4byte	.LASF274
 	.byte	0x3
 	.2byte	0x2b2
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF273
-	.4byte	.LASF273
-	.byte	0x19
-	.2byte	0x207
-	.byte	0xa
-	.byte	0x5f
-	.4byte	.LASF274
-	.4byte	.LASF274
-	.byte	0x1
-	.2byte	0x253
-	.byte	0x11
-	.byte	0x5f
+	.byte	0x60
 	.4byte	.LASF275
 	.4byte	.LASF275
 	.byte	0x1a
+	.2byte	0x207
+	.byte	0xa
+	.byte	0x60
+	.4byte	.LASF276
+	.4byte	.LASF276
+	.byte	0x1
+	.2byte	0x25d
+	.byte	0x11
+	.byte	0x60
+	.4byte	.LASF277
+	.4byte	.LASF277
+	.byte	0x1b
 	.2byte	0x2f6
 	.byte	0x6
-	.byte	0x60
-	.4byte	.LASF276
-	.4byte	.LASF276
-	.byte	0x1b
+	.byte	0x5f
+	.4byte	.LASF278
+	.4byte	.LASF278
+	.byte	0x1c
 	.byte	0x7
 	.byte	0x6
-	.byte	0x60
-	.4byte	.LASF277
-	.4byte	.LASF277
-	.byte	0x1c
+	.byte	0x5f
+	.4byte	.LASF279
+	.4byte	.LASF279
+	.byte	0x1d
 	.byte	0xc3
 	.byte	0x5
-	.byte	0x60
-	.4byte	.LASF278
-	.4byte	.LASF278
+	.byte	0x5f
+	.4byte	.LASF280
+	.4byte	.LASF280
 	.byte	0x3
 	.byte	0x43
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF279
-	.4byte	.LASF279
+	.byte	0x60
+	.4byte	.LASF281
+	.4byte	.LASF281
 	.byte	0x2
 	.2byte	0x144
 	.byte	0x5
-	.byte	0x60
-	.4byte	.LASF280
-	.4byte	.LASF280
-	.byte	0x1d
+	.byte	0x5f
+	.4byte	.LASF282
+	.4byte	.LASF282
+	.byte	0x1e
 	.byte	0x21
 	.byte	0x8
-	.byte	0x5f
-	.4byte	.LASF281
-	.4byte	.LASF281
+	.byte	0x60
+	.4byte	.LASF283
+	.4byte	.LASF283
 	.byte	0x2
 	.2byte	0x13c
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF282
-	.4byte	.LASF282
+	.byte	0x60
+	.4byte	.LASF284
+	.4byte	.LASF284
 	.byte	0x3
 	.2byte	0x192
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF283
-	.4byte	.LASF283
+	.byte	0x60
+	.4byte	.LASF285
+	.4byte	.LASF285
 	.byte	0x3
 	.2byte	0x17a
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF284
-	.4byte	.LASF284
+	.byte	0x60
+	.4byte	.LASF286
+	.4byte	.LASF286
 	.byte	0x2
 	.2byte	0x348
 	.byte	0x5
-	.byte	0x5f
-	.4byte	.LASF285
-	.4byte	.LASF285
+	.byte	0x60
+	.4byte	.LASF287
+	.4byte	.LASF287
 	.byte	0x2
 	.2byte	0x3c7
 	.byte	0x7
-	.byte	0x60
-	.4byte	.LASF286
-	.4byte	.LASF286
-	.byte	0x1d
-	.byte	0x1f
-	.byte	0x8
-	.byte	0x61
-	.4byte	.LASF286
-	.4byte	.LASF300
-	.byte	0x1e
-	.byte	0
-	.byte	0x60
-	.4byte	.LASF287
-	.4byte	.LASF287
-	.byte	0x1d
-	.byte	0x26
-	.byte	0x7
 	.byte	0x5f
 	.4byte	.LASF288
 	.4byte	.LASF288
+	.byte	0x1e
+	.byte	0x1f
+	.byte	0x8
+	.byte	0x5f
+	.4byte	.LASF289
+	.4byte	.LASF289
 	.byte	0x17
+	.byte	0x7
+	.byte	0x6
+	.byte	0x61
+	.4byte	.LASF288
+	.4byte	.LASF305
+	.byte	0x20
+	.byte	0
+	.byte	0x5f
+	.4byte	.LASF290
+	.4byte	.LASF290
+	.byte	0x17
+	.byte	0x8
+	.byte	0x6
+	.byte	0x5f
+	.4byte	.LASF291
+	.4byte	.LASF291
+	.byte	0x1e
+	.byte	0x26
+	.byte	0x7
+	.byte	0x60
+	.4byte	.LASF292
+	.4byte	.LASF292
+	.byte	0x18
 	.2byte	0x10a
 	.byte	0x5
-	.byte	0x60
-	.4byte	.LASF289
-	.4byte	.LASF289
+	.byte	0x5f
+	.4byte	.LASF293
+	.4byte	.LASF293
 	.byte	0x15
 	.byte	0x79
 	.byte	0x15
-	.byte	0x60
-	.4byte	.LASF290
-	.4byte	.LASF290
-	.byte	0x1d
+	.byte	0x5f
+	.4byte	.LASF294
+	.4byte	.LASF294
+	.byte	0x1e
 	.byte	0x24
 	.byte	0x5
 	.byte	0x5f
-	.4byte	.LASF291
-	.4byte	.LASF291
+	.4byte	.LASF295
+	.4byte	.LASF295
+	.byte	0x1f
+	.byte	0x60
+	.byte	0x6
+	.byte	0x60
+	.4byte	.LASF296
+	.4byte	.LASF296
 	.byte	0x14
 	.2byte	0x117
 	.byte	0x5
-	.byte	0x60
-	.4byte	.LASF292
-	.4byte	.LASF292
+	.byte	0x5f
+	.4byte	.LASF297
+	.4byte	.LASF297
 	.byte	0x15
 	.byte	0xf1
 	.byte	0x5
@@ -8221,6 +8322,23 @@ __compound_literal.8:
 	.byte	0
 	.byte	0
 	.byte	0x2a
+	.byte	0x34
+	.byte	0
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0x5
+	.byte	0x39
+	.byte	0xb
+	.byte	0x49
+	.byte	0x13
+	.byte	0x2
+	.byte	0x18
+	.byte	0
+	.byte	0
+	.byte	0x2b
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3f
@@ -8247,7 +8365,16 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x2b
+	.byte	0x2c
+	.byte	0x89,0x82,0x1
+	.byte	0
+	.byte	0x11
+	.byte	0x1
+	.byte	0x31
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0x2d
 	.byte	0x89,0x82,0x1
 	.byte	0
 	.byte	0x11
@@ -8258,24 +8385,7 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x2c
-	.byte	0x34
-	.byte	0
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0x5
-	.byte	0x39
-	.byte	0xb
-	.byte	0x49
-	.byte	0x13
-	.byte	0x2
-	.byte	0x18
-	.byte	0
-	.byte	0
-	.byte	0x2d
+	.byte	0x2e
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -8292,7 +8402,7 @@ __compound_literal.8:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x2e
+	.byte	0x2f
 	.byte	0x89,0x82,0x1
 	.byte	0x1
 	.byte	0x11
@@ -8303,7 +8413,7 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x2f
+	.byte	0x30
 	.byte	0x8a,0x82,0x1
 	.byte	0
 	.byte	0x2
@@ -8312,7 +8422,7 @@ __compound_literal.8:
 	.byte	0x18
 	.byte	0
 	.byte	0
-	.byte	0x30
+	.byte	0x31
 	.byte	0x89,0x82,0x1
 	.byte	0x1
 	.byte	0x11
@@ -8321,7 +8431,7 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x31
+	.byte	0x32
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
@@ -8346,7 +8456,7 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x32
+	.byte	0x33
 	.byte	0x5
 	.byte	0
 	.byte	0x3
@@ -8363,7 +8473,7 @@ __compound_literal.8:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x33
+	.byte	0x34
 	.byte	0x5
 	.byte	0
 	.byte	0x3
@@ -8380,7 +8490,7 @@ __compound_literal.8:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x34
+	.byte	0x35
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
@@ -8407,7 +8517,7 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x35
+	.byte	0x36
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -8422,15 +8532,6 @@ __compound_literal.8:
 	.byte	0x13
 	.byte	0x2
 	.byte	0x17
-	.byte	0
-	.byte	0
-	.byte	0x36
-	.byte	0x89,0x82,0x1
-	.byte	0
-	.byte	0x11
-	.byte	0x1
-	.byte	0x31
-	.byte	0x13
 	.byte	0
 	.byte	0
 	.byte	0x37
@@ -9117,7 +9218,7 @@ __compound_literal.8:
 	.byte	0x3a
 	.byte	0xb
 	.byte	0x3b
-	.byte	0x5
+	.byte	0xb
 	.byte	0x39
 	.byte	0xb
 	.byte	0
@@ -9136,7 +9237,7 @@ __compound_literal.8:
 	.byte	0x3a
 	.byte	0xb
 	.byte	0x3b
-	.byte	0xb
+	.byte	0x5
 	.byte	0x39
 	.byte	0xb
 	.byte	0
@@ -9162,86 +9263,27 @@ __compound_literal.8:
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 .LLST62:
-	.4byte	.LVL195
-	.4byte	.LVL196
+	.4byte	.LVL201
+	.4byte	.LVL202
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL196
-	.4byte	.LVL197-1
+	.4byte	.LVL202
+	.4byte	.LVL203-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL198
-	.4byte	.LVL199
+	.4byte	.LVL204
+	.4byte	.LVL205
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	0
-	.4byte	0
-.LLST12:
-	.4byte	.LVL19
-	.4byte	.LVL22
-	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL22
-	.4byte	.LFE103
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x9f
-	.4byte	0
-	.4byte	0
-.LLST13:
-	.4byte	.LVL19
-	.4byte	.LVL20
-	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL20
-	.4byte	.LVL21
-	.2byte	0x2
-	.byte	0x78
-	.byte	0x6f
-	.4byte	.LVL21
-	.4byte	.LVL23-1
-	.2byte	0x2
-	.byte	0x7c
-	.byte	0
-	.4byte	0
-	.4byte	0
-.LLST14:
-	.4byte	.LVL19
-	.4byte	.LVL21
-	.2byte	0x1
-	.byte	0x5c
-	.4byte	.LVL21
-	.4byte	.LFE103
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x9f
-	.4byte	0
-	.4byte	0
-.LLST15:
-	.4byte	.LVL19
-	.4byte	.LVL23-1
-	.2byte	0x1
-	.byte	0x5d
-	.4byte	.LVL23-1
-	.4byte	.LFE103
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5d
-	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST3:
 	.4byte	.LVL8
-	.4byte	.LVL13
+	.4byte	.LVL11
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL13
-	.4byte	.LFE102
+	.4byte	.LVL11
+	.4byte	.LFE103
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
@@ -9251,49 +9293,123 @@ __compound_literal.8:
 	.4byte	0
 .LLST4:
 	.4byte	.LVL8
-	.4byte	.LVL14
+	.4byte	.LVL9
 	.2byte	0x1
 	.byte	0x5b
+	.4byte	.LVL9
+	.4byte	.LVL10
+	.2byte	0x2
+	.byte	0x78
+	.byte	0x6f
+	.4byte	.LVL10
+	.4byte	.LVL12-1
+	.2byte	0x2
+	.byte	0x7c
+	.byte	0
+	.4byte	0
+	.4byte	0
+.LLST5:
+	.4byte	.LVL8
+	.4byte	.LVL10
+	.2byte	0x1
+	.byte	0x5c
+	.4byte	.LVL10
+	.4byte	.LFE103
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5c
+	.byte	0x9f
+	.4byte	0
+	.4byte	0
+.LLST6:
+	.4byte	.LVL8
+	.4byte	.LVL12-1
+	.2byte	0x1
+	.byte	0x5d
+	.4byte	.LVL12-1
+	.4byte	.LFE103
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5d
+	.byte	0x9f
+	.4byte	0
+	.4byte	0
+.LLST7:
+	.4byte	.LVL13
 	.4byte	.LVL14
+	.2byte	0x1
+	.byte	0x5a
+	.4byte	.LVL14
+	.4byte	.LVL15
+	.2byte	0x1
+	.byte	0x5f
+	.4byte	.LVL15
+	.4byte	.LVL26
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x9f
+	.4byte	.LVL26
+	.4byte	.LVL27
+	.2byte	0x1
+	.byte	0x5a
+	.4byte	.LVL27
 	.4byte	.LFE102
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x9f
+	.4byte	0
+	.4byte	0
+.LLST8:
+	.4byte	.LVL13
+	.4byte	.LVL22
+	.2byte	0x1
+	.byte	0x5b
+	.4byte	.LVL22
+	.4byte	.LVL26
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
+	.4byte	.LVL26
+	.4byte	.LFE102
+	.2byte	0x1
+	.byte	0x5b
 	.4byte	0
 	.4byte	0
-.LLST5:
-	.4byte	.LVL8
-	.4byte	.LVL9
+.LLST9:
+	.4byte	.LVL13
+	.4byte	.LVL19
+	.2byte	0x2
+	.byte	0x7b
+	.byte	0
+	.4byte	.LVL26
+	.4byte	.LFE102
 	.2byte	0x2
 	.byte	0x7b
 	.byte	0
 	.4byte	0
 	.4byte	0
-.LLST6:
-	.4byte	.LVL10
-	.4byte	.LVL12
+.LLST10:
+	.4byte	.LVL15
+	.4byte	.LVL17
 	.2byte	0x1
 	.byte	0x5f
-	.4byte	.LVL12
-	.4byte	.LVL13
-	.2byte	0x2
-	.byte	0x7a
-	.byte	0x4
-	.4byte	.LVL13
-	.4byte	.LVL15-1
-	.2byte	0x5
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x23
-	.byte	0x4
+	.4byte	.LVL18
+	.4byte	.LVL21
+	.2byte	0x1
+	.byte	0x5f
 	.4byte	0
 	.4byte	0
-.LLST7:
-	.4byte	.LVL10
-	.4byte	.LVL12
+.LLST11:
+	.4byte	.LVL15
+	.4byte	.LVL17
 	.2byte	0x12
 	.byte	0x7f
 	.byte	0
@@ -9313,52 +9429,17 @@ __compound_literal.8:
 	.byte	0x24
 	.byte	0x21
 	.byte	0x9f
-	.4byte	.LVL12
-	.4byte	.LVL13
-	.2byte	0x16
-	.byte	0x7a
-	.byte	0x4
-	.byte	0x6
+	.4byte	.LVL18
+	.4byte	.LVL19
+	.2byte	0x12
+	.byte	0x7f
+	.byte	0
 	.byte	0x94
 	.byte	0x1
 	.byte	0x8
 	.byte	0xff
 	.byte	0x1a
-	.byte	0x7a
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
-	.byte	0x1
-	.byte	0x94
-	.byte	0x1
-	.byte	0x8
-	.byte	0xff
-	.byte	0x1a
-	.byte	0x38
-	.byte	0x24
-	.byte	0x21
-	.byte	0x9f
-	.4byte	.LVL13
-	.4byte	.LVL15-1
-	.2byte	0x1c
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x23
-	.byte	0x4
-	.byte	0x6
-	.byte	0x94
-	.byte	0x1
-	.byte	0x8
-	.byte	0xff
-	.byte	0x1a
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x23
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
+	.byte	0x7f
 	.byte	0x1
 	.byte	0x94
 	.byte	0x1
@@ -9371,108 +9452,70 @@ __compound_literal.8:
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
-.LLST8:
-	.4byte	.LVL11
-	.4byte	.LVL12
+.LLST12:
+	.4byte	.LVL16
+	.4byte	.LVL17
 	.2byte	0x2
 	.byte	0x7f
 	.byte	0x3
-	.4byte	.LVL12
-	.4byte	.LVL13
-	.2byte	0x5
-	.byte	0x7a
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
-	.byte	0x3
-	.4byte	.LVL13
-	.4byte	.LVL15-1
-	.2byte	0x8
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x23
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
-	.byte	0x3
-	.4byte	0
-	.4byte	0
-.LLST9:
-	.4byte	.LVL11
-	.4byte	.LVL12
-	.2byte	0x2
-	.byte	0x7f
-	.byte	0x4
-	.4byte	.LVL12
-	.4byte	.LVL13
-	.2byte	0x5
-	.byte	0x7a
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
-	.byte	0x4
-	.4byte	.LVL13
 	.4byte	.LVL18
+	.4byte	.LVL19
+	.2byte	0x2
+	.byte	0x7f
+	.byte	0x3
+	.4byte	.LVL19
+	.4byte	.LVL20
 	.2byte	0x1
-	.byte	0x63
+	.byte	0x5e
 	.4byte	0
 	.4byte	0
-.LLST10:
-	.4byte	.LVL11
-	.4byte	.LVL12
+.LLST13:
+	.4byte	.LVL16
+	.4byte	.LVL17
+	.2byte	0x2
+	.byte	0x7f
+	.byte	0x4
+	.4byte	.LVL18
+	.4byte	.LVL19
+	.2byte	0x2
+	.byte	0x7f
+	.byte	0x4
+	.4byte	0
+	.4byte	0
+.LLST14:
+	.4byte	.LVL16
+	.4byte	.LVL17
 	.2byte	0x2
 	.byte	0x7f
 	.byte	0x5
-	.4byte	.LVL12
-	.4byte	.LVL13
-	.2byte	0x5
-	.byte	0x7a
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
-	.byte	0x5
-	.4byte	.LVL13
-	.4byte	.LVL15-1
-	.2byte	0x8
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x23
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
+	.4byte	.LVL18
+	.4byte	.LVL19
+	.2byte	0x2
+	.byte	0x7f
 	.byte	0x5
 	.4byte	0
 	.4byte	0
-.LLST11:
-	.4byte	.LVL11
-	.4byte	.LVL12
+.LLST15:
+	.4byte	.LVL16
+	.4byte	.LVL17
 	.2byte	0x2
 	.byte	0x7f
 	.byte	0x7
-	.4byte	.LVL12
-	.4byte	.LVL13
-	.2byte	0x5
-	.byte	0x7a
-	.byte	0x4
-	.byte	0x6
-	.byte	0x23
-	.byte	0x7
-	.4byte	.LVL13
 	.4byte	.LVL18
-	.2byte	0x1
-	.byte	0x62
+	.4byte	.LVL19
+	.2byte	0x2
+	.byte	0x7f
+	.byte	0x7
 	.4byte	0
 	.4byte	0
 .LLST61:
-	.4byte	.LVL181
-	.4byte	.LVL182
+	.4byte	.LVL187
+	.4byte	.LVL188
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL182
-	.4byte	.LVL184
+	.4byte	.LVL188
+	.4byte	.LVL190
 	.2byte	0x8
 	.byte	0x79
 	.byte	0
@@ -9482,8 +9525,8 @@ __compound_literal.8:
 	.byte	0x23
 	.byte	0xc
 	.byte	0x9f
-	.4byte	.LVL184
-	.4byte	.LVL185
+	.4byte	.LVL190
+	.4byte	.LVL191
 	.2byte	0x8
 	.byte	0x79
 	.byte	0
@@ -9493,19 +9536,8 @@ __compound_literal.8:
 	.byte	0x23
 	.byte	0xd
 	.byte	0x9f
-	.4byte	.LVL185
-	.4byte	.LVL186
-	.2byte	0x8
-	.byte	0x79
-	.byte	0x1
-	.byte	0x9
-	.byte	0xfe
-	.byte	0x1e
-	.byte	0x23
-	.byte	0xd
-	.byte	0x9f
+	.4byte	.LVL191
 	.4byte	.LVL192
-	.4byte	.LVL194
 	.2byte	0x8
 	.byte	0x79
 	.byte	0x1
@@ -9515,7 +9547,18 @@ __compound_literal.8:
 	.byte	0x23
 	.byte	0xd
 	.byte	0x9f
-	.4byte	.LVL194
+	.4byte	.LVL198
+	.4byte	.LVL200
+	.2byte	0x8
+	.byte	0x79
+	.byte	0x1
+	.byte	0x9
+	.byte	0xfe
+	.byte	0x1e
+	.byte	0x23
+	.byte	0xd
+	.byte	0x9f
+	.4byte	.LVL200
 	.4byte	.LFE101
 	.2byte	0x8
 	.byte	0x79
@@ -9529,58 +9572,31 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST60:
-	.4byte	.LVL168
-	.4byte	.LVL169
+	.4byte	.LVL174
+	.4byte	.LVL175
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL169
-	.4byte	.LVL171
+	.4byte	.LVL175
+	.4byte	.LVL177
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL172
-	.4byte	.LVL177
+	.4byte	.LVL178
+	.4byte	.LVL183
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST59:
-	.4byte	.LVL153
-	.4byte	.LVL154
+	.4byte	.LVL159
+	.4byte	.LVL160
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST57:
-	.4byte	.LVL136
-	.4byte	.LVL137
-	.2byte	0x6
-	.byte	0x8
-	.byte	0x33
-	.byte	0x79
-	.byte	0
-	.byte	0x1c
-	.byte	0x9f
-	.4byte	.LVL137
-	.4byte	.LVL139
-	.2byte	0x6
-	.byte	0x8
-	.byte	0x32
-	.byte	0x79
-	.byte	0
-	.byte	0x1c
-	.byte	0x9f
-	.4byte	.LVL140
-	.4byte	.LVL141
-	.2byte	0x6
-	.byte	0x8
-	.byte	0x32
-	.byte	0x79
-	.byte	0
-	.byte	0x1c
-	.byte	0x9f
-	.4byte	.LVL141
 	.4byte	.LVL142
+	.4byte	.LVL143
 	.2byte	0x6
 	.byte	0x8
 	.byte	0x33
@@ -9588,8 +9604,35 @@ __compound_literal.8:
 	.byte	0
 	.byte	0x1c
 	.byte	0x9f
+	.4byte	.LVL143
 	.4byte	.LVL145
+	.2byte	0x6
+	.byte	0x8
+	.byte	0x32
+	.byte	0x79
+	.byte	0
+	.byte	0x1c
+	.byte	0x9f
+	.4byte	.LVL146
 	.4byte	.LVL147
+	.2byte	0x6
+	.byte	0x8
+	.byte	0x32
+	.byte	0x79
+	.byte	0
+	.byte	0x1c
+	.byte	0x9f
+	.4byte	.LVL147
+	.4byte	.LVL148
+	.2byte	0x6
+	.byte	0x8
+	.byte	0x33
+	.byte	0x79
+	.byte	0
+	.byte	0x1c
+	.byte	0x9f
+	.4byte	.LVL151
+	.4byte	.LVL153
 	.2byte	0x6
 	.byte	0x8
 	.byte	0x33
@@ -9600,38 +9643,38 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST58:
-	.4byte	.LVL142
-	.4byte	.LVL144
+	.4byte	.LVL148
+	.4byte	.LVL150
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL147
+	.4byte	.LVL153
 	.4byte	.LFE97
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST55:
-	.4byte	.LVL128
-	.4byte	.LVL129
+	.4byte	.LVL134
+	.4byte	.LVL135
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST56:
-	.4byte	.LVL129
-	.4byte	.LVL130
+	.4byte	.LVL135
+	.4byte	.LVL136
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST52:
-	.4byte	.LVL121
-	.4byte	.LVL123
+	.4byte	.LVL127
+	.4byte	.LVL129
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL123
+	.4byte	.LVL129
 	.4byte	.LFE93
 	.2byte	0x4
 	.byte	0xf3
@@ -9641,11 +9684,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST53:
-	.4byte	.LVL121
-	.4byte	.LVL122
+	.4byte	.LVL127
+	.4byte	.LVL128
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL122
+	.4byte	.LVL128
 	.4byte	.LFE93
 	.2byte	0x4
 	.byte	0xf3
@@ -9655,13 +9698,13 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST54:
-	.4byte	.LVL121
-	.4byte	.LVL123
+	.4byte	.LVL127
+	.4byte	.LVL129
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL123
-	.4byte	.LVL125
+	.4byte	.LVL129
+	.4byte	.LVL131
 	.2byte	0x7
 	.byte	0x7a
 	.byte	0
@@ -9670,8 +9713,8 @@ __compound_literal.8:
 	.byte	0x5a
 	.byte	0x1c
 	.byte	0x9f
-	.4byte	.LVL125
-	.4byte	.LVL126
+	.4byte	.LVL131
+	.4byte	.LVL132
 	.2byte	0x8
 	.byte	0xf3
 	.byte	0x1
@@ -9684,19 +9727,19 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST51:
-	.4byte	.LVL118
-	.4byte	.LVL119
+	.4byte	.LVL124
+	.4byte	.LVL125
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST50:
-	.4byte	.LVL113
-	.4byte	.LVL114
+	.4byte	.LVL119
+	.4byte	.LVL120
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL114
-	.4byte	.LVL115-1
+	.4byte	.LVL120
+	.4byte	.LVL121-1
 	.2byte	0x1
 	.byte	0x5b
 	.4byte	0
@@ -9775,144 +9818,144 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST28:
-	.4byte	.LVL56
-	.4byte	.LVL57-1
+	.4byte	.LVL60
+	.4byte	.LVL61-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL57-1
-	.4byte	.LVL69
+	.4byte	.LVL61-1
+	.4byte	.LVL73
 	.2byte	0x1
 	.byte	0x65
-	.4byte	.LVL69
-	.4byte	.LVL72
+	.4byte	.LVL73
+	.4byte	.LVL76
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL72
+	.4byte	.LVL76
 	.4byte	.LFE78
 	.2byte	0x1
 	.byte	0x65
 	.4byte	0
 	.4byte	0
 .LLST29:
-	.4byte	.LVL56
-	.4byte	.LVL57-1
+	.4byte	.LVL60
+	.4byte	.LVL61-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL57-1
-	.4byte	.LVL70
+	.4byte	.LVL61-1
+	.4byte	.LVL74
 	.2byte	0x1
 	.byte	0x66
-	.4byte	.LVL70
-	.4byte	.LVL72
+	.4byte	.LVL74
+	.4byte	.LVL76
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL72
+	.4byte	.LVL76
 	.4byte	.LFE78
 	.2byte	0x1
 	.byte	0x66
 	.4byte	0
 	.4byte	0
 .LLST30:
-	.4byte	.LVL56
-	.4byte	.LVL57-1
+	.4byte	.LVL60
+	.4byte	.LVL61-1
 	.2byte	0x1
 	.byte	0x5c
-	.4byte	.LVL57-1
-	.4byte	.LVL59
+	.4byte	.LVL61-1
+	.4byte	.LVL63
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x9f
-	.4byte	.LVL59
-	.4byte	.LVL66
-	.2byte	0x1
-	.byte	0x59
-	.4byte	.LVL72
-	.4byte	.LVL74
+	.4byte	.LVL63
+	.4byte	.LVL70
 	.2byte	0x1
 	.byte	0x59
 	.4byte	.LVL76
+	.4byte	.LVL78
+	.2byte	0x1
+	.byte	0x59
+	.4byte	.LVL80
 	.4byte	.LFE78
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST31:
-	.4byte	.LVL56
-	.4byte	.LVL59
+	.4byte	.LVL60
+	.4byte	.LVL63
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL63
-	.4byte	.LVL64
+	.4byte	.LVL67
+	.4byte	.LVL68
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL64
-	.4byte	.LVL65-1
+	.4byte	.LVL68
+	.4byte	.LVL69-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL65-1
-	.4byte	.LVL65
+	.4byte	.LVL69-1
+	.4byte	.LVL69
 	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL72
+	.4byte	.LVL76
 	.4byte	.LFE78
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST32:
-	.4byte	.LVL58
-	.4byte	.LVL67
-	.2byte	0x1
-	.byte	0x63
-	.4byte	.LVL67
+	.4byte	.LVL62
 	.4byte	.LVL71
 	.2byte	0x1
+	.byte	0x63
+	.4byte	.LVL71
+	.4byte	.LVL75
+	.2byte	0x1
 	.byte	0x6a
-	.4byte	.LVL72
+	.4byte	.LVL76
 	.4byte	.LFE78
 	.2byte	0x1
 	.byte	0x63
 	.4byte	0
 	.4byte	0
 .LLST33:
-	.4byte	.LVL58
-	.4byte	.LVL59
+	.4byte	.LVL62
+	.4byte	.LVL63
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL59
-	.4byte	.LVL68
-	.2byte	0x1
-	.byte	0x64
+	.4byte	.LVL63
 	.4byte	.LVL72
-	.4byte	.LVL73
 	.2byte	0x1
 	.byte	0x64
-	.4byte	.LVL75
+	.4byte	.LVL76
+	.4byte	.LVL77
+	.2byte	0x1
+	.byte	0x64
+	.4byte	.LVL79
 	.4byte	.LFE78
 	.2byte	0x1
 	.byte	0x64
 	.4byte	0
 	.4byte	0
 .LLST34:
-	.4byte	.LVL62
-	.4byte	.LVL63
+	.4byte	.LVL66
+	.4byte	.LVL67
 	.2byte	0x1
 	.byte	0x62
 	.4byte	0
 	.4byte	0
 .LLST35:
-	.4byte	.LVL62
-	.4byte	.LVL63
+	.4byte	.LVL66
+	.4byte	.LVL67
 	.2byte	0x6
 	.byte	0x3
 	.4byte	wifi_config_server+120
@@ -9920,18 +9963,18 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST37:
-	.4byte	.LVL62
-	.4byte	.LVL63
+	.4byte	.LVL66
+	.4byte	.LVL67
 	.2byte	0x1
 	.byte	0x65
 	.4byte	0
 	.4byte	0
 .LLST16:
-	.4byte	.LVL28
-	.4byte	.LVL29
+	.4byte	.LVL32
+	.4byte	.LVL33
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL29
+	.4byte	.LVL33
 	.4byte	.LFE76
 	.2byte	0x4
 	.byte	0xf3
@@ -9941,11 +9984,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST17:
-	.4byte	.LVL28
-	.4byte	.LVL31
+	.4byte	.LVL32
+	.4byte	.LVL35
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL31
+	.4byte	.LVL35
 	.4byte	.LFE76
 	.2byte	0x4
 	.byte	0xf3
@@ -9955,33 +9998,33 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST18:
-	.4byte	.LVL28
-	.4byte	.LVL30
+	.4byte	.LVL32
+	.4byte	.LVL34
 	.2byte	0x1
 	.byte	0x5c
-	.4byte	.LVL30
 	.4byte	.LVL34
+	.4byte	.LVL38
 	.2byte	0x1
 	.byte	0x65
-	.4byte	.LVL34
-	.4byte	.LVL35
+	.4byte	.LVL38
+	.4byte	.LVL39
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x9f
-	.4byte	.LVL35
+	.4byte	.LVL39
 	.4byte	.LFE76
 	.2byte	0x1
 	.byte	0x65
 	.4byte	0
 	.4byte	0
 .LLST19:
-	.4byte	.LVL28
-	.4byte	.LVL32-1
+	.4byte	.LVL32
+	.4byte	.LVL36-1
 	.2byte	0x1
 	.byte	0x5d
-	.4byte	.LVL32-1
+	.4byte	.LVL36-1
 	.4byte	.LFE76
 	.2byte	0x4
 	.byte	0xf3
@@ -9991,11 +10034,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST20:
-	.4byte	.LVL28
-	.4byte	.LVL32-1
+	.4byte	.LVL32
+	.4byte	.LVL36-1
 	.2byte	0x1
 	.byte	0x5e
-	.4byte	.LVL32-1
+	.4byte	.LVL36-1
 	.4byte	.LFE76
 	.2byte	0x4
 	.byte	0xf3
@@ -10005,11 +10048,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST21:
-	.4byte	.LVL28
-	.4byte	.LVL32-1
+	.4byte	.LVL32
+	.4byte	.LVL36-1
 	.2byte	0x1
 	.byte	0x5f
-	.4byte	.LVL32-1
+	.4byte	.LVL36-1
 	.4byte	.LFE76
 	.2byte	0x4
 	.byte	0xf3
@@ -10019,33 +10062,33 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST38:
-	.4byte	.LVL77
-	.4byte	.LVL78-1
+	.4byte	.LVL81
+	.4byte	.LVL82-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL78-1
-	.4byte	.LVL82
+	.4byte	.LVL82-1
+	.4byte	.LVL86
 	.2byte	0x1
 	.byte	0x65
-	.4byte	.LVL82
-	.4byte	.LVL84
+	.4byte	.LVL86
+	.4byte	.LVL88
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL84
+	.4byte	.LVL88
 	.4byte	.LFE75
 	.2byte	0x1
 	.byte	0x65
 	.4byte	0
 	.4byte	0
 .LLST39:
-	.4byte	.LVL77
-	.4byte	.LVL78-1
+	.4byte	.LVL81
+	.4byte	.LVL82-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL78-1
+	.4byte	.LVL82-1
 	.4byte	.LFE75
 	.2byte	0x4
 	.byte	0xf3
@@ -10055,33 +10098,33 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST40:
-	.4byte	.LVL77
-	.4byte	.LVL78-1
+	.4byte	.LVL81
+	.4byte	.LVL82-1
 	.2byte	0x1
 	.byte	0x5c
-	.4byte	.LVL78-1
-	.4byte	.LVL83
+	.4byte	.LVL82-1
+	.4byte	.LVL87
 	.2byte	0x1
 	.byte	0x67
-	.4byte	.LVL83
-	.4byte	.LVL84
+	.4byte	.LVL87
+	.4byte	.LVL88
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5c
 	.byte	0x9f
-	.4byte	.LVL84
+	.4byte	.LVL88
 	.4byte	.LFE75
 	.2byte	0x1
 	.byte	0x67
 	.4byte	0
 	.4byte	0
 .LLST41:
-	.4byte	.LVL77
-	.4byte	.LVL78-1
+	.4byte	.LVL81
+	.4byte	.LVL82-1
 	.2byte	0x1
 	.byte	0x5d
-	.4byte	.LVL78-1
+	.4byte	.LVL82-1
 	.4byte	.LFE75
 	.2byte	0x4
 	.byte	0xf3
@@ -10091,11 +10134,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST42:
-	.4byte	.LVL77
-	.4byte	.LVL78-1
+	.4byte	.LVL81
+	.4byte	.LVL82-1
 	.2byte	0x1
 	.byte	0x5e
-	.4byte	.LVL78-1
+	.4byte	.LVL82-1
 	.4byte	.LFE75
 	.2byte	0x4
 	.byte	0xf3
@@ -10105,11 +10148,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST43:
-	.4byte	.LVL77
-	.4byte	.LVL78-1
+	.4byte	.LVL81
+	.4byte	.LVL82-1
 	.2byte	0x1
 	.byte	0x5f
-	.4byte	.LVL78-1
+	.4byte	.LVL82-1
 	.4byte	.LFE75
 	.2byte	0x4
 	.byte	0xf3
@@ -10119,68 +10162,68 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST44:
-	.4byte	.LVL79
-	.4byte	.LVL80
+	.4byte	.LVL83
+	.4byte	.LVL84
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL80
-	.4byte	.LVL81
-	.2byte	0x1
-	.byte	0x62
 	.4byte	.LVL84
 	.4byte	.LVL85
 	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL85
-	.4byte	.LVL90
-	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL93
-	.4byte	.LVL94
+	.4byte	.LVL88
+	.4byte	.LVL89
 	.2byte	0x1
 	.byte	0x5a
+	.4byte	.LVL89
 	.4byte	.LVL94
-	.4byte	.LVL96
 	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL96
 	.4byte	.LVL97
+	.4byte	.LVL98
+	.2byte	0x1
+	.byte	0x5a
+	.4byte	.LVL98
+	.4byte	.LVL100
+	.2byte	0x1
+	.byte	0x62
+	.4byte	.LVL100
+	.4byte	.LVL101
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST45:
-	.4byte	.LVL84
 	.4byte	.LVL88
+	.4byte	.LVL92
 	.2byte	0x2
 	.byte	0x4e
 	.byte	0x9f
-	.4byte	.LVL93
 	.4byte	.LVL97
+	.4byte	.LVL101
 	.2byte	0x2
 	.byte	0x4e
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST46:
-	.4byte	.LVL84
-	.4byte	.LVL87
+	.4byte	.LVL88
+	.4byte	.LVL91
 	.2byte	0x4
 	.byte	0x78
 	.byte	0xb0,0x7f
 	.byte	0x9f
-	.4byte	.LVL87
-	.4byte	.LVL88-1
+	.4byte	.LVL91
+	.4byte	.LVL92-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL88-1
-	.4byte	.LVL88
+	.4byte	.LVL92-1
+	.4byte	.LVL92
 	.2byte	0x4
 	.byte	0x78
 	.byte	0xb0,0x7f
 	.byte	0x9f
-	.4byte	.LVL93
 	.4byte	.LVL97
+	.4byte	.LVL101
 	.2byte	0x4
 	.byte	0x78
 	.byte	0xb0,0x7f
@@ -10188,43 +10231,43 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST47:
-	.4byte	.LVL84
-	.4byte	.LVL85
-	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL85
 	.4byte	.LVL88
-	.2byte	0x1
-	.byte	0x62
-	.4byte	.LVL93
-	.4byte	.LVL94
+	.4byte	.LVL89
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL94
-	.4byte	.LVL96
+	.4byte	.LVL89
+	.4byte	.LVL92
 	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL96
 	.4byte	.LVL97
+	.4byte	.LVL98
+	.2byte	0x1
+	.byte	0x5a
+	.4byte	.LVL98
+	.4byte	.LVL100
+	.2byte	0x1
+	.byte	0x62
+	.4byte	.LVL100
+	.4byte	.LVL101
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST22:
-	.4byte	.LVL39
-	.4byte	.LVL40
+	.4byte	.LVL43
+	.4byte	.LVL44
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL40
-	.4byte	.LVL41-1
+	.4byte	.LVL44
+	.4byte	.LVL45-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL41-1
-	.4byte	.LVL46
+	.4byte	.LVL45-1
+	.4byte	.LVL50
 	.2byte	0x2
 	.byte	0x78
 	.byte	0x5c
-	.4byte	.LVL46
+	.4byte	.LVL50
 	.4byte	.LFE92
 	.2byte	0x2
 	.byte	0x91
@@ -10232,60 +10275,60 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST23:
-	.4byte	.LVL42
-	.4byte	.LVL47
+	.4byte	.LVL46
+	.4byte	.LVL51
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST24:
-	.4byte	.LVL49
-	.4byte	.LVL52
+	.4byte	.LVL53
+	.4byte	.LVL56
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL52
-	.4byte	.LVL54
+	.4byte	.LVL56
+	.4byte	.LVL58
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL54
-	.4byte	.LVL55-1
+	.4byte	.LVL58
+	.4byte	.LVL59-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL55-1
-	.4byte	.LVL55
+	.4byte	.LVL59-1
+	.4byte	.LVL59
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL55
+	.4byte	.LVL59
 	.4byte	.LFE83
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST25:
-	.4byte	.LVL49
-	.4byte	.LVL50
+	.4byte	.LVL53
+	.4byte	.LVL54
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL50
-	.4byte	.LVL55
+	.4byte	.LVL54
+	.4byte	.LVL59
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL55
+	.4byte	.LVL59
 	.4byte	.LFE83
 	.2byte	0x1
 	.byte	0x5b
 	.4byte	0
 	.4byte	0
 .LLST26:
-	.4byte	.LVL51
 	.4byte	.LVL55
+	.4byte	.LVL59
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
@@ -10294,20 +10337,20 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST27:
-	.4byte	.LVL51
-	.4byte	.LVL52
+	.4byte	.LVL55
+	.4byte	.LVL56
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL52
-	.4byte	.LVL54
+	.4byte	.LVL56
+	.4byte	.LVL58
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL54
-	.4byte	.LVL55-1
+	.4byte	.LVL58
+	.4byte	.LVL59-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL55-1
-	.4byte	.LVL55
+	.4byte	.LVL59-1
+	.4byte	.LVL59
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
@@ -10316,11 +10359,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST48:
-	.4byte	.LVL109
-	.4byte	.LVL110
+	.4byte	.LVL115
+	.4byte	.LVL116
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL110
+	.4byte	.LVL116
 	.4byte	.LFE86
 	.2byte	0x5
 	.byte	0x3
@@ -10328,11 +10371,11 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	0
 .LLST49:
-	.4byte	.LVL111
-	.4byte	.LVL112
+	.4byte	.LVL117
+	.4byte	.LVL118
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL112
+	.4byte	.LVL118
 	.4byte	.LFE87
 	.2byte	0x5
 	.byte	0x3
@@ -10349,10 +10392,10 @@ __compound_literal.8:
 	.2byte	0
 	.4byte	.LFB79
 	.4byte	.LFE79-.LFB79
-	.4byte	.LFB102
-	.4byte	.LFE102-.LFB102
 	.4byte	.LFB103
 	.4byte	.LFE103-.LFB103
+	.4byte	.LFB102
+	.4byte	.LFE102-.LFB102
 	.4byte	.LFB77
 	.4byte	.LFE77-.LFB77
 	.4byte	.LFB76
@@ -10461,10 +10504,10 @@ __compound_literal.8:
 	.4byte	0
 	.4byte	.LFB79
 	.4byte	.LFE79
-	.4byte	.LFB102
-	.4byte	.LFE102
 	.4byte	.LFB103
 	.4byte	.LFE103
+	.4byte	.LFB102
+	.4byte	.LFE102
 	.4byte	.LFB77
 	.4byte	.LFE77
 	.4byte	.LFB76
@@ -10518,7 +10561,7 @@ __compound_literal.8:
 	.section	.debug_str,"MS",@progbits,1
 .LASF117:
 	.string	"BT_DEV_READY"
-.LASF299:
+.LASF304:
 	.string	"check_and_save_config"
 .LASF48:
 	.string	"_POLL_NUM_TYPES"
@@ -10534,7 +10577,7 @@ __compound_literal.8:
 	.string	"BT_DEV_NUM_FLAGS"
 .LASF189:
 	.string	"user_data"
-.LASF239:
+.LASF240:
 	.string	"ble_slave_init"
 .LASF23:
 	.string	"tail"
@@ -10542,13 +10585,13 @@ __compound_literal.8:
 	.string	"BT_LE_SCAN_TYPE_PASSIVE"
 .LASF133:
 	.string	"BT_DEV_ID_PENDING"
-.LASF285:
+.LASF287:
 	.string	"bt_gatt_get_mtu"
 .LASF107:
 	.string	"tx_pending"
 .LASF60:
 	.string	"work_q"
-.LASF281:
+.LASF283:
 	.string	"bt_gatt_service_register"
 .LASF106:
 	.string	"rx_len"
@@ -10564,7 +10607,7 @@ __compound_literal.8:
 	.string	"BT_DEV_AUTO_CONN"
 .LASF105:
 	.string	"state"
-.LASF277:
+.LASF279:
 	.string	"hci_driver_init"
 .LASF32:
 	.string	"k_queue"
@@ -10576,7 +10619,7 @@ __compound_literal.8:
 	.string	"type"
 .LASF86:
 	.string	"BT_LE_ADV_OPT_FILTER_SCAN_REQ"
-.LASF251:
+.LASF252:
 	.string	"conn"
 .LASF62:
 	.string	"k_work"
@@ -10586,9 +10629,9 @@ __compound_literal.8:
 	.string	"BT_LE_ADV_OPT_CONNECTABLE"
 .LASF78:
 	.string	"data_len"
-.LASF269:
+.LASF290:
 	.string	"relay_off"
-.LASF294:
+.LASF299:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.c"
 .LASF99:
 	.string	"interval"
@@ -10596,7 +10639,7 @@ __compound_literal.8:
 	.string	"BT_CONN_NUM_FLAGS"
 .LASF132:
 	.string	"BT_DEV_RPA_VALID"
-.LASF272:
+.LASF274:
 	.string	"bt_disable"
 .LASF179:
 	.string	"BT_GATT_PERM_READ"
@@ -10620,7 +10663,7 @@ __compound_literal.8:
 	.string	"BT_CONN_BR_PAIRING"
 .LASF191:
 	.string	"bt_gatt_service"
-.LASF233:
+.LASF234:
 	.string	"apps_ble_start"
 .LASF213:
 	.string	"config_done_cb"
@@ -10642,13 +10685,13 @@ __compound_literal.8:
 	.string	"BT_CONN_TYPE_LE"
 .LASF222:
 	.string	"wifi_config_service"
-.LASF276:
+.LASF278:
 	.string	"ble_controller_init"
 .LASF138:
 	.string	"BT_CONN_TYPE_ISO"
 .LASF6:
 	.string	"unsigned char"
-.LASF237:
+.LASF238:
 	.string	"ble_server_deinit"
 .LASF129:
 	.string	"BT_DEV_SCAN_FILTER_DUP"
@@ -10674,7 +10717,7 @@ __compound_literal.8:
 	.string	"pending_no_cb"
 .LASF111:
 	.string	"tx_queue"
-.LASF225:
+.LASF226:
 	.string	"scan_param"
 .LASF82:
 	.string	"BT_LE_ADV_OPT_USE_IDENTITY"
@@ -10684,9 +10727,9 @@ __compound_literal.8:
 	.string	"timer"
 .LASF128:
 	.string	"BT_DEV_ACTIVE_SCAN"
-.LASF300:
+.LASF305:
 	.string	"__builtin_memcpy"
-.LASF247:
+.LASF248:
 	.string	"ble_regist_disconn"
 .LASF206:
 	.string	"attr"
@@ -10696,7 +10739,7 @@ __compound_literal.8:
 	.string	"BT_CONN_CLEANUP"
 .LASF64:
 	.string	"flags"
-.LASF253:
+.LASF254:
 	.string	"ble_ccc_cfg_changed"
 .LASF185:
 	.string	"BT_GATT_PERM_PREPARE_WRITE"
@@ -10704,21 +10747,21 @@ __compound_literal.8:
 	.string	"attrs"
 .LASF19:
 	.string	"_snode"
-.LASF236:
+.LASF237:
 	.string	"ble_server_init"
-.LASF290:
+.LASF294:
 	.string	"strcmp"
 .LASF141:
 	.string	"BT_CONN_CONNECT_SCAN"
 .LASF92:
 	.string	"BT_LE_SCAN_FILTER_DUPLICATE"
-.LASF273:
+.LASF275:
 	.string	"aos_msleep"
 .LASF83:
 	.string	"BT_LE_ADV_OPT_USE_NAME"
 .LASF182:
 	.string	"BT_GATT_PERM_WRITE_ENCRYPT"
-.LASF295:
+.LASF300:
 	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/ble"
 .LASF70:
 	.string	"node"
@@ -10732,15 +10775,15 @@ __compound_literal.8:
 	.string	"BT_UUID_TYPE_16"
 .LASF130:
 	.string	"BT_DEV_SCAN_WL"
-.LASF298:
+.LASF303:
 	.string	"ble_get_conn_cur"
 .LASF174:
 	.string	"bt_uuid"
 .LASF209:
 	.string	"BT_GATT_SUBSCRIBE_FLAG_WRITE_PENDING"
-.LASF279:
+.LASF281:
 	.string	"bt_gatt_service_unregister"
-.LASF266:
+.LASF268:
 	.string	"printf"
 .LASF183:
 	.string	"BT_GATT_PERM_READ_AUTHEN"
@@ -10750,7 +10793,7 @@ __compound_literal.8:
 	.string	"BT_LE_ADV_OPT_NONE"
 .LASF166:
 	.string	"latency"
-.LASF297:
+.LASF302:
 	.string	"bt_keys"
 .LASF139:
 	.string	"BT_CONN_TYPE_ALL"
@@ -10758,11 +10801,11 @@ __compound_literal.8:
 	.string	"BT_CONN_USER"
 .LASF101:
 	.string	"ble_gatt_conn_cb_t"
-.LASF292:
+.LASF297:
 	.string	"bt_conn_disconnect"
 .LASF50:
 	.string	"_poll_states_bits"
-.LASF249:
+.LASF250:
 	.string	"bt_enable_cb"
 .LASF172:
 	.string	"BT_UUID_TYPE_32"
@@ -10776,11 +10819,11 @@ __compound_literal.8:
 	.string	"BT_CONN_FORCE_PAIR"
 .LASF146:
 	.string	"bt_conn_state_t"
-.LASF224:
+.LASF225:
 	.string	"ble_scan_start"
-.LASF287:
+.LASF291:
 	.string	"strcpy"
-.LASF293:
+.LASF298:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF27:
 	.string	"sys_dlist_t"
@@ -10790,7 +10833,7 @@ __compound_literal.8:
 	.string	"bt_gatt_ccc_cfg"
 .LASF84:
 	.string	"BT_LE_ADV_OPT_DIR_MODE_LOW_DUTY"
-.LASF243:
+.LASF244:
 	.string	"bt_addr"
 .LASF90:
 	.string	"interval_min"
@@ -10798,22 +10841,26 @@ __compound_literal.8:
 	.string	"BT_GATT_PERM_NONE"
 .LASF212:
 	.string	"disconn_cb"
-.LASF283:
+.LASF285:
 	.string	"bt_le_adv_start"
-.LASF254:
+.LASF255:
 	.string	"notify_data"
 .LASF97:
 	.string	"bt_le_scan_param"
 .LASF40:
 	.string	"args"
-.LASF288:
+.LASF270:
+	.string	"relay_toggle"
+.LASF292:
 	.string	"snprintf"
 .LASF69:
 	.string	"__buf"
 .LASF94:
 	.string	"BT_LE_SCAN_FILTER_EXTENDED"
-.LASF231:
+.LASF232:
 	.string	"disconn_cnt"
+.LASF295:
+	.string	"test_ble_master"
 .LASF195:
 	.string	"value_handle"
 .LASF147:
@@ -10828,19 +10875,19 @@ __compound_literal.8:
 	.string	"sys_slist_t"
 .LASF61:
 	.string	"k_work_handler_t"
-.LASF291:
+.LASF296:
 	.string	"bt_get_local_public_address"
-.LASF238:
+.LASF239:
 	.string	"ble_slave_deinit"
 .LASF33:
 	.string	"poll_events"
-.LASF241:
+.LASF242:
 	.string	"ble_reverse_byte"
 .LASF194:
 	.string	"bt_gatt_chrc"
 .LASF58:
 	.string	"k_delayed_work"
-.LASF258:
+.LASF259:
 	.string	"adv_parse_cb"
 .LASF181:
 	.string	"BT_GATT_PERM_READ_ENCRYPT"
@@ -10852,9 +10899,9 @@ __compound_literal.8:
 	.string	"net_buf_simple"
 .LASF46:
 	.string	"_POLL_TYPE_SEM_AVAILABLE"
-.LASF289:
+.LASF293:
 	.string	"bt_conn_get_dst"
-.LASF226:
+.LASF227:
 	.string	"addr"
 .LASF187:
 	.string	"read"
@@ -10878,7 +10925,7 @@ __compound_literal.8:
 	.string	"BT_LE_SCAN_TYPE_ACTIVE"
 .LASF148:
 	.string	"BT_CONN_BR_LEGACY_SECURE"
-.LASF235:
+.LASF236:
 	.string	"ble_stack_start"
 .LASF93:
 	.string	"BT_LE_SCAN_FILTER_WHITELIST"
@@ -10890,7 +10937,7 @@ __compound_literal.8:
 	.string	"bt_gatt_complete_func_t"
 .LASF219:
 	.string	"s_ble_service_registered"
-.LASF256:
+.LASF257:
 	.string	"offset"
 .LASF140:
 	.string	"BT_CONN_DISCONNECTED"
@@ -10898,11 +10945,13 @@ __compound_literal.8:
 	.string	"BT_CONN_SLAVE_PARAM_SET"
 .LASF123:
 	.string	"BT_DEV_ADVERTISING_NAME"
+.LASF223:
+	.string	"relay_current_state"
 .LASF120:
 	.string	"BT_DEV_HAS_PUB_KEY"
 .LASF122:
 	.string	"BT_DEV_ADVERTISING"
-.LASF228:
+.LASF229:
 	.string	"company_id"
 .LASF113:
 	.string	"update_work"
@@ -10912,13 +10961,13 @@ __compound_literal.8:
 	.string	"_dnode"
 .LASF159:
 	.string	"BT_CONN_AUTO_PHY_COMPLETE"
-.LASF274:
+.LASF276:
 	.string	"ble_controller_deinit"
-.LASF261:
+.LASF262:
 	.string	"test_mac"
 .LASF37:
 	.string	"k_timer"
-.LASF229:
+.LASF230:
 	.string	"product"
 .LASF59:
 	.string	"work"
@@ -10926,41 +10975,41 @@ __compound_literal.8:
 	.string	"handle"
 .LASF124:
 	.string	"BT_DEV_ADVERTISING_CONNECTABLE"
-.LASF264:
+.LASF265:
 	.string	"bt_addr_le_to_str"
-.LASF275:
+.LASF277:
 	.string	"vTaskDelay"
 .LASF201:
 	.string	"cfg_changed"
-.LASF246:
+.LASF247:
 	.string	"ble_salve_adv"
-.LASF223:
+.LASF224:
 	.string	"handle_ble_scan"
 .LASF68:
 	.string	"size"
 .LASF11:
 	.string	"long long unsigned int"
-.LASF262:
+.LASF263:
 	.string	"params"
-.LASF267:
+.LASF269:
 	.string	"bt_data_parse"
-.LASF255:
+.LASF256:
 	.string	"length"
 .LASF7:
 	.string	"uint16_t"
-.LASF257:
+.LASF258:
 	.string	"send_len"
-.LASF250:
+.LASF251:
 	.string	"ble_disconnect_all"
 .LASF35:
 	.string	"_queue"
 .LASF199:
 	.string	"value"
-.LASF282:
+.LASF284:
 	.string	"bt_le_adv_stop"
-.LASF296:
+.LASF301:
 	.string	"net_buf"
-.LASF244:
+.LASF245:
 	.string	"ble_adv_stop"
 .LASF137:
 	.string	"BT_CONN_TYPE_SCO"
@@ -10972,13 +11021,15 @@ __compound_literal.8:
 	.string	"BT_CONN_BR_PAIRING_INITIATOR"
 .LASF115:
 	.string	"TickType_t"
-.LASF265:
+.LASF267:
 	.string	"bt_le_scan_start"
+.LASF271:
+	.string	"app_mqtt_publish_state"
 .LASF110:
 	.string	"tx_complete_work"
 .LASF184:
 	.string	"BT_GATT_PERM_WRITE_AUTHEN"
-.LASF280:
+.LASF282:
 	.string	"memset"
 .LASF196:
 	.string	"properties"
@@ -11000,27 +11051,27 @@ __compound_literal.8:
 	.string	"BT_DEV_EXPLICIT_SCAN"
 .LASF180:
 	.string	"BT_GATT_PERM_WRITE"
-.LASF259:
+.LASF260:
 	.string	"ble_password_write_val"
-.LASF268:
+.LASF289:
 	.string	"relay_on"
 .LASF1:
 	.string	"short int"
 .LASF207:
 	.string	"func"
-.LASF270:
+.LASF272:
 	.string	"bt_conn_foreach"
-.LASF232:
+.LASF233:
 	.string	"apps_ble_stop"
 .LASF116:
 	.string	"BT_DEV_ENABLE"
 .LASF176:
 	.string	"uuid"
-.LASF252:
+.LASF253:
 	.string	"scan_device_found"
 .LASF161:
 	.string	"BT_CONN_AUTO_VERSION_INFO"
-.LASF242:
+.LASF243:
 	.string	"conn_cur"
 .LASF145:
 	.string	"BT_CONN_DISCONNECT"
@@ -11028,15 +11079,15 @@ __compound_literal.8:
 	.string	"BT_DEV_SCANNING"
 .LASF77:
 	.string	"bt_data"
-.LASF230:
+.LASF231:
 	.string	"dev_id"
 .LASF118:
 	.string	"BT_DEV_PRESET_ID"
 .LASF200:
 	.string	"_bt_gatt_ccc"
-.LASF278:
+.LASF280:
 	.string	"bt_enable"
-.LASF286:
+.LASF288:
 	.string	"memcpy"
 .LASF220:
 	.string	"salve_adv"
@@ -11044,13 +11095,13 @@ __compound_literal.8:
 	.string	"BT_CONN_CONNECTED"
 .LASF136:
 	.string	"BT_CONN_TYPE_BR"
-.LASF248:
+.LASF249:
 	.string	"ble_regist_conn"
 .LASF205:
 	.string	"bt_gatt_notify_params"
 .LASF125:
 	.string	"BT_DEV_KEEP_ADVERTISING"
-.LASF245:
+.LASF246:
 	.string	"ble_adv_start"
 .LASF9:
 	.string	"uint32_t"
@@ -11076,21 +11127,23 @@ __compound_literal.8:
 	.string	"bt_gatt_attr"
 .LASF217:
 	.string	"has_password"
-.LASF271:
+.LASF273:
 	.string	"le_check_valid_conn"
 .LASF89:
 	.string	"options"
-.LASF234:
+.LASF266:
+	.string	"relay_init"
+.LASF235:
 	.string	"wait_count"
 .LASF73:
 	.string	"bt_addr_t"
-.LASF260:
+.LASF261:
 	.string	"ble_ssid_write_val"
-.LASF263:
+.LASF264:
 	.string	"bt_gatt_notify"
 .LASF51:
 	.string	"_POLL_STATE_NOT_READY"
-.LASF227:
+.LASF228:
 	.string	"rssi"
 .LASF53:
 	.string	"_POLL_STATE_SEM_AVAILABLE"
@@ -11104,7 +11157,7 @@ __compound_literal.8:
 	.string	"BT_DEV_PUB_KEY_BUSY"
 .LASF102:
 	.string	"bt_conn"
-.LASF284:
+.LASF286:
 	.string	"bt_gatt_notify_cb"
 .LASF56:
 	.string	"k_work_q"
@@ -11112,7 +11165,7 @@ __compound_literal.8:
 	.string	"_POLL_NUM_STATES"
 .LASF216:
 	.string	"has_ssid"
-.LASF240:
+.LASF241:
 	.string	"ble_set_config_done_cb"
 .LASF43:
 	.string	"k_timer_t"

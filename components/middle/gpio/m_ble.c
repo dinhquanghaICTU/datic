@@ -13,6 +13,9 @@ static app_ble_config_done_cb_t g_config_done_cb = NULL;
 static bool g_ble_running = false;
 static bool g_ble_stack_started = false;
 static bool g_ble_adv_running = false;
+
+
+static bool ble_slave = false;
 static void ble_config_done_handler(const char *ssid, const char *password)
 {
     if (app_config_save_wifi(ssid, password) == 0) {

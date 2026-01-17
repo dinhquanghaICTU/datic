@@ -6885,6 +6885,17 @@ static
                                0
 # 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                                     ;
+
+
+static 
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+      _Bool 
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+           ble_slave = 
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+                       0
+# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+                            ;
 static void ble_config_done_handler(const char *ssid, const char *password)
 {
     if (app_config_save_wifi(ssid, password) == 0) {
@@ -6897,10 +6908,10 @@ static void ble_config_done_handler(const char *ssid, const char *password)
         app_event_t event = {
             .type = APP_EVENT_BLE_CONFIG_DONE,
             .data = 
-# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                    ((void *)0)
         
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
        };
         app_state_process_event(&event);
     }
@@ -6922,22 +6933,22 @@ int app_ble_start(void)
         aos_msleep(1000);
         ble_scan_start();
         g_ble_stack_started = 
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                              1
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                                  ;
     }
 
     if (ble_adv_start() == 0) {
         g_ble_adv_running = 
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                            1
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                                ;
         g_ble_running = 
-# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                        1
-# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                            ;
         return 0;
     }
@@ -6952,22 +6963,22 @@ int app_ble_stop(void)
     }
     ble_adv_stop();
     g_ble_adv_running = 
-# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                        0
-# 66 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                             ;
     g_ble_running = 
-# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
                    0
-# 67 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
                         ;
     return 0;
 }
 
 
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
+# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 3 4
 _Bool 
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
     app_ble_is_running(void)
 {
     return g_ble_running;
