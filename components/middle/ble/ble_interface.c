@@ -160,9 +160,6 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
 static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                                       const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
-    (void)conn;
-    (void)attr;
-    (void)flags;
 
     if (len == 0) {
         return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);

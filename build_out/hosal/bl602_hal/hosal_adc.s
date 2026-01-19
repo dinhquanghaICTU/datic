@@ -21,7 +21,7 @@
 	.type	adc_parse_data.constprop.0, @function
 adc_parse_data.constprop.0:
 .LFB36:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_adc.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_adc.c"
 	.loc 1 446 12
 	.cfi_startproc
 .LVL0:
@@ -2051,20 +2051,20 @@ adc_refer_voltage:
 	.word	1065353216
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_adc.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/dma_reg.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_adc.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/dma_reg.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.file 16 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -8396,6 +8396,8 @@ adc_refer_voltage:
 	.string	"data_size"
 .LASF106:
 	.string	"ADC_PGA_GAIN_2"
+.LASF340:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF270:
 	.string	"offset"
 .LASF169:
@@ -8466,8 +8468,6 @@ adc_refer_voltage:
 	.string	"dma_chan"
 .LASF315:
 	.string	"ADC_Channel_Config"
-.LASF340:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF299:
 	.string	"update_tsen_v"
 .LASF167:
@@ -8496,6 +8496,8 @@ adc_refer_voltage:
 	.string	"ADC_CFG_Type"
 .LASF108:
 	.string	"ADC_PGA_GAIN_8"
+.LASF339:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_adc.c"
 .LASF148:
 	.string	"resWidth"
 .LASF60:
@@ -8754,8 +8756,6 @@ adc_refer_voltage:
 	.string	"biasSel"
 .LASF56:
 	.string	"ENABLE"
-.LASF339:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_adc.c"
 .LASF181:
 	.string	"DMA_BURST_SIZE_1"
 .LASF189:

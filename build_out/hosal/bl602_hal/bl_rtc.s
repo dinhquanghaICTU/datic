@@ -12,7 +12,7 @@
 	.type	bl_rtc_init, @function
 bl_rtc_init:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_rtc.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_rtc.c"
 	.loc 1 5 1
 	.cfi_startproc
 	.loc 1 9 5
@@ -296,8 +296,8 @@ bl_rtc_get_delta_time_ms:
 	.size	bl_rtc_get_delta_time_ms, .-bl_rtc_get_delta_time_ms
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x232
@@ -988,6 +988,8 @@ bl_rtc_get_delta_time_ms:
 	.string	"uint64_t"
 .LASF0:
 	.string	"long long unsigned int"
+.LASF27:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_rtc.c"
 .LASF6:
 	.string	"unsigned char"
 .LASF8:
@@ -998,10 +1000,8 @@ bl_rtc_get_delta_time_ms:
 	.string	"bl_rtc_get_delta_counter"
 .LASF17:
 	.string	"ref_cnt"
-.LASF27:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_rtc.c"
 .LASF28:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF1:
 	.string	"unsigned int"
 .LASF18:

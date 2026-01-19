@@ -1,26 +1,26 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 1
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/encoding.h" 1
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/bits.h" 1
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/encoding.h" 1
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/bits.h" 1
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -80,11 +80,11 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 2
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h" 2
 
 
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h"
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h"
 typedef uintptr_t insn_t;
 typedef void (*emulation_func)(uintptr_t*, uintptr_t, uintptr_t, uintptr_t, insn_t);
 
@@ -95,18 +95,18 @@ void redirect_trap(uintptr_t epc, uintptr_t mstatus, uintptr_t badaddr);
 void truly_illegal_insn(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc, uintptr_t mstatus, insn_t insn);
 void emulate_rvc_0(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc, uintptr_t mstatus, insn_t insn);
 void emulate_rvc_2(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc, uintptr_t mstatus, insn_t insn);
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/fp_emulation.h" 1
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/fp_emulation.h" 1
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/encoding.h" 1
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 2
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/encoding.h" 1
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 2
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h"
 static inline uint8_t load_uint8_t(const uint8_t* addr, uintptr_t mepc) { register uintptr_t __mstatus_adjust asm ("a1") = 0x00020000; register uintptr_t __mepc asm ("a2") = mepc; register uintptr_t __mstatus asm ("a3"); uint8_t val; asm ("csrrs %0, mstatus, %3\n" "lbu" " %1, %2\n" "csrw mstatus, %0" : "+&r" (__mstatus), "=&r" (val) : "m" (*addr), "r" (__mstatus_adjust), "r" (__mepc)); return val; }
 static inline uint16_t load_uint16_t(const uint16_t* addr, uintptr_t mepc) { register uintptr_t __mstatus_adjust asm ("a1") = 0x00020000; register uintptr_t __mepc asm ("a2") = mepc; register uintptr_t __mstatus asm ("a3"); uint16_t val; asm ("csrrs %0, mstatus, %3\n" "lhu" " %1, %2\n" "csrw mstatus, %0" : "+&r" (__mstatus), "=&r" (val) : "m" (*addr), "r" (__mstatus_adjust), "r" (__mepc)); return val; }
 static inline int8_t load_int8_t(const int8_t* addr, uintptr_t mepc) { register uintptr_t __mstatus_adjust asm ("a1") = 0x00020000; register uintptr_t __mepc asm ("a2") = mepc; register uintptr_t __mstatus asm ("a3"); int8_t val; asm ("csrrs %0, mstatus, %3\n" "lb" " %1, %2\n" "csrw mstatus, %0" : "+&r" (__mstatus), "=&r" (val) : "m" (*addr), "r" (__mstatus_adjust), "r" (__mepc)); return val; }
@@ -175,8 +175,8 @@ static uintptr_t inline __attribute__((always_inline)) get_insn(uintptr_t mepc, 
   *mstatus = __mstatus;
   return val;
 }
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 2
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 2
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
 union byte_array {
   uint8_t bytes[8];
   uintptr_t intx;
@@ -205,7 +205,7 @@ void misaligned_load_trap(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc)
   int shift = 0, fp = 0, len;
   if ((insn & 0x707f) == 0x2003)
     len = 4, shift = 8*(sizeof(uintptr_t) - len);
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
   else if ((insn & 0x707f) == 0x2007)
     fp = 1, len = 4;
 
@@ -224,7 +224,7 @@ void misaligned_load_trap(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc)
     len = 4, shift = 8*(sizeof(uintptr_t) - len), insn = (8 + (((insn) >> (2)) & ((1 << (3)) - 1))) << 7;
   else if ((insn & 0xe003) == 0x4002 && ((insn >> 7) & 0x1f))
     len = 4, shift = 8*(sizeof(uintptr_t) - len);
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 82 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
   else if ((insn & 0xe003) == 0x6000)
     fp = 1, len = 4, insn = (8 + (((insn) >> (2)) & ((1 << (3)) - 1))) << 7;
   else if ((insn & 0xe003) == 0x6002)
@@ -268,7 +268,7 @@ void misaligned_store_trap(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc)
   val.intx = (*({ int mask = (1 << (5+2)) - (1 << 2); (uintptr_t*)((uintptr_t)regs + 31 * 4 + ((((20) - 2) < 0 ? ((insn) << -((20) - 2)) : ((insn) >> ((20) - 2))) & (mask))); }));
   if ((insn & 0x707f) == 0x2023)
     len = 4;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
   else if ((insn & 0x707f) == 0x2027)
     len = 4, val.intx = (({ register int32_t value asm("a0") = (((20)-3) < 0 ? ((insn) << -((20)-3)) : ((insn) >> ((20)-3))) & 0xf8; uintptr_t tmp; asm ("1: auipc %0, %%pcrel_hi(get_f32_reg); add %0, %0, %1; jalr t0, %0, %%pcrel_lo(1b)" : "=&r"(tmp), "+&r"(value) :: "t0"); value; }));
 
@@ -285,7 +285,7 @@ void misaligned_store_trap(uintptr_t* regs, uintptr_t mcause, uintptr_t mepc)
     len = 4, val.intx = (*({ int mask = (1 << (5+2)) - (1 << 2); (uintptr_t*)((uintptr_t)regs + 31 * 4 + ((((0) - 2) < 0 ? (((8 + (((insn) >> (2)) & ((1 << (3)) - 1)))) << -((0) - 2)) : (((8 + (((insn) >> (2)) & ((1 << (3)) - 1)))) >> ((0) - 2))) & (mask))); }));
   else if ((insn & 0xe003) == 0xc002 && ((insn >> 7) & 0x1f))
     len = 4, val.intx = (*({ int mask = (1 << (5+2)) - (1 << 2); (uintptr_t*)((uintptr_t)regs + 31 * 4 + ((((2) - 2) < 0 ? ((insn) << -((2) - 2)) : ((insn) >> ((2) - 2))) & (mask))); }));
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+# 158 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
   else if ((insn & 0xe003) == 0xe000)
     len = 4, val.intx = (({ register int32_t value asm("a0") = (((0)-3) < 0 ? (((8 + (((insn) >> (2)) & ((1 << (3)) - 1)))) << -((0)-3)) : (((8 + (((insn) >> (2)) & ((1 << (3)) - 1)))) >> ((0)-3))) & 0xf8; uintptr_t tmp; asm ("1: auipc %0, %%pcrel_hi(get_f32_reg); add %0, %0, %1; jalr t0, %0, %%pcrel_lo(1b)" : "=&r"(tmp), "+&r"(value) :: "t0"); value; }));
   else if ((insn & 0xe003) == 0xe002)

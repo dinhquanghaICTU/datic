@@ -11,7 +11,7 @@
 	.type	cmd_timer_start, @function
 cmd_timer_start:
 .LFB7:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt_cli.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt_cli.c"
 	.loc 1 35 1
 	.cfi_startproc
 .LVL0:
@@ -229,9 +229,9 @@ cmds_user:
 	.word	cmd_timer_start
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x362
@@ -1407,8 +1407,6 @@ cmds_user:
 	.string	"cmd_wdt_disable"
 .LASF21:
 	.string	"atoi"
-.LASF24:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt_cli.c"
 .LASF2:
 	.string	"unsigned char"
 .LASF29:
@@ -1423,6 +1421,10 @@ cmds_user:
 	.string	"help"
 .LASF26:
 	.string	"cli_command"
+.LASF24:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt_cli.c"
+.LASF25:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF18:
 	.string	"bl_timer_tick_enable"
 .LASF28:
@@ -1439,8 +1441,6 @@ cmds_user:
 	.string	"function"
 .LASF13:
 	.string	"argc"
-.LASF25:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF7:
 	.string	"long long int"
 .LASF27:

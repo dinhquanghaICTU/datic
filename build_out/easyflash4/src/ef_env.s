@@ -11,7 +11,7 @@
 	.type	get_status, @function
 get_status:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env.c"
 	.loc 1 256 1
 	.cfi_startproc
 .LVL0:
@@ -845,7 +845,7 @@ find_env_cb:
 	.string	"Write sector hdr gc flag @0x%08x\r\n"
 	.align	2
 .LC1:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env.c"
 	.section	.text.write_hdr_gc,"ax",@progbits
 	.align	1
 	.type	write_hdr_gc, @function
@@ -1134,14 +1134,14 @@ write_status:
 	call	ef_log_debug
 .LVL117:
 .L109:
-	.loc 1 281 224 discriminator 1
-	.loc 1 281 233 discriminator 1
-	.loc 1 281 230 discriminator 1
+	.loc 1 281 217 discriminator 1
+	.loc 1 281 226 discriminator 1
+	.loc 1 281 223 discriminator 1
 	j	.L109
 .LVL118:
 .L108:
 	mv	s1,a1
-	.loc 1 281 236 discriminator 2
+	.loc 1 281 229 discriminator 2
 	.loc 1 282 5 discriminator 2
 	.loc 1 282 8 is_stmt 0 discriminator 2
 	bne	a1,zero,.L110
@@ -1162,9 +1162,9 @@ write_status:
 	call	ef_log_debug
 .LVL123:
 .L111:
-	.loc 1 282 198 discriminator 2
-	.loc 1 282 207 discriminator 2
-	.loc 1 282 204 discriminator 2
+	.loc 1 282 191 discriminator 2
+	.loc 1 282 200 discriminator 2
+	.loc 1 282 197 discriminator 2
 	j	.L111
 .LVL124:
 .L110:
@@ -1182,7 +1182,7 @@ write_status:
 .LVL126:
 .LBE41:
 .LBE40:
-	.loc 1 282 210 is_stmt 1
+	.loc 1 282 203 is_stmt 1
 	.loc 1 285 5
 .LBB43:
 .LBB42:
@@ -1928,12 +1928,12 @@ read_env.isra.0:
 	call	ef_log_debug
 .LVL191:
 .L163:
-	.loc 1 555 180
-	.loc 1 555 189
-	.loc 1 555 186
+	.loc 1 555 173
+	.loc 1 555 182
+	.loc 1 555 179
 	j	.L163
 .L162:
-	.loc 1 555 192
+	.loc 1 555 185
 	.loc 1 559 5
 	.loc 1 559 18 is_stmt 0
 	addi	s2,a5,-20
@@ -2101,15 +2101,15 @@ read_sector_meta_data:
 	call	ef_log_debug
 .LVL209:
 .L171:
-	.loc 1 594 215 discriminator 1
-	.loc 1 594 224 discriminator 1
-	.loc 1 594 221 discriminator 1
+	.loc 1 594 208 discriminator 1
+	.loc 1 594 217 discriminator 1
+	.loc 1 594 214 discriminator 1
 	j	.L171
 .LVL210:
 .L170:
 	mv	s1,a1
 	mv	s6,a2
-	.loc 1 594 227
+	.loc 1 594 220
 	.loc 1 595 5
 .LBB85:
 .LBB86:
@@ -2120,7 +2120,7 @@ read_sector_meta_data:
 .LVL212:
 	mv	s3,a0
 .LVL213:
-	.loc 1 595 198 is_stmt 1
+	.loc 1 595 191 is_stmt 1
 	.loc 1 598 5
 	call	ef_port_read
 .LVL214:
@@ -3982,7 +3982,7 @@ del_env:
 .LBB152:
 .LBB151:
 	.loc 1 304 5 is_stmt 1
-	.loc 1 304 210
+	.loc 1 304 203
 	.loc 1 306 5
 	addi	a1,s0,-132
 .LVL389:
@@ -4524,16 +4524,16 @@ format_sector.constprop.0:
 	call	ef_log_debug
 .LVL448:
 .L319:
-	.loc 1 960 215
-	.loc 1 960 224
-	.loc 1 960 221
+	.loc 1 960 208
+	.loc 1 960 217
+	.loc 1 960 214
 	j	.L319
 .LVL449:
 .L318:
 	.loc 1 962 14 is_stmt 0
 	li	a1,4096
 	mv	s2,a0
-	.loc 1 960 227 is_stmt 1
+	.loc 1 960 220 is_stmt 1
 	.loc 1 962 5
 	.loc 1 962 14 is_stmt 0
 	call	ef_port_erase
@@ -5393,13 +5393,13 @@ ef_read_env_value:
 	call	ef_log_debug
 .LVL534:
 .L387:
-	.loc 1 916 180 discriminator 1
-	.loc 1 916 189 discriminator 1
-	.loc 1 916 186 discriminator 1
+	.loc 1 916 173 discriminator 1
+	.loc 1 916 182 discriminator 1
+	.loc 1 916 179 discriminator 1
 	j	.L387
 .LVL535:
 .L386:
-	.loc 1 916 192 discriminator 2
+	.loc 1 916 185 discriminator 2
 	.loc 1 917 5 discriminator 2
 	.loc 1 917 8 is_stmt 0 discriminator 2
 	bne	a1,zero,.L388
@@ -5419,13 +5419,13 @@ ef_read_env_value:
 	call	ef_log_debug
 .LVL539:
 .L389:
-	.loc 1 917 192 discriminator 2
-	.loc 1 917 201 discriminator 2
-	.loc 1 917 198 discriminator 2
+	.loc 1 917 185 discriminator 2
+	.loc 1 917 194 discriminator 2
+	.loc 1 917 191 discriminator 2
 	j	.L389
 .LVL540:
 .L388:
-	.loc 1 917 204 discriminator 2
+	.loc 1 917 197 discriminator 2
 	.loc 1 919 5 discriminator 2
 	.loc 1 919 8 is_stmt 0 discriminator 2
 	lui	a5,%hi(.LANCHOR11)
@@ -6160,12 +6160,12 @@ ef_env_set_default:
 	call	ef_log_debug
 .LVL611:
 .L450:
-	.loc 1 1624 205 discriminator 1
-	.loc 1 1624 214 discriminator 1
-	.loc 1 1624 211 discriminator 1
+	.loc 1 1624 198 discriminator 1
+	.loc 1 1624 207 discriminator 1
+	.loc 1 1624 204 discriminator 1
 	j	.L450
 .L449:
-	.loc 1 1624 217 discriminator 2
+	.loc 1 1624 210 discriminator 2
 	.loc 1 1625 5 discriminator 2
 	.loc 1 1625 9 is_stmt 0 discriminator 2
 	lui	s3,%hi(.LANCHOR17)
@@ -6186,9 +6186,9 @@ ef_env_set_default:
 	call	ef_log_debug
 .LVL612:
 .L452:
-	.loc 1 1625 215 discriminator 2
-	.loc 1 1625 224 discriminator 2
-	.loc 1 1625 221 discriminator 2
+	.loc 1 1625 208 discriminator 2
+	.loc 1 1625 217 discriminator 2
+	.loc 1 1625 214 discriminator 2
 	j	.L452
 .L451:
 .LBB229:
@@ -6200,7 +6200,7 @@ ef_env_set_default:
 	lui	a5,%hi(.LANCHOR1)
 	lw	s2,%lo(.LANCHOR1)(a5)
 	addi	s1,s1,%lo(.LANCHOR15)
-	.loc 1 1625 227 is_stmt 1
+	.loc 1 1625 220 is_stmt 1
 	.loc 1 1628 5
 	.loc 1 1630 5
 .LVL614:
@@ -6772,13 +6772,13 @@ ef_env_init:
 	call	ef_log_debug
 .LVL661:
 .L479:
-	.loc 1 1946 197 discriminator 1
-	.loc 1 1946 206 discriminator 1
-	.loc 1 1946 203 discriminator 1
+	.loc 1 1946 190 discriminator 1
+	.loc 1 1946 199 discriminator 1
+	.loc 1 1946 196 discriminator 1
 	j	.L479
 .LVL662:
 .L478:
-	.loc 1 1946 209 discriminator 2
+	.loc 1 1946 202 discriminator 2
 	.loc 1 1947 5 discriminator 2
 	.loc 1 1947 9 is_stmt 0 discriminator 2
 	lui	a5,%hi(ENV_AREA_SIZE)
@@ -6800,16 +6800,16 @@ ef_env_init:
 	call	ef_log_debug
 .LVL665:
 .L481:
-	.loc 1 1947 201 discriminator 2
-	.loc 1 1947 210 discriminator 2
-	.loc 1 1947 207 discriminator 2
+	.loc 1 1947 194 discriminator 2
+	.loc 1 1947 203 discriminator 2
+	.loc 1 1947 200 discriminator 2
 	j	.L481
 .LVL666:
 .L480:
 	.loc 1 1949 25 is_stmt 0 discriminator 2
 	slli	a5,a4,20
 	mv	a3,a0
-	.loc 1 1947 213 is_stmt 1 discriminator 2
+	.loc 1 1947 206 is_stmt 1 discriminator 2
 	.loc 1 1949 5 discriminator 2
 	.loc 1 1949 25 is_stmt 0 discriminator 2
 	srli	a0,a5,20
@@ -6831,13 +6831,13 @@ ef_env_init:
 	call	ef_log_debug
 .LVL670:
 .L483:
-	.loc 1 1949 240 discriminator 3
-	.loc 1 1949 249 discriminator 3
-	.loc 1 1949 246 discriminator 3
+	.loc 1 1949 233 discriminator 3
+	.loc 1 1949 242 discriminator 3
+	.loc 1 1949 239 discriminator 3
 	j	.L483
 .LVL671:
 .L482:
-	.loc 1 1949 252 discriminator 2
+	.loc 1 1949 245 discriminator 2
 	.loc 1 1951 5 discriminator 2
 	.loc 1 1951 9 is_stmt 0 discriminator 2
 	lui	a5,%hi(SECTOR_NUM)
@@ -6860,15 +6860,15 @@ ef_env_init:
 	call	ef_log_debug
 .LVL674:
 .L485:
-	.loc 1 1951 205 discriminator 4
-	.loc 1 1951 214 discriminator 4
-	.loc 1 1951 211 discriminator 4
+	.loc 1 1951 198 discriminator 4
+	.loc 1 1951 207 discriminator 4
+	.loc 1 1951 204 discriminator 4
 	j	.L485
 .LVL675:
 .L484:
-	.loc 1 1951 217 discriminator 2
+	.loc 1 1951 210 discriminator 2
 	.loc 1 1953 5 discriminator 2
-	.loc 1 1953 266 discriminator 2
+	.loc 1 1953 259 discriminator 2
 	.loc 1 1955 5 discriminator 2
 	.loc 1 1955 9 is_stmt 0 discriminator 2
 	lui	a5,%hi(.LANCHOR11)
@@ -7113,15 +7113,15 @@ sector_hdr_gc_flag:
 	.word	-1
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
 	.file 11 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -22343,8 +22343,8 @@ sector_hdr_gc_flag:
 	.string	"env_node_obj"
 .LASF136:
 	.string	"create_env_blob"
-.LASF239:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env.c"
+.LASF192:
+	.string	"ff_addr"
 .LASF19:
 	.string	"EF_READ_ERR"
 .LASF194:
@@ -22509,8 +22509,6 @@ sector_hdr_gc_flag:
 	.string	"new_env"
 .LASF72:
 	.string	"remain"
-.LASF192:
-	.string	"ff_addr"
 .LASF59:
 	.string	"SECTOR_DIRTY_FALSE"
 .LASF188:
@@ -22519,6 +22517,8 @@ sector_hdr_gc_flag:
 	.string	"total_num"
 .LASF157:
 	.string	"empty_sector"
+.LASF240:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF131:
 	.string	"align_write"
 .LASF215:
@@ -22543,6 +22543,8 @@ sector_hdr_gc_flag:
 	.string	"ef_env_set_default"
 .LASF162:
 	.string	"sector_iterator"
+.LASF239:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env.c"
 .LASF142:
 	.string	"new_env_by_kv"
 .LASF168:
@@ -22619,8 +22621,6 @@ sector_hdr_gc_flag:
 	.string	"crc32"
 .LASF209:
 	.string	"min_activity"
-.LASF240:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF71:
 	.string	"check_ok"
 .LASF110:

@@ -11,7 +11,7 @@
 	.type	clock_root_clk_sel_0_parent_idx, @function
 clock_root_clk_sel_0_parent_idx:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_clocktree.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_clocktree.c"
 	.loc 1 39 1
 	.cfi_startproc
 .LVL0:
@@ -1372,9 +1372,9 @@ __compound_literal.9:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x816
@@ -3629,6 +3629,8 @@ __compound_literal.9:
 	.string	"clock_uart_div_get"
 .LASF68:
 	.string	"clock_tree_dump"
+.LASF66:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_clocktree.c"
 .LASF6:
 	.string	"long long int"
 .LASF40:
@@ -3657,8 +3659,6 @@ __compound_literal.9:
 	.string	"signed char"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF67:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF11:
 	.string	"uint32_t"
 .LASF25:
@@ -3681,6 +3681,8 @@ __compound_literal.9:
 	.string	"clock_flash_parent_idx"
 .LASF48:
 	.string	"tmpVal"
+.LASF67:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF27:
 	.string	"clock_pll_48m"
 .LASF22:
@@ -3703,8 +3705,6 @@ __compound_literal.9:
 	.string	"clock_uart"
 .LASF44:
 	.string	"dump_clock_node"
-.LASF66:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_clocktree.c"
 .LASF29:
 	.string	"clock_root_clk_sel_0"
 .LASF30:

@@ -12,7 +12,7 @@
 	.type	blog_testc3_entry, @function
 blog_testc3_entry:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc3_nopri.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc3_nopri.c"
 	.loc 1 8 1
 	.cfi_startproc
 .LVL0:
@@ -107,7 +107,7 @@ blog_testc3_init:
 	.size	blog_testc3_init, .-blog_testc3_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x119
@@ -495,6 +495,8 @@ blog_testc3_init:
 	.string	"long long int"
 .LASF8:
 	.string	"unsigned int"
+.LASF14:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blog_testc"
 .LASF10:
 	.string	"aos_task_new"
 .LASF5:
@@ -509,6 +511,8 @@ blog_testc3_init:
 	.string	"blog_testc3_entry"
 .LASF7:
 	.string	"long long unsigned int"
+.LASF13:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc3_nopri.c"
 .LASF1:
 	.string	"unsigned char"
 .LASF9:
@@ -519,10 +523,6 @@ blog_testc3_init:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
-.LASF14:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blog_testc"
 .LASF2:
 	.string	"short int"
-.LASF13:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc3_nopri.c"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

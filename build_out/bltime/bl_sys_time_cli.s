@@ -19,7 +19,7 @@
 	.type	cmd_sys_time_now, @function
 cmd_sys_time_now:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time_cli.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time_cli.c"
 	.loc 1 10 1
 	.cfi_startproc
 .LVL0:
@@ -238,13 +238,13 @@ cmds_user:
 	.word	cmd_sys_time_date
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_time.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bltime/include/bl_sys_time.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_time.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bltime/include/bl_sys_time.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x44e
@@ -1529,6 +1529,8 @@ cmds_user:
 	.string	"uint64_t"
 .LASF32:
 	.string	"date"
+.LASF41:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time_cli.c"
 .LASF0:
 	.string	"long long unsigned int"
 .LASF25:
@@ -1547,8 +1549,6 @@ cmds_user:
 	.string	"ntp_date"
 .LASF5:
 	.string	"short unsigned int"
-.LASF41:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time_cli.c"
 .LASF15:
 	.string	"help"
 .LASF43:
@@ -1563,10 +1563,10 @@ cmds_user:
 	.string	"leap_days"
 .LASF37:
 	.string	"utils_time_date_from_epoch"
-.LASF42:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bltime"
 .LASF1:
 	.string	"unsigned int"
+.LASF42:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bltime"
 .LASF11:
 	.string	"char"
 .LASF26:

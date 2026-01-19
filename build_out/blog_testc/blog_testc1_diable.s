@@ -12,7 +12,7 @@
 	.type	blog_testc1_entry, @function
 blog_testc1_entry:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc1_diable.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc1_diable.c"
 	.loc 1 11 1
 	.cfi_startproc
 .LVL0:
@@ -117,7 +117,7 @@ blog_testc1_init:
 	.size	blog_testc1_init, .-blog_testc1_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x119
@@ -501,12 +501,12 @@ blog_testc1_init:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF6:
-	.string	"long long int"
 .LASF13:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc1_diable.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc1_diable.c"
 .LASF8:
 	.string	"unsigned int"
+.LASF14:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blog_testc"
 .LASF15:
 	.string	"blog_testc1_init"
 .LASF10:
@@ -525,12 +525,12 @@ blog_testc1_init:
 	.string	"char"
 .LASF4:
 	.string	"long int"
+.LASF6:
+	.string	"long long int"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
-.LASF14:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blog_testc"
 .LASF2:
 	.string	"short int"
 .LASF16:

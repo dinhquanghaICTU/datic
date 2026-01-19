@@ -13,7 +13,7 @@
 	.type	format_int, @function
 format_int:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/debug.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/debug.c"
 	.loc 1 44 1
 	.cfi_startproc
 .LVL0:
@@ -3961,12 +3961,12 @@ ucdigits.1:
 	.string	"0123456789ABCDEF"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/math.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/math.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1082
@@ -10898,8 +10898,6 @@ ucdigits.1:
 	.string	"modf"
 .LASF68:
 	.string	"decimal_point"
-.LASF102:
-	.string	"__udivdi3"
 .LASF60:
 	.string	"is_integer"
 .LASF17:
@@ -10908,6 +10906,8 @@ ucdigits.1:
 	.string	"stop"
 .LASF80:
 	.string	"ecvtbuf"
+.LASF106:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602"
 .LASF32:
 	.string	"float"
 .LASF101:
@@ -10966,10 +10966,12 @@ ucdigits.1:
 	.string	"char"
 .LASF37:
 	.string	"string"
-.LASF106:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602"
+.LASF102:
+	.string	"__udivdi3"
 .LASF51:
 	.string	"st_normal"
+.LASF105:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/debug.c"
 .LASF16:
 	.string	"va_list"
 .LASF9:
@@ -11084,8 +11086,6 @@ ucdigits.1:
 	.string	"minus"
 .LASF29:
 	.string	"rank_int"
-.LASF105:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/debug.c"
 .LASF45:
 	.string	"vsnprintf"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

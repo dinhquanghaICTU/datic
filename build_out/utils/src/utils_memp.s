@@ -12,7 +12,7 @@
 	.type	utils_memp_init, @function
 utils_memp_init:
 .LFB0:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_memp.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_memp.c"
 	.loc 1 10 1
 	.cfi_startproc
 .LVL0:
@@ -426,10 +426,10 @@ utils_memp_free:
 	.size	utils_memp_free, .-utils_memp_free
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_memp.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_memp.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x328
@@ -1580,10 +1580,6 @@ utils_memp_free:
 	.string	"short int"
 .LASF12:
 	.string	"size_t"
-.LASF36:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_memp.c"
-.LASF37:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF16:
 	.string	"node_size"
 .LASF5:
@@ -1600,6 +1596,8 @@ utils_memp_free:
 	.string	"utils_memp_deinit"
 .LASF24:
 	.string	"node"
+.LASF36:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_memp.c"
 .LASF27:
 	.string	"utils_memp_malloc"
 .LASF4:
@@ -1616,6 +1614,8 @@ utils_memp_free:
 	.string	"uint16_t"
 .LASF7:
 	.string	"short unsigned int"
+.LASF37:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF18:
 	.string	"pool_size"
 .LASF32:

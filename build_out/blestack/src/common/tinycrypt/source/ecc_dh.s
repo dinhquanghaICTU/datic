@@ -12,7 +12,7 @@
 	.type	uECC_make_key_with_d, @function
 uECC_make_key_with_d:
 .LFB2:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dh.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dh.c"
 	.loc 1 76 1
 	.cfi_startproc
 .LVL0:
@@ -101,7 +101,7 @@ uECC_make_key_with_d:
 	.loc 1 101 3 is_stmt 1
 .LBB4:
 .LBB5:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/utils.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/utils.h"
 	.loc 2 91 3
 	.loc 2 91 10 is_stmt 0
 	li	a2,32
@@ -559,9 +559,9 @@ uECC_shared_secret:
 	.size	uECC_shared_secret, .-uECC_shared_secret
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x87c
@@ -2746,6 +2746,8 @@ uECC_shared_secret:
 	.string	"uECC_vli_nativeToBytes"
 .LASF10:
 	.string	"long long unsigned int"
+.LASF51:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dh.c"
 .LASF31:
 	.string	"_private"
 .LASF1:
@@ -2764,6 +2766,8 @@ uECC_shared_secret:
 	.string	"regularize_k"
 .LASF49:
 	.string	"memcpy"
+.LASF52:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF53:
 	.string	"uECC_Curve_t"
 .LASF25:
@@ -2820,8 +2824,6 @@ uECC_shared_secret:
 	.string	"_set_secure"
 .LASF24:
 	.string	"curve_secp256r1"
-.LASF51:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dh.c"
 .LASF0:
 	.string	"int8_t"
 .LASF17:
@@ -2832,8 +2834,6 @@ uECC_shared_secret:
 	.string	"double_jacobian"
 .LASF40:
 	.string	"memset"
-.LASF52:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF34:
 	.string	"uECC_shared_secret"
 .LASF6:

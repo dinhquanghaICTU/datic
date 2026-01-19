@@ -12,7 +12,7 @@
 	.type	mbedtls_port_calloc, @function
 mbedtls_port_calloc:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_mem.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_mem.c"
 	.loc 1 7 1
 	.cfi_startproc
 .LVL0:
@@ -69,9 +69,9 @@ mbedtls_port_calloc:
 	.size	mbedtls_port_calloc, .-mbedtls_port_calloc
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x123
@@ -497,9 +497,7 @@ mbedtls_port_calloc:
 .LASF17:
 	.string	"size_t"
 .LASF15:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_mem.c"
-.LASF16:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_mem.c"
 .LASF5:
 	.string	"long unsigned int"
 .LASF7:
@@ -528,4 +526,6 @@ mbedtls_port_calloc:
 	.string	"short int"
 .LASF8:
 	.string	"unsigned int"
+.LASF16:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

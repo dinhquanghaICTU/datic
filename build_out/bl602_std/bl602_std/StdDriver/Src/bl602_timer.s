@@ -12,7 +12,7 @@
 	.type	TIMER_GetCompValue, @function
 TIMER_GetCompValue:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_timer.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_timer.c"
 	.loc 1 149 1
 	.cfi_startproc
 .LVL0:
@@ -1742,9 +1742,9 @@ timerIntCbfArra:
 	.zero	36
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_timer.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_timer.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xa1f
@@ -4546,10 +4546,8 @@ timerIntCbfArra:
 	.string	"timerCh"
 .LASF51:
 	.string	"WDT_INT_Type"
-.LASF10:
-	.string	"long unsigned int"
-.LASF61:
-	.string	"TIMER_CFG_Type"
+.LASF100:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_timer.c"
 .LASF60:
 	.string	"preLoadVal"
 .LASF22:
@@ -4580,8 +4578,8 @@ timerIntCbfArra:
 	.string	"cbFun"
 .LASF75:
 	.string	"WDT_GetResetStatus"
-.LASF32:
-	.string	"TIMER_COMP_ID_0"
+.LASF101:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF65:
 	.string	"Timer_Int_Callback_Install"
 .LASF23:
@@ -4590,8 +4588,8 @@ timerIntCbfArra:
 	.string	"TIMER_COMP_ID_2"
 .LASF36:
 	.string	"TIMER_PRELOAD_TRIG_NONE"
-.LASF101:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF10:
+	.string	"long unsigned int"
 .LASF70:
 	.string	"WDT_Disable"
 .LASF18:
@@ -4608,6 +4606,8 @@ timerIntCbfArra:
 	.string	"TIMER_CLKSRC_32K"
 .LASF48:
 	.string	"TIMER_INT_Type"
+.LASF61:
+	.string	"TIMER_CFG_Type"
 .LASF81:
 	.string	"tmpAddr"
 .LASF37:
@@ -4616,8 +4616,8 @@ timerIntCbfArra:
 	.string	"TIMER_PRELOAD_TRIG_COMP1"
 .LASF39:
 	.string	"TIMER_PRELOAD_TRIG_COMP2"
-.LASF100:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_timer.c"
+.LASF32:
+	.string	"TIMER_COMP_ID_0"
 .LASF33:
 	.string	"TIMER_COMP_ID_1"
 .LASF77:

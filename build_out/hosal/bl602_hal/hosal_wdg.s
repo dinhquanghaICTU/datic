@@ -12,7 +12,7 @@
 	.type	hosal_wdg_init, @function
 hosal_wdg_init:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_wdg.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_wdg.c"
 	.loc 1 8 1
 	.cfi_startproc
 .LVL0:
@@ -129,10 +129,10 @@ hosal_wdg_finalize:
 	.size	hosal_wdg_finalize, .-hosal_wdg_finalize
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_wdg.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_wdg.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1d2
@@ -697,14 +697,14 @@ hosal_wdg_finalize:
 	.string	"priv"
 .LASF5:
 	.string	"__uint8_t"
+.LASF20:
+	.string	"hosal_wdg_finalize"
 .LASF28:
 	.string	"hosal_wdg_reload"
 .LASF25:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF15:
 	.string	"timeout"
-.LASF26:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_wdg.c"
 .LASF19:
 	.string	"hosal_wdg_dev_t"
 .LASF1:
@@ -717,12 +717,10 @@ hosal_wdg_finalize:
 	.string	"short unsigned int"
 .LASF17:
 	.string	"config"
-.LASF20:
-	.string	"hosal_wdg_finalize"
+.LASF27:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF6:
 	.string	"__uint32_t"
-.LASF27:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF10:
 	.string	"unsigned int"
 .LASF9:
@@ -751,4 +749,6 @@ hosal_wdg_finalize:
 	.string	"long int"
 .LASF0:
 	.string	"signed char"
+.LASF26:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_wdg.c"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

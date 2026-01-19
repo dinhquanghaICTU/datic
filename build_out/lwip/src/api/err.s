@@ -12,7 +12,7 @@
 	.type	err_to_errno, @function
 err_to_errno:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/api/err.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/api/err.c"
 	.loc 1 70 1
 	.cfi_startproc
 .LVL0:
@@ -83,10 +83,10 @@ err_to_errno_table:
 	.word	5
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xf2
@@ -407,14 +407,12 @@ err_to_errno_table:
 	.string	"unsigned int"
 .LASF1:
 	.string	"unsigned char"
-.LASF15:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/api/err.c"
+.LASF16:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF5:
 	.string	"long unsigned int"
 .LASF14:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF18:
-	.string	"err_to_errno"
 .LASF13:
 	.string	"err_t"
 .LASF7:
@@ -433,8 +431,10 @@ err_to_errno_table:
 	.string	"short unsigned int"
 .LASF12:
 	.string	"s8_t"
-.LASF16:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/lwip"
+.LASF15:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/api/err.c"
+.LASF18:
+	.string	"err_to_errno"
 .LASF2:
 	.string	"short int"
 .LASF0:

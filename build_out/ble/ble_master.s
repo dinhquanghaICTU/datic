@@ -11,7 +11,7 @@
 	.type	device_found, @function
 device_found:
 .LFB76:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
 	.loc 1 73 1
 	.cfi_startproc
 .LVL0:
@@ -142,7 +142,7 @@ connect:
 	.loc 1 57 5 is_stmt 1
 .LBB5:
 .LBB6:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
 	.loc 2 758 2
 	.loc 2 760 2
 	.loc 2 760 14 is_stmt 0
@@ -546,23 +546,31 @@ test_ble_master:
 .LFB79:
 	.loc 1 152 27 is_stmt 1
 	.cfi_startproc
-	.loc 1 156 5
+	.loc 1 157 5
 	.loc 1 152 27 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
-	sw	s0,12(sp)
-	.cfi_offset 8, -4
+	sw	s0,8(sp)
+	sw	ra,12(sp)
+	.cfi_offset 8, -8
+	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 158 1
-	lw	s0,12(sp)
+	.loc 1 157 5
+	call	ble_stop_scan
+.LVL49:
+	.loc 1 158 5 is_stmt 1
+	.loc 1 160 1 is_stmt 0
+	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
+	lw	ra,12(sp)
+	.cfi_restore 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 156 5
+	.loc 1 158 5
 	tail	ble_start_scan
-.LVL49:
+.LVL50:
 	.cfi_endproc
 .LFE79:
 	.size	test_ble_master, .-test_ble_master
@@ -578,17 +586,17 @@ conn_param_bl.0:
 	.half	400
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x7b9
+	.4byte	0x7c2
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -943,12 +951,15 @@ conn_param_bl.0:
 	.4byte	.LFE79-.LFB79
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x2b5
+	.4byte	0x2be
 	.byte	0x15
 	.4byte	.LVL49
-	.4byte	0x319
-	.byte	0
+	.4byte	0x2be
 	.byte	0x16
+	.4byte	.LVL50
+	.4byte	0x322
+	.byte	0
+	.byte	0x17
 	.4byte	.LASF39
 	.byte	0x1
 	.byte	0x68
@@ -958,21 +969,21 @@ conn_param_bl.0:
 	.4byte	.LFE78-.LFB78
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x319
-	.byte	0x17
+	.4byte	0x322
+	.byte	0x18
 	.string	"err"
 	.byte	0x1
 	.byte	0x69
 	.byte	0x9
 	.4byte	0x25
 	.4byte	.LLST10
-	.byte	0x18
+	.byte	0x15
 	.4byte	.LVL26
-	.4byte	0x74c
+	.4byte	0x755
 	.byte	0x19
 	.4byte	.LVL28
-	.4byte	0x759
-	.4byte	0x305
+	.4byte	0x762
+	.4byte	0x30e
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -988,7 +999,7 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL31
-	.4byte	0x759
+	.4byte	0x762
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -997,7 +1008,7 @@ conn_param_bl.0:
 	.4byte	.LC11
 	.byte	0
 	.byte	0
-	.byte	0x16
+	.byte	0x17
 	.4byte	.LASF40
 	.byte	0x1
 	.byte	0x53
@@ -1007,8 +1018,8 @@ conn_param_bl.0:
 	.4byte	.LFE77-.LFB77
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x3a0
-	.byte	0x17
+	.4byte	0x3a9
+	.byte	0x18
 	.string	"err"
 	.byte	0x1
 	.byte	0x55
@@ -1026,8 +1037,8 @@ conn_param_bl.0:
 	.byte	0x68
 	.byte	0x19
 	.4byte	.LVL20
-	.4byte	0x765
-	.4byte	0x36f
+	.4byte	0x76e
+	.4byte	0x378
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1043,8 +1054,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL22
-	.4byte	0x759
-	.4byte	0x38c
+	.4byte	0x762
+	.4byte	0x395
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1060,7 +1071,7 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL25
-	.4byte	0x759
+	.4byte	0x762
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1078,7 +1089,7 @@ conn_param_bl.0:
 	.4byte	.LFE76-.LFB76
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x417
+	.4byte	0x420
 	.byte	0x1e
 	.4byte	.LASF42
 	.byte	0x1
@@ -1109,7 +1120,7 @@ conn_param_bl.0:
 	.4byte	.LLST3
 	.byte	0x20
 	.4byte	.LVL4
-	.4byte	0x772
+	.4byte	0x77b
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1132,7 +1143,7 @@ conn_param_bl.0:
 	.byte	0x5a
 	.byte	0
 	.byte	0
-	.byte	0x16
+	.byte	0x17
 	.4byte	.LASF44
 	.byte	0x1
 	.byte	0x2a
@@ -1142,13 +1153,13 @@ conn_param_bl.0:
 	.4byte	.LFE75-.LFB75
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x559
+	.4byte	0x562
 	.byte	0x1e
 	.4byte	.LASF42
 	.byte	0x1
 	.byte	0x2a
 	.byte	0x1b
-	.4byte	0x559
+	.4byte	0x562
 	.4byte	.LLST4
 	.byte	0x1c
 	.4byte	.LASF45
@@ -1164,11 +1175,11 @@ conn_param_bl.0:
 	.byte	0x1
 	.byte	0x31
 	.byte	0xa
-	.4byte	0x55f
+	.4byte	0x568
 	.byte	0x2
 	.byte	0x91
 	.byte	0x50
-	.byte	0x17
+	.byte	0x18
 	.string	"err"
 	.byte	0x1
 	.byte	0x33
@@ -1176,33 +1187,33 @@ conn_param_bl.0:
 	.4byte	0x25
 	.4byte	.LLST5
 	.byte	0x22
-	.4byte	0x5d5
+	.4byte	0x5de
 	.4byte	.LBB5
 	.4byte	.Ldebug_ranges0+0
 	.byte	0x1
 	.byte	0x39
 	.byte	0x5
-	.4byte	0x50b
+	.4byte	0x514
 	.byte	0x23
-	.4byte	0x601
+	.4byte	0x60a
 	.4byte	.LLST6
 	.byte	0x23
-	.4byte	0x5f4
+	.4byte	0x5fd
 	.4byte	.LLST7
 	.byte	0x23
-	.4byte	0x5e7
+	.4byte	0x5f0
 	.4byte	.LLST8
 	.byte	0x24
 	.4byte	.Ldebug_ranges0+0
 	.byte	0x25
-	.4byte	0x60e
+	.4byte	0x617
 	.byte	0x2
 	.byte	0x91
 	.byte	0x44
 	.byte	0x19
 	.4byte	.LVL12
-	.4byte	0x77f
-	.4byte	0x4c2
+	.4byte	0x788
+	.4byte	0x4cb
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1212,8 +1223,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL14
-	.4byte	0x78b
-	.4byte	0x4eb
+	.4byte	0x794
+	.4byte	0x4f4
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1241,7 +1252,7 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL18
-	.4byte	0x78b
+	.4byte	0x794
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1264,8 +1275,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL6
-	.4byte	0x798
-	.4byte	0x528
+	.4byte	0x7a1
+	.4byte	0x531
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1281,8 +1292,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL8
-	.4byte	0x759
-	.4byte	0x53f
+	.4byte	0x762
+	.4byte	0x548
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1292,7 +1303,7 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL15
-	.4byte	0x759
+	.4byte	0x762
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1312,7 +1323,7 @@ conn_param_bl.0:
 	.4byte	0x158
 	.byte	0xc
 	.4byte	0xb4
-	.4byte	0x56f
+	.4byte	0x578
 	.byte	0xd
 	.4byte	0x7c
 	.byte	0x1d
@@ -1324,13 +1335,13 @@ conn_param_bl.0:
 	.byte	0xc
 	.4byte	0x169
 	.byte	0x1
-	.4byte	0x5bf
+	.4byte	0x5c8
 	.byte	0x27
 	.4byte	.LASF15
 	.byte	0x1
 	.byte	0xf
 	.byte	0x29
-	.4byte	0x5bf
+	.4byte	0x5c8
 	.byte	0x27
 	.4byte	.LASF46
 	.byte	0x1
@@ -1342,7 +1353,7 @@ conn_param_bl.0:
 	.byte	0x1
 	.byte	0x11
 	.byte	0xa
-	.4byte	0x5c5
+	.4byte	0x5ce
 	.byte	0x28
 	.string	"err"
 	.byte	0x1
@@ -1363,7 +1374,7 @@ conn_param_bl.0:
 	.4byte	0x176
 	.byte	0xc
 	.4byte	0xb4
-	.4byte	0x5d5
+	.4byte	0x5de
 	.byte	0xd
 	.4byte	0x7c
 	.byte	0x1f
@@ -1375,7 +1386,7 @@ conn_param_bl.0:
 	.byte	0x13
 	.4byte	0x25
 	.byte	0x3
-	.4byte	0x61c
+	.4byte	0x625
 	.byte	0x2b
 	.4byte	.LASF42
 	.byte	0x2
@@ -1399,65 +1410,65 @@ conn_param_bl.0:
 	.byte	0x2
 	.2byte	0x2f6
 	.byte	0x7
-	.4byte	0x61c
+	.4byte	0x625
 	.byte	0
 	.byte	0xc
 	.4byte	0xb4
-	.4byte	0x62c
+	.4byte	0x635
 	.byte	0xd
 	.4byte	0x7c
 	.byte	0x9
 	.byte	0
 	.byte	0x2e
-	.4byte	0x56f
+	.4byte	0x578
 	.4byte	.LFB74
 	.4byte	.LFE74-.LFB74
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x74c
+	.4byte	0x755
 	.byte	0x23
-	.4byte	0x580
+	.4byte	0x589
 	.4byte	.LLST11
 	.byte	0x23
-	.4byte	0x58c
+	.4byte	0x595
 	.4byte	.LLST12
 	.byte	0x2f
-	.4byte	0x598
+	.4byte	0x5a1
 	.byte	0x2f
-	.4byte	0x5a4
+	.4byte	0x5ad
 	.byte	0x30
-	.4byte	0x56f
+	.4byte	0x578
 	.4byte	.LBB12
 	.4byte	.LBE12-.LBB12
 	.byte	0x1
 	.byte	0xf
 	.byte	0xc
 	.byte	0x23
-	.4byte	0x58c
+	.4byte	0x595
 	.4byte	.LLST13
 	.byte	0x23
-	.4byte	0x580
+	.4byte	0x589
 	.4byte	.LLST14
 	.byte	0x25
-	.4byte	0x598
+	.4byte	0x5a1
 	.byte	0x2
 	.byte	0x91
 	.byte	0x50
 	.byte	0x31
-	.4byte	0x5a4
+	.4byte	0x5ad
 	.4byte	.LLST15
 	.byte	0x32
-	.4byte	0x5b0
+	.4byte	0x5b9
 	.4byte	.LBB14
 	.4byte	.LBE14-.LBB14
-	.4byte	0x700
+	.4byte	0x709
 	.byte	0x31
-	.4byte	0x5b1
+	.4byte	0x5ba
 	.4byte	.LLST16
 	.byte	0x19
 	.4byte	.LVL40
-	.4byte	0x759
-	.4byte	0x6c5
+	.4byte	0x762
+	.4byte	0x6ce
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1473,8 +1484,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL41
-	.4byte	0x417
-	.4byte	0x6d9
+	.4byte	0x420
+	.4byte	0x6e2
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1484,8 +1495,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL43
-	.4byte	0x759
-	.4byte	0x6f6
+	.4byte	0x762
+	.4byte	0x6ff
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1499,14 +1510,14 @@ conn_param_bl.0:
 	.byte	0x9
 	.byte	0xff
 	.byte	0
-	.byte	0x18
+	.byte	0x15
 	.4byte	.LVL44
-	.4byte	0x2b5
+	.4byte	0x2be
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL36
-	.4byte	0x7a4
-	.4byte	0x714
+	.4byte	0x7ad
+	.4byte	0x71d
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1516,8 +1527,8 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL37
-	.4byte	0x759
-	.4byte	0x731
+	.4byte	0x762
+	.4byte	0x73a
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1533,7 +1544,7 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL38
-	.4byte	0x7b0
+	.4byte	0x7b9
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -1887,13 +1898,22 @@ conn_param_bl.0:
 	.byte	0
 	.byte	0x11
 	.byte	0x1
+	.byte	0x31
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0x16
+	.byte	0x89,0x82,0x1
+	.byte	0
+	.byte	0x11
+	.byte	0x1
 	.byte	0x95,0x42
 	.byte	0x19
 	.byte	0x31
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x16
+	.byte	0x17
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3f
@@ -1922,7 +1942,7 @@ conn_param_bl.0:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x17
+	.byte	0x18
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -1937,15 +1957,6 @@ conn_param_bl.0:
 	.byte	0x13
 	.byte	0x2
 	.byte	0x17
-	.byte	0
-	.byte	0
-	.byte	0x18
-	.byte	0x89,0x82,0x1
-	.byte	0
-	.byte	0x11
-	.byte	0x1
-	.byte	0x31
-	.byte	0x13
 	.byte	0
 	.byte	0
 	.byte	0x19
@@ -2693,16 +2704,20 @@ conn_param_bl.0:
 	.string	"memcpy"
 .LASF46:
 	.string	"user_data"
+.LASF62:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/ble"
 .LASF5:
 	.string	"uint8_t"
 .LASF28:
 	.string	"BT_LE_SCAN_TYPE_PASSIVE"
 .LASF36:
 	.string	"interval_max"
+.LASF61:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
 .LASF17:
 	.string	"__buf"
-.LASF62:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/ble"
+.LASF43:
+	.string	"rssi"
 .LASF39:
 	.string	"ble_stop_scan"
 .LASF3:
@@ -2737,8 +2752,6 @@ conn_param_bl.0:
 	.string	"unsigned char"
 .LASF18:
 	.string	"bt_addr_t"
-.LASF53:
-	.string	"bt_le_scan_start"
 .LASF0:
 	.string	"signed char"
 .LASF9:
@@ -2779,8 +2792,6 @@ conn_param_bl.0:
 	.string	"long unsigned int"
 .LASF25:
 	.string	"BT_LE_SCAN_FILTER_DUPLICATE"
-.LASF43:
-	.string	"rssi"
 .LASF32:
 	.string	"interval"
 .LASF60:
@@ -2797,8 +2808,8 @@ conn_param_bl.0:
 	.string	"bt_data_parse"
 .LASF26:
 	.string	"BT_LE_SCAN_FILTER_WHITELIST"
-.LASF61:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+.LASF53:
+	.string	"bt_le_scan_start"
 .LASF37:
 	.string	"latency"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -12,7 +12,7 @@
 	.type	mbedtls_calloc, @function
 mbedtls_calloc:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform.c"
 	.loc 1 60 1
 	.cfi_startproc
 .LVL0:
@@ -184,8 +184,8 @@ mbedtls_free_func:
 	.word	vPortFree
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x208
@@ -974,14 +974,14 @@ mbedtls_free_func:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF10:
 	.string	"size_t"
+.LASF24:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform.c"
 .LASF14:
 	.string	"mbedtls_platform_setup"
 .LASF16:
 	.string	"calloc_func"
 .LASF19:
 	.string	"mbedtls_free"
-.LASF25:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF5:
 	.string	"long unsigned int"
 .LASF26:
@@ -1002,8 +1002,6 @@ mbedtls_free_func:
 	.string	"mbedtls_calloc_func"
 .LASF4:
 	.string	"long int"
-.LASF24:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform.c"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
@@ -1016,6 +1014,8 @@ mbedtls_free_func:
 	.string	"short int"
 .LASF8:
 	.string	"unsigned int"
+.LASF25:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF11:
 	.string	"mbedtls_platform_context"
 .LASF9:

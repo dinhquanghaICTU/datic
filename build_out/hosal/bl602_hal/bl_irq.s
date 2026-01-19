@@ -12,7 +12,7 @@
 	.type	bl_irq_enable, @function
 bl_irq_enable:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c"
 	.loc 1 18 1
 	.cfi_startproc
 .LVL0:
@@ -837,7 +837,7 @@ exception_entry:
 	.loc 1 383 13 discriminator 1
 	.loc 1 385 13 discriminator 1
  #APP
-# 385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c" 1
+# 385 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c" 1
 	add sp, x0, s1
 # 0 "" 2
 	.loc 1 386 13 discriminator 1
@@ -1027,7 +1027,7 @@ bl_irq_save:
 	.loc 1 413 5
 	li	a0,8
  #APP
-# 413 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c" 1
+# 413 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c" 1
 	csrrc a0, mstatus, a0
 # 0 "" 2
 .LVL65:
@@ -1062,7 +1062,7 @@ bl_irq_restore:
 	.cfi_def_cfa 8, 0
 	.loc 1 419 5
  #APP
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c" 1
+# 419 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c" 1
 	csrw mstatus, a0
 # 0 "" 2
 	.loc 1 422 1
@@ -1085,14 +1085,14 @@ handler_list:
 	.zero	640
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/coredump/inc/bl_coredump.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/coredump/inc/bl_coredump.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x7e6
@@ -3523,6 +3523,8 @@ handler_list:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF91:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c"
 .LASF13:
 	.string	"BL_IRQ_EXCEPTION_TYPE_LOAD_MISALIGN"
 .LASF50:
@@ -3665,12 +3667,12 @@ handler_list:
 	.string	"GLB_GPIO_PIN_9"
 .LASF12:
 	.string	"char"
+.LASF92:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF51:
 	.string	"GPIO_FUN_SWGPIO"
 .LASF5:
 	.string	"short unsigned int"
-.LASF91:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.c"
 .LASF44:
 	.string	"GPIO_FUN_FLASH"
 .LASF53:
@@ -3689,8 +3691,6 @@ handler_list:
 	.string	"oldstat"
 .LASF3:
 	.string	"long long int"
-.LASF92:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF23:
 	.string	"GLB_GPIO_PIN_5"
 .LASF56:

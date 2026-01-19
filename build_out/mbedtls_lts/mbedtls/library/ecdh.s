@@ -12,7 +12,7 @@
 	.type	mbedtls_ecdh_can_do, @function
 mbedtls_ecdh_can_do:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ecdh.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ecdh.c"
 	.loc 1 58 1
 	.cfi_startproc
 .LVL0:
@@ -1617,13 +1617,13 @@ mbedtls_ecdh_calc_secret:
 	.size	mbedtls_ecdh_calc_secret, .-mbedtls_ecdh_calc_secret
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x14ca
@@ -7703,8 +7703,8 @@ mbedtls_ecdh_calc_secret:
 	.string	"mbedtls_ecdh_can_do"
 .LASF108:
 	.string	"mbedtls_ecp_restart_ctx"
-.LASF106:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ecdh.c"
+.LASF107:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF61:
 	.string	"mbedtls_ecdh_get_params"
 .LASF17:
@@ -7793,6 +7793,8 @@ mbedtls_ecdh_calc_secret:
 	.string	"mbedtls_ecp_group_init"
 .LASF36:
 	.string	"nbits"
+.LASF106:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ecdh.c"
 .LASF47:
 	.string	"mbedtls_ecdh_context"
 .LASF101:
@@ -7805,8 +7807,6 @@ mbedtls_ecdh_calc_secret:
 	.string	"mbedtls_ecdh_side"
 .LASF70:
 	.string	"mbedtls_ecdh_setup"
-.LASF67:
-	.string	"ecdh_make_params_internal"
 .LASF66:
 	.string	"mbedtls_ecdh_make_params"
 .LASF95:
@@ -7887,8 +7887,8 @@ mbedtls_ecdh_calc_secret:
 	.string	"mbedtls_ecp_copy"
 .LASF34:
 	.string	"mbedtls_ecp_group"
-.LASF107:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
+.LASF67:
+	.string	"ecdh_make_params_internal"
 .LASF31:
 	.string	"MBEDTLS_ECP_TYPE_SHORT_WEIERSTRASS"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

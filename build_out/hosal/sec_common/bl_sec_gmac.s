@@ -12,7 +12,7 @@
 	.type	bl_sec_gmac_init, @function
 bl_sec_gmac_init:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.c"
 	.loc 1 8 1
 	.cfi_startproc
 	.loc 1 9 5
@@ -825,16 +825,16 @@ bl_gmac_test:
 	.ascii	"\200"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
 	.file 12 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -3285,8 +3285,6 @@ bl_gmac_test:
 	.string	"__builtin_memcpy"
 .LASF55:
 	.string	"Sec_Eng_GMAC_Enable_Link"
-.LASF50:
-	.string	"malloc"
 .LASF53:
 	.string	"vTaskEnterCritical"
 .LASF11:
@@ -3303,8 +3301,10 @@ bl_gmac_test:
 	.string	"gmacIntClr"
 .LASF30:
 	.string	"tc_fun"
-.LASF59:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF13:
+	.string	"uint8_t"
+.LASF58:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.c"
 .LASF0:
 	.string	"signed char"
 .LASF61:
@@ -3367,6 +3367,8 @@ bl_gmac_test:
 	.string	"short unsigned int"
 .LASF12:
 	.string	"char"
+.LASF59:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF32:
 	.string	"_Bool"
 .LASF26:
@@ -3375,8 +3377,6 @@ bl_gmac_test:
 	.string	"ghash_H_A_C"
 .LASF7:
 	.string	"long unsigned int"
-.LASF58:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.c"
 .LASF46:
 	.string	"bl_sec_gmac_init"
 .LASF43:
@@ -3389,8 +3389,8 @@ bl_gmac_test:
 	.string	"bl_gmac_finish"
 .LASF60:
 	.string	"link_cfg"
-.LASF13:
-	.string	"uint8_t"
+.LASF50:
+	.string	"malloc"
 .LASF56:
 	.string	"Sec_Eng_GMAC_Link_Work"
 .LASF36:

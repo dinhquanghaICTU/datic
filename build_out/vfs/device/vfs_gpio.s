@@ -12,7 +12,7 @@
 	.type	vfs_gpio_open, @function
 vfs_gpio_open:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/device/vfs_gpio.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/device/vfs_gpio.c"
 	.loc 1 26 1
 	.cfi_startproc
 .LVL0:
@@ -447,19 +447,19 @@ gpio_ops:
 	.zero	8
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/hal/soc/gpio.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/device/vfs_gpio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/hal/soc/gpio.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/device/vfs_gpio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xc38
@@ -2939,8 +2939,6 @@ gpio_ops:
 	.section	.debug_str,"MS",@progbits,1
 .LASF68:
 	.string	"aos_dirent_t"
-.LASF122:
-	.string	"level"
 .LASF102:
 	.string	"inode_t"
 .LASF136:
@@ -2951,6 +2949,8 @@ gpio_ops:
 	.string	"vfs_gpio_ioctl"
 .LASF11:
 	.string	"unsigned int"
+.LASF143:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF52:
 	.string	"st_blksize"
 .LASF101:
@@ -2963,8 +2963,8 @@ gpio_ops:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF80:
 	.string	"sync"
-.LASF144:
-	.string	"inode_ops_t"
+.LASF122:
+	.string	"level"
 .LASF23:
 	.string	"__nlink_t"
 .LASF62:
@@ -2993,8 +2993,8 @@ gpio_ops:
 	.string	"long long unsigned int"
 .LASF53:
 	.string	"st_blocks"
-.LASF143:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/vfs"
+.LASF105:
+	.string	"offset"
 .LASF113:
 	.string	"GPIO_CONFIG_MODE_OUTPUT"
 .LASF104:
@@ -3031,8 +3031,8 @@ gpio_ops:
 	.string	"st_nlink"
 .LASF125:
 	.string	"gpio_dev"
-.LASF142:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/device/vfs_gpio.c"
+.LASF144:
+	.string	"inode_ops_t"
 .LASF124:
 	.string	"float"
 .LASF78:
@@ -3085,6 +3085,8 @@ gpio_ops:
 	.string	"dev_t"
 .LASF59:
 	.string	"f_bfree"
+.LASF142:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/device/vfs_gpio.c"
 .LASF73:
 	.string	"file_ops"
 .LASF72:
@@ -3145,8 +3147,6 @@ gpio_ops:
 	.string	"GPIO_CONFIG_MODE_INPUT"
 .LASF140:
 	.string	"hal_gpio_init"
-.LASF105:
-	.string	"offset"
 .LASF103:
 	.string	"node"
 .LASF87:

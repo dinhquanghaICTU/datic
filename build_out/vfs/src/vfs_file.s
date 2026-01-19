@@ -11,7 +11,7 @@
 	.type	file_cmp_cb, @function
 file_cmp_cb:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs_file.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs_file.c"
 	.loc 1 22 1
 	.cfi_startproc
 .LVL0:
@@ -718,20 +718,20 @@ files_handle_dev:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_rbtree.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_rbtree.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xeaa
@@ -3680,6 +3680,8 @@ files_handle_dev:
 	.string	"inode_ref"
 .LASF130:
 	.string	"get_fd"
+.LASF155:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF52:
 	.string	"st_blksize"
 .LASF101:
@@ -3720,12 +3722,10 @@ files_handle_dev:
 	.string	"st_blocks"
 .LASF124:
 	.string	"file"
-.LASF155:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/vfs"
+.LASF105:
+	.string	"offset"
 .LASF144:
 	.string	"rb_tree_remove"
-.LASF154:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs_file.c"
 .LASF104:
 	.string	"f_arg"
 .LASF152:
@@ -3888,8 +3888,6 @@ files_handle_dev:
 	.string	"i_flags"
 .LASF3:
 	.string	"long int"
-.LASF105:
-	.string	"offset"
 .LASF103:
 	.string	"node"
 .LASF87:
@@ -3928,6 +3926,8 @@ files_handle_dev:
 	.string	"rb_tree_size"
 .LASF115:
 	.string	"link"
+.LASF154:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs_file.c"
 .LASF126:
 	.string	"file_num"
 .LASF30:

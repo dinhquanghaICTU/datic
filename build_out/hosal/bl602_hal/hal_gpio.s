@@ -11,7 +11,7 @@
 	.type	fdt32_to_cpu, @function
 fdt32_to_cpu:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 92 1
 	.cfi_startproc
 .LVL0:
@@ -110,7 +110,7 @@ fdt32_to_cpu:
 	.type	hal_gpio_init_from_dts, @function
 hal_gpio_init_from_dts:
 .LFB43:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.c"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.c"
 	.loc 2 165 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -903,14 +903,14 @@ pstgpio_head:
 	.zero	4
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x898
@@ -3216,8 +3216,8 @@ pstgpio_head:
 	.string	"config"
 .LASF28:
 	.string	"hal_gpio_led_off"
-.LASF62:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF12:
+	.string	"uint8_t"
 .LASF46:
 	.string	"_get_gpio_config"
 .LASF49:
@@ -3266,8 +3266,6 @@ pstgpio_head:
 	.string	"uint32_t"
 .LASF10:
 	.string	"unsigned int"
-.LASF61:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.c"
 .LASF27:
 	.string	"time"
 .LASF14:
@@ -3276,6 +3274,8 @@ pstgpio_head:
 	.string	"short unsigned int"
 .LASF11:
 	.string	"char"
+.LASF62:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF44:
 	.string	"addr_prop"
 .LASF51:
@@ -3290,10 +3290,10 @@ pstgpio_head:
 	.string	"led_onoff_config"
 .LASF60:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF61:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.c"
 .LASF36:
 	.string	"node"
-.LASF12:
-	.string	"uint8_t"
 .LASF54:
 	.string	"loopset_led_trigger"
 .LASF32:

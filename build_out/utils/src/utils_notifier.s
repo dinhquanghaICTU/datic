@@ -12,7 +12,7 @@
 	.type	utils_notifier_chain_init, @function
 utils_notifier_chain_init:
 .LFB22:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
 	.loc 1 5 1
 	.cfi_startproc
 .LVL0:
@@ -185,8 +185,8 @@ utils_notifier_chain_call:
 	.size	utils_notifier_chain_call, .-utils_notifier_chain_call
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_notifier.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_notifier.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x201
@@ -875,8 +875,8 @@ utils_notifier_chain_call:
 	.string	"utils_notifier"
 .LASF5:
 	.string	"last"
-.LASF19:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
+.LASF0:
+	.string	"unsigned int"
 .LASF10:
 	.string	"cb_arg"
 .LASF16:
@@ -891,8 +891,8 @@ utils_notifier_chain_call:
 	.string	"priority"
 .LASF17:
 	.string	"utils_list_init"
-.LASF20:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
+.LASF19:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
 .LASF9:
 	.string	"node"
 .LASF2:
@@ -905,10 +905,10 @@ utils_notifier_chain_call:
 	.string	"next"
 .LASF14:
 	.string	"utils_notifier_chain_register"
+.LASF20:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF12:
 	.string	"utils_notifier_t"
-.LASF0:
-	.string	"unsigned int"
 .LASF6:
 	.string	"ntf_list_t"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

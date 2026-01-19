@@ -18,7 +18,7 @@
 	.type	cmd_ringblk_through_test, @function
 cmd_ringblk_through_test:
 .LFB29:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/test/test_utils_ringblk.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/test/test_utils_ringblk.c"
 	.loc 1 340 1
 	.cfi_startproc
 .LVL0:
@@ -986,7 +986,7 @@ cmd_ringblk_test:
 .LVL104:
 .LBB16:
 .LBB17:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 	.loc 2 593 2
 	.loc 2 594 5
 	.loc 2 595 5
@@ -1947,13 +1947,13 @@ cmds_user:
 	.word	cmd_ringblk_through_test
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_ringblk.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_ringblk.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x14cf
@@ -6305,8 +6305,8 @@ cmds_user:
 	.string	"utils_rbb_create"
 .LASF23:
 	.string	"utils_rbb_status_t"
-.LASF84:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/test/test_utils_ringblk.c"
+.LASF29:
+	.string	"utils_rbb_blk_queue"
 .LASF3:
 	.string	"long long int"
 .LASF75:
@@ -6317,8 +6317,6 @@ cmds_user:
 	.string	"blk_list"
 .LASF79:
 	.string	"utils_rbb_blk_queue_get"
-.LASF85:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF13:
 	.string	"help"
 .LASF32:
@@ -6335,8 +6333,6 @@ cmds_user:
 	.string	"utils_rbb_blk_free"
 .LASF65:
 	.string	"utils_rbb_blk_get"
-.LASF29:
-	.string	"utils_rbb_blk_queue"
 .LASF86:
 	.string	"utils_rbb_status"
 .LASF51:
@@ -6401,6 +6397,8 @@ cmds_user:
 	.string	"param"
 .LASF25:
 	.string	"status"
+.LASF85:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF11:
 	.string	"char"
 .LASF14:
@@ -6447,6 +6445,8 @@ cmds_user:
 	.string	"utils_slist_entry_number"
 .LASF21:
 	.string	"RBB_BLK_PUT"
+.LASF84:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/test/test_utils_ringblk.c"
 .LASF24:
 	.string	"utils_rbb_blk"
 .LASF38:

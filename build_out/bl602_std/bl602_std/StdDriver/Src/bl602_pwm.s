@@ -12,7 +12,7 @@
 	.type	PWM_Channel_Update, @function
 PWM_Channel_Update:
 .LFB9:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pwm.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pwm.c"
 	.loc 1 214 1
 	.cfi_startproc
 .LVL0:
@@ -1154,9 +1154,9 @@ PWM_Smart_Configure:
 	.size	PWM_Smart_Configure, .-PWM_Smart_Configure
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pwm.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pwm.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x820
@@ -3850,12 +3850,12 @@ PWM_Smart_Configure:
 	.string	"intMask"
 .LASF54:
 	.string	"timeoutCnt"
+.LASF78:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pwm.c"
 .LASF17:
 	.string	"DISABLE"
 .LASF30:
 	.string	"PWM_CH_ID_Type"
-.LASF79:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF13:
 	.string	"SUCCESS"
 .LASF19:
@@ -3932,8 +3932,6 @@ PWM_Smart_Configure:
 	.string	"PWM_CLK_XCLK"
 .LASF16:
 	.string	"BL_Err_Type"
-.LASF78:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pwm.c"
 .LASF43:
 	.string	"PWM_INT_Type"
 .LASF27:
@@ -3942,6 +3940,8 @@ PWM_Smart_Configure:
 	.string	"PWM_STOP_ABRUPT"
 .LASF57:
 	.string	"cbFun"
+.LASF79:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF64:
 	.string	"PWM_SW_Mode"
 .LASF10:

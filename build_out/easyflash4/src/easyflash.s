@@ -25,7 +25,7 @@
 	.type	easyflash_init, @function
 easyflash_init:
 .LFB0:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash.c"
 	.loc 1 65 32
 	.cfi_startproc
 	.loc 1 66 5
@@ -118,9 +118,9 @@ easyflash_init:
 	.size	easyflash_init, .-easyflash_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x22d
@@ -800,6 +800,8 @@ easyflash_init:
 	.string	"EF_WRITE_ERR"
 .LASF15:
 	.string	"EF_ERASE_ERR"
+.LASF35:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF13:
 	.string	"ef_env"
 .LASF20:
@@ -810,6 +812,8 @@ easyflash_init:
 	.string	"ef_port_init"
 .LASF4:
 	.string	"unsigned char"
+.LASF34:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash.c"
 .LASF6:
 	.string	"long unsigned int"
 .LASF5:
@@ -840,8 +844,6 @@ easyflash_init:
 	.string	"char"
 .LASF22:
 	.string	"EF_ENV_ARG_ERR"
-.LASF35:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF30:
 	.string	"default_env_set"
 .LASF1:
@@ -858,8 +860,6 @@ easyflash_init:
 	.string	"signed char"
 .LASF24:
 	.string	"_Bool"
-.LASF34:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash.c"
 .LASF32:
 	.string	"ef_log_info"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -12,7 +12,7 @@
 	.type	main, @function
 main:
 .LFB75:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/datic/main.c"
 	.loc 1 28 1
 	.cfi_startproc
 	.loc 1 29 5
@@ -82,17 +82,17 @@ uart_dev_log:
 	.zero	44
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4fe
@@ -1134,8 +1134,6 @@ uart_dev_log:
 	.string	"HOSAL_FLOW_CONTROL_RTS"
 .LASF48:
 	.string	"mode"
-.LASF106:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/datic/main.c"
 .LASF73:
 	.string	"MEMP_TCPIP_MSG_INPKT"
 .LASF74:
@@ -1234,6 +1232,8 @@ uart_dev_log:
 	.string	"p_rxdma_arg"
 .LASF52:
 	.string	"tx_cb"
+.LASF107:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/datic"
 .LASF5:
 	.string	"short unsigned int"
 .LASF79:
@@ -1254,12 +1254,12 @@ uart_dev_log:
 	.string	"HOSAL_FLOW_CONTROL_CTS_RTS"
 .LASF31:
 	.string	"HOSAL_EVEN_PARITY"
-.LASF107:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/datic"
 .LASF96:
 	.string	"_Bool"
 .LASF61:
 	.string	"dma_rx_chan"
+.LASF106:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/datic/main.c"
 .LASF77:
 	.string	"MEMP_PBUF"
 .LASF38:

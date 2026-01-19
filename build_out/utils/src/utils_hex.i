@@ -1,14 +1,14 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -68,24 +68,24 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_hex.h" 1
+# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_hex.h" 1
 
 
 
-# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_hex.h"
+# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_hex.h"
 char *utils_bin2hex(char *dst, const void *src, size_t count);
 size_t utils_hex2bin(const char *hex, size_t hexlen, uint8_t *buf, size_t buflen);
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c" 2
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c" 2
 
 const char hex_asc[] = "0123456789abcdef";
 const char hex_asc_upper[] = "0123456789ABCDEF";

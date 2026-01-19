@@ -11,7 +11,7 @@
 	.type	uECC_vli_add, @function
 uECC_vli_add:
 .LFB15:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc.c"
 	.loc 1 210 1
 	.cfi_startproc
 .LVL0:
@@ -5096,8 +5096,8 @@ g_rng_function:
 	.word	default_CSPRNG
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 	.file 4 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -17718,8 +17718,8 @@ g_rng_function:
 	.string	"tmp2"
 .LASF1:
 	.string	"int16_t"
-.LASF5:
-	.string	"long long int"
+.LASF116:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc.c"
 .LASF2:
 	.string	"signed char"
 .LASF36:
@@ -17728,8 +17728,6 @@ g_rng_function:
 	.string	"apply_z"
 .LASF102:
 	.string	"digit"
-.LASF116:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc.c"
 .LASF59:
 	.string	"EccPoint_isZero"
 .LASF121:
@@ -17752,8 +17750,12 @@ g_rng_function:
 	.string	"uECC_vli_mult"
 .LASF61:
 	.string	"product"
+.LASF117:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF120:
 	.string	"uECC_vli_add"
+.LASF5:
+	.string	"long long int"
 .LASF78:
 	.string	"shift"
 .LASF70:
@@ -17890,8 +17892,6 @@ g_rng_function:
 	.string	"double_jacobian"
 .LASF122:
 	.string	"memset"
-.LASF117:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF69:
 	.string	"XYcZ_addC"
 .LASF106:

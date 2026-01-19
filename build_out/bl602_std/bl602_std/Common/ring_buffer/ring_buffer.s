@@ -11,7 +11,7 @@
 	.type	Ring_Buffer_Write_Copy, @function
 Ring_Buffer_Write_Copy:
 .LFB11:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/ring_buffer/ring_buffer.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/ring_buffer/ring_buffer.c"
 	.loc 1 210 1
 	.cfi_startproc
 .LVL0:
@@ -1718,9 +1718,9 @@ Ring_Buffer_Write_Byte_Force:
 	.size	Ring_Buffer_Write_Byte_Force, .-Ring_Buffer_Write_Byte_Force
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/ring_buffer/ring_buffer.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/ring_buffer/ring_buffer.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x933
@@ -4543,6 +4543,8 @@ Ring_Buffer_Write_Byte_Force:
 	.string	"Ring_Buffer_Peek"
 .LASF2:
 	.string	"short int"
+.LASF64:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF23:
 	.string	"writeMirror"
 .LASF55:
@@ -4583,6 +4585,8 @@ Ring_Buffer_Write_Byte_Force:
 	.string	"Ring_Buffer_Write_Force"
 .LASF39:
 	.string	"length"
+.LASF63:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/ring_buffer/ring_buffer.c"
 .LASF34:
 	.string	"rbType"
 .LASF5:
@@ -4593,8 +4597,6 @@ Ring_Buffer_Write_Byte_Force:
 	.string	"signed char"
 .LASF10:
 	.string	"long long unsigned int"
-.LASF64:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF40:
 	.string	"Ring_Buffer_Read_Byte"
 .LASF60:
@@ -4643,8 +4645,6 @@ Ring_Buffer_Write_Byte_Force:
 	.string	"readIndex"
 .LASF18:
 	.string	"RING_BUFFER_FULL"
-.LASF63:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/ring_buffer/ring_buffer.c"
 .LASF20:
 	.string	"pointer"
 .LASF52:

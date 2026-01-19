@@ -125,8 +125,6 @@
 	.string	"short int"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF11:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF1:
 	.string	"unsigned char"
 .LASF4:
@@ -136,5 +134,7 @@
 .LASF6:
 	.string	"long long int"
 .LASF10:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls13_keys.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls13_keys.c"
+.LASF11:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

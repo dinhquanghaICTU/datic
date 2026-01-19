@@ -11,7 +11,7 @@
 	.type	int_timer_cb, @function
 int_timer_cb:
 .LFB13:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.c"
 	.loc 1 77 1
 	.cfi_startproc
 	.loc 1 78 5
@@ -371,12 +371,12 @@ bl_timer_tick_enable:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_timer.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_timer.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 	.file 8 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -2104,14 +2104,14 @@ bl_timer_tick_enable:
 	.string	"TIMER_ClearIntStatus"
 .LASF88:
 	.string	"MASK"
-.LASF145:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.c"
 .LASF134:
 	.string	"tick64"
 .LASF148:
 	.string	"Timer_INT_Case"
 .LASF93:
 	.string	"TIMER_CLKSRC_FCLK"
+.LASF146:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF47:
 	.string	"UART1_IRQn"
 .LASF139:
@@ -2136,8 +2136,6 @@ bl_timer_tick_enable:
 	.string	"TIMER_COMP_ID_1"
 .LASF154:
 	.string	"__udivdi3"
-.LASF146:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF5:
 	.string	"uint8_t"
 .LASF77:
@@ -2166,6 +2164,8 @@ bl_timer_tick_enable:
 	.string	"PWM_IRQn"
 .LASF94:
 	.string	"TIMER_CLKSRC_32K"
+.LASF145:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.c"
 .LASF17:
 	.string	"BMX_ERR_IRQn"
 .LASF25:

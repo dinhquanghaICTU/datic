@@ -11,7 +11,7 @@
 	.type	_cb_cmd, @function
 _cb_cmd:
 .LFB44:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.c"
 	.loc 1 391 1
 	.cfi_startproc
 .LVL0:
@@ -335,7 +335,7 @@ bl_dma_irq_register.part.0:
 .LVL34:
 .LBB20:
 .LBB21:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 	.loc 2 286 5
 	.loc 2 286 41 is_stmt 0
 	lw	a4,4(a5)
@@ -1660,18 +1660,18 @@ dma_copy_list:
 	.zero	8
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x125b
@@ -6187,8 +6187,6 @@ dma_copy_list:
 	.string	"DMA_CH_MAX"
 .LASF177:
 	.string	"__utils_dlist_add"
-.LASF200:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF23:
 	.string	"SEC_BMX_ERR_IRQn"
 .LASF193:
@@ -6219,6 +6217,8 @@ dma_copy_list:
 	.string	"bl_irq_ctx_get"
 .LASF26:
 	.string	"SDIO_IRQn"
+.LASF199:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.c"
 .LASF202:
 	.string	"__exit"
 .LASF8:
@@ -6481,8 +6481,6 @@ dma_copy_list:
 	.string	"MTIME_IRQn"
 .LASF159:
 	.string	"addr_start"
-.LASF199:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.c"
 .LASF87:
 	.string	"DMA_TRNS_M2P"
 .LASF126:
@@ -6587,6 +6585,8 @@ dma_copy_list:
 	.string	"HBN_OUT1_IRQn"
 .LASF184:
 	.string	"utils_list_init"
+.LASF200:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF151:
 	.string	"tc_flag"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

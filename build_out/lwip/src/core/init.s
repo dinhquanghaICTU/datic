@@ -12,7 +12,7 @@
 	.type	lwip_init, @function
 lwip_init:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/core/init.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/core/init.c"
 	.loc 1 333 1
 	.cfi_startproc
 	.loc 1 335 3
@@ -84,17 +84,17 @@ lwip_init:
 	.size	lwip_init, .-lwip_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/udp.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/tcp_priv.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/igmp.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/dns.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/udp.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/tcp_priv.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/igmp.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/dns.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x174
@@ -456,6 +456,10 @@ lwip_init:
 	.string	"memp_init"
 .LASF8:
 	.string	"unsigned int"
+.LASF21:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/core/init.c"
+.LASF22:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF23:
 	.string	"ptrdiff_t"
 .LASF5:
@@ -482,16 +486,12 @@ lwip_init:
 	.string	"dns_init"
 .LASF2:
 	.string	"short int"
-.LASF21:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/core/init.c"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
 .LASF15:
 	.string	"udp_init"
-.LASF22:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF11:
 	.string	"sys_init"
 .LASF16:

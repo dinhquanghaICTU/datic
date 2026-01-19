@@ -11,7 +11,7 @@
 	.type	bflb_dsa_get_reg_size, @function
 bflb_dsa_get_reg_size:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_dsa.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_dsa.c"
 	.loc 1 27 1
 	.cfi_startproc
 .LVL0:
@@ -1045,10 +1045,10 @@ bflb_dsa_init:
 	.ascii	"\001"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/inc/bflb_dsa.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/inc/bflb_dsa.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
 	.file 6 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -4303,12 +4303,12 @@ bflb_dsa_init:
 	.string	"isOne"
 .LASF23:
 	.string	"SEC_ENG_PKA_REG_SIZE_16"
-.LASF58:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF9:
 	.string	"long long int"
 .LASF25:
 	.string	"SEC_ENG_PKA_REG_SIZE_64"
+.LASF58:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF6:
 	.string	"long int"
 .LASF27:
@@ -4359,6 +4359,8 @@ bflb_dsa_init:
 	.string	"int32_t"
 .LASF53:
 	.string	"Sec_Eng_PKA_MEXP"
+.LASF57:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_dsa.c"
 .LASF35:
 	.string	"size"
 .LASF30:
@@ -4379,8 +4381,6 @@ bflb_dsa_init:
 	.string	"__int32_t"
 .LASF37:
 	.string	"nregType"
-.LASF57:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_dsa.c"
 .LASF32:
 	.string	"SEC_ENG_PKA_REG_SIZE_Type"
 .LASF47:

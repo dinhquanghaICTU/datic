@@ -11,7 +11,7 @@
 	.type	goToErrorState, @function
 goToErrorState:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
 	.loc 1 153 1
 	.cfi_startproc
 .LVL0:
@@ -495,8 +495,8 @@ stateM_stopped:
 	.size	stateM_stopped, .-stateM_stopped
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x44b
@@ -1932,8 +1932,6 @@ stateM_stopped:
 	.string	"state"
 .LASF33:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF34:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
 .LASF16:
 	.string	"entryAction"
 .LASF12:
@@ -1946,6 +1944,8 @@ stateM_stopped:
 	.string	"data"
 .LASF21:
 	.string	"errorState"
+.LASF34:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
 .LASF24:
 	.string	"stateM_stateChanged"
 .LASF22:
@@ -1966,6 +1966,8 @@ stateM_stopped:
 	.string	"action"
 .LASF40:
 	.string	"stateM_init"
+.LASF35:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF6:
 	.string	"condition"
 .LASF3:
@@ -1976,8 +1978,6 @@ stateM_stopped:
 	.string	"unsigned int"
 .LASF30:
 	.string	"stateM_currentState"
-.LASF35:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF18:
 	.string	"stateMachine"
 .LASF38:

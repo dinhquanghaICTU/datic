@@ -12,7 +12,7 @@
 	.type	strntoumax, @function
 strntoumax:
 .LFB2:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/strntoumax.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/strntoumax.c"
 	.loc 1 30 1
 	.cfi_startproc
 .LVL0:
@@ -334,9 +334,9 @@ strntoumax:
 	.size	strntoumax, .-strntoumax
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x18a
@@ -1157,10 +1157,8 @@ strntoumax:
 	.string	"strntoumax"
 .LASF16:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF18:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602"
 .LASF17:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/strntoumax.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/evb/src/strntoumax.c"
 .LASF5:
 	.string	"unsigned char"
 .LASF7:
@@ -1193,4 +1191,6 @@ strntoumax:
 	.string	"long int"
 .LASF1:
 	.string	"signed char"
+.LASF18:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

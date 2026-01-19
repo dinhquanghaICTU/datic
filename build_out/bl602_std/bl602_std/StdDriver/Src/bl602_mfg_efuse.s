@@ -12,7 +12,7 @@
 	.type	mfg_efuse_get_rf_cal_slots, @function
 mfg_efuse_get_rf_cal_slots:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_efuse.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_efuse.c"
 	.loc 1 16 1
 	.cfi_startproc
 	.loc 1 24 5
@@ -2516,13 +2516,13 @@ rf_cal_slots:
 	.byte	3
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1549
@@ -7443,6 +7443,8 @@ rf_cal_slots:
 	.string	"HBN_ROOT_CLK_PLL"
 .LASF3:
 	.string	"int8_t"
+.LASF83:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_efuse.c"
 .LASF30:
 	.string	"rtClk"
 .LASF81:
@@ -7483,8 +7485,8 @@ rf_cal_slots:
 	.string	"short int"
 .LASF43:
 	.string	"empty"
-.LASF84:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF0:
+	.string	"unsigned int"
 .LASF26:
 	.string	"GLB_ROOT_CLK_Type"
 .LASF55:
@@ -7493,8 +7495,8 @@ rf_cal_slots:
 	.string	"GLB_Get_BCLK_Div"
 .LASF77:
 	.string	"memset"
-.LASF16:
-	.string	"TIMEOUT"
+.LASF84:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF5:
 	.string	"long int"
 .LASF17:
@@ -7511,6 +7513,8 @@ rf_cal_slots:
 	.string	"mfg_efuse_get_rf_cal_slots"
 .LASF15:
 	.string	"ERROR"
+.LASF16:
+	.string	"TIMEOUT"
 .LASF59:
 	.string	"slots"
 .LASF47:
@@ -7543,8 +7547,6 @@ rf_cal_slots:
 	.string	"EF_Ctrl_Is_CapCode_Slot_Empty"
 .LASF13:
 	.string	"char"
-.LASF0:
-	.string	"unsigned int"
 .LASF46:
 	.string	"pwrOffsetTmp"
 .LASF4:
@@ -7559,8 +7561,6 @@ rf_cal_slots:
 	.string	"EF_Ctrl_Read_PowerOffset_Opt"
 .LASF27:
 	.string	"rf_cal_slots"
-.LASF83:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_efuse.c"
 .LASF49:
 	.string	"mfg_efuse_write_macaddr"
 .LASF11:

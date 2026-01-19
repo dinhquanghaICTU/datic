@@ -1,70 +1,70 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 29 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 30 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
+# 45 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
 typedef unsigned char __uint8_t;
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int16_t;
 
 typedef short unsigned int __uint16_t;
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 77 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int32_t;
 
 typedef long unsigned int __uint32_t;
-# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 103 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int64_t;
 
 typedef long long unsigned int __uint64_t;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int_least8_t;
 
 typedef unsigned char __uint_least8_t;
-# 160 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 160 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int_least16_t;
 
 typedef short unsigned int __uint_least16_t;
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int_least32_t;
 
 typedef long unsigned int __uint_least32_t;
-# 200 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 200 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int_least64_t;
 
 typedef long long unsigned int __uint_least64_t;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __intmax_t;
 
 
@@ -84,49 +84,49 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -175,7 +175,7 @@ typedef __uint32_t __id_t;
 
 
 typedef unsigned short __ino_t;
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef __uint32_t __mode_t;
 
 
@@ -203,11 +203,11 @@ typedef long __key_t;
 
 
 typedef long _fpos_t;
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef unsigned int __size_t;
-# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 147 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef signed int _ssize_t;
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 158 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef _ssize_t __ssize_t;
 
 
@@ -270,7 +270,7 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 
 
 
@@ -278,12 +278,12 @@ typedef __builtin_va_list __va_list;
 
 
 typedef unsigned long __ULong;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
 typedef int _LOCK_T;
 typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 typedef _LOCK_RECURSIVE_T _flock_t;
 
 
@@ -337,7 +337,7 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 98 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _atexit {
  struct _atexit *_next;
  int _ind;
@@ -345,12 +345,12 @@ struct _atexit {
  void (*_fns[32])(void);
         struct _on_exit_args _on_exit_args;
 };
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 186 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -401,7 +401,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -412,7 +412,7 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
@@ -422,7 +422,7 @@ struct _rand48 {
 
 
 };
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 613 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _reent
 {
   int _errno;
@@ -505,14 +505,14 @@ struct _reent
   __FILE __sf[3];
 
 };
-# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 819 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
 
 
@@ -531,8 +531,8 @@ typedef __intptr_t register_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
 typedef __int8_t int8_t ;
 
 
@@ -596,66 +596,66 @@ typedef __intptr_t intptr_t;
 
 
 typedef __uintptr_t uintptr_t;
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
+# 50 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
 typedef unsigned long __sigset_t;
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 typedef __suseconds_t suseconds_t;
 
 
 
 
 typedef __int_least64_t time_t;
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 54 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 struct timeval {
  time_t tv_sec;
  suseconds_t tv_usec;
 };
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
 struct timespec {
  time_t tv_sec;
  long tv_nsec;
 };
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
 struct itimerspec {
  struct timespec it_interval;
  struct timespec it_value;
 };
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
 
 
 
 typedef __sigset_t sigset_t;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef unsigned long __fd_mask;
 
 typedef __fd_mask fd_mask;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef struct fd_set {
  __fd_mask __fds_bits[(((64) + ((((int)sizeof(__fd_mask) * 8)) - 1)) / (((int)sizeof(__fd_mask) * 8)))];
 } fd_set;
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 
 
 int select (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, struct timeval *__timeout)
@@ -667,7 +667,7 @@ int pselect (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds
 
 
 
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
 
@@ -725,7 +725,7 @@ typedef __blksize_t blksize_t;
 
 
 typedef unsigned long clock_t;
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 119 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef long daddr_t;
 
 
@@ -747,7 +747,7 @@ typedef __id_t id_t;
 
 
 typedef __ino_t ino_t;
-# 157 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 157 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __off_t off_t;
 
 
@@ -803,22 +803,22 @@ typedef __timer_t timer_t;
 
 
 typedef __useconds_t useconds_t;
-# 220 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 220 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __int64_t sbintime_t;
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 struct sched_param {
   int sched_priority;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 };
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_t;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef struct {
   int is_initialized;
   void *stackaddr;
@@ -834,12 +834,12 @@ typedef struct {
 
   int detachstate;
 } pthread_attr_t;
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 154 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_mutex_t;
 
 typedef struct {
   int is_initialized;
-# 168 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 168 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
   int recursive;
 } pthread_mutexattr_t;
 
@@ -868,10 +868,10 @@ typedef struct {
   int is_initialized;
   int init_executed;
 } pthread_once_t;
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
-# 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
+# 225 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
@@ -889,9 +889,9 @@ typedef _fpos_t fpos_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
-# 80 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
+# 80 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 char * ctermid (char *);
 
 
@@ -959,7 +959,7 @@ int sprintf (char *restrict, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 int remove (const char *);
 int rename (const char *, const char *);
-# 257 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 257 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int fseeko (FILE *, off_t, int);
 off_t ftello (FILE *);
 
@@ -1033,7 +1033,7 @@ int vsiscanf (const char *, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__scanf__, 2, 0)));
 int vsniprintf (char *, size_t, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__printf__, 3, 0)));
-# 339 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 339 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE * fdopen (int, const char *);
 
 int fileno (FILE *);
@@ -1060,7 +1060,7 @@ int ftrylockfile (FILE *);
 void funlockfile (FILE *);
 int putc_unlocked (int, FILE *);
 int putchar_unlocked (int);
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 374 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int dprintf (int, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 
@@ -1074,7 +1074,7 @@ int vdprintf (int, const char *restrict, __gnuc_va_list)
 
 
 int renameat (int, const char *, int, const char *);
-# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 396 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int _asiprintf_r (struct _reent *, char **, const char *, ...)
                __attribute__ ((__format__ (__printf__, 3, 4)));
 char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
@@ -1228,10 +1228,10 @@ size_t fwrite_unlocked (const void *restrict , size_t _size, size_t _n, FILE *);
 
 char * fgets_unlocked (char *restrict, int, FILE *restrict);
 int fputs_unlocked (const char *restrict, FILE *restrict);
-# 577 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 577 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int __srget_r (struct _reent *, FILE *);
 int __swbuf_r (struct _reent *, int, FILE *);
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 601 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE *funopen (const void *__cookie,
   int (*__readfn)(void *__cookie, char *__buf,
     int __n),
@@ -1246,7 +1246,7 @@ FILE *_funopen_r (struct _reent *, const void *__cookie,
      int __n),
   fpos_t (*__seekfn)(void *__cookie, fpos_t __off, int __whence),
   int (*__closefn)(void *__cookie));
-# 624 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 624 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
 typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
      size_t __n);
@@ -1270,7 +1270,7 @@ FILE *fopencookie (void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
 FILE *_fopencookie_r (struct _reent *, void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
-# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 687 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
 
 
@@ -1281,7 +1281,7 @@ static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
  else
   return (__swbuf_r(_ptr, _c, _p));
 }
-# 741 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 741 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline int
 _getchar_unlocked(void)
 {
@@ -1299,20 +1299,20 @@ _putchar_unlocked(int _c)
  _ptr = _impure_ptr;
  return (__sputc_r(_ptr, _c, ((_ptr)->_stdout)));
 }
-# 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 797 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h" 1
+# 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 1
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 1
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -1372,39 +1372,39 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
 struct __locale_t;
 typedef struct __locale_t *locale_t;
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
@@ -1587,7 +1587,7 @@ void * _reallocf_r (struct _reent *, void *, size_t);
 int setenv (const char *__string, const char *__value, int __overwrite);
 
 int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 char * __itoa (int, char *, int);
 char * __utoa (unsigned, char *, int);
 
@@ -1674,7 +1674,7 @@ void __eprintf (const char *, const char *, unsigned int, const char *);
 
 
 void qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
-# 322 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 322 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 extern long double _strtold_r (struct _reent *, const char *restrict, char **restrict);
 
 extern long double strtold (const char *restrict, char **restrict);
@@ -1693,19 +1693,19 @@ __attribute__((__noreturn__)) void
 
 
 
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 
 
 int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
@@ -1737,7 +1737,7 @@ int strcasecmp_l (const char *, const char *, locale_t);
 int strncasecmp_l (const char *, const char *, size_t, locale_t);
 
 
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
@@ -1811,7 +1811,7 @@ char *_strndup_r (struct _reent *, const char *, size_t);
 
 
 char *strerror_r (int, char *, size_t);
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char * _strerror_r (struct _reent *, int, int, int *);
 
 
@@ -1843,12 +1843,12 @@ char *strsignal (int __signo);
 
 
 int strverscmp (const char *, const char *);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
 static __inline unsigned long __libc_detect_null(unsigned long w)
 {
   unsigned long mask = 0x7f7f7f7f;
@@ -1856,40 +1856,40 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
     mask = ((mask << 16) << 16) | mask;
   return ~(((w & mask) + mask) | w | mask);
 }
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 176 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
-
-
-
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
+# 59 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 196 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
-# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 
-# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
+
+
+
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 196 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 2
+# 69 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+
+# 69 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 typedef uint16_t fdt16_t;
 typedef uint32_t fdt32_t;
 typedef uint64_t fdt64_t;
-# 82 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+# 82 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 static inline uint16_t fdt16_to_cpu(fdt16_t x)
 {
     return ( uint16_t)((((unsigned long long)((uint8_t *)&x)[0]) << 8) | ((unsigned long long)((uint8_t *)&x)[1]));
@@ -1916,8 +1916,8 @@ static inline fdt64_t cpu_to_fdt64(uint64_t x)
 {
     return ( fdt64_t)((((unsigned long long)((uint8_t *)&x)[0]) << 56) | (((unsigned long long)((uint8_t *)&x)[1]) << 48) | (((unsigned long long)((uint8_t *)&x)[2]) << 40) | (((unsigned long long)((uint8_t *)&x)[3]) << 32) | (((unsigned long long)((uint8_t *)&x)[4]) << 24) | (((unsigned long long)((uint8_t *)&x)[5]) << 16) | (((unsigned long long)((uint8_t *)&x)[6]) << 8) | ((unsigned long long)((uint8_t *)&x)[7]));
 }
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h" 2
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h" 2
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
 struct fdt_header {
     fdt32_t magic;
     fdt32_t totalsize;
@@ -1953,14 +1953,14 @@ struct fdt_property {
     fdt32_t nameoff;
     char data[0];
 };
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
 int blfdt_cli_init(void);
-# 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h" 1
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 1
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h" 2
-# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h" 1
+# 54 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h" 1
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h" 2
+# 148 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const void *fdt_offset_ptr(const void *fdt, int offset, unsigned int checklen);
 
 static inline void *fdt_offset_ptr_w(void *fdt, int offset, int checklen)
@@ -1969,7 +1969,7 @@ static inline void *fdt_offset_ptr_w(void *fdt, int offset, int checklen)
 }
 
 uint32_t fdt_next_tag(const void *fdt, int offset, int *nextoffset);
-# 164 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 164 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline uint32_t fdt32_ld(const fdt32_t *p)
 {
     const uint8_t *bp = (const uint8_t *)p;
@@ -1999,11 +1999,11 @@ static inline uint64_t fdt64_ld(const fdt64_t *p)
 
 
 int fdt_next_node(const void *fdt, int offset, int *depth);
-# 201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 201 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_first_subnode(const void *fdt, int offset);
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_next_subnode(const void *fdt, int offset);
-# 266 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 266 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline void fdt_set_magic(void *fdt, uint32_t val) { struct fdt_header *fdth = (struct fdt_header *)fdt; fdth->magic = cpu_to_fdt32(val); };
 static inline void fdt_set_totalsize(void *fdt, uint32_t val) { struct fdt_header *fdth = (struct fdt_header *)fdt; fdth->totalsize = cpu_to_fdt32(val); };
 static inline void fdt_set_off_dt_struct(void *fdt, uint32_t val) { struct fdt_header *fdth = (struct fdt_header *)fdt; fdth->off_dt_struct = cpu_to_fdt32(val); };
@@ -2025,9 +2025,9 @@ static inline size_t fdt_header_size(const void *fdt)
 {
     return fdt_header_size_(((fdt32_ld(&((const struct fdt_header *)(fdt))->version))));
 }
-# 305 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 305 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_check_header(const void *fdt);
-# 326 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 326 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_move(const void *fdt, void *buf, int bufsize);
 
 
@@ -2035,41 +2035,41 @@ int fdt_move(const void *fdt, void *buf, int bufsize);
 
 
 int fdt_check_full(const void *fdt, size_t bufsize);
-# 348 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 348 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const char *fdt_get_string(const void *fdt, int stroffset, int *lenp);
-# 362 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 362 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const char *fdt_string(const void *fdt, int stroffset);
-# 377 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 377 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 uint32_t fdt_get_max_phandle(const void *fdt);
-# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 390 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_num_mem_rsv(const void *fdt);
-# 407 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 407 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_get_mem_rsv(const void *fdt, int n, uint64_t *address, uint64_t *size);
-# 422 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 422 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_subnode_offset_namelen(const void *fdt, int parentoffset,
                    const char *name, int namelen);
-# 449 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 449 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_subnode_offset(const void *fdt, int parentoffset, const char *name);
-# 461 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 461 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_path_offset_namelen(const void *fdt, const char *path, int namelen);
-# 487 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 487 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_path_offset(const void *fdt, const char *path);
-# 512 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 512 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const char *fdt_get_name(const void *fdt, int nodeoffset, int *lenp);
-# 532 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 532 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_first_property_offset(const void *fdt, int nodeoffset);
-# 553 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 553 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_next_property_offset(const void *fdt, int offset);
-# 609 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 609 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const struct fdt_property *fdt_get_property_by_offset(const void *fdt,
                               int offset,
                               int *lenp);
-# 625 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 625 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const struct fdt_property *fdt_get_property_namelen(const void *fdt,
                             int nodeoffset,
                             const char *name,
                             int namelen, int *lenp);
-# 659 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 659 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const struct fdt_property *fdt_get_property(const void *fdt, int nodeoffset,
                         const char *name, int *lenp);
 static inline struct fdt_property *fdt_get_property_w(void *fdt, int nodeoffset,
@@ -2079,10 +2079,10 @@ static inline struct fdt_property *fdt_get_property_w(void *fdt, int nodeoffset,
     return (struct fdt_property *)(uintptr_t)
         fdt_get_property(fdt, nodeoffset, name, lenp);
 }
-# 701 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 701 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const void *fdt_getprop_by_offset(const void *fdt, int offset,
                   const char **namep, int *lenp);
-# 717 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 717 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const void *fdt_getprop_namelen(const void *fdt, int nodeoffset,
                 const char *name, int namelen, int *lenp);
 static inline void *fdt_getprop_namelen_w(void *fdt, int nodeoffset,
@@ -2092,7 +2092,7 @@ static inline void *fdt_getprop_namelen_w(void *fdt, int nodeoffset,
     return (void *)(uintptr_t)fdt_getprop_namelen(fdt, nodeoffset, name,
                               namelen, lenp);
 }
-# 756 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 756 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const void *fdt_getprop(const void *fdt, int nodeoffset,
             const char *name, int *lenp);
 static inline void *fdt_getprop_w(void *fdt, int nodeoffset,
@@ -2100,65 +2100,65 @@ static inline void *fdt_getprop_w(void *fdt, int nodeoffset,
 {
     return (void *)(uintptr_t)fdt_getprop(fdt, nodeoffset, name, lenp);
 }
-# 776 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 776 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 uint32_t fdt_get_phandle(const void *fdt, int nodeoffset);
-# 788 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 788 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const char *fdt_get_alias_namelen(const void *fdt,
                   const char *name, int namelen);
-# 804 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 804 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const char *fdt_get_alias(const void *fdt, const char *name);
-# 831 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 831 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_get_path(const void *fdt, int nodeoffset, char *buf, int buflen);
-# 863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 863 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_supernode_atdepth_offset(const void *fdt, int nodeoffset,
                  int supernodedepth, int *nodedepth);
-# 885 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 885 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_node_depth(const void *fdt, int nodeoffset);
-# 908 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 908 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_parent_offset(const void *fdt, int nodeoffset);
-# 948 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 948 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_node_offset_by_prop_value(const void *fdt, int startoffset,
                   const char *propname,
                   const void *propval, int proplen);
-# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 971 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_node_offset_by_phandle(const void *fdt, uint32_t phandle);
-# 995 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 995 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_node_check_compatible(const void *fdt, int nodeoffset,
                   const char *compatible);
-# 1032 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1032 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_node_offset_by_compatible(const void *fdt, int startoffset,
                   const char *compatible);
-# 1047 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1047 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_stringlist_contains(const char *strlist, int listlen, const char *str);
-# 1059 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1059 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_stringlist_count(const void *fdt, int nodeoffset, const char *property);
-# 1080 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1080 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_stringlist_search(const void *fdt, int nodeoffset, const char *property,
               const char *string);
-# 1107 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1107 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 const char *fdt_stringlist_get(const void *fdt, int nodeoffset,
                    const char *property, int index,
                    int *lenp);
-# 1144 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1144 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_address_cells(const void *fdt, int nodeoffset);
-# 1165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1165 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_size_cells(const void *fdt, int nodeoffset);
-# 1189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1189 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_setprop_inplace_namelen_partial(void *fdt, int nodeoffset,
                     const char *name, int namelen,
                     uint32_t idx, const void *val,
                     int len);
-# 1224 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1224 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_setprop_inplace(void *fdt, int nodeoffset, const char *name,
             const void *val, int len);
-# 1256 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1256 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline int fdt_setprop_inplace_u32(void *fdt, int nodeoffset,
                       const char *name, uint32_t val)
 {
     fdt32_t tmp = cpu_to_fdt32(val);
     return fdt_setprop_inplace(fdt, nodeoffset, name, &tmp, sizeof(tmp));
 }
-# 1291 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1291 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline int fdt_setprop_inplace_u64(void *fdt, int nodeoffset,
                       const char *name, uint64_t val)
 {
@@ -2176,9 +2176,9 @@ static inline int fdt_setprop_inplace_cell(void *fdt, int nodeoffset,
 {
     return fdt_setprop_inplace_u32(fdt, nodeoffset, name, val);
 }
-# 1333 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1333 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_nop_property(void *fdt, int nodeoffset, const char *name);
-# 1357 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1357 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_nop_node(void *fdt, int nodeoffset);
 
 
@@ -2207,7 +2207,7 @@ static inline int fdt_property_cell(void *fdt, const char *name, uint32_t val)
 {
     return fdt_property_u32(fdt, name, val);
 }
-# 1400 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1400 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_property_placeholder(void *fdt, const char *name, int len, void **valp);
 
 
@@ -2222,26 +2222,26 @@ int fdt_finish(void *fdt);
 int fdt_create_empty_tree(void *buf, int bufsize);
 int fdt_open_into(const void *fdt, void *buf, int bufsize);
 int fdt_pack(void *fdt);
-# 1437 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1437 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_add_mem_rsv(void *fdt, uint64_t address, uint64_t size);
-# 1461 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1461 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_del_mem_rsv(void *fdt, int n);
-# 1487 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1487 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_set_name(void *fdt, int nodeoffset, const char *name);
-# 1517 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1517 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_setprop(void *fdt, int nodeoffset, const char *name,
         const void *val, int len);
-# 1548 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1548 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_setprop_placeholder(void *fdt, int nodeoffset, const char *name,
                 int len, void **prop_data);
-# 1579 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1579 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline int fdt_setprop_u32(void *fdt, int nodeoffset, const char *name,
                   uint32_t val)
 {
     fdt32_t tmp = cpu_to_fdt32(val);
     return fdt_setprop(fdt, nodeoffset, name, &tmp, sizeof(tmp));
 }
-# 1614 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1614 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline int fdt_setprop_u64(void *fdt, int nodeoffset, const char *name,
                   uint64_t val)
 {
@@ -2259,17 +2259,17 @@ static inline int fdt_setprop_cell(void *fdt, int nodeoffset, const char *name,
 {
     return fdt_setprop_u32(fdt, nodeoffset, name, val);
 }
-# 1720 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1720 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_appendprop(void *fdt, int nodeoffset, const char *name,
            const void *val, int len);
-# 1751 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1751 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline int fdt_appendprop_u32(void *fdt, int nodeoffset,
                      const char *name, uint32_t val)
 {
     fdt32_t tmp = cpu_to_fdt32(val);
     return fdt_appendprop(fdt, nodeoffset, name, &tmp, sizeof(tmp));
 }
-# 1786 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1786 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 static inline int fdt_appendprop_u64(void *fdt, int nodeoffset,
                      const char *name, uint64_t val)
 {
@@ -2287,16 +2287,16 @@ static inline int fdt_appendprop_cell(void *fdt, int nodeoffset,
 {
     return fdt_appendprop_u32(fdt, nodeoffset, name, val);
 }
-# 1856 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1856 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_delprop(void *fdt, int nodeoffset, const char *name);
-# 1871 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1871 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_add_subnode_namelen(void *fdt, int parentoffset,
                 const char *name, int namelen);
-# 1906 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1906 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_add_subnode(void *fdt, int parentoffset, const char *name);
-# 1929 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1929 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_del_node(void *fdt, int nodeoffset);
-# 1960 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+# 1960 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 int fdt_overlay_apply(void *fdt, void *fdto);
 
 
@@ -2304,64 +2304,64 @@ int fdt_overlay_apply(void *fdt, void *fdto);
 
 
 const char *fdt_strerror(int errval);
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 1
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
+# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
 unsigned long get_cpu_freq(void);
 unsigned long get_timer_freq(void);
 uint64_t get_timer_value(void);
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 75 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
+# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
 typedef void (*TaskFunction_t)( void * );
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
+# 45 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 typedef uint32_t StackType_t;
 typedef int32_t BaseType_t;
 typedef uint32_t UBaseType_t;
 typedef uint32_t TickType_t;
-# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 extern void vTaskSwitchContext( void );
 extern void vEnvironmentCall( uint32_t exception );
-# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+# 97 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 extern void vTaskEnterCritical( void );
 extern void vTaskExitCritical( void );
-# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+# 152 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 BaseType_t xPortIsInsideInterrupt( void );
-# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
-# 100 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 53 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 99 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
+# 100 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 117 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
   StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters ) ;
 
 
@@ -2372,7 +2372,7 @@ typedef struct HeapRegion
  uint8_t *pucStartAddress;
  size_t xSizeInBytes;
 } HeapRegion_t;
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 139 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
 
 
@@ -2399,8 +2399,8 @@ BaseType_t xPortStartScheduler( void ) ;
 
 
 void vPortEndScheduler( void ) ;
-# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 63 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 1044 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 struct xSTATIC_LIST_ITEM
 {
 
@@ -2438,7 +2438,7 @@ typedef struct xSTATIC_LIST
 
 
 } StaticList_t;
-# 1095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1095 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_TCB
 {
  void *pxDummy1;
@@ -2468,15 +2468,15 @@ typedef struct xSTATIC_TCB
   void *pvDummy15[ 1 ];
 
         void *pvDummy15_1[ 1 ];
-# 1133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1133 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
   uint32_t ulDummy18;
   uint8_t ucDummy19;
 
 
   uint8_t uxDummy20;
-# 1146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1146 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 } StaticTask_t;
-# 1162 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1162 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_QUEUE
 {
  void *pvDummy1[ 3 ];
@@ -2506,7 +2506,7 @@ typedef struct xSTATIC_QUEUE
 
 } StaticQueue_t;
 typedef StaticQueue_t StaticSemaphore_t;
-# 1206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1206 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_EVENT_GROUP
 {
  TickType_t xDummy1;
@@ -2521,7 +2521,7 @@ typedef struct xSTATIC_EVENT_GROUP
 
 
 } StaticEventGroup_t;
-# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1235 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_TIMER
 {
  void *pvDummy1;
@@ -2535,7 +2535,7 @@ typedef struct xSTATIC_TIMER
  uint8_t ucDummy8;
 
 } StaticTimer_t;
-# 1263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1263 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_STREAM_BUFFER
 {
  size_t uxDummy1[ 4 ];
@@ -2548,11 +2548,11 @@ typedef struct xSTATIC_STREAM_BUFFER
 
 
 typedef StaticStreamBuffer_t StaticMessageBuffer_t;
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
+# 139 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 struct xLIST;
 struct xLIST_ITEM
 {
@@ -2586,18 +2586,18 @@ typedef struct xLIST
  MiniListItem_t xListEnd;
 
 } List_t;
-# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 345 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInitialise( List_t * const pxList ) ;
-# 356 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 356 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInitialiseItem( ListItem_t * const pxItem ) ;
-# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 369 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
-# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 390 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
-# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 405 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
-# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
+# 69 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 struct tskTaskControlBlock;
 typedef struct tskTaskControlBlock* TaskHandle_t;
 
@@ -2686,14 +2686,14 @@ typedef enum
  eStandardSleep,
  eNoTasksWaitingTimeout
 } eSleepModeStatus;
-# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 330 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
        const char * const pcName,
        const uint16_t usStackDepth,
        void * const pvParameters,
        UBaseType_t uxPriority,
        TaskHandle_t * const pxCreatedTask ) ;
-# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 446 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
          const char * const pcName,
          const uint32_t ulStackDepth,
@@ -2701,17 +2701,17 @@ typedef enum
          UBaseType_t uxPriority,
          StackType_t * const puxStackBuffer,
          StaticTask_t * const pxTaskBuffer ) ;
-# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 665 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskAllocateMPURegions( TaskHandle_t xTask, const MemoryRegion_t * const pxRegions ) ;
-# 706 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 706 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskDelete( TaskHandle_t xTaskToDelete ) ;
-# 758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 758 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskDelay( const TickType_t xTicksToDelay ) ;
-# 817 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 817 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskDelayUntil( TickType_t * const pxPreviousWakeTime, const TickType_t xTimeIncrement ) ;
-# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 842 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) ;
-# 889 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 889 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
 
 
@@ -2721,42 +2721,42 @@ UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
 
 
 UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
-# 915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 915 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 eTaskState eTaskGetState( TaskHandle_t xTask ) ;
-# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 971 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskGetInfo( TaskHandle_t xTask, TaskStatus_t *pxTaskStatus, BaseType_t xGetFreeStackSpace, eTaskState eState ) ;
-# 1013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1013 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority ) ;
-# 1064 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1064 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
-# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskResume( TaskHandle_t xTaskToResume ) ;
-# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1142 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
-# 1175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1175 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskStartScheduler( void ) ;
-# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1231 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskEndScheduler( void ) ;
-# 1282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1282 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskSuspendAll( void ) ;
-# 1336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1336 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskResumeAll( void ) ;
-# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1351 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TickType_t xTaskGetTickCount( void ) ;
 BaseType_t xTaskGetTickCount2( TickType_t *ticks, BaseType_t *overflow ) ;
-# 1368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1368 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TickType_t xTaskGetTickCountFromISR( void ) ;
-# 1382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1382 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskGetNumberOfTasks( void ) ;
-# 1395 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1395 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 char *pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
-# 1411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1411 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TaskHandle_t xTaskGetHandle( const char *pcNameToQuery ) ;
-# 1438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1438 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
-# 1465 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1465 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
-# 1513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1513 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue ) ;
  void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) ;
 
@@ -2771,43 +2771,43 @@ uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
 
 
         UBaseType_t vTaskSetThreadLocalStoragePointerAndDelCallback( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue, TlsDeleteCallbackFunction_t pvDelCallback);
-# 1541 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1541 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask, void *pvParameter ) ;
-# 1550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1550 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TaskHandle_t xTaskGetIdleTaskHandle( void ) ;
-# 1649 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1649 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime ) ;
 UBaseType_t xAddTasksToAllList( void ) ;
 List_t * pxTaskGetAllList( void ) ;
-# 1698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1698 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskList( char * pcWriteBuffer ) ;
-# 1752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1752 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskGetRunTimeStats( char *pcWriteBuffer ) ;
-# 1782 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1782 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TickType_t xTaskGetIdleRunTimeCounter( void ) ;
-# 1863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1863 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) ;
-# 1954 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1954 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 2031 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2031 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait ) ;
-# 2132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2132 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 2201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2201 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) ;
-# 2217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2217 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
-# 2238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2238 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskIncrementTick( void ) ;
-# 2271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2271 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPlaceOnEventList( List_t * const pxEventList, const TickType_t xTicksToWait ) ;
 void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickType_t xTicksToWait ) ;
-# 2285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2285 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPlaceOnEventListRestricted( List_t * const pxEventList, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
-# 2311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2311 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
 void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem, const TickType_t xItemValue ) ;
-# 2322 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2322 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  void vTaskSwitchContext( void ) ;
 
 
@@ -2855,7 +2855,7 @@ BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
 
 
 BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
-# 2378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2378 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder, UBaseType_t uxHighestPriorityWaitingTask ) ;
 
 
@@ -2868,10 +2868,10 @@ UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
 
 
 void vTaskSetTaskNumber( TaskHandle_t xTask, const UBaseType_t uxHandle ) ;
-# 2399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2399 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskStepTick( const TickType_t xTicksToJump ) ;
 void vTaskStepTickSafe( const TickType_t xTicksToJump ) ;
-# 2416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2416 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
 
 
@@ -2885,23 +2885,23 @@ TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
 
 
 void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h" 1
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h" 1
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
 typedef enum LOG_BUF_OUT_DATA_TYPE {
     LOG_BUF_OUT_DATA_TYPE_HEX,
     LOG_BUF_OUT_DATA_TYPE_INT8,
     LOG_BUF_OUT_DATA_TYPE_UNT8,
 } LOG_BUF_OUT_DATA_TYPE_T;
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
 int log_buf_out(const char *file, int line, const void *inbuf, int len, LOG_BUF_OUT_DATA_TYPE_T type);
 
 void bl_printk(const char *format, ...);
-# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h" 1
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog_type.h" 1
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog_type.h"
 typedef enum _blog_leve {
     BLOG_LEVEL_ALL = 0,
     BLOG_LEVEL_DEBUG,
@@ -2916,17 +2916,17 @@ typedef struct _blog_info {
     blog_level_t *level;
     char *name;
 } blog_info_t;
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog_cfg.h" 1
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
-# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog/blog.h"
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog_cfg.h" 1
+# 45 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h" 2
+# 340 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h"
     void blog_init(void);
 
     void blog_hexdump_out(const char* name, uint8_t width, uint8_t* buf, uint16_t size);
 
     int blog_set_level_log_component(char* level, char* component_name);
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset.h" 1
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset.h" 1
 
 
 
@@ -2936,19 +2936,19 @@ typedef struct _blog_info {
 int loopset_led_hook_on_looprt(void);
 void loopset_led_trigger(int pin, unsigned int timeon_ms);
 int loopset_led_cli_init(void);
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
+# 22 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     typedef struct
     {
         void *hdl;
@@ -2987,10 +2987,10 @@ int loopset_led_cli_init(void);
 
 
     const char *aos_version_get(void);
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 71 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_task_new(const char *name, void (*fn)(void *), void *arg,
                      int stack_size);
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_task_new_ext(aos_task_t *task, const char *name, void (*fn)(void *),
                          void *arg, int stack_size, int prio);
 
@@ -3007,7 +3007,7 @@ int loopset_led_cli_init(void);
 
 
     const char *aos_task_name(void);
-# 113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_task_key_create(aos_task_key_t *key);
 
 
@@ -3016,7 +3016,7 @@ int loopset_led_cli_init(void);
 
 
     void aos_task_key_delete(aos_task_key_t key);
-# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 130 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_task_setspecific(aos_task_key_t key, void *vp);
 
 
@@ -3025,7 +3025,7 @@ int loopset_led_cli_init(void);
 
 
     void *aos_task_getspecific(aos_task_key_t key);
-# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 148 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_mutex_new(aos_mutex_t *mutex);
 
 
@@ -3035,13 +3035,13 @@ int loopset_led_cli_init(void);
 
 
     void aos_mutex_free(aos_mutex_t *mutex);
-# 167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 167 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_mutex_lock(aos_mutex_t *mutex, unsigned int timeout);
-# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 177 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_mutex_unlock(aos_mutex_t *mutex);
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 186 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_mutex_is_valid(aos_mutex_t *mutex);
-# 197 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 197 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_sem_new(aos_sem_t *sem, int count);
 
 
@@ -3051,7 +3051,7 @@ int loopset_led_cli_init(void);
 
 
     void aos_sem_free(aos_sem_t *sem);
-# 216 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 216 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_sem_wait(aos_sem_t *sem, unsigned int timeout);
 
 
@@ -3061,7 +3061,7 @@ int loopset_led_cli_init(void);
 
 
     void aos_sem_signal(aos_sem_t *sem);
-# 233 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 233 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_sem_is_valid(aos_sem_t *sem);
 
 
@@ -3071,7 +3071,7 @@ int loopset_led_cli_init(void);
 
 
     void aos_sem_signal_all(aos_sem_t *sem);
-# 254 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 254 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_queue_new(aos_queue_t *queue, void *buf, unsigned int size,
                       int max_msg);
 
@@ -3081,19 +3081,19 @@ int loopset_led_cli_init(void);
 
 
     void aos_queue_free(aos_queue_t *queue);
-# 273 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 273 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_queue_send(aos_queue_t *queue, void *msg, unsigned int size);
-# 285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 285 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_queue_recv(aos_queue_t *queue, unsigned int ms, void *msg,
                        unsigned int *size);
-# 295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 295 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_queue_is_valid(aos_queue_t *queue);
-# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 304 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     void *aos_queue_buf_ptr(aos_queue_t *queue);
-# 317 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 317 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_timer_new(aos_timer_t *timer, void (*fn)(void *, void *), void *arg,
                       int ms, int repeat);
-# 332 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 332 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_timer_new_ext(aos_timer_t *timer, void (*fn)(void *, void *),
                           void *arg, int ms, int repeat,
                           unsigned char auto_run);
@@ -3104,16 +3104,16 @@ int loopset_led_cli_init(void);
 
 
     void aos_timer_free(aos_timer_t *timer);
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_timer_start(aos_timer_t *timer);
-# 359 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 359 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_timer_stop(aos_timer_t *timer);
-# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 369 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_timer_change(aos_timer_t *timer, int ms);
-# 380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 380 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_workqueue_create(aos_workqueue_t *workqueue, int pri,
                              int stack_size);
-# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 393 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_work_init(aos_work_t *work, void (*fn)(void *), void *arg, int dly);
 
 
@@ -3122,19 +3122,19 @@ int loopset_led_cli_init(void);
 
 
     void aos_work_destroy(aos_work_t *work);
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 410 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_work_run(aos_workqueue_t *workqueue, aos_work_t *work);
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 419 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_work_sched(aos_work_t *work);
-# 428 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 428 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     int aos_work_cancel(aos_work_t *work);
-# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 438 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     void *aos_realloc(void *mem, unsigned int size);
-# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 447 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     void *aos_malloc(unsigned int size);
-# 457 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 457 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     void *aos_calloc(unsigned int nitems, unsigned int size);
-# 466 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 466 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     void *aos_zalloc(unsigned int size);
 
 
@@ -3165,7 +3165,7 @@ int loopset_led_cli_init(void);
 
 
     long long aos_now_ms(void);
-# 512 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+# 512 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
     char *aos_now_time_str(char *buffer, const int len);
 
 
@@ -3184,12 +3184,12 @@ int loopset_led_cli_init(void);
 
 
     void aos_start(void);
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h" 1
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/event_type_code.h" 1
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h" 2
-# 102 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h" 1
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/event_type_code.h" 1
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h" 2
+# 102 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 typedef struct {
 
     uint32_t time;
@@ -3209,21 +3209,21 @@ typedef void (*aos_event_cb)(input_event_t *event, void *private_data);
 typedef void (*aos_call_t)(void *arg);
 
 typedef void (*aos_poll_call_t)(int fd, void *arg);
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_register_event_filter(uint16_t type, aos_event_cb cb, void *priv);
-# 142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 142 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_unregister_event_filter(uint16_t type, aos_event_cb cb, void *priv);
-# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 153 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_post_event(uint16_t type, uint16_t code, unsigned long value);
-# 164 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 164 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_poll_read_fd(int fd, aos_poll_call_t action, void *param);
-# 173 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 173 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 void aos_cancel_poll_read_fd(int fd, aos_poll_call_t action, void *param);
-# 184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 184 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_post_delayed_action(int ms, aos_call_t action, void *arg);
-# 193 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 193 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 void aos_cancel_delayed_action(int ms, aos_call_t action, void *arg);
-# 206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 206 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_schedule_call(aos_call_t action, void *arg);
 
 typedef void *aos_loop_t;
@@ -3256,21 +3256,21 @@ void aos_loop_exit(void);
 
 
 void aos_loop_destroy(void);
-# 248 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 248 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 int aos_loop_schedule_call(aos_loop_t *loop, aos_call_t action, void *arg);
-# 261 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 261 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 void *aos_loop_schedule_work(int ms, aos_call_t action, void *arg1,
                              aos_call_t fini_cb, void *arg2);
-# 271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+# 271 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 void aos_cancel_work(void *work, aos_call_t action, void *arg1);
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h" 1
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h" 2
-# 76 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h" 1
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h" 2
+# 76 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 struct tmrTimerControl;
 typedef struct tmrTimerControl * TimerHandle_t;
 
@@ -3284,24 +3284,24 @@ typedef void (*TimerCallbackFunction_t)( TimerHandle_t xTimer );
 
 
 typedef void (*PendedFunction_t)( void *, uint32_t );
-# 228 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 228 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
  TimerHandle_t xTimerCreate( const char * const pcTimerName,
         const TickType_t xTimerPeriodInTicks,
         const UBaseType_t uxAutoReload,
         void * const pvTimerID,
         TimerCallbackFunction_t pxCallbackFunction ) ;
-# 358 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 358 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
  TimerHandle_t xTimerCreateStatic( const char * const pcTimerName,
           const TickType_t xTimerPeriodInTicks,
           const UBaseType_t uxAutoReload,
           void * const pvTimerID,
           TimerCallbackFunction_t pxCallbackFunction,
           StaticTimer_t *pxTimerBuffer ) ;
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 386 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 void *pvTimerGetTimerID( const TimerHandle_t xTimer ) ;
-# 407 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 407 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 void vTimerSetTimerID( TimerHandle_t xTimer, void *pvNewID ) ;
-# 444 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 444 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) ;
 
 
@@ -3311,17 +3311,17 @@ BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) ;
 
 
 TaskHandle_t xTimerGetTimerDaemonTaskHandle( void ) ;
-# 1187 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1187 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend, void *pvParameter1, uint32_t ulParameter2, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 1221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1221 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend, void *pvParameter1, uint32_t ulParameter2, TickType_t xTicksToWait ) ;
-# 1232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1232 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 const char * pcTimerGetName( TimerHandle_t xTimer ) ;
-# 1249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1249 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 void vTimerSetReloadMode( TimerHandle_t xTimer, const UBaseType_t uxAutoReload ) ;
-# 1260 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1260 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 TickType_t xTimerGetPeriod( TimerHandle_t xTimer ) ;
-# 1275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+# 1275 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer ) ;
 
 
@@ -3334,11 +3334,11 @@ BaseType_t xTimerGenericCommand( TimerHandle_t xTimer, const BaseType_t xCommand
 
  void vTimerSetTimerNumber( TimerHandle_t xTimer, UBaseType_t uxTimerNumber ) ;
  UBaseType_t uxTimerGetTimerNumber( TimerHandle_t xTimer ) ;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h" 1
 
 
 
@@ -3362,8 +3362,8 @@ int bl_gpio_int_clear(uint8_t gpioPin,uint8_t intClear);
 void bl_gpio_intmask(uint8_t gpiopin, uint8_t mask);
 void bl_set_gpio_intmod(uint8_t gpioPin, uint8_t intCtrlMod, uint8_t intTrgMod);
 void bl_gpio_register(gpio_ctx_t *pstnode);
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h" 1
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h" 1
 
 
 void bl_irq_enable(unsigned int source);
@@ -3392,8 +3392,8 @@ void bl_irq_ctx_get(int irqnum, void **ctx);
 int bl_irq_save(void);
 void bl_irq_restore(int flags);
 void __attribute__((noreturn)) bl_sys_abort(const char *details);
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.h" 1
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.h" 1
 
 
 
@@ -3413,22 +3413,22 @@ int hal_gpio_register_handler(void *func, int gpioPin, int intCtrlMod, int intTr
 int hal_gpio_init_from_dts(uint32_t fdt, uint32_t dtb_offset);
 int hal_gpio_led_on(void);
 int hal_gpio_led_off(void);
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.h" 1
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.h" 1
 
 
 
 void fdt_button_module_init(const void *fdt, int button_offset);
 void hal_button_module_init(int pin,int short_press_end_ms,int long_press_end_ms,int longlong_press_ms);
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.h" 1
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.h" 1
 
 
 
 int hal_hbn_init(uint8_t *pinbuf, uint8_t pinbuf_size);
 int hal_hbn_enter(uint32_t time);
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 2
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
 typedef struct _button_ctx_desc {
     void *private_ctx;
     TimerHandle_t psttimer_handler;
@@ -3458,9 +3458,9 @@ static int accumulate_time(button_ctx_t *pstnode)
     int accu_time;
 
     if (
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
        ((void *)0) 
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
             == pstnode) {
         ;
         return -1;
@@ -3495,9 +3495,9 @@ static void clear_button_states(button_ctx_t *pstnode)
     pstnode->dlong_entry_count = 0;
 
     if (xTimerGenericCommand( ( pstnode->psttimer_handler ), ( ( BaseType_t ) 3 ), 0U, 
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
        ((void *)0)
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
        , ( 0 ) ) != ( ( ( BaseType_t ) 1 ) )) {
         ;
     }
@@ -3526,9 +3526,9 @@ static void button_process(TimerHandle_t pxTimer)
             }
 
             if (xTimerGenericCommand( ( pstnode->psttimer_handler ), ( ( BaseType_t ) 4 ), ( 20 / ( ( TickType_t ) 1000 / ( ( TickType_t ) 1000 ) ) ), 
-# 116 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 116 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                ((void *)0)
-# 116 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 116 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                , ( 100 ) ) != ( ( ( BaseType_t ) 1 ) )) {
                 ;
                 button_int_umask(pstnode);
@@ -3661,9 +3661,9 @@ static int hal_button_register_handler_with_dts(gpio_ctx_t *pstgpio)
     uint8_t level;
 
     if (
-# 247 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 247 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
        ((void *)0) 
-# 247 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 247 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
             == pstgpio) {
         ;
         return -1;
@@ -3771,9 +3771,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
 
         addr_prop = fdt_getprop(fdt, offset1, "pin", &lentmp);
         if (addr_prop == 
-# 353 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 353 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 353 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 353 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3794,9 +3794,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
         }
         addr_prop = fdt_getprop(fdt, offset2, "debounce", &lentmp);
         if (addr_prop == 
-# 372 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 372 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 372 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 372 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3812,9 +3812,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
         }
         addr_prop = fdt_getprop(fdt, offset3, "start", &lentmp);
         if (addr_prop == 
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 386 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 386 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3823,9 +3823,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
 
         addr_prop = fdt_getprop(fdt, offset3, "end", &lentmp);
         if (addr_prop == 
-# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 393 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 393 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3834,9 +3834,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
 
         addr_prop = fdt_getprop(fdt, offset3, "kevent", &lentmp);
         if (addr_prop == 
-# 400 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 400 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 400 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 400 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3850,9 +3850,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
         }
         addr_prop = fdt_getprop(fdt, offset3, "start", &lentmp);
         if (addr_prop == 
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 412 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 412 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3861,9 +3861,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
 
         addr_prop = fdt_getprop(fdt, offset3, "end", &lentmp);
         if (addr_prop == 
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 419 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 419 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3872,9 +3872,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
 
         addr_prop = fdt_getprop(fdt, offset3, "kevent", &lentmp);
         if (addr_prop == 
-# 426 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 426 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 426 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 426 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3888,9 +3888,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
         }
         addr_prop = fdt_getprop(fdt, offset3, "start", &lentmp);
         if (addr_prop == 
-# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 438 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 438 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;
@@ -3899,9 +3899,9 @@ void fdt_button_module_init(const void *fdt, int button_offset)
 
         addr_prop = fdt_getprop(fdt, offset3, "kevent", &lentmp);
         if (addr_prop == 
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
+# 445 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c" 3 4
                         ((void *)0)
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+# 445 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
                             ) {
             ;
             continue;

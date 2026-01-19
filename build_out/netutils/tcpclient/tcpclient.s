@@ -42,7 +42,7 @@
 	.type	tcpc_entry, @function
 tcpc_entry:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/netutils/tcpclient/tcpclient.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/tcpclient/tcpclient.c"
 	.loc 1 17 1
 	.cfi_startproc
 .LVL0:
@@ -554,22 +554,22 @@ cmds_user:
 	.word	tcpclient_cmd
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/inet.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sockets.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/inet.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sockets.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x89c
@@ -2697,8 +2697,6 @@ cmds_user:
 	.string	"MEMP_NETBUF"
 .LASF23:
 	.string	"MEMP_TCP_SEG"
-.LASF86:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/netutils"
 .LASF71:
 	.string	"lwip_socket"
 .LASF12:
@@ -2729,6 +2727,8 @@ cmds_user:
 	.string	"MEMP_NETDB"
 .LASF77:
 	.string	"snprintf"
+.LASF86:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/netutils"
 .LASF4:
 	.string	"long long int"
 .LASF8:
@@ -2761,8 +2761,6 @@ cmds_user:
 	.string	"unsigned char"
 .LASF55:
 	.string	"counter"
-.LASF85:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/netutils/tcpclient/tcpclient.c"
 .LASF52:
 	.string	"argc"
 .LASF34:
@@ -2811,6 +2809,8 @@ cmds_user:
 	.string	"in_addr_t"
 .LASF32:
 	.string	"MEMP_PBUF"
+.LASF85:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/tcpclient/tcpclient.c"
 .LASF7:
 	.string	"long unsigned int"
 .LASF39:

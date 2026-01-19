@@ -11,7 +11,7 @@
 	.type	lzma_len, @function
 lzma_len:
 .LFB30:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_lzma2.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_lzma2.c"
 	.loc 1 621 1
 	.cfi_startproc
 .LVL0:
@@ -972,7 +972,7 @@ lzma_main:
 	.loc 1 592 2 is_stmt 1
 .LBE421:
 .LBE420:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_lzma2.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_lzma2.h"
 	.loc 2 95 2
 .LBB479:
 .LBB478:
@@ -4318,11 +4318,11 @@ xz_dec_lzma2_end:
 	.size	xz_dec_lzma2_end, .-xz_dec_lzma2_end
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_config.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_config.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1ad7
@@ -11590,8 +11590,6 @@ xz_dec_lzma2_end:
 	.string	"simple_malloc"
 .LASF60:
 	.string	"choice"
-.LASF153:
-	.string	"lzma_get_dist_state"
 .LASF135:
 	.string	"rc_is_finished"
 .LASF39:
@@ -11612,8 +11610,8 @@ xz_dec_lzma2_end:
 	.string	"lzma_rep_match"
 .LASF162:
 	.string	"memset"
-.LASF165:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_lzma2.c"
+.LASF153:
+	.string	"lzma_get_dist_state"
 .LASF50:
 	.string	"size"
 .LASF55:
@@ -11678,8 +11676,6 @@ xz_dec_lzma2_end:
 	.string	"temp"
 .LASF95:
 	.string	"next_sequence"
-.LASF166:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF159:
 	.string	"simple_free"
 .LASF73:
@@ -11720,6 +11716,8 @@ xz_dec_lzma2_end:
 	.string	"choice2"
 .LASF2:
 	.string	"unsigned char"
+.LASF166:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF81:
 	.string	"rep_len_dec"
 .LASF146:
@@ -11736,6 +11734,8 @@ xz_dec_lzma2_end:
 	.string	"dict_flush"
 .LASF116:
 	.string	"lzma_reset"
+.LASF165:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_lzma2.c"
 .LASF157:
 	.string	"lzma_state_match"
 .LASF1:

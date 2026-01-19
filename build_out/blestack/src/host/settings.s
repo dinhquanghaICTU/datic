@@ -19,7 +19,7 @@
 	.type	bt_settings_encode_key, @function
 bt_settings_encode_key:
 .LFB73:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
 	.loc 1 32 1
 	.cfi_startproc
 .LVL0:
@@ -143,10 +143,10 @@ bt_settings_init:
 	.size	bt_settings_init, .-bt_settings_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1f2
@@ -875,14 +875,16 @@ bt_settings_init:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF21:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
+.LASF12:
+	.string	"bt_addr_t"
 .LASF17:
 	.string	"path_size"
 .LASF10:
 	.string	"size_t"
 .LASF20:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF21:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
 .LASF19:
 	.string	"addr"
 .LASF26:
@@ -891,8 +893,6 @@ bt_settings_init:
 	.string	"bt_settings_save_id"
 .LASF25:
 	.string	"bt_settings_encode_key"
-.LASF12:
-	.string	"bt_addr_t"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF2:
@@ -911,8 +911,6 @@ bt_settings_init:
 	.string	"char"
 .LASF11:
 	.string	"u8_t"
-.LASF22:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF7:
 	.string	"long long int"
 .LASF13:
@@ -929,4 +927,6 @@ bt_settings_init:
 	.string	"short unsigned int"
 .LASF15:
 	.string	"_Bool"
+.LASF22:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

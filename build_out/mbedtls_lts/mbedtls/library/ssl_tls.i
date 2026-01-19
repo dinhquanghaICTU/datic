@@ -1,38 +1,38 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h" 1
-# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls_sample_config.h" 1
-# 178 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls_sample_config.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h" 1
+# 27 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls_sample_config.h" 1
+# 178 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls_sample_config.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h" 1
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3 4
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3 4
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3 4
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3 4
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3 4
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3 4
+# 45 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3 4
 
 
 
@@ -40,43 +40,43 @@
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3 4
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 2 3 4
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3 4
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 2 3 4
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef signed char __int8_t;
 
 typedef unsigned char __uint8_t;
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef short int __int16_t;
 
 typedef short unsigned int __uint16_t;
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 77 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long int __int32_t;
 
 typedef long unsigned int __uint32_t;
-# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 103 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long long int __int64_t;
 
 typedef long long unsigned int __uint64_t;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef signed char __int_least8_t;
 
 typedef unsigned char __uint_least8_t;
-# 160 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 160 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef short int __int_least16_t;
 
 typedef short unsigned int __uint_least16_t;
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long int __int_least32_t;
 
 typedef long unsigned int __uint_least32_t;
-# 200 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 200 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long long int __int_least64_t;
 
 typedef long long unsigned int __uint_least64_t;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long long int __intmax_t;
 
 
@@ -96,39 +96,39 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 196 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h" 2
-# 934 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h"
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 196 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h" 2
+# 934 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h"
 
-# 934 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h"
+# 934 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/check_config.h"
 typedef int mbedtls_iso_c_forbids_empty_translation_units;
-# 179 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls_sample_config.h" 2
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h" 2
+# 179 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls_sample_config.h" 2
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h" 2
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -188,68 +188,68 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h" 2
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/common.h" 2
+# 29 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h" 1
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h" 1
+# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
-
-
-
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 29 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
 
 
 
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 30 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -298,7 +298,7 @@ typedef __uint32_t __id_t;
 
 
 typedef unsigned short __ino_t;
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef __uint32_t __mode_t;
 
 
@@ -326,11 +326,11 @@ typedef long __key_t;
 
 
 typedef long _fpos_t;
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef unsigned int __size_t;
-# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 147 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef signed int _ssize_t;
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 158 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef _ssize_t __ssize_t;
 
 
@@ -393,7 +393,7 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 
 
 
@@ -401,12 +401,12 @@ typedef __builtin_va_list __va_list;
 
 
 typedef unsigned long __ULong;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
 typedef int _LOCK_T;
 typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 typedef _LOCK_RECURSIVE_T _flock_t;
 
 
@@ -460,7 +460,7 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 98 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _atexit {
  struct _atexit *_next;
  int _ind;
@@ -468,12 +468,12 @@ struct _atexit {
  void (*_fns[32])(void);
         struct _on_exit_args _on_exit_args;
 };
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 186 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -524,7 +524,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -535,7 +535,7 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
@@ -545,7 +545,7 @@ struct _rand48 {
 
 
 };
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 613 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _reent
 {
   int _errno;
@@ -628,14 +628,14 @@ struct _reent
   __FILE __sf[3];
 
 };
-# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 819 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
 
 
@@ -654,8 +654,8 @@ typedef __intptr_t register_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
 typedef __int8_t int8_t ;
 
 
@@ -719,66 +719,66 @@ typedef __intptr_t intptr_t;
 
 
 typedef __uintptr_t uintptr_t;
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
+# 50 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
 typedef unsigned long __sigset_t;
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 typedef __suseconds_t suseconds_t;
 
 
 
 
 typedef __int_least64_t time_t;
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 54 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 struct timeval {
  time_t tv_sec;
  suseconds_t tv_usec;
 };
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
 struct timespec {
  time_t tv_sec;
  long tv_nsec;
 };
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
 struct itimerspec {
  struct timespec it_interval;
  struct timespec it_value;
 };
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
 
 
 
 typedef __sigset_t sigset_t;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef unsigned long __fd_mask;
 
 typedef __fd_mask fd_mask;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef struct fd_set {
  __fd_mask __fds_bits[(((64) + ((((int)sizeof(__fd_mask) * 8)) - 1)) / (((int)sizeof(__fd_mask) * 8)))];
 } fd_set;
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 
 
 int select (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, struct timeval *__timeout)
@@ -790,7 +790,7 @@ int pselect (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds
 
 
 
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
 
@@ -848,7 +848,7 @@ typedef __blksize_t blksize_t;
 
 
 typedef unsigned long clock_t;
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 119 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef long daddr_t;
 
 
@@ -870,7 +870,7 @@ typedef __id_t id_t;
 
 
 typedef __ino_t ino_t;
-# 157 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 157 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __off_t off_t;
 
 
@@ -926,22 +926,22 @@ typedef __timer_t timer_t;
 
 
 typedef __useconds_t useconds_t;
-# 220 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 220 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __int64_t sbintime_t;
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 struct sched_param {
   int sched_priority;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 };
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_t;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef struct {
   int is_initialized;
   void *stackaddr;
@@ -957,12 +957,12 @@ typedef struct {
 
   int detachstate;
 } pthread_attr_t;
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 154 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_mutex_t;
 
 typedef struct {
   int is_initialized;
-# 168 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 168 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
   int recursive;
 } pthread_mutexattr_t;
 
@@ -991,10 +991,10 @@ typedef struct {
   int is_initialized;
   int init_executed;
 } pthread_once_t;
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
-# 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
+# 225 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
@@ -1012,9 +1012,9 @@ typedef _fpos_t fpos_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
-# 80 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
+# 80 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 char * ctermid (char *);
 
 
@@ -1082,7 +1082,7 @@ int sprintf (char *restrict, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 int remove (const char *);
 int rename (const char *, const char *);
-# 257 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 257 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int fseeko (FILE *, off_t, int);
 off_t ftello (FILE *);
 
@@ -1156,7 +1156,7 @@ int vsiscanf (const char *, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__scanf__, 2, 0)));
 int vsniprintf (char *, size_t, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__printf__, 3, 0)));
-# 339 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 339 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE * fdopen (int, const char *);
 
 int fileno (FILE *);
@@ -1183,7 +1183,7 @@ int ftrylockfile (FILE *);
 void funlockfile (FILE *);
 int putc_unlocked (int, FILE *);
 int putchar_unlocked (int);
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 374 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int dprintf (int, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 
@@ -1197,7 +1197,7 @@ int vdprintf (int, const char *restrict, __gnuc_va_list)
 
 
 int renameat (int, const char *, int, const char *);
-# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 396 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int _asiprintf_r (struct _reent *, char **, const char *, ...)
                __attribute__ ((__format__ (__printf__, 3, 4)));
 char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
@@ -1351,10 +1351,10 @@ size_t fwrite_unlocked (const void *restrict , size_t _size, size_t _n, FILE *);
 
 char * fgets_unlocked (char *restrict, int, FILE *restrict);
 int fputs_unlocked (const char *restrict, FILE *restrict);
-# 577 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 577 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int __srget_r (struct _reent *, FILE *);
 int __swbuf_r (struct _reent *, int, FILE *);
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 601 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE *funopen (const void *__cookie,
   int (*__readfn)(void *__cookie, char *__buf,
     int __n),
@@ -1369,7 +1369,7 @@ FILE *_funopen_r (struct _reent *, const void *__cookie,
      int __n),
   fpos_t (*__seekfn)(void *__cookie, fpos_t __off, int __whence),
   int (*__closefn)(void *__cookie));
-# 624 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 624 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
 typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
      size_t __n);
@@ -1393,7 +1393,7 @@ FILE *fopencookie (void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
 FILE *_fopencookie_r (struct _reent *, void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
-# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 687 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
 
 
@@ -1404,7 +1404,7 @@ static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
  else
   return (__swbuf_r(_ptr, _c, _p));
 }
-# 741 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 741 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline int
 _getchar_unlocked(void)
 {
@@ -1422,25 +1422,25 @@ _putchar_unlocked(int _c)
  _ptr = _impure_ptr;
  return (__sputc_r(_ptr, _c, ((_ptr)->_stdout)));
 }
-# 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 797 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
 struct __locale_t;
 typedef struct __locale_t *locale_t;
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 
 
 int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
@@ -1472,7 +1472,7 @@ int strcasecmp_l (const char *, const char *, locale_t);
 int strncasecmp_l (const char *, const char *, size_t, locale_t);
 
 
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
@@ -1546,7 +1546,7 @@ char *_strndup_r (struct _reent *, const char *, size_t);
 
 
 char *strerror_r (int, char *, size_t);
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char * _strerror_r (struct _reent *, int, int, int *);
 
 
@@ -1578,12 +1578,12 @@ char *strsignal (int __signo);
 
 
 int strverscmp (const char *, const char *);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
 static __inline unsigned long __libc_detect_null(unsigned long w)
 {
   unsigned long mask = 0x7f7f7f7f;
@@ -1591,64 +1591,64 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
     mask = ((mask << 16) << 16) | mask;
   return ~(((w & mask) + mask) | w | mask);
 }
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 176 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 2
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 1
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
+# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
 
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
 unsigned long get_cpu_freq(void);
 unsigned long get_timer_freq(void);
 uint64_t get_timer_value(void);
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 75 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
+# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h" 1
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
 typedef void (*TaskFunction_t)( void * );
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 1
+# 45 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h" 1
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h" 1
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 typedef uint32_t StackType_t;
 typedef int32_t BaseType_t;
 typedef uint32_t UBaseType_t;
 typedef uint32_t TickType_t;
-# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 extern void vTaskSwitchContext( void );
 extern void vEnvironmentCall( uint32_t exception );
-# 97 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+# 97 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 extern void vTaskEnterCritical( void );
 extern void vTaskExitCritical( void );
-# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+# 152 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 BaseType_t xPortIsInsideInterrupt( void );
-# 53 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-# 99 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
-# 100 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
-# 117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 53 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 99 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h" 1
+# 100 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h" 2
+# 117 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
   StackType_t *pxPortInitialiseStack( StackType_t *pxTopOfStack, TaskFunction_t pxCode, void *pvParameters ) ;
 
 
@@ -1659,7 +1659,7 @@ typedef struct HeapRegion
  uint8_t *pucStartAddress;
  size_t xSizeInBytes;
 } HeapRegion_t;
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+# 139 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
 
 
@@ -1686,8 +1686,8 @@ BaseType_t xPortStartScheduler( void ) ;
 
 
 void vPortEndScheduler( void ) ;
-# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
-# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 63 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h" 2
+# 1044 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 struct xSTATIC_LIST_ITEM
 {
 
@@ -1725,7 +1725,7 @@ typedef struct xSTATIC_LIST
 
 
 } StaticList_t;
-# 1095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1095 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_TCB
 {
  void *pxDummy1;
@@ -1755,15 +1755,15 @@ typedef struct xSTATIC_TCB
   void *pvDummy15[ 1 ];
 
         void *pvDummy15_1[ 1 ];
-# 1133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1133 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
   uint32_t ulDummy18;
   uint8_t ucDummy19;
 
 
   uint8_t uxDummy20;
-# 1146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1146 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 } StaticTask_t;
-# 1162 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1162 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_QUEUE
 {
  void *pvDummy1[ 3 ];
@@ -1793,7 +1793,7 @@ typedef struct xSTATIC_QUEUE
 
 } StaticQueue_t;
 typedef StaticQueue_t StaticSemaphore_t;
-# 1206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1206 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_EVENT_GROUP
 {
  TickType_t xDummy1;
@@ -1808,7 +1808,7 @@ typedef struct xSTATIC_EVENT_GROUP
 
 
 } StaticEventGroup_t;
-# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1235 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_TIMER
 {
  void *pvDummy1;
@@ -1822,7 +1822,7 @@ typedef struct xSTATIC_TIMER
  uint8_t ucDummy8;
 
 } StaticTimer_t;
-# 1263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+# 1263 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 typedef struct xSTATIC_STREAM_BUFFER
 {
  size_t uxDummy1[ 4 ];
@@ -1835,47 +1835,47 @@ typedef struct xSTATIC_STREAM_BUFFER
 
 
 typedef StaticStreamBuffer_t StaticMessageBuffer_t;
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 2
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h"
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h" 2
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_platform.h"
 void *mbedtls_port_calloc( size_t nmemb, size_t size );
-# 128 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h" 2
-# 144 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 145 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h" 2
+# 128 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h" 2
+# 144 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h" 2
 extern void *mbedtls_calloc( size_t n, size_t size );
 extern void mbedtls_free( void *ptr );
-# 157 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+# 157 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
 int mbedtls_platform_set_calloc_free( void * (*calloc_func)( size_t, size_t ),
                               void (*free_func)( void * ) );
-# 375 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+# 375 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
 typedef struct mbedtls_platform_context
 {
     char dummy;
 }
 mbedtls_platform_context;
-# 400 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+# 400 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
 int mbedtls_platform_setup( mbedtls_platform_context *ctx );
-# 415 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+# 415 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
 void mbedtls_platform_teardown( mbedtls_platform_context *ctx );
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
 
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h" 2
-# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h" 2
+# 177 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
     typedef int32_t mbedtls_mpi_sint;
     typedef uint32_t mbedtls_mpi_uint;
 
         typedef uint64_t mbedtls_t_udbl;
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 typedef struct mbedtls_mpi
 {
     int s;
@@ -1883,15 +1883,15 @@ typedef struct mbedtls_mpi
     mbedtls_mpi_uint *p;
 }
 mbedtls_mpi;
-# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 208 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 void mbedtls_mpi_init( mbedtls_mpi *X );
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 void mbedtls_mpi_free( mbedtls_mpi *X );
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 232 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_grow( mbedtls_mpi *X, size_t nblimbs );
-# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 249 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_shrink( mbedtls_mpi *X, size_t nblimbs );
-# 264 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 264 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_copy( mbedtls_mpi *X, const mbedtls_mpi *Y );
 
 
@@ -1901,118 +1901,118 @@ int mbedtls_mpi_copy( mbedtls_mpi *X, const mbedtls_mpi *Y );
 
 
 void mbedtls_mpi_swap( mbedtls_mpi *X, mbedtls_mpi *Y );
-# 298 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 298 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_safe_cond_assign( mbedtls_mpi *X, const mbedtls_mpi *Y, unsigned char assign );
-# 323 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 323 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_safe_cond_swap( mbedtls_mpi *X, mbedtls_mpi *Y, unsigned char assign );
-# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 335 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_lset( mbedtls_mpi *X, mbedtls_mpi_sint z );
-# 347 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 347 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_get_bit( const mbedtls_mpi *X, size_t pos );
-# 364 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 364 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_set_bit( mbedtls_mpi *X, size_t pos, unsigned char val );
-# 378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 378 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 size_t mbedtls_mpi_lsb( const mbedtls_mpi *X );
-# 392 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 392 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 size_t mbedtls_mpi_bitlen( const mbedtls_mpi *X );
-# 407 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 407 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 size_t mbedtls_mpi_size( const mbedtls_mpi *X );
-# 419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 419 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_read_string( mbedtls_mpi *X, int radix, const char *s );
-# 443 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 443 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_write_string( const mbedtls_mpi *X, int radix,
                               char *buf, size_t buflen, size_t *olen );
-# 468 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 468 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_read_file( mbedtls_mpi *X, int radix, FILE *fin );
-# 485 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 485 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_write_file( const char *p, const mbedtls_mpi *X,
                             int radix, FILE *fout );
-# 501 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 501 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_read_binary( mbedtls_mpi *X, const unsigned char *buf,
                              size_t buflen );
-# 516 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 516 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_read_binary_le( mbedtls_mpi *X,
                                 const unsigned char *buf, size_t buflen );
-# 534 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 534 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_write_binary( const mbedtls_mpi *X, unsigned char *buf,
                               size_t buflen );
-# 552 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 552 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_write_binary_le( const mbedtls_mpi *X,
                                  unsigned char *buf, size_t buflen );
-# 565 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 565 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_shift_l( mbedtls_mpi *X, size_t count );
-# 577 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 577 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_shift_r( mbedtls_mpi *X, size_t count );
-# 589 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 589 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_cmp_abs( const mbedtls_mpi *X, const mbedtls_mpi *Y );
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 601 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_cmp_mpi( const mbedtls_mpi *X, const mbedtls_mpi *Y );
-# 618 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 618 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_lt_mpi_ct( const mbedtls_mpi *X, const mbedtls_mpi *Y,
         unsigned *ret );
-# 631 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 631 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_cmp_int( const mbedtls_mpi *X, mbedtls_mpi_sint z );
-# 644 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 644 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_add_abs( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 659 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 659 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_sub_abs( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 673 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 673 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_add_mpi( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 687 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_sub_mpi( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 701 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 701 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_add_int( mbedtls_mpi *X, const mbedtls_mpi *A,
                          mbedtls_mpi_sint b );
-# 716 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 716 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_sub_int( mbedtls_mpi *X, const mbedtls_mpi *A,
                          mbedtls_mpi_sint b );
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_mul_mpi( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 747 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 747 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_mul_int( mbedtls_mpi *X, const mbedtls_mpi *A,
                          mbedtls_mpi_uint b );
-# 768 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 768 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_div_mpi( mbedtls_mpi *Q, mbedtls_mpi *R, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 789 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 789 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_div_int( mbedtls_mpi *Q, mbedtls_mpi *R, const mbedtls_mpi *A,
                          mbedtls_mpi_sint b );
-# 809 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 809 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_mod_mpi( mbedtls_mpi *R, const mbedtls_mpi *A,
                          const mbedtls_mpi *B );
-# 828 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 828 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_mod_int( mbedtls_mpi_uint *r, const mbedtls_mpi *A,
                          mbedtls_mpi_sint b );
-# 857 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 857 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_exp_mod( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *E, const mbedtls_mpi *N,
                          mbedtls_mpi *prec_RR );
-# 878 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 878 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_fill_random( mbedtls_mpi *X, size_t size,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 914 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 914 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_random( mbedtls_mpi *X,
                         mbedtls_mpi_sint min,
                         const mbedtls_mpi *N,
                         int (*f_rng)(void *, unsigned char *, size_t),
                         void *p_rng );
-# 931 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 931 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_gcd( mbedtls_mpi *G, const mbedtls_mpi *A,
                      const mbedtls_mpi *B );
-# 950 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 950 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_inv_mod( mbedtls_mpi *X, const mbedtls_mpi *A,
                          const mbedtls_mpi *N );
-# 978 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 978 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
  int mbedtls_mpi_is_prime( const mbedtls_mpi *X,
                           int (*f_rng)(void *, unsigned char *, size_t),
                           void *p_rng );
-# 1011 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 1011 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_is_prime_ext( const mbedtls_mpi *X, int rounds,
                               int (*f_rng)(void *, unsigned char *, size_t),
                               void *p_rng );
@@ -2026,13 +2026,13 @@ typedef enum {
     MBEDTLS_MPI_GEN_PRIME_FLAG_DH = 0x0001,
     MBEDTLS_MPI_GEN_PRIME_FLAG_LOW_ERR = 0x0002,
 } mbedtls_mpi_gen_prime_flag_t;
-# 1044 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+# 1044 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
 int mbedtls_mpi_gen_prime( mbedtls_mpi *X, size_t nbits, int flags,
                    int (*f_rng)(void *, unsigned char *, size_t),
                    void *p_rng );
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h" 1
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h" 1
+# 120 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 typedef enum
 {
     MBEDTLS_ECP_DP_NONE = 0,
@@ -2050,7 +2050,7 @@ typedef enum
     MBEDTLS_ECP_DP_SECP256K1,
     MBEDTLS_ECP_DP_CURVE448,
 } mbedtls_ecp_group_id;
-# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 148 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 typedef enum
 {
     MBEDTLS_ECP_TYPE_NONE = 0,
@@ -2068,7 +2068,7 @@ typedef struct mbedtls_ecp_curve_info
     uint16_t bit_size;
     const char *name;
 } mbedtls_ecp_curve_info;
-# 177 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 177 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 typedef struct mbedtls_ecp_point
 {
     mbedtls_mpi X;
@@ -2076,9 +2076,9 @@ typedef struct mbedtls_ecp_point
     mbedtls_mpi Z;
 }
 mbedtls_ecp_point;
-# 357 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h" 1
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h"
+# 357 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h" 1
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h"
 typedef struct mbedtls_ecp_group
 {
     mbedtls_ecp_group_id id;
@@ -2098,10 +2098,10 @@ typedef struct mbedtls_ecp_group
     void *Table;
 }
 mbedtls_ecp_group;
-# 358 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h" 2
-# 420 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 358 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h" 2
+# 420 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 typedef void mbedtls_ecp_restart_ctx;
-# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 432 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 typedef struct mbedtls_ecp_keypair
 {
     mbedtls_ecp_group grp;
@@ -2109,17 +2109,17 @@ typedef struct mbedtls_ecp_keypair
     mbedtls_ecp_point Q;
 }
 mbedtls_ecp_keypair;
-# 523 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 523 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 mbedtls_ecp_curve_type mbedtls_ecp_get_type( const mbedtls_ecp_group *grp );
-# 537 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 537 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 const mbedtls_ecp_curve_info *mbedtls_ecp_curve_list( void );
-# 553 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 553 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 const mbedtls_ecp_group_id *mbedtls_ecp_grp_id_list( void );
-# 564 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 564 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 const mbedtls_ecp_curve_info *mbedtls_ecp_curve_info_from_grp_id( mbedtls_ecp_group_id grp_id );
-# 575 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 575 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 const mbedtls_ecp_curve_info *mbedtls_ecp_curve_info_from_tls_id( uint16_t tls_id );
-# 586 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 586 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 const mbedtls_ecp_curve_info *mbedtls_ecp_curve_info_from_name( const char *name );
 
 
@@ -2128,7 +2128,7 @@ const mbedtls_ecp_curve_info *mbedtls_ecp_curve_info_from_name( const char *name
 
 
 void mbedtls_ecp_point_init( mbedtls_ecp_point *pt );
-# 604 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 604 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 void mbedtls_ecp_group_init( mbedtls_ecp_group *grp );
 
 
@@ -2144,134 +2144,134 @@ void mbedtls_ecp_keypair_init( mbedtls_ecp_keypair *key );
 
 
 void mbedtls_ecp_point_free( mbedtls_ecp_point *pt );
-# 627 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 627 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 void mbedtls_ecp_group_free( mbedtls_ecp_group *grp );
-# 636 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 636 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 void mbedtls_ecp_keypair_free( mbedtls_ecp_keypair *key );
-# 668 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 668 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_copy( mbedtls_ecp_point *P, const mbedtls_ecp_point *Q );
-# 681 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 681 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_group_copy( mbedtls_ecp_group *dst,
                             const mbedtls_ecp_group *src );
-# 693 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 693 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_set_zero( mbedtls_ecp_point *pt );
-# 704 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 704 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_is_zero( mbedtls_ecp_point *pt );
-# 718 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 718 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_point_cmp( const mbedtls_ecp_point *P,
                            const mbedtls_ecp_point *Q );
-# 733 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 733 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_point_read_string( mbedtls_ecp_point *P, int radix,
                            const char *x, const char *y );
-# 761 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 761 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_point_write_binary( const mbedtls_ecp_group *grp,
                                     const mbedtls_ecp_point *P,
                                     int format, size_t *olen,
                                     unsigned char *buf, size_t buflen );
-# 788 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 788 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_point_read_binary( const mbedtls_ecp_group *grp,
                                    mbedtls_ecp_point *P,
                                    const unsigned char *buf, size_t ilen );
-# 810 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 810 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_tls_read_point( const mbedtls_ecp_group *grp,
                                 mbedtls_ecp_point *pt,
                                 const unsigned char **buf, size_t len );
-# 836 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 836 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_tls_write_point( const mbedtls_ecp_group *grp,
                                  const mbedtls_ecp_point *pt,
                                  int format, size_t *olen,
                                  unsigned char *buf, size_t blen );
-# 858 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 858 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_group_load( mbedtls_ecp_group *grp, mbedtls_ecp_group_id id );
-# 877 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 877 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_tls_read_group( mbedtls_ecp_group *grp,
                                 const unsigned char **buf, size_t len );
-# 898 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 898 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_tls_read_group_id( mbedtls_ecp_group_id *grp,
                                    const unsigned char **buf,
                                    size_t len );
-# 919 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 919 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_tls_write_group( const mbedtls_ecp_group *grp,
                                  size_t *olen,
                                  unsigned char *buf, size_t blen );
-# 959 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 959 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_mul( mbedtls_ecp_group *grp, mbedtls_ecp_point *R,
              const mbedtls_mpi *m, const mbedtls_ecp_point *P,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 993 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 993 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_mul_restartable( mbedtls_ecp_group *grp, mbedtls_ecp_point *R,
              const mbedtls_mpi *m, const mbedtls_ecp_point *P,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng,
              mbedtls_ecp_restart_ctx *rs_ctx );
-# 1034 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1034 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_muladd( mbedtls_ecp_group *grp, mbedtls_ecp_point *R,
              const mbedtls_mpi *m, const mbedtls_ecp_point *P,
              const mbedtls_mpi *n, const mbedtls_ecp_point *Q );
-# 1078 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1078 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_muladd_restartable(
              mbedtls_ecp_group *grp, mbedtls_ecp_point *R,
              const mbedtls_mpi *m, const mbedtls_ecp_point *P,
              const mbedtls_mpi *n, const mbedtls_ecp_point *Q,
              mbedtls_ecp_restart_ctx *rs_ctx );
-# 1112 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1112 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_check_pubkey( const mbedtls_ecp_group *grp,
                               const mbedtls_ecp_point *pt );
-# 1134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1134 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_check_privkey( const mbedtls_ecp_group *grp,
                                const mbedtls_mpi *d );
-# 1152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1152 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_gen_privkey( const mbedtls_ecp_group *grp,
                      mbedtls_mpi *d,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 1184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_gen_keypair_base( mbedtls_ecp_group *grp,
                                   const mbedtls_ecp_point *G,
                                   mbedtls_mpi *d, mbedtls_ecp_point *Q,
                                   int (*f_rng)(void *, unsigned char *, size_t),
                                   void *p_rng );
-# 1213 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1213 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_gen_keypair( mbedtls_ecp_group *grp, mbedtls_mpi *d,
                              mbedtls_ecp_point *Q,
                              int (*f_rng)(void *, unsigned char *, size_t),
                              void *p_rng );
-# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1231 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_gen_key( mbedtls_ecp_group_id grp_id, mbedtls_ecp_keypair *key,
                          int (*f_rng)(void *, unsigned char *, size_t),
                          void *p_rng );
-# 1253 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1253 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_read_key( mbedtls_ecp_group_id grp_id, mbedtls_ecp_keypair *key,
                           const unsigned char *buf, size_t buflen );
-# 1272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1272 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_write_key( mbedtls_ecp_keypair *key,
                            unsigned char *buf, size_t buflen );
-# 1292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+# 1292 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
 int mbedtls_ecp_check_pub_priv( const mbedtls_ecp_keypair *pub,
                                 const mbedtls_ecp_keypair *prv );
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 1
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h" 1
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h" 2
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 1
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h" 1
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 29 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h" 2
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h" 1
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h" 2
-# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h"
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h" 1
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h" 2
+# 246 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h"
 void mbedtls_platform_zeroize( void *buf, size_t len );
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h" 2
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h" 2
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 typedef enum {
     MBEDTLS_MD_NONE=0,
     MBEDTLS_MD_MD2,
@@ -2284,7 +2284,7 @@ typedef enum {
     MBEDTLS_MD_SHA512,
     MBEDTLS_MD_RIPEMD160,
 } mbedtls_md_type_t;
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 typedef struct mbedtls_md_info_t mbedtls_md_info_t;
 
 
@@ -2301,63 +2301,63 @@ typedef struct mbedtls_md_context_t
 
     void *hmac_ctx;
 } mbedtls_md_context_t;
-# 118 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 118 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 const int *mbedtls_md_list( void );
-# 129 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 129 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 const mbedtls_md_info_t *mbedtls_md_info_from_string( const char *md_name );
-# 140 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 140 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 const mbedtls_md_info_t *mbedtls_md_info_from_type( mbedtls_md_type_t md_type );
-# 150 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 150 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 void mbedtls_md_init( mbedtls_md_context_t *ctx );
-# 165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 165 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 void mbedtls_md_free( mbedtls_md_context_t *ctx );
-# 191 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 191 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 int mbedtls_md_init_ctx( mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info ) ;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_setup( mbedtls_md_context_t *ctx, const mbedtls_md_info_t *md_info, int hmac );
-# 236 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 236 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_clone( mbedtls_md_context_t *dst,
                       const mbedtls_md_context_t *src );
-# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 249 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 unsigned char mbedtls_md_get_size( const mbedtls_md_info_t *md_info );
-# 260 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 260 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 mbedtls_md_type_t mbedtls_md_get_type( const mbedtls_md_info_t *md_info );
-# 271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 271 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 const char *mbedtls_md_get_name( const mbedtls_md_info_t *md_info );
-# 286 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 286 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_starts( mbedtls_md_context_t *ctx );
-# 305 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 305 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_update( mbedtls_md_context_t *ctx, const unsigned char *input, size_t ilen );
-# 326 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 326 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_finish( mbedtls_md_context_t *ctx, unsigned char *output );
-# 347 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 347 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md( const mbedtls_md_info_t *md_info, const unsigned char *input, size_t ilen,
         unsigned char *output );
-# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 369 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_file( const mbedtls_md_info_t *md_info, const char *path,
                      unsigned char *output );
-# 392 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 392 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_hmac_starts( mbedtls_md_context_t *ctx, const unsigned char *key,
                     size_t keylen );
-# 415 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 415 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_hmac_update( mbedtls_md_context_t *ctx, const unsigned char *input,
                     size_t ilen );
-# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 437 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_hmac_finish( mbedtls_md_context_t *ctx, unsigned char *output);
-# 455 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 455 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_hmac_reset( mbedtls_md_context_t *ctx );
-# 480 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
+# 480 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md.h"
 
 int mbedtls_md_hmac( const mbedtls_md_info_t *md_info, const unsigned char *key, size_t keylen,
                 const unsigned char *input, size_t ilen,
@@ -2366,11 +2366,11 @@ int mbedtls_md_hmac( const mbedtls_md_info_t *md_info, const unsigned char *key,
 
 
 int mbedtls_md_process( mbedtls_md_context_t *ctx, const unsigned char *data );
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 2
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h" 1
-# 109 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h" 1
+# 109 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 typedef struct mbedtls_rsa_context
 {
     int ver;
@@ -2411,80 +2411,80 @@ typedef struct mbedtls_rsa_context
 
 }
 mbedtls_rsa_context;
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 void mbedtls_rsa_init( mbedtls_rsa_context *ctx,
                        int padding,
                        int hash_id );
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_import( mbedtls_rsa_context *ctx,
                         const mbedtls_mpi *N,
                         const mbedtls_mpi *P, const mbedtls_mpi *Q,
                         const mbedtls_mpi *D, const mbedtls_mpi *E );
-# 253 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 253 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_import_raw( mbedtls_rsa_context *ctx,
                             unsigned char const *N, size_t N_len,
                             unsigned char const *P, size_t P_len,
                             unsigned char const *Q, size_t Q_len,
                             unsigned char const *D, size_t D_len,
                             unsigned char const *E, size_t E_len );
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_complete( mbedtls_rsa_context *ctx );
-# 334 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 334 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_export( const mbedtls_rsa_context *ctx,
                         mbedtls_mpi *N, mbedtls_mpi *P, mbedtls_mpi *Q,
                         mbedtls_mpi *D, mbedtls_mpi *E );
-# 385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 385 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_export_raw( const mbedtls_rsa_context *ctx,
                             unsigned char *N, size_t N_len,
                             unsigned char *P, size_t P_len,
                             unsigned char *Q, size_t Q_len,
                             unsigned char *D, size_t D_len,
                             unsigned char *E, size_t E_len );
-# 411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 411 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_export_crt( const mbedtls_rsa_context *ctx,
                             mbedtls_mpi *DP, mbedtls_mpi *DQ, mbedtls_mpi *QP );
-# 423 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 423 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 void mbedtls_rsa_set_padding( mbedtls_rsa_context *ctx, int padding,
                               int hash_id );
-# 434 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 434 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 size_t mbedtls_rsa_get_len( const mbedtls_rsa_context *ctx );
-# 454 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 454 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_gen_key( mbedtls_rsa_context *ctx,
                          int (*f_rng)(void *, unsigned char *, size_t),
                          void *p_rng,
                          unsigned int nbits, int exponent );
-# 473 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 473 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_check_pubkey( const mbedtls_rsa_context *ctx );
-# 511 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 511 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_check_privkey( const mbedtls_rsa_context *ctx );
-# 524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_check_pub_priv( const mbedtls_rsa_context *pub,
                                 const mbedtls_rsa_context *prv );
-# 546 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 546 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_public( mbedtls_rsa_context *ctx,
                 const unsigned char *input,
                 unsigned char *output );
-# 581 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 581 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_private( mbedtls_rsa_context *ctx,
                  int (*f_rng)(void *, unsigned char *, size_t),
                  void *p_rng,
                  const unsigned char *input,
                  unsigned char *output );
-# 626 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 626 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_pkcs1_encrypt( mbedtls_rsa_context *ctx,
                        int (*f_rng)(void *, unsigned char *, size_t),
                        void *p_rng,
                        int mode, size_t ilen,
                        const unsigned char *input,
                        unsigned char *output );
-# 667 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 667 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsaes_pkcs1_v15_encrypt( mbedtls_rsa_context *ctx,
                                  int (*f_rng)(void *, unsigned char *, size_t),
                                  void *p_rng,
                                  int mode, size_t ilen,
                                  const unsigned char *input,
                                  unsigned char *output );
-# 712 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 712 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsaes_oaep_encrypt( mbedtls_rsa_context *ctx,
                             int (*f_rng)(void *, unsigned char *, size_t),
                             void *p_rng,
@@ -2493,7 +2493,7 @@ int mbedtls_rsa_rsaes_oaep_encrypt( mbedtls_rsa_context *ctx,
                             size_t ilen,
                             const unsigned char *input,
                             unsigned char *output );
-# 765 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 765 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_pkcs1_decrypt( mbedtls_rsa_context *ctx,
                        int (*f_rng)(void *, unsigned char *, size_t),
                        void *p_rng,
@@ -2501,7 +2501,7 @@ int mbedtls_rsa_pkcs1_decrypt( mbedtls_rsa_context *ctx,
                        const unsigned char *input,
                        unsigned char *output,
                        size_t output_max_len );
-# 815 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 815 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsaes_pkcs1_v15_decrypt( mbedtls_rsa_context *ctx,
                                  int (*f_rng)(void *, unsigned char *, size_t),
                                  void *p_rng,
@@ -2509,7 +2509,7 @@ int mbedtls_rsa_rsaes_pkcs1_v15_decrypt( mbedtls_rsa_context *ctx,
                                  const unsigned char *input,
                                  unsigned char *output,
                                  size_t output_max_len );
-# 869 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 869 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsaes_oaep_decrypt( mbedtls_rsa_context *ctx,
                             int (*f_rng)(void *, unsigned char *, size_t),
                             void *p_rng,
@@ -2519,7 +2519,7 @@ int mbedtls_rsa_rsaes_oaep_decrypt( mbedtls_rsa_context *ctx,
                             const unsigned char *input,
                             unsigned char *output,
                             size_t output_max_len );
-# 929 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 929 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_pkcs1_sign( mbedtls_rsa_context *ctx,
                     int (*f_rng)(void *, unsigned char *, size_t),
                     void *p_rng,
@@ -2528,7 +2528,7 @@ int mbedtls_rsa_pkcs1_sign( mbedtls_rsa_context *ctx,
                     unsigned int hashlen,
                     const unsigned char *hash,
                     unsigned char *sig );
-# 977 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 977 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsassa_pkcs1_v15_sign( mbedtls_rsa_context *ctx,
                                int (*f_rng)(void *, unsigned char *, size_t),
                                void *p_rng,
@@ -2537,7 +2537,7 @@ int mbedtls_rsa_rsassa_pkcs1_v15_sign( mbedtls_rsa_context *ctx,
                                unsigned int hashlen,
                                const unsigned char *hash,
                                unsigned char *sig );
-# 1032 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1032 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsassa_pss_sign_ext( mbedtls_rsa_context *ctx,
                          int (*f_rng)(void *, unsigned char *, size_t),
                          void *p_rng,
@@ -2546,7 +2546,7 @@ int mbedtls_rsa_rsassa_pss_sign_ext( mbedtls_rsa_context *ctx,
                          const unsigned char *hash,
                          int saltlen,
                          unsigned char *sig );
-# 1096 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1096 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsassa_pss_sign( mbedtls_rsa_context *ctx,
                          int (*f_rng)(void *, unsigned char *, size_t),
                          void *p_rng,
@@ -2555,7 +2555,7 @@ int mbedtls_rsa_rsassa_pss_sign( mbedtls_rsa_context *ctx,
                          unsigned int hashlen,
                          const unsigned char *hash,
                          unsigned char *sig );
-# 1149 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1149 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_pkcs1_verify( mbedtls_rsa_context *ctx,
                       int (*f_rng)(void *, unsigned char *, size_t),
                       void *p_rng,
@@ -2564,7 +2564,7 @@ int mbedtls_rsa_pkcs1_verify( mbedtls_rsa_context *ctx,
                       unsigned int hashlen,
                       const unsigned char *hash,
                       const unsigned char *sig );
-# 1195 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1195 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsassa_pkcs1_v15_verify( mbedtls_rsa_context *ctx,
                                  int (*f_rng)(void *, unsigned char *, size_t),
                                  void *p_rng,
@@ -2573,7 +2573,7 @@ int mbedtls_rsa_rsassa_pkcs1_v15_verify( mbedtls_rsa_context *ctx,
                                  unsigned int hashlen,
                                  const unsigned char *hash,
                                  const unsigned char *sig );
-# 1251 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1251 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsassa_pss_verify( mbedtls_rsa_context *ctx,
                            int (*f_rng)(void *, unsigned char *, size_t),
                            void *p_rng,
@@ -2582,7 +2582,7 @@ int mbedtls_rsa_rsassa_pss_verify( mbedtls_rsa_context *ctx,
                            unsigned int hashlen,
                            const unsigned char *hash,
                            const unsigned char *sig );
-# 1304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1304 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_rsassa_pss_verify_ext( mbedtls_rsa_context *ctx,
                                int (*f_rng)(void *, unsigned char *, size_t),
                                void *p_rng,
@@ -2593,11 +2593,11 @@ int mbedtls_rsa_rsassa_pss_verify_ext( mbedtls_rsa_context *ctx,
                                mbedtls_md_type_t mgf1_hash_id,
                                int expected_salt_len,
                                const unsigned char *sig );
-# 1324 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1324 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 int mbedtls_rsa_copy( mbedtls_rsa_context *dst, const mbedtls_rsa_context *src );
-# 1333 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
+# 1333 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/rsa.h"
 void mbedtls_rsa_free( mbedtls_rsa_context *ctx );
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 2
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 2
 
 
 
@@ -2605,30 +2605,30 @@ void mbedtls_rsa_free( mbedtls_rsa_context *ctx );
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h" 1
-# 78 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h" 1
+# 78 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 typedef mbedtls_ecp_keypair mbedtls_ecdsa_context;
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 typedef void mbedtls_ecdsa_restart_ctx;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_can_do( mbedtls_ecp_group_id gid );
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_sign( mbedtls_ecp_group *grp, mbedtls_mpi *r, mbedtls_mpi *s,
                 const mbedtls_mpi *d, const unsigned char *buf, size_t blen,
                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 317 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 317 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_verify( mbedtls_ecp_group *grp,
                           const unsigned char *buf, size_t blen,
                           const mbedtls_ecp_point *Q, const mbedtls_mpi *r,
                           const mbedtls_mpi *s);
-# 370 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 370 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_write_signature( mbedtls_ecdsa_context *ctx,
                                    mbedtls_md_type_t md_alg,
                            const unsigned char *hash, size_t hlen,
                            unsigned char *sig, size_t *slen,
                            int (*f_rng)(void *, unsigned char *, size_t),
                            void *p_rng );
-# 416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 416 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_write_signature_restartable( mbedtls_ecdsa_context *ctx,
                            mbedtls_md_type_t md_alg,
                            const unsigned char *hash, size_t hlen,
@@ -2636,19 +2636,19 @@ int mbedtls_ecdsa_write_signature_restartable( mbedtls_ecdsa_context *ctx,
                            int (*f_rng)(void *, unsigned char *, size_t),
                            void *p_rng,
                            mbedtls_ecdsa_restart_ctx *rs_ctx );
-# 509 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 509 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_read_signature( mbedtls_ecdsa_context *ctx,
                           const unsigned char *hash, size_t hlen,
                           const unsigned char *sig, size_t slen );
-# 544 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 544 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_read_signature_restartable( mbedtls_ecdsa_context *ctx,
                           const unsigned char *hash, size_t hlen,
                           const unsigned char *sig, size_t slen,
                           mbedtls_ecdsa_restart_ctx *rs_ctx );
-# 565 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 565 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_genkey( mbedtls_ecdsa_context *ctx, mbedtls_ecp_group_id gid,
                   int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 583 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 583 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 int mbedtls_ecdsa_from_keypair( mbedtls_ecdsa_context *ctx,
                                 const mbedtls_ecp_keypair *key );
 
@@ -2659,10 +2659,10 @@ int mbedtls_ecdsa_from_keypair( mbedtls_ecdsa_context *ctx,
 
 
 void mbedtls_ecdsa_init( mbedtls_ecdsa_context *ctx );
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
+# 601 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdsa.h"
 void mbedtls_ecdsa_free( mbedtls_ecdsa_context *ctx );
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 2
-# 95 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 2
+# 95 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 typedef enum {
     MBEDTLS_PK_NONE=0,
     MBEDTLS_PK_RSA,
@@ -2684,7 +2684,7 @@ typedef struct mbedtls_pk_rsassa_pss_options
     int expected_salt_len;
 
 } mbedtls_pk_rsassa_pss_options;
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 typedef enum
 {
     MBEDTLS_PK_DEBUG_NONE = 0,
@@ -2718,9 +2718,9 @@ typedef struct mbedtls_pk_context
     const mbedtls_pk_info_t * pk_info;
     void * pk_ctx;
 } mbedtls_pk_context;
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 typedef void mbedtls_pk_restart_ctx;
-# 241 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 241 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 const mbedtls_pk_info_t *mbedtls_pk_info_from_type( mbedtls_pk_type_t pk_type );
 
 
@@ -2730,65 +2730,65 @@ const mbedtls_pk_info_t *mbedtls_pk_info_from_type( mbedtls_pk_type_t pk_type );
 
 
 void mbedtls_pk_init( mbedtls_pk_context *ctx );
-# 262 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 262 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 void mbedtls_pk_free( mbedtls_pk_context *ctx );
-# 297 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 297 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_setup( mbedtls_pk_context *ctx, const mbedtls_pk_info_t *info );
-# 361 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 361 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 size_t mbedtls_pk_get_bitlen( const mbedtls_pk_context *ctx );
-# 370 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 370 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 static inline size_t mbedtls_pk_get_len( const mbedtls_pk_context *ctx )
 {
     return( ( mbedtls_pk_get_bitlen( ctx ) + 7 ) / 8 );
 }
-# 387 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 387 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_can_do( const mbedtls_pk_context *ctx, mbedtls_pk_type_t type );
-# 413 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 413 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_verify( mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
                const unsigned char *hash, size_t hash_len,
                const unsigned char *sig, size_t sig_len );
-# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 437 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_verify_restartable( mbedtls_pk_context *ctx,
                mbedtls_md_type_t md_alg,
                const unsigned char *hash, size_t hash_len,
                const unsigned char *sig, size_t sig_len,
                mbedtls_pk_restart_ctx *rs_ctx );
-# 472 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 472 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_verify_ext( mbedtls_pk_type_t type, const void *options,
                    mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
                    const unsigned char *hash, size_t hash_len,
                    const unsigned char *sig, size_t sig_len );
-# 507 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 507 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_sign( mbedtls_pk_context *ctx, mbedtls_md_type_t md_alg,
              const unsigned char *hash, size_t hash_len,
              unsigned char *sig, size_t *sig_len,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 540 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 540 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_sign_restartable( mbedtls_pk_context *ctx,
              mbedtls_md_type_t md_alg,
              const unsigned char *hash, size_t hash_len,
              unsigned char *sig, size_t *sig_len,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng,
              mbedtls_pk_restart_ctx *rs_ctx );
-# 564 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 564 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_decrypt( mbedtls_pk_context *ctx,
                 const unsigned char *input, size_t ilen,
                 unsigned char *output, size_t *olen, size_t osize,
                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 585 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 585 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_encrypt( mbedtls_pk_context *ctx,
                 const unsigned char *input, size_t ilen,
                 unsigned char *output, size_t *olen, size_t osize,
                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 602 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 602 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_check_pair( const mbedtls_pk_context *pub, const mbedtls_pk_context *prv );
-# 612 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 612 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_debug( const mbedtls_pk_context *ctx, mbedtls_pk_debug_item *items );
-# 621 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 621 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 const char * mbedtls_pk_get_name( const mbedtls_pk_context *ctx );
-# 631 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 631 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 mbedtls_pk_type_t mbedtls_pk_get_type( const mbedtls_pk_context *ctx );
-# 644 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 644 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 static inline mbedtls_rsa_context *mbedtls_pk_rsa( const mbedtls_pk_context pk )
 {
     switch( mbedtls_pk_get_type( &pk ) )
@@ -2797,13 +2797,13 @@ static inline mbedtls_rsa_context *mbedtls_pk_rsa( const mbedtls_pk_context pk )
             return( (mbedtls_rsa_context *) (pk).pk_ctx );
         default:
             return( 
-# 651 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 3 4
+# 651 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 3 4
                    ((void *)0) 
-# 651 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 651 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
                         );
     }
 }
-# 668 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 668 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 static inline mbedtls_ecp_keypair *mbedtls_pk_ec( const mbedtls_pk_context pk )
 {
     switch( mbedtls_pk_get_type( &pk ) )
@@ -2814,35 +2814,35 @@ static inline mbedtls_ecp_keypair *mbedtls_pk_ec( const mbedtls_pk_context pk )
             return( (mbedtls_ecp_keypair *) (pk).pk_ctx );
         default:
             return( 
-# 677 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 3 4
+# 677 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h" 3 4
                    ((void *)0) 
-# 677 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 677 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
                         );
     }
 }
-# 712 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 712 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_parse_key( mbedtls_pk_context *ctx,
                   const unsigned char *key, size_t keylen,
                   const unsigned char *pwd, size_t pwdlen );
-# 738 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 738 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_parse_public_key( mbedtls_pk_context *ctx,
                          const unsigned char *key, size_t keylen );
-# 763 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 763 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_parse_keyfile( mbedtls_pk_context *ctx,
                       const char *path, const char *password );
-# 783 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 783 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_parse_public_keyfile( mbedtls_pk_context *ctx, const char *path );
-# 861 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 861 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_parse_subpubkey( unsigned char **p, const unsigned char *end,
                         mbedtls_pk_context *pk );
-# 885 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
+# 885 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/pk.h"
 int mbedtls_pk_load_file( const char *path, unsigned char **buf, size_t *n );
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 1
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 2
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 1
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 2
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 typedef enum {
     MBEDTLS_CIPHER_ID_NONE = 0,
     MBEDTLS_CIPHER_ID_NULL,
@@ -2855,7 +2855,7 @@ typedef enum {
     MBEDTLS_CIPHER_ID_ARIA,
     MBEDTLS_CIPHER_ID_CHACHA20,
 } mbedtls_cipher_id_t;
-# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 typedef enum {
     MBEDTLS_CIPHER_NONE = 0,
     MBEDTLS_CIPHER_NULL,
@@ -2982,7 +2982,7 @@ enum {
 
     MBEDTLS_KEY_LENGTH_DES_EDE3 = 192,
 };
-# 265 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 265 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 typedef struct mbedtls_cipher_base_t mbedtls_cipher_base_t;
 
 
@@ -3072,15 +3072,15 @@ typedef struct mbedtls_cipher_context_t
 
 
     void *cipher_ctx;
-# 371 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 371 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 } mbedtls_cipher_context_t;
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 386 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 const int *mbedtls_cipher_list( void );
-# 399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 399 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 const mbedtls_cipher_info_t *mbedtls_cipher_info_from_string( const char *cipher_name );
-# 411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 411 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 const mbedtls_cipher_info_t *mbedtls_cipher_info_from_type( const mbedtls_cipher_type_t cipher_type );
-# 427 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 427 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 const mbedtls_cipher_info_t *mbedtls_cipher_info_from_values( const mbedtls_cipher_id_t cipher_id,
                                               int key_bitlen,
                                               const mbedtls_cipher_mode_t mode );
@@ -3091,48 +3091,48 @@ const mbedtls_cipher_info_t *mbedtls_cipher_info_from_values( const mbedtls_ciph
 
 
 void mbedtls_cipher_init( mbedtls_cipher_context_t *ctx );
-# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 447 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 void mbedtls_cipher_free( mbedtls_cipher_context_t *ctx );
-# 467 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 467 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_setup( mbedtls_cipher_context_t *ctx,
                           const mbedtls_cipher_info_t *cipher_info );
-# 505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 505 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline unsigned int mbedtls_cipher_get_block_size(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 );
     if( ctx->cipher_info == 
-# 509 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 509 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 509 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 509 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return 0;
 
     return ctx->cipher_info->block_size;
 }
-# 524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline mbedtls_cipher_mode_t mbedtls_cipher_get_cipher_mode(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 );
     if( ctx->cipher_info == 
-# 528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 528 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 528 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return MBEDTLS_MODE_NONE;
 
     return ctx->cipher_info->mode;
 }
-# 544 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 544 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline int mbedtls_cipher_get_iv_size(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 );
     if( ctx->cipher_info == 
-# 548 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 548 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 548 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 548 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return 0;
 
@@ -3141,102 +3141,102 @@ static inline int mbedtls_cipher_get_iv_size(
 
     return (int) ctx->cipher_info->iv_size;
 }
-# 565 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 565 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline mbedtls_cipher_type_t mbedtls_cipher_get_type(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 )
                                           ;
     if( ctx->cipher_info == 
-# 570 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 570 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 570 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 570 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return MBEDTLS_CIPHER_NONE;
 
     return ctx->cipher_info->type;
 }
-# 585 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 585 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline const char *mbedtls_cipher_get_name(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 );
     if( ctx->cipher_info == 
-# 589 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 589 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 589 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 589 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return 0;
 
     return ctx->cipher_info->name;
 }
-# 604 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 604 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline int mbedtls_cipher_get_key_bitlen(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 )
                                               ;
     if( ctx->cipher_info == 
-# 609 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 609 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 609 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 609 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return MBEDTLS_KEY_LENGTH_NONE;
 
     return (int) ctx->cipher_info->key_bitlen;
 }
-# 623 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 623 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 static inline mbedtls_operation_t mbedtls_cipher_get_operation(
     const mbedtls_cipher_context_t *ctx )
 {
     do { } while( 0 )
                                              ;
     if( ctx->cipher_info == 
-# 628 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
+# 628 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h" 3 4
                            ((void *)0) 
-# 628 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 628 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
                                 )
         return MBEDTLS_OPERATION_NONE;
 
     return ctx->operation;
 }
-# 650 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 650 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_setkey( mbedtls_cipher_context_t *ctx,
                            const unsigned char *key,
                            int key_bitlen,
                            const mbedtls_operation_t operation );
-# 672 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 672 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_set_padding_mode( mbedtls_cipher_context_t *ctx,
                                      mbedtls_cipher_padding_t mode );
-# 694 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 694 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_set_iv( mbedtls_cipher_context_t *ctx,
                            const unsigned char *iv,
                            size_t iv_len );
-# 707 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 707 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_reset( mbedtls_cipher_context_t *ctx );
-# 724 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 724 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_update_ad( mbedtls_cipher_context_t *ctx,
                       const unsigned char *ad, size_t ad_len );
-# 762 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 762 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_update( mbedtls_cipher_context_t *ctx,
                            const unsigned char *input,
                            size_t ilen, unsigned char *output,
                            size_t *olen );
-# 789 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 789 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_finish( mbedtls_cipher_context_t *ctx,
                    unsigned char *output, size_t *olen );
-# 809 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 809 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_write_tag( mbedtls_cipher_context_t *ctx,
                       unsigned char *tag, size_t tag_len );
-# 825 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 825 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_check_tag( mbedtls_cipher_context_t *ctx,
                       const unsigned char *tag, size_t tag_len );
-# 862 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 862 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_crypt( mbedtls_cipher_context_t *ctx,
                   const unsigned char *iv, size_t iv_len,
                   const unsigned char *input, size_t ilen,
                   unsigned char *output, size_t *olen );
-# 920 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 920 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_auth_encrypt( mbedtls_cipher_context_t *ctx,
                          const unsigned char *iv, size_t iv_len,
                          const unsigned char *ad, size_t ad_len,
@@ -3244,7 +3244,7 @@ int mbedtls_cipher_auth_encrypt( mbedtls_cipher_context_t *ctx,
                          unsigned char *output, size_t *olen,
                          unsigned char *tag, size_t tag_len )
                          ;
-# 979 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 979 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_auth_decrypt( mbedtls_cipher_context_t *ctx,
                          const unsigned char *iv, size_t iv_len,
                          const unsigned char *ad, size_t ad_len,
@@ -3252,22 +3252,22 @@ int mbedtls_cipher_auth_decrypt( mbedtls_cipher_context_t *ctx,
                          unsigned char *output, size_t *olen,
                          const unsigned char *tag, size_t tag_len )
                          ;
-# 1035 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 1035 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_auth_encrypt_ext( mbedtls_cipher_context_t *ctx,
                          const unsigned char *iv, size_t iv_len,
                          const unsigned char *ad, size_t ad_len,
                          const unsigned char *input, size_t ilen,
                          unsigned char *output, size_t output_len,
                          size_t *olen, size_t tag_len );
-# 1091 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
+# 1091 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/cipher.h"
 int mbedtls_cipher_auth_decrypt_ext( mbedtls_cipher_context_t *ctx,
                          const unsigned char *iv, size_t iv_len,
                          const unsigned char *ad, size_t ad_len,
                          const unsigned char *input, size_t ilen,
                          unsigned char *output, size_t output_len,
                          size_t *olen, size_t tag_len );
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h" 2
-# 290 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h" 2
+# 290 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
 typedef enum {
     MBEDTLS_KEY_EXCHANGE_NONE = 0,
     MBEDTLS_KEY_EXCHANGE_RSA,
@@ -3282,9 +3282,9 @@ typedef enum {
     MBEDTLS_KEY_EXCHANGE_ECDH_ECDSA,
     MBEDTLS_KEY_EXCHANGE_ECJPAKE,
 } mbedtls_key_exchange_type_t;
-# 378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
+# 378 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
 typedef struct mbedtls_ssl_ciphersuite_t mbedtls_ssl_ciphersuite_t;
-# 388 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
+# 388 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_ciphersuites.h"
 struct mbedtls_ssl_ciphersuite_t
 {
     int id;
@@ -3447,18 +3447,18 @@ static inline int mbedtls_ssl_ciphersuite_uses_server_signature( const mbedtls_s
             return( 0 );
     }
 }
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h" 2
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h" 2
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 typedef struct mbedtls_asn1_buf
 {
     int tag;
@@ -3499,41 +3499,41 @@ typedef struct mbedtls_asn1_named_data
     unsigned char next_merged;
 }
 mbedtls_asn1_named_data;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_len( unsigned char **p,
                           const unsigned char *end,
                           size_t *len );
-# 239 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 239 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_tag( unsigned char **p,
                           const unsigned char *end,
                           size_t *len, int tag );
-# 258 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 258 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_bool( unsigned char **p,
                            const unsigned char *end,
                            int *val );
-# 279 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 279 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_int( unsigned char **p,
                           const unsigned char *end,
                           int *val );
-# 300 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 300 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_enum( unsigned char **p,
                            const unsigned char *end,
                            int *val );
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_bitstring( unsigned char **p, const unsigned char *end,
                                 mbedtls_asn1_bitstring *bs );
-# 342 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 342 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_bitstring_null( unsigned char **p,
                                      const unsigned char *end,
                                      size_t *len );
-# 393 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 393 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_sequence_of( unsigned char **p,
                                   const unsigned char *end,
                                   mbedtls_asn1_sequence *cur,
                                   int tag );
-# 418 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 418 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 void mbedtls_asn1_sequence_free( mbedtls_asn1_sequence *seq );
-# 505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 505 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_traverse_sequence_of(
     unsigned char **p,
     const unsigned char *end,
@@ -3542,27 +3542,27 @@ int mbedtls_asn1_traverse_sequence_of(
     int (*cb)( void *ctx, int tag,
                unsigned char* start, size_t len ),
     void *ctx );
-# 533 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 533 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_mpi( unsigned char **p,
                           const unsigned char *end,
                           mbedtls_mpi *X );
-# 554 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 554 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_alg( unsigned char **p,
                   const unsigned char *end,
                   mbedtls_asn1_buf *alg, mbedtls_asn1_buf *params );
-# 573 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 573 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 int mbedtls_asn1_get_alg_null( unsigned char **p,
                        const unsigned char *end,
                        mbedtls_asn1_buf *alg );
-# 587 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 587 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 mbedtls_asn1_named_data *mbedtls_asn1_find_named_data( mbedtls_asn1_named_data *list,
                                        const char *oid, size_t len );
-# 597 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 597 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 void mbedtls_asn1_free_named_data( mbedtls_asn1_named_data *entry );
-# 607 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
+# 607 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/asn1.h"
 void mbedtls_asn1_free_named_data_list( mbedtls_asn1_named_data **head );
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h" 2
-# 231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h" 2
+# 231 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
 typedef mbedtls_asn1_buf mbedtls_x509_buf;
 
 
@@ -3588,15 +3588,15 @@ typedef struct mbedtls_x509_time
     int hour, min, sec;
 }
 mbedtls_x509_time;
-# 270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 270 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
 int mbedtls_x509_dn_gets( char *buf, size_t size, const mbedtls_x509_name *dn );
-# 283 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 283 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
 int mbedtls_x509_serial_gets( char *buf, size_t size, const mbedtls_x509_buf *serial );
-# 297 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 297 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
 int mbedtls_x509_time_is_past( const mbedtls_x509_time *to );
-# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 311 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
 int mbedtls_x509_time_is_future( const mbedtls_x509_time *from );
-# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
+# 330 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509.h"
 int mbedtls_x509_get_name( unsigned char **p, const unsigned char *end,
                    mbedtls_x509_name *cur );
 int mbedtls_x509_get_alg_null( unsigned char **p, const unsigned char *end,
@@ -3633,9 +3633,9 @@ int mbedtls_x509_write_names( unsigned char **p, unsigned char *start,
 int mbedtls_x509_write_sig( unsigned char **p, unsigned char *start,
                     const char *oid, size_t oid_len,
                     unsigned char *sig, size_t size );
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h" 1
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h" 1
+# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
 typedef struct mbedtls_x509_crl_entry
 {
     mbedtls_x509_buf raw;
@@ -3682,14 +3682,14 @@ typedef struct mbedtls_x509_crl
     struct mbedtls_x509_crl *next;
 }
 mbedtls_x509_crl;
-# 107 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
+# 107 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
 int mbedtls_x509_crl_parse_der( mbedtls_x509_crl *chain,
                         const unsigned char *buf, size_t buflen );
-# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
+# 121 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
 int mbedtls_x509_crl_parse( mbedtls_x509_crl *chain, const unsigned char *buf, size_t buflen );
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
 int mbedtls_x509_crl_parse_file( mbedtls_x509_crl *chain, const char *path );
-# 148 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
+# 148 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crl.h"
 int mbedtls_x509_crl_info( char *buf, size_t size, const char *prefix,
                    const mbedtls_x509_crl *crl );
 
@@ -3706,8 +3706,8 @@ void mbedtls_x509_crl_init( mbedtls_x509_crl *crl );
 
 
 void mbedtls_x509_crl_free( mbedtls_x509_crl *crl );
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h" 2
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h" 2
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef struct mbedtls_x509_crt
 {
     int own_buffer;
@@ -3803,7 +3803,7 @@ typedef struct mbedtls_x509_subject_alternative_name
     san;
 }
 mbedtls_x509_subject_alternative_name;
-# 159 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 159 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef struct mbedtls_x509_crt_profile
 {
     uint32_t allowed_mds;
@@ -3814,7 +3814,7 @@ typedef struct mbedtls_x509_crt_profile
     uint32_t rsa_min_bitlen;
 }
 mbedtls_x509_crt_profile;
-# 184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef struct mbedtls_x509write_cert
 {
     int version;
@@ -3837,16 +3837,16 @@ typedef struct {
     mbedtls_x509_crt *crt;
     uint32_t flags;
 } mbedtls_x509_crt_verify_chain_item;
-# 215 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 215 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef struct
 {
     mbedtls_x509_crt_verify_chain_item items[( 8 + 2 )];
     unsigned len;
-# 227 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 227 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 } mbedtls_x509_crt_verify_chain;
-# 260 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 260 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef void mbedtls_x509_crt_restart_ctx;
-# 278 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 278 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_default;
 
 
@@ -3859,51 +3859,51 @@ extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_next;
 
 
 extern const mbedtls_x509_crt_profile mbedtls_x509_crt_profile_suiteb;
-# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 311 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_parse_der( mbedtls_x509_crt *chain,
                                 const unsigned char *buf,
                                 size_t buflen );
-# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 345 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef int (*mbedtls_x509_crt_ext_cb_t)( void *p_ctx,
                                           mbedtls_x509_crt const *crt,
                                           mbedtls_x509_buf const *oid,
                                           int critical,
                                           const unsigned char *p,
                                           const unsigned char *end );
-# 392 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 392 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_parse_der_with_ext_cb( mbedtls_x509_crt *chain,
                                             const unsigned char *buf,
                                             size_t buflen,
                                             int make_copy,
                                             mbedtls_x509_crt_ext_cb_t cb,
                                             void *p_ctx );
-# 426 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 426 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_parse_der_nocopy( mbedtls_x509_crt *chain,
                                        const unsigned char *buf,
                                        size_t buflen );
-# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 460 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_parse( mbedtls_x509_crt *chain, const unsigned char *buf, size_t buflen );
-# 476 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 476 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_parse_file( mbedtls_x509_crt *chain, const char *path );
-# 491 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 491 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_parse_path( mbedtls_x509_crt *chain, const char *path );
-# 521 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 521 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_parse_subject_alt_name( const mbedtls_x509_buf *san_buf,
                                          mbedtls_x509_subject_alternative_name *san );
-# 535 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 535 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_info( char *buf, size_t size, const char *prefix,
                    const mbedtls_x509_crt *crt );
-# 550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 550 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_verify_info( char *buf, size_t size, const char *prefix,
                           uint32_t flags );
-# 619 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 619 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_verify( mbedtls_x509_crt *crt,
                      mbedtls_x509_crt *trust_ca,
                      mbedtls_x509_crl *ca_crl,
                      const char *cn, uint32_t *flags,
                      int (*f_vrfy)(void *, mbedtls_x509_crt *, int, uint32_t *),
                      void *p_vrfy );
-# 660 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 660 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_verify_with_profile( mbedtls_x509_crt *crt,
                      mbedtls_x509_crt *trust_ca,
                      mbedtls_x509_crl *ca_crl,
@@ -3911,7 +3911,7 @@ int mbedtls_x509_crt_verify_with_profile( mbedtls_x509_crt *crt,
                      const char *cn, uint32_t *flags,
                      int (*f_vrfy)(void *, mbedtls_x509_crt *, int, uint32_t *),
                      void *p_vrfy );
-# 694 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 694 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_verify_restartable( mbedtls_x509_crt *crt,
                      mbedtls_x509_crt *trust_ca,
                      mbedtls_x509_crl *ca_crl,
@@ -3920,18 +3920,18 @@ int mbedtls_x509_crt_verify_restartable( mbedtls_x509_crt *crt,
                      int (*f_vrfy)(void *, mbedtls_x509_crt *, int, uint32_t *),
                      void *p_vrfy,
                      mbedtls_x509_crt_restart_ctx *rs_ctx );
-# 733 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 733 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 typedef int (*mbedtls_x509_crt_ca_cb_t)( void *p_ctx,
                                          mbedtls_x509_crt const *child,
                                          mbedtls_x509_crt **candidate_cas );
-# 792 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 792 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_check_key_usage( const mbedtls_x509_crt *crt,
                                       unsigned int usage );
-# 810 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 810 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 int mbedtls_x509_crt_check_extended_key_usage( const mbedtls_x509_crt *crt,
                                                const char *usage_oid,
                                                size_t usage_len );
-# 833 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
+# 833 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/x509_crt.h"
 void mbedtls_x509_crt_init( mbedtls_x509_crt *crt );
 
 
@@ -3940,13 +3940,13 @@ void mbedtls_x509_crt_init( mbedtls_x509_crt *crt );
 
 
 void mbedtls_x509_crt_free( mbedtls_x509_crt *crt );
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h" 1
-# 111 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h" 1
+# 111 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 typedef struct mbedtls_dhm_context
 {
     size_t len;
@@ -3962,51 +3962,51 @@ typedef struct mbedtls_dhm_context
     mbedtls_mpi pX;
 }
 mbedtls_dhm_context;
-# 136 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 136 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 void mbedtls_dhm_init( mbedtls_dhm_context *ctx );
-# 160 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 160 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_read_params( mbedtls_dhm_context *ctx,
                              unsigned char **p,
                              const unsigned char *end );
-# 196 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 196 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_make_params( mbedtls_dhm_context *ctx, int x_size,
                      unsigned char *output, size_t *olen,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 216 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 216 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_set_group( mbedtls_dhm_context *ctx,
                            const mbedtls_mpi *P,
                            const mbedtls_mpi *G );
-# 236 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 236 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_read_public( mbedtls_dhm_context *ctx,
                      const unsigned char *input, size_t ilen );
-# 263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 263 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_make_public( mbedtls_dhm_context *ctx, int x_size,
                      unsigned char *output, size_t olen,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 294 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 294 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_calc_secret( mbedtls_dhm_context *ctx,
                      unsigned char *output, size_t output_size, size_t *olen,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 307 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 307 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 void mbedtls_dhm_free( mbedtls_dhm_context *ctx );
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_parse_dhm( mbedtls_dhm_context *dhm, const unsigned char *dhmin,
                            size_t dhminlen );
-# 340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
+# 340 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/dhm.h"
 int mbedtls_dhm_parse_dhmfile( mbedtls_dhm_context *dhm, const char *path );
-# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h" 1
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 43 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h" 1
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 typedef enum
 {
     MBEDTLS_ECDH_OURS,
     MBEDTLS_ECDH_THEIRS,
 } mbedtls_ecdh_side;
-# 68 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 68 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 typedef enum
 {
     MBEDTLS_ECDH_VARIANT_NONE = 0,
@@ -4015,7 +4015,7 @@ typedef enum
 
 
 } mbedtls_ecdh_variant;
-# 84 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 typedef struct mbedtls_ecdh_context_mbed
 {
     mbedtls_ecp_group grp;
@@ -4027,10 +4027,10 @@ typedef struct mbedtls_ecdh_context_mbed
 
 
 } mbedtls_ecdh_context_mbed;
-# 104 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 104 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 typedef struct mbedtls_ecdh_context
 {
-# 121 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 121 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
     uint8_t point_format;
 
     mbedtls_ecp_group_id grp_id;
@@ -4042,16 +4042,16 @@ typedef struct mbedtls_ecdh_context
 
 
     } ctx;
-# 142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 142 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 }
 mbedtls_ecdh_context;
-# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 152 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_can_do( mbedtls_ecp_group_id gid );
-# 179 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 179 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_gen_public( mbedtls_ecp_group *grp, mbedtls_mpi *d, mbedtls_ecp_point *Q,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_compute_shared( mbedtls_ecp_group *grp, mbedtls_mpi *z,
                          const mbedtls_ecp_point *Q, const mbedtls_mpi *d,
                          int (*f_rng)(void *, unsigned char *, size_t),
@@ -4063,39 +4063,39 @@ int mbedtls_ecdh_compute_shared( mbedtls_ecp_group *grp, mbedtls_mpi *z,
 
 
 void mbedtls_ecdh_init( mbedtls_ecdh_context *ctx );
-# 245 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 245 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_setup( mbedtls_ecdh_context *ctx,
                         mbedtls_ecp_group_id grp_id );
-# 255 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 255 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 void mbedtls_ecdh_free( mbedtls_ecdh_context *ctx );
-# 282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 282 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_make_params( mbedtls_ecdh_context *ctx, size_t *olen,
                       unsigned char *buf, size_t blen,
                       int (*f_rng)(void *, unsigned char *, size_t),
                       void *p_rng );
-# 311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 311 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_read_params( mbedtls_ecdh_context *ctx,
                               const unsigned char **buf,
                               const unsigned char *end );
-# 334 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 334 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_get_params( mbedtls_ecdh_context *ctx,
                              const mbedtls_ecp_keypair *key,
                              mbedtls_ecdh_side side );
-# 364 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 364 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_make_public( mbedtls_ecdh_context *ctx, size_t *olen,
                       unsigned char *buf, size_t blen,
                       int (*f_rng)(void *, unsigned char *, size_t),
                       void *p_rng );
-# 388 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 388 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_read_public( mbedtls_ecdh_context *ctx,
                               const unsigned char *buf, size_t blen );
-# 421 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
+# 421 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecdh.h"
 int mbedtls_ecdh_calc_secret( mbedtls_ecdh_context *ctx, size_t *olen,
                       unsigned char *buf, size_t blen,
                       int (*f_rng)(void *, unsigned char *, size_t),
                       void *p_rng );
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
-# 494 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h" 2
+# 494 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 union mbedtls_ssl_premaster_secret
 {
 
@@ -4112,9 +4112,9 @@ union mbedtls_ssl_premaster_secret
 
 
     unsigned char _pms_psk[4 + 2 * 32];
-# 525 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 525 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 };
-# 536 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 536 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef enum
 {
     MBEDTLS_SSL_HELLO_REQUEST,
@@ -4151,24 +4151,24 @@ typedef enum
    MBEDTLS_SSL_TLS_PRF_SHA256
 }
 mbedtls_tls_prf_types;
-# 589 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 589 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_send_t( void *ctx,
                                 const unsigned char *buf,
                                 size_t len );
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 613 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_recv_t( void *ctx,
                                 unsigned char *buf,
                                 size_t len );
-# 639 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 639 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_recv_timeout_t( void *ctx,
                                         unsigned char *buf,
                                         size_t len,
                                         uint32_t timeout );
-# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 665 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef void mbedtls_ssl_set_timer_t( void * ctx,
                                       uint32_t int_ms,
                                       uint32_t fin_ms );
-# 680 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 680 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_get_timer_t( void * ctx );
 
 
@@ -4182,7 +4182,7 @@ typedef struct mbedtls_ssl_handshake_params mbedtls_ssl_handshake_params;
 typedef struct mbedtls_ssl_sig_hash_set_t mbedtls_ssl_sig_hash_set_t;
 
 typedef struct mbedtls_ssl_key_cert mbedtls_ssl_key_cert;
-# 975 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 975 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 struct mbedtls_ssl_session
 {
 
@@ -4215,7 +4215,7 @@ struct mbedtls_ssl_session
     unsigned char *ticket;
     size_t ticket_len;
     uint32_t ticket_lifetime;
-# 1016 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1016 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 };
 
 
@@ -4250,7 +4250,7 @@ struct mbedtls_ssl_config
 
 
     uint8_t mfl_code ;
-# 1070 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1070 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     uint8_t session_tickets ;
 
 
@@ -4258,9 +4258,9 @@ struct mbedtls_ssl_config
 
 
     uint8_t cert_req_ca_list ;
-# 1093 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1093 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     uint32_t read_timeout;
-# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1113 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     unsigned int dhm_min_bitlen;
 
 
@@ -4300,18 +4300,18 @@ struct mbedtls_ssl_config
 
     int (*f_psk)(void *, mbedtls_ssl_context *, const unsigned char *, size_t);
     void *p_psk;
-# 1166 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1166 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     int (*f_ticket_write)( void *, const mbedtls_ssl_session *,
             unsigned char *, const unsigned char *, size_t *, uint32_t * );
 
     int (*f_ticket_parse)( void *, mbedtls_ssl_session *, unsigned char *, size_t);
     void *p_ticket;
-# 1191 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1191 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     const mbedtls_x509_crt_profile *cert_profile;
     mbedtls_ssl_key_cert *key_cert;
     mbedtls_x509_crt *ca_chain;
     mbedtls_x509_crl *ca_crl;
-# 1212 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1212 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     const int *sig_hashes;
 
 
@@ -4322,7 +4322,7 @@ struct mbedtls_ssl_config
 
     mbedtls_mpi dhm_P;
     mbedtls_mpi dhm_G;
-# 1235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1235 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     unsigned char *psk;
 
 
@@ -4339,9 +4339,9 @@ struct mbedtls_ssl_config
 
 
     size_t psk_identity_len;
-# 1259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1259 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     const char **alpn_list;
-# 1268 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1268 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 };
 
 struct mbedtls_ssl_context
@@ -4426,13 +4426,13 @@ struct mbedtls_ssl_context
     int in_msgtype;
     size_t in_msglen;
     size_t in_left;
-# 1365 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1365 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     size_t in_hslen;
 
     int nb_zero;
 
     int keep_current_message;
-# 1380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1380 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     unsigned char *out_buf;
     unsigned char *out_ctr;
     unsigned char *out_hdr;
@@ -4452,7 +4452,7 @@ struct mbedtls_ssl_context
 
 
     unsigned char cur_out_ctr[8];
-# 1414 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1414 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     int client_auth;
 
 
@@ -4465,20 +4465,20 @@ struct mbedtls_ssl_context
 
 
     const char *alpn_chosen;
-# 1447 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1447 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
     int secure_renegotiation;
-# 1469 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1469 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 };
-# 1517 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1517 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 const char *mbedtls_ssl_get_ciphersuite_name( const int ciphersuite_id );
-# 1527 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1527 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_get_ciphersuite_id( const char *ciphersuite_name );
-# 1536 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1536 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_init( mbedtls_ssl_context *ssl );
-# 1558 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1558 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_setup( mbedtls_ssl_context *ssl,
                        const mbedtls_ssl_config *conf );
-# 1571 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1571 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_session_reset( mbedtls_ssl_context *ssl );
 
 
@@ -4488,204 +4488,204 @@ int mbedtls_ssl_session_reset( mbedtls_ssl_context *ssl );
 
 
 void mbedtls_ssl_conf_endpoint( mbedtls_ssl_config *conf, int endpoint );
-# 1595 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1595 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_transport( mbedtls_ssl_config *conf, int transport );
-# 1623 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1623 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_authmode( mbedtls_ssl_config *conf, int authmode );
-# 1641 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1641 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_verify( mbedtls_ssl_config *conf,
                      int (*f_vrfy)(void *, mbedtls_x509_crt *, int, uint32_t *),
                      void *p_vrfy );
-# 1653 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1653 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_rng( mbedtls_ssl_config *conf,
                   int (*f_rng)(void *, unsigned char *, size_t),
                   void *p_rng );
-# 1671 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1671 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_dbg( mbedtls_ssl_config *conf,
                   void (*f_dbg)(void *, int, const char *, int, const char *),
                   void *p_dbg );
-# 1705 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1705 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_set_bio( mbedtls_ssl_context *ssl,
                           void *p_bio,
                           mbedtls_ssl_send_t *f_send,
                           mbedtls_ssl_recv_t *f_recv,
                           mbedtls_ssl_recv_timeout_t *f_recv_timeout );
-# 1912 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1912 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_set_verify( mbedtls_ssl_context *ssl,
                      int (*f_vrfy)(void *, mbedtls_x509_crt *, int, uint32_t *),
                      void *p_vrfy );
-# 1933 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 1933 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_read_timeout( mbedtls_ssl_config *conf, uint32_t timeout );
-# 2005 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2005 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_set_timer_cb( mbedtls_ssl_context *ssl,
                                void *p_timer,
                                mbedtls_ssl_set_timer_t *f_set_timer,
                                mbedtls_ssl_get_timer_t *f_get_timer );
-# 2029 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2029 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_ticket_write_t( void *p_ticket,
                                         const mbedtls_ssl_session *session,
                                         unsigned char *start,
                                         const unsigned char *end,
                                         size_t *tlen,
                                         uint32_t *lifetime );
-# 2123 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2123 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_ticket_parse_t( void *p_ticket,
                                         mbedtls_ssl_session *session,
                                         unsigned char *buf,
                                         size_t len );
-# 2143 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2143 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_session_tickets_cb( mbedtls_ssl_config *conf,
         mbedtls_ssl_ticket_write_t *f_ticket_write,
         mbedtls_ssl_ticket_parse_t *f_ticket_parse,
         void *p_ticket );
-# 2274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2274 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_cookie_write_t( void *ctx,
                                 unsigned char **p, unsigned char *end,
                                 const unsigned char *info, size_t ilen );
-# 2291 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2291 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 typedef int mbedtls_ssl_cookie_check_t( void *ctx,
                                 const unsigned char *cookie, size_t clen,
                                 const unsigned char *info, size_t ilen );
-# 2505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2505 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_session_cache( mbedtls_ssl_config *conf,
         void *p_cache,
         int (*f_get_cache)(void *, mbedtls_ssl_session *),
         int (*f_set_cache)(void *, const mbedtls_ssl_session *) );
-# 2526 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2526 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_set_session( mbedtls_ssl_context *ssl, const mbedtls_ssl_session *session );
-# 2561 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2561 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_session_load( mbedtls_ssl_session *session,
                               const unsigned char *buf,
                               size_t len );
-# 2591 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2591 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_session_save( const mbedtls_ssl_session *session,
                               unsigned char *buf,
                               size_t buf_len,
                               size_t *olen );
-# 2611 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2611 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 const mbedtls_ssl_session *mbedtls_ssl_get_session_pointer( const mbedtls_ssl_context *ssl );
-# 2628 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2628 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_ciphersuites( mbedtls_ssl_config *conf,
                                    const int *ciphersuites );
-# 2689 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2689 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_ciphersuites_for_version( mbedtls_ssl_config *conf,
                                        const int *ciphersuites,
                                        int major, int minor );
-# 2704 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2704 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_cert_profile( mbedtls_ssl_config *conf,
                                     const mbedtls_x509_crt_profile *profile );
-# 2718 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2718 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_ca_chain( mbedtls_ssl_config *conf,
                                mbedtls_x509_crt *ca_chain,
                                mbedtls_x509_crl *ca_crl );
-# 2815 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2815 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_conf_own_cert( mbedtls_ssl_config *conf,
                               mbedtls_x509_crt *own_cert,
                               mbedtls_pk_context *pk_key );
-# 2852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2852 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_conf_psk( mbedtls_ssl_config *conf,
                 const unsigned char *psk, size_t psk_len,
                 const unsigned char *psk_identity, size_t psk_identity_len );
-# 2915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2915 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_set_hs_psk( mbedtls_ssl_context *ssl,
                             const unsigned char *psk, size_t psk_len );
-# 2981 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 2981 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_psk_cb( mbedtls_ssl_config *conf,
                      int (*f_psk)(void *, mbedtls_ssl_context *, const unsigned char *,
                                   size_t),
                      void *p_psk );
-# 3010 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3010 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
  int mbedtls_ssl_conf_dh_param( mbedtls_ssl_config *conf,
                                                   const char *dhm_P,
                                                   const char *dhm_G );
-# 3029 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3029 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_conf_dh_param_bin( mbedtls_ssl_config *conf,
                                    const unsigned char *dhm_P, size_t P_len,
                                    const unsigned char *dhm_G, size_t G_len );
-# 3042 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3042 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_conf_dh_param_ctx( mbedtls_ssl_config *conf, mbedtls_dhm_context *dhm_ctx );
-# 3054 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3054 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_dhm_min_bitlen( mbedtls_ssl_config *conf,
                                       unsigned int bitlen );
-# 3088 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3088 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_curves( mbedtls_ssl_config *conf,
                               const mbedtls_ecp_group_id *curves );
-# 3113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3113 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_sig_hashes( mbedtls_ssl_config *conf,
                                   const int *hashes );
-# 3136 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3136 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_set_hostname( mbedtls_ssl_context *ssl, const char *hostname );
-# 3152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3152 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_set_hs_own_cert( mbedtls_ssl_context *ssl,
                                  mbedtls_x509_crt *own_cert,
                                  mbedtls_pk_context *pk_key );
-# 3167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3167 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_set_hs_ca_chain( mbedtls_ssl_context *ssl,
                                   mbedtls_x509_crt *ca_chain,
                                   mbedtls_x509_crl *ca_crl );
-# 3181 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3181 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_set_hs_authmode( mbedtls_ssl_context *ssl,
                                   int authmode );
-# 3207 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3207 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_sni( mbedtls_ssl_config *conf,
                   int (*f_sni)(void *, mbedtls_ssl_context *, const unsigned char *,
                                size_t),
                   void *p_sni );
-# 3249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3249 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_conf_alpn_protocols( mbedtls_ssl_config *conf, const char **protos );
-# 3260 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3260 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 const char *mbedtls_ssl_get_alpn_protocol( const mbedtls_ssl_context *ssl );
-# 3378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3378 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_max_version( mbedtls_ssl_config *conf, int major, int minor );
-# 3398 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3398 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_min_version( mbedtls_ssl_config *conf, int major, int minor );
-# 3482 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3482 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_cert_req_ca_list( mbedtls_ssl_config *conf,
                                           char cert_req_ca_list );
-# 3521 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3521 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_conf_max_frag_len( mbedtls_ssl_config *conf, unsigned char mfl_code );
-# 3562 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3562 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_session_tickets( mbedtls_ssl_config *conf, int use_tickets );
-# 3613 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3613 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_conf_legacy_renegotiation( mbedtls_ssl_config *conf, int allow_legacy );
-# 3722 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3722 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_check_pending( const mbedtls_ssl_context *ssl );
-# 3739 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3739 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 size_t mbedtls_ssl_get_bytes_avail( const mbedtls_ssl_context *ssl );
-# 3753 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3753 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 uint32_t mbedtls_ssl_get_verify_result( const mbedtls_ssl_context *ssl );
-# 3762 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3762 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 const char *mbedtls_ssl_get_ciphersuite( const mbedtls_ssl_context *ssl );
-# 3771 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3771 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 const char *mbedtls_ssl_get_version( const mbedtls_ssl_context *ssl );
-# 3786 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3786 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_get_record_expansion( const mbedtls_ssl_context *ssl );
-# 3802 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3802 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 size_t mbedtls_ssl_get_output_max_frag_len( const mbedtls_ssl_context *ssl );
-# 3818 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3818 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 size_t mbedtls_ssl_get_input_max_frag_len( const mbedtls_ssl_context *ssl );
-# 3842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3842 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
  size_t mbedtls_ssl_get_max_frag_len(
                                         const mbedtls_ssl_context *ssl );
-# 3874 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3874 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_get_max_out_record_payload( const mbedtls_ssl_context *ssl );
-# 3907 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3907 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 const mbedtls_x509_crt *mbedtls_ssl_get_peer_cert( const mbedtls_ssl_context *ssl );
-# 3937 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3937 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_get_session( const mbedtls_ssl_context *ssl, mbedtls_ssl_session *session );
-# 3990 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 3990 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_handshake( mbedtls_ssl_context *ssl );
-# 4012 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4012 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_handshake_step( mbedtls_ssl_context *ssl );
-# 4118 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4118 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_read( mbedtls_ssl_context *ssl, unsigned char *buf, size_t len );
-# 4180 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4180 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_write( mbedtls_ssl_context *ssl, const unsigned char *buf, size_t len );
-# 4198 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4198 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_send_alert_message( mbedtls_ssl_context *ssl,
                             unsigned char level,
                             unsigned char message );
-# 4214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4214 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_close_notify( mbedtls_ssl_context *ssl );
 
 
@@ -4694,9 +4694,9 @@ int mbedtls_ssl_close_notify( mbedtls_ssl_context *ssl );
 
 
 void mbedtls_ssl_free( mbedtls_ssl_context *ssl );
-# 4357 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4357 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_config_init( mbedtls_ssl_config *conf );
-# 4374 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4374 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_config_defaults( mbedtls_ssl_config *conf,
                                  int endpoint, int transport, int preset );
 
@@ -4713,22 +4713,22 @@ void mbedtls_ssl_config_free( mbedtls_ssl_config *conf );
 
 
 void mbedtls_ssl_session_init( mbedtls_ssl_session *session );
-# 4400 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4400 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 void mbedtls_ssl_session_free( mbedtls_ssl_session *session );
-# 4417 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
+# 4417 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl.h"
 int mbedtls_ssl_tls_prf( const mbedtls_tls_prf_types prf,
                           const unsigned char *secret, size_t slen,
                           const char *label,
                           const unsigned char *random, size_t rlen,
                           unsigned char *dstbuf, size_t dlen );
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 1
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h" 2
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 1
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h" 1
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h" 2
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 typedef struct mbedtls_md5_context
 {
     uint32_t total[2];
@@ -4736,73 +4736,73 @@ typedef struct mbedtls_md5_context
     unsigned char buffer[64];
 }
 mbedtls_md5_context;
-# 80 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 80 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 void mbedtls_md5_init( mbedtls_md5_context *ctx );
-# 92 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 92 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 void mbedtls_md5_free( mbedtls_md5_context *ctx );
-# 105 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 105 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 void mbedtls_md5_clone( mbedtls_md5_context *dst,
                         const mbedtls_md5_context *src );
-# 120 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 120 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 int mbedtls_md5_starts_ret( mbedtls_md5_context *ctx );
-# 136 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 136 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 int mbedtls_md5_update_ret( mbedtls_md5_context *ctx,
                             const unsigned char *input,
                             size_t ilen );
-# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 153 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 int mbedtls_md5_finish_ret( mbedtls_md5_context *ctx,
                             unsigned char output[16] );
-# 169 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 169 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 int mbedtls_internal_md5_process( mbedtls_md5_context *ctx,
                                   const unsigned char data[64] );
-# 190 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
  void mbedtls_md5_starts( mbedtls_md5_context *ctx );
-# 206 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 206 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
  void mbedtls_md5_update( mbedtls_md5_context *ctx,
                                             const unsigned char *input,
                                             size_t ilen );
-# 223 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 223 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
  void mbedtls_md5_finish( mbedtls_md5_context *ctx,
                                             unsigned char output[16] );
-# 239 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 239 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
  void mbedtls_md5_process( mbedtls_md5_context *ctx,
                                              const unsigned char data[64] );
-# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 259 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
 int mbedtls_md5_ret( const unsigned char *input,
                      size_t ilen,
                      unsigned char output[16] );
-# 283 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
+# 283 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/md5.h"
  void mbedtls_md5( const unsigned char *input,
                                      size_t ilen,
                                      unsigned char output[16] );
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h" 1
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h" 2
-# 72 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/sha1_alt.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h" 1
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h" 2
+# 72 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/sha1_alt.h" 1
        
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 1
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 1
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 1
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 1
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 1
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h" 1
+# 139 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 struct xLIST;
 struct xLIST_ITEM
 {
@@ -4836,18 +4836,18 @@ typedef struct xLIST
  MiniListItem_t xListEnd;
 
 } List_t;
-# 345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 345 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInitialise( List_t * const pxList ) ;
-# 356 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 356 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInitialiseItem( ListItem_t * const pxItem ) ;
-# 369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 369 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInsert( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
-# 390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 390 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 void vListInsertEnd( List_t * const pxList, ListItem_t * const pxNewListItem ) ;
-# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+# 405 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
-# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h" 2
+# 69 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 struct tskTaskControlBlock;
 typedef struct tskTaskControlBlock* TaskHandle_t;
 
@@ -4936,14 +4936,14 @@ typedef enum
  eStandardSleep,
  eNoTasksWaitingTimeout
 } eSleepModeStatus;
-# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 330 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  BaseType_t xTaskCreate( TaskFunction_t pxTaskCode,
        const char * const pcName,
        const uint16_t usStackDepth,
        void * const pvParameters,
        UBaseType_t uxPriority,
        TaskHandle_t * const pxCreatedTask ) ;
-# 446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 446 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  TaskHandle_t xTaskCreateStatic( TaskFunction_t pxTaskCode,
          const char * const pcName,
          const uint32_t ulStackDepth,
@@ -4951,17 +4951,17 @@ typedef enum
          UBaseType_t uxPriority,
          StackType_t * const puxStackBuffer,
          StaticTask_t * const pxTaskBuffer ) ;
-# 665 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 665 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskAllocateMPURegions( TaskHandle_t xTask, const MemoryRegion_t * const pxRegions ) ;
-# 706 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 706 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskDelete( TaskHandle_t xTaskToDelete ) ;
-# 758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 758 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskDelay( const TickType_t xTicksToDelay ) ;
-# 817 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 817 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskDelayUntil( TickType_t * const pxPreviousWakeTime, const TickType_t xTimeIncrement ) ;
-# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 842 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) ;
-# 889 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 889 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
 
 
@@ -4971,42 +4971,42 @@ UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) ;
 
 
 UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
-# 915 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 915 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 eTaskState eTaskGetState( TaskHandle_t xTask ) ;
-# 971 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 971 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskGetInfo( TaskHandle_t xTask, TaskStatus_t *pxTaskStatus, BaseType_t xGetFreeStackSpace, eTaskState eState ) ;
-# 1013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1013 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPrioritySet( TaskHandle_t xTask, UBaseType_t uxNewPriority ) ;
-# 1064 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1064 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
-# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskResume( TaskHandle_t xTaskToResume ) ;
-# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1142 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
-# 1175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1175 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskStartScheduler( void ) ;
-# 1231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1231 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskEndScheduler( void ) ;
-# 1282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1282 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskSuspendAll( void ) ;
-# 1336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1336 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskResumeAll( void ) ;
-# 1351 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1351 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TickType_t xTaskGetTickCount( void ) ;
 BaseType_t xTaskGetTickCount2( TickType_t *ticks, BaseType_t *overflow ) ;
-# 1368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1368 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TickType_t xTaskGetTickCountFromISR( void ) ;
-# 1382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1382 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskGetNumberOfTasks( void ) ;
-# 1395 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1395 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 char *pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
-# 1411 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1411 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TaskHandle_t xTaskGetHandle( const char *pcNameToQuery ) ;
-# 1438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1438 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
-# 1465 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1465 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
-# 1513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1513 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  void vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue ) ;
  void *pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery, BaseType_t xIndex ) ;
 
@@ -5021,43 +5021,43 @@ uint16_t uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
 
 
         UBaseType_t vTaskSetThreadLocalStoragePointerAndDelCallback( TaskHandle_t xTaskToSet, BaseType_t xIndex, void *pvValue, TlsDeleteCallbackFunction_t pvDelCallback);
-# 1541 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1541 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask, void *pvParameter ) ;
-# 1550 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1550 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TaskHandle_t xTaskGetIdleTaskHandle( void ) ;
-# 1649 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1649 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray, const UBaseType_t uxArraySize, uint32_t * const pulTotalRunTime ) ;
 UBaseType_t xAddTasksToAllList( void ) ;
 List_t * pxTaskGetAllList( void ) ;
-# 1698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1698 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskList( char * pcWriteBuffer ) ;
-# 1752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1752 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskGetRunTimeStats( char *pcWriteBuffer ) ;
-# 1782 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1782 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 TickType_t xTaskGetIdleRunTimeCounter( void ) ;
-# 1863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1863 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) ;
-# 1954 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 1954 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 2031 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2031 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait ) ;
-# 2132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2132 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken ) ;
-# 2201 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2201 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) ;
-# 2217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2217 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );
-# 2238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2238 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskIncrementTick( void ) ;
-# 2271 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2271 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPlaceOnEventList( List_t * const pxEventList, const TickType_t xTicksToWait ) ;
 void vTaskPlaceOnUnorderedEventList( List_t * pxEventList, const TickType_t xItemValue, const TickType_t xTicksToWait ) ;
-# 2285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2285 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPlaceOnEventListRestricted( List_t * const pxEventList, TickType_t xTicksToWait, const BaseType_t xWaitIndefinitely ) ;
-# 2311 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2311 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
 void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem, const TickType_t xItemValue ) ;
-# 2322 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2322 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
  void vTaskSwitchContext( void ) ;
 
 
@@ -5105,7 +5105,7 @@ BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
 
 
 BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
-# 2378 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2378 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder, UBaseType_t uxHighestPriorityWaitingTask ) ;
 
 
@@ -5118,10 +5118,10 @@ UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
 
 
 void vTaskSetTaskNumber( TaskHandle_t xTask, const UBaseType_t uxHandle ) ;
-# 2399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2399 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 void vTaskStepTick( const TickType_t xTicksToJump ) ;
 void vTaskStepTickSafe( const TickType_t xTicksToJump ) ;
-# 2416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+# 2416 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
 
 
@@ -5135,7 +5135,7 @@ TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
 
 
 void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 2
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h" 2
 
 
 
@@ -5158,24 +5158,24 @@ typedef struct QueueDefinition * QueueSetHandle_t;
 
 
 typedef struct QueueDefinition * QueueSetMemberHandle_t;
-# 650 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 650 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueGenericSend( QueueHandle_t xQueue, const void * const pvItemToQueue, TickType_t xTicksToWait, const BaseType_t xCopyPosition ) ;
-# 744 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 744 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueuePeek( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
-# 777 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 777 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueuePeekFromISR( QueueHandle_t xQueue, void * const pvBuffer ) ;
-# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 868 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueReceive( QueueHandle_t xQueue, void * const pvBuffer, TickType_t xTicksToWait ) ;
-# 883 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 883 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 UBaseType_t uxQueueMessagesWaiting( const QueueHandle_t xQueue ) ;
-# 900 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 900 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 UBaseType_t uxQueueSpacesAvailable( const QueueHandle_t xQueue ) ;
-# 914 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 914 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 void vQueueDelete( QueueHandle_t xQueue ) ;
-# 1295 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1295 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueGenericSendFromISR( QueueHandle_t xQueue, const void * const pvItemToQueue, BaseType_t * const pxHigherPriorityTaskWoken, const BaseType_t xCopyPosition ) ;
 BaseType_t xQueueGiveFromISR( QueueHandle_t xQueue, BaseType_t * const pxHigherPriorityTaskWoken ) ;
-# 1385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1385 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueReceiveFromISR( QueueHandle_t xQueue, void * const pvBuffer, BaseType_t * const pxHigherPriorityTaskWoken ) ;
 
 
@@ -5185,7 +5185,7 @@ BaseType_t xQueueReceiveFromISR( QueueHandle_t xQueue, void * const pvBuffer, Ba
 BaseType_t xQueueIsQueueEmptyFromISR( const QueueHandle_t xQueue ) ;
 BaseType_t xQueueIsQueueFullFromISR( const QueueHandle_t xQueue ) ;
 UBaseType_t uxQueueMessagesWaitingFromISR( const QueueHandle_t xQueue ) ;
-# 1404 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1404 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueCRSendFromISR( QueueHandle_t xQueue, const void *pvItemToQueue, BaseType_t xCoRoutinePreviouslyWoken );
 BaseType_t xQueueCRReceiveFromISR( QueueHandle_t xQueue, void *pvBuffer, BaseType_t *pxTaskWoken );
 BaseType_t xQueueCRSend( QueueHandle_t xQueue, const void *pvItemToQueue, TickType_t xTicksToWait );
@@ -5210,23 +5210,23 @@ TaskHandle_t xQueueGetMutexHolderFromISR( QueueHandle_t xSemaphore ) ;
 
 BaseType_t xQueueTakeMutexRecursive( QueueHandle_t xMutex, TickType_t xTicksToWait ) ;
 BaseType_t xQueueGiveMutexRecursive( QueueHandle_t xMutex ) ;
-# 1458 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1458 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
  void vQueueAddToRegistry( QueueHandle_t xQueue, const char *pcQueueName ) ;
-# 1472 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1472 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
  void vQueueUnregisterQueue( QueueHandle_t xQueue ) ;
-# 1487 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1487 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
  const char *pcQueueGetName( QueueHandle_t xQueue ) ;
-# 1496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1496 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
  QueueHandle_t xQueueGenericCreate( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, const uint8_t ucQueueType ) ;
-# 1505 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1505 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
  QueueHandle_t xQueueGenericCreateStatic( const UBaseType_t uxQueueLength, const UBaseType_t uxItemSize, uint8_t *pucQueueStorage, StaticQueue_t *pxStaticQueue, const uint8_t ucQueueType ) ;
-# 1556 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1556 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 QueueSetHandle_t xQueueCreateSet( const UBaseType_t uxEventQueueLength ) ;
-# 1580 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1580 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueAddToSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
-# 1599 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1599 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 BaseType_t xQueueRemoveFromSet( QueueSetMemberHandle_t xQueueOrSemaphore, QueueSetHandle_t xQueueSet ) ;
-# 1635 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+# 1635 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
 QueueSetMemberHandle_t xQueueSelectFromSet( QueueSetHandle_t xQueueSet, const TickType_t xTicksToWait ) ;
 
 
@@ -5240,12 +5240,12 @@ BaseType_t xQueueGenericReset( QueueHandle_t xQueue, BaseType_t xNewQueue ) ;
 void vQueueSetQueueNumber( QueueHandle_t xQueue, UBaseType_t uxQueueNumber ) ;
 UBaseType_t uxQueueGetQueueNumber( QueueHandle_t xQueue ) ;
 uint8_t ucQueueGetQueueType( QueueHandle_t xQueue ) ;
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 2
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h" 2
 
 typedef QueueHandle_t SemaphoreHandle_t;
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_common.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_common.h" 1
        
 
 
@@ -5291,16 +5291,16 @@ typedef struct bl_sha_ctx {
     uint32_t tmp[16];
     uint32_t pad[16];
 } bl_sha_ctx_t;
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h" 1
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h" 1
 
 
 
 int bl_sec_pka_init(void);
 int bl_sec_pka_mutex_take(void);
 int bl_sec_pka_mutex_give(void);
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_aes.h" 1
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_aes.h" 1
        
 
 
@@ -5360,13 +5360,13 @@ int bl_aes_set_key(bl_sec_aes_t *aes, bl_sec_aes_op_t op, const uint8_t *key, si
 int bl_aes_set_mode(bl_sec_aes_t *aes, bl_sec_aes_mode_t mode, const uint8_t iv[16]);
 int bl_aes_transform_blocks(bl_sec_aes_t *aes, bl_sec_aes_op_t op, const uint8_t *input, uint16_t n_blk, uint8_t *output);
 int bl_aes_transform(bl_sec_aes_t *aes, bl_sec_aes_op_t op, const uint8_t *input, uint8_t *output);
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h" 1
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h" 1
        
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h" 2
 
 typedef struct {
     uint32_t :9;
@@ -5395,7 +5395,7 @@ int bl_gmac_acquire_hw();
 int bl_gmac_release_hw();
 int bl_gmac_update(bl_sec_gmac_t *ctx, const uint8_t *input, size_t input_len);
 int bl_gmac_finish(bl_sec_gmac_t *ctx, uint8_t result[16]);
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h" 2
 
 
 
@@ -5429,65 +5429,65 @@ int bl_sec_ccm_auth_decrypt(const uint8_t *key, unsigned int key_bytelen, size_t
         size_t add_len, const unsigned char *input, unsigned char *output, const unsigned char *tag, size_t tag_len);
 int bl_sec_aes_ecb_encrypt(const uint8_t *key, unsigned int key_bytelen, size_t length, const unsigned char *input, unsigned char *output);
 int bl_sec_aes_ecb_decrypt(const uint8_t *key, unsigned int key_bytelen, size_t length, const unsigned char *input, unsigned char *output);
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/sha1_alt.h" 2
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/sha1_alt.h" 2
 
 typedef bl_sha_ctx_t mbedtls_sha1_context;
-# 73 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h" 2
-# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 73 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h" 2
+# 86 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 void mbedtls_sha1_init( mbedtls_sha1_context *ctx );
-# 101 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 101 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 void mbedtls_sha1_free( mbedtls_sha1_context *ctx );
-# 114 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 114 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 void mbedtls_sha1_clone( mbedtls_sha1_context *dst,
                          const mbedtls_sha1_context *src );
-# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 130 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 int mbedtls_sha1_starts_ret( mbedtls_sha1_context *ctx );
-# 149 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 149 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 int mbedtls_sha1_update_ret( mbedtls_sha1_context *ctx,
                              const unsigned char *input,
                              size_t ilen );
-# 169 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 169 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 int mbedtls_sha1_finish_ret( mbedtls_sha1_context *ctx,
                              unsigned char output[20] );
-# 187 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 187 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 int mbedtls_internal_sha1_process( mbedtls_sha1_context *ctx,
                                    const unsigned char data[64] );
-# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 208 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
  void mbedtls_sha1_starts( mbedtls_sha1_context *ctx );
-# 227 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 227 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
  void mbedtls_sha1_update( mbedtls_sha1_context *ctx,
                                              const unsigned char *input,
                                              size_t ilen );
-# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 246 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
  void mbedtls_sha1_finish( mbedtls_sha1_context *ctx,
                                              unsigned char output[20] );
-# 263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 263 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
  void mbedtls_sha1_process( mbedtls_sha1_context *ctx,
                                               const unsigned char data[64] );
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
 int mbedtls_sha1_ret( const unsigned char *input,
                       size_t ilen,
                       unsigned char output[20] );
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha1.h"
  void mbedtls_sha1( const unsigned char *input,
                                       size_t ilen,
                                       unsigned char output[20] );
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h" 1
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h" 2
-# 69 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/sha256_alt.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h" 1
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h" 2
+# 69 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/sha256_alt.h" 1
        
 
 
 
 typedef bl_sha_ctx_t mbedtls_sha256_context;
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h" 2
+# 70 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h" 2
 
 
 
@@ -5496,7 +5496,7 @@ typedef bl_sha_ctx_t mbedtls_sha256_context;
 
 
 void mbedtls_sha256_init( mbedtls_sha256_context *ctx );
-# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 86 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
 void mbedtls_sha256_free( mbedtls_sha256_context *ctx );
 
 
@@ -5507,50 +5507,50 @@ void mbedtls_sha256_free( mbedtls_sha256_context *ctx );
 
 void mbedtls_sha256_clone( mbedtls_sha256_context *dst,
                            const mbedtls_sha256_context *src );
-# 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 108 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
 int mbedtls_sha256_starts_ret( mbedtls_sha256_context *ctx, int is224 );
-# 123 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 123 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
 int mbedtls_sha256_update_ret( mbedtls_sha256_context *ctx,
                                const unsigned char *input,
                                size_t ilen );
-# 139 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 139 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
 int mbedtls_sha256_finish_ret( mbedtls_sha256_context *ctx,
                                unsigned char output[32] );
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 154 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
 int mbedtls_internal_sha256_process( mbedtls_sha256_context *ctx,
                                      const unsigned char data[64] );
-# 173 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 173 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
  void mbedtls_sha256_starts( mbedtls_sha256_context *ctx,
                                                int is224 );
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 188 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
  void mbedtls_sha256_update( mbedtls_sha256_context *ctx,
                                                const unsigned char *input,
                                                size_t ilen );
-# 203 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 203 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
  void mbedtls_sha256_finish( mbedtls_sha256_context *ctx,
                                                unsigned char output[32] );
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
  void mbedtls_sha256_process( mbedtls_sha256_context *ctx,
                                                 const unsigned char data[64] );
-# 244 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 244 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
 int mbedtls_sha256_ret( const unsigned char *input,
                         size_t ilen,
                         unsigned char output[32],
                         int is224 );
-# 276 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
+# 276 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha256.h"
  void mbedtls_sha256( const unsigned char *input,
                                         size_t ilen,
                                         unsigned char output[32],
                                         int is224 );
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h" 1
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h" 2
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h" 1
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h" 2
+# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 typedef struct mbedtls_sha512_context
 {
     uint64_t total[2];
@@ -5562,9 +5562,9 @@ typedef struct mbedtls_sha512_context
 
 }
 mbedtls_sha512_context;
-# 79 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 79 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 void mbedtls_sha512_init( mbedtls_sha512_context *ctx );
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 void mbedtls_sha512_free( mbedtls_sha512_context *ctx );
 
 
@@ -5575,50 +5575,50 @@ void mbedtls_sha512_free( mbedtls_sha512_context *ctx );
 
 void mbedtls_sha512_clone( mbedtls_sha512_context *dst,
                            const mbedtls_sha512_context *src );
-# 115 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 115 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 int mbedtls_sha512_starts_ret( mbedtls_sha512_context *ctx, int is384 );
-# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 130 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 int mbedtls_sha512_update_ret( mbedtls_sha512_context *ctx,
                     const unsigned char *input,
                     size_t ilen );
-# 146 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 146 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 int mbedtls_sha512_finish_ret( mbedtls_sha512_context *ctx,
                                unsigned char output[64] );
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 int mbedtls_internal_sha512_process( mbedtls_sha512_context *ctx,
                                      const unsigned char data[128] );
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
  void mbedtls_sha512_starts( mbedtls_sha512_context *ctx,
                                                int is384 );
-# 197 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 197 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
  void mbedtls_sha512_update( mbedtls_sha512_context *ctx,
                                                const unsigned char *input,
                                                size_t ilen );
-# 212 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 212 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
  void mbedtls_sha512_finish( mbedtls_sha512_context *ctx,
                                                unsigned char output[64] );
-# 226 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 226 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
  void mbedtls_sha512_process(
                                             mbedtls_sha512_context *ctx,
                                             const unsigned char data[128] );
-# 258 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 258 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
 int mbedtls_sha512_ret( const unsigned char *input,
                         size_t ilen,
                         unsigned char output[64],
                         int is384 );
-# 293 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
+# 293 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/sha512.h"
  void mbedtls_sha512( const unsigned char *input,
                                         size_t ilen,
                                         unsigned char output[64],
                                         int is384 );
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
-# 331 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 2
+# 331 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 static inline int mbedtls_ssl_chk_buf_ptr( const uint8_t *cur,
                                            const uint8_t *end, size_t need )
 {
     return( ( cur > end ) || ( need > (size_t)( end - cur ) ) );
 }
-# 364 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 364 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 struct mbedtls_ssl_sig_hash_set_t
 {
 
@@ -5636,7 +5636,7 @@ typedef int mbedtls_ssl_tls_prf_cb( const unsigned char *secret, size_t slen,
                                      const char *label,
                                      const unsigned char *random, size_t rlen,
                                      unsigned char *dstbuf, size_t dlen );
-# 406 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 406 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 struct mbedtls_ssl_key_set
 {
 
@@ -5676,7 +5676,7 @@ struct mbedtls_ssl_handshake_params
 
 
     uint8_t new_session_ticket;
-# 474 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 474 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     mbedtls_ssl_sig_hash_set_t hash_algs;
 
 
@@ -5691,9 +5691,9 @@ struct mbedtls_ssl_handshake_params
 
 
     mbedtls_dhm_context dhm_ctx;
-# 496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 496 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     mbedtls_ecdh_context ecdh_ctx;
-# 517 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 517 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     const mbedtls_ecp_curve_info **curves;
 
 
@@ -5711,9 +5711,9 @@ struct mbedtls_ssl_handshake_params
     mbedtls_ssl_key_cert *sni_key_cert;
     mbedtls_x509_crt *sni_ca_chain;
     mbedtls_x509_crl *sni_ca_crl;
-# 543 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 543 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     mbedtls_pk_context peer_pubkey;
-# 620 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 620 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     mbedtls_sha256_context fin_sha256;
 
 
@@ -5728,11 +5728,11 @@ struct mbedtls_ssl_handshake_params
 
     unsigned char randbytes[64];
     unsigned char premaster[sizeof( union mbedtls_ssl_premaster_secret )];
-# 644 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 644 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 };
 
 typedef struct mbedtls_ssl_hs_buffer mbedtls_ssl_hs_buffer;
-# 747 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 747 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 struct mbedtls_ssl_transform
 {
 
@@ -5746,7 +5746,7 @@ struct mbedtls_ssl_transform
 
     unsigned char iv_enc[16];
     unsigned char iv_dec[16];
-# 769 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 769 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     mbedtls_md_context_t md_ctx_enc;
     mbedtls_md_context_t md_ctx_dec;
 
@@ -5759,7 +5759,7 @@ struct mbedtls_ssl_transform
     mbedtls_cipher_context_t cipher_ctx_enc;
     mbedtls_cipher_context_t cipher_ctx_dec;
     int minor_ver;
-# 802 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 802 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 };
 
 
@@ -5776,7 +5776,7 @@ static inline int mbedtls_ssl_transform_uses_aead(
 
 
 }
-# 845 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 845 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 typedef struct
 {
     uint8_t ctr[8];
@@ -5815,7 +5815,7 @@ struct mbedtls_ssl_key_cert
     mbedtls_pk_context *key;
     mbedtls_ssl_key_cert *next;
 };
-# 902 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 902 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 mbedtls_md_type_t mbedtls_ssl_sig_hash_set_find( mbedtls_ssl_sig_hash_set_t *set,
                                                  mbedtls_pk_type_t sig_alg );
 
@@ -5831,7 +5831,7 @@ static inline void mbedtls_ssl_sig_hash_set_init( mbedtls_ssl_sig_hash_set_t *se
 {
     mbedtls_ssl_sig_hash_set_const_hash( set, MBEDTLS_MD_NONE );
 }
-# 927 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 927 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 void mbedtls_ssl_transform_free( mbedtls_ssl_transform *transform );
 
 
@@ -5860,7 +5860,7 @@ int mbedtls_ssl_handle_message_type( mbedtls_ssl_context *ssl );
 __attribute__((__warn_unused_result__))
 int mbedtls_ssl_prepare_handshake_record( mbedtls_ssl_context *ssl );
 void mbedtls_ssl_update_handshake_status( mbedtls_ssl_context *ssl );
-# 1032 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1032 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 __attribute__((__warn_unused_result__))
 int mbedtls_ssl_read_record( mbedtls_ssl_context *ssl,
                              unsigned update_hs_digest );
@@ -5906,9 +5906,9 @@ static inline int mbedtls_ssl_get_psk( const mbedtls_ssl_context *ssl,
     const unsigned char **psk, size_t *psk_len )
 {
     if( ssl->handshake->psk != 
-# 1076 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1076 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                               ((void *)0) 
-# 1076 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1076 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                                    && ssl->handshake->psk_len > 0 )
     {
         *psk = ssl->handshake->psk;
@@ -5916,9 +5916,9 @@ static inline int mbedtls_ssl_get_psk( const mbedtls_ssl_context *ssl,
     }
 
     else if( ssl->conf->psk != 
-# 1082 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1082 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                               ((void *)0) 
-# 1082 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1082 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                                    && ssl->conf->psk_len > 0 )
     {
         *psk = ssl->conf->psk;
@@ -5928,9 +5928,9 @@ static inline int mbedtls_ssl_get_psk( const mbedtls_ssl_context *ssl,
     else
     {
         *psk = 
-# 1090 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1090 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
               ((void *)0)
-# 1090 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1090 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                   ;
         *psk_len = 0;
         return( -0x7600 );
@@ -5938,7 +5938,7 @@ static inline int mbedtls_ssl_get_psk( const mbedtls_ssl_context *ssl,
 
     return( 0 );
 }
-# 1122 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1122 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 unsigned char mbedtls_ssl_sig_from_pk( mbedtls_pk_context *pk );
 unsigned char mbedtls_ssl_sig_from_pk_alg( mbedtls_pk_type_t type );
 mbedtls_pk_type_t mbedtls_ssl_pk_alg_from_sig( unsigned char sig );
@@ -5960,32 +5960,32 @@ int mbedtls_ssl_check_curve_tls_id( const mbedtls_ssl_context *ssl, uint16_t tls
 __attribute__((__warn_unused_result__))
 int mbedtls_ssl_check_sig_hash( const mbedtls_ssl_context *ssl,
                                 mbedtls_md_type_t md );
-# 1163 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1163 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 static inline mbedtls_pk_context *mbedtls_ssl_own_key( mbedtls_ssl_context *ssl )
 {
     mbedtls_ssl_key_cert *key_cert;
 
     if( ssl->handshake != 
-# 1167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1167 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                          ((void *)0) 
-# 1167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1167 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                               && ssl->handshake->key_cert != 
-# 1167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1167 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                                                              ((void *)0) 
-# 1167 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1167 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                                                                   )
         key_cert = ssl->handshake->key_cert;
     else
         key_cert = ssl->conf->key_cert;
 
     return( key_cert == 
-# 1172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1172 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                        ((void *)0) 
-# 1172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1172 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                             ? 
-# 1172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1172 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                               ((void *)0) 
-# 1172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1172 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                                    : key_cert->key );
 }
 
@@ -5994,29 +5994,29 @@ static inline mbedtls_x509_crt *mbedtls_ssl_own_cert( mbedtls_ssl_context *ssl )
     mbedtls_ssl_key_cert *key_cert;
 
     if( ssl->handshake != 
-# 1179 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1179 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                          ((void *)0) 
-# 1179 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1179 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                               && ssl->handshake->key_cert != 
-# 1179 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1179 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                                                              ((void *)0) 
-# 1179 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1179 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                                                                   )
         key_cert = ssl->handshake->key_cert;
     else
         key_cert = ssl->conf->key_cert;
 
     return( key_cert == 
-# 1184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                        ((void *)0) 
-# 1184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                             ? 
-# 1184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
+# 1184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h" 3 4
                               ((void *)0) 
-# 1184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
                                    : key_cert->cert );
 }
-# 1196 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1196 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 __attribute__((__warn_unused_result__))
 int mbedtls_ssl_check_cert_usage( const mbedtls_x509_crt *cert,
                           const mbedtls_ssl_ciphersuite_t *ciphersuite,
@@ -6033,7 +6033,7 @@ static inline size_t mbedtls_ssl_in_hdr_len( const mbedtls_ssl_context *ssl )
 {
 
     ((void) ssl);
-# 1221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1221 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
     {
         return( 5 );
     }
@@ -6054,11 +6054,11 @@ static inline size_t mbedtls_ssl_hs_hdr_len( const mbedtls_ssl_context *ssl )
 
     return( 4 );
 }
-# 1258 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1258 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 __attribute__((__warn_unused_result__))
 int mbedtls_ssl_session_copy( mbedtls_ssl_session *dst,
                               const mbedtls_ssl_session *src );
-# 1274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
+# 1274 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ssl_internal.h"
 __attribute__((__warn_unused_result__))
 int mbedtls_ssl_get_key_exchange_md_tls1_2( mbedtls_ssl_context *ssl,
                                             unsigned char *hash, size_t *hashlen,
@@ -6117,31 +6117,31 @@ int mbedtls_ssl_session_reset_int( mbedtls_ssl_context *ssl, int partial );
 
 
 void mbedtls_ssl_handshake_wrapup_free_hs_transform( mbedtls_ssl_context *ssl );
-# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h" 1
-# 151 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h" 1
+# 151 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_set_threshold( int threshold );
-# 168 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 168 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_print_msg( const mbedtls_ssl_context *ssl, int level,
                               const char *file, int line,
                               const char *format, ... ) __attribute__((format(printf, 5, 6)));
-# 187 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 187 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_print_ret( const mbedtls_ssl_context *ssl, int level,
                       const char *file, int line,
                       const char *text, int ret );
-# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 208 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_print_buf( const mbedtls_ssl_context *ssl, int level,
                       const char *file, int line, const char *text,
                       const unsigned char *buf, size_t len );
-# 229 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 229 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_print_mpi( const mbedtls_ssl_context *ssl, int level,
                       const char *file, int line,
                       const char *text, const mbedtls_mpi *X );
-# 251 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 251 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_print_ecp( const mbedtls_ssl_context *ssl, int level,
                       const char *file, int line,
                       const char *text, const mbedtls_ecp_point *X );
-# 272 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 272 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_print_crt( const mbedtls_ssl_context *ssl, int level,
                       const char *file, int line,
                       const char *text, const mbedtls_x509_crt *crt );
@@ -6154,17 +6154,17 @@ typedef enum
     MBEDTLS_DEBUG_ECDH_QP,
     MBEDTLS_DEBUG_ECDH_Z,
 } mbedtls_debug_ecdh_attr;
-# 301 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
+# 301 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/debug.h"
 void mbedtls_debug_printf_ecdh( const mbedtls_ssl_context *ssl, int level,
                                 const char *file, int line,
                                 const mbedtls_ecdh_context *ecdh,
                                 mbedtls_debug_ecdh_attr attr );
-# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h" 1
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h" 2
-# 159 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
+# 43 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h" 1
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h" 2
+# 159 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
 static inline int mbedtls_error_add( int high, int low,
                                      const char *file, int line )
 {
@@ -6177,31 +6177,31 @@ static inline int mbedtls_error_add( int high, int low,
 
     return( high + low );
 }
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
 void mbedtls_strerror( int errnum, char *buffer, size_t buflen );
-# 196 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
+# 196 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
 const char * mbedtls_high_level_strerr( int error_code );
-# 211 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
+# 211 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/error.h"
 const char * mbedtls_low_level_strerr( int error_code );
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/version.h" 1
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h" 1
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h" 2
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/version.h" 1
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h" 1
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h" 2
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/constant_time.h"
 int mbedtls_ct_memcmp( const void *a,
                        const void *b,
                        size_t n );
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
-# 56 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h" 1
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h" 2
-# 442 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h" 1
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h" 2
+# 442 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 typedef struct mbedtls_oid_descriptor_t
 {
     const char *asn1;
@@ -6209,44 +6209,44 @@ typedef struct mbedtls_oid_descriptor_t
     const char *name;
     const char *description;
 } mbedtls_oid_descriptor_t;
-# 461 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 461 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_numeric_string( char *buf, size_t size, const mbedtls_asn1_buf *oid );
-# 471 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 471 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_x509_ext_type( const mbedtls_asn1_buf *oid, int *ext_type );
-# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 482 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_attr_short_name( const mbedtls_asn1_buf *oid, const char **short_name );
-# 492 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 492 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_pk_alg( const mbedtls_asn1_buf *oid, mbedtls_pk_type_t *pk_alg );
-# 503 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 503 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_oid_by_pk_alg( mbedtls_pk_type_t pk_alg,
                            const char **oid, size_t *olen );
-# 515 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 515 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_ec_grp( const mbedtls_asn1_buf *oid, mbedtls_ecp_group_id *grp_id );
-# 526 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 526 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_oid_by_ec_grp( mbedtls_ecp_group_id grp_id,
                            const char **oid, size_t *olen );
-# 540 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 540 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_sig_alg( const mbedtls_asn1_buf *oid,
                      mbedtls_md_type_t *md_alg, mbedtls_pk_type_t *pk_alg );
-# 551 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 551 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_sig_alg_desc( const mbedtls_asn1_buf *oid, const char **desc );
-# 563 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 563 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_oid_by_sig_alg( mbedtls_pk_type_t pk_alg, mbedtls_md_type_t md_alg,
                             const char **oid, size_t *olen );
-# 574 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 574 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_md_alg( const mbedtls_asn1_buf *oid, mbedtls_md_type_t *md_alg );
-# 584 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 584 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_md_hmac( const mbedtls_asn1_buf *oid, mbedtls_md_type_t *md_hmac );
-# 595 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 595 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_extended_key_usage( const mbedtls_asn1_buf *oid, const char **desc );
-# 605 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 605 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_certificate_policies( const mbedtls_asn1_buf *oid, const char **desc );
-# 616 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 616 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_oid_by_md( mbedtls_md_type_t md_alg, const char **oid, size_t *olen );
-# 627 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
+# 627 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/oid.h"
 int mbedtls_oid_get_cipher_alg( const mbedtls_asn1_buf *oid, mbedtls_cipher_type_t *cipher_alg );
-# 57 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
-# 165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 2
+# 165 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static unsigned int ssl_mfl_code_to_length( int mfl )
 {
     switch( mfl )
@@ -6275,23 +6275,23 @@ int mbedtls_ssl_session_copy( mbedtls_ssl_session *dst,
 
 
     dst->ticket = 
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( src->peer_cert_digest != 
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                 ((void *)0) 
-# 217 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 217 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                      )
     {
         dst->peer_cert_digest =
             mbedtls_calloc( 1, src->peer_cert_digest_len );
         if( dst->peer_cert_digest == 
-# 221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 221 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                     ((void *)0) 
-# 221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 221 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                          )
             return( -0x7F00 );
 
@@ -6306,16 +6306,16 @@ int mbedtls_ssl_session_copy( mbedtls_ssl_session *dst,
 
 
     if( src->ticket != 
-# 234 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 234 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0) 
-# 234 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 234 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            )
     {
         dst->ticket = mbedtls_calloc( 1, src->ticket_len );
         if( dst->ticket == 
-# 237 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 237 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                           ((void *)0) 
-# 237 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 237 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                )
             return( -0x7F00 );
 
@@ -6325,7 +6325,7 @@ int mbedtls_ssl_session_copy( mbedtls_ssl_session *dst,
 
     return( 0 );
 }
-# 686 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 686 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int tls_prf_generic( mbedtls_md_type_t md_type,
                             const unsigned char *secret, size_t slen,
@@ -6345,9 +6345,9 @@ static int tls_prf_generic( mbedtls_md_type_t md_type,
     mbedtls_md_init( &md_ctx );
 
     if( ( md_info = mbedtls_md_info_from_type( md_type ) ) == 
-# 704 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 704 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                                              ((void *)0) 
-# 704 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 704 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                                                   )
         return( -0x6C00 );
 
@@ -6356,9 +6356,9 @@ static int tls_prf_generic( mbedtls_md_type_t md_type,
     tmp_len = md_len + strlen( label ) + rlen;
     tmp = mbedtls_calloc( 1, tmp_len );
     if( tmp == 
-# 711 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 711 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 711 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 711 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    )
     {
         ret = -0x7F00;
@@ -6451,7 +6451,7 @@ static int tls_prf_sha384( const unsigned char *secret, size_t slen,
 
 
 static void ssl_update_checksum_start( mbedtls_ssl_context *, const unsigned char *, size_t );
-# 821 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 821 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static void ssl_update_checksum_sha256( mbedtls_ssl_context *, const unsigned char *, size_t );
 static void ssl_calc_verify_tls_sha256( const mbedtls_ssl_context *,unsigned char*, size_t * );
 static void ssl_calc_finished_tls_sha256( mbedtls_ssl_context *,unsigned char *, int );
@@ -6461,7 +6461,7 @@ static void ssl_calc_finished_tls_sha256( mbedtls_ssl_context *,unsigned char *,
 static void ssl_update_checksum_sha384( mbedtls_ssl_context *, const unsigned char *, size_t );
 static void ssl_calc_verify_tls_sha384( const mbedtls_ssl_context *, unsigned char*, size_t * );
 static void ssl_calc_finished_tls_sha384( mbedtls_ssl_context *, unsigned char *, int );
-# 893 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 893 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_tls_prf( const mbedtls_tls_prf_types prf,
                           const unsigned char *secret, size_t slen,
                           const char *label,
@@ -6469,14 +6469,14 @@ int mbedtls_ssl_tls_prf( const mbedtls_tls_prf_types prf,
                           unsigned char *dstbuf, size_t dlen )
 {
     mbedtls_ssl_tls_prf_cb *tls_prf = 
-# 899 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 899 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                      ((void *)0)
-# 899 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 899 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                          ;
 
     switch( prf )
     {
-# 916 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 916 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
         case MBEDTLS_SSL_TLS_PRF_SHA384:
             tls_prf = tls_prf_sha384;
         break;
@@ -6498,12 +6498,12 @@ int mbedtls_ssl_tls_prf( const mbedtls_tls_prf_types prf,
 typedef int ssl_tls_prf_t(const unsigned char *, size_t, const char *,
                           const unsigned char *, size_t,
                           unsigned char *, size_t);
-# 960 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 960 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int ssl_populate_transform( mbedtls_ssl_transform *transform,
                                    int ciphersuite,
                                    const unsigned char master[48],
-# 975 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 975 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                    ssl_tls_prf_t tls_prf,
                                    const unsigned char randbytes[64],
                                    int minor_ver,
@@ -6528,57 +6528,57 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
     const mbedtls_ssl_ciphersuite_t *ciphersuite_info;
     const mbedtls_cipher_info_t *cipher_info;
     const mbedtls_md_info_t *md_info;
-# 1015 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1015 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     transform->minor_ver = minor_ver;
-# 1024 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1024 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     ciphersuite_info = mbedtls_ssl_ciphersuite_from_id( ciphersuite );
     if( ciphersuite_info == 
-# 1025 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 1025 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                            ((void *)0) 
-# 1025 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1025 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1027, "ciphersuite info for %d not found", ciphersuite )
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1027, "ciphersuite info for %d not found", ciphersuite )
                                                    ;
         return( -0x7100 );
     }
 
     cipher_info = mbedtls_cipher_info_from_type( ciphersuite_info->cipher );
     if( cipher_info == 
-# 1033 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 1033 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0) 
-# 1033 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1033 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1035, "cipher info for %u not found", ciphersuite_info->cipher )
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1035, "cipher info for %u not found", ciphersuite_info->cipher )
                                                                 ;
         return( -0x7100 );
     }
 
     md_info = mbedtls_md_info_from_type( ciphersuite_info->mac );
     if( md_info == 
-# 1041 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 1041 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0) 
-# 1041 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1041 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                        )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1043, "mbedtls_md info for %u not found", (unsigned) ciphersuite_info->mac )
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1043, "mbedtls_md info for %u not found", (unsigned) ciphersuite_info->mac )
                                                                 ;
         return( -0x7100 );
     }
-# 1071 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1071 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     ret = tls_prf( master, 48, "key expansion", randbytes, 64, keyblk, 256 );
     if( ret != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1074, "prf", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1074, "prf", ret );
         return( ret );
     }
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1078, "ciphersuite = %s", mbedtls_ssl_get_ciphersuite_name( ciphersuite ) )
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1078, "ciphersuite = %s", mbedtls_ssl_get_ciphersuite_name( ciphersuite ) )
                                                                               ;
-    mbedtls_debug_print_buf( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1080, "master secret", master, 48 );
-    mbedtls_debug_print_buf( ssl, 4, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1081, "random bytes", randbytes, 64 );
-    mbedtls_debug_print_buf( ssl, 4, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1082, "key block", keyblk, 256 );
+    mbedtls_debug_print_buf( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1080, "master secret", master, 48 );
+    mbedtls_debug_print_buf( ssl, 4, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1081, "random bytes", randbytes, 64 );
+    mbedtls_debug_print_buf( ssl, 4, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1082, "key block", keyblk, 256 );
 
 
 
@@ -6599,7 +6599,7 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
         mac_key_len = 0;
         transform->taglen =
             ciphersuite_info->flags & 0x02 ? 8 : 16;
-# 1112 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1112 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
         transform->ivlen = 12;
 
 
@@ -6629,14 +6629,14 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
         if( ( ret = mbedtls_md_setup( &transform->md_ctx_enc, md_info, 1 ) ) != 0 ||
             ( ret = mbedtls_md_setup( &transform->md_ctx_dec, md_info, 1 ) ) != 0 )
         {
-            mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1141, "mbedtls_md_setup", ret );
+            mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1141, "mbedtls_md_setup", ret );
             goto end;
         }
 
 
         mac_key_len = mbedtls_md_get_size( md_info );
         transform->maclen = mac_key_len;
-# 1169 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1169 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
         transform->ivlen = cipher_info->iv_size;
 
 
@@ -6644,13 +6644,13 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
             transform->minlen = transform->maclen;
         else
         {
-# 1190 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1190 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
             {
                 transform->minlen = transform->maclen
                                   + cipher_info->block_size
                                   - transform->maclen % cipher_info->block_size;
             }
-# 1203 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1203 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
             if( minor_ver == 2 ||
                 minor_ver == 3 )
             {
@@ -6659,7 +6659,7 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
             else
 
             {
-                mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1211, "should never happen" );
+                mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1211, "should never happen" );
                 ret = -0x6C00;
                 goto end;
             }
@@ -6668,11 +6668,11 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
     else
 
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1220, "should never happen" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1220, "should never happen" );
         return( -0x6C00 );
     }
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1224, "keylen: %u, minlen: %u, ivlen: %u, maclen: %u", (unsigned) keylen, (unsigned) transform->minlen, (unsigned) transform->ivlen, (unsigned) transform->maclen )
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1224, "keylen: %u, minlen: %u, ivlen: %u, maclen: %u", (unsigned) keylen, (unsigned) transform->minlen, (unsigned) transform->ivlen, (unsigned) transform->maclen )
 
 
 
@@ -6722,11 +6722,11 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
     else
 
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1274, "should never happen" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1274, "should never happen" );
         ret = -0x6C00;
         goto end;
     }
-# 1297 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1297 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( minor_ver >= 1 )
     {
 
@@ -6746,25 +6746,25 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
     else
 
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1316, "should never happen" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1316, "should never happen" );
         ret = -0x6C00;
         goto end;
     }
-# 1341 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1341 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     ((void) mac_dec);
     ((void) mac_enc);
-# 1403 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1403 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ( ret = mbedtls_cipher_setup( &transform->cipher_ctx_enc,
                                  cipher_info ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1406, "mbedtls_cipher_setup", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1406, "mbedtls_cipher_setup", ret );
         goto end;
     }
-# 1446 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1446 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ( ret = mbedtls_cipher_setup( &transform->cipher_ctx_dec,
                                  cipher_info ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1449, "mbedtls_cipher_setup", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1449, "mbedtls_cipher_setup", ret );
         goto end;
     }
 
@@ -6772,7 +6772,7 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
                                cipher_info->key_bitlen,
                                MBEDTLS_ENCRYPT ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1457, "mbedtls_cipher_setkey", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1457, "mbedtls_cipher_setkey", ret );
         goto end;
     }
 
@@ -6780,7 +6780,7 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
                                cipher_info->key_bitlen,
                                MBEDTLS_DECRYPT ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1465, "mbedtls_cipher_setkey", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1465, "mbedtls_cipher_setkey", ret );
         goto end;
     }
 
@@ -6790,29 +6790,29 @@ static int ssl_populate_transform( mbedtls_ssl_transform *transform,
         if( ( ret = mbedtls_cipher_set_padding_mode( &transform->cipher_ctx_enc,
                                              MBEDTLS_PADDING_NONE ) ) != 0 )
         {
-            mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1475, "mbedtls_cipher_set_padding_mode", ret );
+            mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1475, "mbedtls_cipher_set_padding_mode", ret );
             goto end;
         }
 
         if( ( ret = mbedtls_cipher_set_padding_mode( &transform->cipher_ctx_dec,
                                              MBEDTLS_PADDING_NONE ) ) != 0 )
         {
-            mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1482, "mbedtls_cipher_set_padding_mode", ret );
+            mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1482, "mbedtls_cipher_set_padding_mode", ret );
             goto end;
         }
     }
-# 1509 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1509 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 end:
     mbedtls_platform_zeroize( keyblk, sizeof( keyblk ) );
     return( ret );
 }
-# 1524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int ssl_set_handshake_prfs( mbedtls_ssl_handshake_params *handshake,
                                    int minor_ver,
                                    mbedtls_md_type_t hash )
 {
-# 1554 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1554 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( minor_ver == 3 &&
         hash == MBEDTLS_MD_SHA384 )
     {
@@ -6838,7 +6838,7 @@ static int ssl_set_handshake_prfs( mbedtls_ssl_handshake_params *handshake,
 
     return( 0 );
 }
-# 1594 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1594 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int ssl_compute_master( mbedtls_ssl_handshake_params *handshake,
                                unsigned char *master,
@@ -6849,18 +6849,18 @@ static int ssl_compute_master( mbedtls_ssl_handshake_params *handshake,
 
 
     size_t const master_secret_len = 48;
-# 1613 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1613 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     char const *lbl = "master secret";
-# 1622 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1622 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     unsigned char const *salt = handshake->randbytes;
     size_t salt_len = 64;
-# 1633 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1633 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( handshake->resume != 0 )
     {
-        mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1635, "no premaster (session resumed)" );
+        mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1635, "no premaster (session resumed)" );
         return( 0 );
     }
-# 1700 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1700 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     {
         ret = handshake->tls_prf( handshake->premaster, handshake->pmslen,
                                   lbl, salt, salt_len,
@@ -6868,11 +6868,11 @@ static int ssl_compute_master( mbedtls_ssl_handshake_params *handshake,
                                   master_secret_len );
         if( ret != 0 )
         {
-            mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1707, "prf", ret );
+            mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1707, "prf", ret );
             return( ret );
         }
 
-        mbedtls_debug_print_buf( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1711, "premaster secret", handshake->premaster, handshake->pmslen )
+        mbedtls_debug_print_buf( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1711, "premaster secret", handshake->premaster, handshake->pmslen )
 
                                                   ;
 
@@ -6889,7 +6889,7 @@ int mbedtls_ssl_derive_keys( mbedtls_ssl_context *ssl )
     const mbedtls_ssl_ciphersuite_t * const ciphersuite_info =
         ssl->handshake->ciphersuite_info;
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1728, "=> derive keys" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1728, "=> derive keys" );
 
 
     ret = ssl_set_handshake_prfs( ssl->handshake,
@@ -6897,7 +6897,7 @@ int mbedtls_ssl_derive_keys( mbedtls_ssl_context *ssl )
                                   ciphersuite_info->mac );
     if( ret != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1736, "ssl_set_handshake_prfs", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1736, "ssl_set_handshake_prfs", ret );
         return( ret );
     }
 
@@ -6907,7 +6907,7 @@ int mbedtls_ssl_derive_keys( mbedtls_ssl_context *ssl )
                               ssl );
     if( ret != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1746, "ssl_compute_master", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1746, "ssl_compute_master", ret );
         return( ret );
     }
 
@@ -6926,7 +6926,7 @@ int mbedtls_ssl_derive_keys( mbedtls_ssl_context *ssl )
     ret = ssl_populate_transform( ssl->transform_negotiate,
                                   ssl->session_negotiate->ciphersuite,
                                   ssl->session_negotiate->master,
-# 1776 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1776 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                   ssl->handshake->tls_prf,
                                   ssl->handshake->randbytes,
                                   ssl->minor_ver,
@@ -6934,37 +6934,37 @@ int mbedtls_ssl_derive_keys( mbedtls_ssl_context *ssl )
                                   ssl );
     if( ret != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1783, "ssl_populate_transform", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1783, "ssl_populate_transform", ret );
         return( ret );
     }
 
 
     mbedtls_platform_zeroize( ssl->handshake->randbytes,
                       sizeof( ssl->handshake->randbytes ) );
-# 1807 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1807, "<= derive keys" );
+# 1807 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1807, "<= derive keys" );
 
     return( 0 );
 }
-# 1898 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1898 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void ssl_calc_verify_tls_sha256( const mbedtls_ssl_context *ssl,
                                  unsigned char *hash,
                                  size_t *hlen )
 {
-# 1926 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1926 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_context sha256;
 
     mbedtls_sha256_init( &sha256 );
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1930, "=> calc verify sha256" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1930, "=> calc verify sha256" );
 
     mbedtls_sha256_clone( &sha256, &ssl->handshake->fin_sha256 );
     mbedtls_sha256_finish_ret( &sha256, hash );
 
     *hlen = 32;
 
-    mbedtls_debug_print_buf( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1937, "calculated verify result", hash, *hlen );
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1938, "<= calc verify" );
+    mbedtls_debug_print_buf( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1937, "calculated verify result", hash, *hlen );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1938, "<= calc verify" );
 
     mbedtls_sha256_free( &sha256 );
 
@@ -6977,20 +6977,20 @@ void ssl_calc_verify_tls_sha384( const mbedtls_ssl_context *ssl,
                                  unsigned char *hash,
                                  size_t *hlen )
 {
-# 1975 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 1975 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha512_context sha512;
 
     mbedtls_sha512_init( &sha512 );
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1979, "=> calc verify sha384" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1979, "=> calc verify sha384" );
 
     mbedtls_sha512_clone( &sha512, &ssl->handshake->fin_sha512 );
     mbedtls_sha512_finish_ret( &sha512, hash );
 
     *hlen = 48;
 
-    mbedtls_debug_print_buf( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1986, "calculated verify result", hash, *hlen );
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1987, "<= calc verify" );
+    mbedtls_debug_print_buf( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1986, "calculated verify result", hash, *hlen );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 1987, "<= calc verify" );
 
     mbedtls_sha512_free( &sha512 );
 
@@ -7005,9 +7005,9 @@ int mbedtls_ssl_psk_derive_premaster( mbedtls_ssl_context *ssl, mbedtls_key_exch
     unsigned char *p = ssl->handshake->premaster;
     unsigned char *end = p + sizeof( ssl->handshake->premaster );
     const unsigned char *psk = 
-# 2001 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2001 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                               ((void *)0)
-# 2001 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2001 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                   ;
     size_t psk_len = 0;
 
@@ -7018,10 +7018,10 @@ int mbedtls_ssl_psk_derive_premaster( mbedtls_ssl_context *ssl, mbedtls_key_exch
 
 
 
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2011, "should never happen" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2011, "should never happen" );
         return( -0x6C00 );
     }
-# 2023 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2023 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( key_ex == MBEDTLS_KEY_EXCHANGE_PSK )
     {
         if( end - p < 2 )
@@ -7037,9 +7037,9 @@ int mbedtls_ssl_psk_derive_premaster( mbedtls_ssl_context *ssl, mbedtls_key_exch
         p += psk_len;
     }
     else
-# 2098 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2098 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2099, "should never happen" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2099, "should never happen" );
         return( -0x6C00 );
     }
 
@@ -7060,29 +7060,29 @@ int mbedtls_ssl_psk_derive_premaster( mbedtls_ssl_context *ssl, mbedtls_key_exch
 
     return( 0 );
 }
-# 2155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2155 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static void ssl_clear_peer_cert( mbedtls_ssl_session *session )
 {
-# 2165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2165 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( session->peer_cert_digest != 
-# 2165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2165 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                     ((void *)0) 
-# 2165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2165 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                          )
     {
 
         mbedtls_free( session->peer_cert_digest );
         session->peer_cert_digest = 
-# 2169 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2169 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                         ((void *)0)
-# 2169 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2169 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                             ;
         session->peer_cert_digest_type = MBEDTLS_MD_NONE;
         session->peer_cert_digest_len = 0;
     }
 
 }
-# 2221 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2221 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_write_certificate( mbedtls_ssl_context *ssl )
 {
     int ret = -0x7080;
@@ -7091,11 +7091,11 @@ int mbedtls_ssl_write_certificate( mbedtls_ssl_context *ssl )
     const mbedtls_ssl_ciphersuite_t *ciphersuite_info =
         ssl->handshake->ciphersuite_info;
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2229, "=> write certificate" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2229, "=> write certificate" );
 
     if( !mbedtls_ssl_ciphersuite_uses_srv_cert( ciphersuite_info ) )
     {
-        mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2233, "<= skip write certificate" );
+        mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2233, "<= skip write certificate" );
         ssl->state++;
         return( 0 );
     }
@@ -7105,43 +7105,43 @@ int mbedtls_ssl_write_certificate( mbedtls_ssl_context *ssl )
     {
         if( ssl->client_auth == 0 )
         {
-            mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2243, "<= skip write certificate" );
+            mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2243, "<= skip write certificate" );
             ssl->state++;
             return( 0 );
         }
-# 2265 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2265 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     }
 
 
     if( ssl->conf->endpoint == 1 )
     {
         if( mbedtls_ssl_own_cert( ssl ) == 
-# 2270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2270 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                           ((void *)0) 
-# 2270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2270 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                                )
         {
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2272, "got no certificate to send" );
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2272, "got no certificate to send" );
             return( -0x7580 );
         }
     }
 
 
-    mbedtls_debug_print_crt( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2278, "own certificate", mbedtls_ssl_own_cert( ssl ) );
-# 2289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_crt( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2278, "own certificate", mbedtls_ssl_own_cert( ssl ) );
+# 2289 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     i = 7;
     crt = mbedtls_ssl_own_cert( ssl );
 
     while( crt != 
-# 2292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2292 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0) 
-# 2292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2292 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       )
     {
         n = crt->raw.len;
         if( n > 16384 - 3 - i )
         {
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2297, "certificate too large, %" "zu" " > %" "zu", i + 3 + n, (size_t) 16384 )
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2297, "certificate too large, %" "zu" " > %" "zu", i + 3 + n, (size_t) 16384 )
 
                                                                               ;
             return( -0x7500 );
@@ -7171,15 +7171,15 @@ int mbedtls_ssl_write_certificate( mbedtls_ssl_context *ssl )
 
     if( ( ret = mbedtls_ssl_write_handshake_msg( ssl ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2327, "mbedtls_ssl_write_handshake_msg", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2327, "mbedtls_ssl_write_handshake_msg", ret );
         return( ret );
     }
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2331, "<= write certificate" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2331, "<= write certificate" );
 
     return( ret );
 }
-# 2390 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2390 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
                                         mbedtls_x509_crt *chain )
@@ -7193,7 +7193,7 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
 
     if( ssl->in_msgtype != 22 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2403, "bad certificate message" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2403, "bad certificate message" );
         mbedtls_ssl_send_alert_message( ssl, 2,
                                         10 );
         return( -0x7700 );
@@ -7202,7 +7202,7 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
     if( ssl->in_msg[0] != 11 ||
         ssl->in_hslen < mbedtls_ssl_hs_hdr_len( ssl ) + 3 + 3 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2412, "bad certificate message" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2412, "bad certificate message" );
         mbedtls_ssl_send_alert_message( ssl, 2,
                                         50 );
         return( -0x7A00 );
@@ -7218,7 +7218,7 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
     if( ssl->in_msg[i] != 0 ||
         ssl->in_hslen != n + 3 + mbedtls_ssl_hs_hdr_len( ssl ) )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2428, "bad certificate message" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2428, "bad certificate message" );
         mbedtls_ssl_send_alert_message( ssl, 2,
                                         50 );
         return( -0x7A00 );
@@ -7232,7 +7232,7 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
     {
 
         if ( i + 3 > ssl->in_hslen ) {
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2442, "bad certificate message" );
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2442, "bad certificate message" );
             mbedtls_ssl_send_alert_message( ssl,
                               2,
                               50 );
@@ -7242,7 +7242,7 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
 
         if( ssl->in_msg[i] != 0 )
         {
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2452, "bad certificate message" );
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2452, "bad certificate message" );
             mbedtls_ssl_send_alert_message( ssl,
                             2,
                             50 );
@@ -7256,13 +7256,13 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
 
         if( n < 128 || i + n > ssl->in_hslen )
         {
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2466, "bad certificate message" );
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2466, "bad certificate message" );
             mbedtls_ssl_send_alert_message( ssl,
                                  2,
                                  50 );
             return( -0x7A00 );
         }
-# 2506 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2506 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
         ret = mbedtls_x509_crt_parse_der_nocopy( chain, ssl->in_msg + i, n );
 
         switch( ret )
@@ -7285,14 +7285,14 @@ static int ssl_parse_certificate_chain( mbedtls_ssl_context *ssl,
                 alert = 42;
             crt_parse_der_failed:
                 mbedtls_ssl_send_alert_message( ssl, 2, alert );
-                mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2528, " mbedtls_x509_crt_parse_der", ret );
+                mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2528, " mbedtls_x509_crt_parse_der", ret );
                 return( ret );
         }
 
         i += n;
     }
 
-    mbedtls_debug_print_crt( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2535, "peer certificate", chain );
+    mbedtls_debug_print_crt( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2535, "peer certificate", chain );
     return( 0 );
 }
 
@@ -7302,13 +7302,13 @@ static int ssl_srv_check_client_no_crt_notification( mbedtls_ssl_context *ssl )
 {
     if( ssl->conf->endpoint == 0 )
         return( -1 );
-# 2567 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2567 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ssl->in_hslen == 3 + mbedtls_ssl_hs_hdr_len( ssl ) &&
         ssl->in_msgtype == 22 &&
         ssl->in_msg[0] == 11 &&
         memcmp( ssl->in_msg + mbedtls_ssl_hs_hdr_len( ssl ), "\0\0\0", 3 ) == 0 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2572, "TLSv1 client has no certificate" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2572, "TLSv1 client has no certificate" );
         return( 0 );
     }
 
@@ -7316,7 +7316,7 @@ static int ssl_srv_check_client_no_crt_notification( mbedtls_ssl_context *ssl )
 
 
 }
-# 2590 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2590 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int ssl_parse_certificate_coordinate( mbedtls_ssl_context *ssl,
                                              int authmode )
@@ -7365,31 +7365,31 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
         return( 0 );
 
     if( ssl->f_vrfy != 
-# 2637 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2637 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0) 
-# 2637 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2637 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            )
     {
-        mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2639, "Use context-specific verification callback" );
+        mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2639, "Use context-specific verification callback" );
         f_vrfy = ssl->f_vrfy;
         p_vrfy = ssl->p_vrfy;
     }
     else
     {
-        mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2645, "Use configuration-specific verification callback" );
+        mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2645, "Use configuration-specific verification callback" );
         f_vrfy = ssl->conf->f_vrfy;
         p_vrfy = ssl->conf->p_vrfy;
     }
-# 2671 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2671 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     {
         mbedtls_x509_crt *ca_chain;
         mbedtls_x509_crl *ca_crl;
 
 
         if( ssl->handshake->sni_ca_chain != 
-# 2676 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2676 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                            ((void *)0) 
-# 2676 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2676 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                                 )
         {
             ca_chain = ssl->handshake->sni_ca_chain;
@@ -7403,9 +7403,9 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
         }
 
         if( ca_chain != 
-# 2688 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2688 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0) 
-# 2688 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2688 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             )
             have_ca_chain = 1;
 
@@ -7420,9 +7420,9 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
 
     if( ret != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2702, "x509_verify_cert", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2702, "x509_verify_cert", ret );
     }
-# 2715 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2715 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     {
         const mbedtls_pk_context *pk = &chain->pk;
 
@@ -7434,7 +7434,7 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
         {
             ssl->session_negotiate->verify_result |= 0x010000;
 
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2726, "bad certificate (EC key curve)" );
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2726, "bad certificate (EC key curve)" );
             if( ret == 0 )
                 ret = -0x7A00;
         }
@@ -7446,7 +7446,7 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
                                       ! ssl->conf->endpoint,
                                       &ssl->session_negotiate->verify_result ) != 0 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2738, "bad certificate (usage extensions)" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2738, "bad certificate (usage extensions)" );
         if( ret == 0 )
             ret = -0x7A00;
     }
@@ -7466,7 +7466,7 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
 
     if( have_ca_chain == 0 && authmode == 2 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2758, "got no CA chain" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2758, "got no CA chain" );
         ret = -0x7680;
     }
 
@@ -7506,12 +7506,12 @@ static int ssl_parse_certificate_verify( mbedtls_ssl_context *ssl,
 
     if( ssl->session_negotiate->verify_result != 0 )
     {
-        mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2798, "! Certificate verification flags %08x", (unsigned int) ssl->session_negotiate->verify_result )
+        mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2798, "! Certificate verification flags %08x", (unsigned int) ssl->session_negotiate->verify_result )
                                                                                             ;
     }
     else
     {
-        mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2803, "Certificate verification flags clear" );
+        mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2803, "Certificate verification flags clear" );
     }
 
 
@@ -7528,12 +7528,12 @@ static int ssl_remember_peer_crt_digest( mbedtls_ssl_context *ssl,
     ssl->session_negotiate->peer_cert_digest =
         mbedtls_calloc( 1, 32 );
     if( ssl->session_negotiate->peer_cert_digest == 
-# 2819 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2819 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                                    ((void *)0) 
-# 2819 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2819 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                                         )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2821, "alloc(%d bytes) failed", 32 )
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2821, "alloc(%d bytes) failed", 32 )
                                                                             ;
         mbedtls_ssl_send_alert_message( ssl,
                                         2,
@@ -7588,30 +7588,30 @@ int mbedtls_ssl_parse_certificate( mbedtls_ssl_context *ssl )
 
 
     void *rs_ctx = 
-# 2875 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2875 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 2875 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2875 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
     mbedtls_x509_crt *chain = 
-# 2876 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2876 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                              ((void *)0)
-# 2876 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2876 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                  ;
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2878, "=> parse certificate" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2878, "=> parse certificate" );
 
     crt_expected = ssl_parse_certificate_coordinate( ssl, authmode );
     if( crt_expected == 1 )
     {
-        mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2883, "<= skip parse certificate" );
+        mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2883, "<= skip parse certificate" );
         goto exit;
     }
-# 2897 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2897 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ( ret = mbedtls_ssl_read_record( ssl, 1 ) ) != 0 )
     {
 
 
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2901, "mbedtls_ssl_read_record", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2901, "mbedtls_ssl_read_record", ret );
         goto exit;
     }
 
@@ -7633,12 +7633,12 @@ int mbedtls_ssl_parse_certificate( mbedtls_ssl_context *ssl )
 
     chain = mbedtls_calloc( 1, sizeof( mbedtls_x509_crt ) );
     if( chain == 
-# 2922 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2922 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                 ((void *)0) 
-# 2922 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2922 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2924, "alloc(%" "zu" " bytes) failed", sizeof( mbedtls_x509_crt ) )
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2924, "alloc(%" "zu" " bytes) failed", sizeof( mbedtls_x509_crt ) )
                                                                   ;
         mbedtls_ssl_send_alert_message( ssl,
                                         2,
@@ -7652,7 +7652,7 @@ int mbedtls_ssl_parse_certificate( mbedtls_ssl_context *ssl )
     ret = ssl_parse_certificate_chain( ssl, chain );
     if( ret != 0 )
         goto exit;
-# 2948 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2948 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     ret = ssl_parse_certificate_verify( ssl, authmode,
                                         chain, rs_ctx );
     if( ret != 0 )
@@ -7679,9 +7679,9 @@ int mbedtls_ssl_parse_certificate( mbedtls_ssl_context *ssl )
         mbedtls_x509_crt_free( chain );
         mbedtls_free( chain );
         chain = 
-# 2973 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 2973 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                ((void *)0)
-# 2973 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 2973 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    ;
 
         ret = ssl_remember_peer_crt_digest( ssl, crt_start, crt_len );
@@ -7698,17 +7698,17 @@ int mbedtls_ssl_parse_certificate( mbedtls_ssl_context *ssl )
 
 
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2989, "<= parse certificate" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 2989, "<= parse certificate" );
 
 exit:
 
     if( ret == 0 )
         ssl->state++;
-# 3004 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3004 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( chain != 
-# 3004 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3004 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                 ((void *)0) 
-# 3004 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3004 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      )
     {
         mbedtls_x509_crt_free( chain );
@@ -7723,7 +7723,7 @@ void mbedtls_ssl_optimize_checksum( mbedtls_ssl_context *ssl,
                             const mbedtls_ssl_ciphersuite_t *ciphersuite_info )
 {
     ((void) ciphersuite_info);
-# 3027 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3027 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ciphersuite_info->mac == MBEDTLS_MD_SHA384 )
         ssl->handshake->update_checksum = ssl_update_checksum_sha384;
     else
@@ -7735,14 +7735,14 @@ void mbedtls_ssl_optimize_checksum( mbedtls_ssl_context *ssl,
 
 
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3038, "should never happen" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3038, "should never happen" );
         return;
     }
 }
 
 void mbedtls_ssl_reset_checksum( mbedtls_ssl_context *ssl )
 {
-# 3056 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3056 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_starts_ret( &ssl->handshake->fin_sha256, 0 );
 
 
@@ -7760,7 +7760,7 @@ void mbedtls_ssl_reset_checksum( mbedtls_ssl_context *ssl )
 static void ssl_update_checksum_start( mbedtls_ssl_context *ssl,
                                        const unsigned char *buf, size_t len )
 {
-# 3083 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3083 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_update_ret( &ssl->handshake->fin_sha256, buf, len );
 
 
@@ -7773,7 +7773,7 @@ static void ssl_update_checksum_start( mbedtls_ssl_context *ssl,
 
 
 }
-# 3108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3108 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static void ssl_update_checksum_sha256( mbedtls_ssl_context *ssl,
                                         const unsigned char *buf, size_t len )
 {
@@ -7795,7 +7795,7 @@ static void ssl_update_checksum_sha384( mbedtls_ssl_context *ssl,
     mbedtls_sha512_update_ret( &ssl->handshake->fin_sha512, buf, len );
 
 }
-# 3278 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3278 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static void ssl_calc_finished_tls_sha256(
                 mbedtls_ssl_context *ssl, unsigned char *buf, int from )
 {
@@ -7817,13 +7817,13 @@ static void ssl_calc_finished_tls_sha256(
     sender = ( from == 0 )
              ? "client finished"
              : "server finished";
-# 3321 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3321 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_init( &sha256 );
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3323, "=> calc  finished tls sha256" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3323, "=> calc  finished tls sha256" );
 
     mbedtls_sha256_clone( &sha256, &ssl->handshake->fin_sha256 );
-# 3338 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3338 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_finish_ret( &sha256, padbuf );
     mbedtls_sha256_free( &sha256 );
 
@@ -7831,11 +7831,11 @@ static void ssl_calc_finished_tls_sha256(
     ssl->handshake->tls_prf( session->master, 48, sender,
                              padbuf, 32, buf, len );
 
-    mbedtls_debug_print_buf( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3345, "calc finished result", buf, len );
+    mbedtls_debug_print_buf( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3345, "calc finished result", buf, len );
 
     mbedtls_platform_zeroize( padbuf, sizeof( padbuf ) );
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3349, "<= calc  finished" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3349, "<= calc  finished" );
 }
 
 
@@ -7862,16 +7862,16 @@ static void ssl_calc_finished_tls_sha384(
     sender = ( from == 0 )
                 ? "client finished"
                 : "server finished";
-# 3397 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3397 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha512_init( &sha512 );
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3399, "=> calc  finished tls sha384" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3399, "=> calc  finished tls sha384" );
 
     mbedtls_sha512_clone( &sha512, &ssl->handshake->fin_sha512 );
-# 3410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-    mbedtls_debug_print_buf( ssl, 4, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3410, "finished sha512 state", (unsigned char *) sha512.state, sizeof( sha512.state ) )
+# 3410 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_buf( ssl, 4, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3410, "finished sha512 state", (unsigned char *) sha512.state, sizeof( sha512.state ) )
                                                          ;
-# 3422 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3422 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha512_finish_ret( &sha512, padbuf );
 
 
@@ -7883,18 +7883,18 @@ static void ssl_calc_finished_tls_sha384(
     ssl->handshake->tls_prf( session->master, 48, sender,
                              padbuf, 48, buf, len );
 
-    mbedtls_debug_print_buf( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3433, "calc finished result", buf, len );
+    mbedtls_debug_print_buf( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3433, "calc finished result", buf, len );
 
     mbedtls_platform_zeroize( padbuf, sizeof( padbuf ) );
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3437, "<= calc  finished" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3437, "<= calc  finished" );
 }
 
 
 
 void mbedtls_ssl_handshake_wrapup_free_hs_transform( mbedtls_ssl_context *ssl )
 {
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3444, "=> handshake wrapup: final free" );
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3444, "=> handshake wrapup: final free" );
 
 
 
@@ -7902,9 +7902,9 @@ void mbedtls_ssl_handshake_wrapup_free_hs_transform( mbedtls_ssl_context *ssl )
     mbedtls_ssl_handshake_free( ssl );
     mbedtls_free( ssl->handshake );
     ssl->handshake = 
-# 3451 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3451 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                     ((void *)0)
-# 3451 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3451 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                         ;
 
 
@@ -7917,20 +7917,20 @@ void mbedtls_ssl_handshake_wrapup_free_hs_transform( mbedtls_ssl_context *ssl )
     }
     ssl->transform = ssl->transform_negotiate;
     ssl->transform_negotiate = 
-# 3462 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3462 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                               ((void *)0)
-# 3462 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3462 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                   ;
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3464, "<= handshake wrapup: final free" );
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3464, "<= handshake wrapup: final free" );
 }
 
 void mbedtls_ssl_handshake_wrapup( mbedtls_ssl_context *ssl )
 {
     int resume = ssl->handshake->resume;
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3471, "=> handshake wrapup" );
-# 3484 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3471, "=> handshake wrapup" );
+# 3484 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ssl->session )
     {
 
@@ -7944,38 +7944,38 @@ void mbedtls_ssl_handshake_wrapup( mbedtls_ssl_context *ssl )
     }
     ssl->session = ssl->session_negotiate;
     ssl->session_negotiate = 
-# 3496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3496 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                             ((void *)0)
-# 3496 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3496 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 ;
 
 
 
 
     if( ssl->conf->f_set_cache != 
-# 3501 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3501 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 3501 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3501 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       &&
         ssl->session->id_len != 0 &&
         resume == 0 )
     {
         if( ssl->conf->f_set_cache( ssl->conf->p_cache, ssl->session ) != 0 )
-            mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3506, "cache did not store session" );
+            mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3506, "cache did not store session" );
     }
-# 3522 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3522 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
         mbedtls_ssl_handshake_wrapup_free_hs_transform( ssl );
 
     ssl->state++;
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3526, "<= handshake wrapup" );
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3526, "<= handshake wrapup" );
 }
 
 int mbedtls_ssl_write_finished( mbedtls_ssl_context *ssl )
 {
     int ret, hash_len;
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3533, "=> write finished" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3533, "=> write finished" );
 
     mbedtls_ssl_update_out_pointers( ssl, ssl->transform_negotiate );
 
@@ -8020,20 +8020,20 @@ int mbedtls_ssl_write_finished( mbedtls_ssl_context *ssl )
 
 
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3578, "switching to new transform spec for outbound data" );
-# 3606 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3578, "switching to new transform spec for outbound data" );
+# 3606 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     memset( ssl->cur_out_ctr, 0, 8 );
 
     ssl->transform_out = ssl->transform_negotiate;
     ssl->session_out = ssl->session_negotiate;
-# 3627 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3627 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ( ret = mbedtls_ssl_write_handshake_msg( ssl ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3629, "mbedtls_ssl_write_handshake_msg", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3629, "mbedtls_ssl_write_handshake_msg", ret );
         return( ret );
     }
-# 3642 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3642, "<= write finished" );
+# 3642 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3642, "<= write finished" );
 
     return( 0 );
 }
@@ -8050,7 +8050,7 @@ int mbedtls_ssl_parse_finished( mbedtls_ssl_context *ssl )
     unsigned int hash_len;
     unsigned char buf[12];
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3659, "=> parse finished" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3659, "=> parse finished" );
 
 
 
@@ -8064,13 +8064,13 @@ int mbedtls_ssl_parse_finished( mbedtls_ssl_context *ssl )
 
     if( ( ret = mbedtls_ssl_read_record( ssl, 1 ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3673, "mbedtls_ssl_read_record", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3673, "mbedtls_ssl_read_record", ret );
         goto exit;
     }
 
     if( ssl->in_msgtype != 22 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3679, "bad finished message" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3679, "bad finished message" );
         mbedtls_ssl_send_alert_message( ssl, 2,
                                         10 );
         ret = -0x7700;
@@ -8080,7 +8080,7 @@ int mbedtls_ssl_parse_finished( mbedtls_ssl_context *ssl )
     if( ssl->in_msg[0] != 20 ||
         ssl->in_hslen != mbedtls_ssl_hs_hdr_len( ssl ) + hash_len )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3689, "bad finished message" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3689, "bad finished message" );
         mbedtls_ssl_send_alert_message( ssl, 2,
                                         50 );
         ret = -0x7E80;
@@ -8090,7 +8090,7 @@ int mbedtls_ssl_parse_finished( mbedtls_ssl_context *ssl )
     if( mbedtls_ct_memcmp( ssl->in_msg + mbedtls_ssl_hs_hdr_len( ssl ),
                       buf, hash_len ) != 0 )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3699, "bad finished message" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3699, "bad finished message" );
         mbedtls_ssl_send_alert_message( ssl, 2,
                                         51 );
         ret = -0x7E80;
@@ -8121,7 +8121,7 @@ int mbedtls_ssl_parse_finished( mbedtls_ssl_context *ssl )
 
 
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3730, "<= parse finished" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3730, "<= parse finished" );
 
 exit:
     mbedtls_platform_zeroize( buf, hash_len );
@@ -8131,7 +8131,7 @@ exit:
 static void ssl_handshake_params_init( mbedtls_ssl_handshake_params *handshake )
 {
     memset( handshake, 0, sizeof( mbedtls_ssl_handshake_params ) );
-# 3754 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3754 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_init( &handshake->fin_sha256 );
     mbedtls_sha256_starts_ret( &handshake->fin_sha256, 0 );
 
@@ -8159,7 +8159,7 @@ static void ssl_handshake_params_init( mbedtls_ssl_handshake_params *handshake )
 
 
     mbedtls_ecdh_init( &handshake->ecdh_ctx );
-# 3795 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3795 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     handshake->sni_authmode = 3;
 
 
@@ -8203,68 +8203,68 @@ static int ssl_handshake_init( mbedtls_ssl_context *ssl )
 
 
     if( ssl->transform_negotiate == 
-# 3837 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3837 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                    ((void *)0) 
-# 3837 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3837 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                         )
     {
         ssl->transform_negotiate = mbedtls_calloc( 1, sizeof(mbedtls_ssl_transform) );
     }
 
     if( ssl->session_negotiate == 
-# 3842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3842 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 3842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3842 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       )
     {
         ssl->session_negotiate = mbedtls_calloc( 1, sizeof(mbedtls_ssl_session) );
     }
 
     if( ssl->handshake == 
-# 3847 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3847 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                          ((void *)0) 
-# 3847 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3847 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                               )
     {
         ssl->handshake = mbedtls_calloc( 1, sizeof(mbedtls_ssl_handshake_params) );
     }
-# 3859 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3859 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ssl->handshake == 
-# 3859 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3859 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                          ((void *)0) 
-# 3859 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3859 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                               ||
         ssl->transform_negotiate == 
-# 3860 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3860 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                    ((void *)0) 
-# 3860 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3860 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                         ||
         ssl->session_negotiate == 
-# 3861 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3861 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 3861 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3861 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3863, "alloc() of ssl sub-contexts failed" );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3863, "alloc() of ssl sub-contexts failed" );
 
         mbedtls_free( ssl->handshake );
         mbedtls_free( ssl->transform_negotiate );
         mbedtls_free( ssl->session_negotiate );
 
         ssl->handshake = 
-# 3869 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3869 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                         ((void *)0)
-# 3869 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3869 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             ;
         ssl->transform_negotiate = 
-# 3870 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3870 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                   ((void *)0)
-# 3870 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3870 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       ;
         ssl->session_negotiate = 
-# 3871 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3871 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                 ((void *)0)
-# 3871 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3871 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                     ;
 
         return( -0x7F00 );
@@ -8274,10 +8274,10 @@ static int ssl_handshake_init( mbedtls_ssl_context *ssl )
     mbedtls_ssl_session_init( ssl->session_negotiate );
     mbedtls_ssl_transform_init( ssl->transform_negotiate );
     ssl_handshake_params_init( ssl->handshake );
-# 3895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3895 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     return( 0 );
 }
-# 3932 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3932 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_init( mbedtls_ssl_context *ssl )
 {
     memset( ssl, 0, sizeof( mbedtls_ssl_context ) );
@@ -8302,9 +8302,9 @@ int mbedtls_ssl_setup( mbedtls_ssl_context *ssl,
 
 
     ssl->out_buf = 
-# 3955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3955 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 3955 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3955 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
 
 
@@ -8312,12 +8312,12 @@ int mbedtls_ssl_setup( mbedtls_ssl_context *ssl,
 
     ssl->in_buf = mbedtls_calloc( 1, in_buf_len );
     if( ssl->in_buf == 
-# 3961 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3961 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0) 
-# 3961 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3961 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3963, "alloc(%" "zu" " bytes) failed", in_buf_len );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3963, "alloc(%" "zu" " bytes) failed", in_buf_len );
         ret = -0x7F00;
         goto error;
     }
@@ -8327,12 +8327,12 @@ int mbedtls_ssl_setup( mbedtls_ssl_context *ssl,
 
     ssl->out_buf = mbedtls_calloc( 1, out_buf_len );
     if( ssl->out_buf == 
-# 3972 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3972 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0) 
-# 3972 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3972 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             )
     {
-        mbedtls_debug_print_msg( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3974, "alloc(%" "zu" " bytes) failed", out_buf_len );
+        mbedtls_debug_print_msg( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 3974, "alloc(%" "zu" " bytes) failed", out_buf_len );
         ret = -0x7F00;
         goto error;
     }
@@ -8353,9 +8353,9 @@ error:
     mbedtls_free( ssl->out_buf );
 
     ssl->conf = 
-# 3994 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 3994 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                ((void *)0)
-# 3994 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 3994 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    ;
 
 
@@ -8363,71 +8363,71 @@ error:
 
 
     ssl->in_buf = 
-# 4000 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4000 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 4000 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4000 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
     ssl->out_buf = 
-# 4001 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4001 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 4001 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4001 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
 
     ssl->in_hdr = 
-# 4003 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4003 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 4003 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4003 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
     ssl->in_ctr = 
-# 4004 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4004 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 4004 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4004 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
     ssl->in_len = 
-# 4005 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4005 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 4005 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4005 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
     ssl->in_iv = 
-# 4006 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4006 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                 ((void *)0)
-# 4006 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4006 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                     ;
     ssl->in_msg = 
-# 4007 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4007 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 4007 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4007 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
 
     ssl->out_hdr = 
-# 4009 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4009 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 4009 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4009 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
     ssl->out_ctr = 
-# 4010 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4010 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 4010 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4010 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
     ssl->out_len = 
-# 4011 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4011 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 4011 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4011 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
     ssl->out_iv = 
-# 4012 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4012 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0)
-# 4012 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4012 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      ;
     ssl->out_msg = 
-# 4013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4013 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 4013 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4013 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
 
     return( ret );
 }
-# 4025 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4025 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_session_reset_int( mbedtls_ssl_context *ssl, int partial )
 {
     int ret = -0x006E;
@@ -8448,19 +8448,19 @@ int mbedtls_ssl_session_reset_int( mbedtls_ssl_context *ssl, int partial )
 
 
     mbedtls_ssl_set_timer( ssl, 0 );
-# 4054 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4054 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     ssl->secure_renegotiation = 0;
 
     ssl->in_offt = 
-# 4056 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4056 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0)
-# 4056 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4056 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       ;
     mbedtls_ssl_reset_in_out_pointers( ssl );
 
     ssl->in_msgtype = 0;
     ssl->in_msglen = 0;
-# 4069 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4069 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     ssl->in_hslen = 0;
     ssl->nb_zero = 0;
 
@@ -8477,25 +8477,25 @@ int mbedtls_ssl_session_reset_int( mbedtls_ssl_context *ssl, int partial )
     memset( ssl->cur_out_ctr, 0, sizeof( ssl->cur_out_ctr ) );
 
     ssl->transform_in = 
-# 4084 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4084 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0)
-# 4084 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4084 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            ;
     ssl->transform_out = 
-# 4085 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4085 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                         ((void *)0)
-# 4085 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4085 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             ;
 
     ssl->session_in = 
-# 4087 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4087 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                      ((void *)0)
-# 4087 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4087 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                          ;
     ssl->session_out = 
-# 4088 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4088 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0)
-# 4088 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4088 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                           ;
 
     memset( ssl->out_buf, 0, out_buf_len );
@@ -8507,15 +8507,15 @@ int mbedtls_ssl_session_reset_int( mbedtls_ssl_context *ssl, int partial )
         ssl->in_left = 0;
         memset( ssl->in_buf, 0, in_buf_len );
     }
-# 4112 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4112 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ssl->transform )
     {
         mbedtls_ssl_transform_free( ssl->transform );
         mbedtls_free( ssl->transform );
         ssl->transform = 
-# 4116 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4116 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                         ((void *)0)
-# 4116 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4116 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             ;
     }
 
@@ -8524,19 +8524,19 @@ int mbedtls_ssl_session_reset_int( mbedtls_ssl_context *ssl, int partial )
         mbedtls_ssl_session_free( ssl->session );
         mbedtls_free( ssl->session );
         ssl->session = 
-# 4123 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4123 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0)
-# 4123 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4123 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                           ;
     }
 
 
     ssl->alpn_chosen = 
-# 4127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4127 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0)
-# 4127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4127 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                           ;
-# 4141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4141 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ( ret = ssl_handshake_init( ssl ) ) != 0 )
         return( ret );
 
@@ -8564,7 +8564,7 @@ void mbedtls_ssl_conf_transport( mbedtls_ssl_config *conf, int transport )
 {
     conf->transport = transport;
 }
-# 4199 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4199 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_authmode( mbedtls_ssl_config *conf, int authmode )
 {
     conf->authmode = authmode;
@@ -8607,7 +8607,7 @@ void mbedtls_ssl_set_bio( mbedtls_ssl_context *ssl,
     ssl->f_recv = f_recv;
     ssl->f_recv_timeout = f_recv_timeout;
 }
-# 4249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4249 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_read_timeout( mbedtls_ssl_config *conf, uint32_t timeout )
 {
     conf->read_timeout = timeout;
@@ -8644,19 +8644,19 @@ int mbedtls_ssl_set_session( mbedtls_ssl_context *ssl, const mbedtls_ssl_session
     int ret = -0x006E;
 
     if( ssl == 
-# 4284 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4284 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 4284 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4284 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    ||
         session == 
-# 4285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4285 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0) 
-# 4285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4285 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                        ||
         ssl->session_negotiate == 
-# 4286 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4286 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 4286 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4286 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       ||
         ssl->conf->endpoint != 0 )
     {
@@ -8712,25 +8712,25 @@ static int ssl_append_key_cert( mbedtls_ssl_key_cert **head,
 
     new_cert = mbedtls_calloc( 1, sizeof( mbedtls_ssl_key_cert ) );
     if( new_cert == 
-# 4340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4340 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                    ((void *)0) 
-# 4340 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4340 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                         )
         return( -0x7F00 );
 
     new_cert->cert = cert;
     new_cert->key = key;
     new_cert->next = 
-# 4345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4345 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                     ((void *)0)
-# 4345 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4345 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                         ;
 
 
     if( *head == 
-# 4348 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4348 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                 ((void *)0) 
-# 4348 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4348 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                      )
     {
         *head = new_cert;
@@ -8739,9 +8739,9 @@ static int ssl_append_key_cert( mbedtls_ssl_key_cert **head,
     {
         mbedtls_ssl_key_cert *cur = *head;
         while( cur->next != 
-# 4355 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4355 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                            ((void *)0) 
-# 4355 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4355 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 )
             cur = cur->next;
         cur->next = new_cert;
@@ -8771,7 +8771,7 @@ void mbedtls_ssl_conf_ca_chain( mbedtls_ssl_config *conf,
 
 
 }
-# 4402 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4402 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_set_hs_own_cert( mbedtls_ssl_context *ssl,
                                  mbedtls_x509_crt *own_cert,
                                  mbedtls_pk_context *pk_key )
@@ -8803,39 +8803,39 @@ void mbedtls_ssl_set_verify( mbedtls_ssl_context *ssl,
     ssl->f_vrfy = f_vrfy;
     ssl->p_vrfy = p_vrfy;
 }
-# 4463 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4463 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static void ssl_conf_remove_psk( mbedtls_ssl_config *conf )
 {
-# 4479 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4479 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( conf->psk != 
-# 4479 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4479 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                     ((void *)0) 
-# 4479 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4479 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                          )
     {
         mbedtls_platform_zeroize( conf->psk, conf->psk_len );
 
         mbedtls_free( conf->psk );
         conf->psk = 
-# 4484 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4484 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                    ((void *)0)
-# 4484 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4484 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                        ;
         conf->psk_len = 0;
     }
 
 
     if( conf->psk_identity != 
-# 4489 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4489 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                              ((void *)0) 
-# 4489 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4489 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                   )
     {
         mbedtls_free( conf->psk_identity );
         conf->psk_identity = 
-# 4492 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4492 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                             ((void *)0)
-# 4492 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4492 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 ;
         conf->psk_identity_len = 0;
     }
@@ -8852,9 +8852,9 @@ static int ssl_conf_set_psk_identity( mbedtls_ssl_config *conf,
 {
 
     if( psk_identity == 
-# 4507 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4507 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                      ((void *)0) 
-# 4507 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4507 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                           ||
         ( psk_identity_len >> 16 ) != 0 ||
         psk_identity_len > 16384 )
@@ -8864,9 +8864,9 @@ static int ssl_conf_set_psk_identity( mbedtls_ssl_config *conf,
 
     conf->psk_identity = mbedtls_calloc( 1, psk_identity_len );
     if( conf->psk_identity == 
-# 4515 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4515 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                              ((void *)0) 
-# 4515 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4515 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                   )
         return( -0x7F00 );
 
@@ -8886,9 +8886,9 @@ int mbedtls_ssl_conf_psk( mbedtls_ssl_config *conf,
 
 
     if( psk == 
-# 4533 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4533 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 4533 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4533 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    )
         return( -0x7100 );
     if( psk_len == 0 )
@@ -8897,9 +8897,9 @@ int mbedtls_ssl_conf_psk( mbedtls_ssl_config *conf,
         return( -0x7100 );
 
     if( ( conf->psk = mbedtls_calloc( 1, psk_len ) ) == 
-# 4540 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4540 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                                        ((void *)0) 
-# 4540 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4540 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                                             )
         return( -0x7F00 );
     conf->psk_len = psk_len;
@@ -8923,9 +8923,9 @@ static void ssl_remove_psk( mbedtls_ssl_context *ssl )
 
 
     if( ssl->handshake->psk != 
-# 4562 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4562 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                               ((void *)0) 
-# 4562 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4562 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                    )
     {
         mbedtls_platform_zeroize( ssl->handshake->psk,
@@ -8939,13 +8939,13 @@ int mbedtls_ssl_set_hs_psk( mbedtls_ssl_context *ssl,
                             const unsigned char *psk, size_t psk_len )
 {
     if( psk == 
-# 4574 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4574 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 4574 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4574 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    || ssl->handshake == 
-# 4574 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4574 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                         ((void *)0) 
-# 4574 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4574 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                              )
         return( -0x7100 );
 
@@ -8955,9 +8955,9 @@ int mbedtls_ssl_set_hs_psk( mbedtls_ssl_context *ssl,
     ssl_remove_psk( ssl );
 
     if( ( ssl->handshake->psk = mbedtls_calloc( 1, psk_len ) ) == 
-# 4582 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4582 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                                                  ((void *)0) 
-# 4582 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4582 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                                                       )
         return( -0x7F00 );
 
@@ -8966,7 +8966,7 @@ int mbedtls_ssl_set_hs_psk( mbedtls_ssl_context *ssl,
 
     return( 0 );
 }
-# 4628 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4628 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_psk_cb( mbedtls_ssl_config *conf,
                      int (*f_psk)(void *, mbedtls_ssl_context *, const unsigned char *,
                      size_t),
@@ -9077,9 +9077,9 @@ int mbedtls_ssl_set_hostname( mbedtls_ssl_context *ssl, const char *hostname )
 
 
     if( hostname != 
-# 4737 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4737 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                    ((void *)0) 
-# 4737 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4737 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                         )
     {
         hostname_len = strlen( hostname );
@@ -9092,9 +9092,9 @@ int mbedtls_ssl_set_hostname( mbedtls_ssl_context *ssl, const char *hostname )
 
 
     if( ssl->hostname != 
-# 4748 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4748 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                         ((void *)0) 
-# 4748 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4748 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                              )
     {
         mbedtls_platform_zeroize( ssl->hostname, strlen( ssl->hostname ) );
@@ -9104,24 +9104,24 @@ int mbedtls_ssl_set_hostname( mbedtls_ssl_context *ssl, const char *hostname )
 
 
     if( hostname == 
-# 4756 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4756 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                    ((void *)0) 
-# 4756 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4756 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                         )
     {
         ssl->hostname = 
-# 4758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4758 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0)
-# 4758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4758 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            ;
     }
     else
     {
         ssl->hostname = mbedtls_calloc( 1, hostname_len + 1 );
         if( ssl->hostname == 
-# 4763 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4763 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                             ((void *)0) 
-# 4763 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4763 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                  )
             return( -0x7F00 );
 
@@ -9158,9 +9158,9 @@ int mbedtls_ssl_conf_alpn_protocols( mbedtls_ssl_config *conf, const char **prot
 
     tot_len = 0;
     for( p = protos; *p != 
-# 4798 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 4798 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                           ((void *)0)
-# 4798 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4798 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                               ; p++ )
     {
         cur_len = strlen( *p );
@@ -9181,7 +9181,7 @@ const char *mbedtls_ssl_get_alpn_protocol( const mbedtls_ssl_context *ssl )
 {
     return( ssl->alpn_chosen );
 }
-# 4900 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4900 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_max_version( mbedtls_ssl_config *conf, int major, int minor )
 {
     conf->max_major_ver = major;
@@ -9193,13 +9193,13 @@ void mbedtls_ssl_conf_min_version( mbedtls_ssl_config *conf, int major, int mino
     conf->min_major_ver = major;
     conf->min_minor_ver = minor;
 }
-# 4920 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4920 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_cert_req_ca_list( mbedtls_ssl_config *conf,
                                           char cert_req_ca_list )
 {
     conf->cert_req_ca_list = cert_req_ca_list;
 }
-# 4949 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4949 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_conf_max_frag_len( mbedtls_ssl_config *conf, unsigned char mfl_code )
 {
     if( mfl_code >= 5 ||
@@ -9212,12 +9212,12 @@ int mbedtls_ssl_conf_max_frag_len( mbedtls_ssl_config *conf, unsigned char mfl_c
 
     return( 0 );
 }
-# 4977 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 4977 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_legacy_renegotiation( mbedtls_ssl_config *conf, int allow_legacy )
 {
     conf->allow_legacy_renegotiation = allow_legacy;
 }
-# 5002 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5002 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_conf_session_tickets( mbedtls_ssl_config *conf, int use_tickets )
 {
     conf->session_tickets = use_tickets;
@@ -9234,20 +9234,20 @@ void mbedtls_ssl_conf_session_tickets_cb( mbedtls_ssl_config *conf,
     conf->f_ticket_parse = f_ticket_parse;
     conf->p_ticket = p_ticket;
 }
-# 5079 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5079 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 uint32_t mbedtls_ssl_get_verify_result( const mbedtls_ssl_context *ssl )
 {
     if( ssl->session != 
-# 5081 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5081 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0) 
-# 5081 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5081 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             )
         return( ssl->session->verify_result );
 
     if( ssl->session_negotiate != 
-# 5084 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5084 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 5084 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5084 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       )
         return( ssl->session_negotiate->verify_result );
 
@@ -9257,18 +9257,18 @@ uint32_t mbedtls_ssl_get_verify_result( const mbedtls_ssl_context *ssl )
 const char *mbedtls_ssl_get_ciphersuite( const mbedtls_ssl_context *ssl )
 {
     if( ssl == 
-# 5092 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5092 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5092 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5092 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    || ssl->session == 
-# 5092 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5092 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                       ((void *)0) 
-# 5092 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5092 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                            )
         return( 
-# 5093 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5093 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                ((void *)0) 
-# 5093 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5093 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                     );
 
     return mbedtls_ssl_get_ciphersuite_name( ssl->session->ciphersuite );
@@ -9276,7 +9276,7 @@ const char *mbedtls_ssl_get_ciphersuite( const mbedtls_ssl_context *ssl )
 
 const char *mbedtls_ssl_get_version( const mbedtls_ssl_context *ssl )
 {
-# 5117 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5117 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     switch( ssl->minor_ver )
     {
         case 0:
@@ -9311,9 +9311,9 @@ size_t mbedtls_ssl_get_input_max_frag_len( const mbedtls_ssl_context *ssl )
 
 
     if( ssl->session_out != 
-# 5150 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5150 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                            ((void *)0) 
-# 5150 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5150 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 )
     {
         read_mfl = ssl_mfl_code_to_length( ssl->session_out->mfl_code );
@@ -9325,9 +9325,9 @@ size_t mbedtls_ssl_get_input_max_frag_len( const mbedtls_ssl_context *ssl )
 
 
     if( ssl->session_negotiate != 
-# 5160 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5160 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 5160 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5160 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       )
     {
         read_mfl = ssl_mfl_code_to_length( ssl->session_negotiate->mfl_code );
@@ -9351,9 +9351,9 @@ size_t mbedtls_ssl_get_output_max_frag_len( const mbedtls_ssl_context *ssl )
 
 
     if( ssl->session_out != 
-# 5182 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5182 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                            ((void *)0) 
-# 5182 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5182 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 &&
         ssl_mfl_code_to_length( ssl->session_out->mfl_code ) < max_len )
     {
@@ -9362,9 +9362,9 @@ size_t mbedtls_ssl_get_output_max_frag_len( const mbedtls_ssl_context *ssl )
 
 
     if( ssl->session_negotiate != 
-# 5189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5189 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                  ((void *)0) 
-# 5189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5189 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                       &&
         ssl_mfl_code_to_length( ssl->session_negotiate->mfl_code ) < max_len )
     {
@@ -9379,7 +9379,7 @@ size_t mbedtls_ssl_get_max_frag_len( const mbedtls_ssl_context *ssl )
 {
     return mbedtls_ssl_get_output_max_frag_len( ssl );
 }
-# 5226 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5226 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_get_max_out_record_payload( const mbedtls_ssl_context *ssl )
 {
     size_t max_len = 16384;
@@ -9394,7 +9394,7 @@ int mbedtls_ssl_get_max_out_record_payload( const mbedtls_ssl_context *ssl )
 
     if( max_len > mfl )
         max_len = mfl;
-# 5268 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5268 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     return( (int) max_len );
 }
 
@@ -9402,27 +9402,27 @@ int mbedtls_ssl_get_max_out_record_payload( const mbedtls_ssl_context *ssl )
 const mbedtls_x509_crt *mbedtls_ssl_get_peer_cert( const mbedtls_ssl_context *ssl )
 {
     if( ssl == 
-# 5274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5274 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5274 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    || ssl->session == 
-# 5274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5274 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                       ((void *)0) 
-# 5274 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5274 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                            )
         return( 
-# 5275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5275 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                ((void *)0) 
-# 5275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5275 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                     );
 
 
 
 
     return( 
-# 5280 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5280 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
            ((void *)0) 
-# 5280 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5280 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                 );
 
 }
@@ -9433,19 +9433,19 @@ int mbedtls_ssl_get_session( const mbedtls_ssl_context *ssl,
                              mbedtls_ssl_session *dst )
 {
     if( ssl == 
-# 5289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5289 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5289 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    ||
         dst == 
-# 5290 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5290 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5290 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5290 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    ||
         ssl->session == 
-# 5291 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5291 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0) 
-# 5291 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5291 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             ||
         ssl->conf->endpoint != 0 )
     {
@@ -9459,19 +9459,19 @@ int mbedtls_ssl_get_session( const mbedtls_ssl_context *ssl,
 const mbedtls_ssl_session *mbedtls_ssl_get_session_pointer( const mbedtls_ssl_context *ssl )
 {
     if( ssl == 
-# 5303 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5303 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5303 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5303 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    )
         return( 
-# 5304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5304 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                ((void *)0) 
-# 5304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5304 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                     );
 
     return( ssl->session );
 }
-# 5379 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5379 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static unsigned char ssl_serialized_session_header[] = {
     2,
     28,
@@ -9479,7 +9479,7 @@ static unsigned char ssl_serialized_session_header[] = {
     ( (uint8_t) ( ( ( ( (uint16_t) ( ( 0 << 0 ) | ( 1 << 1 ) | ( 1 << 2 ) | ( 1 << 3 ) | ( 0 << 4 ) | ( 0 << 5 ) | ( 1 << 6 ) ) ) ) >> 8 ) & 0xff ) ),
     ( (uint8_t) ( ( ( (uint16_t) ( ( 0 << 0 ) | ( 1 << 1 ) | ( 1 << 2 ) | ( 1 << 3 ) | ( 0 << 4 ) | ( 0 << 5 ) | ( 1 << 6 ) ) ) ) & 0xff ) ),
 };
-# 5421 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5421 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 __attribute__((__warn_unused_result__))
 static int ssl_session_save( const mbedtls_ssl_session *session,
                              unsigned char omit_header,
@@ -9489,7 +9489,7 @@ static int ssl_session_save( const mbedtls_ssl_session *session,
 {
     unsigned char *p = buf;
     size_t used = 0;
-# 5440 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5440 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( !omit_header )
     {
 
@@ -9505,7 +9505,7 @@ static int ssl_session_save( const mbedtls_ssl_session *session,
             p += sizeof( ssl_serialized_session_header );
         }
     }
-# 5474 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5474 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     used += 2
           + 1
           + 1
@@ -9530,11 +9530,11 @@ static int ssl_session_save( const mbedtls_ssl_session *session,
         { ( p )[( 0 ) ] = ( (uint8_t) ( ( ( session->verify_result ) >> 24 ) & 0xff ) ); ( p )[( 0 ) + 1] = ( (uint8_t) ( ( ( session->verify_result ) >> 16 ) & 0xff ) ); ( p )[( 0 ) + 2] = ( (uint8_t) ( ( ( session->verify_result ) >> 8 ) & 0xff ) ); ( p )[( 0 ) + 3] = ( (uint8_t) ( ( session->verify_result ) & 0xff ) ); };
         p += 4;
     }
-# 5524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( session->peer_cert_digest != 
-# 5524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                     ((void *)0) 
-# 5524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                          )
     {
         used += 1 + 1 + session->peer_cert_digest_len;
@@ -9572,9 +9572,9 @@ static int ssl_session_save( const mbedtls_ssl_session *session,
         *p++ = ( (uint8_t) ( ( session->ticket_len ) & 0xff ) );
 
         if( session->ticket != 
-# 5560 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5560 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                               ((void *)0) 
-# 5560 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5560 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                    )
         {
             memcpy( p, session->ticket, session->ticket_len );
@@ -9594,7 +9594,7 @@ static int ssl_session_save( const mbedtls_ssl_session *session,
 
     if( used <= buf_len )
         *p++ = session->mfl_code;
-# 5596 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5596 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     *olen = used;
 
     if( used > buf_len )
@@ -9628,7 +9628,7 @@ static int ssl_session_load( mbedtls_ssl_session *session,
 {
     const unsigned char *p = buf;
     const unsigned char * const end = buf + len;
-# 5638 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5638 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( !omit_header )
     {
 
@@ -9645,7 +9645,7 @@ static int ssl_session_load( mbedtls_ssl_session *session,
         }
         p += sizeof( ssl_serialized_session_header );
     }
-# 5678 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5678 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( 2 + 1 + 1 + 32 + 48 + 4 > (size_t)( end - p ) )
         return( -0x7100 );
 
@@ -9674,19 +9674,19 @@ static int ssl_session_load( mbedtls_ssl_session *session,
 
 
     session->peer_cert_digest = 
-# 5705 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5705 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                ((void *)0)
-# 5705 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5705 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                    ;
 
 
 
     session->ticket = 
-# 5709 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5709 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                      ((void *)0)
-# 5709 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5709 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                          ;
-# 5751 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5751 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( 2 > (size_t)( end - p ) )
         return( -0x7100 );
 
@@ -9698,9 +9698,9 @@ static int ssl_session_load( mbedtls_ssl_session *session,
         const mbedtls_md_info_t *md_info =
             mbedtls_md_info_from_type( session->peer_cert_digest_type );
         if( md_info == 
-# 5761 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5761 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0) 
-# 5761 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5761 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            )
             return( -0x7100 );
         if( session->peer_cert_digest_len != mbedtls_md_get_size( md_info ) )
@@ -9712,9 +9712,9 @@ static int ssl_session_load( mbedtls_ssl_session *session,
         session->peer_cert_digest =
             mbedtls_calloc( 1, session->peer_cert_digest_len );
         if( session->peer_cert_digest == 
-# 5771 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5771 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                         ((void *)0) 
-# 5771 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5771 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                              )
             return( -0x7F00 );
 
@@ -9742,9 +9742,9 @@ static int ssl_session_load( mbedtls_ssl_session *session,
 
         session->ticket = mbedtls_calloc( 1, session->ticket_len );
         if( session->ticket == 
-# 5797 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5797 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                               ((void *)0) 
-# 5797 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5797 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                    )
             return( -0x7F00 );
 
@@ -9770,7 +9770,7 @@ static int ssl_session_load( mbedtls_ssl_session *session,
         return( -0x7100 );
 
     session->mfl_code = *p++;
-# 5839 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5839 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( p != end )
         return( -0x7100 );
 
@@ -9800,13 +9800,13 @@ int mbedtls_ssl_handshake_step( mbedtls_ssl_context *ssl )
     int ret = -0x7080;
 
     if( ssl == 
-# 5867 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5867 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5867 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5867 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    || ssl->conf == 
-# 5867 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5867 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                    ((void *)0) 
-# 5867 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5867 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                         )
         return( -0x7100 );
 
@@ -9832,17 +9832,17 @@ int mbedtls_ssl_handshake( mbedtls_ssl_context *ssl )
 
 
     if( ssl == 
-# 5891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5891 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 5891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5891 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    || ssl->conf == 
-# 5891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 5891 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                    ((void *)0) 
-# 5891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 5891 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                         )
         return( -0x7100 );
-# 5904 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 5904, "=> handshake" );
+# 5904 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 5904, "=> handshake" );
 
 
     while( ssl->state != MBEDTLS_SSL_HANDSHAKE_OVER )
@@ -9853,19 +9853,19 @@ int mbedtls_ssl_handshake( mbedtls_ssl_context *ssl )
             break;
     }
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 5915, "<= handshake" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 5915, "<= handshake" );
 
     return( ret );
 }
-# 6052 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6052 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 static void ssl_key_cert_free( mbedtls_ssl_key_cert *key_cert )
 {
     mbedtls_ssl_key_cert *cur = key_cert, *next;
 
     while( cur != 
-# 6056 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6056 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                  ((void *)0) 
-# 6056 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6056 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                       )
     {
         next = cur->next;
@@ -9880,12 +9880,12 @@ void mbedtls_ssl_handshake_free( mbedtls_ssl_context *ssl )
     mbedtls_ssl_handshake_params *handshake = ssl->handshake;
 
     if( handshake == 
-# 6069 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6069 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                     ((void *)0) 
-# 6069 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6069 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                          )
         return;
-# 6090 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6090 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_sha256_free( &handshake->fin_sha256 );
 
 
@@ -9903,33 +9903,33 @@ void mbedtls_ssl_handshake_free( mbedtls_ssl_context *ssl )
 
 
     mbedtls_ecdh_free( &handshake->ecdh_ctx );
-# 6120 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6120 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_free( (void *) handshake->curves );
 
 
 
     if( handshake->psk != 
-# 6124 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6124 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                          ((void *)0) 
-# 6124 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6124 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                               )
     {
         mbedtls_platform_zeroize( handshake->psk, handshake->psk_len );
         mbedtls_free( handshake->psk );
     }
-# 6137 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6137 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( handshake->sni_key_cert != 
-# 6137 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6137 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                   ((void *)0) 
-# 6137 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6137 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                        )
     {
         mbedtls_ssl_key_cert *cur = handshake->sni_key_cert, *next;
 
         while( cur != 
-# 6141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6141 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                      ((void *)0) 
-# 6141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6141 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                           )
         {
             next = cur->next;
@@ -9937,20 +9937,20 @@ void mbedtls_ssl_handshake_free( mbedtls_ssl_context *ssl )
             cur = next;
         }
     }
-# 6161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6161 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_pk_free( &handshake->peer_pubkey );
-# 6175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6175 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     mbedtls_platform_zeroize( handshake,
                               sizeof( mbedtls_ssl_handshake_params ) );
-# 6186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6186 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 }
 
 void mbedtls_ssl_session_free( mbedtls_ssl_session *session )
 {
     if( session == 
-# 6190 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6190 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                   ((void *)0) 
-# 6190 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6190 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                        )
         return;
 
@@ -9964,22 +9964,22 @@ void mbedtls_ssl_session_free( mbedtls_ssl_session *session )
 
     mbedtls_platform_zeroize( session, sizeof( mbedtls_ssl_session ) );
 }
-# 6833 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6833 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 void mbedtls_ssl_free( mbedtls_ssl_context *ssl )
 {
     if( ssl == 
-# 6835 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6835 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
               ((void *)0) 
-# 6835 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6835 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                    )
         return;
 
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 6838, "=> free" );
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 6838, "=> free" );
 
     if( ssl->out_buf != 
-# 6840 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6840 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                        ((void *)0) 
-# 6840 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6840 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                             )
     {
 
@@ -9991,16 +9991,16 @@ void mbedtls_ssl_free( mbedtls_ssl_context *ssl )
         mbedtls_platform_zeroize( ssl->out_buf, out_buf_len );
         mbedtls_free( ssl->out_buf );
         ssl->out_buf = 
-# 6850 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6850 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0)
-# 6850 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6850 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                           ;
     }
 
     if( ssl->in_buf != 
-# 6853 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6853 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                       ((void *)0) 
-# 6853 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6853 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                            )
     {
 
@@ -10012,12 +10012,12 @@ void mbedtls_ssl_free( mbedtls_ssl_context *ssl )
         mbedtls_platform_zeroize( ssl->in_buf, in_buf_len );
         mbedtls_free( ssl->in_buf );
         ssl->in_buf = 
-# 6863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6863 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                      ((void *)0)
-# 6863 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6863 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                          ;
     }
-# 6874 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6874 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ssl->transform )
     {
         mbedtls_ssl_transform_free( ssl->transform );
@@ -10043,16 +10043,16 @@ void mbedtls_ssl_free( mbedtls_ssl_context *ssl )
 
 
     if( ssl->hostname != 
-# 6898 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 6898 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                         ((void *)0) 
-# 6898 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 6898 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                              )
     {
         mbedtls_platform_zeroize( ssl->hostname, strlen( ssl->hostname ) );
         mbedtls_free( ssl->hostname );
     }
-# 6917 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
-    mbedtls_debug_print_msg( ssl, 2, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 6917, "<= free" );
+# 6917 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+    mbedtls_debug_print_msg( ssl, 2, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 6917, "<= free" );
 
 
     mbedtls_platform_zeroize( ssl, sizeof( mbedtls_ssl_context ) );
@@ -10137,9 +10137,9 @@ int mbedtls_ssl_config_defaults( mbedtls_ssl_config *conf,
         conf->session_tickets = 1;
 
     }
-# 7030 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7030 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     conf->cert_req_ca_list = 1;
-# 7045 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7045 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
             if( endpoint == 1 )
             {
                 const unsigned char dhm_p[] =
@@ -10247,33 +10247,33 @@ void mbedtls_ssl_config_free( mbedtls_ssl_config *conf )
 
 
     if( conf->psk != 
-# 7151 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7151 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                     ((void *)0) 
-# 7151 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7151 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                          )
     {
         mbedtls_platform_zeroize( conf->psk, conf->psk_len );
         mbedtls_free( conf->psk );
         conf->psk = 
-# 7155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7155 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                    ((void *)0)
-# 7155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7155 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                        ;
         conf->psk_len = 0;
     }
 
     if( conf->psk_identity != 
-# 7159 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7159 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                              ((void *)0) 
-# 7159 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7159 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                   )
     {
         mbedtls_platform_zeroize( conf->psk_identity, conf->psk_identity_len );
         mbedtls_free( conf->psk_identity );
         conf->psk_identity = 
-# 7163 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7163 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                             ((void *)0)
-# 7163 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7163 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                 ;
         conf->psk_identity_len = 0;
     }
@@ -10464,9 +10464,9 @@ int mbedtls_ssl_check_curve( const mbedtls_ssl_context *ssl, mbedtls_ecp_group_i
     const mbedtls_ecp_group_id *gid;
 
     if( ssl->conf->curve_list == 
-# 7352 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7352 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                 ((void *)0) 
-# 7352 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7352 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                      )
         return( -1 );
 
@@ -10485,9 +10485,9 @@ int mbedtls_ssl_check_curve_tls_id( const mbedtls_ssl_context *ssl, uint16_t tls
     const mbedtls_ecp_curve_info *curve_info =
         mbedtls_ecp_curve_info_from_tls_id( tls_id );
     if( curve_info == 
-# 7369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7369 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                      ((void *)0) 
-# 7369 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7369 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                           )
         return( -1 );
     return( mbedtls_ssl_check_curve( ssl, curve_info->grp_id ) );
@@ -10505,9 +10505,9 @@ int mbedtls_ssl_check_sig_hash( const mbedtls_ssl_context *ssl,
     const int *cur;
 
     if( ssl->conf->sig_hashes == 
-# 7385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
+# 7385 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c" 3 4
                                 ((void *)0) 
-# 7385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7385 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
                                      )
         return( -1 );
 
@@ -10532,7 +10532,7 @@ int mbedtls_ssl_check_cert_usage( const mbedtls_x509_crt *cert,
 
     const char *ext_oid;
     size_t ext_len;
-# 7419 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7419 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( cert_endpoint == 1 )
     {
 
@@ -10609,7 +10609,7 @@ int mbedtls_ssl_set_calc_verify_md( mbedtls_ssl_context *ssl, int md )
 
     switch( md )
     {
-# 7507 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7507 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
         case 5:
             ssl->handshake->calc_verify = ssl_calc_verify_tls_sha384;
             break;
@@ -10631,7 +10631,7 @@ int mbedtls_ssl_set_calc_verify_md( mbedtls_ssl_context *ssl, int md )
 
 
 }
-# 7681 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7681 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
 int mbedtls_ssl_get_key_exchange_md_tls1_2( mbedtls_ssl_context *ssl,
                                             unsigned char *hash, size_t *hashlen,
                                             unsigned char *data, size_t data_len,
@@ -10642,33 +10642,33 @@ int mbedtls_ssl_get_key_exchange_md_tls1_2( mbedtls_ssl_context *ssl,
     const mbedtls_md_info_t *md_info = mbedtls_md_info_from_type( md_alg );
     *hashlen = mbedtls_md_get_size( md_info );
 
-    mbedtls_debug_print_msg( ssl, 3, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7691, "Perform mbedtls-based computation of digest of ServerKeyExchange" );
+    mbedtls_debug_print_msg( ssl, 3, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7691, "Perform mbedtls-based computation of digest of ServerKeyExchange" );
 
     mbedtls_md_init( &ctx );
-# 7702 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
+# 7702 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c"
     if( ( ret = mbedtls_md_setup( &ctx, md_info, 0 ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7704, "mbedtls_md_setup", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7704, "mbedtls_md_setup", ret );
         goto exit;
     }
     if( ( ret = mbedtls_md_starts( &ctx ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7709, "mbedtls_md_starts", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7709, "mbedtls_md_starts", ret );
         goto exit;
     }
     if( ( ret = mbedtls_md_update( &ctx, ssl->handshake->randbytes, 64 ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7714, "mbedtls_md_update", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7714, "mbedtls_md_update", ret );
         goto exit;
     }
     if( ( ret = mbedtls_md_update( &ctx, data, data_len ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7719, "mbedtls_md_update", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7719, "mbedtls_md_update", ret );
         goto exit;
     }
     if( ( ret = mbedtls_md_finish( &ctx, hash ) ) != 0 )
     {
-        mbedtls_debug_print_ret( ssl, 1, "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7724, "mbedtls_md_finish", ret );
+        mbedtls_debug_print_ret( ssl, 1, "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ssl_tls.c", 7724, "mbedtls_md_finish", ret );
         goto exit;
     }
 

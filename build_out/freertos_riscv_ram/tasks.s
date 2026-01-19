@@ -11,7 +11,7 @@
 	.type	prvAddCurrentTaskToDelayedList, @function
 prvAddCurrentTaskToDelayedList:
 .LFB77:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c"
 	.loc 1 5352 1
 	.cfi_startproc
 .LVL0:
@@ -873,7 +873,7 @@ prvIdleTask:
 .LBB100:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -951,7 +951,7 @@ prvIdleTask:
 	bne	a5,zero,.L51
 	.loc 1 4528 6 is_stmt 1
  #APP
-# 4528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4528 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrs mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1569,7 +1569,7 @@ uxTaskPriorityGet:
 .LBB146:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -1648,7 +1648,7 @@ uxTaskPriorityGet:
 	bne	a5,zero,.L116
 	.loc 1 4528 6 is_stmt 1
  #APP
-# 4528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4528 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrs mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1982,7 +1982,7 @@ vTaskEndScheduler:
 	.cfi_def_cfa 8, 0
 	.loc 1 2188 2
  #APP
-# 2188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 2188 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 2189 2 is_stmt 1
@@ -3436,7 +3436,7 @@ vTaskSetTimeOutState:
 .LBB212:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -3520,7 +3520,7 @@ vTaskSetTimeOutState:
 	bne	a5,zero,.L249
 	.loc 1 4528 6 is_stmt 1
  #APP
-# 4528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4528 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrs mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -4724,7 +4724,7 @@ vTaskEnterCritical:
 	.cfi_def_cfa 8, 0
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -4810,7 +4810,7 @@ vTaskExitCritical:
 	bne	a5,zero,.L368
 	.loc 1 4528 6 is_stmt 1
  #APP
-# 4528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4528 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrs mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -4869,7 +4869,7 @@ prvAddNewTaskToReadyList:
 .LBB243:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -5403,7 +5403,7 @@ vTaskStartScheduler:
 	bne	a0,a5,.L428
 	.loc 1 2133 3 is_stmt 1
  #APP
-# 2133 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 2133 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 2143 3
@@ -5676,7 +5676,7 @@ vTaskSetThreadLocalStoragePointerAndDelCallback:
 .LBB267:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -5800,7 +5800,7 @@ vTaskDelete:
 .LBB292:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -6225,7 +6225,7 @@ eTaskGetState:
 .LBB325:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -6435,7 +6435,7 @@ vTaskPrioritySet:
 .LBB337:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -6708,7 +6708,7 @@ vTaskSuspend:
 .LBB360:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -6865,7 +6865,7 @@ vTaskSuspend:
 .LBB363:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -7129,7 +7129,7 @@ vTaskResume:
 .LBB385:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -7371,7 +7371,7 @@ xTaskResumeAll:
 .LBB408:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -8756,7 +8756,7 @@ xTaskCheckForTimeOut:
 .LBB483:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -9320,7 +9320,7 @@ ulTaskNotifyTake:
 .LBB514:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -9384,7 +9384,7 @@ ulTaskNotifyTake:
 .LBB517:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -9528,7 +9528,7 @@ xTaskNotifyWait:
 .LBB534:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 is_stmt 1
@@ -9607,7 +9607,7 @@ xTaskNotifyWait:
 .LBB537:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -9763,7 +9763,7 @@ xTaskGenericNotify:
 .LBB545:
 	.loc 1 4490 3
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3
@@ -10492,7 +10492,7 @@ xTaskNotifyStateClear:
 .LBB557:
 	.loc 1 4490 3 discriminator 4
  #APP
-# 4490 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4490 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 4492 3 discriminator 4
@@ -10579,7 +10579,7 @@ xTaskNotifyStateClear:
 	bne	a5,zero,.L877
 	.loc 1 4528 6 is_stmt 1
  #APP
-# 4528 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
+# 4528 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c" 1
 	csrs mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -10770,17 +10770,17 @@ CSWTCH.248:
 	.byte	68
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x3bcc
@@ -24968,8 +24968,8 @@ CSWTCH.248:
 	.string	"uxSavedInterruptStatus"
 .LASF14:
 	.string	"uint32_t"
-.LASF304:
-	.string	"strcpy"
+.LASF259:
+	.string	"prvTaskIsTaskSuspended"
 .LASF69:
 	.string	"ucNotifyState"
 .LASF300:
@@ -25010,8 +25010,6 @@ CSWTCH.248:
 	.string	"vTaskPriorityDisinheritAfterTimeout"
 .LASF192:
 	.string	"pvTaskGetThreadLocalStoragePointer"
-.LASF109:
-	.string	"pxOverflowDelayedTaskList"
 .LASF195:
 	.string	"pvReturn"
 .LASF228:
@@ -25070,8 +25068,8 @@ CSWTCH.248:
 	.string	"pcName"
 .LASF21:
 	.string	"pvDummy3"
-.LASF319:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c"
+.LASF109:
+	.string	"pxOverflowDelayedTaskList"
 .LASF27:
 	.string	"uxDummy5"
 .LASF30:
@@ -25132,6 +25130,8 @@ CSWTCH.248:
 	.string	"uint8_t"
 .LASF72:
 	.string	"eReady"
+.LASF320:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF268:
 	.string	"eTaskGetState"
 .LASF286:
@@ -25290,8 +25290,8 @@ CSWTCH.248:
 	.string	"xAllTaskList"
 .LASF233:
 	.string	"pxTaskGetAllList"
-.LASF259:
-	.string	"prvTaskIsTaskSuspended"
+.LASF144:
+	.string	"pulNotificationValue"
 .LASF203:
 	.string	"vTaskSetTaskNumber"
 .LASF225:
@@ -25328,8 +25328,8 @@ CSWTCH.248:
 	.string	"ulDummy18"
 .LASF23:
 	.string	"xSTATIC_LIST_ITEM"
-.LASF144:
-	.string	"pulNotificationValue"
+.LASF319:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/tasks.c"
 .LASF130:
 	.string	"xReturn"
 .LASF322:
@@ -25392,6 +25392,8 @@ CSWTCH.248:
 	.string	"uxPriorityUsedOnEntry"
 .LASF104:
 	.string	"TCB_t"
+.LASF304:
+	.string	"strcpy"
 .LASF124:
 	.string	"xTicksToWait"
 .LASF43:
@@ -25458,8 +25460,6 @@ CSWTCH.248:
 	.string	"puxStackBuffer"
 .LASF55:
 	.string	"pxTopOfStack"
-.LASF320:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF61:
 	.string	"uxCriticalNesting"
 .LASF191:

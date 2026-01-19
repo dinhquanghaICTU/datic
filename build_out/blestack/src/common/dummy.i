@@ -1,18 +1,18 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -72,21 +72,21 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h" 1
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h" 1
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
 
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
 typedef signed char s8_t;
 typedef signed short s16_t;
 typedef int32_t s32_t;
@@ -96,13 +96,13 @@ typedef unsigned char u8_t;
 typedef unsigned short u16_t;
 typedef uint32_t u32_t;
 typedef unsigned long long u64_t;
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 1
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 2
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 1
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 2
 
 
 
@@ -121,54 +121,54 @@ struct _slist {
 };
 
 typedef struct _slist sys_slist_t;
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_init(sys_slist_t *list)
 {
  list->head = 
-# 194 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 194 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
              ((void *)0)
-# 194 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 194 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                  ;
  list->tail = 
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
              ((void *)0)
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                  ;
 }
-# 207 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 207 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline 
-# 207 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 207 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
              _Bool 
-# 207 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 207 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                   sys_slist_is_empty(sys_slist_t *list)
 {
  return (!list->head);
 }
-# 219 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 219 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline sys_snode_t *sys_slist_peek_head(sys_slist_t *list)
 {
  return list->head;
 }
-# 231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 231 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline sys_snode_t *sys_slist_peek_tail(sys_slist_t *list)
 {
  return list->tail;
 }
-# 245 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 245 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline sys_snode_t *sys_slist_peek_next_no_check(sys_snode_t *node)
 {
  return node->next;
 }
-# 257 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 257 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline sys_snode_t *sys_slist_peek_next(sys_snode_t *node)
 {
  return node ? sys_slist_peek_next_no_check(node) : 
-# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 259 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
                                                    ((void *)0)
-# 259 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 259 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                                                        ;
 }
-# 270 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 270 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_prepend(sys_slist_t *list,
          sys_snode_t *node)
 {
@@ -179,14 +179,14 @@ static inline void sys_slist_prepend(sys_slist_t *list,
   list->tail = list->head;
  }
 }
-# 289 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 289 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_append(sys_slist_t *list,
         sys_snode_t *node)
 {
  node->next = 
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
              ((void *)0)
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                  ;
 
  if (!list->tail) {
@@ -197,7 +197,7 @@ static inline void sys_slist_append(sys_slist_t *list,
   list->tail = node;
  }
 }
-# 314 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 314 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_append_list(sys_slist_t *list,
       void *head, void *tail)
 {
@@ -209,7 +209,7 @@ static inline void sys_slist_append_list(sys_slist_t *list,
   list->tail = (sys_snode_t *)tail;
  }
 }
-# 335 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 335 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_merge_slist(sys_slist_t *list,
       sys_slist_t *list_to_append)
 {
@@ -217,7 +217,7 @@ static inline void sys_slist_merge_slist(sys_slist_t *list,
         list_to_append->tail);
  sys_slist_init(list_to_append);
 }
-# 352 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 352 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_insert(sys_slist_t *list,
         sys_snode_t *prev,
         sys_snode_t *node)
@@ -231,7 +231,7 @@ static inline void sys_slist_insert(sys_slist_t *list,
   prev->next = node;
  }
 }
-# 376 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 376 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline sys_snode_t *sys_slist_get_not_empty(sys_slist_t *list)
 {
  sys_snode_t *node = list->head;
@@ -243,16 +243,16 @@ static inline sys_snode_t *sys_slist_get_not_empty(sys_slist_t *list)
 
  return node;
 }
-# 397 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 397 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline sys_snode_t *sys_slist_get(sys_slist_t *list)
 {
  return sys_slist_is_empty(list) ? 
-# 399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 399 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
                                   ((void *)0) 
-# 399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 399 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                                        : sys_slist_get_not_empty(list);
 }
-# 412 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 412 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline void sys_slist_remove(sys_slist_t *list,
         sys_snode_t *prev_node,
         sys_snode_t *node)
@@ -274,23 +274,23 @@ static inline void sys_slist_remove(sys_slist_t *list,
  }
 
  node->next = 
-# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 432 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
              ((void *)0)
-# 432 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 432 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                  ;
 }
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 445 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 static inline 
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 445 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
              _Bool 
-# 445 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 445 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                   sys_slist_find_and_remove(sys_slist_t *list,
           sys_snode_t *node)
 {
  sys_snode_t *prev = 
-# 448 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 448 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
                     ((void *)0)
-# 448 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 448 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
                         ;
  sys_snode_t *test;
 
@@ -298,9 +298,9 @@ static inline
   if (test == node) {
    sys_slist_remove(list, prev, node);
    return 
-# 454 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 454 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
          1
-# 454 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 454 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
              ;
   }
 
@@ -308,16 +308,16 @@ static inline
  }
 
  return 
-# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
+# 460 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h" 3 4
        0
-# 460 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+# 460 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
             ;
 }
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 1
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 2
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 1
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 2
 
 
 
@@ -336,76 +336,76 @@ struct _dnode {
 
 typedef struct _dnode sys_dlist_t;
 typedef struct _dnode sys_dnode_t;
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 188 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_init(sys_dlist_t *list)
 {
  list->head = (sys_dnode_t *)list;
  list->tail = (sys_dnode_t *)list;
 }
-# 205 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 205 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline int sys_dlist_is_head(sys_dlist_t *list, sys_dnode_t *node)
 {
  return list->head == node;
 }
-# 219 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 219 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline int sys_dlist_is_tail(sys_dlist_t *list, sys_dnode_t *node)
 {
  return list->tail == node;
 }
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 232 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline int sys_dlist_is_empty(sys_dlist_t *list)
 {
  return list->head == list;
 }
-# 247 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 247 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline int sys_dlist_has_multiple_nodes(sys_dlist_t *list)
 {
  return list->head != list->tail;
 }
-# 260 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 260 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline sys_dnode_t *sys_dlist_peek_head(sys_dlist_t *list)
 {
  return sys_dlist_is_empty(list) ? 
-# 262 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
+# 262 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
                                   ((void *)0) 
-# 262 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 262 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
                                        : list->head;
 }
-# 275 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 275 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline sys_dnode_t *sys_dlist_peek_head_not_empty(sys_dlist_t *list)
 {
  return list->head;
 }
-# 291 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 291 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline sys_dnode_t *sys_dlist_peek_next_no_check(sys_dlist_t *list,
        sys_dnode_t *node)
 {
  return (node == list->tail) ? 
-# 294 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
+# 294 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
                               ((void *)0) 
-# 294 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 294 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
                                    : node->next;
 }
-# 307 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 307 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline sys_dnode_t *sys_dlist_peek_next(sys_dlist_t *list,
             sys_dnode_t *node)
 {
  return node ? sys_dlist_peek_next_no_check(list, node) : 
-# 310 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
+# 310 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
                                                          ((void *)0)
-# 310 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 310 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
                                                              ;
 }
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline sys_dnode_t *sys_dlist_peek_tail(sys_dlist_t *list)
 {
  return sys_dlist_is_empty(list) ? 
-# 323 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
+# 323 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
                                   ((void *)0) 
-# 323 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 323 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
                                        : list->tail;
 }
-# 337 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 337 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_append(sys_dlist_t *list, sys_dnode_t *node)
 {
  node->next = list;
@@ -414,7 +414,7 @@ static inline void sys_dlist_append(sys_dlist_t *list, sys_dnode_t *node)
  list->tail->next = node;
  list->tail = node;
 }
-# 357 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 357 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_prepend(sys_dlist_t *list, sys_dnode_t *node)
 {
  node->next = list->head;
@@ -423,7 +423,7 @@ static inline void sys_dlist_prepend(sys_dlist_t *list, sys_dnode_t *node)
  list->head->prev = node;
  list->head = node;
 }
-# 379 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 379 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_insert_after(sys_dlist_t *list,
  sys_dnode_t *insert_point, sys_dnode_t *node)
 {
@@ -436,7 +436,7 @@ static inline void sys_dlist_insert_after(sys_dlist_t *list,
   insert_point->next = node;
  }
 }
-# 405 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 405 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_insert_before(sys_dlist_t *list,
  sys_dnode_t *insert_point, sys_dnode_t *node)
 {
@@ -449,7 +449,7 @@ static inline void sys_dlist_insert_before(sys_dlist_t *list,
   insert_point->prev = node;
  }
 }
-# 435 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 435 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_insert_at(sys_dlist_t *list, sys_dnode_t *node,
  int (*cond)(sys_dnode_t *, void *), void *data)
 {
@@ -464,22 +464,22 @@ static inline void sys_dlist_insert_at(sys_dlist_t *list, sys_dnode_t *node,
   sys_dlist_insert_before(list, pos, node);
  }
 }
-# 461 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 461 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline void sys_dlist_remove(sys_dnode_t *node)
 {
  node->prev->next = node->next;
  node->next->prev = node->prev;
 }
-# 477 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 477 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
 static inline sys_dnode_t *sys_dlist_get(sys_dlist_t *list)
 {
  sys_dnode_t *node;
 
  if (sys_dlist_is_empty(list)) {
   return 
-# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
+# 482 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h" 3 4
         ((void *)0)
-# 482 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+# 482 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
             ;
  }
 
@@ -487,116 +487,116 @@ static inline sys_dnode_t *sys_dlist_get(sys_dlist_t *list)
  sys_dlist_remove(node);
  return node;
 }
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 1
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 1
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/config.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/config.h" 1
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
-# 127 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 1
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h" 1
+# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
 unsigned long get_cpu_freq(void);
 unsigned long get_timer_freq(void);
 uint64_t get_timer_value(void);
-# 75 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/config.h" 2
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
+# 75 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h" 2
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/config.h" 2
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 1 3
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 2 3
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 2 3
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 3
 
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 3
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h" 3
 void __assert (const char *, int, const char *)
      __attribute__ ((__noreturn__));
 void __assert_func (const char *, int, const char *, const char *)
      __attribute__ ((__noreturn__));
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
 typedef unsigned char __uint8_t;
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int16_t;
 
 typedef short unsigned int __uint16_t;
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 77 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int32_t;
 
 typedef long unsigned int __uint32_t;
-# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 103 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int64_t;
 
 typedef long long unsigned int __uint64_t;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int_least8_t;
 
 typedef unsigned char __uint_least8_t;
-# 160 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 160 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int_least16_t;
 
 typedef short unsigned int __uint_least16_t;
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int_least32_t;
 
 typedef long unsigned int __uint_least32_t;
-# 200 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 200 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int_least64_t;
 
 typedef long long unsigned int __uint_least64_t;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __intmax_t;
 
 
@@ -616,8 +616,8 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 2 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 2 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -666,7 +666,7 @@ typedef __uint32_t __id_t;
 
 
 typedef unsigned short __ino_t;
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef __uint32_t __mode_t;
 
 
@@ -694,11 +694,11 @@ typedef long __key_t;
 
 
 typedef long _fpos_t;
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef unsigned int __size_t;
-# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 147 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef signed int _ssize_t;
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 158 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef _ssize_t __ssize_t;
 
 
@@ -761,7 +761,7 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 
 
 
@@ -769,12 +769,12 @@ typedef __builtin_va_list __va_list;
 
 
 typedef unsigned long __ULong;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
 typedef int _LOCK_T;
 typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 typedef _LOCK_RECURSIVE_T _flock_t;
 
 
@@ -828,7 +828,7 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 98 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _atexit {
  struct _atexit *_next;
  int _ind;
@@ -836,12 +836,12 @@ struct _atexit {
  void (*_fns[32])(void);
         struct _on_exit_args _on_exit_args;
 };
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 186 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -892,7 +892,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -903,7 +903,7 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
@@ -913,7 +913,7 @@ struct _rand48 {
 
 
 };
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 613 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _reent
 {
   int _errno;
@@ -996,35 +996,35 @@ struct _reent
   __FILE __sf[3];
 
 };
-# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 819 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
 struct __locale_t;
 typedef struct __locale_t *locale_t;
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 
 
 int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
@@ -1056,7 +1056,7 @@ int strcasecmp_l (const char *, const char *, locale_t);
 int strncasecmp_l (const char *, const char *, size_t, locale_t);
 
 
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
@@ -1130,7 +1130,7 @@ char *_strndup_r (struct _reent *, const char *, size_t);
 
 
 char *strerror_r (int, char *, size_t);
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char * _strerror_r (struct _reent *, int, int, int *);
 
 
@@ -1162,12 +1162,12 @@ char *strsignal (int __signo);
 
 
 int strverscmp (const char *, const char *);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
 static __inline unsigned long __libc_detect_null(unsigned long w)
 {
   unsigned long mask = 0x7f7f7f7f;
@@ -1175,22 +1175,22 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
     mask = ((mask << 16) << 16) | mask;
   return ~(((w & mask) + mask) | w | mask);
 }
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 176 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h" 1
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 1
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
-
-
-
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h" 1
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 1
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 2
 
 
 
 
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+
+
+
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 typedef struct {
     void *hdl;
 } bl_hdl_t;
@@ -1201,7 +1201,7 @@ typedef uint32_t _stack_element_t;
 typedef bl_hdl_t _mutex_t;
 typedef bl_hdl_t bl_timer_t;
 typedef uint32_t _task_t;
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 typedef sys_dlist_t _wait_q_t;
 
 struct k_queue {
@@ -1226,11 +1226,11 @@ int k_queue_get_cnt(struct k_queue *queue);
 struct k_lifo {
     struct k_queue _queue;
 };
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+# 98 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 struct k_fifo {
         struct k_queue _queue;
 };
-# 129 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+# 129 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 struct k_sem {
     _sem_t sem;
     sys_dlist_t poll_events;
@@ -1301,7 +1301,7 @@ void k_timer_stop(k_timer_t *timer);
 
 
 void k_timer_delete(k_timer_t *timer);
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 int64_t k_uptime_get();
 u32_t k_uptime_get_32(void);
 
@@ -1330,9 +1330,9 @@ int k_thread_create(struct k_thread *new_thread, const char *name,
 void k_thread_delete(struct k_thread *new_thread);
 
 
-# 241 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 3 4
+# 241 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h" 3 4
 _Bool 
-# 241 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+# 241 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
     k_is_current_thread(struct k_thread *thread);
 
 
@@ -1357,52 +1357,52 @@ unsigned int irq_lock();
 void irq_unlock(unsigned int key);
 
 int k_is_in_isr(void);
-# 273 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+# 273 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 long long k_now_ms(void);
 void k_get_random_byte_array(uint8_t *buf, size_t len);
 void *k_malloc(size_t size);
 void k_free(void *buf);
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h" 1
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h" 1
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h" 1
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 typedef int atomic_t;
 typedef atomic_t atomic_val_t;
-# 49 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern int atomic_cas(atomic_t *target, atomic_val_t old_value,
         atomic_val_t new_value);
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 70 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_add(atomic_t *target, atomic_val_t value);
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_sub(atomic_t *target, atomic_val_t value);
-# 109 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 109 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_inc(atomic_t *target);
-# 128 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 128 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_dec(atomic_t *target);
-# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 147 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_get(const atomic_t *target);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_set(atomic_t *target, atomic_val_t value);
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_clear(atomic_t *target);
-# 213 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 213 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_or(atomic_t *target, atomic_val_t value);
-# 234 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 234 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_xor(atomic_t *target, atomic_val_t value);
-# 255 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 255 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_and(atomic_t *target, atomic_val_t value);
-# 276 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 276 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 extern atomic_val_t atomic_nand(atomic_t *target, atomic_val_t value);
-# 329 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 329 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 static inline int atomic_test_bit(const atomic_t *target, int bit)
 {
  atomic_val_t val = atomic_get(((target) + ((bit) / (sizeof(atomic_val_t) * 8))));
 
  return (1 & (val >> (bit & ((sizeof(atomic_val_t) * 8) - 1))));
 }
-# 347 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 347 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 static inline int atomic_test_and_clear_bit(atomic_t *target, int bit)
 {
  atomic_val_t mask = (1 << ((bit) & ((sizeof(atomic_val_t) * 8) - 1)));
@@ -1412,7 +1412,7 @@ static inline int atomic_test_and_clear_bit(atomic_t *target, int bit)
 
  return (old & mask) != 0;
 }
-# 368 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 368 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 static inline int atomic_test_and_set_bit(atomic_t *target, int bit)
 {
  atomic_val_t mask = (1 << ((bit) & ((sizeof(atomic_val_t) * 8) - 1)));
@@ -1422,25 +1422,25 @@ static inline int atomic_test_and_set_bit(atomic_t *target, int bit)
 
  return (old & mask) != 0;
 }
-# 389 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 389 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 static inline void atomic_clear_bit(atomic_t *target, int bit)
 {
  atomic_val_t mask = (1 << ((bit) & ((sizeof(atomic_val_t) * 8) - 1)));
 
  atomic_and(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), ~mask);
 }
-# 407 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 407 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 static inline void atomic_set_bit(atomic_t *target, int bit)
 {
  atomic_val_t mask = (1 << ((bit) & ((sizeof(atomic_val_t) * 8) - 1)));
 
  atomic_or(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), mask);
 }
-# 426 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 426 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 static inline void atomic_set_bit_to(atomic_t *target, int bit, 
-# 426 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h" 3 4
+# 426 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h" 3 4
                                                                _Bool 
-# 426 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+# 426 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
                                                                     val)
 {
  atomic_val_t mask = (1 << ((bit) & ((sizeof(atomic_val_t) * 8) - 1)));
@@ -1451,9 +1451,9 @@ static inline void atomic_set_bit_to(atomic_t *target, int bit,
   (void)atomic_and(((target) + ((bit) / (sizeof(atomic_val_t) * 8))), ~mask);
  }
 }
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 1
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h" 2
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 1
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h" 2
 
 
 struct k_work_q {
@@ -1479,7 +1479,7 @@ struct k_work {
     k_work_handler_t handler;
     atomic_t flags[1];
 };
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
 int k_work_init(struct k_work *work, k_work_handler_t handler);
 void k_work_submit(struct k_work *work);
 
@@ -1499,8 +1499,8 @@ s32_t k_delayed_work_remaining_get(struct k_delayed_work *work);
 void k_delayed_work_del_timer(struct k_delayed_work *work);
 
 int k_delayed_work_free(struct k_delayed_work *work);
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
+# 54 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
 enum _poll_types_bits {
     _POLL_TYPE_IGNORE,
     _POLL_TYPE_SIGNAL,
@@ -1518,7 +1518,7 @@ enum _poll_states_bits {
     _POLL_STATE_DATA_AVAILABLE,
     _POLL_NUM_STATES
 };
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
 struct k_poll_event {
     sys_dnode_t _node;
     struct _poller *poller;
@@ -1541,7 +1541,7 @@ struct k_poll_signal {
     unsigned int signaled;
     int result;
 };
-# 136 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+# 136 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
 extern int k_poll_signal_raise(struct k_poll_signal *signal, int result);
 
 
@@ -1557,4 +1557,4 @@ enum k_poll_modes {
 
         K_POLL_NUM_MODES
 };
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c" 2
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c" 2

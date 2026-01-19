@@ -12,7 +12,7 @@
 	.type	SPI_Init, @function
 SPI_Init:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_spi.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_spi.c"
 	.loc 1 169 1
 	.cfi_startproc
 .LVL0:
@@ -4358,11 +4358,11 @@ SPI_GetFifoStatus:
 	.size	SPI_GetFifoStatus, .-SPI_GetFifoStatus
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_spi.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_spi.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1956
@@ -12317,14 +12317,14 @@ SPI_GetFifoStatus:
 	.string	"SPI_Send_8bits"
 .LASF157:
 	.string	"value"
-.LASF23:
-	.string	"BL_AHB_SLAVE1_CKS"
 .LASF146:
 	.string	"SPI_IntMask"
 .LASF68:
 	.string	"SPI_FRAME_SIZE_24"
 .LASF103:
 	.string	"SPI_ClockCfg_Type"
+.LASF174:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_spi.c"
 .LASF169:
 	.string	"SPI_Init"
 .LASF122:
@@ -12459,8 +12459,8 @@ SPI_GetFifoStatus:
 	.string	"clkPhaseInv"
 .LASF66:
 	.string	"SPI_FRAME_SIZE_8"
-.LASF175:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF23:
+	.string	"BL_AHB_SLAVE1_CKS"
 .LASF134:
 	.string	"SPI_Recv_24bits"
 .LASF63:
@@ -12615,8 +12615,6 @@ SPI_GetFifoStatus:
 	.string	"rData"
 .LASF14:
 	.string	"BL_AHB_SLAVE1_PDS_HBN_AON_HBNRAM"
-.LASF174:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_spi.c"
 .LASF164:
 	.string	"glb_div"
 .LASF173:
@@ -12655,6 +12653,8 @@ SPI_GetFifoStatus:
 	.string	"frameSize"
 .LASF15:
 	.string	"BL_AHB_SLAVE1_RSVD0F"
+.LASF175:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF133:
 	.string	"rxLen"
 .LASF126:

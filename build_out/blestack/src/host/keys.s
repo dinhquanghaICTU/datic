@@ -12,7 +12,7 @@
 	.type	bt_keys_get_addr, @function
 bt_keys_get_addr:
 .LFB73:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.c"
 	.loc 1 44 1
 	.cfi_startproc
 .LVL0:
@@ -66,7 +66,7 @@ bt_keys_get_addr:
 .LBB17:
 .LBB18:
 .LBB19:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
 	.loc 2 49 9 is_stmt 0
 	li	a2,7
 	addi	a1,s0,-40
@@ -1000,7 +1000,7 @@ bt_keys_update_usage:
 .LVL76:
 .LBB73:
 .LBB74:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.h"
 	.loc 3 99 2
 .L90:
 .LBE74:
@@ -1040,15 +1040,15 @@ last_keys_updated:
 	.zero	4
 	.text
 .Letext0:
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/rpa.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/rpa.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xd1b
@@ -4721,8 +4721,6 @@ last_keys_updated:
 	.string	"_POLL_STATE_DATA_AVAILABLE"
 .LASF112:
 	.string	"current"
-.LASF108:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.c"
 .LASF80:
 	.string	"bt_keys_clear_all"
 .LASF5:
@@ -4735,12 +4733,10 @@ last_keys_updated:
 	.string	"char"
 .LASF37:
 	.string	"BT_DEV_PRESET_ID"
-.LASF111:
-	.string	"bt_keys_add_type"
 .LASF66:
 	.string	"bt_irk"
-.LASF109:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
+.LASF111:
+	.string	"bt_keys_add_type"
 .LASF57:
 	.string	"BT_KEYS_LTK"
 .LASF88:
@@ -4765,6 +4761,8 @@ last_keys_updated:
 	.string	"BT_DEV_USER_ID_ADDR"
 .LASF43:
 	.string	"BT_DEV_ADVERTISING_CONNECTABLE"
+.LASF108:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.c"
 .LASF50:
 	.string	"BT_DEV_AUTO_CONN"
 .LASF6:
@@ -4799,6 +4797,8 @@ last_keys_updated:
 	.string	"bt_keys_clear"
 .LASF21:
 	.string	"_poll_states_bits"
+.LASF109:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF95:
 	.string	"bt_keys_store"
 .LASF67:

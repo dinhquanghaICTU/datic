@@ -12,7 +12,7 @@
 	.type	bl_mpi_exp_mod_wo_lock, @function
 bl_mpi_exp_mod_wo_lock:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
 	.loc 1 29 1
 	.cfi_startproc
 .LVL0:
@@ -1049,16 +1049,16 @@ bl_mpi_exp_mod:
 	.size	bl_mpi_exp_mod, .-bl_mpi_exp_mod
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/bignum_ext.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/hw_common.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_bignum.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/bignum_ext.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/hw_common.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_bignum.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xc76
@@ -4545,8 +4545,8 @@ bl_mpi_exp_mod:
 	.string	"char"
 .LASF50:
 	.string	"_Bool"
-.LASF54:
-	.string	"Sec_Eng_PKA_MSQR"
+.LASF83:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF39:
 	.string	"PrimeN_new"
 .LASF49:
@@ -4564,7 +4564,7 @@ bl_mpi_exp_mod:
 .LASF46:
 	.string	"cvt_back"
 .LASF82:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
 .LASF81:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF68:
@@ -4591,6 +4591,8 @@ bl_mpi_exp_mod:
 	.string	"words"
 .LASF67:
 	.string	"Sec_Eng_PKA_BigEndian_Enable"
+.LASF54:
+	.string	"Sec_Eng_PKA_MSQR"
 .LASF63:
 	.string	"mbedtls_mpi_lset"
 .LASF28:
@@ -4599,10 +4601,8 @@ bl_mpi_exp_mod:
 	.string	"Sec_Eng_PKA_Write_Data"
 .LASF31:
 	.string	"m_words"
-.LASF44:
-	.string	"first"
 .LASF69:
 	.string	"mpi_hensel_quad_mod_inv_prime_n"
-.LASF83:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
+.LASF44:
+	.string	"first"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

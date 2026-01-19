@@ -22,7 +22,7 @@
 	.type	fdt_strerror, @function
 fdt_strerror:
 .LFB40:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_strerror.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_strerror.c"
 	.loc 1 89 1
 	.cfi_startproc
 .LVL0:
@@ -564,8 +564,10 @@ fdt_errtable:
 	.string	"fdt_errtabent"
 .LASF16:
 	.string	"errval"
-.LASF7:
-	.string	"long unsigned int"
+.LASF12:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_strerror.c"
+.LASF13:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF10:
@@ -576,6 +578,8 @@ fdt_errtable:
 	.string	"unsigned char"
 .LASF3:
 	.string	"long int"
+.LASF7:
+	.string	"long unsigned int"
 .LASF6:
 	.string	"short unsigned int"
 .LASF1:
@@ -584,10 +588,6 @@ fdt_errtable:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF2:
 	.string	"short int"
-.LASF13:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF9:
 	.string	"char"
-.LASF12:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_strerror.c"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

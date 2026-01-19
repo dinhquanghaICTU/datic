@@ -36,7 +36,7 @@
 	.type	cmd_encode, @function
 cmd_encode:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/test/test_utils_base64.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/test/test_utils_base64.c"
 	.loc 1 13 1
 	.cfi_startproc
 .LVL0:
@@ -396,13 +396,13 @@ cmds_user:
 	.word	cmd_encode
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_base64.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_base64.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x43d
@@ -1610,16 +1610,14 @@ cmds_user:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF35:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/test/test_utils_base64.c"
 .LASF34:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF36:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF25:
 	.string	"aos_cli_printf"
 .LASF6:
 	.string	"short unsigned int"
-.LASF36:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF40:
 	.string	"cmd_encode"
 .LASF16:
@@ -1654,6 +1652,8 @@ cmds_user:
 	.string	"long long unsigned int"
 .LASF7:
 	.string	"uint8_t"
+.LASF35:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/test/test_utils_base64.c"
 .LASF26:
 	.string	"xPortIsInsideInterrupt"
 .LASF38:

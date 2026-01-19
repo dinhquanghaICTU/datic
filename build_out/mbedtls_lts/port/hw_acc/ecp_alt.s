@@ -11,7 +11,7 @@
 	.type	ecp_normalize_swst, @function
 ecp_normalize_swst:
 .LFB44:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/ecp_alt.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/ecp_alt.c"
 	.loc 1 1297 1
 	.cfi_startproc
 .LVL0:
@@ -7011,18 +7011,18 @@ init_done.0:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/hw_common.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/bignum_ext.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/ecp.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/ecp_alt.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/hw_common.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform_util.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/bignum_ext.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x50da
@@ -27445,6 +27445,8 @@ init_done.0:
 	.string	"mbedtls_ecp_point"
 .LASF23:
 	.string	"MBEDTLS_ECP_DP_BP256R1"
+.LASF181:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF37:
 	.string	"grp_id"
 .LASF91:
@@ -27521,8 +27523,6 @@ init_done.0:
 	.string	"mbedtls_ecp_curve_info_from_tls_id"
 .LASF51:
 	.string	"mbedtls_ecp_write_key"
-.LASF180:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/ecp_alt.c"
 .LASF74:
 	.string	"mbedtls_ecp_mul_restartable"
 .LASF163:
@@ -27589,8 +27589,6 @@ init_done.0:
 	.string	"T_ok"
 .LASF117:
 	.string	"mbedtls_ecp_is_zero"
-.LASF181:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF175:
 	.string	"Sec_Eng_PKA_Reset"
 .LASF26:
@@ -27605,6 +27603,8 @@ init_done.0:
 	.string	"MBEDTLS_ECP_DP_SECP256R1"
 .LASF92:
 	.string	"ecp_add_mixed_swst"
+.LASF180:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/ecp_alt.c"
 .LASF162:
 	.string	"mbedtls_mpi_sub_abs"
 .LASF93:

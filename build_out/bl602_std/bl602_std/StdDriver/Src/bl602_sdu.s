@@ -12,7 +12,7 @@
 	.type	sdio_GEN_CARD2HOST_INT, @function
 sdio_GEN_CARD2HOST_INT:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sdu.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sdu.c"
 	.loc 1 28 1
 	.cfi_startproc
 .LVL0:
@@ -133,8 +133,8 @@ SdioFuncReg:
 	.word	1073795328
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sdu.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sdu.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x443
@@ -1150,16 +1150,18 @@ SdioFuncReg:
 	.string	"UpldQueue"
 .LASF18:
 	.string	"WrBitMap"
+.LASF41:
+	.string	"IPRev1"
 .LASF45:
 	.string	"Ocr0"
 .LASF46:
 	.string	"Ocr1"
 .LASF54:
 	.string	"IOCTL_GET_CONFIG"
-.LASF63:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF20:
 	.string	"HostTransferStatus"
+.LASF63:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF50:
 	.string	"Debug"
 .LASF21:
@@ -1182,10 +1184,10 @@ SdioFuncReg:
 	.string	"RdIdx"
 .LASF58:
 	.string	"flag_mport"
-.LASF41:
-	.string	"IPRev1"
 .LASF5:
 	.string	"unsigned char"
+.LASF62:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sdu.c"
 .LASF24:
 	.string	"CardIntMask"
 .LASF59:
@@ -1228,8 +1230,6 @@ SdioFuncReg:
 	.string	"CardIntMode"
 .LASF26:
 	.string	"CardIntStatus"
-.LASF62:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sdu.c"
 .LASF31:
 	.string	"SqWriteBase"
 .LASF55:

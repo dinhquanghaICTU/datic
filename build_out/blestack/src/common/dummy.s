@@ -119,20 +119,20 @@
 	.section	.debug_str,"MS",@progbits,1
 .LASF8:
 	.string	"unsigned int"
+.LASF12:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF6:
 	.string	"long unsigned int"
-.LASF12:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF0:
 	.string	"signed char"
 .LASF5:
 	.string	"short unsigned int"
+.LASF11:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
 .LASF1:
 	.string	"short int"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF11:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
 .LASF4:
 	.string	"unsigned char"
 .LASF2:

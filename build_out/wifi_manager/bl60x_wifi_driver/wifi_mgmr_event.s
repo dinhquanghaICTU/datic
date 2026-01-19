@@ -15,7 +15,7 @@
 	.type	cb_probe_resp_ind, @function
 cb_probe_resp_ind:
 .LFB33:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_event.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_event.c"
 	.loc 1 68 1
 	.cfi_startproc
 .LVL0:
@@ -605,27 +605,27 @@ wifi_mgmr_event_init:
 	.size	wifi_mgmr_event_init, .-wifi_mgmr_event_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_main.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
-	.file 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr.h"
-	.file 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
-	.file 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_api.h"
-	.file 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
-	.file 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_event.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_main.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr.h"
+	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_api.h"
+	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_event.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1cee
@@ -5639,6 +5639,8 @@ wifi_mgmr_event_init:
 	.string	"channel_nums"
 .LASF261:
 	.string	"WIFI_MGMR_CONNECTION_STATUS_T"
+.LASF347:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF109:
 	.string	"_lock_gaint"
 .LASF294:
@@ -5887,8 +5889,6 @@ wifi_mgmr_event_init:
 	.string	"aos_post_event"
 .LASF34:
 	.string	"payload"
-.LASF347:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF123:
 	.string	"_sem_take"
 .LASF84:
@@ -6013,6 +6013,8 @@ wifi_mgmr_event_init:
 	.string	"WLAN_PM_EVENT_BEACON_LOSS"
 .LASF141:
 	.string	"_yield_from_isr"
+.LASF346:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_event.c"
 .LASF69:
 	.string	"WLAN_CODE_PM_START"
 .LASF60:
@@ -6079,8 +6081,6 @@ wifi_mgmr_event_init:
 	.string	"uint16_t"
 .LASF98:
 	.string	"_event_group_delete"
-.LASF346:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_event.c"
 .LASF217:
 	.string	"stateMachine"
 .LASF135:

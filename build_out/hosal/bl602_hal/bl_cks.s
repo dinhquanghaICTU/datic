@@ -11,7 +11,7 @@
 	.type	_cb_cmd, @function
 _cb_cmd:
 .LFB30:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_cks.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_cks.c"
 	.loc 1 196 1
 	.cfi_startproc
 .LVL0:
@@ -647,11 +647,11 @@ data_src1.0:
 	.ascii	"\307"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4e8
@@ -2085,6 +2085,8 @@ data_src1.0:
 	.string	"first"
 .LASF21:
 	.string	"data_segment_one"
+.LASF37:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_cks.c"
 .LASF27:
 	.string	"checksum"
 .LASF39:
@@ -2097,10 +2099,12 @@ data_src1.0:
 	.string	"data_src1_cks"
 .LASF19:
 	.string	"second"
-.LASF37:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_cks.c"
+.LASF4:
+	.string	"unsigned char"
 .LASF33:
 	.string	"memset"
+.LASF38:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF30:
 	.string	"_bl_cks_test_case1"
 .LASF29:
@@ -2111,12 +2115,8 @@ data_src1.0:
 	.string	"_bl_cks_test_case4"
 .LASF24:
 	.string	"_bl_cks_test_case5"
-.LASF38:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF40:
 	.string	"_cb_cmd"
-.LASF4:
-	.string	"unsigned char"
 .LASF11:
 	.string	"unsigned int"
 .LASF20:

@@ -11,7 +11,7 @@
 	.type	l2cap_connected, @function
 l2cap_connected:
 .LFB110:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/l2cap.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/l2cap.c"
 	.loc 1 1781 1
 	.cfi_startproc
 .LVL0:
@@ -288,7 +288,7 @@ bt_l2cap_chan_remove:
 	.loc 1 156 2
 .LBB115:
 .LBB116:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 	.loc 2 221 2
 .LBE116:
 .LBE115:
@@ -895,7 +895,7 @@ bt_l2cap_connected:
 	.loc 1 378 3
 .LBB166:
 .LBB167:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 	.loc 3 409 2
 	.loc 3 411 2
 	lw	a0,-36(s0)
@@ -1332,7 +1332,7 @@ l2cap_send_reject.constprop.0:
 .LVL109:
 .LBB195:
 .LBB196:
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/l2cap_internal.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/l2cap_internal.h"
 	.loc 4 292 2
 	lw	a2,-20(s0)
 .LBE196:
@@ -2311,20 +2311,20 @@ ident.6:
 	.zero	1
 	.text
 .Letext0:
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/l2cap.h"
-	.file 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/l2cap.h"
+	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2424
@@ -10338,10 +10338,14 @@ ident.6:
 	.string	"k_work"
 .LASF108:
 	.string	"BT_SECURITY_FORCE_PAIR"
+.LASF282:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/l2cap.c"
 .LASF257:
 	.string	"get_ident"
 .LASF239:
 	.string	"data_len"
+.LASF283:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF105:
 	.string	"BT_SECURITY_MEDIUM"
 .LASF171:
@@ -10356,8 +10360,6 @@ ident.6:
 	.string	"fifo"
 .LASF2:
 	.string	"long int"
-.LASF282:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/l2cap.c"
 .LASF115:
 	.string	"encrypt"
 .LASF194:
@@ -10366,8 +10368,6 @@ ident.6:
 	.string	"bt_conn_le"
 .LASF245:
 	.string	"bt_l2cap_encrypt_change"
-.LASF49:
-	.string	"work"
 .LASF91:
 	.string	"interval_max"
 .LASF20:
@@ -10672,8 +10672,8 @@ ident.6:
 	.string	"k_timer"
 .LASF106:
 	.string	"BT_SECURITY_HIGH"
-.LASF283:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
+.LASF49:
+	.string	"work"
 .LASF111:
 	.string	"handle"
 .LASF133:

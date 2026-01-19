@@ -16,7 +16,7 @@
 	.type	__assert, @function
 __assert:
 .LFB3:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/libc/newlibc/assert.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/libc/newlibc/assert.c"
 	.loc 1 10 1
 	.cfi_startproc
 .LVL0:
@@ -138,9 +138,9 @@ abort:
 	.size	abort, .-abort
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1d3
@@ -710,8 +710,6 @@ abort:
 	.string	"line"
 .LASF8:
 	.string	"unsigned int"
-.LASF21:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/newlibc"
 .LASF5:
 	.string	"long unsigned int"
 .LASF19:
@@ -729,7 +727,7 @@ abort:
 .LASF12:
 	.string	"file"
 .LASF20:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/libc/newlibc/assert.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/libc/newlibc/assert.c"
 .LASF15:
 	.string	"cond"
 .LASF17:
@@ -738,6 +736,8 @@ abort:
 	.string	"short unsigned int"
 .LASF18:
 	.string	"printf"
+.LASF21:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/newlibc"
 .LASF16:
 	.string	"__assert"
 .LASF14:

@@ -22,7 +22,7 @@
 	.type	cmd_looprt_test, @function
 cmd_looprt_test:
 .LFB26:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
 	.loc 1 14 1
 	.cfi_startproc
 .LVL0:
@@ -420,9 +420,9 @@ cmds_user:
 	.word	cmd_looprt_test_schedule_evt2
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4bd
@@ -1759,8 +1759,6 @@ cmds_user:
 	.string	"short int"
 .LASF25:
 	.string	"printf"
-.LASF28:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
 .LASF23:
 	.string	"looprt_evt_notify_async"
 .LASF26:
@@ -1775,16 +1773,18 @@ cmds_user:
 	.string	"unsigned char"
 .LASF30:
 	.string	"cli_command"
+.LASF28:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
 .LASF18:
 	.string	"cmd_looprt_test_evt"
 .LASF20:
 	.string	"cmd_looprt_test"
 .LASF8:
 	.string	"unsigned int"
-.LASF29:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/looprt"
 .LASF7:
 	.string	"long long unsigned int"
+.LASF29:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/looprt"
 .LASF32:
 	.string	"looprt_test_cli_init"
 .LASF19:

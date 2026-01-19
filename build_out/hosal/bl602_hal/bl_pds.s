@@ -6,19 +6,19 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c347,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c347,"ax",@progbits
 	.align	1
 	.globl	bl_pds_init
 	.type	bl_pds_init, @function
 bl_pds_init:
 .LFB30:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c"
 	.loc 1 348 1
 	.cfi_startproc
 	.loc 1 350 5
 .LBB10:
 .LBB11:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
 	.loc 2 94 3
 .LBE11:
 .LBE10:
@@ -37,7 +37,7 @@ bl_pds_init:
 .LBB12:
 	.loc 2 94 3
  #APP
-# 94 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -69,7 +69,7 @@ bl_pds_init:
 .LBB15:
 	.loc 2 89 3
  #APP
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -203,7 +203,7 @@ bl_pds_fastboot_cfg:
 	.cfi_endproc
 .LFE31:
 	.size	bl_pds_fastboot_cfg, .-bl_pds_fastboot_cfg
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c401,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c401,"ax",@progbits
 	.align	1
 	.globl	bl_pds_enter
 	.type	bl_pds_enter, @function
@@ -268,7 +268,7 @@ bl_pds_enter:
 .LBB17:
 	.loc 2 94 3
  #APP
-# 94 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -405,7 +405,7 @@ bl_pds_enter:
 .LBB19:
 	.loc 2 89 3
  #APP
-# 89 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
 .LVL46:
@@ -736,19 +736,19 @@ xtalType:
 	.zero	1
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pds.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_aon.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_cfg.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash_ext.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pds.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_aon.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_cfg.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash_ext.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x11ab
@@ -2576,7 +2576,7 @@ xtalType:
 	.4byte	.LASF226
 	.byte	0x1
 	.2byte	0x191
-	.byte	0x89
+	.byte	0x82
 	.4byte	.LFB32
 	.4byte	.LFE32-.LFB32
 	.byte	0x1
@@ -2586,14 +2586,14 @@ xtalType:
 	.4byte	.LASF227
 	.byte	0x1
 	.2byte	0x191
-	.byte	0x9f
+	.byte	0x98
 	.4byte	0x67
 	.4byte	.LLST1
 	.byte	0x18
 	.4byte	.LASF228
 	.byte	0x1
 	.2byte	0x191
-	.byte	0xb2
+	.byte	0xab
 	.4byte	0x67
 	.4byte	.LLST2
 	.byte	0x19
@@ -2853,7 +2853,7 @@ xtalType:
 	.4byte	.LASF232
 	.byte	0x1
 	.2byte	0x15b
-	.byte	0x89
+	.byte	0x82
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
 	.byte	0x1
@@ -3938,8 +3938,6 @@ xtalType:
 	.section	.debug_str,"MS",@progbits,1
 .LASF140:
 	.string	"ldo11Off"
-.LASF186:
-	.string	"forceMiscIsoEn"
 .LASF247:
 	.string	"PDS_Power_Off_PLL"
 .LASF84:
@@ -3948,6 +3946,8 @@ xtalType:
 	.string	"SF_CTRL_OWNER_SAHB"
 .LASF55:
 	.string	"pageSize"
+.LASF260:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c"
 .LASF188:
 	.string	"forceMiscPdsRst"
 .LASF82:
@@ -3958,8 +3958,8 @@ xtalType:
 	.string	"bl_pds_rf_turnoff"
 .LASF50:
 	.string	"jedecIdCmd"
-.LASF260:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.c"
+.LASF186:
+	.string	"forceMiscIsoEn"
 .LASF58:
 	.string	"blk32EraseCmd"
 .LASF210:
@@ -4100,6 +4100,8 @@ xtalType:
 	.string	"BL_AHB_SLAVE1_TZ1"
 .LASF255:
 	.string	"HBN_Set_Status_Flag"
+.LASF261:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF233:
 	.string	"__disable_irq"
 .LASF181:
@@ -4150,8 +4152,6 @@ xtalType:
 	.string	"forceCpuPdsRst"
 .LASF71:
 	.string	"frDioDmyClk"
-.LASF261:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF145:
 	.string	"PDS_CTL_Type"
 .LASF242:

@@ -1,5 +1,5 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_platform_specific.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_platform_specific.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_platform_specific.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_platform_specific.c"

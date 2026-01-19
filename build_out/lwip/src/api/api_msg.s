@@ -11,7 +11,7 @@
 	.type	lwip_netconn_do_dns_found, @function
 lwip_netconn_do_dns_found:
 .LFB38:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/api/api_msg.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/api/api_msg.c"
 	.loc 1 2118 1
 	.cfi_startproc
 .LVL0:
@@ -5665,32 +5665,32 @@ netconn_reset:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netbuf.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/api.h"
-	.file 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip.h"
-	.file 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcp.h"
-	.file 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/udp.h"
-	.file 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/raw.h"
-	.file 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/api_msg.h"
-	.file 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/ip4.h"
-	.file 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpbase.h"
-	.file 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/dns.h"
-	.file 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
-	.file 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/igmp.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netbuf.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/api.h"
+	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip.h"
+	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcp.h"
+	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/udp.h"
+	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/raw.h"
+	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/api_msg.h"
+	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/ip4.h"
+	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpbase.h"
+	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/dns.h"
+	.file 26 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+	.file 27 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/igmp.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x34a0
@@ -17261,8 +17261,6 @@ netconn_reset:
 	.string	"recved"
 .LASF400:
 	.string	"memp_malloc"
-.LASF92:
-	.string	"lwip_ip_addr_type"
 .LASF178:
 	.string	"rcv_ann_wnd"
 .LASF145:
@@ -17477,6 +17475,8 @@ netconn_reset:
 	.string	"lwip_netconn_do_join_leave_group"
 .LASF18:
 	.string	"char"
+.LASF415:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/api/api_msg.c"
 .LASF181:
 	.string	"rttest"
 .LASF104:
@@ -17679,8 +17679,8 @@ netconn_reset:
 	.string	"ip_pcb"
 .LASF328:
 	.string	"lwip_netconn_do_dns_found"
-.LASF416:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/lwip"
+.LASF198:
+	.string	"bytes_acked"
 .LASF332:
 	.string	"netconn_drain"
 .LASF197:
@@ -17699,8 +17699,8 @@ netconn_reset:
 	.string	"netif_get_by_index"
 .LASF102:
 	.string	"netmask"
-.LASF415:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/api/api_msg.c"
+.LASF92:
+	.string	"lwip_ip_addr_type"
 .LASF287:
 	.string	"netconn_aborted"
 .LASF364:
@@ -17863,6 +17863,8 @@ netconn_reset:
 	.string	"udp_send_chksum"
 .LASF141:
 	.string	"NETCONN_EVT_RCVMINUS"
+.LASF416:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF304:
 	.string	"out_err"
 .LASF199:
@@ -18011,8 +18013,6 @@ netconn_reset:
 	.string	"lwip_netconn_is_err_msg"
 .LASF235:
 	.string	"time_started"
-.LASF198:
-	.string	"bytes_acked"
 .LASF152:
 	.string	"recvmbox"
 .LASF140:

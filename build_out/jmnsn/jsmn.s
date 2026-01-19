@@ -12,7 +12,7 @@
 	.type	jsmn_init, @function
 jsmn_init:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/jmnsn/jsmn.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/third_party/jmnsn/jsmn.c"
 	.loc 1 20 1
 	.cfi_startproc
 .LVL0:
@@ -1557,10 +1557,10 @@ json_parser:
 	.size	json_parser, .-json_parser
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/jmnsn/jsmn.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/third_party/jmnsn/jsmn.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xad8
@@ -5289,18 +5289,16 @@ json_parser:
 	.string	"short int"
 .LASF46:
 	.string	"jsoneq"
+.LASF57:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/jmnsn"
 .LASF58:
 	.string	"jsmnerr"
 .LASF27:
 	.string	"char"
-.LASF57:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/jmnsn"
 .LASF44:
 	.string	"num_tokens"
 .LASF34:
 	.string	"index"
-.LASF56:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/third_party/jmnsn/jsmn.c"
 .LASF5:
 	.string	"JSMN_PRIMITIVE"
 .LASF3:
@@ -5321,6 +5319,8 @@ json_parser:
 	.string	"memset"
 .LASF31:
 	.string	"num_token"
+.LASF56:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/third_party/jmnsn/jsmn.c"
 .LASF2:
 	.string	"JSMN_OBJECT"
 .LASF48:

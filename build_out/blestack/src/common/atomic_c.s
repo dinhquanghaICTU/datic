@@ -12,7 +12,7 @@
 	.type	atomic_cas, @function
 atomic_cas:
 .LFB26:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
 	.loc 1 48 1
 	.cfi_startproc
 .LVL0:
@@ -772,8 +772,8 @@ atomic_nand:
 	.size	atomic_nand, .-atomic_nand
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x580
@@ -2326,8 +2326,6 @@ atomic_nand:
 	.string	"unsigned int"
 .LASF9:
 	.string	"long long unsigned int"
-.LASF32:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF5:
 	.string	"long long int"
 .LASF0:
@@ -2337,7 +2335,7 @@ atomic_nand:
 .LASF21:
 	.string	"atomic_dec"
 .LASF31:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
 .LASF3:
 	.string	"short int"
 .LASF4:
@@ -2348,4 +2346,6 @@ atomic_nand:
 	.string	"signed char"
 .LASF20:
 	.string	"atomic_get"
+.LASF32:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

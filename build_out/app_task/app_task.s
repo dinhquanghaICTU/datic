@@ -12,7 +12,7 @@
 	.type	app_task_button, @function
 app_task_button:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
 	.loc 1 45 1
 	.cfi_startproc
 .LVL0:
@@ -889,21 +889,21 @@ g_btn_filter_cnt:
 	.byte	1
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_event/app_event.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_config/app_config.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../app_state/app_state.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../third_party/lib_button/app_btn.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/relay/relay.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/mqtt_if/mqtt_if.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/wifi_if/wifi_if.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_wifi.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/led/led.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../app_event/app_event.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../app_config/app_config.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../app_state/app_state.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../../third_party/lib_button/app_btn.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/relay/relay.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/mqtt_if/mqtt_if.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/wifi_if/wifi_if.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_wifi.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/led/led.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xbab
@@ -3206,8 +3206,6 @@ g_btn_filter_cnt:
 	.string	"mqtt_if_is_connected"
 .LASF131:
 	.string	"tskTaskControlBlock"
-.LASF130:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/app_task"
 .LASF53:
 	.string	"idle_level"
 .LASF66:
@@ -3238,8 +3236,6 @@ g_btn_filter_cnt:
 	.string	"APP_BTN_EVT_HOLD"
 .LASF42:
 	.string	"app_state_t"
-.LASF129:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
 .LASF26:
 	.string	"app_event_type_t"
 .LASF99:
@@ -3342,6 +3338,8 @@ g_btn_filter_cnt:
 	.string	"long long int"
 .LASF47:
 	.string	"APP_BTN_EVT_DOUBLE_CLICK"
+.LASF129:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
 .LASF110:
 	.string	"app_state_init"
 .LASF113:
@@ -3404,6 +3402,8 @@ g_btn_filter_cnt:
 	.string	"APP_STATE_BLE_CONFIG"
 .LASF48:
 	.string	"APP_BTN_EVT_TRIPLE_CLICK"
+.LASF130:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/app_task"
 .LASF83:
 	.string	"current_state"
 .LASF38:

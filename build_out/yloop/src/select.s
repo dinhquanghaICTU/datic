@@ -11,7 +11,7 @@
 	.type	vfs_poll_notify, @function
 vfs_poll_notify:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/src/select.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/select.c"
 	.loc 1 44 1
 	.cfi_startproc
 .LVL0:
@@ -674,23 +674,23 @@ aos_ioctl_in_loop:
 	.size	aos_ioctl_in_loop, .-aos_ioctl_in_loop
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1034
@@ -4290,8 +4290,8 @@ aos_ioctl_in_loop:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF155:
-	.string	"check_poll"
+.LASF151:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF141:
 	.string	"xQueueSemaphoreTake"
 .LASF77:
@@ -4316,8 +4316,8 @@ aos_ioctl_in_loop:
 	.string	"opendir"
 .LASF149:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF151:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/yloop"
+.LASF89:
+	.string	"sync"
 .LASF31:
 	.string	"__nlink_t"
 .LASF71:
@@ -4352,6 +4352,8 @@ aos_ioctl_in_loop:
 	.string	"offset"
 .LASF147:
 	.string	"aos_sem_free"
+.LASF155:
+	.string	"check_poll"
 .LASF113:
 	.string	"f_arg"
 .LASF105:
@@ -4432,8 +4434,6 @@ aos_ioctl_in_loop:
 	.string	"uint8_t"
 .LASF109:
 	.string	"type"
-.LASF89:
-	.string	"sync"
 .LASF32:
 	.string	"time_t"
 .LASF91:
@@ -4530,8 +4530,6 @@ aos_ioctl_in_loop:
 	.string	"__size_t"
 .LASF21:
 	.string	"__blksize_t"
-.LASF150:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/src/select.c"
 .LASF24:
 	.string	"__uid_t"
 .LASF58:
@@ -4572,6 +4570,8 @@ aos_ioctl_in_loop:
 	.string	"pre_poll"
 .LASF74:
 	.string	"d_ino"
+.LASF150:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/select.c"
 .LASF54:
 	.string	"st_uid"
 .LASF28:

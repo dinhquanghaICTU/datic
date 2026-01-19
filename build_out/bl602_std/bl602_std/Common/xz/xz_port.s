@@ -12,7 +12,7 @@
 	.type	simple_malloc_init, @function
 simple_malloc_init:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_port.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_port.c"
 	.loc 1 6 1
 	.cfi_startproc
 	.loc 1 7 5
@@ -174,9 +174,9 @@ malloced:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x18b
@@ -764,8 +764,6 @@ malloced:
 	.string	"long long unsigned int"
 .LASF5:
 	.string	"__uint8_t"
-.LASF19:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF12:
 	.string	"uint8_t"
 .LASF1:
@@ -774,12 +772,14 @@ malloced:
 	.string	"char"
 .LASF13:
 	.string	"uint32_t"
-.LASF4:
-	.string	"long int"
+.LASF19:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF20:
 	.string	"simple_free"
 .LASF21:
 	.string	"simple_malloc"
+.LASF4:
+	.string	"long int"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
@@ -788,10 +788,10 @@ malloced:
 	.string	"size"
 .LASF17:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF18:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_port.c"
 .LASF2:
 	.string	"short int"
+.LASF18:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_port.c"
 .LASF14:
 	.string	"mallocBuf"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

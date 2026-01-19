@@ -11,7 +11,7 @@
 	.type	dump_base64_word, @function
 dump_base64_word:
 .LFB12:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/coredump/bl_coredump.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/coredump/bl_coredump.c"
 	.loc 1 264 95
 	.cfi_startproc
 .LVL0:
@@ -808,7 +808,7 @@ bl_coredump_print:
 .LBB248:
 	.loc 1 150 3
  #APP
-# 150 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/coredump/bl_coredump.c" 1
+# 150 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/coredump/bl_coredump.c" 1
 	add a4, x0, sp
 # 0 "" 2
  #NO_APP
@@ -1757,7 +1757,7 @@ bl_coredump_run:
 	.type	_$coredump_binary_id$_, @object
 	.size	_$coredump_binary_id$_, 4
 _$coredump_binary_id$_:
-	.word	1768639980
+	.word	1768800619
 	.section	.rodata.dump_handler_list,"a"
 	.align	2
 	.set	.LANCHOR0,. + 0
@@ -1824,17 +1824,17 @@ mem_hdr:
 	.word	.LC17
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_crc.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_hex.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_base64.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_crc.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_hex.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_base64.h"
 	.file 13 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -7195,6 +7195,8 @@ mem_hdr:
 	.string	"HOSAL_FLOW_CONTROL_CTS_RTS"
 .LASF44:
 	.string	"hosal_uart_mode_t"
+.LASF138:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/coredump"
 .LASF79:
 	.string	"COREDUMP_PARSE"
 .LASF106:
@@ -7255,8 +7257,6 @@ mem_hdr:
 	.string	"addr_base"
 .LASF104:
 	.string	"command"
-.LASF137:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/coredump/bl_coredump.c"
 .LASF122:
 	.string	"cd_putchar"
 .LASF25:
@@ -7293,6 +7293,8 @@ mem_hdr:
 	.string	"stop_bits"
 .LASF91:
 	.string	"length"
+.LASF137:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/coredump/bl_coredump.c"
 .LASF74:
 	.string	"_ld_ram_addr1"
 .LASF76:
@@ -7301,8 +7303,6 @@ mem_hdr:
 	.string	"HOSAL_FLOW_CONTROL_DISABLED"
 .LASF107:
 	.string	"dump_wifi_reg_others"
-.LASF138:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/coredump"
 .LASF67:
 	.string	"dma_tx_chan"
 .LASF3:

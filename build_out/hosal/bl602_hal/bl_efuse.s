@@ -12,7 +12,7 @@
 	.type	bl_efuse_read_mac, @function
 bl_efuse_read_mac:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_efuse.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_efuse.c"
 	.loc 1 7 1
 	.cfi_startproc
 .LVL0:
@@ -446,11 +446,11 @@ bl_efuse_read_mac_opt:
 	.size	bl_efuse_read_mac_opt, .-bl_efuse_read_mac_opt
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_media.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_media.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x54a
@@ -1741,6 +1741,10 @@ bl_efuse_read_mac_opt:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF46:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_efuse.c"
+.LASF31:
+	.string	"bl_efuse_read_mac_factory"
 .LASF45:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF28:
@@ -1775,22 +1779,18 @@ bl_efuse_read_mac_opt:
 	.string	"EF_Ctrl_Program_Direct_R0"
 .LASF8:
 	.string	"short unsigned int"
-.LASF46:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_efuse.c"
 .LASF44:
 	.string	"EF_Ctrl_Read_MAC_Address"
 .LASF33:
 	.string	"GLB_Get_Root_CLK_Sel"
 .LASF13:
 	.string	"HBN_ROOT_CLK_RC32M"
-.LASF31:
-	.string	"bl_efuse_read_mac_factory"
+.LASF47:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF37:
 	.string	"EF_Ctrl_Read_MAC_Address_Opt"
 .LASF19:
 	.string	"hdiv"
-.LASF47:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF22:
 	.string	"bl_efuse_read_mac_opt"
 .LASF39:

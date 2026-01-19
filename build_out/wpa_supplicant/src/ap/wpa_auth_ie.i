@@ -1,107 +1,107 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/wpa_supplicant//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wpa_supplicant//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 1
-# 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/supplicant_opt.h" 1
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 1
+# 22 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/supplicant_opt.h" 1
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
 typedef unsigned char __uint8_t;
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int16_t;
 
 typedef short unsigned int __uint16_t;
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 77 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int32_t;
 
 typedef long unsigned int __uint32_t;
-# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 103 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int64_t;
 
 typedef long long unsigned int __uint64_t;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int_least8_t;
 
 typedef unsigned char __uint_least8_t;
-# 160 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 160 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int_least16_t;
 
 typedef short unsigned int __uint_least16_t;
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int_least32_t;
 
 typedef long unsigned int __uint_least32_t;
-# 200 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 200 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int_least64_t;
 
 typedef long long unsigned int __uint_least64_t;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __intmax_t;
 
 
@@ -121,8 +121,8 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 2 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 2 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -171,7 +171,7 @@ typedef __uint32_t __id_t;
 
 
 typedef unsigned short __ino_t;
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef __uint32_t __mode_t;
 
 
@@ -199,11 +199,11 @@ typedef long __key_t;
 
 
 typedef long _fpos_t;
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef unsigned int __size_t;
-# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 147 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef signed int _ssize_t;
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 158 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef _ssize_t __ssize_t;
 
 
@@ -266,7 +266,7 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 
 
 
@@ -274,12 +274,12 @@ typedef __builtin_va_list __va_list;
 
 
 typedef unsigned long __ULong;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
 typedef int _LOCK_T;
 typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 typedef _LOCK_RECURSIVE_T _flock_t;
 
 
@@ -333,7 +333,7 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 98 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _atexit {
  struct _atexit *_next;
  int _ind;
@@ -341,12 +341,12 @@ struct _atexit {
  void (*_fns[32])(void);
         struct _on_exit_args _on_exit_args;
 };
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 186 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -397,7 +397,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -408,7 +408,7 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
@@ -418,7 +418,7 @@ struct _rand48 {
 
 
 };
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 613 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _reent
 {
   int _errno;
@@ -501,34 +501,34 @@ struct _reent
   __FILE __sf[3];
 
 };
-# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 819 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
 struct __locale_t;
 typedef struct __locale_t *locale_t;
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
@@ -711,7 +711,7 @@ void * _reallocf_r (struct _reent *, void *, size_t);
 int setenv (const char *__string, const char *__value, int __overwrite);
 
 int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 char * __itoa (int, char *, int);
 char * __utoa (unsigned, char *, int);
 
@@ -798,7 +798,7 @@ void __eprintf (const char *, const char *, unsigned int, const char *);
 
 
 void qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
-# 322 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 322 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 extern long double _strtold_r (struct _reent *, const char *restrict, char **restrict);
 
 extern long double strtold (const char *restrict, char **restrict);
@@ -817,27 +817,27 @@ __attribute__((__noreturn__)) void
 
 
 
-# 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 27 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
 
 
@@ -856,8 +856,8 @@ typedef __intptr_t register_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
 typedef __int8_t int8_t ;
 
 
@@ -921,66 +921,66 @@ typedef __intptr_t intptr_t;
 
 
 typedef __uintptr_t uintptr_t;
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
+# 50 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
 typedef unsigned long __sigset_t;
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 typedef __suseconds_t suseconds_t;
 
 
 
 
 typedef __int_least64_t time_t;
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 54 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 struct timeval {
  time_t tv_sec;
  suseconds_t tv_usec;
 };
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
 struct timespec {
  time_t tv_sec;
  long tv_nsec;
 };
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
 struct itimerspec {
  struct timespec it_interval;
  struct timespec it_value;
 };
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
 
 
 
 typedef __sigset_t sigset_t;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef unsigned long __fd_mask;
 
 typedef __fd_mask fd_mask;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef struct fd_set {
  __fd_mask __fds_bits[(((64) + ((((int)sizeof(__fd_mask) * 8)) - 1)) / (((int)sizeof(__fd_mask) * 8)))];
 } fd_set;
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 
 
 int select (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, struct timeval *__timeout)
@@ -992,7 +992,7 @@ int pselect (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds
 
 
 
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
 
@@ -1050,7 +1050,7 @@ typedef __blksize_t blksize_t;
 
 
 typedef unsigned long clock_t;
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 119 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef long daddr_t;
 
 
@@ -1072,7 +1072,7 @@ typedef __id_t id_t;
 
 
 typedef __ino_t ino_t;
-# 157 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 157 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __off_t off_t;
 
 
@@ -1128,22 +1128,22 @@ typedef __timer_t timer_t;
 
 
 typedef __useconds_t useconds_t;
-# 220 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 220 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __int64_t sbintime_t;
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 struct sched_param {
   int sched_priority;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 };
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_t;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef struct {
   int is_initialized;
   void *stackaddr;
@@ -1159,12 +1159,12 @@ typedef struct {
 
   int detachstate;
 } pthread_attr_t;
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 154 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_mutex_t;
 
 typedef struct {
   int is_initialized;
-# 168 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 168 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
   int recursive;
 } pthread_mutexattr_t;
 
@@ -1193,10 +1193,10 @@ typedef struct {
   int is_initialized;
   int init_executed;
 } pthread_once_t;
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
-# 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
+# 225 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
@@ -1214,9 +1214,9 @@ typedef _fpos_t fpos_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
-# 80 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
+# 80 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 char * ctermid (char *);
 
 
@@ -1284,7 +1284,7 @@ int sprintf (char *restrict, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 int remove (const char *);
 int rename (const char *, const char *);
-# 257 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 257 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int fseeko (FILE *, off_t, int);
 off_t ftello (FILE *);
 
@@ -1358,7 +1358,7 @@ int vsiscanf (const char *, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__scanf__, 2, 0)));
 int vsniprintf (char *, size_t, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__printf__, 3, 0)));
-# 339 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 339 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE * fdopen (int, const char *);
 
 int fileno (FILE *);
@@ -1385,7 +1385,7 @@ int ftrylockfile (FILE *);
 void funlockfile (FILE *);
 int putc_unlocked (int, FILE *);
 int putchar_unlocked (int);
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 374 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int dprintf (int, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 
@@ -1399,7 +1399,7 @@ int vdprintf (int, const char *restrict, __gnuc_va_list)
 
 
 int renameat (int, const char *, int, const char *);
-# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 396 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int _asiprintf_r (struct _reent *, char **, const char *, ...)
                __attribute__ ((__format__ (__printf__, 3, 4)));
 char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
@@ -1553,10 +1553,10 @@ size_t fwrite_unlocked (const void *restrict , size_t _size, size_t _n, FILE *);
 
 char * fgets_unlocked (char *restrict, int, FILE *restrict);
 int fputs_unlocked (const char *restrict, FILE *restrict);
-# 577 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 577 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int __srget_r (struct _reent *, FILE *);
 int __swbuf_r (struct _reent *, int, FILE *);
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 601 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE *funopen (const void *__cookie,
   int (*__readfn)(void *__cookie, char *__buf,
     int __n),
@@ -1571,7 +1571,7 @@ FILE *_funopen_r (struct _reent *, const void *__cookie,
      int __n),
   fpos_t (*__seekfn)(void *__cookie, fpos_t __off, int __whence),
   int (*__closefn)(void *__cookie));
-# 624 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 624 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
 typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
      size_t __n);
@@ -1595,7 +1595,7 @@ FILE *fopencookie (void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
 FILE *_fopencookie_r (struct _reent *, void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
-# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 687 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
 
 
@@ -1606,7 +1606,7 @@ static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
  else
   return (__swbuf_r(_ptr, _c, _p));
 }
-# 741 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 741 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline int
 _getchar_unlocked(void)
 {
@@ -1624,23 +1624,23 @@ _putchar_unlocked(int _c)
  _ptr = _impure_ptr;
  return (__sputc_r(_ptr, _c, ((_ptr)->_stdout)));
 }
-# 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 797 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 29 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 
 
 int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
@@ -1672,7 +1672,7 @@ int strcasecmp_l (const char *, const char *, locale_t);
 int strncasecmp_l (const char *, const char *, size_t, locale_t);
 
 
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
@@ -1746,7 +1746,7 @@ char *_strndup_r (struct _reent *, const char *, size_t);
 
 
 char *strerror_r (int, char *, size_t);
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char * _strerror_r (struct _reent *, int, int, int *);
 
 
@@ -1778,12 +1778,12 @@ char *strsignal (int __signo);
 
 
 int strverscmp (const char *, const char *);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
 static __inline unsigned long __libc_detect_null(unsigned long w)
 {
   unsigned long mask = 0x7f7f7f7f;
@@ -1791,20 +1791,20 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
     mask = ((mask << 16) << 16) | mask;
   return ~(((w & mask) + mask) | w | mask);
 }
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 176 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 30 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/signal.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/signal.h" 1 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 1 3
-# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 1 3
+# 42 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
 union sigval {
   int sival_int;
   void *sival_ptr;
@@ -1821,13 +1821,13 @@ struct sigevent {
 
 
 };
-# 68 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
+# 68 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
 typedef struct {
   int si_signo;
   int si_code;
   union sigval si_value;
 } siginfo_t;
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
+# 119 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
 typedef void (*_sig_func_ptr)(int);
 
 struct sigaction
@@ -1836,7 +1836,7 @@ struct sigaction
  sigset_t sa_mask;
  int sa_flags;
 };
-# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
+# 153 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
 typedef struct sigaltstack {
   void *ss_sp;
   int ss_flags;
@@ -1876,9 +1876,9 @@ int sigemptyset (sigset_t *);
 int sigpending (sigset_t *);
 int sigsuspend (const sigset_t *);
 int sigwait (const sigset_t *, int *);
-# 212 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
+# 212 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
 int sigpause (int) __asm__ ("" "__xpg_sigpause");
-# 222 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
+# 222 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/signal.h" 3
 int sigaltstack (const stack_t *restrict, stack_t *restrict);
 
 
@@ -1895,7 +1895,7 @@ int sigwaitinfo (const sigset_t *, siginfo_t *);
 int sigtimedwait (const sigset_t *, siginfo_t *, const struct timespec *);
 
 int sigqueue (pid_t, int, const union sigval);
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/signal.h" 2 3
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/signal.h" 2 3
 
 
 
@@ -1923,10 +1923,10 @@ void psignal (int, const char *);
 
 
 
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/errno.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/errno.h" 1 3
 
 
 
@@ -1935,8 +1935,8 @@ typedef int error_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h" 3
 extern int *__errno (void);
 
 
@@ -1944,11 +1944,11 @@ extern int *__errno (void);
 
 extern const char * const _sys_errlist[];
 extern int _sys_nerr;
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/errno.h" 2 3
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/errno.h" 2 3
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 
 
 int isalnum (int __c);
@@ -1996,27 +1996,27 @@ extern int toupper_l (int __c, locale_t __l);
 
 extern int isascii_l (int __c, locale_t __l);
 extern int toascii_l (int __c, locale_t __l);
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 70 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 extern const char _ctype_[];
-# 114 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 114 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 static __inline const char *
 __locale_ctype_ptr_l(locale_t _l)
 {
  (void)_l;
  return _ctype_;
 }
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 1 3
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 1 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/time.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/time.h" 1 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
 
 
 struct tm
@@ -2086,24 +2086,24 @@ char *strptime_l (const char *restrict, const char *restrict,
 void tzset (void);
 
 void _tzset_r (struct _reent *);
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
 extern long _timezone;
 extern int _daylight;
 
 
 extern char *_tzname[2];
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/unistd.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/unistd.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 2 3
 
 extern char **environ;
 
@@ -2125,7 +2125,7 @@ size_t confstr (int __name, char *__buf, size_t __len);
 
 
 char * crypt (const char *__key, const char *__salt);
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 3
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 3
 int daemon (int nochdir, int noclose);
 
 int dup (int __fildes);
@@ -2342,7 +2342,7 @@ extern int optreset;
 
 
 pid_t vfork (void);
-# 283 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 3
+# 283 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h" 3
 int ftruncate (int __fd, off_t __length);
 
 
@@ -2382,16 +2382,16 @@ ssize_t readlinkat (int __dirfd1, const char *restrict __path,
                             char *restrict __buf, size_t __buflen);
 int symlinkat (const char *, int, const char *);
 int unlinkat (int, const char *, int);
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/unistd.h" 2 3
-# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 1 3
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/unistd.h" 2 3
+# 43 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 1 3
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
 struct timezone {
  int tz_minuteswest;
  int tz_dsttime;
 };
-# 65 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
+# 65 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
 struct bintime {
  time_t sec;
  uint64_t frac;
@@ -2458,7 +2458,7 @@ bintime_shift(struct bintime *_bt, int _exp)
   _bt->sec >>= -_exp;
  }
 }
-# 146 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
+# 146 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
 static __inline int
 sbintime_getsec(sbintime_t _sbt)
 {
@@ -2482,7 +2482,7 @@ sbttobt(sbintime_t _sbt)
  _bt.frac = _sbt << 32;
  return (_bt);
 }
-# 191 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
+# 191 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
 static __inline int64_t
 sbttons(sbintime_t _sbt)
 {
@@ -2552,7 +2552,7 @@ mstosbt(int64_t _ms)
  sb += ((_ms * 9223372036854776ull) + 0x7fffffff) >> 31;
  return (sb);
 }
-# 275 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
+# 275 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
 static __inline void
 bintime2timespec(const struct bintime *_bt, struct timespec *_ts)
 {
@@ -2621,7 +2621,7 @@ tvtosbt(struct timeval _tv)
 
  return (((sbintime_t)_tv.tv_sec << 32) + ustosbt(_tv.tv_usec));
 }
-# 408 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
+# 408 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 3
 struct itimerval {
  struct timeval it_interval;
  struct timeval it_value;
@@ -2660,16 +2660,16 @@ int futimesat (int, const char *, const struct timeval [2]);
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_time.h" 1 3
-# 447 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 2 3
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 1
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h" 1
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_time.h" 1 3
+# 447 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/time.h" 2 3
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/includes.h" 2
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 1
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h" 1
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 typedef time_t os_time_t;
 
 
@@ -2701,7 +2701,7 @@ struct os_tm {
 
 
 int os_get_time(struct os_time *t);
-# 86 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 86 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 int os_mktime(int year, int month, int day, int hour, int min, int sec,
        os_time_t *t);
 
@@ -2733,27 +2733,27 @@ int os_get_random(unsigned char *buf, size_t len);
 
 
 unsigned long os_random(void);
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 char * os_rel2abs_path(const char *rel_path);
-# 141 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 141 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 int os_program_init(void);
-# 151 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 151 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 void os_program_deinit(void);
-# 163 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 163 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 int os_setenv(const char *name, const char *value, int overwrite);
-# 173 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 173 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 int os_unsetenv(const char *name);
-# 185 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 185 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 char * os_readfile(const char *name, size_t *len);
-# 203 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 203 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 void *wpa_supplicant_malloc(size_t size);
 void *wpa_supplicant_realloc(void *ptr, size_t size);
 void *wpa_supplicant_zalloc(size_t nmemb, size_t size);
 void wpa_supplicant_free(void *ptr);
 void wpa_supplicant_bzero(void *s, size_t n);
-# 238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 238 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 char * ets_strdup(const char *s);
-# 304 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 304 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
 static inline int os_snprintf_error(size_t size, int res)
 {
         return res < 0 || (unsigned int) res >= size;
@@ -2763,17 +2763,17 @@ static inline void * os_realloc_array(void *ptr, size_t nmemb, size_t size)
 {
  if (size && nmemb > (~(size_t) 0) / size)
   return 
-# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h" 3 4
+# 312 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h" 3 4
         ((void *)0)
-# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+# 312 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
             ;
  return wpa_supplicant_realloc((ptr), (nmemb * size));
 }
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 1
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 2
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 1
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 2
 
 
 
@@ -2807,14 +2807,14 @@ static inline void dl_list_del(struct dl_list *item)
  item->next->prev = item->prev;
  item->prev->next = item->next;
  item->next = 
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 3 4
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 3 4
              ((void *)0)
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h"
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h"
                  ;
  item->prev = 
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 3 4
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h" 3 4
              ((void *)0)
-# 52 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h"
+# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/list.h"
                  ;
 }
 
@@ -2831,15 +2831,15 @@ static inline unsigned int dl_list_len(struct dl_list *list)
   count++;
  return count;
 }
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -2899,10 +2899,10 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
 
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
 typedef uint64_t u64;
 typedef uint32_t u32;
 typedef uint16_t u16;
@@ -2911,7 +2911,7 @@ typedef int64_t s64;
 typedef int32_t s32;
 typedef int16_t s16;
 typedef int8_t s8;
-# 118 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 118 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
 struct wpa_ssid_value {
  u8 ssid[32];
  size_t ssid_len;
@@ -3018,14 +3018,14 @@ static inline void WPA_PUT_LE64(u8 *a, u64 val)
  a[1] = val >> 8;
  a[0] = val & 0xff;
 }
-# 347 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 347 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
 typedef u16 be16;
 typedef u16 le16;
 typedef u32 be32;
 typedef u32 le32;
 typedef u64 be64;
 typedef u64 le64;
-# 370 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 370 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
 int hwaddr_aton(const char *txt, u8 *addr);
 int hwaddr_masked_aton(const char *txt, u8 *addr, u8 *mask, u8 maskable);
 int hwaddr_compact_aton(const char *txt, u8 *addr);
@@ -3046,7 +3046,7 @@ u8 rssi_to_rcpi(int rssi);
 int os_time_expired(struct os_time *now,
   struct os_time *ts,
   os_time_t timeout_secs);
-# 399 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 399 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
 void printf_encode(char *txt, size_t maxlen, const u8 *data, size_t len);
 size_t printf_decode(u8 *buf, size_t maxlen, const char *str);
 
@@ -3077,10 +3077,10 @@ static inline int is_multicast_ether_addr(const u8 *a)
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h" 1
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpabuf.h" 1
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpabuf.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h" 1
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpabuf.h" 1
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpabuf.h"
 struct wpabuf {
  size_t size;
  size_t used;
@@ -3225,8 +3225,8 @@ static inline void wpabuf_put_str(struct wpabuf *dst, const char *str)
 {
  wpabuf_put_data(dst, str, strlen(str));
 }
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h" 2
-# 33 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h" 2
+# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
 enum { MSG_MSGDUMP, MSG_DEBUG, MSG_INFO, MSG_WARNING, MSG_ERROR };
 
 
@@ -3235,11 +3235,11 @@ enum { MSG_MSGDUMP, MSG_DEBUG, MSG_INFO, MSG_WARNING, MSG_ERROR };
 
 int wpa_debug_open_file(const char *path);
 void wpa_debug_close_file(void);
-# 49 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
+# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
 void wpa_debug_print_timestamp(void);
-# 178 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
+# 178 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
 void wpa_msg(void *ctx, int level, const char *fmt, ...) __attribute__ ((format (printf, (3), (4))));
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/include/utils/wpa_debug.h"
 void wpa_msg_ctrl(void *ctx, int level, const char *fmt, ...)
 __attribute__ ((format (printf, (3), (4))));
 
@@ -3254,7 +3254,7 @@ int eloop_cancel_timeout(eloop_timeout_handler handler,
 int eloop_register_timeout(unsigned int secs, unsigned int usecs,
       eloop_timeout_handler handler,
       void *eloop_data, void *user_data);
-# 430 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
+# 430 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h" 2
 
 
 struct wpa_freq_range_list {
@@ -3273,11 +3273,11 @@ void bin_clear_free(void *bin, size_t len);
 void str_clear_free(char *str);
 char * get_param(const char *cmd, const char *param);
 void * os_memdup(const void *src, size_t len);
-# 458 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
+# 458 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/utils/common.h"
 void * __hide_aliasing_typecast(void *foo);
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h" 1
-# 291 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h" 1
+# 291 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct ieee80211_hdr {
  le16 frame_control;
  le16 duration_id;
@@ -3288,7 +3288,7 @@ struct ieee80211_hdr {
 
 
 } __attribute__ ((packed));
-# 330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 330 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 enum measure_type {
  MEASURE_TYPE_RPI_HIST = 2,
  MEASURE_TYPE_BEACON = 5,
@@ -3313,7 +3313,7 @@ enum lci_req_subelem {
  LCI_REQ_SUBELEM_TARGET_MAC_ADDR = 3,
  LCI_REQ_SUBELEM_MAX_AGE = 4,
 };
-# 388 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 388 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct ieee80211_ht_capabilities {
  le16 ht_capabilities_info;
  u8 a_mpdu_params;
@@ -3333,7 +3333,7 @@ struct ieee80211_ht_operation {
  le16 param;
  u8 basic_mcs_set[16];
 } __attribute__ ((packed));
-# 543 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 543 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct wmm_information_element {
 
 
@@ -3344,7 +3344,7 @@ struct wmm_information_element {
  u8 qos_info;
 
 } __attribute__ ((packed));
-# 565 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 565 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct wmm_ac_parameter {
  u8 aci_aifsn;
  u8 cw;
@@ -3448,7 +3448,7 @@ enum wnm_action {
  WNM_NOTIFICATION_REQ = 26,
  WNM_NOTIFICATION_RESP = 27
 };
-# 677 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 677 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 enum bss_trans_mgmt_status_code {
  WNM_BSS_TM_ACCEPT = 0,
  WNM_BSS_TM_REJECT_UNSPECIFIED = 1,
@@ -3460,7 +3460,7 @@ enum bss_trans_mgmt_status_code {
  WNM_BSS_TM_REJECT_NO_SUITABLE_CANDIDATES = 7,
  WNM_BSS_TM_REJECT_LEAVING_ESS = 8
 };
-# 703 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 703 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct tpc_report {
  u8 eid;
  u8 len;
@@ -3498,7 +3498,7 @@ struct rrm_measurement_request_element {
  u8 type;
  u8 variable[0];
 } __attribute__ ((packed));
-# 749 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 749 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct rrm_measurement_beacon_request {
  u8 oper_class;
  u8 channel;
@@ -3518,7 +3518,7 @@ enum beacon_report_mode {
  BEACON_REPORT_MODE_ACTIVE = 1,
  BEACON_REPORT_MODE_TABLE = 2,
 };
-# 783 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 783 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 enum beacon_report_detail {
 
  BEACON_REPORT_DETAIL_NONE = 0,
@@ -3539,7 +3539,7 @@ struct rrm_measurement_report_element {
  u8 type;
  u8 variable[0];
 } __attribute__ ((packed));
-# 811 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 811 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 struct rrm_measurement_beacon_report {
  u8 op_class;
  u8 channel;
@@ -3554,7 +3554,7 @@ struct rrm_measurement_beacon_report {
  le32 parent_tsf;
  u8 variable[0];
 } __attribute__ ((packed));
-# 842 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
+# 842 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/ieee802_11_defs.h"
 enum phy_type {
  PHY_TYPE_UNSPECIFIED = 0,
  PHY_TYPE_FHSS = 1,
@@ -3567,13 +3567,13 @@ enum phy_type {
  PHY_TYPE_DMG = 8,
  PHY_TYPE_VHT = 9,
 };
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 1
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h" 1
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 1
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h" 1
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
 typedef enum { FALSE = 0, TRUE = 1 } Boolean;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
 static inline int wpa_key_mgmt_wpa_ieee8021x(int akm)
 {
  return !!(akm & ((1U << (0)) |
@@ -3643,7 +3643,7 @@ static inline int wpa_key_mgmt_cckm(int akm)
 {
  return akm == (1U << (14));
 }
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
 enum wifi_key_alg {
  ALG_WEP,
  ALG_TKIP,
@@ -3677,7 +3677,7 @@ enum wpa_key_mgmt {
  KEY_MGMT_PSK_SHA256,
  KEY_MGMT_WPS
 };
-# 175 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 175 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
 enum wpa_states {
 
 
@@ -3687,9 +3687,9 @@ enum wpa_states {
 
 
  WPA_DISCONNECTED,
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_INTERFACE_DISABLED,
-# 202 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 202 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_INACTIVE,
 
 
@@ -3699,26 +3699,26 @@ enum wpa_states {
 
 
  WPA_SCANNING,
-# 220 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 220 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_AUTHENTICATING,
-# 231 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 231 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_ASSOCIATING,
-# 241 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 241 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_ASSOCIATED,
-# 251 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 251 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_FIRST_HALF_4WAY_HANDSHAKE,
 
  WPA_LAST_HALF_4WAY_HANDSHAKE,
-# 263 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 263 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_GROUP_HANDSHAKE,
-# 281 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 281 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
  WPA_COMPLETED,
 
  WPA_MIC_FAILURE,
 
  WPA_TKIP_COUNTERMEASURES
 };
-# 299 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
+# 299 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/defs.h"
 enum mfp_options {
  NO_MGMT_FRAME_PROTECTION = 0,
  MGMT_FRAME_PROTECTION_OPTIONAL = 1,
@@ -3772,16 +3772,16 @@ enum set_band {
  WPA_SETBAND_5G,
  WPA_SETBAND_2G
 };
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h" 1
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h"
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h" 1
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h"
 struct ieee802_1x_hdr {
  u8 version;
  u8 type;
  be16 length;
 
 } __attribute__ ((packed));
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h"
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h"
 enum { IEEE802_1X_TYPE_EAP_PACKET = 0,
        IEEE802_1X_TYPE_EAPOL_START = 1,
        IEEE802_1X_TYPE_EAPOL_LOGOFF = 2,
@@ -3791,7 +3791,7 @@ enum { IEEE802_1X_TYPE_EAP_PACKET = 0,
 
 enum { EAPOL_KEY_TYPE_RC4 = 1, EAPOL_KEY_TYPE_RSN = 2,
        EAPOL_KEY_TYPE_WPA = 254 };
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h"
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/eapol_common.h"
 struct ieee802_1x_eapol_key {
  u8 type;
 
@@ -3815,18 +3815,18 @@ struct ieee802_1x_eapol_key {
 
 
 } __attribute__ ((packed));
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 1
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 1
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 1
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 1
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 2
 
 
 
@@ -3839,14 +3839,14 @@ typedef struct bl_wifi_timer {
 
 typedef struct {
     
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         capable;
     
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         required;
 } wifi_pmf_config_t;
 
@@ -3893,7 +3893,7 @@ typedef struct {
     const uint8_t *pmkid;
     int mgmt_group_cipher;
 } wifi_wpa_ie_t;
-# 92 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 92 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
 typedef enum {
     NONE_AUTH = 0x01,
     WPA_AUTH_UNSPEC = 0x02,
@@ -3927,7 +3927,7 @@ struct wifi_ssid {
     int len;
     uint8_t ssid[32];
 };
-# 137 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 137 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
 typedef enum {
     SEC_PROTO_NONE,
     SEC_PROTO_WEP_STATIC,
@@ -3958,9 +3958,9 @@ typedef struct {
     uint8_t group_cipher;
     char passphrase[64 + 1];
     
-# 166 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 166 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 166 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 166 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         pmf_required;
     uint8_t mgmt_group_cipher;
     uint8_t quick_conn;
@@ -3977,14 +3977,14 @@ typedef struct {
 
 struct wpa_funcs {
     
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wpa_sta_init)(void);
     
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wpa_sta_deinit)(void);
     void (*wpa_sta_config)(wifi_connect_parm_t *bssid);
     void (*wpa_sta_connect)(wifi_connect_parm_t *bssid);
@@ -3992,25 +3992,25 @@ struct wpa_funcs {
     int (*wpa_sta_rx_eapol)(uint8_t *src_addr, uint8_t *buf, uint32_t len);
     void *(*wpa_ap_init)(wifi_ap_parm_t *parm);
     
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 188 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 188 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 188 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wpa_ap_deinit)(void *data);
     
-# 189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 189 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 189 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 189 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wpa_ap_join)(void **sm, uint8_t *mac, uint8_t *wpa_ie, uint8_t wpa_ie_len);
     void (*wpa_ap_sta_associated)(void *wpa_sm, uint8_t sta_idx);
     
-# 191 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 191 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 191 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 191 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wpa_ap_remove)(void *sm);
     
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 192 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 192 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wpa_ap_rx_eapol)(void *hapd_data, void *sm, uint8_t *data, size_t data_len);
     int (*wpa_parse_wpa_ie)(const uint8_t *wpa_ie, size_t wpa_ie_len, wifi_wpa_ie_t *data);
     void (*wpa_reg_diag_tlv_cb)(void *tlv_pack_cb);
@@ -4034,9 +4034,9 @@ struct wps_scan_ie {
 
 struct wps_funcs {
     
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
    _Bool 
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
         (*wps_parse_scan_result)(struct wps_scan_ie *scan);
     int (*wps_sm_rx_eapol)(uint8_t *src_addr, uint8_t *buf, uint32_t len);
     int (*wps_config)(uint8_t vif_idx, uint8_t sta_idx);
@@ -4056,58 +4056,58 @@ typedef void(*wifi_tx_cb_t)(void *);
 
 int bl_wifi_ap_deauth_internal(uint8_t vif_idx, uint8_t sta_idx, uint32_t reason);
 
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 232 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
 _Bool 
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 232 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
     bl_wifi_auth_done_internal(uint8_t sta_idx, uint16_t reason_code);
 void *bl_wifi_get_hostap_private_internal(void);
 void bl_wifi_timer_arm(bl_wifi_timer_t *ptimer, uint32_t time_ms, 
-# 234 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 234 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
                                                                  _Bool 
-# 234 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 234 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
                                                                       repeat_flag);
 void bl_wifi_timer_disarm(bl_wifi_timer_t *ptimer);
 void bl_wifi_timer_done(bl_wifi_timer_t *ptimer);
 void bl_wifi_timer_setfn(bl_wifi_timer_t *ptimer, bl_wifi_timer_func_t *pfunction, void *parg);
 int bl_wifi_set_appie_internal(uint8_t vif_idx, wifi_appie_t type, uint8_t *ie, uint16_t len, 
-# 238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 238 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
                                                                                              _Bool 
-# 238 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 238 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
                                                                                                   sta);
 int bl_wifi_unset_appie_internal(uint8_t vif_idx, wifi_appie_t type);
 
-# 240 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 240 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
 _Bool 
-# 240 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 240 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
     bl_wifi_wpa_ptk_init_done_internal(uint8_t sta_idx);
 int bl_wifi_register_wpa_cb_internal(const struct wpa_funcs *cb);
 int bl_wifi_unregister_wpa_cb_internal(void);
 
-# 243 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 243 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
 _Bool 
-# 243 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 243 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
     bl_wifi_skip_supp_pmkcaching(void);
 int bl_wifi_sta_update_ap_info_internal(void);
 uint8_t bl_wifi_sta_set_reset_param_internal(uint8_t reset_flag);
 
-# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 246 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
 _Bool 
-# 246 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 246 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
     bl_wifi_sta_is_ap_notify_completed_rsne_internal(void);
 
-# 247 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 247 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
 _Bool 
-# 247 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 247 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
     bl_wifi_sta_is_running_internal(void);
 int bl_wifi_set_ap_key_internal(uint8_t vif_idx, uint8_t sta_idx, wpa_alg_t alg, int key_idx, uint8_t *key, size_t key_len, 
-# 248 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 248 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
                                                                                                                            _Bool 
-# 248 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 248 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
                                                                                                                                 pairwise);
 int bl_wifi_set_sta_key_internal(uint8_t vif_idx, uint8_t sta_idx, wpa_alg_t alg, int key_idx, int set_tx, uint8_t *seq, size_t seq_len, uint8_t *key, size_t key_len, 
-# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
+# 249 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h" 3 4
                                                                                                                                                                       _Bool 
-# 249 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
+# 249 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/supplicant_api.h"
                                                                                                                                                                            pairwise);
 
 int bl_wifi_set_igtk_internal(uint8_t vif_idx, uint8_t sta_idx, uint16_t key_idx, const uint8_t *pn, const uint8_t *key);
@@ -4116,8 +4116,8 @@ int bl_wifi_get_assoc_bssid_internal(uint8_t vif_idx, uint8_t *bssid);
 int bl_wifi_set_wps_cb_internal(const struct wps_funcs *wps_cb);
 wps_status_t bl_wifi_get_wps_status_internal(void);
 void bl_wifi_set_wps_status_internal(wps_status_t status);
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 2
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 2
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
 struct wpa_eapol_key {
  u8 type;
 
@@ -4156,20 +4156,20 @@ struct wpa_gtk_data {
  u8 gtk[32];
  u8 gtk_len;
 };
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
 struct wpa_ie_hdr {
  u8 elem_id;
  u8 len;
  u8 oui[4];
  u8 version[2];
 } __attribute__ ((packed));
-# 241 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 241 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
 struct rsn_ie_hdr {
  u8 elem_id;
  u8 len;
  u8 version[2];
 } __attribute__ ((packed));
-# 264 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 264 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
 struct rsn_error_kde {
  be16 mui;
  be16 error_type;
@@ -4181,7 +4181,7 @@ struct wpa_igtk_kde {
  u8 pn[6];
  u8 igtk[16];
 } __attribute__ ((packed));
-# 307 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 307 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
 struct wpa_ie_data {
  int proto;
  int pairwise_cipher;
@@ -4203,22 +4203,22 @@ struct wpa_eapol_ie_parse {
  size_t gtk_len;
  const u8 *mac_addr;
  size_t mac_addr_len;
-# 339 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 339 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
  const u8 *igtk;
  size_t igtk_len;
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
 };
 
 struct rsn_sppamsdu_sup {
     
-# 353 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 3 4
+# 353 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 3 4
    _Bool 
-# 353 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 353 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
         capable;
     
-# 354 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 3 4
+# 354 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 3 4
    _Bool 
-# 354 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
+# 354 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h"
         require;
 };
 
@@ -4255,8 +4255,8 @@ int wpa_parse_wpa_ie_wpa(const u8 *wpa_ie, size_t wpa_ie_len,
            struct wpa_ie_data *data);
 
 int rsn_cipher_put_suites(u8 *pos, int ciphers);
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 2
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h" 2
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
 struct ft_rrb_frame {
  u8 frame_type;
  u8 packet_type;
@@ -4267,7 +4267,7 @@ struct ft_rrb_frame {
 
 
 } __attribute__ ((packed));
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
 struct ft_r0kh_r1kh_pull_frame {
  u8 frame_type;
  u8 packet_type;
@@ -4316,7 +4316,7 @@ struct ft_r0kh_r1kh_push_frame {
  u8 pad[6];
  u8 key_wrap_extra[8];
 } __attribute__ ((packed));
-# 104 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
+# 104 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
 struct wpa_authenticator;
 struct wpa_state_machine;
 struct rsn_pmksa_cache_entry;
@@ -4362,7 +4362,7 @@ struct wpa_auth_config {
  int tx_status;
 
  enum mfp_options ieee80211w;
-# 165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
+# 165 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
  int disable_gtk;
  int ap_mlme;
  struct rsn_sppamsdu_sup spp_sup;
@@ -4472,23 +4472,23 @@ int wpa_auth_pmksa_add_preauth(struct wpa_authenticator *wpa_auth,
 int wpa_auth_sta_set_vlan(struct wpa_state_machine *sm, int vlan_id);
 void wpa_auth_eapol_key_tx_status(struct wpa_authenticator *wpa_auth,
       struct wpa_state_machine *sm, int ack);
-# 293 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
+# 293 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth.h"
 void wpa_wnmsleep_rekey_gtk(struct wpa_state_machine *sm);
 void wpa_set_wnmsleep(struct wpa_state_machine *sm, int flag);
 int wpa_wnmsleep_gtk_subelem(struct wpa_state_machine *sm, u8 *pos);
 int wpa_wnmsleep_igtk_subelem(struct wpa_state_machine *sm, u8 *pos);
 
 int wpa_auth_uses_sae(struct wpa_state_machine *sm);
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.h" 1
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.h"
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.h" 1
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.h"
 u8 * wpa_add_kde(u8 *pos, u32 kde, const u8 *data, size_t data_len,
    const u8 *data2, size_t data2_len);
 int wpa_auth_gen_wpa_ie(struct wpa_authenticator *wpa_auth);
 int wpa_auth_gen_wpa_ie_rsn_ccmp_only(struct wpa_authenticator *wpa_auth);
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_i.h" 1
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_i.h"
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_i.h" 1
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_i.h"
 struct wpa_group;
 
 struct wpa_stsl_negotiation {
@@ -4579,7 +4579,7 @@ struct wpa_state_machine {
  } wpa;
  int pairwise;
  int wpa_key_mgmt;
-# 118 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_i.h"
+# 118 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_i.h"
  int pending_1_of_4_timeout;
  u32 index;
  bl_wifi_timer_t resend_eapol;
@@ -4645,9 +4645,9 @@ int wpa_auth_for_each_sta(struct wpa_authenticator *wpa_auth,
 int wpa_auth_for_each_auth(struct wpa_authenticator *wpa_auth,
       int (*cb)(struct wpa_authenticator *a, void *ctx),
       void *cb_ctx);
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 1
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/common/wpa_common.h" 1
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 2
 
 
 
@@ -4745,11 +4745,11 @@ int wpa_write_rsn_ie(struct wpa_auth_config *conf, u8 *buf, size_t len,
     num_suites = 0;
     count = pos;
     pos += 2;
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     res = rsn_cipher_put_suites(pos, conf->rsn_pairwise);
     num_suites += res;
     pos += res * 4;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     if (num_suites == 0) {
         do {} while(0)
                                   ;
@@ -4760,7 +4760,7 @@ int wpa_write_rsn_ie(struct wpa_auth_config *conf, u8 *buf, size_t len,
     num_suites = 0;
     count = pos;
     pos += 2;
-# 153 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 153 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     if (conf->wpa_key_mgmt & (1U << (0))) {
         WPA_PUT_BE32((u8 *) (pos), (((((u32) (0x00)) << 24) | (((u32) (0x0f)) << 16) | (((u32) (0xac)) << 8) | (u32) (1))));
         pos += 4;
@@ -4771,7 +4771,7 @@ int wpa_write_rsn_ie(struct wpa_auth_config *conf, u8 *buf, size_t len,
         pos += 4;
         num_suites++;
     }
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 176 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     if (conf->wpa_key_mgmt & (1U << (7))) {
         WPA_PUT_BE32((u8 *) (pos), (((((u32) (0x00)) << 24) | (((u32) (0x0f)) << 16) | (((u32) (0xac)) << 8) | (u32) (5))));
         pos += 4;
@@ -4782,7 +4782,7 @@ int wpa_write_rsn_ie(struct wpa_auth_config *conf, u8 *buf, size_t len,
         pos += 4;
         num_suites++;
     }
-# 208 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 208 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     if (num_suites == 0) {
         do {} while(0)
                                   ;
@@ -4838,9 +4838,9 @@ int wpa_write_rsn_ie(struct wpa_auth_config *conf, u8 *buf, size_t len,
         if (pos + 2 + 4 > buf + len)
             return -1;
         if (pmkid == 
-# 262 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 262 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                     ((void *)0)
-# 262 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 262 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                         ) {
 
             WPA_PUT_LE16(pos, 0);
@@ -4851,7 +4851,7 @@ int wpa_write_rsn_ie(struct wpa_auth_config *conf, u8 *buf, size_t len,
         WPA_PUT_BE32((u8 *) (pos), (((((u32) (0x00)) << 24) | (((u32) (0x0f)) << 16) | (((u32) (0xac)) << 8) | (u32) (6))));
         pos += 4;
     }
-# 297 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 297 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     hdr->len = (pos - buf) - 2;
 
     return pos - buf;
@@ -4868,15 +4868,15 @@ int wpa_auth_gen_wpa_ie(struct wpa_authenticator *wpa_auth)
     if (wpa_auth->conf.wpa & (1U << (1))) {
         res = wpa_write_rsn_ie(&wpa_auth->conf,
                        pos, buf + sizeof(buf) - pos, 
-# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 312 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                                                     ((void *)0)
-# 312 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 312 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                                                         );
         if (res < 0)
             return res;
         pos += res;
     }
-# 326 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 326 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     if (wpa_auth->conf.wpa & (1U << (0))) {
         res = wpa_write_wpa_ie(&wpa_auth->conf,
                        pos, buf + sizeof(buf) - pos);
@@ -4888,9 +4888,9 @@ int wpa_auth_gen_wpa_ie(struct wpa_authenticator *wpa_auth)
     wpa_supplicant_free((wpa_auth->wpa_ie));
     wpa_auth->wpa_ie = wpa_supplicant_malloc((pos - buf));
     if (wpa_auth->wpa_ie == 
-# 336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 336 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                            ((void *)0)
-# 336 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 336 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                                )
         return -1;
     memcpy(wpa_auth->wpa_ie, buf, pos - buf);
@@ -4937,20 +4937,20 @@ int wpa_validate_wpa_ie(struct wpa_authenticator *wpa_auth,
     u32 selector;
 
     if (wpa_auth == 
-# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                    ((void *)0) 
-# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                         || sm == 
-# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                                  ((void *)0)
-# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                                      )
         return WPA_NOT_ENABLED;
 
     if (wpa_ie == 
-# 384 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 384 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                  ((void *)0) 
-# 384 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 384 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                       || wpa_ie_len < 1)
         return WPA_INVALID_IE;
 
@@ -5122,7 +5122,7 @@ int wpa_validate_wpa_ie(struct wpa_authenticator *wpa_auth,
         sm->mgmt_frame_prot = 0;
     else
         sm->mgmt_frame_prot = 1;
-# 573 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 573 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
     if (ciphers & (1U << (3)))
         sm->pairwise = (1U << (3));
     else if (ciphers & (1U << (6)))
@@ -5137,16 +5137,16 @@ int wpa_validate_wpa_ie(struct wpa_authenticator *wpa_auth,
         sm->wpa = WPA_VERSION_WPA;
 
     if (sm->wpa_ie == 
-# 586 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 586 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                      ((void *)0) 
-# 586 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 586 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                           || sm->wpa_ie_len < wpa_ie_len) {
         wpa_supplicant_free((sm->wpa_ie));
         sm->wpa_ie = wpa_supplicant_malloc((wpa_ie_len));
         if (sm->wpa_ie == 
-# 589 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 589 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                          ((void *)0)
-# 589 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 589 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                              )
             return WPA_ALLOC_FAIL;
     }
@@ -5165,9 +5165,9 @@ int wpa_validate_wpa_ie_rsn_ccmp_only(struct wpa_authenticator *wpa_auth,
     u32 selector;
 
     if (wpa_ie == 
-# 606 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 606 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                  ((void *)0) 
-# 606 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 606 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                       || wpa_ie_len < 1)
         return WPA_INVALID_IE;
 
@@ -5226,16 +5226,16 @@ int wpa_validate_wpa_ie_rsn_ccmp_only(struct wpa_authenticator *wpa_auth,
     sm->wpa = WPA_VERSION_WPA2;
 
     if (sm->wpa_ie == 
-# 663 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 663 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                      ((void *)0) 
-# 663 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 663 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                           || sm->wpa_ie_len < wpa_ie_len) {
         wpa_supplicant_free((sm->wpa_ie));
         sm->wpa_ie = wpa_supplicant_malloc((wpa_ie_len));
         if (sm->wpa_ie == 
-# 666 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
+# 666 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c" 3 4
                          ((void *)0)
-# 666 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
+# 666 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/src/ap/wpa_auth_ie.c"
                              )
             return WPA_ALLOC_FAIL;
     }

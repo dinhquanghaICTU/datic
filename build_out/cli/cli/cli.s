@@ -11,7 +11,7 @@
 	.type	cli_command_get, @function
 cli_command_get:
 .LFB26:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/cli.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/cli.c"
 	.loc 1 63 1
 	.cfi_startproc
 .LVL0:
@@ -6041,34 +6041,34 @@ built_ins:
 	.word	cat_cmd
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/fs/vfs_romfs.h"
-	.file 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
-	.file 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_default_fcntl.h"
-	.file 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h"
-	.file 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_hexdump.h"
-	.file 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
-	.file 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/fs/vfs_romfs.h"
+	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
+	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_default_fcntl.h"
+	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/unistd.h"
+	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_hexdump.h"
+	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 26 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 27 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
+	.file 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 29 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x3593
@@ -18048,8 +18048,8 @@ built_ins:
 	.string	"type"
 .LASF47:
 	.string	"stat"
-.LASF146:
-	.string	"aos_dirent_t"
+.LASF348:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/cli.c"
 .LASF186:
 	.string	"f_arg"
 .LASF164:
@@ -18142,6 +18142,8 @@ built_ins:
 	.string	"aos_opendir"
 .LASF5:
 	.string	"unsigned char"
+.LASF349:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/cli"
 .LASF332:
 	.string	"aos_now_ms"
 .LASF261:
@@ -18248,8 +18250,6 @@ built_ins:
 	.string	"hosal_uart_callback_t"
 .LASF279:
 	.string	"index"
-.LASF348:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cli/cli/cli.c"
 .LASF113:
 	.string	"data_width"
 .LASF169:
@@ -18300,8 +18300,8 @@ built_ins:
 	.string	"done"
 .LASF352:
 	.string	"pollfd"
-.LASF231:
-	.string	"argv"
+.LASF146:
+	.string	"aos_dirent_t"
 .LASF15:
 	.string	"__blkcnt_t"
 .LASF257:
@@ -18336,8 +18336,6 @@ built_ins:
 	.string	"proc_onecmd"
 .LASF162:
 	.string	"sync"
-.LASF349:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/cli"
 .LASF339:
 	.string	"bl_chip_memory_ram"
 .LASF203:
@@ -18516,6 +18514,8 @@ built_ins:
 	.string	"hosal_uart_receive"
 .LASF324:
 	.string	"aos_stat"
+.LASF231:
+	.string	"argv"
 .LASF327:
 	.string	"memcmp"
 .LASF295:

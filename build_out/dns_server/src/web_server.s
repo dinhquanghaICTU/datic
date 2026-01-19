@@ -16,7 +16,7 @@
 	.type	web_server2, @function
 web_server2:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/dns_server/src/web_server.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/dns_server/src/web_server.c"
 	.loc 1 74 1
 	.cfi_startproc
 .LVL0:
@@ -236,19 +236,19 @@ http_index_hml:
 	.string	"=1\">\n  <style type=\"text/css\">\n    html, body, iframe { margin: 0; padding: 0; height: 100%; }\n    iframe { display: block; width: 100%; border: none; }\n  </style>\n<title>HELLO BL602</title>\n</head>\n<body>\n<h1>Hello World, from BL602!</h1>\n</body>\n</html>\n"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netbuf.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/api.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netbuf.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/api.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x890
@@ -2097,8 +2097,6 @@ http_index_hml:
 	.string	"netbuf_delete"
 .LASF120:
 	.string	"newconn"
-.LASF136:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/dns_server"
 .LASF97:
 	.string	"type"
 .LASF125:
@@ -2241,6 +2239,8 @@ http_index_hml:
 	.string	"ERR_ARG"
 .LASF33:
 	.string	"ERR_CONN"
+.LASF136:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/dns_server"
 .LASF70:
 	.string	"LWIP_NETIF_CLIENT_DATA_INDEX_IGMP"
 .LASF4:
@@ -2297,8 +2297,8 @@ http_index_hml:
 	.string	"MEMP_PBUF_POOL"
 .LASF132:
 	.string	"netconn_accept"
-.LASF139:
-	.string	"web_http_server"
+.LASF135:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/dns_server/src/web_server.c"
 .LASF37:
 	.string	"ERR_CLSD"
 .LASF26:
@@ -2319,8 +2319,8 @@ http_index_hml:
 	.string	"lwip_internal_netif_client_data_index"
 .LASF131:
 	.string	"netconn_listen_with_backlog"
-.LASF135:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/dns_server/src/web_server.c"
+.LASF139:
+	.string	"web_http_server"
 .LASF8:
 	.string	"uint8_t"
 .LASF51:

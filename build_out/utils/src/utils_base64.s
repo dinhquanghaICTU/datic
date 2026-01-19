@@ -25,7 +25,7 @@
 	.type	utils_base64encode, @function
 utils_base64encode:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_base64.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_base64.c"
 	.loc 1 42 1
 	.cfi_startproc
 .LVL0:
@@ -963,11 +963,11 @@ signal.0:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_base64.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_base64.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x5bf
@@ -3211,18 +3211,20 @@ signal.0:
 	.string	"octet_c"
 .LASF40:
 	.string	"signal"
-.LASF47:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF49:
 	.string	"utils_base64_encode_stream"
 .LASF2:
 	.string	"int8_t"
+.LASF3:
+	.string	"int32_t"
 .LASF20:
 	.string	"data"
 .LASF35:
 	.string	"octet_a"
 .LASF43:
 	.string	"bl_printk"
+.LASF47:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF10:
 	.string	"long unsigned int"
 .LASF8:
@@ -3255,8 +3257,6 @@ signal.0:
 	.string	"unsigned int"
 .LASF22:
 	.string	"outputLenMax"
-.LASF46:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_base64.c"
 .LASF11:
 	.string	"long long unsigned int"
 .LASF6:
@@ -3267,8 +3267,8 @@ signal.0:
 	.string	"g_encodingTable"
 .LASF48:
 	.string	"iotx_err"
-.LASF3:
-	.string	"int32_t"
+.LASF46:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_base64.c"
 .LASF5:
 	.string	"long long int"
 .LASF13:

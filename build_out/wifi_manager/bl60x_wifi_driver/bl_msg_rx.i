@@ -1,5 +1,5 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_msg_rx.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_msg_rx.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_msg_rx.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_msg_rx.c"

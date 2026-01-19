@@ -11,7 +11,7 @@
 	.type	char2hex, @function
 char2hex:
 .LFB1:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
 	.loc 1 18 1
 	.cfi_startproc
 .LVL0:
@@ -350,8 +350,8 @@ hex_asc_upper:
 	.string	"0123456789ABCDEF"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2b0
@@ -1336,14 +1336,16 @@ hex_asc_upper:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF24:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
 .LASF10:
 	.string	"size_t"
 .LASF23:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF25:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF20:
 	.string	"char2hex"
-.LASF25:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF22:
 	.string	"byte"
 .LASF4:
@@ -1354,8 +1356,6 @@ hex_asc_upper:
 	.string	"short unsigned int"
 .LASF19:
 	.string	"_src"
-.LASF24:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_hex.c"
 .LASF17:
 	.string	"utils_bin2hex"
 .LASF8:

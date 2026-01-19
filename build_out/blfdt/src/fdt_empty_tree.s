@@ -16,7 +16,7 @@
 	.type	fdt_create_empty_tree, @function
 fdt_create_empty_tree:
 .LFB40:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_empty_tree.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_empty_tree.c"
 	.loc 1 59 1
 	.cfi_startproc
 .LVL0:
@@ -131,7 +131,7 @@ fdt_create_empty_tree:
 	.size	fdt_create_empty_tree, .-fdt_create_empty_tree
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x19c
@@ -661,16 +661,14 @@ fdt_create_empty_tree:
 	.string	"unsigned char"
 .LASF11:
 	.string	"fdt_create"
-.LASF7:
-	.string	"long unsigned int"
+.LASF19:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF13:
 	.string	"fdt_begin_node"
 .LASF20:
 	.string	"fdt_create_empty_tree"
-.LASF15:
-	.string	"fdt_finish"
 .LASF12:
 	.string	"fdt_finish_reservemap"
 .LASF14:
@@ -679,18 +677,20 @@ fdt_create_empty_tree:
 	.string	"char"
 .LASF16:
 	.string	"fdt_open_into"
+.LASF15:
+	.string	"fdt_finish"
+.LASF18:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_empty_tree.c"
+.LASF7:
+	.string	"long unsigned int"
 .LASF3:
 	.string	"long int"
 .LASF6:
 	.string	"short unsigned int"
 .LASF1:
 	.string	"signed char"
-.LASF18:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_empty_tree.c"
 .LASF10:
 	.string	"bufsize"
 .LASF2:
 	.string	"short int"
-.LASF19:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

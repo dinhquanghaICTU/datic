@@ -12,7 +12,7 @@
 	.type	os_get_time, @function
 os_get_time:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/os_bl.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/os_bl.c"
 	.loc 1 36 1
 	.cfi_startproc
 .LVL0:
@@ -321,17 +321,17 @@ wpa_supplicant_bzero:
 	.size	wpa_supplicant_bzero, .-wpa_supplicant_bzero
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/include/os.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x3de
@@ -1485,8 +1485,8 @@ wpa_supplicant_bzero:
 	.string	"bl_rand_stream"
 .LASF23:
 	.string	"size"
-.LASF41:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/wpa_supplicant"
+.LASF11:
+	.string	"__int_least64_t"
 .LASF10:
 	.string	"long unsigned int"
 .LASF44:
@@ -1507,10 +1507,10 @@ wpa_supplicant_bzero:
 	.string	"__uint32_t"
 .LASF29:
 	.string	"os_random"
+.LASF41:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wpa_supplicant"
 .LASF2:
 	.string	"unsigned int"
-.LASF11:
-	.string	"__int_least64_t"
 .LASF0:
 	.string	"long long unsigned int"
 .LASF33:
@@ -1519,8 +1519,8 @@ wpa_supplicant_bzero:
 	.string	"wpa_supplicant_free"
 .LASF16:
 	.string	"time_t"
-.LASF40:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/wpa_supplicant/port/os_bl.c"
+.LASF3:
+	.string	"signed char"
 .LASF20:
 	.string	"wpa_supplicant_bzero"
 .LASF1:
@@ -1549,8 +1549,8 @@ wpa_supplicant_bzero:
 	.string	"vTaskDelay"
 .LASF19:
 	.string	"TickType_t"
-.LASF3:
-	.string	"signed char"
+.LASF40:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/wpa_supplicant/port/os_bl.c"
 .LASF6:
 	.string	"short unsigned int"
 .LASF28:

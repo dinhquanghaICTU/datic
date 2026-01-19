@@ -11,7 +11,7 @@
 	.type	PtTable_Flash_Read, @function
 PtTable_Flash_Read:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_flash.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_flash.c"
 	.loc 1 26 1
 	.cfi_startproc
 .LVL0:
@@ -1140,14 +1140,14 @@ rf_para_addr:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_flash.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/partition/partition.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash_ext.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_flash.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/partition/partition.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash_ext.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xc98
@@ -3857,8 +3857,6 @@ rf_para_addr:
 	.string	"blk64EraseCmd"
 .LASF150:
 	.string	"mfg_flash_program"
-.LASF167:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_flash.c"
 .LASF44:
 	.string	"qpiFrDmyClk"
 .LASF110:
@@ -3873,8 +3871,8 @@ rf_para_addr:
 	.string	"wrEnableReadRegLen"
 .LASF47:
 	.string	"fastReadDioCmd"
-.LASF121:
-	.string	"type"
+.LASF168:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF88:
 	.string	"pdDelay"
 .LASF60:
@@ -3883,6 +3881,8 @@ rf_para_addr:
 	.string	"frQoDmyClk"
 .LASF116:
 	.string	"PT_ENTRY_MAX"
+.LASF167:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_flash.c"
 .LASF12:
 	.string	"long long unsigned int"
 .LASF45:
@@ -4001,10 +4001,8 @@ rf_para_addr:
 	.string	"qpageProgramCmd"
 .LASF145:
 	.string	"mfg_flash_write_poweroffset"
-.LASF127:
-	.string	"PtTable_Entry_Config"
-.LASF168:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF121:
+	.string	"type"
 .LASF117:
 	.string	"magicCode"
 .LASF63:
@@ -4169,6 +4167,8 @@ rf_para_addr:
 	.string	"deBurstWrapDataMode"
 .LASF76:
 	.string	"burstWrapCmdDmyClk"
+.LASF127:
+	.string	"PtTable_Entry_Config"
 .LASF151:
 	.string	"mfg_flash_init"
 .LASF6:

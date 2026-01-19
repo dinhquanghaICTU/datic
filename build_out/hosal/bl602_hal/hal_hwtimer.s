@@ -12,7 +12,7 @@
 	.type	hal_hwtimer_init, @function
 hal_hwtimer_init:
 .LFB30:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hwtimer.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hwtimer.c"
 	.loc 1 211 1
 	.cfi_startproc
 	.loc 1 212 5
@@ -199,11 +199,11 @@ hal_hwtimer_change_period:
 	.size	hal_hwtimer_change_period, .-hal_hwtimer_change_period
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hwtimer.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hwtimer.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2d0
@@ -1065,8 +1065,6 @@ hal_hwtimer_change_period:
 	.string	"hal_hwtimer_change_period"
 .LASF5:
 	.string	"unsigned char"
-.LASF29:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hwtimer.c"
 .LASF23:
 	.string	"handler"
 .LASF34:
@@ -1081,18 +1079,20 @@ hal_hwtimer_change_period:
 	.string	"hal_hwtimer_create"
 .LASF25:
 	.string	"xTimerGenericCommand"
+.LASF30:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF21:
 	.string	"hal_hwtimer_delete"
 .LASF31:
 	.string	"tmrTimerControl"
-.LASF30:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF15:
 	.string	"TimerCallbackFunction_t"
 .LASF14:
 	.string	"TimerHandle_t"
 .LASF11:
 	.string	"char"
+.LASF29:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hwtimer.c"
 .LASF24:
 	.string	"repeat"
 .LASF19:

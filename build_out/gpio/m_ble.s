@@ -12,7 +12,7 @@
 	.type	app_ble_init, @function
 app_ble_init:
 .LFB68:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
 	.loc 1 37 1
 	.cfi_startproc
 	.loc 1 38 5
@@ -371,15 +371,15 @@ g_config_done_cb:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/../app_event/app_event.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/app_state.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_interface.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_wifi.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/../app_event/app_event.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/app_state.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_interface.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_wifi.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4c8
@@ -1662,8 +1662,8 @@ g_config_done_cb:
 	.string	"ssid"
 .LASF45:
 	.string	"APP_STATE_WIFI_CONNECTED"
-.LASF61:
-	.string	"ble_adv_start"
+.LASF70:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF56:
 	.string	"password"
 .LASF27:
@@ -1680,8 +1680,6 @@ g_config_done_cb:
 	.string	"app_event_t"
 .LASF29:
 	.string	"APP_EVENT_BLE_CONFIG_DONE"
-.LASF70:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF48:
 	.string	"g_config_done_cb"
 .LASF28:
@@ -1712,6 +1710,8 @@ g_config_done_cb:
 	.string	"unsigned char"
 .LASF12:
 	.string	"_POLL_TYPE_SEM_AVAILABLE"
+.LASF61:
+	.string	"ble_adv_start"
 .LASF50:
 	.string	"g_ble_stack_started"
 .LASF10:
@@ -1748,6 +1748,8 @@ g_config_done_cb:
 	.string	"char"
 .LASF31:
 	.string	"APP_EVENT_MQTT_TOGGLE"
+.LASF69:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
 .LASF22:
 	.string	"_Bool"
 .LASF63:
@@ -1788,8 +1790,6 @@ g_config_done_cb:
 	.string	"_POLL_NUM_STATES"
 .LASF36:
 	.string	"app_ble_config_done_cb_t"
-.LASF69:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
 .LASF13:
 	.string	"_POLL_TYPE_DATA_AVAILABLE"
 .LASF71:

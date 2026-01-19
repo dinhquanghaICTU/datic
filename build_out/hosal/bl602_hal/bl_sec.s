@@ -16,7 +16,7 @@
 	.type	bl_sec_pka_IRQHandler, @function
 bl_sec_pka_IRQHandler:
 .LFB21:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.c"
 	.loc 1 655 1
 	.cfi_startproc
 	.loc 1 656 5
@@ -1487,19 +1487,19 @@ e.2:
 	.ascii	"\001"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_aes.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_aes.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_gmac.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x13bd
@@ -5767,8 +5767,8 @@ e.2:
 	.section	.debug_str,"MS",@progbits,1
 .LASF104:
 	.string	"count"
-.LASF159:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF87:
+	.string	"SEC_ENG_PKA_REG_SIZE_32"
 .LASF97:
 	.string	"SEC_ENG_INT_SHA"
 .LASF22:
@@ -5911,8 +5911,6 @@ e.2:
 	.string	"SEC_ENG_PKA_REG_SIZE_512"
 .LASF47:
 	.string	"UART0_IRQn"
-.LASF158:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.c"
 .LASF152:
 	.string	"bl_sec_gmac_init"
 .LASF85:
@@ -6001,8 +5999,6 @@ e.2:
 	.string	"bl_sec_get_random_word"
 .LASF115:
 	.string	"input"
-.LASF87:
-	.string	"SEC_ENG_PKA_REG_SIZE_32"
 .LASF113:
 	.string	"encrypted"
 .LASF112:
@@ -6063,6 +6059,8 @@ e.2:
 	.string	"Sec_Eng_PKA_CREG"
 .LASF12:
 	.string	"uint8_t"
+.LASF158:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.c"
 .LASF96:
 	.string	"SEC_ENG_INT_AES"
 .LASF17:
@@ -6087,6 +6085,8 @@ e.2:
 	.string	"left"
 .LASF107:
 	.string	"result"
+.LASF159:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF140:
 	.string	"Sec_Eng_PKA_LDIV"
 .LASF95:

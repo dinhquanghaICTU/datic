@@ -12,7 +12,7 @@
 	.type	blcrypto_suite_hacc_reset, @function
 blcrypto_suite_hacc_reset:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc.c"
 	.loc 1 14 1
 	.cfi_startproc
 	.loc 1 15 5
@@ -145,8 +145,8 @@ blcrypto_suite_hacc_gf2mont_256_bin:
 	.size	blcrypto_suite_hacc_gf2mont_256_bin, .-blcrypto_suite_hacc_gf2mont_256_bin
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x25f
@@ -829,6 +829,8 @@ blcrypto_suite_hacc_gf2mont_256_bin:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF29:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF27:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF31:
@@ -837,6 +839,8 @@ blcrypto_suite_hacc_gf2mont_256_bin:
 	.string	"SEC_ENG_PKA_REG_SIZE_16"
 .LASF12:
 	.string	"SEC_ENG_PKA_REG_SIZE_32"
+.LASF28:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc.c"
 .LASF26:
 	.string	"Sec_Eng_PKA_BigEndian_Enable"
 .LASF7:
@@ -869,8 +873,6 @@ blcrypto_suite_hacc_gf2mont_256_bin:
 	.string	"long long int"
 .LASF19:
 	.string	"SEC_ENG_PKA_REG_SIZE_512"
-.LASF29:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF18:
 	.string	"SEC_ENG_PKA_REG_SIZE_384"
 .LASF1:
@@ -891,8 +893,6 @@ blcrypto_suite_hacc_gf2mont_256_bin:
 	.string	"signed char"
 .LASF25:
 	.string	"Sec_Eng_PKA_Reset"
-.LASF28:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc.c"
 .LASF15:
 	.string	"SEC_ENG_PKA_REG_SIZE_128"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

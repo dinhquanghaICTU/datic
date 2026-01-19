@@ -15,7 +15,7 @@
 	.type	hci_driver_open, @function
 hci_driver_open:
 .LFB89:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
 	.loc 1 446 1
 	.cfi_startproc
 	.loc 1 469 5
@@ -308,16 +308,16 @@ drv:
 	.word	hci_driver_send
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/bl_hci_wrapper/bl_hci_wrapper.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/bl_hci_wrapper/bl_hci_wrapper.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x6e9
@@ -2148,6 +2148,8 @@ drv:
 	.string	"hci_driver_enque_recvq"
 .LASF65:
 	.string	"send"
+.LASF79:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
 .LASF54:
 	.string	"BT_HCI_DRIVER_BUS_UART"
 .LASF46:
@@ -2168,16 +2170,12 @@ drv:
 	.string	"k_queue_init"
 .LASF42:
 	.string	"data"
-.LASF80:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF82:
 	.string	"user_data"
 .LASF15:
 	.string	"head"
 .LASF59:
 	.string	"BT_HCI_DRIVER_BUS_I2C"
-.LASF79:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
 .LASF44:
 	.string	"__buf"
 .LASF86:
@@ -2296,6 +2294,8 @@ drv:
 	.string	"open"
 .LASF35:
 	.string	"_poll_states_bits"
+.LASF80:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF61:
 	.string	"bt_hci_driver"
 .LASF69:

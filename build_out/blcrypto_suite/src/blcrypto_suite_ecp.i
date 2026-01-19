@@ -1,36 +1,36 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_config.h" 1
-# 42 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_config.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h" 1
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 70 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_config.h" 1
+# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_config.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h" 1
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3 4
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3 4
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3 4
-# 45 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3 4
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3 4
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3 4
+# 45 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3 4
 
 
 
@@ -38,43 +38,43 @@
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3 4
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 2 3 4
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3 4
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 2 3 4
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef signed char __int8_t;
 
 typedef unsigned char __uint8_t;
-# 55 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 55 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef short int __int16_t;
 
 typedef short unsigned int __uint16_t;
-# 77 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 77 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long int __int32_t;
 
 typedef long unsigned int __uint32_t;
-# 103 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 103 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long long int __int64_t;
 
 typedef long long unsigned int __uint64_t;
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef signed char __int_least8_t;
 
 typedef unsigned char __uint_least8_t;
-# 160 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 160 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef short int __int_least16_t;
 
 typedef short unsigned int __uint_least16_t;
-# 182 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 182 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long int __int_least32_t;
 
 typedef long unsigned int __uint_least32_t;
-# 200 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 200 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long long int __int_least64_t;
 
 typedef long long unsigned int __uint_least64_t;
-# 214 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
+# 214 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3 4
 typedef long long int __intmax_t;
 
 
@@ -94,42 +94,42 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
-# 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 196 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 63 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h" 2
-# 772 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h"
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3 4
+# 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 196 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 63 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h" 2
+# 772 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h"
 
-# 772 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h"
+# 772 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_check_config.h"
 typedef int blcrypto_suite_iso_c_forbids_empty_translation_units;
-# 43 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_config.h" 2
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 106 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h" 1
-# 70 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h" 1
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 43 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_config.h" 2
+# 71 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 106 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h" 1
+# 70 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h" 1
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 59 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -189,16 +189,16 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h" 2
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h" 2
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
     
-# 195 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 195 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
    typedef int32_t blcrypto_suite_mpi_sint;
     typedef uint32_t blcrypto_suite_mpi_uint;
 
         typedef uint64_t blcrypto_suite_t_udbl;
-# 210 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 210 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 typedef struct blcrypto_suite_mpi
 {
     int s;
@@ -206,15 +206,15 @@ typedef struct blcrypto_suite_mpi
     blcrypto_suite_mpi_uint *p;
 }
 blcrypto_suite_mpi;
-# 226 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 226 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 void blcrypto_suite_mpi_init( blcrypto_suite_mpi *X );
-# 235 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 235 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 void blcrypto_suite_mpi_free( blcrypto_suite_mpi *X );
-# 250 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 250 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_grow( blcrypto_suite_mpi *X, size_t nblimbs );
-# 267 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 267 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_shrink( blcrypto_suite_mpi *X, size_t nblimbs );
-# 282 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 282 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_copy( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *Y );
 
 
@@ -224,101 +224,101 @@ int blcrypto_suite_mpi_copy( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *Y 
 
 
 void blcrypto_suite_mpi_swap( blcrypto_suite_mpi *X, blcrypto_suite_mpi *Y );
-# 316 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 316 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_safe_cond_assign( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *Y, unsigned char assign );
-# 341 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 341 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_safe_cond_swap( blcrypto_suite_mpi *X, blcrypto_suite_mpi *Y, unsigned char assign );
-# 353 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 353 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_lset( blcrypto_suite_mpi *X, blcrypto_suite_mpi_sint z );
-# 365 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 365 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_get_bit( const blcrypto_suite_mpi *X, size_t pos );
-# 382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 382 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_set_bit( blcrypto_suite_mpi *X, size_t pos, unsigned char val );
-# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 396 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 size_t blcrypto_suite_mpi_lsb( const blcrypto_suite_mpi *X );
-# 410 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 410 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 size_t blcrypto_suite_mpi_bitlen( const blcrypto_suite_mpi *X );
-# 425 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 425 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 size_t blcrypto_suite_mpi_size( const blcrypto_suite_mpi *X );
-# 437 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 437 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_read_string( blcrypto_suite_mpi *X, int radix, const char *s );
-# 461 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 461 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_write_string( const blcrypto_suite_mpi *X, int radix,
                               char *buf, size_t buflen, size_t *olen );
-# 519 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 519 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_read_binary( blcrypto_suite_mpi *X, const unsigned char *buf,
                              size_t buflen );
-# 536 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 536 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_write_binary( const blcrypto_suite_mpi *X, unsigned char *buf,
                               size_t buflen );
-# 549 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 549 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_shift_l( blcrypto_suite_mpi *X, size_t count );
-# 561 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 561 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_shift_r( blcrypto_suite_mpi *X, size_t count );
-# 573 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 573 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_cmp_abs( const blcrypto_suite_mpi *X, const blcrypto_suite_mpi *Y );
-# 585 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 585 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_cmp_mpi( const blcrypto_suite_mpi *X, const blcrypto_suite_mpi *Y );
-# 602 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 602 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_lt_mpi_ct( const blcrypto_suite_mpi *X, const blcrypto_suite_mpi *Y,
         unsigned *ret );
-# 615 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 615 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_cmp_int( const blcrypto_suite_mpi *X, blcrypto_suite_mpi_sint z );
-# 628 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 628 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_add_abs( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 643 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 643 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_sub_abs( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 657 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 657 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_add_mpi( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 671 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 671 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_sub_mpi( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 685 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 685 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_add_int( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          blcrypto_suite_mpi_sint b );
-# 700 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 700 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_sub_int( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          blcrypto_suite_mpi_sint b );
-# 715 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 715 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_mul_mpi( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_mul_int( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          blcrypto_suite_mpi_uint b );
-# 752 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 752 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_div_mpi( blcrypto_suite_mpi *Q, blcrypto_suite_mpi *R, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 773 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 773 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_div_int( blcrypto_suite_mpi *Q, blcrypto_suite_mpi *R, const blcrypto_suite_mpi *A,
                          blcrypto_suite_mpi_sint b );
-# 793 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 793 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_mod_mpi( blcrypto_suite_mpi *R, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *B );
-# 812 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 812 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_mod_int( blcrypto_suite_mpi_uint *r, const blcrypto_suite_mpi *A,
                          blcrypto_suite_mpi_sint b );
-# 841 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 841 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_exp_mod( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *E, const blcrypto_suite_mpi *N,
                          blcrypto_suite_mpi *_RR );
-# 862 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 862 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_fill_random( blcrypto_suite_mpi *X, size_t size,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 877 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 877 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_gcd( blcrypto_suite_mpi *G, const blcrypto_suite_mpi *A,
                      const blcrypto_suite_mpi *B );
-# 896 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 896 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_inv_mod( blcrypto_suite_mpi *X, const blcrypto_suite_mpi *A,
                          const blcrypto_suite_mpi *N );
-# 924 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 924 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
  int blcrypto_suite_mpi_is_prime( const blcrypto_suite_mpi *X,
                           int (*f_rng)(void *, unsigned char *, size_t),
                           void *p_rng );
-# 957 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 957 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_is_prime_ext( const blcrypto_suite_mpi *X, int rounds,
                               int (*f_rng)(void *, unsigned char *, size_t),
                               void *p_rng );
@@ -332,12 +332,12 @@ typedef enum {
     BLCRYPTO_SUITE_MPI_GEN_PRIME_FLAG_DH = 0x0001,
     BLCRYPTO_SUITE_MPI_GEN_PRIME_FLAG_LOW_ERR = 0x0002,
 } blcrypto_suite_mpi_gen_prime_flag_t;
-# 990 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+# 990 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
 int blcrypto_suite_mpi_gen_prime( blcrypto_suite_mpi *X, size_t nbits, int flags,
                    int (*f_rng)(void *, unsigned char *, size_t),
                    void *p_rng );
-# 71 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h" 2
-# 102 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 71 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h" 2
+# 102 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 typedef enum
 {
     BLCRYPTO_SUITE_ECP_DP_NONE = 0,
@@ -355,7 +355,7 @@ typedef enum
     BLCRYPTO_SUITE_ECP_DP_SECP256K1,
     BLCRYPTO_SUITE_ECP_DP_CURVE448,
 } blcrypto_suite_ecp_group_id;
-# 130 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 130 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 typedef struct blcrypto_suite_ecp_curve_info
 {
     blcrypto_suite_ecp_group_id grp_id;
@@ -363,7 +363,7 @@ typedef struct blcrypto_suite_ecp_curve_info
     uint16_t bit_size;
     const char *name;
 } blcrypto_suite_ecp_curve_info;
-# 149 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 149 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 typedef struct blcrypto_suite_ecp_point
 {
     blcrypto_suite_mpi X;
@@ -371,7 +371,7 @@ typedef struct blcrypto_suite_ecp_point
     blcrypto_suite_mpi Z;
 }
 blcrypto_suite_ecp_point;
-# 232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 232 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 typedef struct blcrypto_suite_ecp_group
 {
     blcrypto_suite_ecp_group_id id;
@@ -396,9 +396,9 @@ typedef struct blcrypto_suite_ecp_group
     size_t T_size;
 }
 blcrypto_suite_ecp_group;
-# 385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 385 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 typedef void blcrypto_suite_ecp_restart_ctx;
-# 397 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 397 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 typedef struct blcrypto_suite_ecp_keypair
 {
     blcrypto_suite_ecp_group grp;
@@ -406,15 +406,15 @@ typedef struct blcrypto_suite_ecp_keypair
     blcrypto_suite_ecp_point Q;
 }
 blcrypto_suite_ecp_keypair;
-# 492 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 492 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_list( void );
-# 502 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 502 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 const blcrypto_suite_ecp_group_id *blcrypto_suite_ecp_grp_id_list( void );
-# 513 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 513 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_grp_id( blcrypto_suite_ecp_group_id grp_id );
-# 524 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 524 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_tls_id( uint16_t tls_id );
-# 535 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 535 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_name( const char *name );
 
 
@@ -423,7 +423,7 @@ const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_name( co
 
 
 void blcrypto_suite_ecp_point_init( blcrypto_suite_ecp_point *pt );
-# 553 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 553 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 void blcrypto_suite_ecp_group_init( blcrypto_suite_ecp_group *grp );
 
 
@@ -439,145 +439,145 @@ void blcrypto_suite_ecp_keypair_init( blcrypto_suite_ecp_keypair *key );
 
 
 void blcrypto_suite_ecp_point_free( blcrypto_suite_ecp_point *pt );
-# 576 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 576 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 void blcrypto_suite_ecp_group_free( blcrypto_suite_ecp_group *grp );
-# 585 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 585 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 void blcrypto_suite_ecp_keypair_free( blcrypto_suite_ecp_keypair *key );
-# 617 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 617 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_copy( blcrypto_suite_ecp_point *P, const blcrypto_suite_ecp_point *Q );
-# 630 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 630 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_group_copy( blcrypto_suite_ecp_group *dst,
                             const blcrypto_suite_ecp_group *src );
-# 642 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 642 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_set_zero( blcrypto_suite_ecp_point *pt );
-# 653 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 653 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_is_zero( blcrypto_suite_ecp_point *pt );
-# 667 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 667 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_point_cmp( const blcrypto_suite_ecp_point *P,
                            const blcrypto_suite_ecp_point *Q );
-# 682 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 682 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_point_read_string( blcrypto_suite_ecp_point *P, int radix,
                            const char *x, const char *y );
-# 705 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 705 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_point_write_binary( const blcrypto_suite_ecp_group *grp, const blcrypto_suite_ecp_point *P,
                             int format, size_t *olen,
                             unsigned char *buf, size_t buflen );
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_point_read_binary( const blcrypto_suite_ecp_group *grp,
                                    blcrypto_suite_ecp_point *P,
                                    const unsigned char *buf, size_t ilen );
-# 753 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 753 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_tls_read_point( const blcrypto_suite_ecp_group *grp,
                                 blcrypto_suite_ecp_point *pt,
                                 const unsigned char **buf, size_t len );
-# 779 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 779 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_tls_write_point( const blcrypto_suite_ecp_group *grp,
                                  const blcrypto_suite_ecp_point *pt,
                                  int format, size_t *olen,
                                  unsigned char *buf, size_t blen );
-# 801 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 801 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_group_load( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_group_id id );
-# 820 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 820 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_tls_read_group( blcrypto_suite_ecp_group *grp,
                                 const unsigned char **buf, size_t len );
-# 841 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 841 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_tls_read_group_id( blcrypto_suite_ecp_group_id *grp,
                                    const unsigned char **buf,
                                    size_t len );
-# 862 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 862 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_tls_write_group( const blcrypto_suite_ecp_group *grp,
                                  size_t *olen,
                                  unsigned char *buf, size_t blen );
-# 902 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 902 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_mul( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
              const blcrypto_suite_mpi *m, const blcrypto_suite_ecp_point *P,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng );
-# 936 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 936 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_mul_restartable( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
              const blcrypto_suite_mpi *m, const blcrypto_suite_ecp_point *P,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng,
              blcrypto_suite_ecp_restart_ctx *rs_ctx );
-# 970 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 970 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_muladd( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
              const blcrypto_suite_mpi *m, const blcrypto_suite_ecp_point *P,
              const blcrypto_suite_mpi *n, const blcrypto_suite_ecp_point *Q );
-# 1008 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1008 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_muladd_restartable(
              blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
              const blcrypto_suite_mpi *m, const blcrypto_suite_ecp_point *P,
              const blcrypto_suite_mpi *n, const blcrypto_suite_ecp_point *Q,
              blcrypto_suite_ecp_restart_ctx *rs_ctx );
-# 1041 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1041 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_check_pubkey( const blcrypto_suite_ecp_group *grp,
                               const blcrypto_suite_ecp_point *pt );
-# 1063 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1063 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_check_privkey( const blcrypto_suite_ecp_group *grp,
                                const blcrypto_suite_mpi *d );
-# 1081 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1081 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_gen_privkey( const blcrypto_suite_ecp_group *grp,
                      blcrypto_suite_mpi *d,
                      int (*f_rng)(void *, unsigned char *, size_t),
                      void *p_rng );
-# 1113 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1113 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_gen_keypair_base( blcrypto_suite_ecp_group *grp,
                                   const blcrypto_suite_ecp_point *G,
                                   blcrypto_suite_mpi *d, blcrypto_suite_ecp_point *Q,
                                   int (*f_rng)(void *, unsigned char *, size_t),
                                   void *p_rng );
-# 1142 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1142 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_gen_keypair( blcrypto_suite_ecp_group *grp, blcrypto_suite_mpi *d,
                              blcrypto_suite_ecp_point *Q,
                              int (*f_rng)(void *, unsigned char *, size_t),
                              void *p_rng );
-# 1160 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1160 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_gen_key( blcrypto_suite_ecp_group_id grp_id, blcrypto_suite_ecp_keypair *key,
                          int (*f_rng)(void *, unsigned char *, size_t),
                          void *p_rng );
-# 1181 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+# 1181 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 int blcrypto_suite_ecp_check_pub_priv( const blcrypto_suite_ecp_keypair *pub,
                                 const blcrypto_suite_ecp_keypair *prv );
-# 107 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_threading.h" 1
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_threading.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
-# 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
+# 107 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_threading.h" 1
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_threading.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
+# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 
-# 350 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -626,7 +626,7 @@ typedef __uint32_t __id_t;
 
 
 typedef unsigned short __ino_t;
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef __uint32_t __mode_t;
 
 
@@ -654,11 +654,11 @@ typedef long __key_t;
 
 
 typedef long _fpos_t;
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef unsigned int __size_t;
-# 147 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 147 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef signed int _ssize_t;
-# 158 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 158 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef _ssize_t __ssize_t;
 
 
@@ -721,7 +721,7 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 
 
 
@@ -729,12 +729,12 @@ typedef __builtin_va_list __va_list;
 
 
 typedef unsigned long __ULong;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
 typedef int _LOCK_T;
 typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 typedef _LOCK_RECURSIVE_T _flock_t;
 
 
@@ -788,7 +788,7 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 98 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 98 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _atexit {
  struct _atexit *_next;
  int _ind;
@@ -796,12 +796,12 @@ struct _atexit {
  void (*_fns[32])(void);
         struct _on_exit_args _on_exit_args;
 };
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 186 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 186 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -852,7 +852,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 292 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 292 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -863,7 +863,7 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 324 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 324 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
@@ -873,7 +873,7 @@ struct _rand48 {
 
 
 };
-# 613 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 613 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _reent
 {
   int _errno;
@@ -956,30 +956,30 @@ struct _reent
   __FILE __sf[3];
 
 };
-# 819 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 819 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 19 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
-# 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
+# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
 struct __locale_t;
 typedef struct __locale_t *locale_t;
-# 31 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 31 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
@@ -1162,7 +1162,7 @@ void * _reallocf_r (struct _reent *, void *, size_t);
 int setenv (const char *__string, const char *__value, int __overwrite);
 
 int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 char * __itoa (int, char *, int);
 char * __utoa (unsigned, char *, int);
 
@@ -1249,7 +1249,7 @@ void __eprintf (const char *, const char *, unsigned int, const char *);
 
 
 void qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
-# 322 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 322 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 extern long double _strtold_r (struct _reent *, const char *restrict, char **restrict);
 
 extern long double strtold (const char *restrict, char **restrict);
@@ -1268,36 +1268,36 @@ __attribute__((__noreturn__)) void
 
 
 
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_threading.h" 2
-# 108 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h" 1
-# 59 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 60 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h" 2
-# 184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
+# 59 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_threading.h" 2
+# 108 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h" 1
+# 59 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 60 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h" 2
+# 184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
 
-# 184 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
+# 184 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
 void blcrypto_suite_platform_zeroize( void *buf, size_t len );
-# 109 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bn_mul.h" 1
-# 110 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 109 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bn_mul.h" 1
+# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
-
-
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+
+
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 
 
 
-# 46 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+# 46 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
 void bcopy(const void *, void *, size_t);
 void bzero(void *, size_t);
@@ -1327,7 +1327,7 @@ int strcasecmp_l (const char *, const char *, locale_t);
 int strncasecmp_l (const char *, const char *, size_t, locale_t);
 
 
-# 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
@@ -1401,7 +1401,7 @@ char *_strndup_r (struct _reent *, const char *, size_t);
 
 
 char *strerror_r (int, char *, size_t);
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char * _strerror_r (struct _reent *, int, int, int *);
 
 
@@ -1433,12 +1433,12 @@ char *strsignal (int __signo);
 
 
 int strverscmp (const char *, const char *);
-# 172 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 172 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
 static __inline unsigned long __libc_detect_null(unsigned long w)
 {
   unsigned long mask = 0x7f7f7f7f;
@@ -1446,33 +1446,33 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
     mask = ((mask << 16) << 16) | mask;
   return ~(((w & mask) + mask) | w | mask);
 }
-# 176 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 176 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 112 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 122 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 1
-# 87 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 36 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 112 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 122 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 1
+# 87 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 36 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
-# 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
+# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
 
 
@@ -1491,8 +1491,8 @@ typedef __intptr_t register_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
 typedef __int8_t int8_t ;
 
 
@@ -1556,66 +1556,66 @@ typedef __intptr_t intptr_t;
 
 
 typedef __uintptr_t uintptr_t;
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
 
 
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
-# 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
-# 50 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
-# 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
-# 41 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
+# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
+# 50 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
+# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
+# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
 typedef unsigned long __sigset_t;
-# 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
-# 37 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
+# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 typedef __suseconds_t suseconds_t;
 
 
 
 
 typedef __int_least64_t time_t;
-# 54 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 54 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 struct timeval {
  time_t tv_sec;
  suseconds_t tv_usec;
 };
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
-# 38 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
-# 47 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
+# 38 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
+# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
 struct timespec {
  time_t tv_sec;
  long tv_nsec;
 };
-# 39 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
-# 58 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
+# 58 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
 struct itimerspec {
  struct timespec it_interval;
  struct timespec it_value;
 };
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
 
 
 
 typedef __sigset_t sigset_t;
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef unsigned long __fd_mask;
 
 typedef __fd_mask fd_mask;
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef struct fd_set {
  __fd_mask __fds_bits[(((64) + ((((int)sizeof(__fd_mask) * 8)) - 1)) / (((int)sizeof(__fd_mask) * 8)))];
 } fd_set;
-# 74 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 74 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 
 
 int select (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, struct timeval *__timeout)
@@ -1627,7 +1627,7 @@ int pselect (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds
 
 
 
-# 51 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 51 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
 
@@ -1685,7 +1685,7 @@ typedef __blksize_t blksize_t;
 
 
 typedef unsigned long clock_t;
-# 119 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 119 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef long daddr_t;
 
 
@@ -1707,7 +1707,7 @@ typedef __id_t id_t;
 
 
 typedef __ino_t ino_t;
-# 157 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 157 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __off_t off_t;
 
 
@@ -1763,22 +1763,22 @@ typedef __timer_t timer_t;
 
 
 typedef __useconds_t useconds_t;
-# 220 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 220 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __int64_t sbintime_t;
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
-# 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
-# 48 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
+# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
+# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 struct sched_param {
   int sched_priority;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 };
-# 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
-# 32 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
+# 32 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_t;
-# 61 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef struct {
   int is_initialized;
   void *stackaddr;
@@ -1794,12 +1794,12 @@ typedef struct {
 
   int detachstate;
 } pthread_attr_t;
-# 154 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 154 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_mutex_t;
 
 typedef struct {
   int is_initialized;
-# 168 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 168 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
   int recursive;
 } pthread_mutexattr_t;
 
@@ -1828,10 +1828,10 @@ typedef struct {
   int is_initialized;
   int init_executed;
 } pthread_once_t;
-# 224 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
-# 225 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 62 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
+# 225 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 62 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
@@ -1849,9 +1849,9 @@ typedef _fpos_t fpos_t;
 
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
-# 80 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 181 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
+# 80 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 char * ctermid (char *);
 
 
@@ -1919,7 +1919,7 @@ int sprintf (char *restrict, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 int remove (const char *);
 int rename (const char *, const char *);
-# 257 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 257 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int fseeko (FILE *, off_t, int);
 off_t ftello (FILE *);
 
@@ -1993,7 +1993,7 @@ int vsiscanf (const char *, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__scanf__, 2, 0)));
 int vsniprintf (char *, size_t, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__printf__, 3, 0)));
-# 339 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 339 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE * fdopen (int, const char *);
 
 int fileno (FILE *);
@@ -2020,7 +2020,7 @@ int ftrylockfile (FILE *);
 void funlockfile (FILE *);
 int putc_unlocked (int, FILE *);
 int putchar_unlocked (int);
-# 374 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 374 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int dprintf (int, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 
@@ -2034,7 +2034,7 @@ int vdprintf (int, const char *restrict, __gnuc_va_list)
 
 
 int renameat (int, const char *, int, const char *);
-# 396 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 396 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int _asiprintf_r (struct _reent *, char **, const char *, ...)
                __attribute__ ((__format__ (__printf__, 3, 4)));
 char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
@@ -2188,10 +2188,10 @@ size_t fwrite_unlocked (const void *restrict , size_t _size, size_t _n, FILE *);
 
 char * fgets_unlocked (char *restrict, int, FILE *restrict);
 int fputs_unlocked (const char *restrict, FILE *restrict);
-# 577 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 577 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int __srget_r (struct _reent *, FILE *);
 int __swbuf_r (struct _reent *, int, FILE *);
-# 601 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 601 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE *funopen (const void *__cookie,
   int (*__readfn)(void *__cookie, char *__buf,
     int __n),
@@ -2206,7 +2206,7 @@ FILE *_funopen_r (struct _reent *, const void *__cookie,
      int __n),
   fpos_t (*__seekfn)(void *__cookie, fpos_t __off, int __whence),
   int (*__closefn)(void *__cookie));
-# 624 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 624 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
 typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
      size_t __n);
@@ -2230,7 +2230,7 @@ FILE *fopencookie (void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
 FILE *_fopencookie_r (struct _reent *, void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
-# 687 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 687 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
 
 
@@ -2241,7 +2241,7 @@ static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
  else
   return (__swbuf_r(_ptr, _c, _p));
 }
-# 741 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 741 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline int
 _getchar_unlocked(void)
 {
@@ -2259,19 +2259,19 @@ _putchar_unlocked(int _c)
  _ptr = _impure_ptr;
  return (__sputc_r(_ptr, _c, ((_ptr)->_stdout)));
 }
-# 797 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 797 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 88 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 2
+# 88 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 2
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 1 3
-# 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 1 3
+# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/time.h" 1 3
-# 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
-# 35 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/time.h" 1 3
+# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 2 3
+# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
 
 
 struct tm
@@ -2341,54 +2341,54 @@ char *strptime_l (const char *restrict, const char *restrict,
 void tzset (void);
 
 void _tzset_r (struct _reent *);
-# 134 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
+# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/time.h" 3
 extern long _timezone;
 extern int _daylight;
 
 
 extern char *_tzname[2];
-# 90 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 2
-# 151 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 2
+# 90 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 2
+# 151 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 152 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h" 2
 
-# 152 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 152 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
 extern void *blcrypto_suite_calloc( size_t n, size_t size );
 extern void blcrypto_suite_free( void *ptr );
-# 164 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 164 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
 int blcrypto_suite_platform_set_calloc_free( void * (*calloc_func)( size_t, size_t ),
                               void (*free_func)( void * ) );
-# 346 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 346 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
 typedef struct blcrypto_suite_platform_context
 {
     char dummy;
 }
 blcrypto_suite_platform_context;
-# 371 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 371 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
 int blcrypto_suite_platform_setup( blcrypto_suite_platform_context *ctx );
-# 386 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+# 386 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
 void blcrypto_suite_platform_teardown( blcrypto_suite_platform_context *ctx );
-# 123 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 131 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp_internal.h" 1
-# 132 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
-# 648 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 123 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 131 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp_internal.h" 1
+# 132 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 2
+# 648 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 typedef enum
 {
     ECP_TYPE_NONE = 0,
     ECP_TYPE_SHORT_WEIERSTRASS,
     ECP_TYPE_MONTGOMERY,
 } ecp_curve_type;
-# 667 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 667 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static const blcrypto_suite_ecp_curve_info ecp_supported_curves[] =
 {
-# 682 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 682 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     { BLCRYPTO_SUITE_ECP_DP_SECP256R1, 23, 256, "secp256r1" },
-# 702 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 702 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     { BLCRYPTO_SUITE_ECP_DP_NONE, 0, 0, 
-# 702 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 702 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                                          ((void *)0) 
-# 702 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 702 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                                                              },
 };
 
@@ -2447,9 +2447,9 @@ const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_grp_id( 
     }
 
     return( 
-# 759 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 759 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
            ((void *)0) 
-# 759 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 759 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                 );
 }
 
@@ -2469,9 +2469,9 @@ const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_tls_id( 
     }
 
     return( 
-# 777 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 777 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
            ((void *)0) 
-# 777 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 777 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                 );
 }
 
@@ -2483,14 +2483,14 @@ const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_name( co
     const blcrypto_suite_ecp_curve_info *curve_info;
 
     if( name == 
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                ((void *)0) 
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                     )
         return( 
-# 788 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 788 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                ((void *)0) 
-# 788 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 788 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                     );
 
     for( curve_info = blcrypto_suite_ecp_curve_list();
@@ -2502,9 +2502,9 @@ const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_name( co
     }
 
     return( 
-# 798 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 798 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
            ((void *)0) 
-# 798 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 798 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                 );
 }
 
@@ -2514,16 +2514,16 @@ const blcrypto_suite_ecp_curve_info *blcrypto_suite_ecp_curve_info_from_name( co
 static inline ecp_curve_type ecp_get_type( const blcrypto_suite_ecp_group *grp )
 {
     if( grp->G.X.p == 
-# 806 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 806 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                      ((void *)0) 
-# 806 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 806 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                           )
         return( ECP_TYPE_NONE );
 
     if( grp->G.Y.p == 
-# 809 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 809 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                      ((void *)0) 
-# 809 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 809 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                           )
         return( ECP_TYPE_MONTGOMERY );
     else
@@ -2559,29 +2559,29 @@ void blcrypto_suite_ecp_group_init( blcrypto_suite_ecp_group *grp )
     grp->nbits = 0;
     grp->h = 0;
     grp->modp = 
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                ((void *)0)
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                    ;
     grp->t_pre = 
-# 844 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 844 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                 ((void *)0)
-# 844 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 844 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                     ;
     grp->t_post = 
-# 845 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 845 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                  ((void *)0)
-# 845 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 845 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                      ;
     grp->t_data = 
-# 846 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 846 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                  ((void *)0)
-# 846 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 846 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                      ;
     grp->T = 
-# 847 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 847 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
             ((void *)0)
-# 847 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 847 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                 ;
     grp->T_size = 0;
 }
@@ -2604,9 +2604,9 @@ void blcrypto_suite_ecp_keypair_init( blcrypto_suite_ecp_keypair *key )
 void blcrypto_suite_ecp_point_free( blcrypto_suite_ecp_point *pt )
 {
     if( pt == 
-# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 868 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
              ((void *)0) 
-# 868 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 868 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                   )
         return;
 
@@ -2623,9 +2623,9 @@ void blcrypto_suite_ecp_group_free( blcrypto_suite_ecp_group *grp )
     size_t i;
 
     if( grp == 
-# 883 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 883 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
               ((void *)0) 
-# 883 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 883 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                    )
         return;
 
@@ -2639,9 +2639,9 @@ void blcrypto_suite_ecp_group_free( blcrypto_suite_ecp_group *grp )
     }
 
     if( grp->T != 
-# 895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 895 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                  ((void *)0) 
-# 895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 895 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                       )
     {
         for( i = 0; i < grp->T_size; i++ )
@@ -2658,9 +2658,9 @@ void blcrypto_suite_ecp_group_free( blcrypto_suite_ecp_group *grp )
 void blcrypto_suite_ecp_keypair_free( blcrypto_suite_ecp_keypair *key )
 {
     if( key == 
-# 910 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 910 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
               ((void *)0) 
-# 910 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 910 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                    )
         return;
 
@@ -2984,9 +2984,9 @@ int blcrypto_suite_ecp_tls_read_group_id( blcrypto_suite_ecp_group_id *grp,
     tls_id |= *(*buf)++;
 
     if( ( curve_info = blcrypto_suite_ecp_curve_info_from_tls_id( tls_id ) ) == 
-# 1232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1232 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                                                                ((void *)0) 
-# 1232 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1232 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                                                                     )
         return( -0x4E80 );
 
@@ -3007,9 +3007,9 @@ int blcrypto_suite_ecp_tls_write_group( const blcrypto_suite_ecp_group *grp, siz
     do { } while( 0 );
 
     if( ( curve_info = blcrypto_suite_ecp_curve_info_from_grp_id( grp->id ) ) == 
-# 1251 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1251 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                                                                 ((void *)0) 
-# 1251 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1251 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                                                                      )
         return( -0x4F80 );
 
@@ -3045,9 +3045,9 @@ static int ecp_modp( blcrypto_suite_mpi *N, const blcrypto_suite_ecp_group *grp 
     int ret;
 
     if( grp->modp == 
-# 1285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1285 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                     ((void *)0) 
-# 1285 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1285 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                          )
         return( blcrypto_suite_mpi_mod_mpi( N, N, &grp->P ) );
 
@@ -3071,7 +3071,7 @@ static int ecp_modp( blcrypto_suite_mpi *N, const blcrypto_suite_ecp_group *grp 
 cleanup:
     return( ret );
 }
-# 1365 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1365 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_normalize_jac( const blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *pt )
 {
     int ret;
@@ -3111,7 +3111,7 @@ cleanup:
 
     return( ret );
 }
-# 1416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1416 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_normalize_jac_many( const blcrypto_suite_ecp_group *grp,
                                    blcrypto_suite_ecp_point *T[], size_t T_size )
 {
@@ -3128,9 +3128,9 @@ static int ecp_normalize_jac_many( const blcrypto_suite_ecp_group *grp,
 
 
     if( ( c = blcrypto_suite_calloc( T_size, sizeof( blcrypto_suite_mpi ) ) ) == 
-# 1431 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1431 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                                                                 ((void *)0) 
-# 1431 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1431 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                                                                      )
         return( -0x4D80 );
 
@@ -3225,20 +3225,20 @@ cleanup:
 
     return( ret );
 }
-# 1540 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1540 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_double_jac( const blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
                            const blcrypto_suite_ecp_point *P )
 {
     int ret;
     blcrypto_suite_mpi M, S, T, U;
-# 1555 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1555 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     blcrypto_suite_mpi_init( &M ); blcrypto_suite_mpi_init( &S ); blcrypto_suite_mpi_init( &T ); blcrypto_suite_mpi_init( &U );
 
 
     if( grp->A.p == 
-# 1558 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1558 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                    ((void *)0) 
-# 1558 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1558 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                         )
     {
 
@@ -3298,20 +3298,20 @@ cleanup:
 
     return( ret );
 }
-# 1636 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1636 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_add_mixed( const blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
                           const blcrypto_suite_ecp_point *P, const blcrypto_suite_ecp_point *Q )
 {
     int ret;
     blcrypto_suite_mpi T1, T2, T3, T4, X, Y, Z;
-# 1654 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1654 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     if( blcrypto_suite_mpi_cmp_int( &P->Z, 0 ) == 0 )
         return( blcrypto_suite_ecp_copy( R, Q ) );
 
     if( Q->Z.p != 
-# 1657 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1657 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                  ((void *)0) 
-# 1657 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1657 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                       && blcrypto_suite_mpi_cmp_int( &Q->Z, 0 ) == 0 )
         return( blcrypto_suite_ecp_copy( R, P ) );
 
@@ -3319,9 +3319,9 @@ static int ecp_add_mixed( const blcrypto_suite_ecp_group *grp, blcrypto_suite_ec
 
 
     if( Q->Z.p != 
-# 1663 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 1663 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                  ((void *)0) 
-# 1663 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1663 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                       && blcrypto_suite_mpi_cmp_int( &Q->Z, 1 ) != 0 )
         return( -0x4F80 );
 
@@ -3374,7 +3374,7 @@ cleanup:
 
     return( ret );
 }
-# 1723 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1723 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_randomize_jac( const blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *pt,
                 int (*f_rng)(void *, unsigned char *, size_t), void *p_rng )
 {
@@ -3422,7 +3422,7 @@ cleanup:
 
     return( ret );
 }
-# 1831 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1831 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static void ecp_comb_recode_core( unsigned char x[], size_t d,
                                   unsigned char w, const blcrypto_suite_mpi *m )
 {
@@ -3452,7 +3452,7 @@ static void ecp_comb_recode_core( unsigned char x[], size_t d,
         x[i-1] |= adjust << 7;
     }
 }
-# 1895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1895 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_precompute_comb( const blcrypto_suite_ecp_group *grp,
                                 blcrypto_suite_ecp_point T[], const blcrypto_suite_ecp_point *P,
                                 unsigned char w, size_t d,
@@ -3463,9 +3463,9 @@ static int ecp_precompute_comb( const blcrypto_suite_ecp_group *grp,
     size_t j = 0;
     const unsigned char T_size = 1U << ( w - 1 );
     blcrypto_suite_ecp_point *cur, *TT[( 1 << ( 6 - 1 ) ) - 1];
-# 1919 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1919 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     (void) rs_ctx;
-# 1937 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1937 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     do { if( ( ret = (blcrypto_suite_ecp_copy( &T[0], P )) ) != 0 ) goto cleanup; } while( 0 );
 
 
@@ -3487,7 +3487,7 @@ static int ecp_precompute_comb( const blcrypto_suite_ecp_group *grp,
 
         do { if( ( ret = (ecp_double_jac( grp, cur, cur )) ) != 0 ) goto cleanup; } while( 0 );
     }
-# 1969 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1969 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     j = 0;
     for( i = 1; i < T_size; i <<= 1 )
         TT[j++] = T + i;
@@ -3495,7 +3495,7 @@ static int ecp_precompute_comb( const blcrypto_suite_ecp_group *grp,
     ;
 
     do { if( ( ret = (ecp_normalize_jac_many( grp, TT, j )) ) != 0 ) goto cleanup; } while( 0 );
-# 1987 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 1987 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     ;
 
     for( i = 1; i < T_size; i <<= 1 )
@@ -3504,7 +3504,7 @@ static int ecp_precompute_comb( const blcrypto_suite_ecp_group *grp,
         while( j-- )
             do { if( ( ret = (ecp_add_mixed( grp, &T[i + j], &T[j], &T[i] )) ) != 0 ) goto cleanup; } while( 0 );
     }
-# 2007 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2007 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     for( j = 0; j + 1 < T_size; j++ )
         TT[j] = T + j + 1;
 
@@ -3513,7 +3513,7 @@ static int ecp_precompute_comb( const blcrypto_suite_ecp_group *grp,
     do { if( ( ret = (ecp_normalize_jac_many( grp, TT, j )) ) != 0 ) goto cleanup; } while( 0 );
 
 cleanup:
-# 2024 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2024 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     return( ret );
 }
 
@@ -3567,7 +3567,7 @@ static int ecp_mul_comb_core( const blcrypto_suite_ecp_group *grp, blcrypto_suit
 
 
     (void) rs_ctx;
-# 2095 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2095 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     {
 
         i = d;
@@ -3592,10 +3592,10 @@ static int ecp_mul_comb_core( const blcrypto_suite_ecp_group *grp, blcrypto_suit
 cleanup:
 
     blcrypto_suite_ecp_point_free( &Txi );
-# 2129 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2129 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     return( ret );
 }
-# 2144 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2144 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_comb_recode_scalar( const blcrypto_suite_ecp_group *grp,
                                    const blcrypto_suite_mpi *m,
                                    unsigned char k[( 521 + 1 ) / 2 + 1],
@@ -3630,7 +3630,7 @@ cleanup:
 
     return( ret );
 }
-# 2186 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2186 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_mul_comb_after_precomp( const blcrypto_suite_ecp_group *grp,
                                 blcrypto_suite_ecp_point *R,
                                 const blcrypto_suite_mpi *m,
@@ -3646,13 +3646,13 @@ static int ecp_mul_comb_after_precomp( const blcrypto_suite_ecp_group *grp,
     unsigned char parity_trick;
     unsigned char k[( 521 + 1 ) / 2 + 1];
     blcrypto_suite_ecp_point *RR = R;
-# 2212 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2212 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     do { if( ( ret = (ecp_comb_recode_scalar( grp, m, k, d, w, &parity_trick )) ) != 0 ) goto cleanup; } while( 0 )
                                                              ;
     do { if( ( ret = (ecp_mul_comb_core( grp, RR, T, T_size, k, d, f_rng, p_rng, rs_ctx )) ) != 0 ) goto cleanup; } while( 0 )
                                                                 ;
     do { if( ( ret = (ecp_safe_invert_jac( grp, RR, parity_trick )) ) != 0 ) goto cleanup; } while( 0 );
-# 2237 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2237 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     if( f_rng != 0 )
 
         do { if( ( ret = (ecp_randomize_jac( grp, RR, f_rng, p_rng )) ) != 0 ) goto cleanup; } while( 0 );
@@ -3702,7 +3702,7 @@ static unsigned char ecp_pick_window_size( const blcrypto_suite_ecp_group *grp,
 
     return( w );
 }
-# 2300 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2300 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 static int ecp_mul_comb( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
                          const blcrypto_suite_mpi *m, const blcrypto_suite_ecp_point *P,
                          int (*f_rng)(void *, unsigned char *, size_t),
@@ -3714,9 +3714,9 @@ static int ecp_mul_comb( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point
     size_t d;
     unsigned char T_size = 0, T_ok = 0;
     blcrypto_suite_ecp_point *T = 
-# 2310 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2310 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                  ((void *)0)
-# 2310 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2310 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                      ;
 
 
@@ -3725,7 +3725,7 @@ static int ecp_mul_comb( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point
 
 
     (void) rs_ctx;;
-# 2349 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2349 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     p_eq_g = ( blcrypto_suite_mpi_cmp_mpi( &P->Y, &grp->G.Y ) == 0 &&
                blcrypto_suite_mpi_cmp_mpi( &P->X, &grp->G.X ) == 0 );
 
@@ -3739,9 +3739,9 @@ static int ecp_mul_comb( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point
 
 
     if( p_eq_g && grp->T != 
-# 2361 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2361 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                            ((void *)0) 
-# 2361 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2361 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                 )
     {
 
@@ -3749,13 +3749,13 @@ static int ecp_mul_comb( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point
         T_ok = 1;
     }
     else
-# 2383 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2383 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     {
         T = blcrypto_suite_calloc( T_size, sizeof( blcrypto_suite_ecp_point ) );
         if( T == 
-# 2385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2385 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                 ((void *)0) 
-# 2385 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2385 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                      )
         {
             ret = -0x4D80;
@@ -3796,15 +3796,15 @@ cleanup:
 
     if( T == grp->T )
         T = 
-# 2424 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2424 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
            ((void *)0)
-# 2424 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2424 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                ;
-# 2438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2438 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     if( T != 
-# 2438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2438 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
             ((void *)0) 
-# 2438 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2438 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                  )
     {
         for( i = 0; i < T_size; i++ )
@@ -3824,7 +3824,7 @@ cleanup:
 
     return( ret );
 }
-# 2698 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2698 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 int blcrypto_suite_ecp_mul_restartable( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_point *R,
              const blcrypto_suite_mpi *m, const blcrypto_suite_ecp_point *P,
              int (*f_rng)(void *, unsigned char *, size_t), void *p_rng,
@@ -3838,7 +3838,7 @@ int blcrypto_suite_ecp_mul_restartable( blcrypto_suite_ecp_group *grp, blcrypto_
     do { } while( 0 );
     do { } while( 0 );
     do { } while( 0 );
-# 2727 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2727 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     {
 
         ;
@@ -3859,7 +3859,7 @@ int blcrypto_suite_ecp_mul_restartable( blcrypto_suite_ecp_group *grp, blcrypto_
 
 
 cleanup:
-# 2758 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2758 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     return( ret );
 }
 
@@ -3875,9 +3875,9 @@ int blcrypto_suite_ecp_mul( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp_po
     do { } while( 0 );
     do { } while( 0 );
     return( blcrypto_suite_ecp_mul_restartable( grp, R, m, P, f_rng, p_rng, 
-# 2772 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2772 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                                                            ((void *)0) 
-# 2772 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2772 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                                                                 ) );
 }
 
@@ -3909,9 +3909,9 @@ static int ecp_check_pubkey_sw( const blcrypto_suite_ecp_group *grp, const blcry
 
 
     if( grp->A.p == 
-# 2802 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2802 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                    ((void *)0) 
-# 2802 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2802 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                         )
     {
         do { if( ( ret = (blcrypto_suite_mpi_sub_int( &RHS, &RHS, 3 )) ) != 0 ) goto cleanup; } while( 0 ); while( (RHS).s < 0 && blcrypto_suite_mpi_cmp_int( &(RHS), 0 ) != 0 ) do { if( ( ret = (blcrypto_suite_mpi_add_mpi( &(RHS), &(RHS), &grp->P )) ) != 0 ) goto cleanup; } while( 0 );
@@ -3960,13 +3960,13 @@ static int blcrypto_suite_ecp_mul_shortcuts( blcrypto_suite_ecp_group *grp,
     else
     {
         do { if( ( ret = (blcrypto_suite_ecp_mul_restartable( grp, R, m, P, 
-# 2849 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2849 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
        ((void *)0)
-# 2849 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2849 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
        , 
-# 2849 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2849 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
        ((void *)0)
-# 2849 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2849 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
        , rs_ctx )) ) != 0 ) goto cleanup; } while( 0 )
                                                                             ;
     }
@@ -4005,7 +4005,7 @@ int blcrypto_suite_ecp_muladd_restartable(
     blcrypto_suite_ecp_point_init( &mP );
 
     (void) rs_ctx;;
-# 2905 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2905 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     do { if( ( ret = (blcrypto_suite_ecp_mul_shortcuts( grp, pmP, m, P, rs_ctx )) ) != 0 ) goto cleanup; } while( 0 );
 
 
@@ -4014,7 +4014,7 @@ int blcrypto_suite_ecp_muladd_restartable(
 
 
     do { if( ( ret = (blcrypto_suite_ecp_mul_shortcuts( grp, pR, n, Q, rs_ctx )) ) != 0 ) goto cleanup; } while( 0 );
-# 2925 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2925 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     ;
     do { if( ( ret = (ecp_add_mixed( grp, pR, pmP, pR )) ) != 0 ) goto cleanup; } while( 0 );
 
@@ -4059,12 +4059,12 @@ int blcrypto_suite_ecp_muladd( blcrypto_suite_ecp_group *grp, blcrypto_suite_ecp
     do { } while( 0 );
     do { } while( 0 );
     return( blcrypto_suite_ecp_muladd_restartable( grp, R, m, P, n, Q, 
-# 2968 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 2968 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
                                                                       ((void *)0) 
-# 2968 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 2968 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
                                                                            ) );
 }
-# 3087 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3087 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 int blcrypto_suite_ecp_check_pubkey( const blcrypto_suite_ecp_group *grp,
                               const blcrypto_suite_ecp_point *pt )
 {
@@ -4094,7 +4094,7 @@ int blcrypto_suite_ecp_check_privkey( const blcrypto_suite_ecp_group *grp,
 {
     do { } while( 0 );
     do { } while( 0 );
-# 3134 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3134 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     if( ecp_get_type( grp ) == ECP_TYPE_SHORT_WEIERSTRASS )
     {
 
@@ -4130,7 +4130,7 @@ int blcrypto_suite_ecp_gen_privkey( const blcrypto_suite_ecp_group *grp,
     do { } while( 0 );
 
     n_size = ( grp->nbits + 7 ) / 8;
-# 3199 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3199 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
     if( ecp_get_type( grp ) == ECP_TYPE_SHORT_WEIERSTRASS )
     {
 
@@ -4139,12 +4139,12 @@ int blcrypto_suite_ecp_gen_privkey( const blcrypto_suite_ecp_group *grp,
 
         do { if( ( ret = (blcrypto_suite_mpi_grow( &one, grp->N.n )) ) != 0 ) goto cleanup; } while( 0 );
         do { if( ( ret = (blcrypto_suite_mpi_lset( &one, 1 )) ) != 0 ) goto cleanup; } while( 0 );
-# 3215 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3215 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
         do
         {
             do { if( ( ret = (blcrypto_suite_mpi_fill_random( d, n_size, f_rng, p_rng )) ) != 0 ) goto cleanup; } while( 0 );
             do { if( ( ret = (blcrypto_suite_mpi_shift_r( d, 8 * n_size - grp->nbits )) ) != 0 ) goto cleanup; } while( 0 );
-# 3229 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3229 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
             if( ++count > 30 )
             {
                 ret = -0x4D00;
@@ -4248,13 +4248,13 @@ int blcrypto_suite_ecp_check_pub_priv( const blcrypto_suite_ecp_keypair *pub, co
 
 
     do { if( ( ret = (blcrypto_suite_ecp_mul( &grp, &Q, &prv->d, &prv->grp.G, 
-# 3331 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 3331 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
    ((void *)0)
-# 3331 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3331 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
    , 
-# 3331 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
+# 3331 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c" 3 4
    ((void *)0) 
-# 3331 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+# 3331 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
    )) ) != 0 ) goto cleanup; } while( 0 );
 
     if( blcrypto_suite_mpi_cmp_mpi( &Q.X, &prv->Q.X ) ||

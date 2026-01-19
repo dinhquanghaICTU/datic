@@ -11,7 +11,7 @@
 	.type	parse_hex4, @function
 parse_hex4:
 .LFB16:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/cJSON.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/cJSON.c"
 	.loc 1 171 1
 	.cfi_startproc
 .LVL0:
@@ -7854,12 +7854,12 @@ firstByteMark:
 	.ascii	"\300\340\360\370\374"
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/cJSON.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/math.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/cJSON.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/math.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2591
@@ -19976,8 +19976,8 @@ firstByteMark:
 	.string	"print_string_ptr"
 .LASF53:
 	.string	"cJSON_CreateFalse"
-.LASF27:
-	.string	"buffer"
+.LASF147:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/cJSON.c"
 .LASF26:
 	.string	"cJSON_free"
 .LASF80:
@@ -19988,6 +19988,8 @@ firstByteMark:
 	.string	"unsigned int"
 .LASF12:
 	.string	"next"
+.LASF148:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/cjson"
 .LASF39:
 	.string	"newchild"
 .LASF146:
@@ -20066,8 +20068,6 @@ firstByteMark:
 	.string	"sign"
 .LASF21:
 	.string	"cJSON"
-.LASF148:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/cjson"
 .LASF29:
 	.string	"offset"
 .LASF135:
@@ -20086,8 +20086,6 @@ firstByteMark:
 	.string	"cJSON_GetArrayItem"
 .LASF85:
 	.string	"print_array"
-.LASF147:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/cJSON.c"
 .LASF10:
 	.string	"char"
 .LASF120:
@@ -20132,6 +20130,8 @@ firstByteMark:
 	.string	"names"
 .LASF52:
 	.string	"cJSON_CreateBool"
+.LASF27:
+	.string	"buffer"
 .LASF63:
 	.string	"cJSON_DeleteItemFromObject"
 .LASF106:

@@ -16,7 +16,7 @@
 	.type	app_wifi_connect, @function
 app_wifi_connect:
 .LFB3:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_wifi.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_wifi.c"
 	.loc 1 12 1
 	.cfi_startproc
 .LVL0:
@@ -236,10 +236,10 @@ g_connect_failed_cb:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_wifi.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_wifi.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x276
@@ -1019,10 +1019,14 @@ g_connect_failed_cb:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF32:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF13:
 	.string	"app_wifi_connect_failed_cb_t"
 .LASF30:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF31:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_wifi.c"
 .LASF23:
 	.string	"aos_msleep"
 .LASF17:
@@ -1037,14 +1041,10 @@ g_connect_failed_cb:
 	.string	"short unsigned int"
 .LASF29:
 	.string	"wifi_if_connect"
-.LASF31:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_wifi.c"
 .LASF18:
 	.string	"params"
 .LASF26:
 	.string	"wifi_if_set_connected_cb"
-.LASF32:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF15:
 	.string	"g_disconnected_cb"
 .LASF27:

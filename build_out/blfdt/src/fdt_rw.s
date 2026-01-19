@@ -11,7 +11,7 @@
 	.type	cpu_to_fdt32, @function
 cpu_to_fdt32:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 96 1
 	.cfi_startproc
 .LVL0:
@@ -135,7 +135,7 @@ cpu_to_fdt64:
 	.type	fdt32_ld, @function
 fdt32_ld:
 .LFB8:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.loc 2 165 1 is_stmt 1
 	.cfi_startproc
 .LVL4:
@@ -185,7 +185,7 @@ fdt32_ld:
 	.type	fdt_blocks_misordered_, @function
 fdt_blocks_misordered_:
 .LFB40:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_rw.c"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_rw.c"
 	.loc 3 60 1 is_stmt 1
 	.cfi_startproc
 .LVL6:
@@ -1095,7 +1095,7 @@ fdt_add_property_:
 	blt	s1,zero,.L38
 	.loc 3 236 5 is_stmt 1
 .LVL119:
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_internal.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_internal.h"
 	.loc 4 78 5
 .LBB128:
 .LBB129:
@@ -3163,9 +3163,9 @@ fdt_pack:
 	.size	fdt_pack, .-fdt_pack
 	.text
 .Letext0:
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x250d
@@ -12431,8 +12431,6 @@ fdt_pack:
 	.section	.debug_str,"MS",@progbits,1
 .LASF93:
 	.string	"lenp"
-.LASF124:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF12:
 	.string	"uintptr_t"
 .LASF11:
@@ -12441,8 +12439,6 @@ fdt_pack:
 	.string	"nameoff"
 .LASF32:
 	.string	"fdt_property"
-.LASF123:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_rw.c"
 .LASF17:
 	.string	"totalsize"
 .LASF0:
@@ -12497,6 +12493,8 @@ fdt_pack:
 	.string	"fdt_delprop"
 .LASF15:
 	.string	"fdt64_t"
+.LASF124:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF63:
 	.string	"fdt_setprop"
 .LASF121:
@@ -12669,6 +12667,8 @@ fdt_pack:
 	.string	"newsize"
 .LASF91:
 	.string	"fdt_offset_ptr_"
+.LASF123:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_rw.c"
 .LASF78:
 	.string	"delta"
 .LASF111:

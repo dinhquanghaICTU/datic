@@ -11,7 +11,7 @@
 	.type	event_poll, @function
 event_poll:
 .LFB21:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/src/device.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/device.c"
 	.loc 1 161 1
 	.cfi_startproc
 .LVL0:
@@ -181,7 +181,7 @@ event_read:
 	.loc 1 141 5 is_stmt 1
 .LBB42:
 .LBB43:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/list.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/list.h"
 	.loc 2 68 5
 	.loc 2 68 14 is_stmt 0
 	lw	a4,0(s2)
@@ -987,20 +987,20 @@ inited:
 	.zero	4
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_register.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_register.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x132b
@@ -5045,6 +5045,8 @@ inited:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF160:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF131:
 	.string	"event_poll"
 .LASF135:
@@ -5057,8 +5059,6 @@ inited:
 	.string	"event_dev_t"
 .LASF111:
 	.string	"inode_t"
-.LASF159:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/src/device.c"
 .LASF119:
 	.string	"poll_cb"
 .LASF80:
@@ -5081,8 +5081,8 @@ inited:
 	.string	"opendir"
 .LASF158:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF160:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/yloop"
+.LASF89:
+	.string	"sync"
 .LASF23:
 	.string	"__nlink_t"
 .LASF71:
@@ -5099,6 +5099,8 @@ inited:
 	.string	"aos_mutex_t"
 .LASF31:
 	.string	"ino_t"
+.LASF159:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/device.c"
 .LASF126:
 	.string	"dev_event_t"
 .LASF101:
@@ -5185,8 +5187,6 @@ inited:
 	.string	"type"
 .LASF145:
 	.string	"dlist_add_tail"
-.LASF89:
-	.string	"sync"
 .LASF26:
 	.string	"time_t"
 .LASF91:

@@ -1,17 +1,17 @@
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils//"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_dns.h" 1
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_dns.h" 1
 
 
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -71,12 +71,12 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_dns.h" 2
+# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_dns.h" 2
 
-# 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_dns.h"
+# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_dns.h"
 int utils_dns_domain_get(uint8_t *records, uint8_t *buf, int *len);
-# 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_dns.c" 2
+# 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_dns.c" 2
 
 int utils_dns_domain_get(uint8_t *records, uint8_t *buf, int *len)
 {

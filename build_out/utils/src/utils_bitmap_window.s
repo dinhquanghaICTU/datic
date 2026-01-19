@@ -12,7 +12,7 @@
 	.type	utils_bitmap_window_init, @function
 utils_bitmap_window_init:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_bitmap_window.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_bitmap_window.c"
 	.loc 1 7 1
 	.cfi_startproc
 .LVL0:
@@ -314,11 +314,11 @@ utils_bitmap_window_ssn_get:
 	.size	utils_bitmap_window_ssn_get, .-utils_bitmap_window_ssn_get
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_bitmap_window.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_bitmap_window.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x26e
@@ -1197,7 +1197,11 @@ utils_bitmap_window_ssn_get:
 .LASF21:
 	.string	"bit_pos"
 .LASF29:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
+.LASF17:
+	.string	"bitmap"
+.LASF28:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_bitmap_window.c"
 .LASF13:
 	.string	"uint64_t"
 .LASF22:
@@ -1214,14 +1218,10 @@ utils_bitmap_window_ssn_get:
 	.string	"long unsigned int"
 .LASF4:
 	.string	"short unsigned int"
-.LASF19:
-	.string	"utils_bitmap_window_map_get"
 .LASF26:
 	.string	"memset"
 .LASF30:
 	.string	"utils_bitmap_ctx"
-.LASF17:
-	.string	"bitmap"
 .LASF0:
 	.string	"unsigned int"
 .LASF24:
@@ -1250,6 +1250,6 @@ utils_bitmap_window_ssn_get:
 	.string	"bytes"
 .LASF1:
 	.string	"signed char"
-.LASF28:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_bitmap_window.c"
+.LASF19:
+	.string	"utils_bitmap_window_map_get"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

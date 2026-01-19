@@ -6,13 +6,13 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c722,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c722,"ax",@progbits
 	.align	1
 	.globl	SF_Cfg_Get_Flash_Cfg_Need_Lock_Ext
 	.type	SF_Cfg_Get_Flash_Cfg_Need_Lock_Ext, @function
 SF_Cfg_Get_Flash_Cfg_Need_Lock_Ext:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c"
 	.loc 1 723 1
 	.cfi_startproc
 .LVL0:
@@ -155,7 +155,7 @@ SF_Cfg_Get_Flash_Cfg_Need_Lock_Ext:
 	.cfi_endproc
 .LFE8:
 	.size	SF_Cfg_Get_Flash_Cfg_Need_Lock_Ext, .-SF_Cfg_Get_Flash_Cfg_Need_Lock_Ext
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c766,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c766,"ax",@progbits
 	.align	1
 	.globl	SF_Cfg_Flash_Identify_Ext
 	.type	SF_Cfg_Flash_Identify_Ext, @function
@@ -283,7 +283,7 @@ SF_Cfg_Flash_Identify_Ext:
 	.cfi_endproc
 .LFE9:
 	.size	SF_Cfg_Flash_Identify_Ext, .-SF_Cfg_Flash_Identify_Ext
-	.section	.tcm_const./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c170,"a"
+	.section	.tcm_const./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c170,"a"
 	.align	2
 	.type	flashCfg_Gd_Md_40D, @object
 	.size	flashCfg_Gd_Md_40D, 84
@@ -362,7 +362,7 @@ flashCfg_Gd_Md_40D:
 	.half	-32536
 	.byte	20
 	.byte	0
-	.section	.tcm_const./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c268,"a"
+	.section	.tcm_const./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c268,"a"
 	.align	2
 	.type	flashCfg_XM25QH16, @object
 	.size	flashCfg_XM25QH16, 84
@@ -441,7 +441,7 @@ flashCfg_XM25QH16:
 	.half	-32536
 	.byte	3
 	.byte	0
-	.section	.tcm_const./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c366,"a"
+	.section	.tcm_const./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c366,"a"
 	.align	2
 	.type	flashCfg_MX_KH25, @object
 	.size	flashCfg_MX_KH25, 84
@@ -522,7 +522,7 @@ flashCfg_MX_KH25:
 	.half	-32536
 	.byte	20
 	.byte	0
-	.section	.tcm_const./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c464,"a"
+	.section	.tcm_const./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c464,"a"
 	.align	2
 	.type	flashCfg_ZD_25Q16B, @object
 	.size	flashCfg_ZD_25Q16B, 84
@@ -601,7 +601,7 @@ flashCfg_ZD_25Q16B:
 	.half	-32536
 	.byte	20
 	.byte	0
-	.section	.tcm_const./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c562,"a"
+	.section	.tcm_const./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c562,"a"
 	.align	2
 	.set	.LANCHOR0,. + 0
 	.type	flashInfos, @object
@@ -685,7 +685,7 @@ flashInfos:
 	.word	1589342
 	.zero	4
 	.word	flashCfg_XM25QH16
-	.section	.tcm_const./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c72,"a"
+	.section	.tcm_const./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c72,"a"
 	.align	2
 	.type	flashCfg_FM_25Q08, @object
 	.size	flashCfg_FM_25Q08, 84
@@ -766,13 +766,13 @@ flashCfg_FM_25Q08:
 	.byte	0
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_cfg.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_cfg.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x86e
@@ -1518,7 +1518,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF103
 	.byte	0x1
 	.byte	0x48
-	.byte	0xca
+	.byte	0xc3
 	.4byte	0x516
 	.byte	0x5
 	.byte	0x3
@@ -1527,7 +1527,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF104
 	.byte	0x1
 	.byte	0xaa
-	.byte	0xcb
+	.byte	0xc4
 	.4byte	0x516
 	.byte	0x5
 	.byte	0x3
@@ -1536,7 +1536,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF105
 	.byte	0x1
 	.2byte	0x10c
-	.byte	0xcb
+	.byte	0xc4
 	.4byte	0x516
 	.byte	0x5
 	.byte	0x3
@@ -1545,7 +1545,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF106
 	.byte	0x1
 	.2byte	0x16e
-	.byte	0xcb
+	.byte	0xc4
 	.4byte	0x516
 	.byte	0x5
 	.byte	0x3
@@ -1554,7 +1554,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF107
 	.byte	0x1
 	.2byte	0x1d0
-	.byte	0xcb
+	.byte	0xc4
 	.4byte	0x516
 	.byte	0x5
 	.byte	0x3
@@ -1572,7 +1572,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF108
 	.byte	0x1
 	.2byte	0x232
-	.byte	0xc5
+	.byte	0xbe
 	.4byte	0x5dc
 	.byte	0x5
 	.byte	0x3
@@ -1581,7 +1581,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF115
 	.byte	0x1
 	.2byte	0x2fe
-	.byte	0xb3
+	.byte	0xac
 	.4byte	0x6e
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
@@ -1592,7 +1592,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF109
 	.byte	0x1
 	.2byte	0x2fe
-	.byte	0xd5
+	.byte	0xce
 	.4byte	0x48
 	.4byte	.LLST5
 	.byte	0x11
@@ -1723,7 +1723,7 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF116
 	.byte	0x1
 	.2byte	0x2d2
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0xcd
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
@@ -1734,14 +1734,14 @@ flashCfg_FM_25Q08:
 	.4byte	.LASF117
 	.byte	0x1
 	.2byte	0x2d2
-	.byte	0xe2
+	.byte	0xdb
 	.4byte	0x6e
 	.4byte	.LLST0
 	.byte	0x11
 	.4byte	.LASF113
 	.byte	0x1
 	.2byte	0x2d2
-	.byte	0xff
+	.byte	0xf8
 	.4byte	0x51b
 	.4byte	.LLST1
 	.byte	0x13
@@ -2513,6 +2513,10 @@ flashCfg_FM_25Q08:
 	.string	"fastReadDioCmd"
 .LASF126:
 	.string	"SF_Cfg_Get_Flash_Cfg_Need_Lock"
+.LASF129:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF128:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c"
 .LASF102:
 	.string	"Flash_Info_t"
 .LASF69:
@@ -2609,8 +2613,6 @@ flashCfg_FM_25Q08:
 	.string	"qpageProgramCmd"
 .LASF106:
 	.string	"flashCfg_MX_KH25"
-.LASF129:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF17:
 	.string	"SF_CTRL_NIO_MODE"
 .LASF72:
@@ -2745,8 +2747,6 @@ flashCfg_FM_25Q08:
 	.string	"uint8_t"
 .LASF13:
 	.string	"SUCCESS"
-.LASF128:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sf_cfg_ext.c"
 .LASF112:
 	.string	"restoreDefault"
 .LASF95:

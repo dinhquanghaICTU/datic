@@ -12,7 +12,7 @@
 	.type	hosal_pwm_init, @function
 hosal_pwm_init:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_pwm.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_pwm.c"
 	.loc 1 21 1
 	.cfi_startproc
 .LVL0:
@@ -624,13 +624,13 @@ hosal_pwm_finalize:
 	.byte	1
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_pwm.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pwm.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pwm.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_pwm.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pwm.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pwm.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x45d
@@ -1966,8 +1966,6 @@ hosal_pwm_finalize:
 	.string	"hosal_pwm_freq_get"
 .LASF42:
 	.string	"bl_pwm_start"
-.LASF46:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_pwm.c"
 .LASF3:
 	.string	"short int"
 .LASF35:
@@ -1984,12 +1982,16 @@ hosal_pwm_finalize:
 	.string	"hosal_pwm_duty_get"
 .LASF4:
 	.string	"short unsigned int"
+.LASF46:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_pwm.c"
 .LASF44:
 	.string	"PWM_Channel_Disable"
 .LASF7:
 	.string	"__uint32_t"
 .LASF25:
 	.string	"config"
+.LASF47:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF39:
 	.string	"hosal_pwm_init"
 .LASF19:
@@ -2032,8 +2034,6 @@ hosal_pwm_finalize:
 	.string	"hosal_pwm_stop"
 .LASF31:
 	.string	"hosal_pwm_duty_set"
-.LASF47:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF38:
 	.string	"hosal_pwm_start"
 .LASF5:

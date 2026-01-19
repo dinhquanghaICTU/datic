@@ -16,7 +16,7 @@
 	.type	bloop_init, @function
 bloop_init:
 .LFB26:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_base.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_base.c"
 	.loc 1 11 1
 	.cfi_startproc
 .LVL0:
@@ -63,7 +63,7 @@ bloop_init:
 	.loc 1 18 5 is_stmt 1
 .LBB40:
 .LBB41:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 	.loc 2 310 16 is_stmt 0
 	addi	a5,s1,1152
 .LBE41:
@@ -1961,16 +1961,16 @@ bloop_status_dump:
 	.size	bloop_status_dump, .-bloop_status_dump
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1599
@@ -7337,8 +7337,8 @@ bloop_status_dump:
 	.section	.debug_str,"MS",@progbits,1
 .LASF29:
 	.string	"last"
-.LASF78:
-	.string	"bitmap_sync"
+.LASF142:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bloop"
 .LASF47:
 	.string	"time_accumulated"
 .LASF139:
@@ -7387,8 +7387,6 @@ bloop_status_dump:
 	.string	"__clzsi2"
 .LASF31:
 	.string	"prev"
-.LASF141:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_base.c"
 .LASF102:
 	.string	"_timer_dued_clean"
 .LASF105:
@@ -7419,8 +7417,6 @@ bloop_status_dump:
 	.string	"count"
 .LASF23:
 	.string	"eSetValueWithOverwrite"
-.LASF142:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bloop"
 .LASF10:
 	.string	"long long unsigned int"
 .LASF87:
@@ -7493,6 +7489,8 @@ bloop_status_dump:
 	.string	"long long int"
 .LASF126:
 	.string	"printf"
+.LASF141:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_base.c"
 .LASF17:
 	.string	"BaseType_t"
 .LASF63:
@@ -7579,6 +7577,8 @@ bloop_status_dump:
 	.string	"unsigned char"
 .LASF7:
 	.string	"__uint32_t"
+.LASF78:
+	.string	"bitmap_sync"
 .LASF28:
 	.string	"first"
 .LASF104:

@@ -147,7 +147,7 @@
 	.type	tc_fdt_wifi_module, @function
 tc_fdt_wifi_module:
 .LFB39:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_wifi.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_wifi.c"
 	.loc 1 10 1
 	.cfi_startproc
 	.loc 1 11 5
@@ -290,7 +290,7 @@ tc_fdt_wifi_module:
 .LVL18:
 .LBB13:
 .LBB14:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 2 93 5 is_stmt 1 discriminator 2
 .LBE14:
 .LBE13:
@@ -1665,13 +1665,13 @@ tc_fdt_wifi:
 	.size	tc_fdt_wifi, .-tc_fdt_wifi
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xda9
@@ -4537,22 +4537,20 @@ tc_fdt_wifi:
 	.string	"fdt32_to_cpu"
 .LASF23:
 	.string	"ap_mac"
-.LASF37:
-	.string	"fdt_getprop"
+.LASF42:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF0:
 	.string	"unsigned int"
 .LASF22:
 	.string	"sta_mac"
-.LASF41:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_wifi.c"
 .LASF10:
 	.string	"long long unsigned int"
 .LASF7:
 	.string	"uint8_t"
 .LASF16:
 	.string	"result"
-.LASF42:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
+.LASF37:
+	.string	"fdt_getprop"
 .LASF4:
 	.string	"long long int"
 .LASF13:
@@ -4595,6 +4593,8 @@ tc_fdt_wifi:
 	.string	"signed char"
 .LASF30:
 	.string	"memcpy"
+.LASF41:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_wifi.c"
 .LASF35:
 	.string	"xTaskGetTickCount"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

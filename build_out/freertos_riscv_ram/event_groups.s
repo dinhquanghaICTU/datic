@@ -12,7 +12,7 @@
 	.type	vEventGroupClearBitsCallback, @function
 vEventGroupClearBitsCallback:
 .LFB10:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/event_groups.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/event_groups.c"
 	.loc 1 666 1
 	.cfi_startproc
 .LVL0:
@@ -1630,15 +1630,15 @@ vEventGroupSetNumber:
 	.size	vEventGroupSetNumber, .-vEventGroupSetNumber
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/event_groups.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/event_groups.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xec9
@@ -6010,14 +6010,14 @@ vEventGroupSetNumber:
 	.string	"pxListEnd"
 .LASF106:
 	.string	"vListInitialise"
-.LASF109:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF103:
 	.string	"xTaskGetSchedulerState"
 .LASF3:
 	.string	"short int"
 .LASF10:
 	.string	"size_t"
+.LASF109:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF33:
 	.string	"pxPrevious"
 .LASF107:
@@ -6070,14 +6070,14 @@ vEventGroupSetNumber:
 	.string	"pxList"
 .LASF24:
 	.string	"StaticList_t"
-.LASF108:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/event_groups.c"
 .LASF5:
 	.string	"long int"
 .LASF36:
 	.string	"xLIST"
 .LASF92:
 	.string	"pxEventGroupBuffer"
+.LASF108:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/event_groups.c"
 .LASF72:
 	.string	"pxListItem"
 .LASF29:

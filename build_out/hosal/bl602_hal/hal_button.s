@@ -11,7 +11,7 @@
 	.type	fdt32_to_cpu, @function
 fdt32_to_cpu:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 92 1
 	.cfi_startproc
 .LVL0:
@@ -63,7 +63,7 @@ fdt32_to_cpu:
 	.type	clear_button_states, @function
 clear_button_states:
 .LFB42:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
 	.loc 2 84 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -1640,19 +1640,19 @@ hal_button_module_init:
 	.zero	7
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_gpio.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 	.file 16 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -5376,6 +5376,8 @@ hal_button_module_init:
 	.string	"gpioPin"
 .LASF58:
 	.string	"lentmp"
+.LASF104:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
 .LASF31:
 	.string	"GPIO_INT_CONTROL_ASYNC"
 .LASF76:
@@ -5402,8 +5404,8 @@ hal_button_module_init:
 	.string	"long_press_end_ms"
 .LASF101:
 	.string	"hal_gpio_register_handler"
-.LASF105:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF13:
+	.string	"uint8_t"
 .LASF99:
 	.string	"xTimerCreate"
 .LASF72:
@@ -5418,8 +5420,6 @@ hal_button_module_init:
 	.string	"private_ctx"
 .LASF77:
 	.string	"check_button_is_up"
-.LASF80:
-	.string	"memset"
 .LASF69:
 	.string	"button_callback"
 .LASF85:
@@ -5458,8 +5458,6 @@ hal_button_module_init:
 	.string	"vTaskSwitchContext"
 .LASF1:
 	.string	"unsigned char"
-.LASF104:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_button.c"
 .LASF25:
 	.string	"gpio_ctx_t"
 .LASF47:
@@ -5490,6 +5488,8 @@ hal_button_module_init:
 	.string	"GPIO_INT_CONTROL_SYNC"
 .LASF73:
 	.string	"clear_button_states"
+.LASF105:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF98:
 	.string	"strlen"
 .LASF14:
@@ -5538,8 +5538,8 @@ hal_button_module_init:
 	.string	"level"
 .LASF46:
 	.string	"dlong_entry_count"
-.LASF13:
-	.string	"uint8_t"
+.LASF80:
+	.string	"memset"
 .LASF36:
 	.string	"press_stage"
 .LASF74:

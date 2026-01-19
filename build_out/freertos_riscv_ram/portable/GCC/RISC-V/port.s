@@ -12,7 +12,7 @@
 	.type	vPortSetupTimerInterrupt, @function
 vPortSetupTimerInterrupt:
 .LFB0:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c"
 	.loc 1 111 2
 	.cfi_startproc
 	.loc 1 112 2
@@ -114,7 +114,7 @@ xPortStartScheduler:
 	sw	zero,-20(s0)
 	.loc 1 145 3 is_stmt 1
  #APP
-# 145 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c" 1
+# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c" 1
 	csrr a5, mtvec
 # 0 "" 2
  #NO_APP
@@ -135,7 +135,7 @@ xPortStartScheduler:
 	li	a5,4096
 	addi	a5,a5,-1920
  #APP
-# 165 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c" 1
+# 165 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c" 1
 	csrs mie, a5
 # 0 "" 2
 	.loc 1 182 5
@@ -248,9 +248,9 @@ xISRStackTop:
 	.word	__freertos_irq_stack_top
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x28c
@@ -976,12 +976,10 @@ xISRStackTop:
 	.string	"short int"
 .LASF3:
 	.string	"size_t"
-.LASF18:
-	.string	"__freertos_irq_stack_top"
+.LASF35:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF33:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -O2 -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF35:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF21:
 	.string	"pullNextTime"
 .LASF24:
@@ -996,8 +994,6 @@ xISRStackTop:
 	.string	"long int"
 .LASF23:
 	.string	"pullMachineTimerCompareRegister"
-.LASF34:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c"
 .LASF25:
 	.string	"pTrapNetCounter"
 .LASF31:
@@ -1006,6 +1002,8 @@ xISRStackTop:
 	.string	"unsigned char"
 .LASF30:
 	.string	"pulTimeLow"
+.LASF34:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/port.c"
 .LASF1:
 	.string	"signed char"
 .LASF13:
@@ -1042,6 +1040,8 @@ xISRStackTop:
 	.string	"uxTimerIncrementsForOneTick"
 .LASF27:
 	.string	"ulCurrentTimeHigh"
+.LASF18:
+	.string	"__freertos_irq_stack_top"
 .LASF28:
 	.string	"ulCurrentTimeLow"
 .LASF29:

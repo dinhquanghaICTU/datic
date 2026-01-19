@@ -12,7 +12,7 @@
 	.type	relay_init, @function
 relay_init:
 .LFB3:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
 	.loc 1 10 22
 	.cfi_startproc
 	.loc 1 11 5
@@ -212,9 +212,9 @@ s_relay_state:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x18b
@@ -655,8 +655,6 @@ s_relay_state:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF8:
 	.string	"unsigned int"
-.LASF19:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
 .LASF21:
 	.string	"s_relay_state"
 .LASF22:
@@ -669,8 +667,6 @@ s_relay_state:
 	.string	"long long unsigned int"
 .LASF10:
 	.string	"__uint8_t"
-.LASF20:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/relay"
 .LASF11:
 	.string	"uint8_t"
 .LASF1:
@@ -681,12 +677,16 @@ s_relay_state:
 	.string	"relay_init"
 .LASF4:
 	.string	"long int"
+.LASF19:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
 .LASF5:
 	.string	"long unsigned int"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
+.LASF20:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/relay"
 .LASF14:
 	.string	"relay_on"
 .LASF17:

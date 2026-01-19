@@ -12,7 +12,7 @@
 	.type	utils_list_init, @function
 utils_list_init:
 .LFB23:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_list.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_list.c"
 	.loc 1 17 1
 	.cfi_startproc
 .LVL0:
@@ -52,7 +52,7 @@ utils_list_push_back:
 	.loc 1 49 5
 .LBB12:
 .LBB13:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 	.loc 2 201 5
 .LBE13:
 .LBE12:
@@ -900,9 +900,9 @@ utils_list_remove:
 	.size	utils_list_remove, .-utils_list_remove
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x64e
@@ -2973,7 +2973,7 @@ utils_list_remove:
 .LASF35:
 	.string	"scan_list"
 .LASF49:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF13:
 	.string	"utils_list"
 .LASF2:
@@ -3020,6 +3020,8 @@ utils_list_remove:
 	.string	"utils_list_remove"
 .LASF45:
 	.string	"utils_list_pick"
+.LASF48:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_list.c"
 .LASF41:
 	.string	"elmt_size"
 .LASF12:
@@ -3032,8 +3034,6 @@ utils_list_remove:
 	.string	"signed char"
 .LASF25:
 	.string	"next_element"
-.LASF48:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_list.c"
 .LASF46:
 	.string	"utils_list_is_empty"
 .LASF16:

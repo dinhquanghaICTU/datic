@@ -1,41 +1,40 @@
-src/vfs.o: \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_conf.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_err.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_conf.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_err.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c:
+src/vfs.o: /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_conf.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_err.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h \
+ /home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_conf.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_err.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c:

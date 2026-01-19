@@ -12,7 +12,7 @@
 	.type	utils_dns_domain_get, @function
 utils_dns_domain_get:
 .LFB0:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
 	.loc 1 4 1
 	.cfi_startproc
 .LVL0:
@@ -121,7 +121,7 @@ utils_dns_domain_get:
 	.size	utils_dns_domain_get, .-utils_dns_domain_get
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x103
@@ -549,10 +549,12 @@ utils_dns_domain_get:
 	.string	"records"
 .LASF13:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF15:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF17:
 	.string	"utils_dns_domain_get"
-.LASF15:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
+.LASF14:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
 .LASF10:
 	.string	"pos_in"
 .LASF4:
@@ -569,8 +571,6 @@ utils_dns_domain_get:
 	.string	"long long unsigned int"
 .LASF16:
 	.string	"uint8_t"
-.LASF14:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_dns.c"
 .LASF3:
 	.string	"long long int"
 .LASF1:

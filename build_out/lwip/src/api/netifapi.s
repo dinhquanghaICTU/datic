@@ -11,7 +11,7 @@
 	.type	netifapi_do_netif_add, @function
 netifapi_do_netif_add:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/api/netifapi.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/api/netifapi.c"
 	.loc 1 62 1
 	.cfi_startproc
 .LVL0:
@@ -685,19 +685,19 @@ netifapi_netif_index_to_name:
 	.size	netifapi_netif_index_to_name, .-netifapi_netif_index_to_name
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/ethernet.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/tcpip_priv.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/api_msg.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netifapi.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/ethernet.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/tcpip_priv.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/api_msg.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netifapi.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xb87
@@ -3725,6 +3725,8 @@ netifapi_netif_index_to_name:
 	.string	"ip_addr"
 .LASF79:
 	.string	"tcpip_api_call_data"
+.LASF112:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/api/netifapi.c"
 .LASF73:
 	.string	"netif_input_fn"
 .LASF28:
@@ -3739,8 +3741,6 @@ netifapi_netif_index_to_name:
 	.string	"netifapi_netif_common"
 .LASF34:
 	.string	"ERR_CONN"
-.LASF113:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF54:
 	.string	"netif_init_fn"
 .LASF3:
@@ -3763,8 +3763,6 @@ netifapi_netif_index_to_name:
 	.string	"input"
 .LASF20:
 	.string	"s8_t"
-.LASF112:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/api/netifapi.c"
 .LASF53:
 	.string	"NETIF_ADD_MAC_FILTER"
 .LASF37:
@@ -3827,6 +3825,8 @@ netifapi_netif_index_to_name:
 	.string	"netif_index_to_name"
 .LASF101:
 	.string	"ethaddr"
+.LASF113:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF60:
 	.string	"linkoutput"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

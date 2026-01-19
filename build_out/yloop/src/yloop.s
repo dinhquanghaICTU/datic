@@ -11,7 +11,7 @@
 	.type	get_context, @function
 get_context:
 .LFB42:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/src/yloop.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/yloop.c"
 	.loc 1 46 1
 	.cfi_startproc
 	.loc 1 47 5
@@ -305,7 +305,7 @@ aos_loop_init:
 .LVL19:
 .LBB52:
 .LBB53:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/list.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/list.h"
 	.loc 2 77 5
 	.loc 2 77 29 is_stmt 0
 	sw	s1,0(s1)
@@ -1589,17 +1589,17 @@ g_main_ctx:
 	.zero	4
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xcff
@@ -5046,6 +5046,8 @@ g_main_ctx:
 	.section	.debug_str,"MS",@progbits,1
 .LASF73:
 	.string	"aos_event_service_deinit"
+.LASF87:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF19:
 	.string	"aos_loop_t"
 .LASF50:
@@ -5172,18 +5174,16 @@ g_main_ctx:
 	.string	"status"
 .LASF31:
 	.string	"eventfd"
-.LASF87:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF9:
 	.string	"char"
 .LASF55:
 	.string	"aos_loop_init"
 .LASF66:
 	.string	"dlist_del"
+.LASF86:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/yloop.c"
 .LASF24:
 	.string	"_Bool"
-.LASF86:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/src/yloop.c"
 .LASF75:
 	.string	"aos_poll"
 .LASF29:

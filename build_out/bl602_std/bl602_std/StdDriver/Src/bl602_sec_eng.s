@@ -11,7 +11,7 @@
 	.type	Sec_Eng_PKA_Write_Common_OP_First_Cfg, @function
 Sec_Eng_PKA_Write_Common_OP_First_Cfg:
 .LFB42:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c"
 	.loc 1 1706 1
 	.cfi_startproc
 .LVL0:
@@ -2362,11 +2362,11 @@ Sec_Eng_AES_Link_Work:
 	sw	a5,0(a0)
 	.loc 1 975 5 is_stmt 1
  #APP
-# 975 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 975 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 976 5
-# 976 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 976 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 977 5
@@ -2489,7 +2489,7 @@ Sec_Eng_AES_Set_Key_IV:
 	lbu	a4,3(a3)
 .LBB42:
 .LBB43:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
 	.loc 2 102 18
 	slli	a7,a5,24
 	slli	a4,a4,24
@@ -3887,19 +3887,19 @@ Sec_Eng_Trng_Enable:
 	sw	a5,512(a4)
 	.loc 1 1330 5 is_stmt 1
  #APP
-# 1330 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1330 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 1331 5
-# 1331 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1331 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 1332 5
-# 1332 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1332 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 1333 5
-# 1333 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1333 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
  #NO_APP
@@ -4077,19 +4077,19 @@ Sec_Eng_Trng_Read:
 	sw	a5,512(a3)
 	.loc 1 1414 5 is_stmt 1
  #APP
-# 1414 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1414 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 1415 5
-# 1415 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1415 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 1416 5
-# 1416 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1416 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
 	.loc 1 1417 5
-# 1417 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
+# 1417 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c" 1
 	nop
 # 0 "" 2
  #NO_APP
@@ -8729,7 +8729,7 @@ SEC_Eng_GetIntStatus:
 	.cfi_endproc
 .LFE83:
 	.size	SEC_Eng_GetIntStatus, .-SEC_Eng_GetIntStatus
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c3164,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c3164,"ax",@progbits
 	.align	1
 	.weak	SEC_Eng_Turn_On_Sec_Ring
 	.type	SEC_Eng_Turn_On_Sec_Ring, @function
@@ -8770,7 +8770,7 @@ SEC_Eng_Turn_On_Sec_Ring:
 	.cfi_endproc
 .LFE84:
 	.size	SEC_Eng_Turn_On_Sec_Ring, .-SEC_Eng_Turn_On_Sec_Ring
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c3185,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c3185,"ax",@progbits
 	.align	1
 	.weak	SEC_Eng_Turn_Off_Sec_Ring
 	.type	SEC_Eng_Turn_Off_Sec_Ring, @function
@@ -8828,10 +8828,10 @@ CSWTCH.118:
 	.half	512
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x3726
@@ -10078,7 +10078,7 @@ CSWTCH.118:
 	.4byte	.LASF134
 	.byte	0x1
 	.2byte	0xc71
-	.byte	0xad
+	.byte	0xa6
 	.4byte	.LFB85
 	.4byte	.LFE85-.LFB85
 	.byte	0x1
@@ -10096,7 +10096,7 @@ CSWTCH.118:
 	.4byte	.LASF135
 	.byte	0x1
 	.2byte	0xc5c
-	.byte	0xad
+	.byte	0xa6
 	.4byte	.LFB84
 	.4byte	.LFE84-.LFB84
 	.byte	0x1
@@ -25558,6 +25558,8 @@ CSWTCH.118:
 	.string	"shaMode"
 .LASF178:
 	.string	"Sec_Eng_PKA_LMUL"
+.LASF290:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF21:
 	.string	"BL_Mask_Type"
 .LASF80:
@@ -25704,8 +25706,6 @@ CSWTCH.118:
 	.string	"SEC_ENG_SHA1"
 .LASF235:
 	.string	"Sec_Eng_Trng_Int_Read_Trigger"
-.LASF290:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF129:
 	.string	"reserved_12_31"
 .LASF213:
@@ -25872,8 +25872,8 @@ CSWTCH.118:
 	.string	"SEC_ENG_PKA_REG_SIZE_192"
 .LASF126:
 	.string	"pka0_common_op_snd_cfg_S1_only"
-.LASF32:
-	.string	"SEC_ENG_AES_ECB"
+.LASF289:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c"
 .LASF99:
 	.string	"total"
 .LASF262:
@@ -25944,6 +25944,8 @@ CSWTCH.118:
 	.string	"SEC_Eng_ClrIntStatus"
 .LASF212:
 	.string	"wrLen"
+.LASF32:
+	.string	"SEC_ENG_AES_ECB"
 .LASF13:
 	.string	"SUCCESS"
 .LASF255:
@@ -26090,8 +26092,6 @@ CSWTCH.118:
 	.string	"s0_reg_idx"
 .LASF230:
 	.string	"Sec_Eng_PKA_BigEndian_Enable"
-.LASF289:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_sec_eng.c"
 .LASF181:
 	.string	"Sec_Eng_PKA_LSUB"
 .LASF60:

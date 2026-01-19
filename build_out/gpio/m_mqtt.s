@@ -11,7 +11,7 @@
 	.type	mqtt_disconnected_handler, @function
 mqtt_disconnected_handler:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
 	.loc 1 67 1
 	.cfi_startproc
 	.loc 1 68 1
@@ -620,15 +620,15 @@ s_topic_prefix:
 	.zero	49
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
 	.file 11 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -2719,6 +2719,8 @@ s_topic_prefix:
 	.string	"client_id"
 .LASF9:
 	.string	"short int"
+.LASF95:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF5:
 	.string	"password"
 .LASF62:
@@ -2747,8 +2749,6 @@ s_topic_prefix:
 	.string	"MQTT_CMD_TIMER"
 .LASF54:
 	.string	"APP_EVENT_BLE_CONFIG_DONE"
-.LASF95:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF44:
 	.string	"settings"
 .LASF67:
@@ -2793,6 +2793,8 @@ s_topic_prefix:
 	.string	"snprintf"
 .LASF57:
 	.string	"APP_EVENT_MQTT_SET_ON"
+.LASF94:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
 .LASF96:
 	.string	"mqtt_disconnected_handler"
 .LASF14:
@@ -2855,8 +2857,6 @@ s_topic_prefix:
 	.string	"APP_EVENT_WIFI_CONNECTED"
 .LASF38:
 	.string	"interval"
-.LASF70:
-	.string	"relay_state"
 .LASF25:
 	.string	"MQTT_CMD_AUTO_TOGGLE_STOP"
 .LASF48:
@@ -2883,8 +2883,8 @@ s_topic_prefix:
 	.string	"mqtt_if_subscribe"
 .LASF7:
 	.string	"unsigned int"
-.LASF94:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+.LASF70:
+	.string	"relay_state"
 .LASF65:
 	.string	"app_mqtt_get_command_topic"
 .LASF21:

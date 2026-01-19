@@ -11,7 +11,7 @@
 	.type	__uart_rx_irq, @function
 __uart_rx_irq:
 .LFB10:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_uart.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_uart.c"
 	.loc 1 96 1
 	.cfi_startproc
 .LVL0:
@@ -2142,16 +2142,16 @@ g_uart_addr:
 	.word	1073783040
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_uart.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_uart.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.h"
 	.file 12 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -7489,8 +7489,6 @@ g_uart_addr:
 	.string	"__builtin_memcpy"
 .LASF251:
 	.string	"UART_GetAutoBaudCount"
-.LASF253:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_uart.c"
 .LASF160:
 	.string	"DMA_REQ_NONE"
 .LASF20:
@@ -7587,6 +7585,8 @@ g_uart_addr:
 	.string	"counter"
 .LASF79:
 	.string	"GLB_UART_SIG_FUN_UART1_TXD"
+.LASF254:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF97:
 	.string	"HOSAL_FLOW_CONTROL_CTS_RTS"
 .LASF78:
@@ -7641,8 +7641,6 @@ g_uart_addr:
 	.string	"bl_uart_data_recv"
 .LASF86:
 	.string	"HOSAL_DATA_WIDTH_7BIT"
-.LASF254:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF190:
 	.string	"data"
 .LASF44:
@@ -7801,8 +7799,8 @@ g_uart_addr:
 	.string	"HOSAL_FLOW_CONTROL_DISABLED"
 .LASF132:
 	.string	"dma_tx_chan"
-.LASF70:
-	.string	"GLB_GPIO_Cfg_Type"
+.LASF253:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_uart.c"
 .LASF177:
 	.string	"srcPeriph"
 .LASF195:
@@ -7831,6 +7829,8 @@ g_uart_addr:
 	.string	"callback_type"
 .LASF122:
 	.string	"port"
+.LASF70:
+	.string	"GLB_GPIO_Cfg_Type"
 .LASF71:
 	.string	"HBN_UART_CLK_FCLK"
 .LASF199:

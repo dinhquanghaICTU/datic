@@ -12,7 +12,7 @@
 	.type	mbedtls_platform_zeroize, @function
 mbedtls_platform_zeroize:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform_util.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform_util.c"
 	.loc 1 68 1
 	.cfi_startproc
 .LVL0:
@@ -70,7 +70,7 @@ memset_func:
 	.word	memset
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x104
@@ -463,18 +463,18 @@ memset_func:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF13:
 	.string	"size_t"
+.LASF15:
+	.string	"mbedtls_platform_zeroize"
 .LASF5:
 	.string	"long unsigned int"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF12:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF1:
 	.string	"unsigned char"
 .LASF9:
 	.string	"char"
 .LASF11:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform_util.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/platform_util.c"
 .LASF4:
 	.string	"long int"
 .LASF14:
@@ -487,6 +487,6 @@ memset_func:
 	.string	"short int"
 .LASF8:
 	.string	"unsigned int"
-.LASF15:
-	.string	"mbedtls_platform_zeroize"
+.LASF12:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

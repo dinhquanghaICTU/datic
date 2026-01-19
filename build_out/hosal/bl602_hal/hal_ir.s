@@ -11,7 +11,7 @@
 	.type	fdt32_to_cpu, @function
 fdt32_to_cpu:
 .LFB6:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 92 1
 	.cfi_startproc
 .LVL0:
@@ -83,7 +83,7 @@ fdt32_to_cpu:
 	.type	hal_ir_init_from_dts, @function
 hal_ir_init_from_dts:
 .LFB63:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_ir.c"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_ir.c"
 	.loc 2 23 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -494,13 +494,13 @@ hal_irled_send_data:
 	.size	hal_irled_send_data, .-hal_irled_send_data
 	.text
 .Letext0:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_ir.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_ir.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x646
@@ -2091,10 +2091,12 @@ hal_irled_send_data:
 	.section	.debug_str,"MS",@progbits,1
 .LASF55:
 	.string	"result"
-.LASF64:
-	.string	"fdt_getprop"
 .LASF48:
 	.string	"data_check"
+.LASF64:
+	.string	"fdt_getprop"
+.LASF71:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_ir.c"
 .LASF40:
 	.string	"ptxlli"
 .LASF52:
@@ -2121,10 +2123,8 @@ hal_irled_send_data:
 	.string	"bl_spi_dma_init"
 .LASF24:
 	.string	"pin_mosi"
-.LASF72:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
-.LASF71:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_ir.c"
+.LASF12:
+	.string	"uint8_t"
 .LASF56:
 	.string	"countindex"
 .LASF32:
@@ -2189,6 +2189,8 @@ hal_irled_send_data:
 	.string	"char"
 .LASF42:
 	.string	"private_ir_data_t"
+.LASF72:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF53:
 	.string	"addr_prop"
 .LASF3:
@@ -2207,8 +2209,6 @@ hal_irled_send_data:
 	.string	"hal_irled_init"
 .LASF70:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF12:
-	.string	"uint8_t"
 .LASF15:
 	.string	"used"
 .LASF44:

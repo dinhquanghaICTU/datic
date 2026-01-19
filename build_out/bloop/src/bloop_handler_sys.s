@@ -15,7 +15,7 @@
 	.type	loop_evt_entity_sys_handler, @function
 loop_evt_entity_sys_handler:
 .LFB26:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_handler_sys.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_handler_sys.c"
 	.loc 1 29 1
 	.cfi_startproc
 .LVL0:
@@ -201,12 +201,12 @@ bloop_handler_sys:
 	.word	loop_evt_entity_sys_handler
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x578
@@ -1679,8 +1679,6 @@ bloop_handler_sys:
 	.string	"header"
 .LASF56:
 	.string	"bitmap_evt"
-.LASF62:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bloop"
 .LASF36:
 	.string	"time_max"
 .LASF50:
@@ -1754,7 +1752,7 @@ bloop_handler_sys:
 .LASF10:
 	.string	"unsigned int"
 .LASF61:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_handler_sys.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/src/bloop_handler_sys.c"
 .LASF19:
 	.string	"last"
 .LASF44:
@@ -1805,6 +1803,8 @@ bloop_handler_sys:
 	.string	"utils_list_hdr"
 .LASF17:
 	.string	"next"
+.LASF62:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bloop"
 .LASF45:
 	.string	"bitmap_evt_sync"
 .LASF18:

@@ -1,158 +1,316 @@
 #include "ble_master.h"
-#include "bluetooth.h"
-#include "ble_interface.h"
-#include "conn.h"
 
+#include <stdio.h>
+#include <string.h>
+#include <FreeRTOS.h>
+#include "event_groups.h"
+#include <semphr.h>
 #include <bl_sys.h>
-#include <hosal_uart.h>
-#include <aos/kernel.h>
 
+#include "bluetooth.h"
+#include "hci_driver.h"
+#include "hci_core.h"
+#include "ble_lib_api.h"
+#include "conn.h"
+#include "conn_internal.h"
+#include "gatt.h"
 
-static struct bt_conn *conn_mater_cur;
+#include "user_config.h"
+#include "event_driven.h"
+#include "debugger.h"
+#include "block_manager.h"
 
+extern uint8_t axk_HalBleInit();
+extern uint8_t axk_HalBleCentralDisconnect();
+extern uint8_t axk_HalBleCentralStartScan(void);
+extern uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnect);
+extern int axk_HalBleCentralTTWrite(uint16_t len, uint8_t *data);
 
+uint8_t master_stop_req = 0;
 
-static bool adv_parse_cb(struct bt_data *data, void *user_data)
+static ble_scan_info_t master_scan_tbl[MASTER_SCAN_MAX];
+static int master_current_scan;
+static uint8_t scan_le_addr[6];
+
+static uint16_t target_device_id = 0x0002;
+
+static TaskHandle_t master_task_handle;
+
+static uint8_t slave_mac[6] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
+
+static bool scan_data_cb(struct bt_data *data, void *user_data)
 {
-    char name[32];
-    int err;
-    
+    ble_scan_info_t *info = user_data;
+    u8_t len;
 
-    if (data->type == BT_DATA_NAME_COMPLETE ||
-        data->type == BT_DATA_NAME_SHORTENED) {
+    switch (data->type) {
+        case BT_DATA_NAME_SHORTENED:
+            return true;
 
-        memcpy(name, data->data, data->data_len);
-        name[data->data_len] = '\0';
-        printf(" %s \r\n", name);
+        case BT_DATA_NAME_COMPLETE:
+            len = (data->data_len > NAME_LEN - 1)?(NAME_LEN - 1):(data->data_len);
+            memcpy(info->name, data->data, len);
+            return true;
 
-        if (strcmp(name, TARGET_DEVICE_NAME) == 0) {
-            const bt_addr_le_t *addr = user_data;
-            printf("find target device done: %s \r\n ", name);
-            err= connect(addr);
-            if(err == -1){
-                 printf("Connect failed err %d\r\n", err);
+        case BT_DATA_MANUFACTURER_DATA:
+            if (data->data_len < 8) return true;
+
+            uint16_t company_id = data->data[0] | (data->data[1] << 8);
+            if (company_id != ADV_COMPANY_ID) return true;
+
+            uint8_t magic   = data->data[2];
+            uint8_t product = data->data[3];
+            uint8_t msg     = data->data[4];
+            uint16_t device_id = data->data[5] | (data->data[6] << 8);
+            uint8_t state   = data->data[7];
+
+            if (magic == ADV_MAGIC &&
+                product == ADV_PRODUCT_RELAY &&
+                msg == ADV_MSG_RELAY_STATE &&
+                device_id == target_device_id) {
+
+                info->is_target = true;
+                return false; 
             }
-            ble_stop_scan();
-            return true; 
-        }
+            return true;
+        default:
+            return true;
     }
-    return true;
 }
 
-int connect(bt_addr_le_t *addr){
-    static struct bt_le_conn_param conn_param_bl = {
-    .interval_min = 0x0018, 
-    .interval_max = 0x0028, 
-    .latency = 0,
-    .timeout = 400,         
-    };
-    char mac [BT_ADDR_LE_STR_LEN];
-
-    int err = bt_conn_create_le(addr,&conn_param_bl);
-
-    if (err) {
-        printf("Connect failed err %d\r\n", err);
-        return -1;
-    }  
-    bt_addr_le_to_str(addr, mac, sizeof(mac));
-    printf("Connected! %s\r\n", mac);
-
-    // ble_get_conn_master_cur();
-    return 0;
-}
-
-
-// struct bt_conn *ble_get_conn_master_cur()
-// {
-//     return conn_mater_cur;
-// }
-
-
-static void device_found(const bt_addr_le_t *addr, int8_t rssi,
-                        uint8_t type, struct net_buf_simple *ad)
+static void scan_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
+             struct net_buf_simple *buf)
 {
-    // char addr_str[BT_ADDR_LE_STR_LEN];
-    // bt_addr_le_to_str(addr, addr_str, sizeof(addr_str));
-    
-    // printf("Device found: %s RSSI %d \r\n", addr_str, rssi);
-    bt_data_parse(ad, adv_parse_cb, (void *)addr);
-    
+    if (master_current_scan >= MASTER_SCAN_MAX) 
+    {
+        return ;
+    }
 
+    /* if the address recorded last is different from this */
+    if (memcmp(scan_le_addr, addr->a.val, 6) != 0)
+    {
+        if (*(uint32_t *)scan_le_addr != 0) 
+        {
+            if (*(uint32_t *)scan_le_addr != 0) 
+            {
+                memcpy(master_scan_tbl[master_current_scan].mac, scan_le_addr, 6);
+                master_current_scan++;
+            }
+        }
+        
+        /* record newer addr */
+        memcpy(scan_le_addr, addr->a.val, 6);
+    }
+
+    /* parse ble name */
+    bt_data_parse(buf, scan_data_cb, &master_scan_tbl[master_current_scan]);
+    /* record rssi */
+    master_scan_tbl[master_current_scan].rssi = rssi;
 }
 
-int ble_start_scan(void)
-{
-    int err;
-    
-    struct bt_le_scan_param scan_param ;
+int ble_master_scan(uint32_t scan_time) {
+    int ret;
+    struct bt_le_scan_param scan_param;
+    char scan_data[250];
     scan_param.type = BT_LE_SCAN_TYPE_ACTIVE;
     scan_param.filter_dup = BT_LE_SCAN_FILTER_DUPLICATE;
     scan_param.interval = 320;
     scan_param.window = 48;
-    
 
-    err = bt_le_scan_start(&scan_param, device_found);
-    if (err) {
-        printf("Start scan failed (err %d)", err);
-        return err;
+    master_current_scan = 0;
+    memset(scan_le_addr, 0, sizeof(scan_le_addr));
+    memset(master_scan_tbl, 0, sizeof(master_scan_tbl));
+
+    ret = bt_le_scan_start(&scan_param, scan_device_found);
+    if (ret != 0)
+    {
+        debug_printf("[BLE][SCAN] ret:%d \r\n", ret);
+        return -1;
     }
 
-    printf("Scanning started");
+    vTaskDelay(scan_time / portTICK_PERIOD_MS);
+    bt_le_scan_stop();
+
+    for (int i = 0; i < master_current_scan; i++) {
+
+        if ((master_scan_tbl[i].is_target))
+        {
+            ble_reverse_byte(master_scan_tbl[i].mac, 6);
+            sprintf(scan_data,"mac:%02X%02X%02X%02X%02X%02X rssi:%i name: %s\r\n", 
+                master_scan_tbl[i].mac[0],master_scan_tbl[i].mac[1],master_scan_tbl[i].mac[2],
+                master_scan_tbl[i].mac[3],master_scan_tbl[i].mac[4],master_scan_tbl[i].mac[5],
+                master_scan_tbl[i].rssi, master_scan_tbl[i].name);
+            debug_printf(scan_data);
+            debug_printf("DAY LA THIET BI TARGET HOP LE");
+            axk_HalBleCentralConnect(master_scan_tbl[i].mac, NULL, BLE_MASTER_AUTOCONN_ENABLE);
+            break;
+        }
+    }
+
     return 0;
 }
 
-int ble_stop_scan(){
-    int err;
-    err= bt_le_scan_stop();
-    if(err){
-        printf("stop scan fail %d\r\n", err);
-        return err;
+int find_result;
+static uint8_t *find_mac;
+static uint16_t *find_uuid;
+static bt_addr_le_t *find_target_addr;
+static StaticSemaphore_t sem_found_buffer;
+static SemaphoreHandle_t sem_found;
+static bool find_data_cb(struct bt_data *data, void *user_data)
+{
+    u8_t len;
+    uint16_t *uuid = user_data;
+
+    switch (data->type) {
+        case BT_DATA_UUID16_SOME:
+        case BT_DATA_UUID16_ALL:
+            len = data->data_len;
+            if (len % 2 != 0) {
+                /* invalid adv data, discard */
+                debug_printf("[BLE] find invalid adv\r\n");
+                return false;
+            }
+            uint16_t *p_uuid = (uint16_t *)(data->data);
+
+            while (len >= 2) {
+                if (*uuid == *find_uuid) {
+                    *uuid = find_uuid;
+                    return false;
+                }
+                p_uuid++;
+                len -= 2;
+            }
+        default:
+            return true;
     }
-    printf("stop done\r\n");
+}
+
+static void find_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
+             struct net_buf_simple *buf)
+{
+    uint8_t mac[6];
+    uint16_t uuid = 0;
+
+    if (find_uuid != NULL) {
+        /* parse uuid */
+        bt_data_parse(buf, find_data_cb, &uuid);
+    }
+
+    memcpy(mac, addr->a.val, 6);
+    ble_reverse_byte(mac, 6);
+    if (find_mac != NULL && memcmp(find_mac, mac, 6) != 0) {
+        return ;
+    }
+
+    if (find_uuid != NULL && *find_uuid != uuid) {
+        return ;
+    }
+    /* found target */
+    debug_printf("[BLE] found target\r\n");
+    memcpy(find_target_addr, addr, sizeof(bt_addr_le_t));
+    find_result = 1;
+    xSemaphoreGive(sem_found);
+}
+
+int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_addr_le_t *target_addr)
+{
+    int ret;
+    struct bt_le_scan_param scan_param;
+
+    if (target_addr == NULL) {
+        return -1;
+    }
+
+    if (mac == NULL && uuid == NULL) {
+        return -1;
+    }
+
+    sem_found = xSemaphoreCreateBinaryStatic(&sem_found_buffer);
+    if (sem_found == NULL )
+    {
+        debug_printf("[BLE] create sem faxkl \r\n");
+        return -1;
+    }
+
+    find_mac = mac;
+    find_uuid = uuid;
+    find_target_addr = target_addr;
+
+    scan_param.type = BT_LE_SCAN_TYPE_ACTIVE;
+    scan_param.filter_dup = BT_LE_SCAN_FILTER_DUPLICATE;
+    scan_param.interval = 320;
+    scan_param.window = 120;
+
+    find_result = 0;
+    ret = bt_le_scan_start(&scan_param, find_device_found);
+    if (ret != 0)
+    {
+        debug_printf("[BLE][FIND] ret:%d \r\n", ret);
+        return -1;
+    }
+    xSemaphoreTake(sem_found, scan_time / portTICK_PERIOD_MS);
+
+    bt_le_scan_stop();               
+
+    vSemaphoreDelete(sem_found);     
+    sem_found = NULL;
+
+    if (find_result == 0) {
+        debug_printf("[BLE] not found target\r\n");
+        return -1;
+    }
     return 0;
 }
 
 
-// static struct bt_gatt_discover_params discover_params = {
-//     .uuid = &write_uuid.uuid,
-//     .func = discover_func,
-//     .start_handle = 0x0001,
-//     .end_handle = 0xFFFF,
-//     .type = BT_GATT_DISCOVER_CHARACTERISTIC,
-// };
+
+void ble_user_init(void)
+{
+  axk_HalBleInit();
+  axk_HalBleCentralStartScan();                                          
+}
+
+static void proc_master(void *pvParameters)
+{
+    (void)pvParameters;
+    ble_user_init();
+    eventq_post(EVT_MASTER_STARTED, 0);
+    xEventGroupSetBits(g_sys_eg_state, ST_BLE_RUNNING);
+    while (!master_stop_req)
+    {
+        vTaskDelay(pdMS_TO_TICKS(10));
+    }
+
+    bt_le_scan_stop();
+    axk_HalBleCentralDisconnect();
+    axk_HalBleCentralConnect(NULL, NULL, 0);
+
+    ble_master_deinit();
+    bt_disable();
+
+    master_task_handle = NULL;
+    eventq_post(EVT_MASTER_STOPPED, 0);
+    vTaskDelete(NULL);
+    xEventGroupClearBits(g_sys_eg_state, ST_BLE_RUNNING);
+}
 
 
-// int ble_discover_services(void)
-// {
-//     int err;
+void ble_start_master(void)
+{
+    EventBits_t bits = xEventGroupGetBits(g_sys_eg_state);
+    if (bits & ST_BLE_RUNNING)
+    {
+        debug_printf("BLE RUNNING, IGNORE MASTER");
+        return;
+    }
+    master_stop_req = 0;  
+    debug_printf("MY BLE MASTER\r\n");
+    bl_sys_init();
+    xTaskCreate(proc_master, "proc_master", 1024, NULL, 15, &master_task_handle);
+}
 
-//     if (!default_conn) {
-//         printf("Not connected\r\n");
-//         return -1;
-//     }
-
-//     discover_params.uuid = &service_uuid.uuid;
-//     discover_params.func = discover_func;
-//     discover_params.start_handle = BT_ATT_FIRST_ATTRIBUTE_HANDLE;
-//     discover_params.end_handle = BT_ATT_LAST_ATTRIBUTE_HANDLE;
-//     discover_params.type = BT_GATT_DISCOVER_CHARACTERISTIC;
-
-//     err = bt_gatt_discover(default_conn, &discover_params);
-//     if (err) {
-//         printf("Discover failed (err %d)\r\n", err);
-//         return err;
-//     }
-
-//     printf("Discovering...\r\n");
-//     return 0;
-// }
-
-
-
-void test_ble_master(void){
-    
-    // ble_stack_start();
-    // ble_regist_conn(ble_master_conn_cb);
-    ble_start_scan();
-    
+void ble_master_stop(void)
+{
+    if (master_task_handle == NULL) return;
+    master_stop_req = 1;
 }

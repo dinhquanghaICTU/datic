@@ -6,13 +6,13 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c109,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c109,"ax",@progbits
 	.align	1
 	.weak	GLB_Get_Root_CLK_Sel
 	.type	GLB_Get_Root_CLK_Sel, @function
 GLB_Get_Root_CLK_Sel:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c"
 	.loc 1 110 1
 	.cfi_startproc
 	.loc 1 111 5
@@ -57,7 +57,7 @@ GLB_Get_Root_CLK_Sel:
 	.cfi_endproc
 .LFE8:
 	.size	GLB_Get_Root_CLK_Sel, .-GLB_Get_Root_CLK_Sel
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c138,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c138,"ax",@progbits
 	.align	1
 	.globl	GLB_Set_System_CLK_Div
 	.type	GLB_Set_System_CLK_Div, @function
@@ -116,35 +116,35 @@ GLB_Set_System_CLK_Div:
 	sw	zero,-4(a4)
 	.loc 1 155 6 is_stmt 1
  #APP
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 29
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 52
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 75
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 98
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 121
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 144
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 167
-# 155 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 155 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 155 191
@@ -163,35 +163,35 @@ GLB_Set_System_CLK_Div:
 	sw	a4,0(a5)
 	.loc 1 161 6 is_stmt 1
  #APP
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 29
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 52
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 75
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 98
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 121
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 144
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 167
-# 161 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 161 191
@@ -208,7 +208,7 @@ GLB_Set_System_CLK_Div:
 	.cfi_endproc
 .LFE9:
 	.size	GLB_Set_System_CLK_Div, .-GLB_Set_System_CLK_Div
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c176,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c176,"ax",@progbits
 	.align	1
 	.weak	GLB_Get_BCLK_Div
 	.type	GLB_Get_BCLK_Div, @function
@@ -245,7 +245,7 @@ GLB_Get_BCLK_Div:
 	.cfi_endproc
 .LFE10:
 	.size	GLB_Get_BCLK_Div, .-GLB_Get_BCLK_Div
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c196,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c196,"ax",@progbits
 	.align	1
 	.weak	GLB_Get_HCLK_Div
 	.type	GLB_Get_HCLK_Div, @function
@@ -282,7 +282,7 @@ GLB_Get_HCLK_Div:
 	.cfi_endproc
 .LFE11:
 	.size	GLB_Get_HCLK_Div, .-GLB_Get_HCLK_Div
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c216,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c216,"ax",@progbits
 	.align	1
 	.weak	Update_SystemCoreClockWith_XTAL
 	.type	Update_SystemCoreClockWith_XTAL, @function
@@ -321,7 +321,7 @@ Update_SystemCoreClockWith_XTAL:
 	.word	.L16
 	.word	.L15
 	.word	.L13
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c216
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c216
 .L19:
 	.loc 1 224 13 is_stmt 1
 	.loc 1 224 49 is_stmt 0
@@ -690,7 +690,7 @@ GLB_Set_IR_CLK:
 	.cfi_endproc
 .LFE19:
 	.size	GLB_Set_IR_CLK, .-GLB_Set_IR_CLK
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c524,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c524,"ax",@progbits
 	.align	1
 	.weak	GLB_Set_SF_CLK
 	.type	GLB_Set_SF_CLK, @function
@@ -781,7 +781,7 @@ GLB_Set_SF_CLK:
 	.word	.L43
 	.word	.L42
 	.word	.L40
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c524
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c524
 .L46:
 	.loc 1 546 13
 .LVL68:
@@ -1138,7 +1138,7 @@ GLB_Set_SPI_CLK:
 	.cfi_endproc
 .LFE23:
 	.size	GLB_Set_SPI_CLK, .-GLB_Set_SPI_CLK
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c694,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c694,"ax",@progbits
 	.align	1
 	.weak	GLB_Set_PKA_CLK_Sel
 	.type	GLB_Set_PKA_CLK_Sel, @function
@@ -1189,7 +1189,7 @@ GLB_Set_PKA_CLK_Sel:
 	.cfi_endproc
 .LFE24:
 	.size	GLB_Set_PKA_CLK_Sel, .-GLB_Set_PKA_CLK_Sel
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c260,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c260,"ax",@progbits
 	.align	1
 	.weak	GLB_Set_System_CLK
 	.type	GLB_Set_System_CLK, @function
@@ -1338,7 +1338,7 @@ GLB_Set_System_CLK:
 	.word	.L78
 	.word	.L77
 	.word	.L75
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c260
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c260
 .L80:
 	.loc 1 316 13
 	li	a0,1
@@ -1352,35 +1352,35 @@ GLB_Set_System_CLK:
 .L74:
 	.loc 1 344 6
  #APP
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 29
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 52
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 75
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 98
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 121
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 144
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 167
-# 344 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 344 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 344 191
@@ -1488,7 +1488,7 @@ GLB_Set_System_CLK:
 	.cfi_endproc
 .LFE13:
 	.size	GLB_Set_System_CLK, .-GLB_Set_System_CLK
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c364,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c364,"ax",@progbits
 	.align	1
 	.weak	System_Core_Clock_Update_From_RC32M
 	.type	System_Core_Clock_Update_From_RC32M, @function
@@ -1531,19 +1531,19 @@ System_Core_Clock_Update_From_RC32M:
 .LVL153:
 	.loc 1 379 5
  #APP
-# 379 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 379 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 380 5
-# 380 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 380 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 381 5
-# 381 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 382 5
-# 382 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 382 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 384 5
@@ -1561,7 +1561,7 @@ System_Core_Clock_Update_From_RC32M:
 	.cfi_endproc
 .LFE14:
 	.size	System_Core_Clock_Update_From_RC32M, .-System_Core_Clock_Update_From_RC32M
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c718,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c718,"ax",@progbits
 	.align	1
 	.weak	GLB_SW_System_Reset
 	.type	GLB_SW_System_Reset, @function
@@ -1593,35 +1593,35 @@ GLB_SW_System_Reset:
 	sw	a5,48(a4)
 	.loc 1 731 6 is_stmt 1
  #APP
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 29
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 52
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 75
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 98
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 121
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 144
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 167
-# 731 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 731 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 731 191
@@ -1654,35 +1654,35 @@ GLB_SW_System_Reset:
 	sw	zero,-4(a4)
 	.loc 1 740 6 is_stmt 1
  #APP
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 29
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 52
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 75
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 98
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 121
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 144
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 167
-# 740 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 740 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 740 191
@@ -1724,7 +1724,7 @@ GLB_SW_System_Reset:
 	.cfi_endproc
 .LFE25:
 	.size	GLB_SW_System_Reset, .-GLB_SW_System_Reset
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c774,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c774,"ax",@progbits
 	.align	1
 	.weak	GLB_SW_CPU_Reset
 	.type	GLB_SW_CPU_Reset, @function
@@ -1756,35 +1756,35 @@ GLB_SW_CPU_Reset:
 	sw	a5,48(a4)
 	.loc 1 787 6 is_stmt 1
  #APP
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 29
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 52
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 75
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 98
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 121
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 144
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 167
-# 787 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 787 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 787 191
@@ -1817,35 +1817,35 @@ GLB_SW_CPU_Reset:
 	sw	zero,-4(a4)
 	.loc 1 796 6 is_stmt 1
  #APP
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 29
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 52
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 75
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 98
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 121
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 144
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 167
-# 796 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 796 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 796 191
@@ -1886,7 +1886,7 @@ GLB_SW_CPU_Reset:
 	.cfi_endproc
 .LFE26:
 	.size	GLB_SW_CPU_Reset, .-GLB_SW_CPU_Reset
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c830,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c830,"ax",@progbits
 	.align	1
 	.weak	GLB_SW_POR_Reset
 	.type	GLB_SW_POR_Reset, @function
@@ -1918,35 +1918,35 @@ GLB_SW_POR_Reset:
 	sw	a5,48(a4)
 	.loc 1 843 6 is_stmt 1
  #APP
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 29
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 52
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 75
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 98
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 121
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 144
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 167
-# 843 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 843 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 843 191
@@ -1979,35 +1979,35 @@ GLB_SW_POR_Reset:
 	sw	zero,-4(a4)
 	.loc 1 852 6 is_stmt 1
  #APP
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 29
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 52
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 75
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 98
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 121
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 144
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 167
-# 852 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 852 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 852 191
@@ -2087,19 +2087,19 @@ GLB_AHB_Slave1_Reset:
 	sw	a3,20(a5)
 	.loc 1 891 6 is_stmt 1
  #APP
-# 891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 891 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 891 29
-# 891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 891 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 891 52
-# 891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 891 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 891 75
-# 891 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 891 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 891 99
@@ -2117,19 +2117,19 @@ GLB_AHB_Slave1_Reset:
 	sw	a0,20(a5)
 	.loc 1 895 6 is_stmt 1
  #APP
-# 895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 895 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 895 29
-# 895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 895 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 895 52
-# 895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 895 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 895 75
-# 895 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
+# 895 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c" 1
 	nop
 # 0 "" 2
 	.loc 1 895 99
@@ -3049,7 +3049,7 @@ GLB_Set_SPI_0_ACT_MOD_Sel:
 	.cfi_endproc
 .LFE49:
 	.size	GLB_Set_SPI_0_ACT_MOD_Sel, .-GLB_Set_SPI_0_ACT_MOD_Sel
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1360,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1360,"ax",@progbits
 	.align	1
 	.weak	GLB_Select_Internal_Flash
 	.type	GLB_Select_Internal_Flash, @function
@@ -3090,7 +3090,7 @@ GLB_Select_Internal_Flash:
 	.cfi_endproc
 .LFE50:
 	.size	GLB_Select_Internal_Flash, .-GLB_Select_Internal_Flash
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1382,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1382,"ax",@progbits
 	.align	1
 	.weak	GLB_Select_External_Flash
 	.type	GLB_Select_External_Flash, @function
@@ -3131,7 +3131,7 @@ GLB_Select_External_Flash:
 	.cfi_endproc
 .LFE51:
 	.size	GLB_Select_External_Flash, .-GLB_Select_External_Flash
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1404,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1404,"ax",@progbits
 	.align	1
 	.weak	GLB_Deswap_Flash_Pin
 	.type	GLB_Deswap_Flash_Pin, @function
@@ -3172,7 +3172,7 @@ GLB_Deswap_Flash_Pin:
 	.cfi_endproc
 .LFE52:
 	.size	GLB_Deswap_Flash_Pin, .-GLB_Deswap_Flash_Pin
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1426,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1426,"ax",@progbits
 	.align	1
 	.weak	GLB_Swap_Flash_Pin
 	.type	GLB_Swap_Flash_Pin, @function
@@ -4237,7 +4237,7 @@ GLB_IR_LED_Driver_Ibias:
 	.cfi_endproc
 .LFE67:
 	.size	GLB_IR_LED_Driver_Ibias, .-GLB_IR_LED_Driver_Ibias
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1856,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1856,"ax",@progbits
 	.align	1
 	.globl	GLB_GPIO_Init
 	.type	GLB_GPIO_Init, @function
@@ -4594,7 +4594,7 @@ GLB_GPIO_Func_Init:
 	.cfi_endproc
 .LFE69:
 	.size	GLB_GPIO_Func_Init, .-GLB_GPIO_Func_Init
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1994,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c1994,"ax",@progbits
 	.align	1
 	.globl	GLB_GPIO_INPUT_Enable
 	.type	GLB_GPIO_INPUT_Enable, @function
@@ -4667,7 +4667,7 @@ GLB_GPIO_INPUT_Enable:
 	.cfi_endproc
 .LFE70:
 	.size	GLB_GPIO_INPUT_Enable, .-GLB_GPIO_INPUT_Enable
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2021,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2021,"ax",@progbits
 	.align	1
 	.globl	GLB_GPIO_INPUT_Disable
 	.type	GLB_GPIO_INPUT_Disable, @function
@@ -4741,7 +4741,7 @@ GLB_GPIO_INPUT_Disable:
 	.cfi_endproc
 .LFE71:
 	.size	GLB_GPIO_INPUT_Disable, .-GLB_GPIO_INPUT_Disable
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2050,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2050,"ax",@progbits
 	.align	1
 	.weak	GLB_GPIO_OUTPUT_Enable
 	.type	GLB_GPIO_OUTPUT_Enable, @function
@@ -4786,7 +4786,7 @@ GLB_GPIO_OUTPUT_Enable:
 	.cfi_endproc
 .LFE72:
 	.size	GLB_GPIO_OUTPUT_Enable, .-GLB_GPIO_OUTPUT_Enable
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2072,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2072,"ax",@progbits
 	.align	1
 	.weak	GLB_GPIO_OUTPUT_Disable
 	.type	GLB_GPIO_OUTPUT_Disable, @function
@@ -4833,7 +4833,7 @@ GLB_GPIO_OUTPUT_Disable:
 	.cfi_endproc
 .LFE73:
 	.size	GLB_GPIO_OUTPUT_Disable, .-GLB_GPIO_OUTPUT_Disable
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2094,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2094,"ax",@progbits
 	.align	1
 	.weak	GLB_GPIO_Set_HZ
 	.type	GLB_GPIO_Set_HZ, @function
@@ -4948,7 +4948,7 @@ GLB_GPIO_Set_HZ:
 	.cfi_endproc
 .LFE74:
 	.size	GLB_GPIO_Set_HZ, .-GLB_GPIO_Set_HZ
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2138,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2138,"ax",@progbits
 	.align	1
 	.weak	GLB_GPIO_Set_PullUp
 	.type	GLB_GPIO_Set_PullUp, @function
@@ -5026,7 +5026,7 @@ GLB_GPIO_Set_PullUp:
 	.cfi_endproc
 .LFE75:
 	.size	GLB_GPIO_Set_PullUp, .-GLB_GPIO_Set_PullUp
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2167,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2167,"ax",@progbits
 	.align	1
 	.weak	GLB_GPIO_Set_PullDown
 	.type	GLB_GPIO_Set_PullDown, @function
@@ -5104,7 +5104,7 @@ GLB_GPIO_Set_PullDown:
 	.cfi_endproc
 .LFE76:
 	.size	GLB_GPIO_Set_PullDown, .-GLB_GPIO_Set_PullDown
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2197,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c2197,"ax",@progbits
 	.align	1
 	.weak	GLB_GPIO_Get_Fun
 	.type	GLB_GPIO_Get_Fun, @function
@@ -5891,16 +5891,16 @@ GLB_GPIO_INT0_Callback_Install:
 	.size	GLB_GPIO_INT0_Callback_Install, .-GLB_GPIO_INT0_Callback_Install
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pds.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_aon.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_l1c.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pds.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_aon.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_l1c.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2165
@@ -7646,7 +7646,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF277
 	.byte	0x1
 	.2byte	0x895
-	.byte	0xac
+	.byte	0xa5
 	.4byte	0xf9
 	.4byte	.LFB77
 	.4byte	.LFE77-.LFB77
@@ -7657,7 +7657,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x895
-	.byte	0xcb
+	.byte	0xc4
 	.4byte	0x1d3
 	.4byte	.LLST127
 	.byte	0x19
@@ -7673,7 +7673,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF278
 	.byte	0x1
 	.2byte	0x877
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB76
 	.4byte	.LFE76-.LFB76
@@ -7684,7 +7684,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x877
-	.byte	0xd4
+	.byte	0xcd
 	.4byte	0x1d3
 	.4byte	.LLST126
 	.byte	0x19
@@ -7700,7 +7700,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF279
 	.byte	0x1
 	.2byte	0x85a
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB75
 	.4byte	.LFE75-.LFB75
@@ -7711,7 +7711,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x85a
-	.byte	0xd2
+	.byte	0xcb
 	.4byte	0x1d3
 	.4byte	.LLST125
 	.byte	0x19
@@ -7727,7 +7727,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF280
 	.byte	0x1
 	.2byte	0x82e
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB74
 	.4byte	.LFE74-.LFB74
@@ -7738,7 +7738,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x82e
-	.byte	0xce
+	.byte	0xc7
 	.4byte	0x1d3
 	.4byte	.LLST121
 	.byte	0x19
@@ -7775,7 +7775,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF281
 	.byte	0x1
 	.2byte	0x818
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB73
 	.4byte	.LFE73-.LFB73
@@ -7786,7 +7786,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x818
-	.byte	0xd6
+	.byte	0xcf
 	.4byte	0x1d3
 	.4byte	.LLST119
 	.byte	0x15
@@ -7801,7 +7801,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF282
 	.byte	0x1
 	.2byte	0x802
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB72
 	.4byte	.LFE72-.LFB72
@@ -7812,7 +7812,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x802
-	.byte	0xd5
+	.byte	0xce
 	.4byte	0x1d3
 	.4byte	.LLST117
 	.byte	0x15
@@ -7827,7 +7827,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF283
 	.byte	0x1
 	.2byte	0x7e5
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB71
 	.4byte	.LFE71-.LFB71
@@ -7838,7 +7838,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x7e5
-	.byte	0xd5
+	.byte	0xce
 	.4byte	0x1d3
 	.4byte	.LLST115
 	.byte	0x19
@@ -7861,7 +7861,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF285
 	.byte	0x1
 	.2byte	0x7ca
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB70
 	.4byte	.LFE70-.LFB70
@@ -7872,7 +7872,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF73
 	.byte	0x1
 	.2byte	0x7ca
-	.byte	0xd4
+	.byte	0xcd
 	.4byte	0x1d3
 	.4byte	.LLST113
 	.byte	0x19
@@ -7960,7 +7960,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF289
 	.byte	0x1
 	.2byte	0x740
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB68
 	.4byte	.LFE68-.LFB68
@@ -7971,7 +7971,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.string	"cfg"
 	.byte	0x1
 	.2byte	0x740
-	.byte	0xd1
+	.byte	0xca
 	.4byte	0x10c5
 	.4byte	.LLST104
 	.byte	0x15
@@ -8480,7 +8480,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF314
 	.byte	0x1
 	.2byte	0x592
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB53
 	.4byte	.LFE53-.LFB53
@@ -8500,7 +8500,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF315
 	.byte	0x1
 	.2byte	0x57c
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB52
 	.4byte	.LFE52-.LFB52
@@ -8520,7 +8520,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF316
 	.byte	0x1
 	.2byte	0x566
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB51
 	.4byte	.LFE51-.LFB51
@@ -8540,7 +8540,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF317
 	.byte	0x1
 	.2byte	0x550
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x2c3
 	.4byte	.LFB50
 	.4byte	.LFE50-.LFB50
@@ -9031,7 +9031,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF349
 	.byte	0x1
 	.2byte	0x33e
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0x2c3
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
@@ -9059,7 +9059,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF350
 	.byte	0x1
 	.2byte	0x306
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0x2c3
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
@@ -9087,7 +9087,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF351
 	.byte	0x1
 	.2byte	0x2ce
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0x2c3
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
@@ -9115,7 +9115,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF352
 	.byte	0x1
 	.2byte	0x2b6
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0x2c3
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
@@ -9126,7 +9126,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF306
 	.byte	0x1
 	.2byte	0x2b6
-	.byte	0xdb
+	.byte	0xd4
 	.4byte	0x673
 	.4byte	.LLST34
 	.byte	0x15
@@ -9258,7 +9258,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF356
 	.byte	0x1
 	.2byte	0x20c
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0x2c3
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
@@ -9269,21 +9269,21 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF299
 	.byte	0x1
 	.2byte	0x20c
-	.byte	0xcd
+	.byte	0xc6
 	.4byte	0xf9
 	.4byte	.LLST20
 	.byte	0x12
 	.4byte	.LASF306
 	.byte	0x1
 	.2byte	0x20c
-	.byte	0xe8
+	.byte	0xe1
 	.4byte	0x625
 	.4byte	.LLST21
 	.byte	0x1a
 	.string	"div"
 	.byte	0x1
 	.2byte	0x20c
-	.byte	0xf7
+	.byte	0xf0
 	.4byte	0xf9
 	.4byte	.LLST22
 	.byte	0x15
@@ -9473,7 +9473,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF364
 	.byte	0x1
 	.2byte	0x16c
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0x2c3
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
@@ -9519,7 +9519,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF366
 	.byte	0x1
 	.2byte	0x104
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0x2c3
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
@@ -9530,14 +9530,14 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF367
 	.byte	0x1
 	.2byte	0x104
-	.byte	0xdb
+	.byte	0xd4
 	.4byte	0x9b7
 	.4byte	.LLST36
 	.byte	0x12
 	.4byte	.LASF368
 	.byte	0x1
 	.2byte	0x104
-	.byte	0xf5
+	.byte	0xee
 	.4byte	0x592
 	.4byte	.LLST37
 	.byte	0x15
@@ -9750,7 +9750,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF369
 	.byte	0x1
 	.byte	0xd8
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0x2c3
 	.4byte	.LFB12
 	.4byte	.LFE12-.LFB12
@@ -9761,7 +9761,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF367
 	.byte	0x1
 	.byte	0xd8
-	.byte	0xe8
+	.byte	0xe1
 	.4byte	0x9b7
 	.4byte	.LLST6
 	.byte	0
@@ -9769,7 +9769,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF370
 	.byte	0x1
 	.byte	0xc4
-	.byte	0xb2
+	.byte	0xab
 	.4byte	0xf9
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
@@ -9788,7 +9788,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF371
 	.byte	0x1
 	.byte	0xb0
-	.byte	0xb2
+	.byte	0xab
 	.4byte	0xf9
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
@@ -9807,7 +9807,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF372
 	.byte	0x1
 	.byte	0x8a
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0x2c3
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
@@ -9818,14 +9818,14 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF373
 	.byte	0x1
 	.byte	0x8a
-	.byte	0xd5
+	.byte	0xce
 	.4byte	0xf9
 	.4byte	.LLST1
 	.byte	0x22
 	.4byte	.LASF374
 	.byte	0x1
 	.byte	0x8a
-	.byte	0xe5
+	.byte	0xde
 	.4byte	0xf9
 	.4byte	.LLST2
 	.byte	0x23
@@ -9840,7 +9840,7 @@ GLB_GPIO_INT0_Callback_Install:
 	.4byte	.LASF375
 	.byte	0x1
 	.byte	0x6d
-	.byte	0xbc
+	.byte	0xb5
 	.4byte	0x553
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
@@ -13791,8 +13791,6 @@ GLB_GPIO_INT0_Callback_Install:
 	.string	"GLB_SYS_CLK_PLL48M"
 .LASF89:
 	.string	"BL_Sts_Type"
-.LASF386:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c"
 .LASF82:
 	.string	"ERROR"
 .LASF163:
@@ -13895,8 +13893,6 @@ GLB_GPIO_INT0_Callback_Install:
 	.string	"GLB_GPIO_Get_Fun"
 .LASF317:
 	.string	"GLB_Select_Internal_Flash"
-.LASF387:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF170:
 	.string	"BMX_ARB_RANDOM"
 .LASF374:
@@ -14157,6 +14153,8 @@ GLB_GPIO_INT0_Callback_Install:
 	.string	"GLB_Set_SRAM_PARM"
 .LASF59:
 	.string	"GLB_GPIO_PIN_22"
+.LASF386:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_glb.c"
 .LASF304:
 	.string	"GLB_Set_DIG_512K_CLK"
 .LASF315:
@@ -14443,6 +14441,8 @@ GLB_GPIO_INT0_Callback_Install:
 	.string	"unsigned char"
 .LASF154:
 	.string	"GLB_IR_CLK_SRC_Type"
+.LASF387:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF129:
 	.string	"PDS_PLL_CLK_192M"
 .LASF216:

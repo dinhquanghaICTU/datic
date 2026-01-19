@@ -12,7 +12,7 @@
 	.type	hosal_flash_open, @function
 hosal_flash_open:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_flash.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_flash.c"
 	.loc 1 28 1
 	.cfi_startproc
 .LVL0:
@@ -625,12 +625,12 @@ hosal_flash_raw_erase:
 	.size	hosal_flash_raw_erase, .-hosal_flash_raw_erase
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_flash.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_flash.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x6da
@@ -2661,16 +2661,14 @@ hosal_flash_raw_erase:
 	.string	"out_buf_size"
 .LASF14:
 	.string	"hosal_flash_dev_t"
-.LASF65:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_flash.c"
 .LASF15:
 	.string	"flash_dev"
 .LASF62:
 	.string	"bl_mtd_open"
 .LASF56:
 	.string	"bl_mtd_close"
-.LASF66:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF12:
+	.string	"uint8_t"
 .LASF44:
 	.string	"hosal_flash_write"
 .LASF57:
@@ -2729,10 +2727,14 @@ hosal_flash_raw_erase:
 	.string	"in_buf"
 .LASF47:
 	.string	"hosal_flash_erase"
+.LASF65:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_flash.c"
 .LASF11:
 	.string	"char"
 .LASF25:
 	.string	"xip_addr"
+.LASF66:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF3:
 	.string	"short unsigned int"
 .LASF63:
@@ -2765,8 +2767,6 @@ hosal_flash_raw_erase:
 	.string	"info"
 .LASF34:
 	.string	"hosal_flash_close"
-.LASF12:
-	.string	"uint8_t"
 .LASF29:
 	.string	"hosal_flash_raw_erase"
 .LASF46:

@@ -12,7 +12,7 @@
 	.type	aos_register_driver, @function
 aos_register_driver:
 .LFB1:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs_register.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs_register.c"
 	.loc 1 15 1
 	.cfi_startproc
 .LVL0:
@@ -400,21 +400,21 @@ aos_unregister_fs:
 	.size	aos_unregister_fs, .-aos_unregister_fs
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xc26
@@ -2725,6 +2725,8 @@ aos_unregister_fs:
 	.string	"aos_dir_t"
 .LASF0:
 	.string	"unsigned int"
+.LASF132:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF57:
 	.string	"st_blksize"
 .LASF110:
@@ -2751,6 +2753,8 @@ aos_unregister_fs:
 	.string	"ino_t"
 .LASF26:
 	.string	"uint32_t"
+.LASF131:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs_register.c"
 .LASF101:
 	.string	"telldir"
 .LASF106:
@@ -2765,8 +2769,8 @@ aos_unregister_fs:
 	.string	"st_blocks"
 .LASF129:
 	.string	"inode_release"
-.LASF132:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/vfs"
+.LASF114:
+	.string	"offset"
 .LASF113:
 	.string	"f_arg"
 .LASF105:
@@ -2907,8 +2911,6 @@ aos_unregister_fs:
 	.string	"long int"
 .LASF30:
 	.string	"SemaphoreHandle_t"
-.LASF114:
-	.string	"offset"
 .LASF125:
 	.string	"inode_reserve"
 .LASF112:
@@ -2957,8 +2959,6 @@ aos_unregister_fs:
 	.string	"aos_register_driver"
 .LASF70:
 	.string	"d_ino"
-.LASF131:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs_register.c"
 .LASF50:
 	.string	"st_uid"
 .LASF20:

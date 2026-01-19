@@ -12,7 +12,7 @@
 	.type	bl_sys_time_update, @function
 bl_sys_time_update:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time.c"
 	.loc 1 14 1
 	.cfi_startproc
 .LVL0:
@@ -408,10 +408,10 @@ time_synced:
 	.zero	8
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_rtc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_rtc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2e6
@@ -1278,8 +1278,6 @@ time_synced:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF34:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time.c"
 .LASF33:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF14:
@@ -1310,14 +1308,14 @@ time_synced:
 	.string	"bl_sys_time_update"
 .LASF18:
 	.string	"xTicksToJump"
+.LASF34:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bltime/bl_sys_time.c"
 .LASF23:
 	.string	"ms_diff"
-.LASF35:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bltime"
 .LASF1:
 	.string	"unsigned int"
-.LASF24:
-	.string	"bl_sys_time_sync_init"
+.LASF35:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bltime"
 .LASF12:
 	.string	"char"
 .LASF16:
@@ -1344,6 +1342,8 @@ time_synced:
 	.string	"uint32_t"
 .LASF4:
 	.string	"long int"
+.LASF24:
+	.string	"bl_sys_time_sync_init"
 .LASF13:
 	.string	"epoch_time"
 .LASF2:

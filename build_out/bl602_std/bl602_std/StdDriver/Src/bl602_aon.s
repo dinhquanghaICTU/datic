@@ -6,13 +6,13 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c98,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c98,"ax",@progbits
 	.align	1
 	.weak	AON_Power_On_MBG
 	.type	AON_Power_On_MBG, @function
 AON_Power_On_MBG:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c"
 	.loc 1 99 1
 	.cfi_startproc
 	.loc 1 100 5
@@ -57,7 +57,7 @@ AON_Power_On_MBG:
 	.cfi_endproc
 .LFE8:
 	.size	AON_Power_On_MBG, .-AON_Power_On_MBG
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c123,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c123,"ax",@progbits
 	.align	1
 	.weak	AON_Power_Off_MBG
 	.type	AON_Power_Off_MBG, @function
@@ -99,7 +99,7 @@ AON_Power_Off_MBG:
 	.cfi_endproc
 .LFE9:
 	.size	AON_Power_Off_MBG, .-AON_Power_Off_MBG
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c146,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c146,"ax",@progbits
 	.align	1
 	.weak	AON_Power_On_XTAL
 	.type	AON_Power_On_XTAL, @function
@@ -208,7 +208,7 @@ AON_Power_On_XTAL:
 	.cfi_endproc
 .LFE10:
 	.size	AON_Power_On_XTAL, .-AON_Power_On_XTAL
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c182,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c182,"ax",@progbits
 	.align	1
 	.weak	AON_Set_Xtal_CapCode
 	.type	AON_Set_Xtal_CapCode, @function
@@ -278,7 +278,7 @@ AON_Set_Xtal_CapCode:
 	.cfi_endproc
 .LFE11:
 	.size	AON_Set_Xtal_CapCode, .-AON_Set_Xtal_CapCode
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c207,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c207,"ax",@progbits
 	.align	1
 	.weak	AON_Get_Xtal_CapCode
 	.type	AON_Get_Xtal_CapCode, @function
@@ -316,7 +316,7 @@ AON_Get_Xtal_CapCode:
 	.cfi_endproc
 .LFE12:
 	.size	AON_Get_Xtal_CapCode, .-AON_Get_Xtal_CapCode
-	.section	.sclock_rlt_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c227,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c227,"ax",@progbits
 	.align	1
 	.weak	AON_Power_Off_XTAL
 	.type	AON_Power_Off_XTAL, @function
@@ -359,7 +359,7 @@ AON_Power_Off_XTAL:
 	.cfi_endproc
 .LFE13:
 	.size	AON_Power_Off_XTAL, .-AON_Power_Off_XTAL
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c250,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c250,"ax",@progbits
 	.align	1
 	.weak	AON_Power_On_BG
 	.type	AON_Power_On_BG, @function
@@ -409,7 +409,7 @@ AON_Power_On_BG:
 	.cfi_endproc
 .LFE14:
 	.size	AON_Power_On_BG, .-AON_Power_On_BG
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c275,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c275,"ax",@progbits
 	.align	1
 	.weak	AON_Power_Off_BG
 	.type	AON_Power_Off_BG, @function
@@ -459,7 +459,7 @@ AON_Power_Off_BG:
 	.cfi_endproc
 .LFE15:
 	.size	AON_Power_Off_BG, .-AON_Power_Off_BG
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c300,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c300,"ax",@progbits
 	.align	1
 	.weak	AON_Power_On_LDO11_SOC
 	.type	AON_Power_On_LDO11_SOC, @function
@@ -509,7 +509,7 @@ AON_Power_On_LDO11_SOC:
 	.cfi_endproc
 .LFE16:
 	.size	AON_Power_On_LDO11_SOC, .-AON_Power_On_LDO11_SOC
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c324,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c324,"ax",@progbits
 	.align	1
 	.weak	AON_Power_Off_LDO11_SOC
 	.type	AON_Power_Off_LDO11_SOC, @function
@@ -559,7 +559,7 @@ AON_Power_Off_LDO11_SOC:
 	.cfi_endproc
 .LFE17:
 	.size	AON_Power_Off_LDO11_SOC, .-AON_Power_Off_LDO11_SOC
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c348,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c348,"ax",@progbits
 	.align	1
 	.weak	AON_Power_On_LDO15_RF
 	.type	AON_Power_On_LDO15_RF, @function
@@ -609,7 +609,7 @@ AON_Power_On_LDO15_RF:
 	.cfi_endproc
 .LFE18:
 	.size	AON_Power_On_LDO15_RF, .-AON_Power_On_LDO15_RF
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c373,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c373,"ax",@progbits
 	.align	1
 	.weak	AON_Power_Off_LDO15_RF
 	.type	AON_Power_Off_LDO15_RF, @function
@@ -651,7 +651,7 @@ AON_Power_Off_LDO15_RF:
 	.cfi_endproc
 .LFE19:
 	.size	AON_Power_Off_LDO15_RF, .-AON_Power_Off_LDO15_RF
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c396,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c396,"ax",@progbits
 	.align	1
 	.weak	AON_Power_On_SFReg
 	.type	AON_Power_On_SFReg, @function
@@ -701,7 +701,7 @@ AON_Power_On_SFReg:
 	.cfi_endproc
 .LFE20:
 	.size	AON_Power_On_SFReg, .-AON_Power_On_SFReg
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c421,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c421,"ax",@progbits
 	.align	1
 	.weak	AON_Power_Off_SFReg
 	.type	AON_Power_Off_SFReg, @function
@@ -743,7 +743,7 @@ AON_Power_Off_SFReg:
 	.cfi_endproc
 .LFE21:
 	.size	AON_Power_Off_SFReg, .-AON_Power_Off_SFReg
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c444,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c444,"ax",@progbits
 	.align	1
 	.weak	AON_LowPower_Enter_PDS0
 	.type	AON_LowPower_Enter_PDS0, @function
@@ -817,7 +817,7 @@ AON_LowPower_Enter_PDS0:
 	.cfi_endproc
 .LFE22:
 	.size	AON_LowPower_Enter_PDS0, .-AON_LowPower_Enter_PDS0
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c479,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c479,"ax",@progbits
 	.align	1
 	.weak	AON_LowPower_Exit_PDS0
 	.type	AON_LowPower_Exit_PDS0, @function
@@ -929,7 +929,7 @@ AON_LowPower_Exit_PDS0:
 	.cfi_endproc
 .LFE23:
 	.size	AON_LowPower_Exit_PDS0, .-AON_LowPower_Exit_PDS0
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c523,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c523,"ax",@progbits
 	.align	1
 	.globl	AON_Set_LDO11_SOC_Sstart_Delay
 	.type	AON_Set_LDO11_SOC_Sstart_Delay, @function
@@ -980,8 +980,8 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.size	AON_Set_LDO11_SOC_Sstart_Delay, .-AON_Set_LDO11_SOC_Sstart_Delay
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4b4
@@ -1080,7 +1080,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF16
 	.byte	0x1
 	.2byte	0x20b
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
@@ -1091,7 +1091,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF31
 	.byte	0x1
 	.2byte	0x20b
-	.byte	0xd6
+	.byte	0xcf
 	.4byte	0x48
 	.4byte	.LLST19
 	.byte	0x9
@@ -1106,7 +1106,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF17
 	.byte	0x1
 	.2byte	0x1df
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
@@ -1155,7 +1155,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF19
 	.byte	0x1
 	.2byte	0x1bc
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
@@ -1174,7 +1174,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF20
 	.byte	0x1
 	.2byte	0x1a5
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB21
 	.4byte	.LFE21-.LFB21
@@ -1193,7 +1193,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF21
 	.byte	0x1
 	.2byte	0x18c
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB20
 	.4byte	.LFE20-.LFB20
@@ -1221,7 +1221,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF22
 	.byte	0x1
 	.2byte	0x175
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB19
 	.4byte	.LFE19-.LFB19
@@ -1240,7 +1240,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF23
 	.byte	0x1
 	.2byte	0x15c
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB18
 	.4byte	.LFE18-.LFB18
@@ -1269,7 +1269,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF24
 	.byte	0x1
 	.2byte	0x144
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
@@ -1298,7 +1298,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF25
 	.byte	0x1
 	.2byte	0x12c
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
@@ -1327,7 +1327,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF26
 	.byte	0x1
 	.2byte	0x113
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
@@ -1356,7 +1356,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF27
 	.byte	0x1
 	.byte	0xfa
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0xab
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
@@ -1385,7 +1385,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF28
 	.byte	0x1
 	.byte	0xe3
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0xab
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
@@ -1404,7 +1404,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF29
 	.byte	0x1
 	.byte	0xcf
-	.byte	0xb2
+	.byte	0xab
 	.4byte	0x48
 	.4byte	.LFB12
 	.4byte	.LFE12-.LFB12
@@ -1423,7 +1423,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF30
 	.byte	0x1
 	.byte	0xb6
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0xab
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
@@ -1434,14 +1434,14 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF32
 	.byte	0x1
 	.byte	0xb6
-	.byte	0xd3
+	.byte	0xcc
 	.4byte	0x48
 	.4byte	.LLST4
 	.byte	0xf
 	.4byte	.LASF33
 	.byte	0x1
 	.byte	0xb6
-	.byte	0xe1
+	.byte	0xda
 	.4byte	0x48
 	.4byte	.LLST5
 	.byte	0xe
@@ -1466,7 +1466,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF34
 	.byte	0x1
 	.byte	0x92
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0xab
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
@@ -1501,7 +1501,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF36
 	.byte	0x1
 	.byte	0x7b
-	.byte	0xb6
+	.byte	0xaf
 	.4byte	0xab
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
@@ -1520,7 +1520,7 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.4byte	.LASF37
 	.byte	0x1
 	.byte	0x62
-	.byte	0xb5
+	.byte	0xae
 	.4byte	0xab
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
@@ -2306,11 +2306,11 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 .LASF3:
 	.string	"long int"
 .LASF40:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF10:
 	.string	"long long unsigned int"
-.LASF31:
-	.string	"delay"
+.LASF41:
+	.string	"BL602_Delay_US"
 .LASF5:
 	.string	"unsigned char"
 .LASF12:
@@ -2341,8 +2341,6 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.string	"char"
 .LASF7:
 	.string	"uint8_t"
-.LASF39:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c"
 .LASF16:
 	.string	"AON_Set_LDO11_SOC_Sstart_Delay"
 .LASF37:
@@ -2355,8 +2353,10 @@ AON_Set_LDO11_SOC_Sstart_Delay:
 	.string	"AON_Set_Xtal_CapCode"
 .LASF20:
 	.string	"AON_Power_Off_SFReg"
-.LASF41:
-	.string	"BL602_Delay_US"
+.LASF39:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_aon.c"
+.LASF31:
+	.string	"delay"
 .LASF28:
 	.string	"AON_Power_Off_XTAL"
 .LASF32:

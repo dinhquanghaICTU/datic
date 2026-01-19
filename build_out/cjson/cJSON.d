@@ -1,5 +1,4 @@
-cJSON.o: \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/cJSON.c \
- /home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/cJSON.h
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/cJSON.h:
-/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/cjson/./cJSON.c:
+cJSON.o: /home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/cJSON.c \
+ /home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/cJSON.h
+/home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/cJSON.h:
+/home/dinhquangha/Ai-Thinker-WB2/components/stage/cjson/./cJSON.c:

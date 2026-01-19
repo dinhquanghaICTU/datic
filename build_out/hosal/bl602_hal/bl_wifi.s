@@ -12,7 +12,7 @@
 	.type	bl_wifi_clock_enable, @function
 bl_wifi_clock_enable:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.c"
 	.loc 1 28 1
 	.cfi_startproc
 	.loc 1 29 5
@@ -641,12 +641,12 @@ called.0:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x7b4
@@ -2421,6 +2421,8 @@ called.0:
 	.string	"CLIC_SOFT_PEND_IRQn"
 .LASF3:
 	.string	"long long int"
+.LASF115:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.c"
 .LASF94:
 	.string	"bl_wifi_env_t"
 .LASF57:
@@ -2459,8 +2461,6 @@ called.0:
 	.string	"RESERVED19"
 .LASF4:
 	.string	"unsigned char"
-.LASF24:
-	.string	"SEC_CDET_IRQn"
 .LASF53:
 	.string	"RESERVED10"
 .LASF54:
@@ -2481,8 +2481,6 @@ called.0:
 	.string	"RESERVED18"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF116:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF40:
 	.string	"EFUSE_IRQn"
 .LASF77:
@@ -2511,6 +2509,8 @@ called.0:
 	.string	"char"
 .LASF106:
 	.string	"bl_wifi_sta_mac_addr_set"
+.LASF116:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF48:
 	.string	"PWM_IRQn"
 .LASF64:
@@ -2545,12 +2545,12 @@ called.0:
 	.string	"RESERVED7"
 .LASF47:
 	.string	"RESERVED8"
-.LASF115:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.c"
-.LASF105:
-	.string	"bl_wifi_ap_mac_addr_set"
 .LASF49:
 	.string	"RESERVED9"
+.LASF105:
+	.string	"bl_wifi_ap_mac_addr_set"
+.LASF24:
+	.string	"SEC_CDET_IRQn"
 .LASF114:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF99:

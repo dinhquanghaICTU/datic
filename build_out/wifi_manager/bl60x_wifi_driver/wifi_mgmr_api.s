@@ -12,7 +12,7 @@
 	.type	wifi_mgmr_api_common, @function
 wifi_mgmr_api_common:
 .LFB58:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_api.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_api.c"
 	.loc 1 12 1
 	.cfi_startproc
 .LVL0:
@@ -1956,20 +1956,20 @@ wifi_mgmr_api_set_country_code:
 	.comm	cfg_start_req_u_tlv_t,12,4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1ee4
@@ -8333,6 +8333,8 @@ wifi_mgmr_api_set_country_code:
 	.string	"wifi_mgmr_api_idle"
 .LASF166:
 	.string	"WIFI_MGMR_EVENT_APP_DISCONNECT"
+.LASF289:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_api.c"
 .LASF109:
 	.string	"_malloc"
 .LASF255:
@@ -8487,8 +8489,8 @@ wifi_mgmr_api_set_country_code:
 	.string	"WIFI_MGMR_EVENT_FW_DATA_RAW_SEND"
 .LASF131:
 	.string	"TASK_CFG"
-.LASF289:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr_api.c"
+.LASF49:
+	.string	"PM_MODE_STA_MESH"
 .LASF12:
 	.string	"long long int"
 .LASF229:
@@ -8577,6 +8579,8 @@ wifi_mgmr_api_set_country_code:
 	.string	"passphr"
 .LASF67:
 	.string	"_init"
+.LASF38:
+	.string	"MEMP_NETDB"
 .LASF282:
 	.string	"wifi_mgmr_event_notify"
 .LASF268:
@@ -8717,8 +8721,6 @@ wifi_mgmr_api_set_country_code:
 	.string	"long unsigned int"
 .LASF96:
 	.string	"_sem_create"
-.LASF290:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF21:
 	.string	"int32_t"
 .LASF241:
@@ -8801,8 +8803,8 @@ wifi_mgmr_api_set_country_code:
 	.string	"ap_info_ttl"
 .LASF258:
 	.string	"ch_req"
-.LASF38:
-	.string	"MEMP_NETDB"
+.LASF290:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF84:
 	.string	"_lock_gaint"
 .LASF276:
@@ -8817,6 +8819,4 @@ wifi_mgmr_api_set_country_code:
 	.string	"WIFI_MGMR_EVENT_MAXFW_MINI_GLOBAL"
 .LASF90:
 	.string	"_workqueue_submit_hp"
-.LASF49:
-	.string	"PM_MODE_STA_MESH"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

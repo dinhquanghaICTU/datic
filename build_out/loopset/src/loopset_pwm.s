@@ -11,7 +11,7 @@
 	.type	_cb_pwm_trigger, @function
 _cb_pwm_trigger:
 .LFB29:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_pwm.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_pwm.c"
 	.loc 1 57 1
 	.cfi_startproc
 .LVL0:
@@ -494,16 +494,16 @@ _pwm_bloop_handler_holder.0:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset_pwm.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset_pwm.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x7cf
@@ -2474,6 +2474,8 @@ _pwm_bloop_handler_holder.0:
 	.string	"time_max"
 .LASF48:
 	.string	"statistic"
+.LASF85:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_pwm.c"
 .LASF14:
 	.string	"utils_list"
 .LASF2:
@@ -2558,8 +2560,8 @@ _pwm_bloop_handler_holder.0:
 	.string	"handlers"
 .LASF0:
 	.string	"unsigned int"
-.LASF61:
-	.string	"p_arg"
+.LASF86:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/loopset"
 .LASF24:
 	.string	"id_src"
 .LASF17:
@@ -2582,8 +2584,6 @@ _pwm_bloop_handler_holder.0:
 	.string	"evt_type_map_async"
 .LASF47:
 	.string	"list"
-.LASF86:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/loopset"
 .LASF83:
 	.string	"looprt_timer_register"
 .LASF78:
@@ -2608,8 +2608,6 @@ _pwm_bloop_handler_holder.0:
 	.string	"bloop_timer_configure"
 .LASF32:
 	.string	"time_consumed"
-.LASF85:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_pwm.c"
 .LASF80:
 	.string	"looprt_evt_notify_async"
 .LASF28:
@@ -2622,6 +2620,8 @@ _pwm_bloop_handler_holder.0:
 	.string	"utils_dlist_t"
 .LASF21:
 	.string	"priority"
+.LASF61:
+	.string	"p_arg"
 .LASF58:
 	.string	"loopset_func_t"
 .LASF30:

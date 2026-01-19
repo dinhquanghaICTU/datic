@@ -12,7 +12,7 @@
 	.type	_copy, @function
 _copy:
 .LFB2:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/utils.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/utils.c"
 	.loc 1 42 1
 	.cfi_startproc
 .LVL0:
@@ -203,9 +203,9 @@ _compare:
 	.size	_compare, .-_compare
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x236
@@ -1044,16 +1044,12 @@ _compare:
 	.string	"tempa"
 .LASF14:
 	.string	"tempb"
-.LASF26:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF17:
 	.string	"_double_byte"
 .LASF16:
 	.string	"_compare"
 .LASF12:
 	.string	"size"
-.LASF25:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/utils.c"
 .LASF6:
 	.string	"long unsigned int"
 .LASF5:
@@ -1082,6 +1078,8 @@ _compare:
 	.string	"long long int"
 .LASF23:
 	.string	"memcpy"
+.LASF25:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/utils.c"
 .LASF18:
 	.string	"_copy"
 .LASF1:
@@ -1092,4 +1090,6 @@ _compare:
 	.string	"char"
 .LASF0:
 	.string	"signed char"
+.LASF26:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

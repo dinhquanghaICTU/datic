@@ -12,7 +12,7 @@
 	.type	xz_uncompress_init, @function
 xz_uncompress_init:
 .LFB1:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_decompress.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_decompress.c"
 	.loc 1 9 1
 	.cfi_startproc
 .LVL0:
@@ -240,9 +240,9 @@ s:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2e8
@@ -1160,6 +1160,8 @@ s:
 	.string	"in_pos"
 .LASF12:
 	.string	"XZ_SINGLE"
+.LASF46:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF36:
 	.string	"decomp_len"
 .LASF34:
@@ -1172,6 +1174,8 @@ s:
 	.string	"XZ_DYNALLOC"
 .LASF41:
 	.string	"xz_dec_run"
+.LASF45:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_decompress.c"
 .LASF35:
 	.string	"dlen"
 .LASF7:
@@ -1184,8 +1188,6 @@ s:
 	.string	"long unsigned int"
 .LASF8:
 	.string	"short unsigned int"
-.LASF45:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_decompress.c"
 .LASF43:
 	.string	"xz_dec_init"
 .LASF47:
@@ -1204,8 +1206,6 @@ s:
 	.string	"long long unsigned int"
 .LASF6:
 	.string	"uint8_t"
-.LASF46:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF28:
 	.string	"out_pos"
 .LASF16:

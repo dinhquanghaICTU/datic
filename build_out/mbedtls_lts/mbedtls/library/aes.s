@@ -121,26 +121,26 @@
 	.string	"unsigned int"
 .LASF5:
 	.string	"long unsigned int"
-.LASF10:
-	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF0:
-	.string	"signed char"
+.LASF11:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/aes.c"
 .LASF2:
 	.string	"short int"
+.LASF0:
+	.string	"signed char"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF12:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF1:
 	.string	"unsigned char"
 .LASF4:
 	.string	"long int"
-.LASF11:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/aes.c"
+.LASF10:
+	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF6:
+	.string	"long long int"
 .LASF9:
 	.string	"char"
 .LASF3:
 	.string	"short unsigned int"
-.LASF6:
-	.string	"long long int"
+.LASF12:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -6,13 +6,13 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c109,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c109,"ax",@progbits
 	.align	1
 	.globl	arch_memcpy
 	.type	arch_memcpy, @function
 arch_memcpy:
 .LFB8:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c"
 	.loc 1 110 1
 	.cfi_startproc
 .LVL0:
@@ -98,7 +98,7 @@ flash_get_cfg:
 	.cfi_endproc
 .LFE9:
 	.size	flash_get_cfg, .-flash_get_cfg
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c140,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c140,"ax",@progbits
 	.align	1
 	.globl	flash_set_qspi_enable
 	.type	flash_set_qspi_enable, @function
@@ -148,7 +148,7 @@ flash_set_qspi_enable:
 	.cfi_endproc
 .LFE10:
 	.size	flash_set_qspi_enable, .-flash_set_qspi_enable
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c155,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c155,"ax",@progbits
 	.align	1
 	.globl	flash_set_l1c_wrap
 	.type	flash_set_l1c_wrap, @function
@@ -219,7 +219,7 @@ flash_set_l1c_wrap:
 	.cfi_endproc
 .LFE11:
 	.size	flash_set_l1c_wrap, .-flash_set_l1c_wrap
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c178,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c178,"ax",@progbits
 	.align	1
 	.globl	flash_get_clkdelay_from_bootheader
 	.type	flash_get_clkdelay_from_bootheader, @function
@@ -326,7 +326,7 @@ flash_get_clkdelay_from_bootheader:
 	.cfi_endproc
 .LFE12:
 	.size	flash_get_clkdelay_from_bootheader, .-flash_get_clkdelay_from_bootheader
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c242,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c242,"ax",@progbits
 	.align	1
 	.globl	bl_flash_init
 	.type	bl_flash_init, @function
@@ -481,7 +481,7 @@ bl_flash_init:
 	.cfi_endproc
 .LFE14:
 	.size	bl_flash_init, .-bl_flash_init
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c269,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c269,"ax",@progbits
 	.align	1
 	.globl	bl_flash_erase
 	.type	bl_flash_erase, @function
@@ -591,7 +591,7 @@ bl_flash_erase:
 	.cfi_endproc
 .LFE15:
 	.size	bl_flash_erase, .-bl_flash_erase
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c299,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c299,"ax",@progbits
 	.align	1
 	.globl	bl_flash_write
 	.type	bl_flash_write, @function
@@ -704,7 +704,7 @@ bl_flash_write:
 	.cfi_endproc
 .LFE16:
 	.size	bl_flash_write, .-bl_flash_write
-	.section	.tcm_code./home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c331,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c331,"ax",@progbits
 	.align	1
 	.globl	bl_flash_read
 	.type	bl_flash_read, @function
@@ -1139,19 +1139,19 @@ g_flash_cfg:
 	.byte	0
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_romdriver.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash_ext.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_cfg_ext.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_l1c.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_ctrl.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_romdriver.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_xip_sflash_ext.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sf_cfg_ext.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_l1c.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x12ee
@@ -2616,7 +2616,7 @@ g_flash_cfg:
 	.4byte	.LASF286
 	.byte	0x1
 	.2byte	0x14b
-	.byte	0x8a
+	.byte	0x83
 	.4byte	0x8d
 	.4byte	.LFB17
 	.4byte	.LFE17-.LFB17
@@ -2627,21 +2627,21 @@ g_flash_cfg:
 	.4byte	.LASF280
 	.byte	0x1
 	.2byte	0x14b
-	.byte	0xa1
+	.byte	0x9a
 	.4byte	0x73
 	.4byte	.LLST20
 	.byte	0x13
 	.string	"dst"
 	.byte	0x1
 	.2byte	0x14b
-	.byte	0xb0
+	.byte	0xa9
 	.4byte	0x538
 	.4byte	.LLST21
 	.byte	0x13
 	.string	"len"
 	.byte	0x1
 	.2byte	0x14b
-	.byte	0xb9
+	.byte	0xb2
 	.4byte	0x8d
 	.4byte	.LLST22
 	.byte	0x1f
@@ -2725,7 +2725,7 @@ g_flash_cfg:
 	.4byte	.LASF289
 	.byte	0x1
 	.2byte	0x12b
-	.byte	0x8a
+	.byte	0x83
 	.4byte	0x8d
 	.4byte	.LFB16
 	.4byte	.LFE16-.LFB16
@@ -2736,21 +2736,21 @@ g_flash_cfg:
 	.4byte	.LASF280
 	.byte	0x1
 	.2byte	0x12b
-	.byte	0xa2
+	.byte	0x9b
 	.4byte	0x73
 	.4byte	.LLST16
 	.byte	0x13
 	.string	"src"
 	.byte	0x1
 	.2byte	0x12b
-	.byte	0xb1
+	.byte	0xaa
 	.4byte	0x538
 	.4byte	.LLST17
 	.byte	0x13
 	.string	"len"
 	.byte	0x1
 	.2byte	0x12b
-	.byte	0xba
+	.byte	0xb3
 	.4byte	0x8d
 	.4byte	.LLST18
 	.byte	0x1f
@@ -2845,7 +2845,7 @@ g_flash_cfg:
 	.4byte	.LASF290
 	.byte	0x1
 	.2byte	0x10d
-	.byte	0x8a
+	.byte	0x83
 	.4byte	0x8d
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
@@ -2856,14 +2856,14 @@ g_flash_cfg:
 	.4byte	.LASF280
 	.byte	0x1
 	.2byte	0x10d
-	.byte	0xa2
+	.byte	0x9b
 	.4byte	0x73
 	.4byte	.LLST13
 	.byte	0x13
 	.string	"len"
 	.byte	0x1
 	.2byte	0x10d
-	.byte	0xac
+	.byte	0xa5
 	.4byte	0x8d
 	.4byte	.LLST14
 	.byte	0x1f
@@ -2956,7 +2956,7 @@ g_flash_cfg:
 	.4byte	.LASF291
 	.byte	0x1
 	.byte	0xf2
-	.byte	0x8a
+	.byte	0x83
 	.4byte	0x8d
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
@@ -3162,7 +3162,7 @@ g_flash_cfg:
 	.4byte	.LASF327
 	.byte	0x1
 	.byte	0xcf
-	.byte	0x99
+	.byte	0x92
 	.4byte	0xce
 	.byte	0x1
 	.4byte	0xfbf
@@ -3170,13 +3170,13 @@ g_flash_cfg:
 	.4byte	.LASF293
 	.byte	0x1
 	.byte	0xcf
-	.byte	0xbf
+	.byte	0xb8
 	.4byte	0x532
 	.byte	0x2b
 	.4byte	.LASF292
 	.byte	0x1
 	.byte	0xcf
-	.byte	0xd5
+	.byte	0xce
 	.4byte	0x538
 	.byte	0x2c
 	.string	"ret"
@@ -3215,7 +3215,7 @@ g_flash_cfg:
 	.4byte	.LASF294
 	.byte	0x1
 	.byte	0xb2
-	.byte	0x92
+	.byte	0x8b
 	.4byte	0xce
 	.4byte	.LFB12
 	.4byte	.LFE12-.LFB12
@@ -3226,7 +3226,7 @@ g_flash_cfg:
 	.4byte	.LASF293
 	.byte	0x1
 	.byte	0xb2
-	.byte	0xc9
+	.byte	0xc2
 	.4byte	0x532
 	.4byte	.LLST6
 	.byte	0x10
@@ -3379,7 +3379,7 @@ g_flash_cfg:
 	.4byte	.LASF298
 	.byte	0x1
 	.byte	0x9b
-	.byte	0x92
+	.byte	0x8b
 	.4byte	0xce
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
@@ -3390,7 +3390,7 @@ g_flash_cfg:
 	.4byte	.LASF293
 	.byte	0x1
 	.byte	0x9b
-	.byte	0xb9
+	.byte	0xb2
 	.4byte	0x532
 	.4byte	.LLST5
 	.byte	0x1c
@@ -3428,7 +3428,7 @@ g_flash_cfg:
 	.4byte	.LASF299
 	.byte	0x1
 	.byte	0x8c
-	.byte	0x92
+	.byte	0x8b
 	.4byte	0xce
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
@@ -3439,7 +3439,7 @@ g_flash_cfg:
 	.4byte	.LASF293
 	.byte	0x1
 	.byte	0x8c
-	.byte	0xbc
+	.byte	0xb5
 	.4byte	0x532
 	.4byte	.LLST4
 	.byte	0x15
@@ -3488,7 +3488,7 @@ g_flash_cfg:
 	.4byte	.LASF302
 	.byte	0x1
 	.byte	0x6d
-	.byte	0x8c
+	.byte	0x85
 	.4byte	0xa4
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
@@ -3499,7 +3499,7 @@ g_flash_cfg:
 	.string	"dst"
 	.byte	0x1
 	.byte	0x6d
-	.byte	0x9e
+	.byte	0x97
 	.4byte	0xa4
 	.byte	0x1
 	.byte	0x5a
@@ -3507,7 +3507,7 @@ g_flash_cfg:
 	.string	"src"
 	.byte	0x1
 	.byte	0x6d
-	.byte	0xaf
+	.byte	0xa8
 	.4byte	0x120c
 	.byte	0x1
 	.byte	0x5b
@@ -3515,7 +3515,7 @@ g_flash_cfg:
 	.string	"n"
 	.byte	0x1
 	.byte	0x6d
-	.byte	0xbd
+	.byte	0xb6
 	.4byte	0x73
 	.4byte	.LLST0
 	.byte	0x24
@@ -5077,8 +5077,6 @@ g_flash_cfg:
 	.string	"ROM_API_INDEX_PDS_Disable_PLL_All_Clks"
 .LASF38:
 	.string	"jedecIdCmd"
-.LASF34:
-	.string	"resetEnCmd"
 .LASF60:
 	.string	"fastReadQoCmd"
 .LASF290:
@@ -5259,6 +5257,8 @@ g_flash_cfg:
 	.string	"chipEraseCmd"
 .LASF168:
 	.string	"ROM_API_INDEX_HBN_32K_Sel"
+.LASF323:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF273:
 	.string	"ROM_API_INDEX_XIP_SFlash_Write_With_Lock"
 .LASF281:
@@ -5449,8 +5449,6 @@ g_flash_cfg:
 	.string	"arch_memcpy"
 .LASF144:
 	.string	"ROM_API_INDEX_Update_SystemCoreClockWith_XTAL"
-.LASF322:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c"
 .LASF98:
 	.string	"timeCe"
 .LASF268:
@@ -5563,8 +5561,8 @@ g_flash_cfg:
 	.string	"isAesEnable"
 .LASF194:
 	.string	"ROM_API_INDEX_PDS_Disable_PLL_Clk"
-.LASF323:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF34:
+	.string	"resetEnCmd"
 .LASF250:
 	.string	"ROM_API_INDEX_SF_Ctrl_AES_Set_IV_BE"
 .LASF200:
@@ -5641,6 +5639,8 @@ g_flash_cfg:
 	.string	"ROM_API_INDEX_SEC_Eng_Turn_On_Sec_Ring"
 .LASF301:
 	.string	"cfg_addr"
+.LASF322:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.c"
 .LASF48:
 	.string	"writeEnableCmd"
 .LASF136:

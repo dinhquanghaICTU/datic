@@ -11,7 +11,7 @@
 	.type	sys_slist_append, @function
 sys_slist_append:
 .LFB7:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
 	.loc 1 291 1
 	.cfi_startproc
 .LVL0:
@@ -123,7 +123,7 @@ sys_slist_remove:
 	.type	found_attr, @function
 found_attr:
 .LFB102:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/gatt.c"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/gatt.c"
 	.loc 2 769 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -617,7 +617,7 @@ find_sc_cfg:
 .LVL38:
 .LBB357:
 .LBB358:
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
 	.loc 3 49 2 is_stmt 1
 	.loc 3 49 9 is_stmt 0
 	li	a2,7
@@ -696,7 +696,7 @@ gatt_write_ccc_rsp:
 	.loc 2 3692 2
 .LBB377:
 .LBB378:
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
 	.loc 4 391 2
 	.loc 4 393 2
 .LBE378:
@@ -3400,7 +3400,7 @@ bt_gatt_attr_write_ccc:
 .L241:
 	.cfi_restore_state
 	.loc 2 1613 3 is_stmt 1
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/byteorder.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/byteorder.h"
 	.loc 5 310 2
 	lbu	a5,1(a2)
 	slli	a5,a5,8
@@ -4814,7 +4814,7 @@ bt_gatt_foreach_attr_type:
 	.type	bt_gatt_foreach_attr, @function
 bt_gatt_foreach_attr:
 .LFB84:
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
 	.loc 6 373 1 is_stmt 1
 	.cfi_startproc
 .LVL448:
@@ -16037,29 +16037,29 @@ __func__.25:
 	.string	"sc_save"
 	.text
 .Letext0:
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
-	.file 11 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 12 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
-	.file 13 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
-	.file 14 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 15 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
-	.file 16 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 17 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
-	.file 18 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
-	.file 19 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
-	.file 20 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h"
-	.file 21 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-	.file 22 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.h"
-	.file 23 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/l2cap.h"
-	.file 24 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/att_internal.h"
-	.file 25 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 26 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 27 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/util.h"
-	.file 28 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.h"
-	.file 29 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
+	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
+	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/uuid.h"
+	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
+	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
+	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h"
+	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/keys.h"
+	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/l2cap.h"
+	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/att_internal.h"
+	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 26 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 27 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/util.h"
+	.file 28 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.h"
+	.file 29 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h"
 	.file 30 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -53216,8 +53216,6 @@ __func__.25:
 	.string	"done"
 .LASF62:
 	.string	"_POLL_STATE_SIGNALED"
-.LASF588:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF187:
 	.string	"bt_gatt_notify_func_t"
 .LASF129:
@@ -53458,8 +53456,8 @@ __func__.25:
 	.string	"target"
 .LASF188:
 	.string	"bt_gatt_subscribe_params"
-.LASF587:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/gatt.c"
+.LASF554:
+	.string	"memcpy"
 .LASF203:
 	.string	"desp_idx"
 .LASF290:
@@ -53522,8 +53520,6 @@ __func__.25:
 	.string	"BT_DEV_ENABLE"
 .LASF562:
 	.string	"bt_settings_encode_key"
-.LASF554:
-	.string	"memcpy"
 .LASF33:
 	.string	"k_fifo"
 .LASF509:
@@ -53882,6 +53878,8 @@ __func__.25:
 	.string	"gatt_mtu_changed_cb"
 .LASF59:
 	.string	"_poll_types_bits"
+.LASF22:
+	.string	"tail"
 .LASF178:
 	.string	"bt_gatt_read_func_t"
 .LASF130:
@@ -54000,6 +53998,8 @@ __func__.25:
 	.string	"peer"
 .LASF169:
 	.string	"bt_gatt_discover_params"
+.LASF431:
+	.string	"gatt_read_type"
 .LASF205:
 	.string	"customer_svc_list"
 .LASF505:
@@ -54040,8 +54040,8 @@ __func__.25:
 	.string	"bt_keys"
 .LASF289:
 	.string	"bt_att_read_blob_req"
-.LASF22:
-	.string	"tail"
+.LASF587:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/gatt.c"
 .LASF119:
 	.string	"retrying"
 .LASF409:
@@ -54284,8 +54284,8 @@ __func__.25:
 	.string	"gatt_register"
 .LASF52:
 	.string	"_reserved"
-.LASF431:
-	.string	"gatt_read_type"
+.LASF588:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF16:
 	.string	"u32_t"
 .LASF465:

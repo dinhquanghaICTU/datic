@@ -16,7 +16,7 @@
 	.type	hosal_ota_start, @function
 hosal_ota_start:
 .LFB5:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_ota.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_ota.c"
 	.loc 1 43 1
 	.cfi_startproc
 .LVL0:
@@ -788,15 +788,15 @@ ota_parm:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
-	.file 5 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_sha256.h"
-	.file 6 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
-	.file 7 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 9 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 10 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
+	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_sha256.h"
+	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
+	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
 	.file 11 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -3039,8 +3039,6 @@ ota_parm:
 	.string	"signed char"
 .LASF9:
 	.string	"long long unsigned int"
-.LASF73:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF13:
 	.string	"uint32_t"
 .LASF10:
@@ -3057,14 +3055,14 @@ ota_parm:
 	.string	"short unsigned int"
 .LASF11:
 	.string	"char"
+.LASF72:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_ota.c"
 .LASF34:
 	.string	"hosal_ota_finish"
-.LASF52:
-	.string	"printf"
+.LASF73:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF14:
 	.string	"type"
-.LASF72:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_ota.c"
 .LASF74:
 	.string	"ota_parm_s"
 .LASF39:
@@ -3087,6 +3085,8 @@ ota_parm:
 	.string	"sha_check"
 .LASF50:
 	.string	"end_index"
+.LASF66:
+	.string	"hal_boot2_update_ptable"
 .LASF63:
 	.string	"utils_sha256_free"
 .LASF12:
@@ -3097,8 +3097,8 @@ ota_parm:
 	.string	"aos_free"
 .LASF21:
 	.string	"total"
-.LASF66:
-	.string	"hal_boot2_update_ptable"
+.LASF52:
+	.string	"printf"
 .LASF67:
 	.string	"hal_reboot"
 .LASF46:

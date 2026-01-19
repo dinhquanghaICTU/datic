@@ -12,7 +12,7 @@
 	.type	hosal_efuse_read, @function
 hosal_efuse_read:
 .LFB4:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_efuse.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_efuse.c"
 	.loc 1 7 1
 	.cfi_startproc
 .LVL0:
@@ -185,9 +185,9 @@ hosal_efuse_write:
 	.size	hosal_efuse_write, .-hosal_efuse_write
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_efuse.h"
-	.file 4 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_efuse.h"
+	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x20b
@@ -869,8 +869,12 @@ hosal_efuse_write:
 	.string	"unsigned int"
 .LASF15:
 	.string	"bl_irq_save"
-.LASF6:
-	.string	"long unsigned int"
+.LASF21:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_efuse.c"
+.LASF12:
+	.string	"hosal_efuse_write"
+.LASF22:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF19:
 	.string	"mfg_efuse_read"
 .LASF20:
@@ -891,10 +895,6 @@ hosal_efuse_write:
 	.string	"uint32_t"
 .LASF2:
 	.string	"long int"
-.LASF22:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/hosal"
-.LASF21:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_efuse.c"
 .LASF16:
 	.string	"mfg_efuse_write_pre"
 .LASF3:
@@ -909,6 +909,6 @@ hosal_efuse_write:
 	.string	"short int"
 .LASF13:
 	.string	"hosal_efuse_read"
-.LASF12:
-	.string	"hosal_efuse_write"
+.LASF6:
+	.string	"long unsigned int"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

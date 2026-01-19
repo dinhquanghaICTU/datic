@@ -12,7 +12,7 @@
 	.type	blog_testc_init, @function
 blog_testc_init:
 .LFB0:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc.c"
 	.loc 1 4 1
 	.cfi_startproc
 	.loc 1 5 5
@@ -53,7 +53,7 @@ blog_testc_init:
 	.size	blog_testc_init, .-blog_testc_init
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x98
@@ -232,20 +232,20 @@ blog_testc_init:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF6:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/blog_testc"
-.LASF0:
-	.string	"blog_testc1_init"
-.LASF2:
-	.string	"blog_testc3_init"
-.LASF3:
-	.string	"blog_testc4_init"
-.LASF1:
-	.string	"blog_testc2_init"
-.LASF4:
-	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF7:
 	.string	"blog_testc_init"
+.LASF0:
+	.string	"blog_testc1_init"
+.LASF3:
+	.string	"blog_testc4_init"
 .LASF5:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc.c"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc.c"
+.LASF4:
+	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF1:
+	.string	"blog_testc2_init"
+.LASF6:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blog_testc"
+.LASF2:
+	.string	"blog_testc3_init"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

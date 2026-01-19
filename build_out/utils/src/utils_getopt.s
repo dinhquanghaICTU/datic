@@ -12,7 +12,7 @@
 	.type	utils_getopt_init, @function
 utils_getopt_init:
 .LFB3:
-	.file 1 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_getopt.c"
+	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_getopt.c"
 	.loc 1 34 1
 	.cfi_startproc
 .LVL0:
@@ -375,8 +375,8 @@ utils_getopt:
 	.size	utils_getopt, .-utils_getopt
 	.text
 .Letext0:
-	.file 2 "/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/include/utils_getopt.h"
-	.file 3 "/home/quanghaictu/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_getopt.h"
+	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1cf
@@ -1175,23 +1175,23 @@ utils_getopt:
 .LASF21:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF23:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/datic/build_out/utils"
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
+.LASF3:
+	.string	"short unsigned int"
 .LASF12:
 	.string	"opterr"
 .LASF14:
 	.string	"__optpos"
 .LASF25:
 	.string	"getopt_env_t"
-.LASF22:
-	.string	"/home/quanghaictu/intern/Ai-Thinker-WB2/components/utils/src/utils_getopt.c"
 .LASF1:
 	.string	"unsigned char"
 .LASF11:
 	.string	"optind"
 .LASF5:
 	.string	"long unsigned int"
-.LASF3:
-	.string	"short unsigned int"
+.LASF22:
+	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_getopt.c"
 .LASF19:
 	.string	"utils_getopt"
 .LASF8:
