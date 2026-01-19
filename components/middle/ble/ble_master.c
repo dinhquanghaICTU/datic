@@ -15,10 +15,7 @@
 #include "conn_internal.h"
 #include "gatt.h"
 
-#include "user_config.h"
-#include "event_driven.h"
-#include "debugger.h"
-#include "block_manager.h"
+
 
 extern uint8_t axk_HalBleInit();
 extern uint8_t axk_HalBleCentralDisconnect();
@@ -273,9 +270,7 @@ void ble_user_init(void)
 static void proc_master(void *pvParameters)
 {
     (void)pvParameters;
-    ble_user_init();
-    eventq_post(EVT_MASTER_STARTED, 0);
-    xEventGroupSetBits(g_sys_eg_state, ST_BLE_RUNNING);
+
     while (!master_stop_req)
     {
         vTaskDelay(pdMS_TO_TICKS(10));
@@ -289,20 +284,14 @@ static void proc_master(void *pvParameters)
     bt_disable();
 
     master_task_handle = NULL;
-    eventq_post(EVT_MASTER_STOPPED, 0);
-    vTaskDelete(NULL);
-    xEventGroupClearBits(g_sys_eg_state, ST_BLE_RUNNING);
+   
 }
 
 
 void ble_start_master(void)
 {
     EventBits_t bits = xEventGroupGetBits(g_sys_eg_state);
-    if (bits & ST_BLE_RUNNING)
-    {
-        debug_printf("BLE RUNNING, IGNORE MASTER");
-        return;
-    }
+
     master_stop_req = 0;  
     debug_printf("MY BLE MASTER\r\n");
     bl_sys_init();
