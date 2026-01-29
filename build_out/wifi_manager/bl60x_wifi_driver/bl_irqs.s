@@ -12,7 +12,7 @@
 	.type	bl_irqs_init, @function
 bl_irqs_init:
 .LFB56:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_irqs.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_irqs.c"
 	.loc 1 36 1
 	.cfi_startproc
 .LVL0:
@@ -178,28 +178,28 @@ bl_irq_bottomhalf:
 	.comm	cfg_start_req_u_tlv_t,12,4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
-	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
-	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+	.file 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+	.file 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1670
@@ -4332,6 +4332,8 @@ bl_irq_bottomhalf:
 	.string	"u8_t"
 .LASF374:
 	.string	"ieee80211_mcs_info"
+.LASF422:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_irqs.c"
 .LASF361:
 	.string	"RWNX_CMD_MGR_STATE_INITED"
 .LASF14:
@@ -4354,8 +4356,6 @@ bl_irq_bottomhalf:
 	.string	"drv_flags"
 .LASF26:
 	.string	"TASK_LAST_EMB"
-.LASF422:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_irqs.c"
 .LASF226:
 	.string	"recv_radar_ind"
 .LASF75:
@@ -4604,8 +4604,6 @@ bl_irq_bottomhalf:
 	.string	"BL_Mutex_t"
 .LASF87:
 	.string	"MM_PS_CHANGE_IND"
-.LASF288:
-	.string	"MEMP_NETDB"
 .LASF104:
 	.string	"MM_MU_GROUP_UPDATE_CFM"
 .LASF170:
@@ -4646,8 +4644,8 @@ bl_irq_bottomhalf:
 	.string	"TASK_NONE"
 .LASF131:
 	.string	"APM_STA_DEL_IND"
-.LASF36:
-	.string	"MM_VERSION_REQ"
+.LASF423:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF315:
 	.string	"loop_first"
 .LASF127:
@@ -4710,6 +4708,8 @@ bl_irq_bottomhalf:
 	.string	"reserved"
 .LASF328:
 	.string	"PM_MODE_STA_DOWN"
+.LASF36:
+	.string	"MM_VERSION_REQ"
 .LASF230:
 	.string	"prim_tbtt_ind"
 .LASF171:
@@ -4718,8 +4718,8 @@ bl_irq_bottomhalf:
 	.string	"ip_addr_t"
 .LASF356:
 	.string	"e2a_msg"
-.LASF423:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager"
+.LASF288:
+	.string	"MEMP_NETDB"
 .LASF217:
 	.string	"ipc_a2e_msg"
 .LASF134:

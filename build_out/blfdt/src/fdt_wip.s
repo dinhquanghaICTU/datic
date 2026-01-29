@@ -12,7 +12,7 @@
 	.type	fdt_setprop_inplace_namelen_partial, @function
 fdt_setprop_inplace_namelen_partial:
 .LFB40:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_wip.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_wip.c"
 	.loc 1 62 1
 	.cfi_startproc
 .LVL0:
@@ -31,7 +31,7 @@ fdt_setprop_inplace_namelen_partial:
 .LVL1:
 .LBB10:
 .LBB11:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.loc 2 723 5 is_stmt 1
 .LBE11:
 .LBE10:
@@ -314,7 +314,7 @@ fdt_nop_property:
 	.loc 1 101 9 is_stmt 1
 .LBE26:
 .LBE28:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 3 97 5
 .LBB29:
 .LBB27:
@@ -510,9 +510,9 @@ fdt_nop_node:
 	.size	fdt_nop_node, .-fdt_nop_node
 	.text
 .Letext0:
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x6e7
@@ -2668,8 +2668,6 @@ fdt_nop_node:
 	.string	"uintptr_t"
 .LASF25:
 	.string	"start"
-.LASF7:
-	.string	"uint8_t"
 .LASF17:
 	.string	"fdt_nop_node"
 .LASF30:
@@ -2702,18 +2700,22 @@ fdt_nop_node:
 	.string	"fdt_getprop_namelen"
 .LASF6:
 	.string	"short unsigned int"
+.LASF8:
+	.string	"uint32_t"
 .LASF35:
 	.string	"checklen"
+.LASF45:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_wip.c"
 .LASF28:
 	.string	"proplen"
 .LASF39:
 	.string	"fdt_get_property"
-.LASF46:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF0:
 	.string	"unsigned int"
 .LASF10:
 	.string	"long long unsigned int"
+.LASF7:
+	.string	"uint8_t"
 .LASF47:
 	.string	"fdt_property"
 .LASF36:
@@ -2736,10 +2738,8 @@ fdt_nop_node:
 	.string	"nodeoffset"
 .LASF32:
 	.string	"fdt_getprop_namelen_w"
-.LASF45:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_wip.c"
-.LASF8:
-	.string	"uint32_t"
+.LASF46:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF3:
 	.string	"long int"
 .LASF12:

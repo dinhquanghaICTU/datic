@@ -12,7 +12,7 @@
 	.type	app_event_post, @function
 app_event_post:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
 	.loc 1 23 1
 	.cfi_startproc
 .LVL0:
@@ -489,16 +489,16 @@ g_lock_button_loaded:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/app_state.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_mqtt.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/app_state.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_mqtt.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x502
@@ -1760,8 +1760,6 @@ g_lock_button_loaded:
 	.string	"ssid"
 .LASF31:
 	.string	"g_event_queue_tail"
-.LASF61:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF35:
 	.string	"password"
 .LASF13:
@@ -1788,6 +1786,8 @@ g_lock_button_loaded:
 	.string	"APP_EVENT_BUTTON_HOLD"
 .LASF3:
 	.string	"long long int"
+.LASF61:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF2:
 	.string	"long int"
 .LASF44:
@@ -1810,6 +1810,8 @@ g_lock_button_loaded:
 	.string	"app_event_post"
 .LASF42:
 	.string	"app_button_press_callback"
+.LASF60:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
 .LASF50:
 	.string	"relay_get_state"
 .LASF33:
@@ -1830,8 +1832,6 @@ g_lock_button_loaded:
 	.string	"locked"
 .LASF24:
 	.string	"type"
-.LASF60:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
 .LASF28:
 	.string	"_Bool"
 .LASF25:

@@ -1,29 +1,29 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/utils//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_notifier.c"
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_notifier.h" 1
-
-
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_notifier.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 1
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 1
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 2
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 2
 
 
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 struct utils_list_hdr
 {
     struct utils_list_hdr *next;
@@ -36,45 +36,45 @@ struct utils_list
 
     struct utils_list_hdr *last;
 };
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_init(struct utils_list *list);
-# 54 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_pool_init(struct utils_list *list, void *pool, size_t elmt_size, unsigned int elmt_cnt, void *default_value);
-# 64 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_push_back(struct utils_list *list,
                        struct utils_list_hdr *list_hdr);
-# 75 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 75 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_push_front(struct utils_list *list, struct utils_list_hdr *list_hdr);
-# 85 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 85 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 struct utils_list_hdr *utils_list_pop_front(struct utils_list *list);
-# 98 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_extract(struct utils_list *list, struct utils_list_hdr *list_hdr);
-# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 110 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 int utils_list_find(struct utils_list *list, struct utils_list_hdr *list_hdr);
-# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 127 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_insert(struct utils_list * const list, struct utils_list_hdr * const element,
         int (*cmp)(struct utils_list_hdr const *elementA,
         struct utils_list_hdr const *elementB));
-# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_insert_after(struct utils_list * const list, struct utils_list_hdr * const prev_element, struct utils_list_hdr * const element);
-# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_insert_before(struct utils_list * const list, struct utils_list_hdr * const next_element, struct utils_list_hdr * const element);
-# 173 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 173 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_concat(struct utils_list *list1, struct utils_list *list2);
-# 189 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_remove(struct utils_list *list, struct utils_list_hdr *prev_element, struct utils_list_hdr *element);
-# 199 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 199 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline int utils_list_is_empty(const struct utils_list *const list)
 {
     return (
-# 201 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
            ((void *)0) 
-# 201 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
                 == list->first);
 }
-# 213 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 213 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 unsigned int utils_list_cnt(const struct utils_list *const list);
-# 224 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 224 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline struct utils_list_hdr *utils_list_pick(const struct utils_list *const list)
 {
     return list->first;
@@ -89,7 +89,7 @@ static inline struct utils_list_hdr *utils_list_next(const struct utils_list_hdr
 {
     return list_hdr->next;
 }
-# 259 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 259 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 typedef struct utils_dlist_s {
     struct utils_dlist_s *prev;
     struct utils_dlist_s *next;
@@ -103,7 +103,7 @@ static inline void __utils_dlist_add(utils_dlist_t *node, utils_dlist_t *prev, u
     prev->next = node;
     next->prev = node;
 }
-# 284 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline void utils_dlist_add(utils_dlist_t *node, utils_dlist_t *queue)
 {
     __utils_dlist_add(node, queue, queue->next);
@@ -138,7 +138,7 @@ static inline int utils_dlist_empty(const utils_dlist_t *head)
 {
     return head->next == head;
 }
-# 413 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 413 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline int utils_dlist_entry_number(utils_dlist_t *queue)
 {
  int num;
@@ -148,7 +148,7 @@ static inline int utils_dlist_entry_number(utils_dlist_t *queue)
 
  return num;
 }
-# 441 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 441 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 typedef struct utils_slist_s {
     struct utils_slist_s *next;
 } utils_slist_t;
@@ -178,9 +178,9 @@ static inline void utils_slist_append(utils_slist_t *l, utils_slist_t *n)
 
     node->next = n;
     n->next = 
-# 469 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
+# 469 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
              ((void *)0)
-# 469 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 469 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
                  ;
 }
 
@@ -222,7 +222,7 @@ static inline utils_slist_t* utils_slist_next(utils_slist_t *l)
 {
     return l->next;
 }
-# 591 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 591 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline int utils_slist_entry_number(utils_slist_t *queue)
 {
  int num;
@@ -232,7 +232,7 @@ static inline int utils_slist_entry_number(utils_slist_t *queue)
 
     return num;
 }
-# 6 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_notifier.h" 2
+# 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_notifier.h" 2
 
 typedef struct utils_list ntf_list_t;
 typedef int (*utils_notifier_fn_t)(void *cb_arg, void *env);
@@ -247,7 +247,7 @@ typedef struct utils_notifier {
 int utils_notifier_chain_init(ntf_list_t *nl);
 int utils_notifier_chain_register(ntf_list_t *nl, utils_notifier_t *node);
 int utils_notifier_chain_call(ntf_list_t *nl, void *env);
-# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_notifier.c" 2
+# 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_notifier.c" 2
 
 int utils_notifier_chain_init(ntf_list_t *nl)
 {

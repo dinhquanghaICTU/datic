@@ -12,7 +12,7 @@
 	.type	hosal_rng_init, @function
 hosal_rng_init:
 .LFB3:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_rng.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_rng.c"
 	.loc 1 7 1
 	.cfi_startproc
 	.loc 1 8 5
@@ -210,9 +210,9 @@ hosal_random_num_read:
 	.size	hosal_random_num_read, .-hosal_random_num_read
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x16e
@@ -772,6 +772,8 @@ hosal_random_num_read:
 	.string	"long long int"
 .LASF10:
 	.string	"unsigned int"
+.LASF22:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF6:
 	.string	"__uint32_t"
 .LASF14:
@@ -800,10 +802,6 @@ hosal_random_num_read:
 	.string	"uint32_t"
 .LASF4:
 	.string	"long int"
-.LASF22:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
-.LASF21:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_rng.c"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
@@ -812,6 +810,8 @@ hosal_random_num_read:
 	.string	"bl_sec_init"
 .LASF2:
 	.string	"short int"
+.LASF21:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_rng.c"
 .LASF16:
 	.string	"hosal_random_num_read"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -119,16 +119,14 @@
 	.section	.debug_str,"MS",@progbits,1
 .LASF8:
 	.string	"unsigned int"
-.LASF12:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF6:
 	.string	"long unsigned int"
 .LASF0:
 	.string	"signed char"
+.LASF12:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF5:
 	.string	"short unsigned int"
-.LASF11:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
 .LASF1:
 	.string	"short int"
 .LASF7:
@@ -141,6 +139,8 @@
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF9:
 	.string	"char"
+.LASF11:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/dummy.c"
 .LASF3:
 	.string	"long long int"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

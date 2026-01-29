@@ -12,7 +12,7 @@
 	.type	__errno, @function
 __errno:
 .LFB25:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/libc/newlibc/syscalls.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/libc/newlibc/syscalls.c"
 	.loc 1 195 1
 	.cfi_startproc
 	.loc 1 203 5
@@ -1145,21 +1145,21 @@ _sys_errno:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/reent.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/reent.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/errno.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1577
@@ -5879,8 +5879,6 @@ _sys_errno:
 	.string	"stat"
 .LASF83:
 	.string	"_emergency"
-.LASF225:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/newlibc"
 .LASF144:
 	.string	"st_dev"
 .LASF133:
@@ -5989,8 +5987,6 @@ _sys_errno:
 	.string	"_mult"
 .LASF31:
 	.string	"__ULong"
-.LASF224:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/libc/newlibc/syscalls.c"
 .LASF124:
 	.string	"_wcrtomb_state"
 .LASF139:
@@ -6021,6 +6017,8 @@ _sys_errno:
 	.string	"_close_r"
 .LASF158:
 	.string	"_Bool"
+.LASF225:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/newlibc"
 .LASF181:
 	.string	"_unlink_r"
 .LASF44:
@@ -6033,6 +6031,8 @@ _sys_errno:
 	.string	"argv"
 .LASF19:
 	.string	"__gid_t"
+.LASF224:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/libc/newlibc/syscalls.c"
 .LASF66:
 	.string	"_write"
 .LASF140:

@@ -39,7 +39,7 @@
 	.type	_check_ota_header, @function
 _check_ota_header:
 .LFB5:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota_cli.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota_cli.c"
 	.loc 1 43 1
 	.cfi_startproc
 .LVL0:
@@ -2547,30 +2547,30 @@ cmds_user:
 	.word	ota_dump_cmd
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/inet.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sockets.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netdb.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_sha256.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_ota.h"
-	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
-	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/errno.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/inet.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sockets.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netdb.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_sha256.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_ota.h"
+	.file 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wdt.h"
+	.file 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/errno.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1f75
@@ -9158,10 +9158,10 @@ cmds_user:
 	.string	"__uint8_t"
 .LASF155:
 	.string	"strstr"
-.LASF27:
-	.string	"MEMP_TCPIP_MSG_API"
 .LASF65:
 	.string	"type"
+.LASF158:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota_cli.c"
 .LASF125:
 	.string	"bl_mtd_write"
 .LASF10:
@@ -9172,8 +9172,6 @@ cmds_user:
 	.string	"in_addr_t"
 .LASF41:
 	.string	"addr"
-.LASF112:
-	.string	"ota_tcp_api_cmd"
 .LASF23:
 	.string	"MEMP_TCP_SEG"
 .LASF54:
@@ -9308,8 +9306,6 @@ cmds_user:
 	.string	"ota_header_t"
 .LASF100:
 	.string	"use_xz"
-.LASF82:
-	.string	"_pad"
 .LASF110:
 	.string	"dest"
 .LASF97:
@@ -9338,8 +9334,8 @@ cmds_user:
 	.string	"sha256_img"
 .LASF1:
 	.string	"unsigned char"
-.LASF158:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota_cli.c"
+.LASF112:
+	.string	"ota_tcp_api_cmd"
 .LASF143:
 	.string	"bl_mtd_erase_all"
 .LASF37:
@@ -9366,8 +9362,8 @@ cmds_user:
 	.string	"vPortFree"
 .LASF81:
 	.string	"sha256"
-.LASF159:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blota"
+.LASF82:
+	.string	"_pad"
 .LASF162:
 	.string	"bl_sys_ota_cli_init"
 .LASF14:
@@ -9378,8 +9374,8 @@ cmds_user:
 	.string	"lwip_setsockopt"
 .LASF118:
 	.string	"ip4addr_ntoa"
-.LASF8:
-	.string	"long unsigned int"
+.LASF27:
+	.string	"MEMP_TCPIP_MSG_API"
 .LASF147:
 	.string	"lwip_gethostbyname"
 .LASF12:
@@ -9396,12 +9392,16 @@ cmds_user:
 	.string	"MEMP_NETCONN"
 .LASF24:
 	.string	"MEMP_ALTCP_PCB"
+.LASF159:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blota"
 .LASF33:
 	.string	"MEMP_PBUF_POOL"
 .LASF73:
 	.string	"buffer"
 .LASF128:
 	.string	"memcmp"
+.LASF142:
+	.string	"hal_update_mfg_ptable"
 .LASF95:
 	.string	"server_addr"
 .LASF130:
@@ -9450,8 +9450,8 @@ cmds_user:
 	.string	"utils_sha256_starts"
 .LASF135:
 	.string	"bl_mtd_close"
-.LASF142:
-	.string	"hal_update_mfg_ptable"
+.LASF8:
+	.string	"long unsigned int"
 .LASF86:
 	.string	"argv"
 .LASF106:

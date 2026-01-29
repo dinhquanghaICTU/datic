@@ -11,7 +11,7 @@
 	.type	fdt_cells, @function
 fdt_cells:
 .LFB40:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_addresses.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_addresses.c"
 	.loc 1 60 1
 	.cfi_startproc
 .LVL0:
@@ -69,7 +69,7 @@ fdt_cells:
 .LVL5:
 .LBB4:
 .LBB5:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 2 93 5 is_stmt 1
 	.loc 2 93 212 is_stmt 0
 	srli	a4,a5,24
@@ -212,8 +212,8 @@ fdt_size_cells:
 	.size	fdt_size_cells, .-fdt_size_cells
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x26c
@@ -1024,16 +1024,16 @@ fdt_size_cells:
 	.section	.debug_str,"MS",@progbits,1
 .LASF4:
 	.string	"long long int"
+.LASF6:
+	.string	"short unsigned int"
 .LASF17:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF0:
 	.string	"unsigned int"
-.LASF18:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_addresses.c"
 .LASF21:
 	.string	"fdt32_to_cpu"
-.LASF19:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
+.LASF9:
+	.string	"long unsigned int"
 .LASF16:
 	.string	"name"
 .LASF10:
@@ -1050,14 +1050,14 @@ fdt_size_cells:
 	.string	"uint32_t"
 .LASF3:
 	.string	"long int"
-.LASF9:
-	.string	"long unsigned int"
-.LASF6:
-	.string	"short unsigned int"
+.LASF19:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF1:
 	.string	"signed char"
 .LASF15:
 	.string	"fdt_address_cells"
+.LASF18:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_addresses.c"
 .LASF14:
 	.string	"fdt_size_cells"
 .LASF2:

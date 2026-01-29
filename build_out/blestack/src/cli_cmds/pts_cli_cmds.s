@@ -11,9 +11,9 @@
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
 .LASF0:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/cli_cmds/pts_cli_cmds.c"
 .LASF1:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF2:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/cli_cmds/pts_cli_cmds.c"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

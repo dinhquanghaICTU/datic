@@ -12,7 +12,7 @@
 	.type	blcrypto_suite_ecp_group_load, @function
 blcrypto_suite_ecp_group_load:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp_curves.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp_curves.c"
 	.loc 1 763 1
 	.cfi_startproc
 .LVL0:
@@ -381,10 +381,10 @@ one.0:
 	.word	1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x66e
@@ -1984,10 +1984,6 @@ one.0:
 	.string	"size_t"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF54:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp_curves.c"
-.LASF55:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF36:
 	.string	"t_data"
 .LASF43:
@@ -2002,6 +1998,8 @@ one.0:
 	.string	"BLCRYPTO_SUITE_ECP_DP_NONE"
 .LASF4:
 	.string	"long int"
+.LASF54:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp_curves.c"
 .LASF32:
 	.string	"nbits"
 .LASF50:
@@ -2086,6 +2084,8 @@ one.0:
 	.string	"BLCRYPTO_SUITE_ECP_DP_CURVE25519"
 .LASF19:
 	.string	"BLCRYPTO_SUITE_ECP_DP_BP256R1"
+.LASF55:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF25:
 	.string	"BLCRYPTO_SUITE_ECP_DP_SECP256K1"
 .LASF21:

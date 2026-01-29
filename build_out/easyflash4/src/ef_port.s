@@ -12,7 +12,7 @@
 	.type	ef_port_read, @function
 ef_port_read:
 .LFB5:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_port.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_port.c"
 	.loc 1 107 67
 	.cfi_startproc
 .LVL0:
@@ -234,7 +234,7 @@ ef_log_debug:
 	.string	"(%s) has assert failed at %s.\r\n"
 	.align	2
 .LC2:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_port.c"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_port.c"
 	.section	.text.ef_port_erase,"ax",@progbits
 	.align	1
 	.globl	ef_port_erase
@@ -274,16 +274,16 @@ ef_port_erase:
 	call	ef_log_debug
 .LVL17:
 .L17:
-	.loc 1 134 215 discriminator 1
-	.loc 1 134 224 discriminator 1
-	.loc 1 134 221 discriminator 1
+	.loc 1 134 222 discriminator 1
+	.loc 1 134 231 discriminator 1
+	.loc 1 134 228 discriminator 1
 	j	.L17
 .LVL18:
 .L16:
 	.loc 1 137 9 is_stmt 0 discriminator 2
 	lui	a5,%hi(.LANCHOR0)
 	mv	a2,a1
-	.loc 1 134 227 is_stmt 1 discriminator 2
+	.loc 1 134 234 is_stmt 1 discriminator 2
 	.loc 1 137 5 discriminator 2
 	.loc 1 137 9 is_stmt 0 discriminator 2
 	mv	a1,a0
@@ -637,17 +637,17 @@ handle:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x773
@@ -2548,8 +2548,6 @@ handle:
 	.string	"ef_print"
 .LASF65:
 	.string	"bl_mtd_erase"
-.LASF75:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF1:
 	.string	"short int"
 .LASF11:
@@ -2582,6 +2580,8 @@ handle:
 	.string	"line"
 .LASF38:
 	.string	"ENV_AREA_SIZE"
+.LASF75:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF32:
 	.string	"bl_mtd_handle_t"
 .LASF56:
@@ -2624,6 +2624,8 @@ handle:
 	.string	"SemaphoreHandle_t"
 .LASF4:
 	.string	"unsigned char"
+.LASF74:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_port.c"
 .LASF0:
 	.string	"signed char"
 .LASF9:
@@ -2670,8 +2672,6 @@ handle:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF60:
 	.string	"info"
-.LASF74:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_port.c"
 .LASF24:
 	.string	"EF_ENV_ARG_ERR"
 .LASF47:

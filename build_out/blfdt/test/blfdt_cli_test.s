@@ -12,7 +12,7 @@
 	.type	blfdt, @function
 blfdt:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/test/blfdt_cli_test.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/test/blfdt_cli_test.c"
 	.loc 1 16 1
 	.cfi_startproc
 .LVL0:
@@ -87,7 +87,7 @@ cmds_user:
 	.word	blfdt
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1b6
@@ -680,12 +680,12 @@ cmds_user:
 	.string	"blfdt_cli_init"
 .LASF8:
 	.string	"unsigned int"
-.LASF18:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/test/blfdt_cli_test.c"
 .LASF21:
 	.string	"cmds_user"
-.LASF19:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
+.LASF18:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/test/blfdt_cli_test.c"
+.LASF5:
+	.string	"long unsigned int"
 .LASF15:
 	.string	"tc_fdt_wifi"
 .LASF17:
@@ -700,8 +700,8 @@ cmds_user:
 	.string	"char"
 .LASF4:
 	.string	"long int"
-.LASF5:
-	.string	"long unsigned int"
+.LASF16:
+	.string	"tc_blfdtdump"
 .LASF6:
 	.string	"long long int"
 .LASF13:
@@ -712,14 +712,14 @@ cmds_user:
 	.string	"name"
 .LASF20:
 	.string	"cli_command"
+.LASF19:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF23:
 	.string	"blfdt"
 .LASF2:
 	.string	"short int"
 .LASF12:
 	.string	"function"
-.LASF16:
-	.string	"tc_blfdtdump"
 .LASF0:
 	.string	"signed char"
 .LASF14:

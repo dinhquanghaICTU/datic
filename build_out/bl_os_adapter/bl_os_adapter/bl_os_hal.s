@@ -12,7 +12,7 @@
 	.type	bl_os_event_register, @function
 bl_os_event_register:
 .LFB9:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/bl_os_hal.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/bl_os_hal.c"
 	.loc 1 319 1
 	.cfi_startproc
 .LVL0:
@@ -3101,23 +3101,23 @@ g_bl_ops_funcs:
 	.word	bl_os_check_timeout
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/event_groups.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog_type.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/timers.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/event_groups.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2667
@@ -11755,6 +11755,8 @@ g_bl_ops_funcs:
 	.string	"clear_on_exit"
 .LASF225:
 	.string	"bl_os_event_wait"
+.LASF251:
+	.string	"xPortIsInsideInterrupt"
 .LASF151:
 	.string	"semphr"
 .LASF69:
@@ -12017,14 +12019,14 @@ g_bl_ops_funcs:
 	.string	"TaskHandle_t"
 .LASF206:
 	.string	"seconds"
-.LASF251:
-	.string	"xPortIsInsideInterrupt"
+.LASF289:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/bl_os_hal.c"
 .LASF81:
 	.string	"bl_ops_funcs_t"
 .LASF57:
 	.string	"_sem_delete"
-.LASF289:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/bl_os_hal.c"
+.LASF25:
+	.string	"_puts"
 .LASF79:
 	.string	"_check_timeout"
 .LASF171:
@@ -12101,8 +12103,6 @@ g_bl_ops_funcs:
 	.string	"bl_os_irq_attach"
 .LASF62:
 	.string	"_mutex_lock"
-.LASF290:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl_os_adapter"
 .LASF78:
 	.string	"_set_timeout"
 .LASF248:
@@ -12135,8 +12135,6 @@ g_bl_ops_funcs:
 	.string	"bl_os_workqueue_submit_hpwork"
 .LASF261:
 	.string	"vPortFree"
-.LASF25:
-	.string	"_puts"
 .LASF218:
 	.string	"name"
 .LASF137:
@@ -12145,6 +12143,8 @@ g_bl_ops_funcs:
 	.string	"bl_os_timer_mode"
 .LASF47:
 	.string	"_irq_enable"
+.LASF290:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl_os_adapter"
 .LASF287:
 	.string	"xQueueGiveFromISR"
 .LASF156:

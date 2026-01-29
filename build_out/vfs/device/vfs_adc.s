@@ -11,7 +11,7 @@
 	.type	vfs_adc_notify, @function
 vfs_adc_notify:
 .LFB7:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/device/vfs_adc.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/device/vfs_adc.c"
 	.loc 1 120 1
 	.cfi_startproc
 .LVL0:
@@ -630,22 +630,22 @@ adc_ops:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/hal/soc/adc.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/device/vfs_adc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/hal/soc/adc.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/device/vfs_adc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xe48
@@ -3644,6 +3644,8 @@ adc_ops:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF155:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF150:
 	.string	"hal_adc_finalize"
 .LASF146:
@@ -3660,8 +3662,6 @@ adc_ops:
 	.string	"aos_dir_t"
 .LASF11:
 	.string	"unsigned int"
-.LASF155:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF55:
 	.string	"st_blksize"
 .LASF104:
@@ -3908,8 +3908,6 @@ adc_ops:
 	.string	"setup"
 .LASF6:
 	.string	"__uint32_t"
-.LASF154:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/device/vfs_adc.c"
 .LASF31:
 	.string	"blksize_t"
 .LASF125:
@@ -3958,6 +3956,8 @@ adc_ops:
 	.string	"st_rdev"
 .LASF145:
 	.string	"aos_mutex_unlock"
+.LASF154:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/device/vfs_adc.c"
 .LASF127:
 	.string	"vfs_adc_ioctl"
 .LASF84:

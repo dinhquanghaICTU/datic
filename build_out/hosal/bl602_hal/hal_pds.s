@@ -12,7 +12,7 @@
 	.type	hal_pds_init, @function
 hal_pds_init:
 .LFB30:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_pds.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_pds.c"
 	.loc 1 10 1
 	.cfi_startproc
 	.loc 1 11 5
@@ -186,10 +186,10 @@ hal_pds_enter_with_time_compensation:
 	.size	hal_pds_enter_with_time_compensation, .-hal_pds_enter_with_time_compensation
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pds.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x256
@@ -912,6 +912,8 @@ hal_pds_enter_with_time_compensation:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF28:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_pds.c"
 .LASF27:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF5:
@@ -942,8 +944,6 @@ hal_pds_enter_with_time_compensation:
 	.string	"vTaskStepTick"
 .LASF19:
 	.string	"hal_pds_fastboot_cfg"
-.LASF29:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF15:
 	.string	"rtcHighAfterSleep"
 .LASF10:
@@ -962,12 +962,12 @@ hal_pds_enter_with_time_compensation:
 	.string	"long long int"
 .LASF22:
 	.string	"HBN_Get_RTC_Timer_Val"
-.LASF28:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_pds.c"
 .LASF26:
 	.string	"bl_pds_init"
 .LASF1:
 	.string	"short int"
+.LASF29:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF17:
 	.string	"actualSleepDuration_ms"
 .LASF2:

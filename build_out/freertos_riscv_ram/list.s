@@ -12,7 +12,7 @@
 	.type	vListInitialise, @function
 vListInitialise:
 .LFB0:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/list.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/list.c"
 	.loc 1 38 1
 	.cfi_startproc
 .LVL0:
@@ -321,9 +321,9 @@ uxListRemove:
 	.size	uxListRemove, .-uxListRemove
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2b1
@@ -1040,8 +1040,6 @@ uxListRemove:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF38:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF17:
 	.string	"pvContainer"
 .LASF12:
@@ -1064,14 +1062,16 @@ uxListRemove:
 	.string	"pxItemToRemove"
 .LASF4:
 	.string	"short unsigned int"
+.LASF38:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF34:
 	.string	"vListInitialiseItem"
-.LASF37:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/list.c"
+.LASF26:
+	.string	"List_t"
 .LASF20:
 	.string	"uxNumberOfItems"
-.LASF33:
-	.string	"vListInsertEnd"
+.LASF37:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/list.c"
 .LASF14:
 	.string	"pxNext"
 .LASF0:
@@ -1090,8 +1090,6 @@ uxListRemove:
 	.string	"long long int"
 .LASF9:
 	.string	"char"
-.LASF26:
-	.string	"List_t"
 .LASF30:
 	.string	"pxIterator"
 .LASF3:
@@ -1100,6 +1098,8 @@ uxListRemove:
 	.string	"pxIndex"
 .LASF15:
 	.string	"pxPrevious"
+.LASF33:
+	.string	"vListInsertEnd"
 .LASF10:
 	.string	"uint32_t"
 .LASF5:

@@ -1,22 +1,22 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c"
-# 56 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/constants.h" 1
-# 46 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/constants.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 47 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/constants.h" 2
-# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h" 1
-# 74 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c"
+# 56 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/constants.h" 1
+# 46 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/constants.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/constants.h" 2
+# 57 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h" 1
+# 74 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -76,11 +76,11 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 75 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h" 2
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 75 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h" 2
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 typedef int8_t wordcount_t;
 typedef int16_t bitcount_t;
 
@@ -89,7 +89,7 @@ typedef int8_t cmpresult_t;
 typedef unsigned int uECC_word_t;
 
 typedef uint64_t uECC_dword_t;
-# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 110 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 struct uECC_Curve_t;
 typedef const struct uECC_Curve_t * uECC_Curve;
 struct uECC_Curve_t {
@@ -105,7 +105,7 @@ struct uECC_Curve_t {
   void (*x_side)(uECC_word_t *result, const uECC_word_t *x, uECC_Curve curve);
   void (*mmod_fast)(uECC_word_t *result, uECC_word_t *product);
 };
-# 133 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 133 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void double_jacobian_default(uECC_word_t * X1, uECC_word_t * Y1,
         uECC_word_t * Z1, uECC_Curve curve);
 
@@ -125,7 +125,7 @@ void x_side_default(uECC_word_t *result, const uECC_word_t *x,
 
 
 void vli_mmod_fast_secp256r1(unsigned int *result, unsigned int *product);
-# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 static const struct uECC_Curve_t curve_secp256r1 = {
  8,
  (4*8),
@@ -161,12 +161,12 @@ static const struct uECC_Curve_t curve_secp256r1 = {
 };
 
 uECC_Curve uECC_secp256r1(void);
-# 205 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 int uECC_generate_random_int(uECC_word_t *random, const uECC_word_t *top,
         wordcount_t num_words);
-# 225 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 225 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 typedef int(*uECC_RNG_Function)(uint8_t *dest, unsigned int size);
-# 237 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 237 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_set_rng(uECC_RNG_Function rng_function);
 
 
@@ -188,16 +188,16 @@ int uECC_curve_private_key_size(uECC_Curve curve);
 
 
 int uECC_curve_public_key_size(uECC_Curve curve);
-# 266 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 266 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 int uECC_compute_public_key(const uint8_t *private_key,
        uint8_t *public_key, uECC_Curve curve);
-# 276 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 276 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 uECC_word_t EccPoint_compute_public_key(uECC_word_t *result,
      uECC_word_t *private_key, uECC_Curve curve);
-# 288 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 288 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 uECC_word_t regularize_k(const uECC_word_t * const k, uECC_word_t *k0,
     uECC_word_t *k1, uECC_Curve curve);
-# 302 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 302 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void EccPoint_mult(uECC_word_t * result, const uECC_word_t * point,
      const uECC_word_t * scalar, const uECC_word_t * initial_Z,
      bitcount_t num_bits, uECC_Curve curve);
@@ -217,41 +217,41 @@ uECC_word_t uECC_vli_isZero(const uECC_word_t *vli, wordcount_t num_words);
 
 
 uECC_word_t EccPoint_isZero(const uECC_word_t *point, uECC_Curve curve);
-# 329 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 329 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 cmpresult_t uECC_vli_cmp(const uECC_word_t *left, const uECC_word_t *right,
     wordcount_t num_words);
-# 340 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 340 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 cmpresult_t uECC_vli_cmp_unsafe(const uECC_word_t *left, const uECC_word_t *right,
     wordcount_t num_words);
-# 353 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 353 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_vli_modSub(uECC_word_t *result, const uECC_word_t *left,
        const uECC_word_t *right, const uECC_word_t *mod,
        wordcount_t num_words);
-# 367 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 367 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void XYcZ_add(uECC_word_t * X1, uECC_word_t * Y1, uECC_word_t * X2,
        uECC_word_t * Y2, uECC_Curve curve);
-# 377 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 377 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void apply_z(uECC_word_t * X1, uECC_word_t * Y1, const uECC_word_t * const Z,
       uECC_Curve curve);
-# 389 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 389 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 uECC_word_t uECC_vli_testBit(const uECC_word_t *vli, bitcount_t bit);
-# 398 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 398 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_vli_mmod(uECC_word_t *result, uECC_word_t *product,
      const uECC_word_t *mod, wordcount_t num_words);
-# 408 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 408 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_vli_modMult_fast(uECC_word_t *result, const uECC_word_t *left,
       const uECC_word_t *right, uECC_Curve curve);
-# 420 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 420 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 uECC_word_t uECC_vli_sub(uECC_word_t *result, const uECC_word_t *left,
     const uECC_word_t *right, wordcount_t num_words);
-# 430 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 430 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 uECC_word_t uECC_vli_equal(const uECC_word_t *left, const uECC_word_t *right,
       wordcount_t num_words);
-# 441 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 441 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_vli_modMult(uECC_word_t *result, const uECC_word_t *left,
         const uECC_word_t *right, const uECC_word_t *mod,
                wordcount_t num_words);
-# 454 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 454 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_vli_modInv(uECC_word_t *result, const uECC_word_t *input,
        const uECC_word_t *mod, wordcount_t num_words);
 
@@ -263,7 +263,7 @@ void uECC_vli_modInv(uECC_word_t *result, const uECC_word_t *input,
 
 void uECC_vli_set(uECC_word_t *dest, const uECC_word_t *src,
     wordcount_t num_words);
-# 476 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 476 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 void uECC_vli_modAdd(uECC_word_t *result, const uECC_word_t *left,
            const uECC_word_t *right, const uECC_word_t *mod,
           wordcount_t num_words);
@@ -283,9 +283,9 @@ bitcount_t uECC_vli_numBits(const uECC_word_t *vli,
 
 
 void uECC_vli_clear(uECC_word_t *vli, wordcount_t num_words);
-# 505 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 505 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 int uECC_valid_point(const uECC_word_t *point, uECC_Curve curve);
-# 521 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
+# 521 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h"
 int uECC_valid_public_key(const uint8_t *public_key, uECC_Curve curve);
 
 
@@ -305,18 +305,18 @@ void uECC_vli_nativeToBytes(uint8_t *bytes, int num_bytes,
 
 void uECC_vli_bytesToNative(unsigned int *native, const uint8_t *bytes,
        int num_bytes);
-# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h" 1
-# 81 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h" 1
-# 82 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h" 2
-# 105 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h"
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h" 1
+# 81 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc.h" 1
+# 82 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h" 2
+# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h"
 int uECC_sign(const uint8_t *p_private_key, const uint8_t *p_message_hash,
        unsigned p_hash_size, uint8_t *p_signature, uECC_Curve curve);
-# 132 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h"
+# 132 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/ecc_dsa.h"
 int uECC_verify(const uint8_t *p_public_key, const uint8_t *p_message_hash,
   unsigned int p_hash_size, const uint8_t *p_signature, uECC_Curve curve);
-# 59 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c" 2
+# 59 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/source/ecc_dsa.c" 2
 
 
 

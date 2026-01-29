@@ -3,9 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <FreeRTOS.h>
-#include "event_groups.h"
 #include <semphr.h>
-#include <bl_sys.h>
 
 #include "bluetooth.h"
 #include "hci_driver.h"
@@ -14,26 +12,29 @@
 #include "conn.h"
 #include "conn_internal.h"
 #include "gatt.h"
+extern void bleuart_printf(char *buf);
 
 
-
-extern uint8_t axk_HalBleInit();
-extern uint8_t axk_HalBleCentralDisconnect();
-extern uint8_t axk_HalBleCentralStartScan(void);
 extern uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnect);
-extern int axk_HalBleCentralTTWrite(uint16_t len, uint8_t *data);
-
-uint8_t master_stop_req = 0;
 
 static ble_scan_info_t master_scan_tbl[MASTER_SCAN_MAX];
 static int master_current_scan;
 static uint8_t scan_le_addr[6];
 
-static uint16_t target_device_id = 0x0002;
 
-static TaskHandle_t master_task_handle;
+static const char target_name[] = "VRemote";
 
-static uint8_t slave_mac[6] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
+
+
+static void bt_enable_cb(int err)
+{
+    if (!err) {
+        bt_addr_le_t bt_addr;
+        bt_get_local_public_address(&bt_addr);
+        printf("BD_ADDR:(MSB)%02x:%02x:%02x:%02x:%02x:%02x(LSB) \r\n",
+            bt_addr.a.val[5], bt_addr.a.val[4], bt_addr.a.val[3], bt_addr.a.val[2], bt_addr.a.val[1], bt_addr.a.val[0]);
+    }
+}
 
 static bool scan_data_cb(struct bt_data *data, void *user_data)
 {
@@ -42,34 +43,11 @@ static bool scan_data_cb(struct bt_data *data, void *user_data)
 
     switch (data->type) {
         case BT_DATA_NAME_SHORTENED:
-            return true;
-
         case BT_DATA_NAME_COMPLETE:
             len = (data->data_len > NAME_LEN - 1)?(NAME_LEN - 1):(data->data_len);
             memcpy(info->name, data->data, len);
-            return true;
-
-        case BT_DATA_MANUFACTURER_DATA:
-            if (data->data_len < 8) return true;
-
-            uint16_t company_id = data->data[0] | (data->data[1] << 8);
-            if (company_id != ADV_COMPANY_ID) return true;
-
-            uint8_t magic   = data->data[2];
-            uint8_t product = data->data[3];
-            uint8_t msg     = data->data[4];
-            uint16_t device_id = data->data[5] | (data->data[6] << 8);
-            uint8_t state   = data->data[7];
-
-            if (magic == ADV_MAGIC &&
-                product == ADV_PRODUCT_RELAY &&
-                msg == ADV_MSG_RELAY_STATE &&
-                device_id == target_device_id) {
-
-                info->is_target = true;
-                return false; 
-            }
-            return true;
+            info->name[len] = '\0';  
+            return false;
         default:
             return true;
     }
@@ -78,32 +56,30 @@ static bool scan_data_cb(struct bt_data *data, void *user_data)
 static void scan_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
              struct net_buf_simple *buf)
 {
-    if (master_current_scan >= MASTER_SCAN_MAX) 
-    {
+    if (master_current_scan >= MASTER_SCAN_MAX) {
         return ;
     }
 
-    /* if the address recorded last is different from this */
+
     if (memcmp(scan_le_addr, addr->a.val, 6) != 0)
     {
-        if (*(uint32_t *)scan_le_addr != 0) 
-        {
-            if (*(uint32_t *)scan_le_addr != 0) 
-            {
-                memcpy(master_scan_tbl[master_current_scan].mac, scan_le_addr, 6);
-                master_current_scan++;
-            }
+        if (*(uint32_t *)scan_le_addr != 0) {
+           
+            memcpy(master_scan_tbl[master_current_scan].mac, scan_le_addr, 6);
+           
+            master_current_scan++;
         }
         
-        /* record newer addr */
+       
         memcpy(scan_le_addr, addr->a.val, 6);
     }
 
-    /* parse ble name */
+   
     bt_data_parse(buf, scan_data_cb, &master_scan_tbl[master_current_scan]);
-    /* record rssi */
+    
     master_scan_tbl[master_current_scan].rssi = rssi;
 }
+
 
 int ble_master_scan(uint32_t scan_time) {
     int ret;
@@ -121,24 +97,27 @@ int ble_master_scan(uint32_t scan_time) {
     ret = bt_le_scan_start(&scan_param, scan_device_found);
     if (ret != 0)
     {
-        debug_printf("[BLE][SCAN] ret:%d \r\n", ret);
+        printf("[BLE][SCAN] ret:%d \r\n", ret);
         return -1;
     }
 
     vTaskDelay(scan_time / portTICK_PERIOD_MS);
     bt_le_scan_stop();
 
+  
     for (int i = 0; i < master_current_scan; i++) {
+        ble_reverse_byte(master_scan_tbl[i].mac, 6);
+        sprintf(scan_data,"mac:%02X%02X%02X%02X%02X%02X rssi:%i name:%s\r\n", 
+             master_scan_tbl[i].mac[0],master_scan_tbl[i].mac[1],master_scan_tbl[i].mac[2],
+             master_scan_tbl[i].mac[3],master_scan_tbl[i].mac[4],master_scan_tbl[i].mac[5],
+             master_scan_tbl[i].rssi, master_scan_tbl[i].name);
+        bleuart_printf(scan_data);
+    }
 
-        if ((master_scan_tbl[i].is_target))
-        {
-            ble_reverse_byte(master_scan_tbl[i].mac, 6);
-            sprintf(scan_data,"mac:%02X%02X%02X%02X%02X%02X rssi:%i name: %s\r\n", 
-                master_scan_tbl[i].mac[0],master_scan_tbl[i].mac[1],master_scan_tbl[i].mac[2],
-                master_scan_tbl[i].mac[3],master_scan_tbl[i].mac[4],master_scan_tbl[i].mac[5],
-                master_scan_tbl[i].rssi, master_scan_tbl[i].name);
-            debug_printf(scan_data);
-            debug_printf("DAY LA THIET BI TARGET HOP LE");
+    
+    for (int i = 0; i < master_current_scan; i++) {
+        if (strncmp(master_scan_tbl[i].name, target_name, strlen(target_name)) == 0) {
+            printf("Found target name %s, start central connect\r\n", target_name);
             axk_HalBleCentralConnect(master_scan_tbl[i].mac, NULL, BLE_MASTER_AUTOCONN_ENABLE);
             break;
         }
@@ -163,8 +142,8 @@ static bool find_data_cb(struct bt_data *data, void *user_data)
         case BT_DATA_UUID16_ALL:
             len = data->data_len;
             if (len % 2 != 0) {
-                /* invalid adv data, discard */
-                debug_printf("[BLE] find invalid adv\r\n");
+            
+                printf("[BLE] find invalid adv\r\n");
                 return false;
             }
             uint16_t *p_uuid = (uint16_t *)(data->data);
@@ -189,7 +168,7 @@ static void find_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
     uint16_t uuid = 0;
 
     if (find_uuid != NULL) {
-        /* parse uuid */
+       
         bt_data_parse(buf, find_data_cb, &uuid);
     }
 
@@ -202,8 +181,8 @@ static void find_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
     if (find_uuid != NULL && *find_uuid != uuid) {
         return ;
     }
-    /* found target */
-    debug_printf("[BLE] found target\r\n");
+    
+    printf("[BLE] found target\r\n");
     memcpy(find_target_addr, addr, sizeof(bt_addr_le_t));
     find_result = 1;
     xSemaphoreGive(sem_found);
@@ -225,7 +204,7 @@ int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_
     sem_found = xSemaphoreCreateBinaryStatic(&sem_found_buffer);
     if (sem_found == NULL )
     {
-        debug_printf("[BLE] create sem faxkl \r\n");
+        printf("[BLE] create sem faxkl \r\n");
         return -1;
     }
 
@@ -242,64 +221,17 @@ int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_
     ret = bt_le_scan_start(&scan_param, find_device_found);
     if (ret != 0)
     {
-        debug_printf("[BLE][FIND] ret:%d \r\n", ret);
+        printf("[BLE][FIND] ret:%d \r\n", ret);
         return -1;
     }
+
     xSemaphoreTake(sem_found, scan_time / portTICK_PERIOD_MS);
-
-    bt_le_scan_stop();               
-
-    vSemaphoreDelete(sem_found);     
+    vSemaphoreDelete(sem_found);
     sem_found = NULL;
-
+    bt_le_scan_stop();
     if (find_result == 0) {
-        debug_printf("[BLE] not found target\r\n");
+        printf("[BLE] not found target\r\n");
         return -1;
     }
     return 0;
-}
-
-
-
-void ble_user_init(void)
-{
-  axk_HalBleInit();
-  axk_HalBleCentralStartScan();                                          
-}
-
-static void proc_master(void *pvParameters)
-{
-    (void)pvParameters;
-
-    while (!master_stop_req)
-    {
-        vTaskDelay(pdMS_TO_TICKS(10));
-    }
-
-    bt_le_scan_stop();
-    axk_HalBleCentralDisconnect();
-    axk_HalBleCentralConnect(NULL, NULL, 0);
-
-    ble_master_deinit();
-    bt_disable();
-
-    master_task_handle = NULL;
-   
-}
-
-
-void ble_start_master(void)
-{
-    EventBits_t bits = xEventGroupGetBits(g_sys_eg_state);
-
-    master_stop_req = 0;  
-    debug_printf("MY BLE MASTER\r\n");
-    bl_sys_init();
-    xTaskCreate(proc_master, "proc_master", 1024, NULL, 15, &master_task_handle);
-}
-
-void ble_master_stop(void)
-{
-    if (master_task_handle == NULL) return;
-    master_stop_req = 1;
 }

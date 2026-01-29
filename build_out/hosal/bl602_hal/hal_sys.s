@@ -12,7 +12,7 @@
 	.type	user_clz, @function
 user_clz:
 .LFB11:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.c"
 	.loc 1 23 1
 	.cfi_startproc
 .LVL0:
@@ -446,14 +446,14 @@ capout_static.0:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_romdriver.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_aon.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_romdriver.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_aon.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x7f6
@@ -2111,6 +2111,8 @@ capout_static.0:
 	.string	"ROM_API_INDEX_XIP_SFlash_GetDeviceId_Need_Lock"
 .LASF147:
 	.string	"ROM_API_INDEX_SF_Cfg_Init_Ext_Flash_Gpio"
+.LASF232:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF46:
 	.string	"ROM_API_INDEX_EF_Ctrl_Program_Efuse_0"
 .LASF23:
@@ -2275,6 +2277,8 @@ capout_static.0:
 	.string	"ROM_API_INDEX_AON_Power_On_MBG"
 .LASF52:
 	.string	"ROM_API_INDEX_EF_Ctrl_Read_RC32K_Trim"
+.LASF231:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.c"
 .LASF203:
 	.string	"rtos_strlen_ptr"
 .LASF57:
@@ -2417,8 +2421,6 @@ capout_static.0:
 	.string	"ROM_API_INDEX_SF_Ctrl_Is_AES_Enable"
 .LASF3:
 	.string	"short int"
-.LASF231:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.c"
 .LASF31:
 	.string	"ROM_API_INDEX_AON_Power_Off_LDO15_RF"
 .LASF89:
@@ -2557,8 +2559,6 @@ capout_static.0:
 	.string	"ROM_API_INDEX_SFlash_GetDeviceId"
 .LASF103:
 	.string	"ROM_API_INDEX_PDS_Select_XTAL_As_PLL_Ref"
-.LASF232:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF144:
 	.string	"ROM_API_INDEX_SFlash_Read_Reg_With_Cmd"
 .LASF188:

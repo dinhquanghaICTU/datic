@@ -125,28 +125,28 @@
 	.string	"unsigned int"
 .LASF6:
 	.string	"long unsigned int"
-.LASF2:
-	.string	"unsigned char"
+.LASF13:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager"
+.LASF11:
+	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF1:
 	.string	"signed char"
-.LASF13:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF4:
 	.string	"short unsigned int"
 .LASF3:
 	.string	"short int"
-.LASF10:
-	.string	"char"
+.LASF12:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_pkt_hooks.c"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF0:
 	.string	"_Bool"
 .LASF5:
 	.string	"long int"
-.LASF11:
-	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF12:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_pkt_hooks.c"
+.LASF2:
+	.string	"unsigned char"
+.LASF10:
+	.string	"char"
 .LASF7:
 	.string	"long long int"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

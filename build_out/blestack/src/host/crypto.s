@@ -19,7 +19,7 @@
 	.type	prng_init, @function
 prng_init:
 .LFB87:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/crypto.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/crypto.c"
 	.loc 1 65 1
 	.cfi_startproc
 	.loc 1 66 2
@@ -270,7 +270,7 @@ bt_encrypt_le:
 	sw	ra,204(sp)
 .LBB20:
 .LBB21:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/byteorder.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/byteorder.h"
 	.loc 2 377 6 is_stmt 0
 	addi	a4,s0,-208
 	.cfi_offset 9, -12
@@ -542,25 +542,25 @@ __func__.1:
 	.string	"prng_init"
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_host.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/sha256.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/hmac.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/hmac_prng.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/aes.h"
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_host.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/sha256.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/hmac.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/hmac_prng.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/tinycrypt/include/tinycrypt/aes.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xd99
@@ -1006,7 +1006,7 @@ __func__.1:
 	.byte	0
 	.byte	0x17
 	.4byte	.LASF144
-	.byte	0x20
+	.byte	0x18
 	.byte	0x4
 	.byte	0xc
 	.2byte	0x234
@@ -1106,7 +1106,7 @@ __func__.1:
 	.4byte	0x415
 	.byte	0x12
 	.4byte	0x38
-	.byte	0x9
+	.byte	0x3
 	.byte	0
 	.byte	0xd
 	.byte	0x6
@@ -3786,8 +3786,8 @@ __func__.1:
 	.string	"k_work"
 .LASF81:
 	.string	"BT_DEV_ADVERTISING_NAME"
-.LASF142:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/crypto.c"
+.LASF28:
+	.string	"poll_events"
 .LASF116:
 	.string	"cmd_tx_queue"
 .LASF133:
@@ -3798,8 +3798,6 @@ __func__.1:
 	.string	"_snode"
 .LASF120:
 	.string	"prng"
-.LASF143:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF30:
 	.string	"_queue"
 .LASF92:
@@ -3816,8 +3814,6 @@ __func__.1:
 	.string	"tc_hmac_prng_init"
 .LASF136:
 	.string	"net_buf_unref"
-.LASF28:
-	.string	"poll_events"
 .LASF102:
 	.string	"bt_dev"
 .LASF72:
@@ -3974,6 +3970,8 @@ __func__.1:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF15:
 	.string	"u16_t"
+.LASF142:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/crypto.c"
 .LASF144:
 	.string	"net_buf"
 .LASF86:
@@ -4016,6 +4014,8 @@ __func__.1:
 	.string	"bt_dev_le"
 .LASF132:
 	.string	"tc_aes_encrypt"
+.LASF143:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF91:
 	.string	"BT_DEV_ID_PENDING"
 .LASF75:

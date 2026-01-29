@@ -12,7 +12,7 @@
 	.type	atomic_cas, @function
 atomic_cas:
 .LFB26:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
 	.loc 1 48 1
 	.cfi_startproc
 .LVL0:
@@ -772,8 +772,8 @@ atomic_nand:
 	.size	atomic_nand, .-atomic_nand
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x580
@@ -2316,6 +2316,8 @@ atomic_nand:
 	.string	"short unsigned int"
 .LASF29:
 	.string	"irq_unlock"
+.LASF31:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
 .LASF18:
 	.string	"atomic_clear"
 .LASF25:
@@ -2334,8 +2336,6 @@ atomic_nand:
 	.string	"atomic_or"
 .LASF21:
 	.string	"atomic_dec"
-.LASF31:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/atomic_c.c"
 .LASF3:
 	.string	"short int"
 .LASF4:
@@ -2347,5 +2347,5 @@ atomic_nand:
 .LASF20:
 	.string	"atomic_get"
 .LASF32:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

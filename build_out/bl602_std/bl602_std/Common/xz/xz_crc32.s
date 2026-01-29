@@ -12,7 +12,7 @@
 	.type	xz_crc32_init, @function
 xz_crc32_init:
 .LFB5:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_crc32.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_crc32.c"
 	.loc 1 32 1
 	.cfi_startproc
 	.loc 1 48 2
@@ -106,8 +106,8 @@ xz_crc32:
 	.size	xz_crc32, .-xz_crc32
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x121
@@ -522,14 +522,14 @@ xz_crc32:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF10:
 	.string	"size_t"
-.LASF12:
-	.string	"uint32_t"
 .LASF6:
 	.string	"long unsigned int"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF18:
 	.string	"xz_crc32"
+.LASF16:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF11:
 	.string	"uint8_t"
 .LASF2:
@@ -538,10 +538,8 @@ xz_crc32:
 	.string	"xz_crc32_init"
 .LASF9:
 	.string	"char"
-.LASF15:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_crc32.c"
-.LASF16:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF12:
+	.string	"uint32_t"
 .LASF5:
 	.string	"long int"
 .LASF4:
@@ -552,6 +550,8 @@ xz_crc32:
 	.string	"size"
 .LASF17:
 	.string	"crc32Tab"
+.LASF15:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_crc32.c"
 .LASF3:
 	.string	"short int"
 .LASF0:

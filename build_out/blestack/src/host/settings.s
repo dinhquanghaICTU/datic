@@ -19,7 +19,7 @@
 	.type	bt_settings_encode_key, @function
 bt_settings_encode_key:
 .LFB73:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
 	.loc 1 32 1
 	.cfi_startproc
 .LVL0:
@@ -143,10 +143,10 @@ bt_settings_init:
 	.size	bt_settings_init, .-bt_settings_init
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/addr.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1f2
@@ -883,8 +883,6 @@ bt_settings_init:
 	.string	"size_t"
 .LASF20:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF21:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
 .LASF19:
 	.string	"addr"
 .LASF26:
@@ -901,6 +899,8 @@ bt_settings_init:
 	.string	"long unsigned int"
 .LASF14:
 	.string	"bt_addr_le_t"
+.LASF21:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/settings.c"
 .LASF18:
 	.string	"subsys"
 .LASF23:
@@ -925,8 +925,8 @@ bt_settings_init:
 	.string	"signed char"
 .LASF4:
 	.string	"short unsigned int"
+.LASF22:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF15:
 	.string	"_Bool"
-.LASF22:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

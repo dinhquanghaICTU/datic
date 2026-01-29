@@ -6,13 +6,13 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c100,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c100,"ax",@progbits
 	.align	1
 	.weak	PDS_Reset
 	.type	PDS_Reset, @function
 PDS_Reset:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c"
 	.loc 1 101 1
 	.cfi_startproc
 	.loc 1 102 5
@@ -50,7 +50,7 @@ PDS_Reset:
 	.cfi_endproc
 .LFE8:
 	.size	PDS_Reset, .-PDS_Reset
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c128,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c128,"ax",@progbits
 	.align	1
 	.weak	PDS_Enable
 	.type	PDS_Enable, @function
@@ -144,7 +144,7 @@ PDS_Enable:
 	.cfi_endproc
 .LFE9:
 	.size	PDS_Enable, .-PDS_Enable
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c168,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c168,"ax",@progbits
 	.align	1
 	.weak	PDS_Force_Config
 	.type	PDS_Force_Config, @function
@@ -186,7 +186,7 @@ PDS_Force_Config:
 	.cfi_endproc
 .LFE10:
 	.size	PDS_Force_Config, .-PDS_Force_Config
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c190,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c190,"ax",@progbits
 	.align	1
 	.weak	PDS_RAM_Config
 	.type	PDS_RAM_Config, @function
@@ -252,7 +252,7 @@ PDS_RAM_Config:
 	.cfi_endproc
 .LFE11:
 	.size	PDS_RAM_Config, .-PDS_RAM_Config
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c231,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c231,"ax",@progbits
 	.align	1
 	.weak	PDS_Default_Level_Config
 	.type	PDS_Default_Level_Config, @function
@@ -635,7 +635,7 @@ PDS_Int_Callback_Install:
 	.cfi_endproc
 .LFE20:
 	.size	PDS_Int_Callback_Install, .-PDS_Int_Callback_Install
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c388,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c388,"ax",@progbits
 	.align	1
 	.weak	PDS_Trim_RC32M
 	.type	PDS_Trim_RC32M, @function
@@ -739,7 +739,7 @@ PDS_Trim_RC32M:
 	.cfi_endproc
 .LFE21:
 	.size	PDS_Trim_RC32M, .-PDS_Trim_RC32M
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c419,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c419,"ax",@progbits
 	.align	1
 	.weak	PDS_Select_RC32M_As_PLL_Ref
 	.type	PDS_Select_RC32M_As_PLL_Ref, @function
@@ -787,7 +787,7 @@ PDS_Select_RC32M_As_PLL_Ref:
 	.cfi_endproc
 .LFE22:
 	.size	PDS_Select_RC32M_As_PLL_Ref, .-PDS_Select_RC32M_As_PLL_Ref
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c442,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c442,"ax",@progbits
 	.align	1
 	.weak	PDS_Select_XTAL_As_PLL_Ref
 	.type	PDS_Select_XTAL_As_PLL_Ref, @function
@@ -834,7 +834,7 @@ PDS_Select_XTAL_As_PLL_Ref:
 	.cfi_endproc
 .LFE23:
 	.size	PDS_Select_XTAL_As_PLL_Ref, .-PDS_Select_XTAL_As_PLL_Ref
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c634,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c634,"ax",@progbits
 	.align	1
 	.globl	PDS_Fix_Xtal_Settig
 	.type	PDS_Fix_Xtal_Settig, @function
@@ -890,7 +890,7 @@ PDS_Fix_Xtal_Settig:
 	.cfi_endproc
 .LFE25:
 	.size	PDS_Fix_Xtal_Settig, .-PDS_Fix_Xtal_Settig
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c671,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c671,"ax",@progbits
 	.align	1
 	.weak	PDS_Enable_PLL_All_Clks
 	.type	PDS_Enable_PLL_All_Clks, @function
@@ -932,7 +932,7 @@ PDS_Enable_PLL_All_Clks:
 	.cfi_endproc
 .LFE26:
 	.size	PDS_Enable_PLL_All_Clks, .-PDS_Enable_PLL_All_Clks
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c693,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c693,"ax",@progbits
 	.align	1
 	.weak	PDS_Disable_PLL_All_Clks
 	.type	PDS_Disable_PLL_All_Clks, @function
@@ -974,7 +974,7 @@ PDS_Disable_PLL_All_Clks:
 	.cfi_endproc
 .LFE27:
 	.size	PDS_Disable_PLL_All_Clks, .-PDS_Disable_PLL_All_Clks
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c715,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c715,"ax",@progbits
 	.align	1
 	.weak	PDS_Enable_PLL_Clk
 	.type	PDS_Enable_PLL_Clk, @function
@@ -1020,7 +1020,7 @@ PDS_Enable_PLL_Clk:
 	.cfi_endproc
 .LFE28:
 	.size	PDS_Enable_PLL_Clk, .-PDS_Enable_PLL_Clk
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c740,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c740,"ax",@progbits
 	.align	1
 	.weak	PDS_Disable_PLL_Clk
 	.type	PDS_Disable_PLL_Clk, @function
@@ -1068,7 +1068,7 @@ PDS_Disable_PLL_Clk:
 	.cfi_endproc
 .LFE29:
 	.size	PDS_Disable_PLL_Clk, .-PDS_Disable_PLL_Clk
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c765,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c765,"ax",@progbits
 	.align	1
 	.weak	PDS_Power_Off_PLL
 	.type	PDS_Power_Off_PLL, @function
@@ -1128,7 +1128,7 @@ PDS_Power_Off_PLL:
 	.cfi_endproc
 .LFE30:
 	.size	PDS_Power_Off_PLL, .-PDS_Power_Off_PLL
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c465,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c465,"ax",@progbits
 	.align	1
 	.weak	PDS_Power_On_PLL
 	.type	PDS_Power_On_PLL, @function
@@ -1491,13 +1491,13 @@ PDS_Power_On_PLL:
 	.size	PDS_Power_On_PLL, .-PDS_Power_On_PLL
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pds.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pds.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0xf21
+	.4byte	0xf22
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -2908,7 +2908,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF175
 	.byte	0x1
 	.2byte	0x2fd
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
@@ -2927,7 +2927,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF176
 	.byte	0x1
 	.2byte	0x2e4
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
@@ -2938,7 +2938,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF179
 	.byte	0x1
 	.2byte	0x2e4
-	.byte	0xd4
+	.byte	0xdb
 	.4byte	0x930
 	.4byte	.LLST22
 	.byte	0x14
@@ -2953,7 +2953,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF178
 	.byte	0x1
 	.2byte	0x2cb
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
@@ -2964,7 +2964,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF179
 	.byte	0x1
 	.2byte	0x2cb
-	.byte	0xd3
+	.byte	0xda
 	.4byte	0x930
 	.4byte	.LLST20
 	.byte	0x14
@@ -2979,7 +2979,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF180
 	.byte	0x1
 	.2byte	0x2b5
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
@@ -2998,7 +2998,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF181
 	.byte	0x1
 	.2byte	0x29f
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB26
 	.4byte	.LFE26-.LFB26
@@ -3017,7 +3017,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF182
 	.byte	0x1
 	.2byte	0x27a
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB25
 	.4byte	.LFE25-.LFB25
@@ -3036,7 +3036,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF183
 	.byte	0x1
 	.2byte	0x1d1
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
@@ -3047,7 +3047,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF184
 	.byte	0x1
 	.2byte	0x1d1
-	.byte	0xd2
+	.byte	0xd9
 	.4byte	0x8dd
 	.4byte	.LLST25
 	.byte	0x14
@@ -3071,7 +3071,7 @@ PDS_Power_On_PLL:
 	.4byte	0xb52
 	.byte	0x17
 	.4byte	.LVL120
-	.4byte	0xefe
+	.4byte	0xeff
 	.4byte	0xb09
 	.byte	0x18
 	.byte	0x1
@@ -3081,7 +3081,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x17
 	.4byte	.LVL125
-	.4byte	0xefe
+	.4byte	0xeff
 	.4byte	0xb1c
 	.byte	0x18
 	.byte	0x1
@@ -3091,7 +3091,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x17
 	.4byte	.LVL128
-	.4byte	0xefe
+	.4byte	0xeff
 	.4byte	0xb2f
 	.byte	0x18
 	.byte	0x1
@@ -3101,7 +3101,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x17
 	.4byte	.LVL131
-	.4byte	0xefe
+	.4byte	0xeff
 	.4byte	0xb42
 	.byte	0x18
 	.byte	0x1
@@ -3111,7 +3111,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL134
-	.4byte	0xefe
+	.4byte	0xeff
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -3123,7 +3123,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF185
 	.byte	0x1
 	.2byte	0x1ba
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB23
 	.4byte	.LFE23-.LFB23
@@ -3142,7 +3142,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF186
 	.byte	0x1
 	.2byte	0x1a3
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB22
 	.4byte	.LFE22-.LFB22
@@ -3161,7 +3161,7 @@ PDS_Power_On_PLL:
 	.4byte	.LASF187
 	.byte	0x1
 	.2byte	0x184
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0xac
 	.4byte	.LFB21
 	.4byte	.LFE21-.LFB21
@@ -3186,7 +3186,7 @@ PDS_Power_On_PLL:
 	.4byte	.LLST14
 	.byte	0x17
 	.4byte	.LVL46
-	.4byte	0xf0a
+	.4byte	0xf0b
 	.4byte	0xbfc
 	.byte	0x18
 	.byte	0x1
@@ -3197,7 +3197,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x17
 	.4byte	.LVL49
-	.4byte	0xf17
+	.4byte	0xf18
 	.4byte	0xc0f
 	.byte	0x18
 	.byte	0x1
@@ -3207,7 +3207,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL53
-	.4byte	0xefe
+	.4byte	0xeff
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -3358,38 +3358,38 @@ PDS_Power_On_PLL:
 	.4byte	.LASF200
 	.byte	0x1
 	.byte	0xe7
-	.byte	0xa8
+	.byte	0xaf
 	.4byte	0xac
 	.4byte	.LFB12
 	.4byte	.LFE12-.LFB12
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xdf2
+	.4byte	0xdf3
 	.byte	0x1e
 	.4byte	.LASF201
 	.byte	0x1
 	.byte	0xe7
-	.byte	0xda
-	.4byte	0xdf2
+	.byte	0xe1
+	.4byte	0xdf3
 	.4byte	.LLST6
-	.byte	0x1e
+	.byte	0x21
 	.4byte	.LASF202
 	.byte	0x1
 	.byte	0xe7
-	.byte	0xf9
-	.4byte	0xdf8
+	.2byte	0x100
+	.4byte	0xdf9
 	.4byte	.LLST7
 	.byte	0x21
 	.4byte	.LASF203
 	.byte	0x1
 	.byte	0xe7
-	.2byte	0x109
+	.2byte	0x110
 	.4byte	0x62
 	.4byte	.LLST8
 	.byte	0x17
 	.4byte	.LVL22
-	.4byte	0xdfe
-	.4byte	0xdba
+	.4byte	0xdff
+	.4byte	0xdbb
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -3400,8 +3400,8 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x17
 	.4byte	.LVL23
-	.4byte	0xe39
-	.4byte	0xdd4
+	.4byte	0xe3a
+	.4byte	0xdd5
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -3417,7 +3417,7 @@ PDS_Power_On_PLL:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL24
-	.4byte	0xe7e
+	.4byte	0xe7f
 	.byte	0x18
 	.byte	0x1
 	.byte	0x5a
@@ -3449,19 +3449,19 @@ PDS_Power_On_PLL:
 	.4byte	.LASF204
 	.byte	0x1
 	.byte	0xbe
-	.byte	0xa8
+	.byte	0xaf
 	.4byte	0xac
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xe39
+	.4byte	0xe3a
 	.byte	0x1e
 	.4byte	.LASF202
 	.byte	0x1
 	.byte	0xbe
-	.byte	0xc9
-	.4byte	0xdf8
+	.byte	0xd0
+	.4byte	0xdf9
 	.4byte	.LLST4
 	.byte	0x20
 	.4byte	.LASF177
@@ -3475,26 +3475,26 @@ PDS_Power_On_PLL:
 	.4byte	.LASF205
 	.byte	0x1
 	.byte	0xa8
-	.byte	0xa8
+	.byte	0xaf
 	.4byte	0xac
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xe72
+	.4byte	0xe73
 	.byte	0x1e
 	.4byte	.LASF206
 	.byte	0x1
 	.byte	0xa8
-	.byte	0xc8
-	.4byte	0xe72
+	.byte	0xcf
+	.4byte	0xe73
 	.4byte	.LLST3
 	.byte	0x1f
 	.4byte	.LASF207
 	.byte	0x1
 	.byte	0xa8
-	.byte	0xdc
-	.4byte	0xe78
+	.byte	0xe3
+	.4byte	0xe79
 	.byte	0x1
 	.byte	0x5b
 	.byte	0
@@ -3508,33 +3508,33 @@ PDS_Power_On_PLL:
 	.4byte	.LASF208
 	.byte	0x1
 	.byte	0x80
-	.byte	0xa8
+	.byte	0xaf
 	.4byte	0xac
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xec7
+	.4byte	0xec8
 	.byte	0x22
 	.string	"cfg"
 	.byte	0x1
 	.byte	0x80
-	.byte	0xc1
-	.4byte	0xec7
+	.byte	0xc8
+	.4byte	0xec8
 	.4byte	.LLST1
 	.byte	0x1f
 	.4byte	.LASF209
 	.byte	0x1
 	.byte	0x80
-	.byte	0xd4
-	.4byte	0xecd
+	.byte	0xdb
+	.4byte	0xece
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x1e
 	.4byte	.LASF203
 	.byte	0x1
 	.byte	0x80
-	.byte	0xe2
+	.byte	0xe9
 	.4byte	0x62
 	.4byte	.LLST2
 	.byte	0
@@ -3548,13 +3548,13 @@ PDS_Power_On_PLL:
 	.4byte	.LASF210
 	.byte	0x1
 	.byte	0x64
-	.byte	0xa8
+	.byte	0xaf
 	.4byte	0xac
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0xefe
+	.4byte	0xeff
 	.byte	0x20
 	.4byte	.LASF177
 	.byte	0x1
@@ -4927,6 +4927,8 @@ PDS_Power_On_PLL:
 	.string	"PDS_PLL_XTAL_Type"
 .LASF156:
 	.string	"PDS_RAM_CFG_Type"
+.LASF215:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c"
 .LASF118:
 	.string	"PDS_DEFAULT_LV_CFG_Type"
 .LASF56:
@@ -4943,8 +4945,8 @@ PDS_Power_On_PLL:
 	.string	"rsv3"
 .LASF85:
 	.string	"forceWbPdsRst"
-.LASF216:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF80:
+	.string	"rsv5"
 .LASF163:
 	.string	"PDS_PLL_XTAL_RC32M"
 .LASF82:
@@ -5125,6 +5127,8 @@ PDS_Power_On_PLL:
 	.string	"rsv25_26"
 .LASF208:
 	.string	"PDS_Enable"
+.LASF216:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF121:
 	.string	"PDS_PLL_STS_PU"
 .LASF39:
@@ -5147,8 +5151,6 @@ PDS_Power_On_PLL:
 	.string	"PDS_PLL_CLK_192M"
 .LASF169:
 	.string	"PDS_PLL_CLK_120M"
-.LASF80:
-	.string	"rsv5"
 .LASF178:
 	.string	"PDS_Enable_PLL_Clk"
 .LASF132:
@@ -5195,8 +5197,6 @@ PDS_Power_On_PLL:
 	.string	"pdsSleepCnt"
 .LASF126:
 	.string	"PDS_RF_STS_PU_LDO15RF"
-.LASF215:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_pds.c"
 .LASF130:
 	.string	"PDS_STS_IDLE"
 .LASF135:

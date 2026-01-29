@@ -1,26 +1,26 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
-# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 1
-# 82 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 1
+# 82 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 83 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 2
-# 95 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 84 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 2
+# 95 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 
-# 95 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 95 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 struct event
 {
 
@@ -36,20 +36,20 @@ struct event
 };
 
 struct state;
-# 166 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 166 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 struct transition
 {
 
    int eventType;
-# 178 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
    void *condition;
-# 193 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 193 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
    
-# 193 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 3 4
+# 193 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 3 4
   _Bool 
-# 193 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 193 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
        ( *guard )( void *condition, struct event *event );
-# 206 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 206 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
    void ( *action )( void *currentStateData, struct event *event,
          void *newStateData );
 
@@ -61,7 +61,7 @@ struct transition
 
    const struct state *nextState;
 };
-# 299 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 299 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 struct state
 {
 
@@ -86,9 +86,9 @@ struct state
 
 
    void *data;
-# 336 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 336 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
    void ( *entryAction )( void *stateData, struct event *event );
-# 347 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 347 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
    void ( *exitAction )( void *stateData, struct event *event );
 };
 
@@ -117,7 +117,7 @@ struct stateMachine
 
    const struct state *errorState;
 };
-# 397 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 397 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 void stateM_init( struct stateMachine *stateMachine,
       const struct state *initialState, const struct state *errorState );
 
@@ -128,7 +128,7 @@ enum stateM_handleEventRetVals
 {
 
    stateM_errArg = -2,
-# 419 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 419 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
    stateM_errorStateReached,
 
    stateM_stateChanged,
@@ -150,20 +150,20 @@ enum stateM_handleEventRetVals
 
    stateM_finalStateReached,
 };
-# 460 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 460 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 int stateM_handleEvent( struct stateMachine *stateMachine,
       struct event *event );
-# 471 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 471 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 const struct state *stateM_currentState( struct stateMachine *stateMachine );
-# 482 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 482 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 const struct state *stateM_previousState( struct stateMachine *stateMachine );
-# 493 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 493 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
 
-# 493 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 3 4
+# 493 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h" 3 4
 _Bool 
-# 493 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+# 493 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
     stateM_stopped( struct stateMachine *stateMachine );
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 2
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 2
 
 static void goToErrorState( struct stateMachine *stateMachine,
       struct event *const event );
@@ -178,9 +178,9 @@ void stateM_init( struct stateMachine *fsm,
 
    fsm->currentState = initialState;
    fsm->previousState = 
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
                        ((void *)0)
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
                            ;
    fsm->errorState = errorState;
 }
@@ -269,9 +269,9 @@ const struct state *stateM_currentState( struct stateMachine *fsm )
 {
    if ( !fsm )
       return 
-# 137 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
+# 137 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
             ((void *)0)
-# 137 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 137 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
                 ;
 
    return fsm->currentState;
@@ -281,9 +281,9 @@ const struct state *stateM_previousState( struct stateMachine *fsm )
 {
    if ( !fsm )
       return 
-# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
             ((void *)0)
-# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
                 ;
 
    return fsm->previousState;
@@ -322,23 +322,23 @@ static struct transition *getTransition( struct stateMachine *fsm,
 
 
    return 
-# 182 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
+# 182 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
          ((void *)0)
-# 182 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 182 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
              ;
 }
 
 
-# 185 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
+# 185 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
 _Bool 
-# 185 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 185 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
     stateM_stopped( struct stateMachine *stateMachine )
 {
    if ( !stateMachine )
       return 
-# 188 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
+# 188 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c" 3 4
             1
-# 188 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
+# 188 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.c"
                 ;
 
    return stateMachine->currentState->numTransitions == 0;

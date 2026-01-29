@@ -31,7 +31,7 @@
 	.type	backtrace_riscv, @function
 backtrace_riscv:
 .LFB5:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c"
 	.loc 1 90 1
 	.cfi_startproc
 .LVL0:
@@ -91,7 +91,7 @@ backtrace_riscv:
 .LVL2:
 	.loc 1 101 5
  #APP
-# 101 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c" 1
+# 101 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c" 1
 	add s1, x0, fp
 # 0 "" 2
 .LVL3:
@@ -324,7 +324,7 @@ backtrace_now_app:
 .LBE12:
 	.loc 1 160 3
  #APP
-# 160 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c" 1
+# 160 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c" 1
 	add a2, x0, fp
 # 0 "" 2
 .LVL26:
@@ -955,9 +955,9 @@ backtrace_now_task:
 	.align	2
 	.set	.LANCHOR2,. + 0
 	.type	log.2, @object
-	.size	log.2, 189
+	.size	log.2, 196
 log.2:
-	.string	"\r\n==========\r\nELF File: /home/dinhquangha/Ai-Thinker-WB2/datic/build_out/datic.elf\r\nVisit https://dev.bouffalolab.com/media/doc/backtrace/html/QA/backtrace/backtrace.html for more detail\r\n"
+	.string	"\r\n==========\r\nELF File: /home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/datic.elf\r\nVisit https://dev.bouffalolab.com/media/doc/backtrace/html/QA/backtrace/backtrace.html for more detail\r\n"
 	.section	.sbss.processing_backtrace.0,"aw",@nobits
 	.align	2
 	.set	.LANCHOR0,. + 0
@@ -974,13 +974,13 @@ processing_backtrace.1:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x985
@@ -1730,7 +1730,7 @@ processing_backtrace.1:
 	.4byte	0x5dd
 	.byte	0x21
 	.4byte	0x88
-	.byte	0xbc
+	.byte	0xc3
 	.byte	0
 	.byte	0x20
 	.4byte	0x91
@@ -3522,8 +3522,6 @@ processing_backtrace.1:
 	.string	"short int"
 .LASF47:
 	.string	"backtrace_now_task"
-.LASF61:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF22:
 	.string	"pxPrevious"
 .LASF59:
@@ -3580,6 +3578,8 @@ processing_backtrace.1:
 	.string	"ptAddr"
 .LASF25:
 	.string	"xLIST_ITEM"
+.LASF61:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF52:
 	.string	"backtrace_stack"
 .LASF1:
@@ -3590,6 +3590,8 @@ processing_backtrace.1:
 	.string	"int32_t"
 .LASF9:
 	.string	"long long unsigned int"
+.LASF60:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c"
 .LASF14:
 	.string	"uint32_t"
 .LASF34:
@@ -3626,8 +3628,6 @@ processing_backtrace.1:
 	.string	"long unsigned int"
 .LASF18:
 	.string	"UBaseType_t"
-.LASF60:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/panic/panic_c.c"
 .LASF42:
 	.string	"pt_num"
 .LASF27:

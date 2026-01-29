@@ -12,7 +12,7 @@
 	.type	DMA_Enable, @function
 DMA_Enable:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_dma.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_dma.c"
 	.loc 1 160 1
 	.cfi_startproc
 	.loc 1 161 5
@@ -1693,12 +1693,12 @@ PingPongListArra:
 	.zero	128
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/dma_reg.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/dma_reg.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xe56
@@ -5238,8 +5238,8 @@ PingPongListArra:
 	.string	"memAddr"
 .LASF85:
 	.string	"DWidth"
-.LASF83:
-	.string	"DBSize"
+.LASF210:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_dma.c"
 .LASF185:
 	.string	"dmaPpStruct"
 .LASF34:
@@ -5270,6 +5270,8 @@ PingPongListArra:
 	.string	"DMA_LLI_Init"
 .LASF191:
 	.string	"DMA_LLI_PpStruct_Init"
+.LASF83:
+	.string	"DBSize"
 .LASF167:
 	.string	"is_single_mode"
 .LASF116:
@@ -5348,8 +5350,6 @@ PingPongListArra:
 	.string	"Pong_Transfer_len"
 .LASF177:
 	.string	"DMA_LLI_PpBuf_Destroy"
-.LASF210:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_dma.c"
 .LASF65:
 	.string	"MAC_GEN_IRQn"
 .LASF207:
@@ -5470,8 +5470,6 @@ PingPongListArra:
 	.string	"DMA_REQ_UART0_RX"
 .LASF74:
 	.string	"unsigned char"
-.LASF211:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF3:
 	.string	"CLIC_SOFT_PEND_IRQn"
 .LASF201:
@@ -5480,6 +5478,8 @@ PingPongListArra:
 	.string	"dmaChan"
 .LASF23:
 	.string	"IRTX_IRQn"
+.LASF211:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF0:
 	.string	"MSOFT_IRQn"
 .LASF44:

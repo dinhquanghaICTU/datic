@@ -12,7 +12,7 @@
 	.type	bl_sec_pka_init, @function
 bl_sec_pka_init:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.c"
 	.loc 1 11 1
 	.cfi_startproc
 	.loc 1 17 5
@@ -156,12 +156,12 @@ pka_mutex:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x37e
@@ -973,6 +973,8 @@ pka_mutex:
 	.string	"bl_sec_pka_init"
 .LASF46:
 	.string	"GLB_Set_PKA_CLK_Sel"
+.LASF49:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.c"
 .LASF48:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF35:
@@ -1023,14 +1025,10 @@ pka_mutex:
 	.string	"bl_sec_pka_mutex_give"
 .LASF17:
 	.string	"StaticMiniListItem_t"
-.LASF49:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.c"
 .LASF24:
 	.string	"xSTATIC_QUEUE"
 .LASF11:
 	.string	"long long unsigned int"
-.LASF50:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF18:
 	.string	"xSTATIC_MINI_LIST_ITEM"
 .LASF5:
@@ -1045,6 +1043,8 @@ pka_mutex:
 	.string	"bl_sec_pka_mutex_take"
 .LASF2:
 	.string	"short int"
+.LASF50:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF9:
 	.string	"uint32_t"
 .LASF3:

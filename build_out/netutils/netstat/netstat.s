@@ -11,7 +11,7 @@
 	.type	cmd_netstat, @function
 cmd_netstat:
 .LFB5:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/netstat/netstat.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/netutils/netstat/netstat.c"
 	.loc 1 13 1
 	.cfi_startproc
 .LVL0:
@@ -88,10 +88,10 @@ cmds_user:
 	.word	cmd_netstat
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x223
@@ -765,8 +765,6 @@ cmds_user:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF35:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/netstat/netstat.c"
 .LASF18:
 	.string	"MEMP_ALTCP_PCB"
 .LASF20:
@@ -789,8 +787,6 @@ cmds_user:
 	.string	"MEMP_PBUF_POOL"
 .LASF13:
 	.string	"MEMP_RAW_PCB"
-.LASF0:
-	.string	"signed char"
 .LASF15:
 	.string	"MEMP_TCP_PCB"
 .LASF5:
@@ -799,6 +795,8 @@ cmds_user:
 	.string	"function"
 .LASF16:
 	.string	"MEMP_TCP_PCB_LISTEN"
+.LASF35:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/netutils/netstat/netstat.c"
 .LASF11:
 	.string	"help"
 .LASF1:
@@ -837,6 +835,8 @@ cmds_user:
 	.string	"MEMP_UDP_PCB"
 .LASF2:
 	.string	"short int"
+.LASF36:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/netutils"
 .LASF33:
 	.string	"argv"
 .LASF28:
@@ -845,8 +845,8 @@ cmds_user:
 	.string	"long int"
 .LASF25:
 	.string	"MEMP_NETDB"
-.LASF36:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/netutils"
+.LASF0:
+	.string	"signed char"
 .LASF10:
 	.string	"name"
 .LASF22:

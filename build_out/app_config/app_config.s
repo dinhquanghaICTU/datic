@@ -12,7 +12,7 @@
 	.type	app_config_init, @function
 app_config_init:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
 	.loc 1 8 1
 	.cfi_startproc
 	.loc 1 9 5
@@ -623,13 +623,13 @@ app_config_load_relay_settings:
 	.size	app_config_load_relay_settings, .-app_config_load_relay_settings
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x5e5
@@ -2057,6 +2057,8 @@ app_config_load_relay_settings:
 	.string	"memset"
 .LASF33:
 	.string	"snprintf"
+.LASF43:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/app_config"
 .LASF38:
 	.string	"ef_set_env_blob"
 .LASF30:
@@ -2090,7 +2092,7 @@ app_config_load_relay_settings:
 .LASF23:
 	.string	"app_config_has_wifi"
 .LASF42:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
 .LASF8:
 	.string	"unsigned int"
 .LASF7:
@@ -2111,8 +2113,6 @@ app_config_load_relay_settings:
 	.string	"char"
 .LASF40:
 	.string	"easyflash_init"
-.LASF43:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/app_config"
 .LASF21:
 	.string	"app_config_load_relay_settings"
 .LASF11:

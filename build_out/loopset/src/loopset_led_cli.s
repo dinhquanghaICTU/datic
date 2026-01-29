@@ -19,7 +19,7 @@
 	.type	cmd_loopset_led_trigger, @function
 cmd_loopset_led_trigger:
 .LFB3:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_led_cli.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_led_cli.c"
 	.loc 1 8 1
 	.cfi_startproc
 .LVL0:
@@ -240,10 +240,10 @@ cmds_user:
 	.word	cmd_loopset_led_trigger
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/include/loopset.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2a5
@@ -1213,7 +1213,7 @@ cmds_user:
 .LASF15:
 	.string	"active"
 .LASF23:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/loopset"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/loopset"
 .LASF19:
 	.string	"loopset_led_trigger"
 .LASF1:
@@ -1232,8 +1232,8 @@ cmds_user:
 	.string	"long long unsigned int"
 .LASF27:
 	.string	"cmd_loopset_led_trigger"
-.LASF17:
-	.string	"atoi"
+.LASF22:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_led_cli.c"
 .LASF13:
 	.string	"argc"
 .LASF6:
@@ -1260,8 +1260,8 @@ cmds_user:
 	.string	"signed char"
 .LASF26:
 	.string	"loopset_led_cli_init"
+.LASF17:
+	.string	"atoi"
 .LASF12:
 	.string	"function"
-.LASF22:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_led_cli.c"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

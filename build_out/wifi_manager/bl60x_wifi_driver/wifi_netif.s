@@ -11,7 +11,7 @@
 	.type	wifi_dhcp_start, @function
 wifi_dhcp_start:
 .LFB29:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_netif.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_netif.c"
 	.loc 1 12 1
 	.cfi_startproc
 .LVL0:
@@ -216,23 +216,23 @@ wifi_dhcp_start_timer:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netifapi.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/stateMachine.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_mgmr.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netifapi.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1663
@@ -4169,6 +4169,8 @@ wifi_dhcp_start_timer:
 	.string	"uint8_t"
 .LASF133:
 	.string	"_timer_delete"
+.LASF288:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_netif.c"
 .LASF207:
 	.string	"ssid_len"
 .LASF136:
@@ -4241,8 +4243,6 @@ wifi_dhcp_start_timer:
 	.string	"passphr"
 .LASF262:
 	.string	"profile_active_index"
-.LASF51:
-	.string	"MEMP_NETDB"
 .LASF234:
 	.string	"mask"
 .LASF248:
@@ -4437,6 +4437,8 @@ wifi_dhcp_start_timer:
 	.string	"TASK_NONE"
 .LASF177:
 	.string	"first"
+.LASF289:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager"
 .LASF78:
 	.string	"loop_first"
 .LASF70:
@@ -4447,8 +4449,6 @@ wifi_dhcp_start_timer:
 	.string	"netif"
 .LASF166:
 	.string	"TASK_ME"
-.LASF288:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/wifi_netif.c"
 .LASF88:
 	.string	"PM_MODE_STA_MESH"
 .LASF163:
@@ -4487,8 +4487,8 @@ wifi_dhcp_start_timer:
 	.string	"ap_info_ttl"
 .LASF29:
 	.string	"ip_addr_t"
-.LASF289:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager"
+.LASF51:
+	.string	"MEMP_NETDB"
 .LASF274:
 	.string	"ap_bcn_int"
 .LASF124:

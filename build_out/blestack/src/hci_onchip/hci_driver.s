@@ -15,7 +15,7 @@
 	.type	hci_driver_open, @function
 hci_driver_open:
 .LFB89:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
 	.loc 1 446 1
 	.cfi_startproc
 	.loc 1 469 5
@@ -308,16 +308,16 @@ drv:
 	.word	hci_driver_send
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/bl_hci_wrapper/bl_hci_wrapper.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/slist.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/dlist.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/bl_port.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/net/buf.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/bl_hci_wrapper/bl_hci_wrapper.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x6e9
@@ -660,7 +660,7 @@ drv:
 	.byte	0
 	.byte	0x12
 	.4byte	.LASF81
-	.byte	0x20
+	.byte	0x18
 	.byte	0x4
 	.byte	0x8
 	.2byte	0x234
@@ -760,7 +760,7 @@ drv:
 	.4byte	0x34e
 	.byte	0x1a
 	.4byte	0x2c
-	.byte	0x9
+	.byte	0x3
 	.byte	0
 	.byte	0x3
 	.byte	0x1
@@ -2148,12 +2148,12 @@ drv:
 	.string	"hci_driver_enque_recvq"
 .LASF65:
 	.string	"send"
-.LASF79:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
 .LASF54:
 	.string	"BT_HCI_DRIVER_BUS_UART"
 .LASF46:
 	.string	"frags"
+.LASF79:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/hci_onchip/hci_driver.c"
 .LASF20:
 	.string	"prev"
 .LASF3:
@@ -2186,8 +2186,8 @@ drv:
 	.string	"k_thread"
 .LASF7:
 	.string	"long long int"
-.LASF38:
-	.string	"_POLL_STATE_SEM_AVAILABLE"
+.LASF80:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF5:
 	.string	"long int"
 .LASF75:
@@ -2198,6 +2198,8 @@ drv:
 	.string	"hci_driver_init"
 .LASF24:
 	.string	"poll_events"
+.LASF38:
+	.string	"_POLL_STATE_SEM_AVAILABLE"
 .LASF50:
 	.string	"bt_hci_driver_bus"
 .LASF68:
@@ -2294,8 +2296,6 @@ drv:
 	.string	"open"
 .LASF35:
 	.string	"_poll_states_bits"
-.LASF80:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blestack"
 .LASF61:
 	.string	"bt_hci_driver"
 .LASF69:

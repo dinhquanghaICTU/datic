@@ -12,7 +12,7 @@
 	.type	hal_hbn_init, @function
 hal_hbn_init:
 .LFB28:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.c"
 	.loc 1 49 1
 	.cfi_startproc
 .LVL0:
@@ -225,13 +225,13 @@ hbn_list:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_notifier.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_notifier.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x39c
@@ -1328,8 +1328,6 @@ hbn_list:
 	.string	"hal_hbn_enter"
 .LASF38:
 	.string	"utils_notifier_chain_register"
-.LASF43:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF6:
 	.string	"__uint32_t"
 .LASF16:
@@ -1346,8 +1344,6 @@ hbn_list:
 	.string	"uint8_t"
 .LASF15:
 	.string	"active"
-.LASF42:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.c"
 .LASF32:
 	.string	"time"
 .LASF20:
@@ -1364,6 +1360,8 @@ hbn_list:
 	.string	"short int"
 .LASF36:
 	.string	"utils_notifier_chain_call"
+.LASF43:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF31:
 	.string	"hal_hbn_init"
 .LASF26:
@@ -1378,6 +1376,8 @@ hbn_list:
 	.string	"hbn_node"
 .LASF0:
 	.string	"signed char"
+.LASF42:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbn.c"
 .LASF34:
 	.string	"pinbuf_size"
 .LASF39:

@@ -15,7 +15,7 @@
 	.type	proc_entry_looprt, @function
 proc_entry_looprt:
 .LFB25:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt.c"
 	.loc 1 10 1
 	.cfi_startproc
 .LVL0:
@@ -544,15 +544,15 @@ looprt:
 	.zero	1184
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xad3
@@ -2976,8 +2976,6 @@ looprt:
 	.string	"TickType_t"
 .LASF95:
 	.string	"looprt_evt_schedule"
-.LASF117:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/looprt"
 .LASF100:
 	.string	"bloop_timer_register"
 .LASF104:
@@ -3044,6 +3042,8 @@ looprt:
 	.string	"proc_stack_looprt"
 .LASF81:
 	.string	"evt_type_map"
+.LASF116:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt.c"
 .LASF48:
 	.string	"id_src"
 .LASF46:
@@ -3090,6 +3090,8 @@ looprt:
 	.string	"dlist_item"
 .LASF11:
 	.string	"char"
+.LASF117:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/looprt"
 .LASF98:
 	.string	"looprt_evt_notify_async"
 .LASF56:
@@ -3104,8 +3106,6 @@ looprt:
 	.string	"uxDummy5"
 .LASF22:
 	.string	"pxDummy1"
-.LASF116:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt.c"
 .LASF83:
 	.string	"looprt_handler_register"
 .LASF61:

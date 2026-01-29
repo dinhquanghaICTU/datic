@@ -12,7 +12,7 @@
 	.type	vfs_init, @function
 vfs_init:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c"
 	.loc 1 27 1
 	.cfi_startproc
 	.loc 1 28 5
@@ -2818,21 +2818,21 @@ g_vfs_mutex:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_file.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1ba7
@@ -9096,6 +9096,8 @@ g_vfs_mutex:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF165:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF155:
 	.string	"del_file"
 .LASF151:
@@ -9106,8 +9108,6 @@ g_vfs_mutex:
 	.string	"get_file"
 .LASF158:
 	.string	"strlen"
-.LASF164:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c"
 .LASF152:
 	.string	"inode_open"
 .LASF111:
@@ -9122,8 +9122,6 @@ g_vfs_mutex:
 	.string	"unsigned int"
 .LASF157:
 	.string	"get_fd"
-.LASF165:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF130:
 	.string	"aos_readdir"
 .LASF57:
@@ -9274,6 +9272,8 @@ g_vfs_mutex:
 	.string	"st_ino"
 .LASF132:
 	.string	"aos_opendir"
+.LASF164:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/src/vfs.c"
 .LASF66:
 	.string	"f_files"
 .LASF6:

@@ -11,7 +11,7 @@
 	.type	uart_generic_notify_handler, @function
 uart_generic_notify_handler:
 .LFB27:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.c"
 	.loc 1 460 1
 	.cfi_startproc
 .LVL0:
@@ -1875,15 +1875,15 @@ uartAddr:
 	.word	1073783040
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_uart.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_uart.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
 	.file 11 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -6198,6 +6198,8 @@ uartAddr:
 	.string	"UART_INT_PCE"
 .LASF217:
 	.string	"GLB_GPIO_Init"
+.LASF221:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF171:
 	.string	"bl_uart_int_enable"
 .LASF42:
@@ -6238,8 +6240,6 @@ uartAddr:
 	.string	"SDIO_IRQn"
 .LASF112:
 	.string	"UART_INT_RX_END"
-.LASF56:
-	.string	"HBN_OUT1_IRQn"
 .LASF160:
 	.string	"g_uart_notify_arg"
 .LASF70:
@@ -6338,8 +6338,6 @@ uartAddr:
 	.string	"UART_DataBits_Type"
 .LASF118:
 	.string	"UART_INT_RX_FER"
-.LASF220:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.c"
 .LASF185:
 	.string	"data"
 .LASF218:
@@ -6404,6 +6402,8 @@ uartAddr:
 	.string	"cts_pin"
 .LASF203:
 	.string	"bl_irq_disable"
+.LASF220:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_uart.c"
 .LASF135:
 	.string	"gpioPin"
 .LASF95:
@@ -6624,8 +6624,8 @@ uartAddr:
 	.string	"GLB_UART_SIG_FUN_UART0_TXD"
 .LASF142:
 	.string	"HBN_UART_CLK_FCLK"
-.LASF221:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF56:
+	.string	"HBN_OUT1_IRQn"
 .LASF93:
 	.string	"UART_TXRX"
 .LASF178:

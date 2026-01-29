@@ -1,17 +1,17 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/utils//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 1
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -71,10 +71,10 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 2
+# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 2
 
 
 
@@ -82,7 +82,7 @@ typedef long long unsigned int uintmax_t;
 
 
 
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h"
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h"
 enum CFG_ELEMENT_TYPE {
     CFG_ELEMENT_TYPE_UNKNOWN,
     CFG_ELEMENT_TYPE_BOOLEAN,
@@ -105,9 +105,9 @@ enum CFG_ELEMENT_TYPE_OPS
 };
 
 int utils_tlv_bl_pack_bool(uint32_t *buf, int buf_sz, 
-# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 3 4
+# 32 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 3 4
                                                      _Bool 
-# 32 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h"
+# 32 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h"
                                                           val);
 int utils_tlv_bl_pack_uint8(uint32_t *buf, int buf_sz, uint8_t val);
 int utils_tlv_bl_pack_int8(uint32_t *buf, int buf_sz, int8_t val);
@@ -119,9 +119,9 @@ int utils_tlv_bl_pack_string(uint32_t *buf, int buf_sz, const char *str);
 int utils_tlv_bl_pack_auto(uint32_t *buf, int buf_sz, uint16_t type, void *arg1);
 
 int utils_tlv_bl_unpack_bool(uint32_t *buf, int buf_sz, 
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 3 4
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h" 3 4
                                                        _Bool 
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h"
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_tlv_bl.h"
                                                             *val);
 int utils_tlv_bl_unpack_uint8(uint32_t *buf, int buf_sz, uint8_t *val);
 int utils_tlv_bl_unpack_int8(uint32_t *buf, int buf_sz, int8_t *val);
@@ -131,12 +131,12 @@ int utils_tlv_bl_unpack_uint32(uint32_t *buf, int buf_sz, uint32_t *val);
 int utils_tlv_bl_unpack_int32(uint32_t *buf, int buf_sz, int32_t *val);
 int utils_tlv_bl_unpack_string(uint32_t *buf, int buf_sz, char *str, int size);
 int utils_tlv_bl_unpack_auto(uint32_t *buf, int buf_sz, uint16_t type, void *arg1);
-# 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 2
+# 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 2
 
 int utils_tlv_bl_pack_bool(uint32_t *buf, int buf_sz, 
-# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                                                      _Bool 
-# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                                                           val)
 {
     if (buf_sz < (4)) {
@@ -158,22 +158,22 @@ int utils_tlv_bl_pack_uint32(uint32_t *buf, int buf_sz, uint32_t val)
 }
 
 int utils_tlv_bl_unpack_bool(uint32_t *buf, int buf_sz, 
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                                                        _Bool 
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                                                             *val)
 {
     if (buf_sz < (4)) {
         return (-1);
     }
     *val = (*buf) ? 
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                    1 
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                         : 
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                           0
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                                ;
 
     return (4);
@@ -197,17 +197,17 @@ int utils_tlv_bl_pack_auto(uint32_t *buf, int buf_sz, uint16_t type, void *arg1)
         case CFG_ELEMENT_TYPE_BOOLEAN:
         {
             ret = utils_tlv_bl_pack_bool(buf, buf_sz, *(
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                                                        _Bool
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                                                            *)arg1 ? 
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                                                                     1 
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                                                                          : 
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                                                                            0
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                                                                                 );
         }
         break;
@@ -263,20 +263,20 @@ int utils_tlv_bl_unpack_auto(uint32_t *buf, int buf_sz, uint16_t type, void *arg
         case CFG_ELEMENT_TYPE_BOOLEAN:
         {
             
-# 104 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
            _Bool 
-# 104 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                 val = 
-# 104 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
                       1
-# 104 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                           ;
 
             ret = utils_tlv_bl_unpack_bool(buf, buf_sz, &val);
             *(
-# 107 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c" 3 4
              _Bool
-# 107 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_tlv_bl.c"
                  *)arg1 = val;
         }
         break;

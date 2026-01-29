@@ -12,7 +12,7 @@
 	.type	ef_calc_crc32, @function
 ef_calc_crc32:
 .LFB0:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
 	.loc 1 88 1
 	.cfi_startproc
 .LVL0:
@@ -343,8 +343,8 @@ crc32_table:
 	.word	755167117
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x12f
@@ -783,8 +783,6 @@ crc32_table:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF19:
 	.string	"ef_calc_crc32"
-.LASF18:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF4:
 	.string	"unsigned char"
 .LASF8:
@@ -801,12 +799,14 @@ crc32_table:
 	.string	"long long int"
 .LASF12:
 	.string	"char"
+.LASF18:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF15:
 	.string	"crc32_table"
+.LASF17:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
 .LASF1:
 	.string	"short int"
-.LASF17:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
 .LASF7:
 	.string	"uint32_t"
 .LASF2:

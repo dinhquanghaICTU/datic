@@ -11,7 +11,7 @@
 	.type	adc_data_update, @function
 adc_data_update:
 .LFB37:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_adc.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_adc.c"
 	.loc 1 255 1
 	.cfi_startproc
 	.loc 1 256 5
@@ -1677,17 +1677,17 @@ tsen_offset.0:
 	.half	-1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/dma_reg.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_adc.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_adc.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/dma_reg.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_dma.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_adc.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_adc.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_dma.h"
 	.file 13 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -6485,8 +6485,8 @@ tsen_offset.0:
 	.string	"ADC_FIFO_THRESHOLD_16"
 .LASF246:
 	.string	"chan"
-.LASF146:
-	.string	"ADC_V11_SEL_Type"
+.LASF303:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_adc.c"
 .LASF249:
 	.string	"pos_chlist_single"
 .LASF176:
@@ -6597,6 +6597,8 @@ tsen_offset.0:
 	.string	"offsetCalibVal"
 .LASF131:
 	.string	"ADC_CHAN_SENP3"
+.LASF304:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF271:
 	.string	"DMA_IntMask"
 .LASF154:
@@ -6649,8 +6651,6 @@ tsen_offset.0:
 	.string	"data_size"
 .LASF158:
 	.string	"ADC_PGA_GAIN_2"
-.LASF304:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF73:
 	.string	"DWidth"
 .LASF306:
@@ -6659,6 +6659,8 @@ tsen_offset.0:
 	.string	"Prot"
 .LASF47:
 	.string	"GLB_GPIO_PIN_15"
+.LASF146:
+	.string	"ADC_V11_SEL_Type"
 .LASF51:
 	.string	"GLB_GPIO_PIN_19"
 .LASF142:
@@ -7039,8 +7041,6 @@ tsen_offset.0:
 	.string	"ADC_Scan_Channel_Config"
 .LASF3:
 	.string	"signed char"
-.LASF303:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_adc.c"
 .LASF10:
 	.string	"short unsigned int"
 .LASF94:

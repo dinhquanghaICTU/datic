@@ -24,7 +24,7 @@
 	.type	aos_loop_proc, @function
 aos_loop_proc:
 .LFB72:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c"
 	.loc 1 181 1
 	.cfi_startproc
 .LVL0:
@@ -246,7 +246,7 @@ vApplicationIdleHook:
 	.cfi_def_cfa 8, 0
 	.loc 1 82 5
  #APP
-# 82 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c" 1
+# 82 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c" 1
 	   wfi     
 # 0 "" 2
 	.loc 1 85 1
@@ -372,7 +372,7 @@ vAssertCalled:
 	.cfi_def_cfa 8, 0
 	.loc 1 135 5
  #APP
-# 135 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c" 1
+# 135 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c" 1
 	csrc mstatus, 8
 # 0 "" 2
 	.loc 1 136 5 is_stmt 1
@@ -468,13 +468,13 @@ log_port_reset:
 	.string	"Build Date: "
 	.align	2
 .LC13:
-	.string	"Jan 19 2026"
+	.string	"Jan 29 2026"
 	.align	2
 .LC14:
 	.string	"Build Time: "
 	.align	2
 .LC15:
-	.string	"12:30:17"
+	.string	"08:12:59"
 	.align	2
 .LC16:
 	.string	"[OS] Starting aos_loop_proc task...\r\n"
@@ -721,30 +721,30 @@ xHeapRegions:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog/blog.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_board.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
-	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/event_device.h"
-	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/romfs/include/bl_romfs.h"
-	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
-	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_board.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
+	.file 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/event_device.h"
+	.file 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/romfs/include/bl_romfs.h"
+	.file 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xd09
@@ -3256,6 +3256,8 @@ xHeapRegions:
 	.string	"HOSAL_UART_MODE_POLL"
 .LASF75:
 	.string	"flow_control"
+.LASF156:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602"
 .LASF19:
 	.string	"xSTATIC_LIST_ITEM"
 .LASF44:
@@ -3464,6 +3466,8 @@ xHeapRegions:
 	.string	"short int"
 .LASF138:
 	.string	"vPortDefineHeapRegions"
+.LASF155:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c"
 .LASF136:
 	.string	"bl_sys_early_init"
 .LASF146:
@@ -3552,8 +3556,6 @@ xHeapRegions:
 	.string	"HOSAL_UART_MODE_INT_TX"
 .LASF33:
 	.string	"pvDummy15_1"
-.LASF155:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602/bfl_main.c"
 .LASF32:
 	.string	"pvDummy15"
 .LASF107:
@@ -3566,8 +3568,6 @@ xHeapRegions:
 	.string	"UBaseType_t"
 .LASF37:
 	.string	"StaticTask_t"
-.LASF156:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602"
 .LASF104:
 	.string	"GLB_GPIO_Cfg_Type"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

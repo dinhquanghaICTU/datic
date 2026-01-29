@@ -12,7 +12,7 @@
 	.type	app_run, @function
 app_run:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.c"
 	.loc 1 14 1
 	.cfi_startproc
 	.loc 1 15 5
@@ -103,13 +103,13 @@ app_run:
 	.size	app_run, .-app_run
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/led/led.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_wifi.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/led/led.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_wifi.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x163
@@ -417,8 +417,6 @@ app_run:
 	.string	"long unsigned int"
 .LASF21:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF23:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF7:
 	.string	"long long unsigned int"
 .LASF1:
@@ -433,6 +431,8 @@ app_run:
 	.string	"app_wifi_set_disconnected_cb"
 .LASF10:
 	.string	"_Bool"
+.LASF22:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.c"
 .LASF24:
 	.string	"app_run"
 .LASF20:
@@ -445,6 +445,6 @@ app_run:
 	.string	"app_ble_set_config_done_cb"
 .LASF2:
 	.string	"short int"
-.LASF22:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.c"
+.LASF23:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

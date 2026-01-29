@@ -12,7 +12,7 @@
 	.type	UART_Init, @function
 UART_Init:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_uart.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_uart.c"
 	.loc 1 188 1
 	.cfi_startproc
 .LVL0:
@@ -2527,11 +2527,11 @@ uartAddr:
 	.word	1073783040
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_uart.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_uart.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x10fe
@@ -7233,8 +7233,6 @@ uartAddr:
 	.string	"BL_AHB_SLAVE1_GPIP_PHY_AGC"
 .LASF78:
 	.string	"UART_AutoBaudDetection_Type"
-.LASF180:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF28:
 	.string	"long int"
 .LASF42:
@@ -7251,8 +7249,6 @@ uartAddr:
 	.string	"div1"
 .LASF121:
 	.string	"div2"
-.LASF34:
-	.string	"uint32_t"
 .LASF3:
 	.string	"BL_AHB_SLAVE1_SEC_DBG"
 .LASF156:
@@ -7293,8 +7289,8 @@ uartAddr:
 	.string	"UART_Enable"
 .LASF32:
 	.string	"uint16_t"
-.LASF179:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_uart.c"
+.LASF59:
+	.string	"UART_PARITY_NONE"
 .LASF85:
 	.string	"UART_INT_TX_FER"
 .LASF22:
@@ -7395,10 +7391,14 @@ uartAddr:
 	.string	"BL_AHB_SLAVE1_DMA"
 .LASF110:
 	.string	"rxIrEnable"
+.LASF64:
+	.string	"UART_DATABITS_6"
 .LASF109:
 	.string	"txIrEnable"
 .LASF47:
 	.string	"UNMASK"
+.LASF180:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF5:
 	.string	"BL_AHB_SLAVE1_TZ1"
 .LASF6:
@@ -7487,8 +7487,8 @@ uartAddr:
 	.string	"tmpVal"
 .LASF106:
 	.string	"txFifoDmaEnable"
-.LASF64:
-	.string	"UART_DATABITS_6"
+.LASF34:
+	.string	"uint32_t"
 .LASF74:
 	.string	"UART_MSB_FIRST"
 .LASF173:
@@ -7555,8 +7555,6 @@ uartAddr:
 	.string	"rxFifoDmaThreshold"
 .LASF83:
 	.string	"UART_INT_RTO"
-.LASF59:
-	.string	"UART_PARITY_NONE"
 .LASF152:
 	.string	"UART_TxFreeRun"
 .LASF1:
@@ -7571,6 +7569,8 @@ uartAddr:
 	.string	"UART_RxFifoClear"
 .LASF118:
 	.string	"clock"
+.LASF179:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_uart.c"
 .LASF138:
 	.string	"rxLen"
 .LASF57:

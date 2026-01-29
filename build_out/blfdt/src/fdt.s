@@ -11,7 +11,7 @@
 	.type	fdt32_ld, @function
 fdt32_ld:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.loc 1 165 1
 	.cfi_startproc
 .LVL0:
@@ -62,7 +62,7 @@ fdt32_ld:
 	.type	fdt_ro_probe_, @function
 fdt_ro_probe_:
 .LFB40:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt.c"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt.c"
 	.loc 2 64 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -579,7 +579,7 @@ fdt_offset_ptr:
 .LVL50:
 .LBB70:
 .LBB71:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_internal.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_internal.h"
 	.loc 3 73 5
 	.loc 3 73 97 is_stmt 0
 	add	a5,s1,s3
@@ -683,7 +683,7 @@ fdt_next_tag:
 .LVL61:
 .LBB76:
 .LBB77:
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 4 93 5 is_stmt 1
 .LBE77:
 .LBE76:
@@ -1479,10 +1479,10 @@ fdt_move:
 	.size	fdt_move, .-fdt_move
 	.text
 .Letext0:
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xba4
@@ -4676,8 +4676,6 @@ fdt_move:
 	.string	"tabsize"
 .LASF51:
 	.string	"fdt_header_size_"
-.LASF60:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt.c"
 .LASF15:
 	.string	"totalsize"
 .LASF11:
@@ -4706,16 +4704,18 @@ fdt_move:
 	.string	"tagp"
 .LASF31:
 	.string	"fdt_next_subnode"
-.LASF61:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF46:
 	.string	"hdrsize"
+.LASF18:
+	.string	"off_mem_rsvmap"
 .LASF0:
 	.string	"unsigned int"
 .LASF57:
 	.string	"strlen"
 .LASF27:
 	.string	"strtab"
+.LASF61:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF10:
 	.string	"long unsigned int"
 .LASF17:
@@ -4746,8 +4746,8 @@ fdt_move:
 	.string	"size_dt_strings"
 .LASF7:
 	.string	"unsigned char"
-.LASF18:
-	.string	"off_mem_rsvmap"
+.LASF60:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt.c"
 .LASF2:
 	.string	"short int"
 .LASF14:

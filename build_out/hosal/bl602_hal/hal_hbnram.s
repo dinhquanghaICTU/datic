@@ -11,7 +11,7 @@
 	.type	find_addr_by_key, @function
 find_addr_by_key:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbnram.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbnram.c"
 	.loc 1 131 1
 	.cfi_startproc
 .LVL0:
@@ -1864,12 +1864,12 @@ hal_hbnram_copy_to_stream:
 	.size	hal_hbnram_copy_to_stream, .-hal_hbnram_copy_to_stream
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbnram.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbnram.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sec.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1363
@@ -6662,6 +6662,8 @@ hal_hbnram_copy_to_stream:
 	.string	"shaIntSet"
 .LASF11:
 	.string	"char"
+.LASF97:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF79:
 	.string	"flen"
 .LASF1:
@@ -6692,8 +6694,6 @@ hal_hbnram_copy_to_stream:
 	.string	"hal_hbnram_copy_to_stream"
 .LASF48:
 	.string	"head_count"
-.LASF96:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbnram.c"
 .LASF52:
 	.string	"hal_hbnram_buffer_get"
 .LASF84:
@@ -6742,6 +6742,8 @@ hal_hbnram_copy_to_stream:
 	.string	"left_size"
 .LASF4:
 	.string	"unsigned char"
+.LASF96:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_hbnram.c"
 .LASF0:
 	.string	"signed char"
 .LASF9:
@@ -6772,8 +6774,6 @@ hal_hbnram_copy_to_stream:
 	.string	"bl_SEC_Eng_SHA256_Link_Ctx"
 .LASF91:
 	.string	"bl_sha_update"
-.LASF97:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF85:
 	.string	"strlen"
 .LASF32:

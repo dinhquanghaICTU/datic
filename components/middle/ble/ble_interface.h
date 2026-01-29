@@ -3,41 +3,6 @@
 
 #include <stdint.h>
 
-
-#ifndef CONFIG_NET_BUF_USER_DATA_SIZE
-#define CONFIG_NET_BUF_USER_DATA_SIZE 0
-#endif
-
-#ifndef CONFIG_BT_ID_MAX
-#define CONFIG_BT_ID_MAX 1
-#endif
-
-#ifndef CONFIG_BT_MAX_PAIRED
-#define CONFIG_BT_MAX_PAIRED 0
-#endif
-
-#ifndef CONFIG_BT_CONN
-#define CONFIG_BT_CONN 1
-#endif
-
-#ifndef CFG_CON
-#define CFG_CON CONFIG_BT_CONN
-#endif
-
-#ifndef CONFIG_BT_MAX_CONN
-#define CONFIG_BT_MAX_CONN CFG_CON
-#endif
-
-#ifndef CONFIG_BT_GATT_CCC_MAX
-#define CONFIG_BT_GATT_CCC_MAX CONFIG_BT_MAX_CONN
-#endif
-
-
-#ifndef BFLB_BLE
-#define BFLB_BLE 1
-#endif
-
-
 #include "work_q.h"
 
 #include "bluetooth.h"

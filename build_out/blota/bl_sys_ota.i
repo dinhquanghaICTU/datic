@@ -1,17 +1,17 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blota//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blota//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/include/bl_sys_ota.h" 1
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/include/bl_sys_ota.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -71,8 +71,8 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/include/bl_sys_ota.h" 2
+# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/include/bl_sys_ota.h" 2
 
 
 
@@ -80,6 +80,6 @@ typedef long long unsigned int uintmax_t;
 
 
 
-# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/include/bl_sys_ota.h"
+# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/include/bl_sys_ota.h"
 int bl_sys_ota_cli_init(void);
-# 2 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c" 2
+# 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c" 2

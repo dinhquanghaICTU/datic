@@ -22,7 +22,7 @@
 	.type	_startup_sntp, @function
 _startup_sntp:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/sntp/sntp_cli.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/sntp/sntp_cli.c"
 	.loc 1 9 1
 	.cfi_startproc
 .LVL0:
@@ -344,15 +344,15 @@ cmds_user:
 	.word	cmd_sntp_date
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_time.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/sntp/include/sntp.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_time.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/sntp/include/sntp.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x5a8
@@ -1774,6 +1774,8 @@ cmds_user:
 	.string	"tcpip_callback"
 .LASF24:
 	.string	"MEMP_NETDB"
+.LASF46:
+	.string	"argc"
 .LASF6:
 	.string	"long long int"
 .LASF40:
@@ -1788,8 +1790,6 @@ cmds_user:
 	.string	"printf"
 .LASF58:
 	.string	"sntp_get_time"
-.LASF65:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/sntp"
 .LASF31:
 	.string	"name"
 .LASF28:
@@ -1798,8 +1798,8 @@ cmds_user:
 	.string	"ntp_year"
 .LASF1:
 	.string	"unsigned char"
-.LASF46:
-	.string	"argc"
+.LASF64:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/sntp/sntp_cli.c"
 .LASF62:
 	.string	"sntp_init"
 .LASF0:
@@ -1820,14 +1820,14 @@ cmds_user:
 	.string	"short unsigned int"
 .LASF49:
 	.string	"seconds"
+.LASF65:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/sntp"
 .LASF9:
 	.string	"char"
 .LASF33:
 	.string	"function"
 .LASF20:
 	.string	"MEMP_TCPIP_MSG_API"
-.LASF64:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/sntp/sntp_cli.c"
 .LASF39:
 	.string	"ntp_month"
 .LASF25:

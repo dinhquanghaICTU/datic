@@ -12,7 +12,7 @@
 	.type	led_init, @function
 led_init:
 .LFB3:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/hardware/led/led.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.c"
 	.loc 1 10 1
 	.cfi_startproc
 	.loc 1 11 5
@@ -292,9 +292,9 @@ value.0:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x22d
@@ -970,10 +970,6 @@ value.0:
 	.string	"led_init"
 .LASF8:
 	.string	"unsigned int"
-.LASF24:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/led"
-.LASF0:
-	.string	"signed char"
 .LASF13:
 	.string	"led_toggle"
 .LASF20:
@@ -994,14 +990,18 @@ value.0:
 	.string	"char"
 .LASF2:
 	.string	"long int"
+.LASF24:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/led"
 .LASF16:
 	.string	"led_on"
-.LASF23:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/hardware/led/led.c"
 .LASF11:
 	.string	"delay_ms"
+.LASF0:
+	.string	"signed char"
 .LASF26:
 	.string	"led_get_state"
+.LASF23:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/led/led.c"
 .LASF14:
 	.string	"value"
 .LASF18:

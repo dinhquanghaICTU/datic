@@ -12,7 +12,7 @@
 	.type	i2c_master_receive.constprop.0, @function
 i2c_master_receive.constprop.0:
 .LFB21:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_i2c.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_i2c.c"
 	.loc 1 87 12
 	.cfi_startproc
 .LVL0:
@@ -1237,14 +1237,14 @@ hosal_i2c_finalize:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_i2c.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_i2c.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_i2c.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_i2c.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_i2c.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_i2c.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_timer.h"
 	.file 10 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -4169,6 +4169,8 @@ hosal_i2c_finalize:
 	.string	"I2C_READ"
 .LASF76:
 	.string	"mem_addr_size"
+.LASF103:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF87:
 	.string	"temp"
 .LASF61:
@@ -4211,8 +4213,8 @@ hosal_i2c_finalize:
 	.string	"GLB_GPIO_PIN_16"
 .LASF6:
 	.string	"uint8_t"
-.LASF85:
-	.string	"gpiopins"
+.LASF102:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_i2c.c"
 .LASF24:
 	.string	"subAddrSize"
 .LASF104:
@@ -4243,8 +4245,6 @@ hosal_i2c_finalize:
 	.string	"GLB_GPIO_PIN_19"
 .LASF38:
 	.string	"GLB_GPIO_PIN_9"
-.LASF102:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_i2c.c"
 .LASF3:
 	.string	"long int"
 .LASF90:
@@ -4303,8 +4303,6 @@ hosal_i2c_finalize:
 	.string	"GLB_GPIO_PIN_8"
 .LASF13:
 	.string	"char"
-.LASF103:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF62:
 	.string	"GPIO_FUN_SWGPIO"
 .LASF9:
@@ -4351,6 +4349,8 @@ hosal_i2c_finalize:
 	.string	"dev_addr"
 .LASF16:
 	.string	"BL_Fun_Type"
+.LASF85:
+	.string	"gpiopins"
 .LASF52:
 	.string	"GLB_GPIO_PIN_MAX"
 .LASF25:

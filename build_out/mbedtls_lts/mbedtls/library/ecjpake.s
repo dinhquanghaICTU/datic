@@ -123,6 +123,8 @@
 	.string	"short unsigned int"
 .LASF2:
 	.string	"short int"
+.LASF10:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ecjpake.c"
 .LASF7:
 	.string	"long long unsigned int"
 .LASF1:
@@ -131,10 +133,8 @@
 	.string	"long int"
 .LASF9:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF11:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF6:
 	.string	"long long int"
-.LASF10:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/ecjpake.c"
-.LASF11:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

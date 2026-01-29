@@ -11,7 +11,7 @@
 	.type	prvCopyDataToQueue, @function
 prvCopyDataToQueue:
 .LFB28:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/queue.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/queue.c"
 	.loc 1 2071 1
 	.cfi_startproc
 .LVL0:
@@ -5236,15 +5236,15 @@ vQueueWaitForMessageRestricted:
 	.comm	xQueueRegistry,64,4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2760
@@ -15188,8 +15188,6 @@ vQueueWaitForMessageRestricted:
 	.string	"uxMutexSize"
 .LASF128:
 	.string	"xYieldRequired"
-.LASF176:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/queue.c"
 .LASF77:
 	.string	"xQueue"
 .LASF145:
@@ -15292,18 +15290,18 @@ vQueueWaitForMessageRestricted:
 	.string	"vTaskPlaceOnEventListRestricted"
 .LASF13:
 	.string	"uint8_t"
-.LASF177:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF84:
 	.string	"xQueueRegistryItem"
 .LASF138:
 	.string	"xQueueCreateMutexStatic"
-.LASF150:
-	.string	"xQueueGenericCreate"
+.LASF177:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF152:
 	.string	"xSize"
 .LASF142:
 	.string	"xQueueCreateMutex"
+.LASF150:
+	.string	"xQueueGenericCreate"
 .LASF22:
 	.string	"xSTATIC_LIST"
 .LASF7:
@@ -15470,6 +15468,8 @@ vQueueWaitForMessageRestricted:
 	.string	"xMutexHolder"
 .LASF100:
 	.string	"xPosition"
+.LASF176:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/queue.c"
 .LASF64:
 	.string	"cRxLock"
 .LASF27:

@@ -10,7 +10,6 @@
 
 #include "ble_master.h"
 
-
 static struct bt_conn *conn_cur;
 ble_gatt_conn_cb_t conn_cb;
 ble_gatt_conn_cb_t disconn_cb;
@@ -29,7 +28,7 @@ static void _connected(struct bt_conn *conn, u8_t err)
 
     conn_cur = conn;
 
-    debug_printf("[BLE] connected \r\n");
+    printf("[BLE] connected \r\n");
     //axk_Callbacks.bleConnectCallback(NULL);
 
     return ;
@@ -49,14 +48,14 @@ static void _disconnected(struct bt_conn *conn, u8_t reason)
 
     conn_cur = NULL;
 
-    debug_printf("[BLE] disconnected, reason:%d \r\n", reason);
+    printf("[BLE] disconnected, reason:%d \r\n", reason);
    // axk_Callbacks.bleDisconnectCBCallback(NULL);
 }
 
 static bool _le_param_req(struct bt_conn *conn,
              struct bt_le_conn_param *param)
 {
-    debug_printf("[BLE] conn param request: int 0x%04x-0x%04x lat %d to %d \r\n", 
+    printf("[BLE] conn param request: int 0x%04x-0x%04x lat %d to %d \r\n", 
             param->interval_min, 
             param->interval_max, 
             param->latency, 
@@ -68,12 +67,12 @@ static bool _le_param_req(struct bt_conn *conn,
 static void _le_param_updated(struct bt_conn *conn, u16_t interval,
                  u16_t latency, u16_t timeout)
 {
-    debug_printf("[BLE] conn param updated: int 0x%04x lat %d to %d \r\n", interval, latency, timeout);
+    printf("[BLE] conn param updated: int 0x%04x lat %d to %d \r\n", interval, latency, timeout);
 }
 
 static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
 {
-    debug_printf("[BLE] phy updated: rx_phy %d, rx_phy %d \r\n", tx_phy, rx_phy);
+    printf("[BLE] phy updated: rx_phy %d, rx_phy %d \r\n", tx_phy, rx_phy);
 }
 
 static struct bt_conn_cb conn_callbacks = {
@@ -87,29 +86,29 @@ static struct bt_conn_cb conn_callbacks = {
 static void ble_disconnect_all(struct bt_conn *conn, void *data)
 {
     if (conn->state == BT_CONN_CONNECTED) {
-        debug_printf("[BLE] disconn id:%d \r\n", conn->id);
+        printf("[BLE] disconn id:%d \r\n", conn->id);
         bt_conn_disconnect(conn, BT_HCI_ERR_REMOTE_USER_TERM_CONN);
     }
 }
 
 static void _ble_mtu_changed_cb(struct bt_conn *conn, int mtu)
 {
-    debug_printf("[BLE] mtu updated:%d \r\n", mtu);
+    printf("[BLE] mtu updated:%d \r\n", mtu);
 }
 
-struct bt_conn *ble_master_get_conn_cur(void)
+struct bt_conn *ble_get_conn_cur(void)
 {
     return conn_cur;
 }
 
-int ble_master_regist_conn(ble_gatt_conn_cb_t cb)
+int ble_regist_conn(ble_gatt_conn_cb_t cb)
 {
     conn_cb = cb;
 
     return 0;
 }
 
-int ble_master_regist_disconn(ble_gatt_conn_cb_t cb)
+int ble_regist_disconn(ble_gatt_conn_cb_t cb)
 {
     disconn_cb = cb;
 
@@ -194,7 +193,7 @@ static void exchange_func(struct bt_conn *conn, u8_t err,
               struct bt_gatt_exchange_params *params)
 {
     if (conn) {
-        debug_printf("[BLE] Exchange %s MTU Size =%d \r\n", err == 0U ? "successful" : "faxkled",bt_gatt_get_mtu(conn));
+        printf("[BLE] Exchange %s MTU Size =%d \r\n", err == 0U ? "successful" : "faxkled",bt_gatt_get_mtu(conn));
     }
 }
 
@@ -247,3 +246,4 @@ int axk_HalBleGetMtu()
 
     return mtu;
 }
+

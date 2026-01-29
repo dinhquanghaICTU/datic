@@ -133,20 +133,20 @@
 	.string	"short unsigned int"
 .LASF1:
 	.string	"short int"
+.LASF12:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env_legacy.c"
 .LASF7:
 	.string	"long long unsigned int"
+.LASF13:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF10:
 	.string	"_Bool"
 .LASF2:
 	.string	"long int"
 .LASF11:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF13:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF9:
 	.string	"char"
-.LASF12:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_env_legacy.c"
 .LASF3:
 	.string	"long long int"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -12,7 +12,7 @@
 	.type	relay_init, @function
 relay_init:
 .LFB3:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
 	.loc 1 10 22
 	.cfi_startproc
 	.loc 1 11 5
@@ -212,9 +212,9 @@ s_relay_state:
 	.zero	1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x18b
@@ -661,6 +661,8 @@ s_relay_state:
 	.string	"relay_get_state"
 .LASF16:
 	.string	"bl_gpio_output_set"
+.LASF20:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/relay"
 .LASF13:
 	.string	"relay_off"
 .LASF7:
@@ -677,22 +679,20 @@ s_relay_state:
 	.string	"relay_init"
 .LASF4:
 	.string	"long int"
-.LASF19:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
 .LASF5:
 	.string	"long unsigned int"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
-.LASF20:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/relay"
 .LASF14:
 	.string	"relay_on"
 .LASF17:
 	.string	"bl_gpio_enable_output"
 .LASF2:
 	.string	"short int"
+.LASF19:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.c"
 .LASF12:
 	.string	"relay_toggle"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -11,7 +11,7 @@
 	.type	gpio_interrupt_entry, @function
 gpio_interrupt_entry:
 .LFB18:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.c"
 	.loc 1 123 1
 	.cfi_startproc
 .LVL0:
@@ -613,13 +613,13 @@ bl_gpio_register:
 	.size	bl_gpio_register, .-bl_gpio_register
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x920
@@ -2935,6 +2935,8 @@ bl_gpio_register:
 	.string	"SEC_BMX_ERR_IRQn"
 .LASF147:
 	.string	"GLB_GPIO_Init"
+.LASF150:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF54:
 	.string	"TIMER_WDT_IRQn"
 .LASF74:
@@ -2955,8 +2957,6 @@ bl_gpio_register:
 	.string	"next"
 .LASF23:
 	.string	"SDIO_IRQn"
-.LASF68:
-	.string	"HBN_OUT1_IRQn"
 .LASF3:
 	.string	"long long int"
 .LASF0:
@@ -2989,8 +2989,6 @@ bl_gpio_register:
 	.string	"long int"
 .LASF60:
 	.string	"GPIO_INT0_IRQn"
-.LASF149:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.c"
 .LASF41:
 	.string	"GPADC_DMA_IRQn"
 .LASF91:
@@ -3225,14 +3223,16 @@ bl_gpio_register:
 	.string	"bl_gpio_intmask"
 .LASF24:
 	.string	"DMA_BMX_ERR_IRQn"
+.LASF149:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.c"
 .LASF43:
 	.string	"SPI_IRQn"
 .LASF129:
 	.string	"bl_set_gpio_intmod"
 .LASF53:
 	.string	"TIMER_CH1_IRQn"
-.LASF150:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF68:
+	.string	"HBN_OUT1_IRQn"
 .LASF118:
 	.string	"gpio_handler"
 .LASF112:

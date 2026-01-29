@@ -12,7 +12,7 @@
 	.type	sys_mbox_new, @function
 sys_mbox_new:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/FreeRTOS/sys_arch.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/FreeRTOS/sys_arch.c"
 	.loc 1 55 1
 	.cfi_startproc
 .LVL0:
@@ -119,7 +119,7 @@ sys_mbox_free:
 	beq	a0,zero,.L5
 	.loc 1 83 3 is_stmt 1
  #APP
-# 83 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/FreeRTOS/sys_arch.c" 1
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/FreeRTOS/sys_arch.c" 1
 	 nop 
 # 0 "" 2
 	.loc 1 85 6
@@ -1600,22 +1600,22 @@ s_nextthread:
 	.zero	2
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/sys_arch.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x106b
@@ -5582,6 +5582,8 @@ s_nextthread:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF129:
 	.string	"sys_mutex_new"
+.LASF5:
+	.string	"short int"
 .LASF170:
 	.string	"sys_thread_sem_alloc"
 .LASF76:
@@ -5770,8 +5772,8 @@ s_nextthread:
 	.string	"u32_t"
 .LASF110:
 	.string	"sys_thread_sem_init"
-.LASF5:
-	.string	"short int"
+.LASF169:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF103:
 	.string	"icmp"
 .LASF9:
@@ -5796,8 +5798,6 @@ s_nextthread:
 	.string	"uxQueueMessagesWaiting"
 .LASF3:
 	.string	"__uint8_t"
-.LASF169:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF35:
 	.string	"ERR_ISCONN"
 .LASF87:
@@ -5850,12 +5850,12 @@ s_nextthread:
 	.string	"drop"
 .LASF156:
 	.string	"vTaskEnterCritical"
+.LASF168:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/FreeRTOS/sys_arch.c"
 .LASF38:
 	.string	"ERR_ABRT"
 .LASF149:
 	.string	"sys_mbox_new"
-.LASF168:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/FreeRTOS/sys_arch.c"
 .LASF94:
 	.string	"tx_leave"
 .LASF25:

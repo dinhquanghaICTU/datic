@@ -25,7 +25,7 @@
 	.type	bl_hbn_enter, @function
 bl_hbn_enter:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.c"
 	.loc 1 15 1
 	.cfi_startproc
 .LVL0:
@@ -256,13 +256,13 @@ bl_hbn_enter:
 	.word	10
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
 	.file 9 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -1809,6 +1809,8 @@ bl_hbn_enter:
 	.string	"deBurstWrapCmd"
 .LASF33:
 	.string	"blk64EraseCmd"
+.LASF144:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF96:
 	.string	"HBN_GPIO_INT_TRIGGER_SYNC_RISING_EDGE"
 .LASF41:
@@ -1859,8 +1861,6 @@ bl_hbn_enter:
 	.string	"burstWrapCmd"
 .LASF106:
 	.string	"HBN_LDO_LEVEL_0P70V"
-.LASF83:
-	.string	"timePagePgm"
 .LASF119:
 	.string	"HBN_LDO_LEVEL_1P35V"
 .LASF135:
@@ -1903,10 +1903,8 @@ bl_hbn_enter:
 	.string	"HBN_LDO_LEVEL_1P00V"
 .LASF100:
 	.string	"HBN_GPIO_INT_TRIGGER_ASYNC_RISING_EDGE"
-.LASF11:
-	.string	"unsigned int"
-.LASF143:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.c"
+.LASF118:
+	.string	"HBN_LDO_LEVEL_1P30V"
 .LASF79:
 	.string	"deBurstWrapData"
 .LASF104:
@@ -1921,8 +1919,8 @@ bl_hbn_enter:
 	.string	"qeData"
 .LASF39:
 	.string	"frDmyClk"
-.LASF103:
-	.string	"HBN_GPIO_INT_Trigger_Type"
+.LASF143:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_hbn.c"
 .LASF28:
 	.string	"sectorSize"
 .LASF26:
@@ -1965,8 +1963,8 @@ bl_hbn_enter:
 	.string	"qeReadRegLen"
 .LASF65:
 	.string	"busyReadRegLen"
-.LASF118:
-	.string	"HBN_LDO_LEVEL_1P30V"
+.LASF103:
+	.string	"HBN_GPIO_INT_Trigger_Type"
 .LASF80:
 	.string	"timeEsector"
 .LASF115:
@@ -1991,6 +1989,8 @@ bl_hbn_enter:
 	.string	"unsigned char"
 .LASF55:
 	.string	"qeIndex"
+.LASF11:
+	.string	"unsigned int"
 .LASF95:
 	.string	"HBN_GPIO_INT_TRIGGER_SYNC_FALLING_EDGE"
 .LASF93:
@@ -2087,8 +2087,8 @@ bl_hbn_enter:
 	.string	"useXtal32k"
 .LASF92:
 	.string	"HBN_INT_BOR"
-.LASF144:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF83:
+	.string	"timePagePgm"
 .LASF66:
 	.string	"readRegCmd"
 .LASF129:

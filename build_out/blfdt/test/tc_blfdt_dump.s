@@ -11,7 +11,7 @@
 	.type	fdt32_to_cpu, @function
 fdt32_to_cpu:
 .LFB7:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 92 1
 	.cfi_startproc
 .LVL0:
@@ -135,7 +135,7 @@ fdt64_to_cpu:
 	.type	fdt32_ld, @function
 fdt32_ld:
 .LFB12:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.loc 2 165 1 is_stmt 1
 	.cfi_startproc
 .LVL4:
@@ -186,7 +186,7 @@ fdt32_ld:
 	.type	util_is_printable_string, @function
 util_is_printable_string:
 .LFB41:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_dump.c"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_dump.c"
 	.loc 3 51 1 is_stmt 1
 	.cfi_startproc
 .LVL6:
@@ -4213,14 +4213,14 @@ tc_wifi_dtb:
 	.zero	3
 	.text
 .Letext0:
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xf27
@@ -8062,8 +8062,6 @@ tc_wifi_dtb:
 	.string	"arg_debug"
 .LASF49:
 	.string	"p_rsvmap"
-.LASF76:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF10:
 	.string	"uint64_t"
 .LASF61:
@@ -8080,8 +8078,6 @@ tc_wifi_dtb:
 	.string	"data"
 .LASF36:
 	.string	"file"
-.LASF75:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_dump.c"
 .LASF17:
 	.string	"totalsize"
 .LASF20:
@@ -8100,8 +8096,8 @@ tc_wifi_dtb:
 	.string	"cpu_to_fdt32"
 .LASF63:
 	.string	"fdt32_ld"
-.LASF30:
-	.string	"_ctype_"
+.LASF76:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF51:
 	.string	"p_strings"
 .LASF4:
@@ -8206,8 +8202,12 @@ tc_wifi_dtb:
 	.string	"magic"
 .LASF38:
 	.string	"scan"
+.LASF75:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/test/tc_blfdt_dump.c"
 .LASF46:
 	.string	"blob_off"
+.LASF30:
+	.string	"_ctype_"
 .LASF70:
 	.string	"memchr"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

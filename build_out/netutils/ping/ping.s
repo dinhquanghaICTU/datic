@@ -19,7 +19,7 @@
 	.type	ping_usage, @function
 ping_usage:
 .LFB36:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/ping/ping.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/netutils/ping/ping.c"
 	.loc 1 433 1
 	.cfi_startproc
 	.loc 1 434 5
@@ -1383,32 +1383,32 @@ cmds_user:
 	.word	ping_cmd
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/raw.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/icmp.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netdb.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_getopt.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_memp.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/include/ping.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
-	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
-	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/inet_chksum.h"
-	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
-	.file 26 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 27 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/raw.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/icmp.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netdb.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_getopt.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_memp.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/netutils/include/ping.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/timeouts.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
+	.file 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+	.file 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/inet_chksum.h"
+	.file 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/sys.h"
+	.file 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x122d
@@ -5797,8 +5797,6 @@ cmds_user:
 	.string	"raw_pcb"
 .LASF29:
 	.string	"next"
-.LASF173:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/netutils/ping/ping.c"
 .LASF166:
 	.string	"sys_now"
 .LASF122:
@@ -5875,8 +5873,6 @@ cmds_user:
 	.string	"iecho"
 .LASF50:
 	.string	"MEMP_IGMP_GROUP"
-.LASF174:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/netutils"
 .LASF157:
 	.string	"raw_remove"
 .LASF53:
@@ -5973,6 +5969,8 @@ cmds_user:
 	.string	"align_req"
 .LASF80:
 	.string	"h_addr_list"
+.LASF174:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/netutils"
 .LASF65:
 	.string	"protocol"
 .LASF147:
@@ -5999,6 +5997,8 @@ cmds_user:
 	.string	"__optpos"
 .LASF142:
 	.string	"data_len"
+.LASF173:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/netutils/ping/ping.c"
 .LASF56:
 	.string	"LWIP_NETIF_CLIENT_DATA_INDEX_DHCP"
 .LASF59:

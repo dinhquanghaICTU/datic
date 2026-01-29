@@ -11,7 +11,7 @@
 	.type	state_init_handler, @function
 state_init_handler:
 .LFB9:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
 	.loc 1 70 1
 	.cfi_startproc
 .LVL0:
@@ -485,9 +485,9 @@ g_state_machine:
 	.zero	8
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x3c2
@@ -1562,8 +1562,8 @@ g_state_machine:
 	.string	"APP_STATE_WIFI_CONNECTED"
 .LASF46:
 	.string	"state_check_flash_handler"
-.LASF39:
-	.string	"g_state_machine"
+.LASF55:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
 .LASF29:
 	.string	"APP_STATE_WIFI_CONNECTING"
 .LASF35:
@@ -1632,6 +1632,8 @@ g_state_machine:
 	.string	"char"
 .LASF11:
 	.string	"APP_EVENT_BUTTON_PRESS"
+.LASF56:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/app_state"
 .LASF12:
 	.string	"APP_EVENT_WIFI_CONNECTED"
 .LASF22:
@@ -1646,14 +1648,12 @@ g_state_machine:
 	.string	"APP_EVENT_BUTTON_HOLD"
 .LASF0:
 	.string	"signed char"
-.LASF56:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/app_state"
 .LASF57:
 	.string	"app_state_process_event"
 .LASF36:
 	.string	"app_state_machine_t"
 .LASF53:
 	.string	"app_state_init"
-.LASF55:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
+.LASF39:
+	.string	"g_state_machine"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

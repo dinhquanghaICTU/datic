@@ -25,7 +25,7 @@
 	.type	bl_chip_info, @function
 bl_chip_info:
 .LFB2:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.c"
 	.loc 1 17 1
 	.cfi_startproc
 .LVL0:
@@ -58,7 +58,7 @@ bl_chip_info:
 	sw	zero,-20(s0)
 	.loc 1 10 5 is_stmt 1
  #APP
-# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.c" 1
+# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.c" 1
 	csrr a5, misa
 # 0 "" 2
  #NO_APP
@@ -408,8 +408,8 @@ bannder_shadow_bl602:
 	.string	"\225\220\342\225\220\342\225\235\n\r\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\225\224\342\225\235\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\225\227\342\225\232\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\225\224\342\225\235\342\225\232\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\225\224\342\225\235\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\226\210\342\225\227\n\r\342\225\232\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\235 \342\225\232\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\235 \342\225\232\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\235  \342\225\232\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\235 \342\225\232\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\220\342\225\235\n\r"
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2ed
@@ -1404,8 +1404,6 @@ bannder_shadow_bl602:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF5:
 	.string	"short unsigned int"
-.LASF24:
-	.string	"bl_chip_info"
 .LASF14:
 	.string	"desc"
 .LASF13:
@@ -1428,14 +1426,12 @@ bannder_shadow_bl602:
 	.string	"unsigned char"
 .LASF25:
 	.string	"info"
-.LASF32:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF15:
 	.string	"_ld_ram_size0"
 .LASF17:
 	.string	"_ld_ram_size1"
-.LASF31:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.c"
+.LASF19:
+	.string	"_ld_ram_size2"
 .LASF10:
 	.string	"unsigned int"
 .LASF9:
@@ -1456,6 +1452,8 @@ bannder_shadow_bl602:
 	.string	"bl_chip_memory_ram"
 .LASF1:
 	.string	"short int"
+.LASF32:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF7:
 	.string	"uint32_t"
 .LASF2:
@@ -1464,6 +1462,8 @@ bannder_shadow_bl602:
 	.string	"char"
 .LASF0:
 	.string	"signed char"
-.LASF19:
-	.string	"_ld_ram_size2"
+.LASF31:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_chip.c"
+.LASF24:
+	.string	"bl_chip_info"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

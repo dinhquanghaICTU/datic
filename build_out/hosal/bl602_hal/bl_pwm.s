@@ -12,7 +12,7 @@
 	.type	bl_pwm_init, @function
 bl_pwm_init:
 .LFB10:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pwm.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pwm.c"
 	.loc 1 53 1
 	.cfi_startproc
 .LVL0:
@@ -442,10 +442,10 @@ bl_pwm_get_duty:
 	.word	1120403456
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pwm.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_pwm.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.file 6 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -2231,8 +2231,10 @@ bl_pwm_get_duty:
 	.string	"PWM_Channel_Enable"
 .LASF80:
 	.string	"PWM_Channel_Get"
-.LASF72:
-	.string	"bl_pwm_set_duty"
+.LASF90:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF71:
+	.string	"bl_pwm_get_duty"
 .LASF86:
 	.string	"GLB_GPIO_Init"
 .LASF46:
@@ -2307,6 +2309,8 @@ bl_pwm_get_duty:
 	.string	"GLB_GPIO_Cfg_Type"
 .LASF24:
 	.string	"PWM_CLK_32K"
+.LASF72:
+	.string	"bl_pwm_set_duty"
 .LASF8:
 	.string	"unsigned char"
 .LASF73:
@@ -2355,8 +2359,6 @@ bl_pwm_get_duty:
 	.string	"char"
 .LASF4:
 	.string	"long int"
-.LASF90:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF87:
 	.string	"PWM_Channel_Init"
 .LASF6:
@@ -2397,8 +2399,6 @@ bl_pwm_get_duty:
 	.string	"stopMode"
 .LASF47:
 	.string	"GLB_GPIO_PIN_8"
-.LASF89:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pwm.c"
 .LASF74:
 	.string	"bl_pwm_set_freq"
 .LASF29:
@@ -2409,8 +2409,8 @@ bl_pwm_get_duty:
 	.string	"PWM_STOP_GRACEFUL"
 .LASF0:
 	.string	"unsigned int"
-.LASF71:
-	.string	"bl_pwm_get_duty"
+.LASF89:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pwm.c"
 .LASF23:
 	.string	"PWM_CLK_BCLK"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

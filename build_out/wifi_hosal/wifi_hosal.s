@@ -12,7 +12,7 @@
 	.type	wifi_hosal_efuse_read_mac, @function
 wifi_hosal_efuse_read_mac:
 .LFB27:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/wifi_hosal.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/wifi_hosal.c"
 	.loc 1 56 1
 	.cfi_startproc
 .LVL0:
@@ -412,12 +412,12 @@ wifi_hosal_pm_event_switch:
 	.size	wifi_hosal_pm_event_switch, .-wifi_hosal_pm_event_switch
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x703
@@ -2064,6 +2064,8 @@ wifi_hosal_pm_event_switch:
 	.string	"pm_state_run"
 .LASF2:
 	.string	"short int"
+.LASF84:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/wifi_hosal.c"
 .LASF34:
 	.string	"PM_LEVEL"
 .LASF76:
@@ -2140,8 +2142,6 @@ wifi_hosal_pm_event_switch:
 	.string	"PM_EVENT_MAX"
 .LASF66:
 	.string	"code"
-.LASF85:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_hosal"
 .LASF58:
 	.string	"pm_event_register"
 .LASF51:
@@ -2180,6 +2180,8 @@ wifi_hosal_pm_event_switch:
 	.string	"long unsigned int"
 .LASF52:
 	.string	"efuse_read_mac"
+.LASF85:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_hosal"
 .LASF64:
 	.string	"wifi_hosal_funcs_t"
 .LASF27:
@@ -2220,8 +2222,6 @@ wifi_hosal_pm_event_switch:
 	.string	"hosal_adc_sample_mode_t"
 .LASF46:
 	.string	"WLAN_PM_EVENT_EXIT_SLEEP"
-.LASF84:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/wifi_hosal.c"
 .LASF82:
 	.string	"wifi_hosal_rf_turn_on"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

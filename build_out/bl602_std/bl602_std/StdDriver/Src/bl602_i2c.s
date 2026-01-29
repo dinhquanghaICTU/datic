@@ -12,7 +12,7 @@
 	.type	I2C_SendWord, @function
 I2C_SendWord:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_i2c.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_i2c.c"
 	.loc 1 164 1
 	.cfi_startproc
 .LVL0:
@@ -1597,11 +1597,11 @@ i2cIntCbfArra:
 	.zero	24
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_i2c.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_i2c.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xa96
@@ -4680,8 +4680,6 @@ i2cIntCbfArra:
 	.string	"DISABLE"
 .LASF27:
 	.string	"short int"
-.LASF100:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_i2c.c"
 .LASF25:
 	.string	"unsigned int"
 .LASF38:
@@ -4692,8 +4690,8 @@ i2cIntCbfArra:
 	.string	"GLB_Get_BCLK_Div"
 .LASF37:
 	.string	"char"
-.LASF101:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF40:
+	.string	"TIMEOUT"
 .LASF28:
 	.string	"long int"
 .LASF18:
@@ -4706,8 +4704,8 @@ i2cIntCbfArra:
 	.string	"BL_AHB_SLAVE1_SEC"
 .LASF39:
 	.string	"ERROR"
-.LASF40:
-	.string	"TIMEOUT"
+.LASF100:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_i2c.c"
 .LASF61:
 	.string	"I2C_ARB_LOST_INT"
 .LASF71:
@@ -4760,6 +4758,8 @@ i2cIntCbfArra:
 	.string	"I2C_IntMask"
 .LASF0:
 	.string	"BL_AHB_SLAVE1_GLB"
+.LASF101:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF77:
 	.string	"timeOut"
 .LASF11:

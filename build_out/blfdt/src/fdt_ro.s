@@ -11,7 +11,7 @@
 	.type	fdt32_ld, @function
 fdt32_ld:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
 	.loc 1 165 1
 	.cfi_startproc
 .LVL0:
@@ -128,7 +128,7 @@ fdt64_ld:
 	.type	fdt_mem_rsv, @function
 fdt_mem_rsv:
 .LFB45:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_ro.c"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_ro.c"
 	.loc 2 174 1 is_stmt 1
 	.cfi_startproc
 .LVL4:
@@ -179,7 +179,7 @@ fdt_mem_rsv:
 .LVL11:
 .LBB6:
 .LBB7:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_internal.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_internal.h"
 	.loc 3 83 5
 	.loc 3 87 5
 	.loc 3 87 22 is_stmt 0
@@ -4409,11 +4409,11 @@ fdt_check_full:
 	.size	fdt_check_full, .-fdt_check_full
 	.text
 .Letext0:
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/fdt.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x239a
@@ -14262,8 +14262,6 @@ fdt_check_full:
 	.string	"fdt_get_mem_rsv"
 .LASF15:
 	.string	"fdt64_t"
-.LASF135:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF93:
 	.string	"leaf"
 .LASF83:
@@ -14282,6 +14280,8 @@ fdt_check_full:
 	.string	"unsigned int"
 .LASF126:
 	.string	"strlen"
+.LASF135:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blfdt"
 .LASF116:
 	.string	"fdt_mem_rsv_"
 .LASF10:
@@ -14306,8 +14306,6 @@ fdt_check_full:
 	.string	"size"
 .LASF8:
 	.string	"short unsigned int"
-.LASF134:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_ro.c"
 .LASF39:
 	.string	"depth"
 .LASF62:
@@ -14374,6 +14372,8 @@ fdt_check_full:
 	.string	"namep"
 .LASF108:
 	.string	"stroffset"
+.LASF134:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/src/fdt_ro.c"
 .LASF9:
 	.string	"uint32_t"
 .LASF112:

@@ -11,7 +11,7 @@
 	.type	fdt32_to_cpu, @function
 fdt32_to_cpu:
 .LFB6:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 92 1
 	.cfi_startproc
 .LVL0:
@@ -64,7 +64,7 @@ fdt32_to_cpu:
 	.type	hal_board_get_factory_addr, @function
 hal_board_get_factory_addr:
 .LFB59:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_board.c"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_board.c"
 	.loc 2 1206 1 is_stmt 1
 	.cfi_startproc
 	.loc 2 1207 5
@@ -3080,20 +3080,20 @@ mac_default.0:
 	.ascii	"\030\271\005\210\210\210"
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_efuse.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl_phy_api.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_wifi.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_efuse.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl_phy_api.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_sys.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blecontroller/ble_inc/ble_lib_api.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x23fc
@@ -11086,6 +11086,8 @@ mac_default.0:
 	.string	"update_xtal_config"
 .LASF16:
 	.string	"LOG_BUF_OUT_DATA_TYPE_HEX"
+.LASF129:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF31:
 	.string	"channel_cnt_table"
 .LASF126:
@@ -11152,6 +11154,8 @@ mac_default.0:
 	.string	"hal_board_load_fdt_info"
 .LASF97:
 	.string	"bl_efuse_read_mac_factory"
+.LASF128:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_board.c"
 .LASF68:
 	.string	"pwr_mode"
 .LASF62:
@@ -11182,8 +11186,6 @@ mac_default.0:
 	.string	"short unsigned int"
 .LASF64:
 	.string	"poweroffset_tmp"
-.LASF128:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_board.c"
 .LASF38:
 	.string	"addr_prop"
 .LASF66:
@@ -11336,8 +11338,6 @@ mac_default.0:
 	.string	"countindex"
 .LASF113:
 	.string	"rftlv_valid"
-.LASF129:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF15:
 	.string	"fdt32_t"
 .LASF51:

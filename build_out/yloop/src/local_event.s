@@ -11,7 +11,7 @@
 	.type	event_read_cb, @function
 event_read_cb:
 .LFB16:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/local_event.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/src/local_event.c"
 	.loc 1 76 1
 	.cfi_startproc
 .LVL0:
@@ -504,7 +504,7 @@ aos_register_event_filter:
 	.loc 1 129 5 is_stmt 1
 .LBB32:
 .LBB33:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/list.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/list.h"
 	.loc 2 63 28 is_stmt 0
 	lui	a4,%hi(.LANCHOR0)
 	addi	a4,a4,%lo(.LANCHOR0)
@@ -807,14 +807,14 @@ local_event:
 	.word	-1
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xaa2
@@ -3644,8 +3644,6 @@ local_event:
 	.string	"g_local_event_list"
 .LASF62:
 	.string	"aos_register_event_filter"
-.LASF84:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF86:
 	.string	"_schedule_call"
 .LASF85:
@@ -3724,10 +3722,14 @@ local_event:
 	.string	"aos_close"
 .LASF78:
 	.string	"aos_open"
+.LASF84:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF4:
 	.string	"unsigned char"
 .LASF51:
 	.string	"handle"
+.LASF83:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/src/local_event.c"
 .LASF19:
 	.string	"dlist_t"
 .LASF80:
@@ -3808,8 +3810,6 @@ local_event:
 	.string	"prev"
 .LASF24:
 	.string	"extra"
-.LASF83:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/local_event.c"
 .LASF18:
 	.string	"next"
 .LASF3:

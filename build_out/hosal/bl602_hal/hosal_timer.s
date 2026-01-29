@@ -11,7 +11,7 @@
 	.type	timer_process, @function
 timer_process:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_timer.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_timer.c"
 	.loc 1 9 1
 	.cfi_startproc
 .LVL0:
@@ -551,12 +551,12 @@ hosal_timer_finalize:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_timer.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_timer.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_timer.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_timer.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_irq.h"
 	.file 8 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -2371,6 +2371,8 @@ hosal_timer_finalize:
 	.string	"BOR_IRQn"
 .LASF5:
 	.string	"BMX_TO_IRQn"
+.LASF141:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_timer.c"
 .LASF140:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF71:
@@ -2421,8 +2423,6 @@ hosal_timer_finalize:
 	.string	"RF_TOP_INT1_IRQn"
 .LASF45:
 	.string	"RESERVED12"
-.LASF141:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hosal_timer.c"
 .LASF40:
 	.string	"TIMER_CH0_IRQn"
 .LASF138:
@@ -2431,8 +2431,6 @@ hosal_timer_finalize:
 	.string	"MASK"
 .LASF88:
 	.string	"TIMER_CLKSRC_FCLK"
-.LASF142:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF34:
 	.string	"UART1_IRQn"
 .LASF121:
@@ -2635,6 +2633,8 @@ hosal_timer_finalize:
 	.string	"TIMER_CFG_Type"
 .LASF107:
 	.string	"TIMER_INT_ALL"
+.LASF142:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF61:
 	.string	"MAC_TXRX_TIMER_IRQn"
 .LASF134:

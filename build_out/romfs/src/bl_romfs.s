@@ -33,7 +33,7 @@
 	.type	dirent_type, @function
 dirent_type:
 .LFB7:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/romfs/src/bl_romfs.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/romfs/src/bl_romfs.c"
 	.loc 1 142 1
 	.cfi_startproc
 .LVL0:
@@ -5227,26 +5227,26 @@ romfs_root:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/fs/vfs_romfs.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_register.h"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/fs/vfs_romfs.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_register.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.file 22 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -15079,6 +15079,8 @@ romfs_root:
 	.string	"close"
 .LASF122:
 	.string	"LOG_BUF_OUT_DATA_TYPE_UNT8"
+.LASF205:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/romfs"
 .LASF39:
 	.string	"ssize_t"
 .LASF86:
@@ -15205,8 +15207,6 @@ romfs_root:
 	.string	"romfs_readdir"
 .LASF209:
 	.string	"romfh_t"
-.LASF204:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/romfs/src/bl_romfs.c"
 .LASF106:
 	.string	"node"
 .LASF131:
@@ -15243,8 +15243,6 @@ romfs_root:
 	.string	"long unsigned int"
 .LASF128:
 	.string	"dir_start_addr"
-.LASF205:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/romfs"
 .LASF163:
 	.string	"addr_start"
 .LASF27:
@@ -15253,6 +15251,8 @@ romfs_root:
 	.string	"dir_cur_addr"
 .LASF151:
 	.string	"whence"
+.LASF204:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/romfs/src/bl_romfs.c"
 .LASF41:
 	.string	"nlink_t"
 .LASF158:

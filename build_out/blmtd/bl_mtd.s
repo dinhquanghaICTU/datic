@@ -40,7 +40,7 @@
 	.type	bl_mtd_open, @function
 bl_mtd_open:
 .LFB7:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/bl_mtd.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blmtd/bl_mtd.c"
 	.loc 1 64 1
 	.cfi_startproc
 .LVL0:
@@ -846,18 +846,18 @@ bl_mtd_size:
 	.size	bl_mtd_size, .-bl_mtd_size
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blmtd/include/bl_mtd.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_boot2.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x9ff
@@ -3388,8 +3388,6 @@ bl_mtd_size:
 	.string	"strncpy"
 .LASF24:
 	.string	"addr"
-.LASF61:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/blmtd/bl_mtd.c"
 .LASF30:
 	.string	"bl_mtd_erase"
 .LASF3:
@@ -3404,6 +3402,8 @@ bl_mtd_size:
 	.string	"__uint32_t"
 .LASF41:
 	.string	"memcpy"
+.LASF61:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blmtd/bl_mtd.c"
 .LASF34:
 	.string	"bl_mtd_open"
 .LASF33:
@@ -3444,8 +3444,6 @@ bl_mtd_size:
 	.string	"_mtd_write_copy2ram"
 .LASF2:
 	.string	"unsigned char"
-.LASF62:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blmtd"
 .LASF1:
 	.string	"signed char"
 .LASF48:
@@ -3512,6 +3510,8 @@ bl_mtd_size:
 	.string	"buf_tmp"
 .LASF19:
 	.string	"bl_mtd_info_t"
+.LASF62:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blmtd"
 .LASF53:
 	.string	"pvPortMalloc"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

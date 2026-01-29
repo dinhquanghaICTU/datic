@@ -12,7 +12,7 @@
 	.type	mfg_media_init_need_lock, @function
 mfg_media_init_need_lock:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_media.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_media.c"
 	.loc 1 6 1
 	.cfi_startproc
 .LVL0:
@@ -61,7 +61,7 @@ mfg_media_init_with_lock:
 	.loc 1 19 5
 .LBB42:
 .LBB43:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
 	.loc 2 94 3
 .LBE43:
 .LBE42:
@@ -78,7 +78,7 @@ mfg_media_init_with_lock:
 .LBB44:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -93,7 +93,7 @@ mfg_media_init_with_lock:
 .LBB47:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -234,7 +234,7 @@ mfg_media_write_xtal_capcode_pre_with_lock:
 .LBB50:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -249,7 +249,7 @@ mfg_media_write_xtal_capcode_pre_with_lock:
 .LBB53:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -341,7 +341,7 @@ mfg_media_write_xtal_capcode_with_lock:
 .LBB56:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -355,7 +355,7 @@ mfg_media_write_xtal_capcode_with_lock:
 .LBB59:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -449,7 +449,7 @@ mfg_media_read_xtal_capcode_with_lock:
 .LBB62:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -464,7 +464,7 @@ mfg_media_read_xtal_capcode_with_lock:
 .LBB65:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -634,7 +634,7 @@ mfg_media_write_poweroffset_pre_with_lock:
 .LBB68:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -649,7 +649,7 @@ mfg_media_write_poweroffset_pre_with_lock:
 .LBB71:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -741,7 +741,7 @@ mfg_media_write_poweroffset_with_lock:
 .LBB74:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -755,7 +755,7 @@ mfg_media_write_poweroffset_with_lock:
 .LBB77:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -849,7 +849,7 @@ mfg_media_read_poweroffset_with_lock:
 .LBB80:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -864,7 +864,7 @@ mfg_media_read_poweroffset_with_lock:
 .LBB83:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1034,7 +1034,7 @@ mfg_media_write_macaddr_pre_with_lock:
 .LBB86:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1049,7 +1049,7 @@ mfg_media_write_macaddr_pre_with_lock:
 .LBB89:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1141,7 +1141,7 @@ mfg_media_write_macaddr_with_lock:
 .LBB92:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1155,7 +1155,7 @@ mfg_media_write_macaddr_with_lock:
 .LBB95:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1249,7 +1249,7 @@ mfg_media_read_macaddr_with_lock:
 .LBB98:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1264,7 +1264,7 @@ mfg_media_read_macaddr_with_lock:
 .LBB101:
 	.loc 2 89 3
  #APP
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrsi mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -1320,10 +1320,10 @@ rf_para_on_flash:
 	.zero	1
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_flash.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_efuse.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_flash.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_mfg_efuse.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xdf6
@@ -4329,6 +4329,8 @@ rf_para_on_flash:
 	.string	"mfg_media_is_poweroffset_slot_empty"
 .LASF38:
 	.string	"qpiFrDmyClk"
+.LASF139:
+	.string	"mfg_efuse_is_xtal_capcode_slot_empty"
 .LASF58:
 	.string	"wrEnableReadRegLen"
 .LASF63:
@@ -4337,8 +4339,6 @@ rf_para_on_flash:
 	.string	"fastReadDioCmd"
 .LASF129:
 	.string	"mfg_efuse_write_poweroffset"
-.LASF143:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF82:
 	.string	"pdDelay"
 .LASF54:
@@ -4387,8 +4387,8 @@ rf_para_on_flash:
 	.string	"resetEnCmd"
 .LASF64:
 	.string	"writeRegCmd"
-.LASF138:
-	.string	"mfg_efuse_write_xtal_capcode_pre"
+.LASF143:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF66:
 	.string	"exitQpi"
 .LASF15:
@@ -4411,14 +4411,12 @@ rf_para_on_flash:
 	.string	"mfg_efuse_read_poweroffset"
 .LASF11:
 	.string	"unsigned int"
-.LASF139:
-	.string	"mfg_efuse_is_xtal_capcode_slot_empty"
+.LASF138:
+	.string	"mfg_efuse_write_xtal_capcode_pre"
 .LASF112:
 	.string	"mfg_media_write_xtal_capcode_pre_need_lock"
 .LASF135:
 	.string	"mfg_flash_write_xtal_capcode"
-.LASF142:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_media.c"
 .LASF105:
 	.string	"mfg_media_read_xtal_capcode"
 .LASF101:
@@ -4571,6 +4569,8 @@ rf_para_on_flash:
 	.string	"jedecIdCmdDmyClk"
 .LASF68:
 	.string	"cRExit"
+.LASF142:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_mfg_media.c"
 .LASF4:
 	.string	"int8_t"
 .LASF141:

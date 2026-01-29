@@ -12,7 +12,7 @@
 	.type	blcrypto_suite_get_fw_api_table, @function
 blcrypto_suite_get_fw_api_table:
 .LFB3:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_export_fw.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_export_fw.c"
 	.loc 1 44 1
 	.cfi_startproc
 	.loc 1 45 5
@@ -79,10 +79,10 @@ fw_api:
 	.word	crypto_ec_point_cmp
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/priv_inc/bl_crypto_api.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/priv_inc/bl_crypto_api.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x549
@@ -968,8 +968,8 @@ fw_api:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF52:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
+.LASF37:
+	.string	"crypto_ec_point_to_bin"
 .LASF13:
 	.string	"crypto_bignum_init"
 .LASF9:
@@ -992,6 +992,8 @@ fw_api:
 	.string	"crypto_ec_point_add"
 .LASF14:
 	.string	"crypto_bignum_init_set"
+.LASF52:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF35:
 	.string	"crypto_ec_point_init"
 .LASF38:
@@ -1030,14 +1032,10 @@ fw_api:
 	.string	"crypto_bignum_to_bin"
 .LASF29:
 	.string	"crypto_ec_init"
-.LASF51:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_export_fw.c"
 .LASF22:
 	.string	"crypto_bignum_div"
 .LASF8:
 	.string	"unsigned int"
-.LASF37:
-	.string	"crypto_ec_point_to_bin"
 .LASF28:
 	.string	"crypto_bignum_legendre"
 .LASF7:
@@ -1078,6 +1076,8 @@ fw_api:
 	.string	"signed char"
 .LASF21:
 	.string	"crypto_bignum_sub"
+.LASF51:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_export_fw.c"
 .LASF48:
 	.string	"crypto_ec"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

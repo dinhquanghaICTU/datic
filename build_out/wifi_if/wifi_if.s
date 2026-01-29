@@ -30,7 +30,7 @@
 	.type	wifi_event_handler, @function
 wifi_event_handler:
 .LFB29:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
 	.loc 1 28 1
 	.cfi_startproc
 .LVL0:
@@ -1015,19 +1015,19 @@ s_wifi_conf:
 	.word	0
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_wifi.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_wifi.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
 	.file 15 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -3376,6 +3376,8 @@ s_wifi_conf:
 	.string	"LWIP_NETIF_CLIENT_DATA_INDEX_MAX"
 .LASF17:
 	.string	"uint16_t"
+.LASF124:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
 .LASF50:
 	.string	"PM_MODE_STA_COEX"
 .LASF26:
@@ -3410,8 +3412,8 @@ s_wifi_conf:
 	.string	"event"
 .LASF8:
 	.string	"short unsigned int"
-.LASF79:
-	.string	"wifi_interface_t"
+.LASF125:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_if"
 .LASF65:
 	.string	"TASK_LAST_EMB"
 .LASF47:
@@ -3506,6 +3508,8 @@ s_wifi_conf:
 	.string	"MEMP_TCP_PCB_LISTEN"
 .LASF32:
 	.string	"MEMP_NETCONN"
+.LASF79:
+	.string	"wifi_interface_t"
 .LASF30:
 	.string	"MEMP_ALTCP_PCB"
 .LASF39:
@@ -3536,8 +3540,6 @@ s_wifi_conf:
 	.string	"wifi_event_handler"
 .LASF78:
 	.string	"flags"
-.LASF124:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
 .LASF0:
 	.string	"wifi_if_connected_cb_t"
 .LASF99:
@@ -3548,8 +3550,6 @@ s_wifi_conf:
 	.string	"extra"
 .LASF71:
 	.string	"time_to_live"
-.LASF125:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_if"
 .LASF97:
 	.string	"wifi_interface"
 .LASF89:

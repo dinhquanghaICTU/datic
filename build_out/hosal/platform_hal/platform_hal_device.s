@@ -12,7 +12,7 @@
 	.type	_Znwj, @function
 _Znwj:
 .LFB1:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/platform_hal/platform_hal_device.cpp"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/platform_hal/platform_hal_device.cpp"
 	.loc 1 5 1
 	.cfi_startproc
 .LVL0:
@@ -1307,13 +1307,13 @@ platform_hal_device_init:
 	.size	platform_hal_device_init, .-platform_hal_device_init
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/platform_hal/platform_hal_device.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/platform_hal/platform_hal_device.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xe9f
@@ -5968,28 +5968,28 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x3a
 	.4byte	.LASF376
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.byte	0x3
 	.byte	0x1
 	.byte	0x9
 	.byte	0x5
 	.byte	0x1b
 	.4byte	.LASF385
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h"
 	.byte	0x3
 	.byte	0x1d
 	.byte	0xa
 	.byte	0x5
 	.byte	0x8
 	.4byte	.LASF386
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h"
 	.byte	0x3
 	.byte	0xa
 	.byte	0xb
 	.byte	0x5
 	.byte	0x8
 	.4byte	.LASF387
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h"
 	.byte	0x3
 	.byte	0xe
 	.byte	0xc
@@ -5999,21 +5999,21 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro3
 	.byte	0x4
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h"
 	.byte	0x3
 	.byte	0xb
 	.byte	0xd
 	.byte	0x5
 	.byte	0x2
 	.4byte	.LASF406
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h"
 	.byte	0x3
 	.byte	0x4
 	.byte	0xe
 	.byte	0x7
 	.4byte	.Ldebug_macro4
 	.byte	0x4
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h"
 	.byte	0x3
 	.byte	0x5
 	.byte	0xf
@@ -6028,7 +6028,7 @@ platform_hal_device_init:
 	.byte	0x4
 	.byte	0x7
 	.4byte	.Ldebug_macro8
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h"
 	.byte	0x3
 	.byte	0x23
 	.byte	0x10
@@ -6059,7 +6059,7 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x27
 	.4byte	.LASF653
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
 	.byte	0x3
 	.byte	0x28
 	.byte	0x11
@@ -6069,7 +6069,7 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x2f
 	.4byte	.LASF656
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h"
 	.byte	0x3
 	.byte	0x3c
 	.byte	0x12
@@ -6084,7 +6084,7 @@ platform_hal_device_init:
 	.byte	0xe
 	.byte	0x3
 	.byte	0x4
-	.file 19 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
 	.byte	0x3
 	.byte	0xf
 	.byte	0x13
@@ -6096,7 +6096,7 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro15
 	.byte	0x4
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h"
 	.byte	0x3
 	.byte	0x1b
 	.byte	0x14
@@ -6109,7 +6109,7 @@ platform_hal_device_init:
 	.byte	0x4
 	.byte	0x7
 	.4byte	.Ldebug_macro17
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h"
 	.byte	0x3
 	.byte	0x22
 	.byte	0x15
@@ -6119,7 +6119,7 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro19
 	.byte	0x4
-	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
 	.byte	0x3
 	.byte	0x3d
 	.byte	0x16
@@ -6131,14 +6131,14 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro21
 	.byte	0x4
-	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h"
+	.file 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h"
 	.byte	0x3
 	.byte	0x31
 	.byte	0x17
 	.byte	0x5
 	.byte	0x2
 	.4byte	.LASF759
-	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h"
+	.file 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h"
 	.byte	0x3
 	.byte	0x6
 	.byte	0x18
@@ -6148,14 +6148,14 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro23
 	.byte	0x4
-	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h"
+	.file 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h"
 	.byte	0x3
 	.byte	0x32
 	.byte	0x19
 	.byte	0x5
 	.byte	0x2
 	.4byte	.LASF777
-	.file 26 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h"
+	.file 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h"
 	.byte	0x3
 	.byte	0xe
 	.byte	0x1a
@@ -6163,21 +6163,21 @@ platform_hal_device_init:
 	.byte	0x27
 	.4byte	.LASF778
 	.byte	0x4
-	.file 27 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
 	.byte	0x3
 	.byte	0xf
 	.byte	0x1b
 	.byte	0x7
 	.4byte	.Ldebug_macro24
 	.byte	0x4
-	.file 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h"
+	.file 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h"
 	.byte	0x3
 	.byte	0x10
 	.byte	0x1c
 	.byte	0x5
 	.byte	0x23
 	.4byte	.LASF784
-	.file 29 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 29 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
 	.byte	0x3
 	.byte	0x26
 	.byte	0x1d
@@ -6193,14 +6193,14 @@ platform_hal_device_init:
 	.byte	0x4
 	.byte	0x7
 	.4byte	.Ldebug_macro27
-	.file 30 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h"
+	.file 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h"
 	.byte	0x3
 	.byte	0xdf,0x1
 	.byte	0x1e
 	.byte	0x5
 	.byte	0x13
 	.4byte	.LASF833
-	.file 31 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h"
+	.file 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h"
 	.byte	0x3
 	.byte	0x17
 	.byte	0x1f
@@ -6210,7 +6210,7 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro29
 	.byte	0x4
-	.file 32 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h"
+	.file 32 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h"
 	.byte	0x3
 	.byte	0xe0,0x1
 	.byte	0x20
@@ -6222,7 +6222,7 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x43
 	.4byte	.LASF848
-	.file 33 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h"
+	.file 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h"
 	.byte	0x3
 	.byte	0x4f
 	.byte	0x21
@@ -6238,7 +6238,7 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x2
 	.4byte	.LASF900
-	.file 34 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
 	.byte	0x3
 	.byte	0x3
 	.byte	0x22
@@ -6249,11 +6249,11 @@ platform_hal_device_init:
 	.byte	0x22
 	.byte	0x3
 	.byte	0x4
-	.file 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h"
+	.file 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h"
 	.byte	0x3
 	.byte	0x31
 	.byte	0x23
-	.file 36 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.byte	0x3
 	.byte	0xb
 	.byte	0x24
@@ -6264,14 +6264,14 @@ platform_hal_device_init:
 	.byte	0xd
 	.4byte	.LASF1025
 	.byte	0x4
-	.file 37 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
+	.file 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h"
 	.byte	0x3
 	.byte	0x38
 	.byte	0x25
 	.byte	0x5
 	.byte	0x48
 	.4byte	.LASF1026
-	.file 38 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
+	.file 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h"
 	.byte	0x3
 	.byte	0x4a
 	.byte	0x26
@@ -6281,7 +6281,7 @@ platform_hal_device_init:
 	.byte	0x7
 	.4byte	.Ldebug_macro34
 	.byte	0x4
-	.file 39 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
+	.file 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/projdefs.h"
 	.byte	0x3
 	.byte	0x3b
 	.byte	0x27
@@ -6294,7 +6294,7 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x21
 	.4byte	.LASF1227
-	.file 40 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h"
+	.file 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/deprecated_definitions.h"
 	.byte	0x3
 	.byte	0x2d
 	.byte	0x28
@@ -6310,7 +6310,7 @@ platform_hal_device_init:
 	.byte	0x4
 	.byte	0x7
 	.4byte	.Ldebug_macro37
-	.file 41 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h"
+	.file 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/mpu_wrappers.h"
 	.byte	0x3
 	.byte	0x63
 	.byte	0x29
@@ -6327,7 +6327,7 @@ platform_hal_device_init:
 	.byte	0x5
 	.byte	0x1e
 	.4byte	.LASF1439
-	.file 42 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
+	.file 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/list.h"
 	.byte	0x3
 	.byte	0x24
 	.byte	0x2a
@@ -9938,8 +9938,6 @@ platform_hal_device_init:
 	.string	"INT64_MIN (-INT64_MAX - 1)"
 .LASF755:
 	.string	"_INTMAX_T_DECLARED "
-.LASF1590:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/platform_hal/platform_hal_device.cpp"
 .LASF255:
 	.string	"__FLT64_MIN_10_EXP__ (-307)"
 .LASF358:
@@ -9992,8 +9990,6 @@ platform_hal_device_init:
 	.string	"__UINT_FAST64_MAX__ 0xffffffffffffffffULL"
 .LASF512:
 	.string	"__GNUCLIKE___TYPEOF 1"
-.LASF1591:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF351:
 	.string	"__ELF__ 1"
 .LASF19:
@@ -10708,6 +10704,8 @@ platform_hal_device_init:
 	.string	"first_use"
 .LASF1472:
 	.string	"tskMPU_REGION_READ_WRITE ( 1UL << 1UL )"
+.LASF354:
+	.string	"CONF_BUILD_PATH /home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/datic.elf"
 .LASF1230:
 	.string	"portSTACK_TYPE uint32_t"
 .LASF1488:
@@ -10814,6 +10812,8 @@ platform_hal_device_init:
 	.string	"NULL __null"
 .LASF611:
 	.string	"__asserts_shared(...) __lock_annotate(assert_shared_lock(__VA_ARGS__))"
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1769649180"
 .LASF1310:
 	.string	"traceCREATE_COUNTING_SEMAPHORE() "
 .LASF1066:
@@ -11303,6 +11303,8 @@ platform_hal_device_init:
 	.string	"decltype(nullptr)"
 .LASF1563:
 	.string	"this"
+.LASF1590:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/platform_hal/platform_hal_device.cpp"
 .LASF1486:
 	.string	"taskSCHEDULER_RUNNING ( ( BaseType_t ) 2 )"
 .LASF848:
@@ -11761,8 +11763,6 @@ platform_hal_device_init:
 	.string	"__warn_references(sym,msg) __asm__(\".section .gnu.warning.\" #sym); __asm__(\".asciz \\\"\" msg \"\\\"\"); __asm__(\".previous\")"
 .LASF719:
 	.string	"_REENT_ASCTIME_BUF(ptr) ((ptr)->_new._reent._asctime_buf)"
-.LASF354:
-	.string	"CONF_BUILD_PATH /home/dinhquangha/Ai-Thinker-WB2/datic/build_out/datic.elf"
 .LASF60:
 	.string	"__INT_FAST8_TYPE__ int"
 .LASF821:
@@ -12602,8 +12602,6 @@ platform_hal_device_init:
 	.string	"BLAesEngine"
 .LASF729:
 	.string	"_REENT_WCRTOMB_STATE(ptr) ((ptr)->_new._reent._wcrtomb_state)"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1768800621"
 .LASF1162:
 	.string	"tmrTIMER_TEST_TASK_STACK_SIZE 100"
 .LASF200:
@@ -13014,6 +13012,8 @@ platform_hal_device_init:
 	.string	"configUSE_TIME_SLICING 1"
 .LASF439:
 	.string	"__SSP_FORTIFY_LEVEL 0"
+.LASF1591:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF1282:
 	.string	"portCLEAN_UP_TCB(pxTCB) ( void ) pxTCB"
 .LASF73:

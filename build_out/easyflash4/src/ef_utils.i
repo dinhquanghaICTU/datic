@@ -1,17 +1,17 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/easyflash4//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
-# 29 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 1
-# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
+# 29 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 1
+# 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -71,26 +71,26 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h" 1
-# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h" 1
+# 84 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
 
-# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
+# 84 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_cfg.h"
 extern uint32_t ENV_AREA_SIZE;
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h" 1
-# 73 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h" 1
+# 73 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
 typedef struct _ef_env {
     char *key;
     void *value;
@@ -131,9 +131,9 @@ typedef enum env_status env_status_t;
 struct env_node_obj {
     env_status_t status;
     
-# 112 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h" 3 4
+# 112 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h" 3 4
    _Bool 
-# 112 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
+# 112 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/ef_def.h"
         crc_is_ok;
     uint8_t name_len;
     uint32_t magic;
@@ -146,7 +146,7 @@ struct env_node_obj {
     } addr;
 };
 typedef struct env_node_obj *env_node_obj_t;
-# 38 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
+# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 2
 
 
 
@@ -159,9 +159,9 @@ EfErrCode easyflash_init(void);
 
 size_t ef_get_env_blob(const char *key, void *value_buf, size_t buf_len, size_t *saved_value_len);
 
-# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 3 4
+# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 3 4
 _Bool 
-# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
     ef_get_env_obj(const char *key, env_node_obj_t env);
 size_t ef_read_env_value(env_node_obj_t env, uint8_t *value_buf, size_t buf_len);
 EfErrCode ef_set_env_blob(const char *key, const void *value_buf, size_t buf_len);
@@ -171,9 +171,9 @@ EfErrCode ef_load_env(void);
 void ef_print_env(void);
 
 typedef 
-# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 3 4
+# 57 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h" 3 4
        _Bool 
-# 57 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+# 57 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
             (*print_env_cb_t)(env_node_obj_t env, void *arg1, void *arg2);
 void ef_print_env_cb(print_env_cb_t cb);
 
@@ -186,7 +186,7 @@ size_t ef_get_env_write_bytes(void);
 EfErrCode ef_set_and_save_env(const char *key, const char *value);
 EfErrCode ef_del_and_save_env(const char *key);
 EfErrCode ef_prefetch_cache_env(void);
-# 101 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+# 101 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
 uint32_t ef_calc_crc32(uint32_t crc, const void *buf, size_t size);
 
 
@@ -200,7 +200,7 @@ void ef_log_info(const char *format, ...);
 void ef_print(const char *format, ...);
 
 int easyflash_cli_init(void);
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c" 2
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c" 2
 
 static const uint32_t crc32_table[] =
 {
@@ -248,7 +248,7 @@ static const uint32_t crc32_table[] =
     0x54de5729, 0x23d967bf, 0xb3667a2e, 0xc4614ab8, 0x5d681b02, 0x2a6f2b94,
     0xb40bbe37, 0xc30c8ea1, 0x5a05df1b, 0x2d02ef8d
 };
-# 87 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
+# 87 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/ef_utils.c"
 uint32_t ef_calc_crc32(uint32_t crc, const void *buf, size_t size)
 {
     const uint8_t *p;

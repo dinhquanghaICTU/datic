@@ -119,8 +119,6 @@
 	.section	.debug_str,"MS",@progbits,1
 .LASF8:
 	.string	"unsigned int"
-.LASF11:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/netif/lowpan6_ble.c"
 .LASF5:
 	.string	"long unsigned int"
 .LASF0:
@@ -131,14 +129,16 @@
 	.string	"short int"
 .LASF7:
 	.string	"long long unsigned int"
+.LASF12:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/lwip"
+.LASF11:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/netif/lowpan6_ble.c"
 .LASF1:
 	.string	"unsigned char"
 .LASF4:
 	.string	"long int"
 .LASF10:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF12:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/lwip"
 .LASF9:
 	.string	"char"
 .LASF6:

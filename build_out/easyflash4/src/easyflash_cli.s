@@ -40,7 +40,7 @@
 	.type	psm_test_cmd, @function
 psm_test_cmd:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash_cli.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash_cli.c"
 	.loc 1 38 1
 	.cfi_startproc
 .LVL0:
@@ -690,17 +690,17 @@ cmds_user:
 	.word	psm_test_cmd
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/inc/easyflash.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.file 13 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -2871,8 +2871,8 @@ cmds_user:
 	.string	"data_src"
 .LASF27:
 	.string	"read_len"
-.LASF52:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/easyflash4"
+.LASF51:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash_cli.c"
 .LASF2:
 	.string	"short int"
 .LASF11:
@@ -2885,8 +2885,6 @@ cmds_user:
 	.string	"__uint32_t"
 .LASF57:
 	.string	"memcpy"
-.LASF51:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/easyflash4/src/easyflash_cli.c"
 .LASF16:
 	.string	"help"
 .LASF42:
@@ -2899,6 +2897,8 @@ cmds_user:
 	.string	"ef_env_set_default"
 .LASF35:
 	.string	"xPortIsInsideInterrupt"
+.LASF52:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/easyflash4"
 .LASF47:
 	.string	"ef_save_env"
 .LASF44:

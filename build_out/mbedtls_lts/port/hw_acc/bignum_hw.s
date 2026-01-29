@@ -12,7 +12,7 @@
 	.type	bl_mpi_exp_mod_wo_lock, @function
 bl_mpi_exp_mod_wo_lock:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
 	.loc 1 29 1
 	.cfi_startproc
 .LVL0:
@@ -1049,16 +1049,16 @@ bl_mpi_exp_mod:
 	.size	bl_mpi_exp_mod, .-bl_mpi_exp_mod
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/bignum_ext.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/hw_common.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_bignum.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/bignum.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/sec_common/bl_sec_pka.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/bignum_ext.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/hw_common.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/mbedtls_port_bignum.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/include/mbedtls/platform.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xc76
@@ -4451,8 +4451,8 @@ bl_mpi_exp_mod:
 	.string	"bl_mpi_exp_mod"
 .LASF41:
 	.string	"reg_idx_E"
-.LASF22:
-	.string	"SEC_ENG_PKA_REG_SIZE_256"
+.LASF82:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
 .LASF2:
 	.string	"short int"
 .LASF5:
@@ -4469,8 +4469,8 @@ bl_mpi_exp_mod:
 	.string	"e_words"
 .LASF43:
 	.string	"e_bit_idx"
-.LASF53:
-	.string	"Sec_Eng_PKA_Move_Data"
+.LASF83:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF26:
 	.string	"bl_mpi_exp_mod_wo_lock"
 .LASF21:
@@ -4495,6 +4495,8 @@ bl_mpi_exp_mod:
 	.string	"long int"
 .LASF80:
 	.string	"mbedtls_mpi_free"
+.LASF53:
+	.string	"Sec_Eng_PKA_Move_Data"
 .LASF55:
 	.string	"Sec_Eng_PKA_MMUL"
 .LASF32:
@@ -4545,8 +4547,8 @@ bl_mpi_exp_mod:
 	.string	"char"
 .LASF50:
 	.string	"_Bool"
-.LASF83:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
+.LASF54:
+	.string	"Sec_Eng_PKA_MSQR"
 .LASF39:
 	.string	"PrimeN_new"
 .LASF49:
@@ -4555,6 +4557,8 @@ bl_mpi_exp_mod:
 	.string	"reg_size_E"
 .LASF56:
 	.string	"mbedtls_mpi_get_bit"
+.LASF22:
+	.string	"SEC_ENG_PKA_REG_SIZE_256"
 .LASF34:
 	.string	"reg_size_N"
 .LASF23:
@@ -4563,8 +4567,6 @@ bl_mpi_exp_mod:
 	.string	"long unsigned int"
 .LASF46:
 	.string	"cvt_back"
-.LASF82:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/port/hw_acc/bignum_hw.c"
 .LASF81:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF68:
@@ -4591,8 +4593,6 @@ bl_mpi_exp_mod:
 	.string	"words"
 .LASF67:
 	.string	"Sec_Eng_PKA_BigEndian_Enable"
-.LASF54:
-	.string	"Sec_Eng_PKA_MSQR"
 .LASF63:
 	.string	"mbedtls_mpi_lset"
 .LASF28:

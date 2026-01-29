@@ -33,7 +33,7 @@
 	.type	cmd_bitmap_window_test, @function
 cmd_bitmap_window_test:
 .LFB3:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/test/test_utils_bitmap_window.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/test/test_utils_bitmap_window.c"
 	.loc 1 7 1
 	.cfi_startproc
 .LVL0:
@@ -307,10 +307,10 @@ cmds_user:
 	.word	cmd_bitmap_window_test
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_bitmap_window.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_bitmap_window.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x56c
@@ -1599,10 +1599,10 @@ cmds_user:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF31:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF29:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF31:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF32:
 	.string	"utils_bitmap_window_cli_init"
 .LASF14:
@@ -1621,12 +1621,12 @@ cmds_user:
 	.string	"cmd_bitmap_window_test"
 .LASF6:
 	.string	"long unsigned int"
-.LASF30:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/test/test_utils_bitmap_window.c"
 .LASF5:
 	.string	"short unsigned int"
 .LASF18:
 	.string	"help"
+.LASF30:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/test/test_utils_bitmap_window.c"
 .LASF16:
 	.string	"cli_command"
 .LASF15:

@@ -12,7 +12,7 @@
 	.type	clic_enable_interrupt, @function
 clic_enable_interrupt:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Device/Bouffalo/BL602/Startup/interrupt.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Device/Bouffalo/BL602/Startup/interrupt.c"
 	.loc 1 150 46
 	.cfi_startproc
 .LVL0:
@@ -299,7 +299,7 @@ clic_get_cliccfg:
 	.size	clic_get_cliccfg, .-clic_get_cliccfg
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1b7
@@ -879,8 +879,6 @@ clic_get_cliccfg:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF17:
 	.string	"clic_disable_interrupt"
-.LASF19:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Device/Bouffalo/BL602/Startup/interrupt.c"
 .LASF12:
 	.string	"clic_set_cliccfg"
 .LASF16:
@@ -913,6 +911,8 @@ clic_get_cliccfg:
 	.string	"clic_get_cliccfg"
 .LASF1:
 	.string	"short int"
+.LASF19:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Device/Bouffalo/BL602/Startup/interrupt.c"
 .LASF7:
 	.string	"uint32_t"
 .LASF2:
@@ -922,5 +922,5 @@ clic_get_cliccfg:
 .LASF11:
 	.string	"source"
 .LASF20:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

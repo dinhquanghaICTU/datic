@@ -12,7 +12,7 @@
 	.type	test_buf, @function
 test_buf:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc2_full.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc2_full.c"
 	.loc 1 10 1
 	.cfi_startproc
 	.loc 1 11 5
@@ -156,9 +156,9 @@ blog_testc2_init:
 	.size	blog_testc2_init, .-blog_testc2_init
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x16e
@@ -640,26 +640,24 @@ blog_testc2_init:
 	.string	"long long int"
 .LASF8:
 	.string	"unsigned int"
-.LASF18:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blog_testc"
 .LASF12:
 	.string	"blog_testc2_entry"
 .LASF14:
 	.string	"aos_task_new"
-.LASF17:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc2_full.c"
 .LASF5:
 	.string	"long unsigned int"
 .LASF16:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF10:
-	.string	"__uint8_t"
-.LASF15:
-	.string	"aos_msleep"
-.LASF7:
-	.string	"long long unsigned int"
 .LASF11:
 	.string	"uint8_t"
+.LASF15:
+	.string	"aos_msleep"
+.LASF17:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog_testc/blog_testc2_full.c"
+.LASF7:
+	.string	"long long unsigned int"
+.LASF18:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blog_testc"
 .LASF1:
 	.string	"unsigned char"
 .LASF13:
@@ -668,6 +666,8 @@ blog_testc2_init:
 	.string	"char"
 .LASF4:
 	.string	"long int"
+.LASF10:
+	.string	"__uint8_t"
 .LASF3:
 	.string	"short unsigned int"
 .LASF0:

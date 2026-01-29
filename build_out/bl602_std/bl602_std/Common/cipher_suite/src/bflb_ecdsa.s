@@ -12,7 +12,7 @@
 	.type	bflb_ecc_basic_parameter_init, @function
 bflb_ecc_basic_parameter_init:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_ecdsa.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_ecdsa.c"
 	.loc 1 113 1
 	.cfi_startproc
 .LVL0:
@@ -3464,11 +3464,11 @@ secp256r1_Zeroy:
 	.ascii	"\001"
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
 	.file 7 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -13920,6 +13920,8 @@ secp256r1_Zeroy:
 	.string	"Sec_Eng_PKA_MINV"
 .LASF84:
 	.string	"Sec_Eng_PKA_GF2Mont"
+.LASF98:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_ecdsa.c"
 .LASF23:
 	.string	"SEC_ENG_PKA_REG_SIZE_256"
 .LASF49:
@@ -13942,8 +13944,6 @@ secp256r1_Zeroy:
 	.string	"Sec_Eng_PKA_LCMP"
 .LASF51:
 	.string	"bflb_ecdsa_sign"
-.LASF98:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/cipher_suite/src/bflb_ecdsa.c"
 .LASF91:
 	.string	"Sec_Eng_PKA_Move_Data"
 .LASF81:
@@ -13984,8 +13984,6 @@ secp256r1_Zeroy:
 	.string	"bar_u2_y"
 .LASF12:
 	.string	"char"
-.LASF99:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF6:
 	.string	"long int"
 .LASF59:
@@ -14066,6 +14064,8 @@ secp256r1_Zeroy:
 	.string	"hashLen"
 .LASF14:
 	.string	"int32_t"
+.LASF99:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF27:
 	.string	"secp256r1B"
 .LASF57:

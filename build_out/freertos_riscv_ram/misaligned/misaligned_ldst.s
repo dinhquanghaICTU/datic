@@ -12,7 +12,7 @@
 	.type	truly_illegal_insn, @function
 truly_illegal_insn:
 .LFB14:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
 	.loc 1 29 1
 	.cfi_startproc
 .LVL0:
@@ -26,7 +26,7 @@ truly_illegal_insn:
 	.cfi_def_cfa 8, 0
 	.loc 1 30 5
  #APP
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	ebreak
 # 0 "" 2
  #NO_APP
@@ -52,14 +52,14 @@ misaligned_load_trap:
 .LVL1:
 .LBB44:
 .LBB45:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h"
 	.loc 2 71 22 is_stmt 0
 	li	a1,655360
 .LVL2:
 	.loc 2 83 3
 	li	a5,3
  #APP
-# 83 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
 	csrrs a3, mstatus, a1
 and a6, a2, 2
 bnez a6, 1f
@@ -125,7 +125,7 @@ add a4, a4, a6
 	.loc 1 40 23
 	.loc 1 40 44
  #APP
-# 40 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	csrr a7, mbadaddr
 # 0 "" 2
 .LVL7:
@@ -184,7 +184,7 @@ add a4, a4, a6
 	.loc 1 91 5
 	.loc 1 91 8 is_stmt 0
  #APP
-# 91 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 91 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	csrw mcause, 5
 # 0 "" 2
 	.loc 1 92 5 is_stmt 1
@@ -194,7 +194,7 @@ add a4, a4, a6
 .LBB54:
 	.loc 1 30 5
  #APP
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	ebreak
 # 0 "" 2
  #NO_APP
@@ -268,7 +268,7 @@ add a4, a4, a6
 	.loc 2 39 222 discriminator 3
 	.loc 2 39 235 discriminator 3
  #APP
-# 39 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
+# 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
 	csrrs a3, mstatus, a1
 lbu t6, -1(a5)
 csrw mstatus, a3
@@ -457,7 +457,7 @@ misaligned_store_trap:
 .LBB65:
 	.loc 2 83 3
  #APP
-# 83 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
 	csrrs a3, mstatus, a1
 and a6, a2, 2
 bnez a6, 1f
@@ -582,7 +582,7 @@ add a4, a4, a6
 	.loc 1 167 5
 	.loc 1 167 8 is_stmt 0
  #APP
-# 167 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 167 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	csrw mcause, 7
 # 0 "" 2
 	.loc 1 168 5 is_stmt 1
@@ -592,7 +592,7 @@ add a4, a4, a6
 .LBB77:
 	.loc 1 30 5
  #APP
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	ebreak
 # 0 "" 2
  #NO_APP
@@ -623,7 +623,7 @@ add a4, a4, a6
 .LBB79:
 	.loc 1 135 149
  #APP
-# 135 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 135 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	1: auipc a5, %pcrel_hi(get_f32_reg); add a5, a5, a0; jalr t0, a5, %pcrel_lo(1b)
 # 0 "" 2
 .LVL39:
@@ -639,7 +639,7 @@ add a4, a4, a6
 	.loc 1 171 23
 	.loc 1 171 44
  #APP
-# 171 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 171 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	csrr a7, mbadaddr
 # 0 "" 2
 .LVL41:
@@ -674,7 +674,7 @@ add a4, a4, a6
 	.loc 2 44 186 discriminator 3
 	.loc 2 44 227 discriminator 3
  #APP
-# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
+# 44 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/unprivileged_memory.h" 1
 	csrrs a3, mstatus, a1
 sb a4, 0(a6)
 csrw mstatus, a3
@@ -779,7 +779,7 @@ csrw mstatus, a3
 .LBB89:
 	.loc 1 159 222
  #APP
-# 159 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 159 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	1: auipc a5, %pcrel_hi(get_f32_reg); add a5, a5, a0; jalr t0, a5, %pcrel_lo(1b)
 # 0 "" 2
 .LVL55:
@@ -807,7 +807,7 @@ csrw mstatus, a3
 .LBB91:
 	.loc 1 161 146
  #APP
-# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c" 1
 	1: auipc a5, %pcrel_hi(get_f32_reg); add a5, a5, a0; jalr t0, a5, %pcrel_lo(1b)
 # 0 "" 2
 .LVL58:
@@ -822,8 +822,8 @@ csrw mstatus, a3
 	.size	misaligned_store_trap, .-misaligned_store_trap
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/emulation.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x740
@@ -2855,8 +2855,6 @@ csrw mstatus, a3
 	.section	.debug_str,"MS",@progbits,1
 .LASF41:
 	.string	"truly_illegal_insn"
-.LASF39:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
 .LASF16:
 	.string	"intx"
 .LASF13:
@@ -2889,6 +2887,10 @@ csrw mstatus, a3
 	.string	"mcause"
 .LASF7:
 	.string	"short unsigned int"
+.LASF39:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/freertos_riscv_ram"
+.LASF38:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
 .LASF18:
 	.string	"regs"
 .LASF20:
@@ -2901,8 +2903,6 @@ csrw mstatus, a3
 	.string	"intptr_t"
 .LASF11:
 	.string	"unsigned int"
-.LASF42:
-	.string	"store_uint8_t"
 .LASF10:
 	.string	"long long unsigned int"
 .LASF5:
@@ -2933,10 +2933,10 @@ csrw mstatus, a3
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -O2 -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF15:
 	.string	"bytes"
-.LASF17:
-	.string	"int64"
+.LASF42:
+	.string	"store_uint8_t"
 .LASF0:
 	.string	"signed char"
-.LASF38:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/misaligned/misaligned_ldst.c"
+.LASF17:
+	.string	"int64"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

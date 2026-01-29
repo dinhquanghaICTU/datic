@@ -12,7 +12,7 @@
 	.type	blcrypto_suite_platform_zeroize, @function
 blcrypto_suite_platform_zeroize:
 .LFB4:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_platform_util.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_platform_util.c"
 	.loc 1 99 1
 	.cfi_startproc
 .LVL0:
@@ -70,7 +70,7 @@ memset_func:
 	.word	memset
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x104
@@ -465,6 +465,8 @@ memset_func:
 	.string	"size_t"
 .LASF15:
 	.string	"blcrypto_suite_platform_zeroize"
+.LASF11:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_platform_util.c"
 .LASF5:
 	.string	"long unsigned int"
 .LASF7:
@@ -473,8 +475,8 @@ memset_func:
 	.string	"unsigned char"
 .LASF9:
 	.string	"char"
-.LASF11:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_platform_util.c"
+.LASF12:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF4:
 	.string	"long int"
 .LASF14:
@@ -483,8 +485,6 @@ memset_func:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
-.LASF12:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF2:
 	.string	"short int"
 .LASF8:

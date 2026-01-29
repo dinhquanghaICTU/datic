@@ -12,7 +12,7 @@
 	.type	BFLB_Soft_CRC16, @function
 BFLB_Soft_CRC16:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.c"
 	.loc 1 67 1
 	.cfi_startproc
 .LVL0:
@@ -162,7 +162,7 @@ BFLB_Soft_CRC32_Table:
 	.cfi_endproc
 .LFE9:
 	.size	BFLB_Soft_CRC32_Table, .-BFLB_Soft_CRC32_Table
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.c155,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.c155,"ax",@progbits
 	.align	1
 	.weak	BFLB_Soft_CRC32
 	.type	BFLB_Soft_CRC32, @function
@@ -574,7 +574,7 @@ crc32Tab:
 	.word	755167117
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x240
@@ -706,7 +706,7 @@ crc32Tab:
 	.4byte	.LASF18
 	.byte	0x1
 	.byte	0x9b
-	.byte	0xa5
+	.byte	0xac
 	.4byte	0x6c
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
@@ -717,14 +717,14 @@ crc32Tab:
 	.4byte	.LASF16
 	.byte	0x1
 	.byte	0x9b
-	.byte	0xbb
+	.byte	0xc2
 	.4byte	0x99
 	.4byte	.LLST10
 	.byte	0xc
 	.string	"len"
 	.byte	0x1
 	.byte	0x9b
-	.byte	0xcc
+	.byte	0xd3
 	.4byte	0x6c
 	.4byte	.LLST11
 	.byte	0xd
@@ -1373,8 +1373,6 @@ crc32Tab:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF16:
 	.string	"dataIn"
-.LASF25:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF17:
 	.string	"data"
 .LASF15:
@@ -1389,8 +1387,8 @@ crc32Tab:
 	.string	"BFLB_Soft_CRC16"
 .LASF18:
 	.string	"BFLB_Soft_CRC32"
-.LASF20:
-	.string	"chCRCHi"
+.LASF24:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.c"
 .LASF11:
 	.string	"unsigned int"
 .LASF10:
@@ -1415,12 +1413,14 @@ crc32Tab:
 	.string	"wIndex"
 .LASF6:
 	.string	"uint16_t"
+.LASF20:
+	.string	"chCRCHi"
 .LASF8:
 	.string	"uint32_t"
 .LASF2:
 	.string	"long int"
 .LASF0:
 	.string	"signed char"
-.LASF24:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.c"
+.LASF25:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

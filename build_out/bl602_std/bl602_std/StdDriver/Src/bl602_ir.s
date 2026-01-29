@@ -11,7 +11,7 @@
 	.type	IR_Disable.part.0, @function
 IR_Disable.part.0:
 .LFB38:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ir.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ir.c"
 	.loc 1 362 13
 	.cfi_startproc
 .LVL0:
@@ -3091,12 +3091,12 @@ IR_LEDSend:
 	.word	1
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ir.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ir.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.file 8 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
@@ -9014,12 +9014,10 @@ IR_LEDSend:
 	.string	"unit"
 .LASF2:
 	.string	"BL_AHB_SLAVE1_GPIP_PHY_AGC"
-.LASF177:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ir.c"
 .LASF84:
 	.string	"logic0PulseWidth_0"
-.LASF178:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF83:
+	.string	"logic0PulseWidth_1"
 .LASF8:
 	.string	"BL_AHB_SLAVE1_CCI"
 .LASF145:
@@ -9180,12 +9178,12 @@ IR_LEDSend:
 	.string	"BL_AHB_SLAVE1_DMA"
 .LASF73:
 	.string	"tailPulseInverse"
-.LASF83:
-	.string	"logic0PulseWidth_1"
 .LASF137:
 	.string	"IR_ReceiveData"
 .LASF47:
 	.string	"UNMASK"
+.LASF178:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF116:
 	.string	"code0H"
 .LASF5:
@@ -9302,6 +9300,8 @@ IR_LEDSend:
 	.string	"moduWidth_1"
 .LASF127:
 	.string	"timeoutCnt"
+.LASF177:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ir.c"
 .LASF33:
 	.string	"short unsigned int"
 .LASF64:

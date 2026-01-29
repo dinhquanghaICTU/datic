@@ -1,70 +1,70 @@
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/wifi_manager//"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/wifi_manager//"
 # 1 "<built-in>"
 # 1 "<command-line>"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
-# 29 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
-# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 1 3
+# 29 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 1 3
+# 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_newlib_version.h" 1 3
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/newlib.h" 2 3
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 1 3
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
-# 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
-# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/features.h" 1 3
+# 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/config.h" 2 3
+# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 2 3
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
-# 45 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 1 3
+# 45 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 1 3
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int8_t;
 
 typedef unsigned char __uint8_t;
-# 55 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 55 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int16_t;
 
 typedef short unsigned int __uint16_t;
-# 77 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 77 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int32_t;
 
 typedef long unsigned int __uint32_t;
-# 103 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int64_t;
 
 typedef long long unsigned int __uint64_t;
-# 134 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 134 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef signed char __int_least8_t;
 
 typedef unsigned char __uint_least8_t;
-# 160 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 160 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef short int __int_least16_t;
 
 typedef short unsigned int __uint_least16_t;
-# 182 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 182 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long int __int_least32_t;
 
 typedef long unsigned int __uint_least32_t;
-# 200 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 200 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __int_least64_t;
 
 typedef long long unsigned int __uint_least64_t;
-# 214 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
+# 214 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h" 3
 typedef long long int __intmax_t;
 
 
@@ -84,49 +84,49 @@ typedef long long unsigned int __uintmax_t;
 typedef int __intptr_t;
 
 typedef unsigned int __uintptr_t;
-# 46 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 46 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 209 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int size_t;
-# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
-# 36 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/cdefs.h" 2 3
+# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int ptrdiff_t;
-# 321 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 321 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef int wchar_t;
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 40 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 3 4
 typedef __builtin_va_list __gnuc_va_list;
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
 
 
 typedef __gnuc_va_list va_list;
-# 60 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
-# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
-# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
-# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 350 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
+# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 1 3
+# 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/_ansi.h" 1 3
+# 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 1 3
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 350 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 3 4
 typedef unsigned int wint_t;
-# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_types.h" 1 3
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 2 3
 
 
 typedef long __blkcnt_t;
@@ -175,7 +175,7 @@ typedef __uint32_t __id_t;
 
 
 typedef unsigned short __ino_t;
-# 90 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 90 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef __uint32_t __mode_t;
 
 
@@ -203,11 +203,11 @@ typedef long __key_t;
 
 
 typedef long _fpos_t;
-# 131 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 131 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef unsigned int __size_t;
-# 147 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef signed int _ssize_t;
-# 158 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
+# 158 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h" 3
 typedef _ssize_t __ssize_t;
 
 
@@ -270,7 +270,7 @@ typedef unsigned long __useconds_t;
 
 
 typedef __builtin_va_list __va_list;
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 
 
 
@@ -278,12 +278,12 @@ typedef __builtin_va_list __va_list;
 
 
 typedef unsigned long __ULong;
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 1 3
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/lock.h" 3
 typedef int _LOCK_T;
 typedef int _LOCK_RECURSIVE_T;
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 2 3
 typedef _LOCK_RECURSIVE_T _flock_t;
 
 
@@ -337,7 +337,7 @@ struct _on_exit_args {
 
  __ULong _is_cxa;
 };
-# 98 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _atexit {
  struct _atexit *_next;
  int _ind;
@@ -345,12 +345,12 @@ struct _atexit {
  void (*_fns[32])(void);
         struct _on_exit_args _on_exit_args;
 };
-# 122 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 122 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sbuf {
  unsigned char *_base;
  int _size;
 };
-# 186 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct __sFILE {
   unsigned char *_p;
   int _r;
@@ -401,7 +401,7 @@ struct __sFILE {
   _mbstate_t _mbstate;
   int _flags2;
 };
-# 292 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 292 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 typedef struct __sFILE __FILE;
 
 
@@ -412,7 +412,7 @@ struct _glue
   int _niobs;
   __FILE *_iobs;
 };
-# 324 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 324 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _rand48 {
   unsigned short _seed[3];
   unsigned short _mult[3];
@@ -422,7 +422,7 @@ struct _rand48 {
 
 
 };
-# 613 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 613 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 struct _reent
 {
   int _errno;
@@ -505,14 +505,14 @@ struct _reent
   __FILE __sf[3];
 
 };
-# 819 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
+# 819 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/reent.h" 3
 extern struct _reent *_impure_ptr ;
 extern struct _reent *const _global_impure_ptr ;
 
 void _reclaim_reent (struct _reent *);
-# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 1 3
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __uint8_t u_int8_t;
 
 
@@ -531,8 +531,8 @@ typedef __intptr_t register_t;
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 1 3
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h" 3
 typedef __int8_t int8_t ;
 
 
@@ -596,66 +596,66 @@ typedef __intptr_t intptr_t;
 
 
 typedef __uintptr_t uintptr_t;
-# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 1 3
 
 
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
-# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
-# 14 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_endian.h" 1 3
+# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/endian.h" 2 3
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 1 3
+# 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 1 3
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_sigset.h" 3
 typedef unsigned long __sigset_t;
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 1 3
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 typedef __suseconds_t suseconds_t;
 
 
 
 
 typedef __int_least64_t time_t;
-# 54 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h" 3
 struct timeval {
  time_t tv_sec;
  suseconds_t tv_usec;
 };
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
-# 38 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
-# 47 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 1 3
+# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 1 3
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h" 3
 struct timespec {
  time_t tv_sec;
  long tv_nsec;
 };
-# 39 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
-# 58 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
+# 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 2 3
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/timespec.h" 3
 struct itimerspec {
  struct timespec it_interval;
  struct timespec it_value;
 };
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 2 3
 
 
 
 typedef __sigset_t sigset_t;
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef unsigned long __fd_mask;
 
 typedef __fd_mask fd_mask;
-# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 typedef struct fd_set {
  __fd_mask __fds_bits[(((64) + ((((int)sizeof(__fd_mask) * 8)) - 1)) / (((int)sizeof(__fd_mask) * 8)))];
 } fd_set;
-# 74 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
+# 74 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/select.h" 3
 
 
 int select (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds, struct timeval *__timeout)
@@ -667,7 +667,7 @@ int pselect (int __n, fd_set *__readfds, fd_set *__writefds, fd_set *__exceptfds
 
 
 
-# 51 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
 
 
 
@@ -725,7 +725,7 @@ typedef __blksize_t blksize_t;
 
 
 typedef unsigned long clock_t;
-# 119 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 119 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef long daddr_t;
 
 
@@ -747,7 +747,7 @@ typedef __id_t id_t;
 
 
 typedef __ino_t ino_t;
-# 157 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 157 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __off_t off_t;
 
 
@@ -803,22 +803,22 @@ typedef __timer_t timer_t;
 
 
 typedef __useconds_t useconds_t;
-# 220 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
+# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 3
 typedef __int64_t sbintime_t;
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
-# 48 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 1 3
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 1 3
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 struct sched_param {
   int sched_priority;
-# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/sched.h" 3
 };
-# 24 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
-# 32 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 2 3
+# 32 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_t;
-# 61 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef struct {
   int is_initialized;
   void *stackaddr;
@@ -834,12 +834,12 @@ typedef struct {
 
   int detachstate;
 } pthread_attr_t;
-# 154 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 154 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
 typedef __uint32_t pthread_mutex_t;
 
 typedef struct {
   int is_initialized;
-# 168 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
+# 168 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_pthreadtypes.h" 3
   int recursive;
 } pthread_mutexattr_t;
 
@@ -868,10 +868,10 @@ typedef struct {
   int is_initialized;
   int init_executed;
 } pthread_once_t;
-# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
-# 225 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
-# 62 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 224 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/types.h" 1 3
+# 225 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h" 2 3
+# 62 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
 
 
 
@@ -889,9 +889,9 @@ typedef _fpos_t fpos_t;
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
-# 80 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
-# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stdio.h" 1 3
+# 80 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 2 3
+# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 char * ctermid (char *);
 
 
@@ -959,7 +959,7 @@ int sprintf (char *restrict, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 int remove (const char *);
 int rename (const char *, const char *);
-# 257 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 257 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int fseeko (FILE *, off_t, int);
 off_t ftello (FILE *);
 
@@ -1033,7 +1033,7 @@ int vsiscanf (const char *, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__scanf__, 2, 0)));
 int vsniprintf (char *, size_t, const char *, __gnuc_va_list)
                __attribute__ ((__format__ (__printf__, 3, 0)));
-# 339 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 339 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE * fdopen (int, const char *);
 
 int fileno (FILE *);
@@ -1060,7 +1060,7 @@ int ftrylockfile (FILE *);
 void funlockfile (FILE *);
 int putc_unlocked (int, FILE *);
 int putchar_unlocked (int);
-# 374 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 374 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int dprintf (int, const char *restrict, ...)
                __attribute__ ((__format__ (__printf__, 2, 3)));
 
@@ -1074,7 +1074,7 @@ int vdprintf (int, const char *restrict, __gnuc_va_list)
 
 
 int renameat (int, const char *, int, const char *);
-# 396 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 396 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int _asiprintf_r (struct _reent *, char **, const char *, ...)
                __attribute__ ((__format__ (__printf__, 3, 4)));
 char * _asniprintf_r (struct _reent *, char *, size_t *, const char *, ...)
@@ -1228,10 +1228,10 @@ size_t fwrite_unlocked (const void *restrict , size_t _size, size_t _n, FILE *);
 
 char * fgets_unlocked (char *restrict, int, FILE *restrict);
 int fputs_unlocked (const char *restrict, FILE *restrict);
-# 577 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 577 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 int __srget_r (struct _reent *, FILE *);
 int __swbuf_r (struct _reent *, int, FILE *);
-# 601 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 601 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 FILE *funopen (const void *__cookie,
   int (*__readfn)(void *__cookie, char *__buf,
     int __n),
@@ -1246,7 +1246,7 @@ FILE *_funopen_r (struct _reent *, const void *__cookie,
      int __n),
   fpos_t (*__seekfn)(void *__cookie, fpos_t __off, int __whence),
   int (*__closefn)(void *__cookie));
-# 624 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 624 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 typedef ssize_t cookie_read_function_t(void *__cookie, char *__buf, size_t __n);
 typedef ssize_t cookie_write_function_t(void *__cookie, const char *__buf,
      size_t __n);
@@ -1270,7 +1270,7 @@ FILE *fopencookie (void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
 FILE *_fopencookie_r (struct _reent *, void *__cookie,
   const char *__mode, cookie_io_functions_t __functions);
-# 687 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 687 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
 
 
@@ -1281,7 +1281,7 @@ static __inline__ int __sputc_r(struct _reent *_ptr, int _c, FILE *_p) {
  else
   return (__swbuf_r(_ptr, _c, _p));
 }
-# 741 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 741 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 static __inline int
 _getchar_unlocked(void)
 {
@@ -1299,25 +1299,25 @@ _putchar_unlocked(int _c)
  _ptr = _impure_ptr;
  return (__sputc_r(_ptr, _c, ((_ptr)->_stdout)));
 }
-# 797 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
+# 797 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h" 3
 
-# 2 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 1 3
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
-# 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 1 3
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_locale.h" 3
 struct __locale_t;
 typedef struct __locale_t *locale_t;
-# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
-# 44 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 1 3
+# 44 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/strings.h" 3
 
 
 int bcmp(const void *, const void *, size_t) __attribute__((__pure__));
@@ -1349,7 +1349,7 @@ int strcasecmp_l (const char *, const char *, locale_t);
 int strncasecmp_l (const char *, const char *, size_t, locale_t);
 
 
-# 25 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
 
@@ -1423,7 +1423,7 @@ char *_strndup_r (struct _reent *, const char *, size_t);
 
 
 char *strerror_r (int, char *, size_t);
-# 112 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 112 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char * _strerror_r (struct _reent *, int, int, int *);
 
 
@@ -1455,12 +1455,12 @@ char *strsignal (int __signo);
 
 
 int strverscmp (const char *, const char *);
-# 172 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
+# 172 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 3
 char *__attribute__((__nonnull__ (1))) basename (const char *) __asm__("" "__gnu_basename");
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 1 3
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/string.h" 3
 static __inline unsigned long __libc_detect_null(unsigned long w)
 {
   unsigned long mask = 0x7f7f7f7f;
@@ -1468,17 +1468,17 @@ static __inline unsigned long __libc_detect_null(unsigned long w)
     mask = ((mask << 16) << 16) | mask;
   return ~(((w & mask) + mask) | w | mask);
 }
-# 176 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
+# 176 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h" 2 3
 
 
-# 3 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 1
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 2
+# 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 1
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 2
 
 
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 struct utils_list_hdr
 {
     struct utils_list_hdr *next;
@@ -1491,45 +1491,45 @@ struct utils_list
 
     struct utils_list_hdr *last;
 };
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_init(struct utils_list *list);
-# 54 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_pool_init(struct utils_list *list, void *pool, size_t elmt_size, unsigned int elmt_cnt, void *default_value);
-# 64 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_push_back(struct utils_list *list,
                        struct utils_list_hdr *list_hdr);
-# 75 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 75 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_push_front(struct utils_list *list, struct utils_list_hdr *list_hdr);
-# 85 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 85 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 struct utils_list_hdr *utils_list_pop_front(struct utils_list *list);
-# 98 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_extract(struct utils_list *list, struct utils_list_hdr *list_hdr);
-# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 110 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 int utils_list_find(struct utils_list *list, struct utils_list_hdr *list_hdr);
-# 127 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 127 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_insert(struct utils_list * const list, struct utils_list_hdr * const element,
         int (*cmp)(struct utils_list_hdr const *elementA,
         struct utils_list_hdr const *elementB));
-# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_insert_after(struct utils_list * const list, struct utils_list_hdr * const prev_element, struct utils_list_hdr * const element);
-# 161 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_insert_before(struct utils_list * const list, struct utils_list_hdr * const next_element, struct utils_list_hdr * const element);
-# 173 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 173 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_concat(struct utils_list *list1, struct utils_list *list2);
-# 189 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 void utils_list_remove(struct utils_list *list, struct utils_list_hdr *prev_element, struct utils_list_hdr *element);
-# 199 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 199 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline int utils_list_is_empty(const struct utils_list *const list)
 {
     return (
-# 201 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
            ((void *)0) 
-# 201 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
                 == list->first);
 }
-# 213 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 213 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 unsigned int utils_list_cnt(const struct utils_list *const list);
-# 224 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 224 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline struct utils_list_hdr *utils_list_pick(const struct utils_list *const list)
 {
     return list->first;
@@ -1544,7 +1544,7 @@ static inline struct utils_list_hdr *utils_list_next(const struct utils_list_hdr
 {
     return list_hdr->next;
 }
-# 259 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 259 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 typedef struct utils_dlist_s {
     struct utils_dlist_s *prev;
     struct utils_dlist_s *next;
@@ -1558,7 +1558,7 @@ static inline void __utils_dlist_add(utils_dlist_t *node, utils_dlist_t *prev, u
     prev->next = node;
     next->prev = node;
 }
-# 284 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline void utils_dlist_add(utils_dlist_t *node, utils_dlist_t *queue)
 {
     __utils_dlist_add(node, queue, queue->next);
@@ -1593,7 +1593,7 @@ static inline int utils_dlist_empty(const utils_dlist_t *head)
 {
     return head->next == head;
 }
-# 413 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 413 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline int utils_dlist_entry_number(utils_dlist_t *queue)
 {
  int num;
@@ -1603,7 +1603,7 @@ static inline int utils_dlist_entry_number(utils_dlist_t *queue)
 
  return num;
 }
-# 441 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 441 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 typedef struct utils_slist_s {
     struct utils_slist_s *next;
 } utils_slist_t;
@@ -1633,9 +1633,9 @@ static inline void utils_slist_append(utils_slist_t *l, utils_slist_t *n)
 
     node->next = n;
     n->next = 
-# 469 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
+# 469 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h" 3 4
              ((void *)0)
-# 469 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 469 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
                  ;
 }
 
@@ -1677,7 +1677,7 @@ static inline utils_slist_t* utils_slist_next(utils_slist_t *l)
 {
     return l->next;
 }
-# 591 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+# 591 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 static inline int utils_slist_entry_number(utils_slist_t *queue)
 {
  int num;
@@ -1687,55 +1687,55 @@ static inline int utils_slist_entry_number(utils_slist_t *queue)
 
     return num;
 }
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 1
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
-# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h" 1
-# 400 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 1
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h" 1
+# 400 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
 extern int bl_rand();
-# 413 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
+# 413 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/config/lwipopts.h"
 void *sys_thread_sem_get(void);
 void sys_thread_sem_init(void);
 void sys_thread_sem_deinit(void);
-# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 1
-# 40 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 1
-# 48 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h" 1
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cpu.h" 1
-# 36 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h" 2
+# 52 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 1
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 1
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h" 1
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cpu.h" 1
+# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/lwip-port/arch/cc.h" 2
 
 typedef int sys_prot_t;
-# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
-# 83 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
-# 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 1 3
+# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/ieeefp.h" 1 3
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
-# 21 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/stdlib.h" 1 3
+# 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
-# 33 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/alloca.h" 1 3
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 2 3
+# 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 
 
 
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 typedef struct
 {
   int quot;
@@ -1914,7 +1914,7 @@ void * _reallocf_r (struct _reent *, void *, size_t);
 int setenv (const char *__string, const char *__value, int __overwrite);
 
 int _setenv_r (struct _reent *, const char *__string, const char *__value, int __overwrite);
-# 224 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 224 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 char * __itoa (int, char *, int);
 char * __utoa (unsigned, char *, int);
 
@@ -2001,7 +2001,7 @@ void __eprintf (const char *, const char *, unsigned int, const char *);
 
 
 void qsort_r (void *__base, size_t __nmemb, size_t __size, int (*_compar)(const void *, const void *, void *), void *__thunk);
-# 322 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
+# 322 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h" 3
 extern long double _strtold_r (struct _reent *, const char *restrict, char **restrict);
 
 extern long double strtold (const char *restrict, char **restrict);
@@ -2020,15 +2020,15 @@ __attribute__((__noreturn__)) void
 
 
 
-# 84 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
-# 107 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 108 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
-# 120 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
+# 84 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 108 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 120 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 1 3 4
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 1 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h" 3 4
 typedef signed char int8_t;
 
 
@@ -2088,14 +2088,14 @@ typedef unsigned int uintptr_t;
 
 typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
-# 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
-# 121 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
+# 121 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
 
 
 
 
 
-# 125 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 125 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
 typedef uint8_t u8_t;
 typedef int8_t s8_t;
 typedef uint16_t u16_t;
@@ -2107,11 +2107,11 @@ typedef uint64_t u64_t;
 typedef int64_t s64_t;
 
 typedef uintptr_t mem_ptr_t;
-# 148 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 1 3
-# 18 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 1 3
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 3
+# 148 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 1 3
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 1 3
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 3
        
        
        
@@ -2120,7 +2120,7 @@ typedef uintptr_t mem_ptr_t;
        
        
        
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 3
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_intsup.h" 3
        
        
        
@@ -2129,15 +2129,15 @@ typedef uintptr_t mem_ptr_t;
        
        
        
-# 19 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 2 3
+# 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 2 3
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 2 3
-# 312 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 2 3
+# 312 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
 
-# 312 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
+# 312 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/inttypes.h" 3
 typedef struct {
   intmax_t quot;
   intmax_t rem;
@@ -2165,42 +2165,42 @@ extern intmax_t strtoimax_l(const char *restrict, char **_restrict, int, locale_
 extern uintmax_t strtoumax_l(const char *restrict, char **_restrict, int, locale_t);
 extern intmax_t wcstoimax_l(const wchar_t *restrict, wchar_t **_restrict, int, locale_t);
 extern uintmax_t wcstoumax_l(const wchar_t *restrict, wchar_t **_restrict, int, locale_t);
-# 149 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
-# 185 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
+# 149 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 185 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 1 3 4
 
 
 
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
-# 195 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 1 3 4
+# 195 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 3 4
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 1 3 4
 
 
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
-# 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
-# 196 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
-# 186 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
-# 203 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/syslimits.h" 1 3 4
+# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/limits.h" 2 3 4
+# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/syslimits.h" 2 3 4
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include-fixed/limits.h" 2 3 4
+# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 203 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
 
-# 203 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 203 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
 typedef int ssize_t;
-# 230 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 1 3
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 230 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 1 3
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 
 
 
-# 13 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 int isalnum (int __c);
 int isalpha (int __c);
 int iscntrl (int __c);
@@ -2246,27 +2246,27 @@ extern int toupper_l (int __c, locale_t __l);
 
 extern int isascii_l (int __c, locale_t __l);
 extern int toascii_l (int __c, locale_t __l);
-# 70 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 70 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 extern const char _ctype_[];
-# 114 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 114 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 static __inline const char *
 __locale_ctype_ptr_l(locale_t _l)
 {
  (void)_l;
  return _ctype_;
 }
-# 181 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
+# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/ctype.h" 3
 
-# 231 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 2
-# 53 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 2
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h" 1
-# 53 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+# 231 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/arch.h" 2
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 1
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/debug.h" 2
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/opt.h" 2
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h" 1
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
 
-# 53 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
 typedef enum {
 
   ERR_OK = 0,
@@ -2311,10 +2311,10 @@ typedef enum {
 
 
 typedef s8_t err_t;
-# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
+# 110 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/err.h"
 int err_to_errno(err_t err);
-# 43 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 2
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h" 2
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
 typedef enum {
 
 
@@ -2339,7 +2339,7 @@ typedef enum {
 
   PBUF_RAW = 0
 } pbuf_layer;
-# 145 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
 typedef enum {
 
 
@@ -2364,14 +2364,14 @@ typedef enum {
 
   PBUF_POOL = (0x0100 | 0x80 | 0x02)
 } pbuf_type;
-# 186 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
 struct pbuf {
 
   struct pbuf *next;
 
 
   void *payload;
-# 200 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+# 200 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
   u16_t tot_len;
 
 
@@ -2420,7 +2420,7 @@ struct pbuf_custom {
 
   pbuf_free_custom_fn custom_free_function;
 };
-# 272 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/pbuf.h"
 struct pbuf *pbuf_alloc(pbuf_layer l, u16_t length, pbuf_type type);
 struct pbuf *pbuf_alloc_reference(void *payload, u16_t length, pbuf_type type);
 
@@ -2466,30 +2466,30 @@ void pbuf_put_at(struct pbuf* p, u16_t offset, u8_t data);
 u16_t pbuf_memcmp(const struct pbuf* p, u16_t offset, const void* s2, u16_t n);
 u16_t pbuf_memfind(const struct pbuf* p, const void* mem, u16_t mem_len, u16_t start_offset);
 u16_t pbuf_strstr(const struct pbuf* p, const char* substr);
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h" 1
-
-
-
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 1
-# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h" 1
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h" 1
 
 
 
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 1
+# 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 1
-# 24 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 1
-# 25 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 26 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
-# 27 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h" 1
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
+
+
+
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 1
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 1
+# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h" 1 3 4
+# 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h" 1
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_type.h"
 typedef void* BL_Timer_t;
 typedef void* BL_TaskHandle_t;
 typedef void* BL_Sem_t;
@@ -2498,8 +2498,8 @@ typedef void* BL_MessageQueue_t;
 typedef void* BL_EventGroup_t;
 typedef void* BL_TimeOut_t;
 typedef uint32_t BL_TickType_t;
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 2
-# 48 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h" 2
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_adapter.h"
 struct bl_ops_funcs
 {
     int _version;
@@ -2573,9 +2573,9 @@ struct bl_ops_funcs
 typedef struct bl_ops_funcs bl_ops_funcs_t;
 
 extern bl_ops_funcs_t g_bl_ops_funcs;
-# 25 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h" 1
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h"
+# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h" 1
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h"
 typedef enum _bl_os_log_leve
 {
     LOG_LEVEL_ALL = 0,
@@ -2586,10 +2586,10 @@ typedef enum _bl_os_log_leve
     LOG_LEVEL_ASSERT,
     LOG_LEVEL_NEVER,
 } bl_os_log_level_t;
-# 26 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_system.h" 1
-# 27 "/home/dinhquangha/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 2
-# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h" 2
+# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_system.h" 1
+# 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_private.h" 2
+# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h" 2
 
 
 typedef enum wifi_fw_task_id
@@ -2650,7 +2650,7 @@ typedef enum mm_state_tag
 
     MM_STATE_MAX
 } mm_state_tag_t;
-# 81 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+# 81 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
 typedef enum wifi_fw_event_id
 {
 
@@ -2974,7 +2974,7 @@ typedef enum wifi_fw_event_id
 
     SM_MAX,
 } ke_msg_id_t;
-# 454 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
+# 454 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi/include/bl60x_fw_api.h"
 void bl60x_fw_xtal_capcode_set(uint8_t cap_in, uint8_t cap_out, uint8_t enable, uint8_t cap_in_max, uint8_t cap_out_max);
 void bl60x_fw_xtal_capcode_update(uint8_t cap_in, uint8_t cap_out);
 void bl60x_fw_xtal_capcode_restore(void);
@@ -3092,20 +3092,20 @@ struct sm_connect_tlv_desc {
     uint16_t len;
     uint8_t data[0];
 };
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_compat.h" 1
-# 21 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h" 1
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h" 2
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_compat.h" 1
+# 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h" 1
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h" 2
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
 typedef uint8_t u8_l;
 typedef int8_t s8_l;
 typedef 
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h" 3 4
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h" 3 4
        _Bool 
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_types.h"
             bool_l;
 typedef uint16_t u16_l;
 typedef int16_t s16_l;
@@ -3126,9 +3126,9 @@ typedef uint16_t __le16;
 
 typedef uint32_t __be32;
 typedef uint16_t __be16;
-# 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 1
-# 118 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+# 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 1
+# 118 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
 struct mac_addr
 {
 
@@ -3342,19 +3342,19 @@ struct mac_ts_info
     u8 tsid;
     u8 user_priority;
     
-# 330 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
+# 330 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
    _Bool 
-# 330 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+# 330 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
              aggregation;
     
-# 331 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
+# 331 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
    _Bool 
-# 331 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+# 331 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
              apsd;
     
-# 332 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
+# 332 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
    _Bool 
-# 332 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+# 332 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
              schedule;
 };
 
@@ -3405,9 +3405,9 @@ struct mac_scan_result
     u8 sec_ch_oft;
     struct mac_twenty_fourty_bss twenty_fourty_bss;
     
-# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
+# 381 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h" 3 4
    _Bool 
-# 381 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
+# 381 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_mac.h"
         valid_flag;
     u8 rssi;
 };
@@ -3546,8 +3546,8 @@ extern const u8 mac_id2rate[];
 extern const u16 mac_mcs_params_20[];
 
 extern const u16 mac_mcs_params_40[];
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
-# 111 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h" 2
+# 111 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
 struct hostdesc
 {
 
@@ -3586,7 +3586,7 @@ struct hostdesc
 struct txdesc_host
 {
     uint32_t ready;
-# 159 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
+# 159 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
     struct hostdesc host;
 
     uint32_t pad_txdesc[204/4];
@@ -3602,7 +3602,7 @@ struct phy_channel_info
 
     uint32_t info2;
 };
-# 183 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
+# 183 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_shared.h"
 struct ipc_e2a_msg
 {
     ke_msg_id_t id;
@@ -3634,7 +3634,7 @@ struct ipc_shared_env_tag
 };
 
 extern struct ipc_shared_env_tag ipc_shared_env;
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h" 2
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h" 2
 
 enum ipc_host_desc_status
 {
@@ -3649,7 +3649,7 @@ enum ipc_host_desc_status
 
     IPC_HOST_DESC_LEN_UPDATE,
 };
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
 struct ipc_host_cb_tag
 {
 
@@ -3762,21 +3762,21 @@ void ipc_host_txdesc_push(struct ipc_host_env_tag *env, void *host_id);
 void ipc_host_irq(struct ipc_host_env_tag *env, uint32_t status);
 void ipc_host_enable_irq(struct ipc_host_env_tag *env, uint32_t value);
 void ipc_host_disable_irq(struct ipc_host_env_tag *env, uint32_t value);
-# 159 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
+# 159 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
 int ipc_host_msgbuf_push(struct ipc_host_env_tag *env, void *hostid, uint32_t hostbuf);
 
 void ipc_host_patt_addr_push(struct ipc_host_env_tag *env, uint32_t addr);
-# 179 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
+# 179 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
 int ipc_host_rxbuf_push(struct ipc_host_env_tag *env, uint32_t hostid, uint32_t hostbuf);
-# 196 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
+# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.h"
 int ipc_host_rxdesc_push(struct ipc_host_env_tag *env, void *hostid, uint32_t hostbuf);
 int ipc_host_txdesc_left(struct ipc_host_env_tag *env, const int queue_idx, const int user_pos);
-# 7 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h" 1
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_access.h" 1
-# 18 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h" 2
-# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h" 1
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_access.h" 1
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h" 2
+# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_app2emb_trigger_get()
 {
     return (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000000)));
@@ -3786,20 +3786,20 @@ static inline void ipc_app2emb_trigger_set(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000000)) = value);
 }
-# 66 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_app2emb_trigger_getf()
 {
     u32 localVal = (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000000)));
-    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 69, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 69, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     return (localVal >> 0);
 }
 
 static inline void ipc_app2emb_trigger_setf(u32 app2embtrigger)
 {
-    do { if (!((((u32)app2embtrigger << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 75, __FUNCTION__, "(((u32)app2embtrigger << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((((u32)app2embtrigger << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 75, __FUNCTION__, "(((u32)app2embtrigger << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000000)) = (u32)app2embtrigger << 0);
 }
-# 92 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 92 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_rawstatus_get()
 {
     return (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000001)));
@@ -3809,14 +3809,14 @@ static inline void ipc_emb2app_rawstatus_set(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000001)) = value);
 }
-# 109 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 109 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_rawstatus_getf()
 {
     u32 localVal = (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000001)));
-    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 112, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 112, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     return (localVal >> 0);
 }
-# 129 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 129 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_ack_get()
 {
     return (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000002)));
@@ -3826,20 +3826,20 @@ static inline void ipc_emb2app_ack_clear(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000002)) = value);
 }
-# 146 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 146 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_ack_getf()
 {
     u32 localVal = (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000002)));
-    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 149, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 149, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     return (localVal >> 0);
 }
 
 static inline void ipc_emb2app_ack_clearf(u32 emb2appack)
 {
-    do { if (!((((u32)emb2appack << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 155, __FUNCTION__, "(((u32)emb2appack << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((((u32)emb2appack << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 155, __FUNCTION__, "(((u32)emb2appack << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000002)) = (u32)emb2appack << 0);
 }
-# 172 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 172 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_unmask_get()
 {
     return (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000003)));
@@ -3849,20 +3849,20 @@ static inline void ipc_emb2app_unmask_set(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000003)) = value);
 }
-# 189 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_unmask_getf()
 {
     u32 localVal = (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000003)));
-    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 192, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 192, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     return (localVal >> 0);
 }
 
 static inline void ipc_emb2app_unmask_setf(u32 emb2appunmask)
 {
-    do { if (!((((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 198, __FUNCTION__, "(((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 198, __FUNCTION__, "(((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000003)) = (u32)emb2appunmask << 0);
 }
-# 215 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 215 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline void ipc_emb2app_unmask_clear(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000004)) = value);
@@ -3871,10 +3871,10 @@ static inline void ipc_emb2app_unmask_clear(u32 value)
 
 static inline void ipc_emb2app_unmask_clearf(u32 emb2appunmask)
 {
-    do { if (!((((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 223, __FUNCTION__, "(((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 223, __FUNCTION__, "(((u32)emb2appunmask << 0) & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000004)) = (u32)emb2appunmask << 0);
 }
-# 240 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 240 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_status_get()
 {
     return (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000007)));
@@ -3884,14 +3884,14 @@ static inline void ipc_emb2app_status_set(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000007)) = value);
 }
-# 257 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 257 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_emb2app_status_getf()
 {
     u32 localVal = (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000007)));
-    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 260, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 260, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     return (localVal >> 0);
 }
-# 277 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 277 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_app_signature_get()
 {
       return (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000010)));
@@ -3901,24 +3901,24 @@ static inline void ipc_app_signature_set(u32 value)
 {
     (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000010)) = value);
 }
-# 294 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
+# 294 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h"
 static inline u32 ipc_app_signature_getf()
 {
     u32 localVal = (*(volatile u32*)((u8*)0x44000000 + 0x00800000 + 4*(0x00000010)));
-    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 297, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
+    do { if (!((localVal & ~((u32)0xFFFFFFFF)) == 0)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/reg_ipc_app.h", 297, __FUNCTION__, "(localVal & ~((u32)0xFFFFFFFF)) == 0"); } } while (0);
     return (localVal >> 0);
 }
-# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h" 1
+# 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h" 1
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h" 1
-# 61 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h" 1
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 struct list_head {
  struct list_head *next, *prev;
 };
-# 80 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 80 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 static inline void __list_add(struct list_head *new,
          struct list_head *prev,
          struct list_head *next)
@@ -3928,17 +3928,17 @@ static inline void __list_add(struct list_head *new,
  new->prev = prev;
  prev->next = new;
 }
-# 98 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 static inline void list_add(struct list_head *new, struct list_head *head)
 {
  __list_add(new, head, head->next);
 }
-# 111 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 111 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 static inline void list_add_tail(struct list_head *new, struct list_head *head)
 {
  __list_add(new, head->prev, head);
 }
-# 124 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 124 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 static inline void __list_del(struct list_head * prev, struct list_head * next)
 {
  next->prev = prev;
@@ -4026,7 +4026,7 @@ static inline void list_splice(struct list_head *list, struct list_head *head)
  if (!list_empty(list))
   __list_splice(list, head);
 }
-# 219 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 219 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 static inline void list_splice_init(struct list_head *list,
         struct list_head *head)
 {
@@ -4035,7 +4035,7 @@ static inline void list_splice_init(struct list_head *list,
   do { (list)->next = (list); (list)->prev = (list); } while (0);
  }
 }
-# 374 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 374 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
 struct hlist_head {
  struct hlist_node *first;
 };
@@ -4081,13 +4081,13 @@ static inline void hlist_del_init(struct hlist_node *n)
  if (n->pprev) {
   __hlist_del(n);
   ((n)->next = 
-# 418 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h" 3 4
+# 418 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h" 3 4
  ((void *)0)
-# 418 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 418 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
  , (n)->pprev = 
-# 418 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h" 3 4
+# 418 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h" 3 4
  ((void *)0)
-# 418 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
+# 418 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/list.h"
  );
  }
 }
@@ -4124,27 +4124,27 @@ static inline void hlist_add_after(struct hlist_node *n,
  if(next->next)
   next->next->pprev = &next->next;
 }
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h" 2
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h" 2
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 1
-# 22 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h" 1
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 1
+# 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 1
-# 46 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 1
-# 41 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h" 1
-# 96 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 1
+# 46 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 1
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h" 1
+# 96 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
 u16_t lwip_htons(u16_t x);
 
 
 
 
 u32_t lwip_htonl(u32_t x);
-# 133 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
+# 133 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h"
 void lwip_itoa(char* result, size_t bufsize, int number);
 
 
@@ -4158,10 +4158,10 @@ int lwip_stricmp(const char* str1, const char* str2);
 
 
 char* lwip_strnstr(const char* buffer, const char* token, size_t n);
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h" 1
-# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h" 1
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
 struct ip4_addr {
   u32_t addr;
 };
@@ -4172,24 +4172,24 @@ typedef struct ip4_addr ip4_addr_t;
 
 
 struct netif;
-# 151 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+# 151 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
 u8_t ip4_addr_isbroadcast_u32(u32_t addr, const struct netif *netif);
 
 
 u8_t ip4_addr_netmask_valid(u32_t netmask);
-# 204 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
+# 204 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip4_addr.h"
 u32_t ipaddr_addr(const char *cp);
 int ip4addr_aton(const char *cp, ip4_addr_t *addr);
 
 char *ip4addr_ntoa(const ip4_addr_t *addr);
 char *ip4addr_ntoa_r(const ip4_addr_t *addr, char *buf, int buflen);
-# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h" 1
-# 46 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h" 1
-# 47 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h" 2
-# 45 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
-# 54 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+# 44 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h" 1
+# 46 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/def.h" 1
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6_addr.h" 2
+# 45 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h" 2
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
 enum lwip_ip_addr_type {
 
   IPADDR_TYPE_V4 = 0U,
@@ -4198,19 +4198,19 @@ enum lwip_ip_addr_type {
 
   IPADDR_TYPE_ANY = 46U
 };
-# 270 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+# 270 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
 typedef ip4_addr_t ip_addr_t;
-# 369 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
+# 369 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip_addr.h"
 extern const ip_addr_t ip_addr_any;
 extern const ip_addr_t ip_addr_broadcast;
-# 47 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 1
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h" 1
-# 67 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 1
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h" 1
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/mem.h"
 typedef u16_t mem_size_t;
 
 
@@ -4221,11 +4221,11 @@ void *mem_trim(void *mem, mem_size_t size);
 void *mem_malloc(mem_size_t size);
 void *mem_calloc(mem_size_t count, mem_size_t size);
 void mem_free(void *mem);
-# 43 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 1
-# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h" 1
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 1
+# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h" 1
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 
 
 
@@ -4241,18 +4241,16 @@ void mem_free(void *mem);
 
 
 
-# 67 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 
 
 
 
 
 
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 
-# 98 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
-
-
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 
 
 
@@ -4260,16 +4258,18 @@ void mem_free(void *mem);
 
 
 
-# 133 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 
 
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+# 133 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+
+
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
 
 
 typedef enum {
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h" 1
-# 42 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h" 1
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 MEMP_RAW_PCB,
 
 
@@ -4285,16 +4285,16 @@ MEMP_TCP_SEG,
 
 
 MEMP_ALTCP_PCB,
-# 67 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 MEMP_NETBUF,
 MEMP_NETCONN,
 
 
 
 MEMP_TCPIP_MSG_API,
-# 89 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 MEMP_TCPIP_MSG_INPKT,
-# 98 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 MEMP_IGMP_GROUP,
 
 
@@ -4304,18 +4304,18 @@ MEMP_SYS_TIMEOUT,
 
 
 MEMP_NETDB,
-# 133 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
+# 133 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_std.h"
 MEMP_PBUF,
 MEMP_PBUF_POOL,
-# 55 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+# 55 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
   MEMP_MAX
 } memp_t;
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h" 1
-# 48 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/mem_priv.h" 1
-# 49 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h" 2
-# 69 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h" 1
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/mem_priv.h" 1
+# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h" 2
+# 69 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
 struct memp {
   struct memp *next;
 
@@ -4323,7 +4323,7 @@ struct memp {
 
 
 };
-# 108 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+# 108 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
 struct memp_desc {
 
 
@@ -4348,7 +4348,7 @@ struct memp_desc {
   struct memp **tab;
 
 };
-# 147 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
+# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/priv/memp_priv.h"
 void memp_init_pool(const struct memp_desc *desc);
 
 
@@ -4358,12 +4358,12 @@ void memp_init_pool(const struct memp_desc *desc);
 void *memp_malloc_pool(const struct memp_desc *desc);
 
 void memp_free_pool(const struct memp_desc* desc, void *mem);
-# 59 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 1
-# 60 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+# 59 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 1
+# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h" 2
 
 extern const struct memp_desc* const memp_pools[MEMP_MAX];
-# 141 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
+# 141 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/memp.h"
 void memp_init(void);
 
 
@@ -4373,8 +4373,8 @@ void memp_init(void);
 void *memp_malloc(memp_t type);
 
 void memp_free(memp_t type, void *mem);
-# 44 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 2
-# 64 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+# 44 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h" 2
+# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
 struct stats_proto {
   u16_t xmit;
   u16_t recv;
@@ -4587,7 +4587,7 @@ struct stats_ {
 
 
   struct stats_sys sys;
-# 301 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+# 301 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
 };
 
 
@@ -4595,10 +4595,10 @@ extern struct stats_ lwip_stats;
 
 
 void stats_init(void);
-# 488 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
+# 488 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/stats.h"
 void stats_netstat(void *ctx);
-# 51 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h" 2
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 enum lwip_internal_netif_client_data_index
 {
 
@@ -4610,10 +4610,10 @@ enum lwip_internal_netif_client_data_index
 
 
    LWIP_NETIF_CLIENT_DATA_INDEX_IGMP,
-# 134 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 134 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
    LWIP_NETIF_CLIENT_DATA_INDEX_MAX
 };
-# 152 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 152 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 struct netif;
 
 
@@ -4631,12 +4631,12 @@ enum netif_mac_filter_action {
 
 
 typedef err_t (*netif_init_fn)(struct netif *netif);
-# 178 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef err_t (*netif_input_fn)(struct pbuf *p, struct netif *inp);
-# 189 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef err_t (*netif_output_fn)(struct netif *netif, struct pbuf *p,
        const ip4_addr_t *ipaddr);
-# 212 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 212 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef err_t (*netif_linkoutput_fn)(struct netif *netif, struct pbuf *p);
 
 typedef void (*netif_status_callback_fn)(struct netif *netif);
@@ -4644,11 +4644,11 @@ typedef void (*netif_status_callback_fn)(struct netif *netif);
 
 typedef err_t (*netif_igmp_mac_filter_fn)(struct netif *netif,
        const ip4_addr_t *group, enum netif_mac_filter_action action);
-# 228 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 228 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 u8_t netif_alloc_client_data_id(void);
-# 244 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 244 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef u8_t netif_addr_idx_t;
-# 260 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 260 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 struct netif {
 
 
@@ -4660,7 +4660,7 @@ struct netif {
   ip_addr_t ip_addr;
   ip_addr_t netmask;
   ip_addr_t gw;
-# 289 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 289 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
   netif_input_fn input;
 
 
@@ -4673,7 +4673,7 @@ struct netif {
 
 
   netif_linkoutput_fn linkoutput;
-# 311 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 311 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
   netif_status_callback_fn status_callback;
 
 
@@ -4722,9 +4722,9 @@ struct netif {
 
 
   u8_t rs_count;
-# 373 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 373 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
   netif_igmp_mac_filter_fn igmp_mac_filter;
-# 385 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
   struct pbuf *loop_first;
   struct pbuf *loop_last;
 
@@ -4732,7 +4732,7 @@ struct netif {
 
 
 };
-# 406 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 406 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 extern struct netif *netif_list;
 
 
@@ -4766,7 +4766,7 @@ void netif_set_default(struct netif *netif);
 void netif_set_ipaddr(struct netif *netif, const ip4_addr_t *ipaddr);
 void netif_set_netmask(struct netif *netif, const ip4_addr_t *netmask);
 void netif_set_gw(struct netif *netif, const ip4_addr_t *gw);
-# 457 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 457 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 void netif_set_up(struct netif *netif);
 void netif_set_down(struct netif *netif);
 
@@ -4788,7 +4788,7 @@ void netif_set_link_down(struct netif *netif);
 
 
 void netif_set_link_callback(struct netif *netif, netif_status_callback_fn link_callback);
-# 501 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 501 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 err_t netif_loop_output(struct netif *netif, struct pbuf *p);
 void netif_poll(struct netif *netif);
 
@@ -4797,13 +4797,13 @@ void netif_poll(struct netif *netif);
 
 
 err_t netif_input(struct pbuf *p, struct netif *inp);
-# 552 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 552 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 u8_t netif_name_to_index(const char *name);
 char * netif_index_to_name(u8_t idx, char *name);
 struct netif* netif_get_by_index(u8_t idx);
-# 565 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 565 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef u16_t netif_nsc_reason_t;
-# 595 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 595 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef union
 {
 
@@ -4845,18 +4845,18 @@ typedef union
     const ip_addr_t* address;
   } ipv6_addr_state_changed;
 } netif_ext_callback_args_t;
-# 645 "/home/dinhquangha/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
+# 645 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/netif.h"
 typedef void (*netif_ext_callback_fn)(struct netif* netif, netif_nsc_reason_t reason, const netif_ext_callback_args_t* args);
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 1
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
-# 35 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 2
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 1
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 2
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h" 1
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h" 1
-# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h" 1
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h" 1
+# 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 typedef void (*hosal_dma_irq_t)(void *p_arg, uint32_t flag);
 
 
@@ -4888,20 +4888,20 @@ typedef int hosal_dma_chan_t;
 
 
 int hosal_dma_init(void);
-# 72 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 hosal_dma_chan_t hosal_dma_chan_request(int flag);
-# 81 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 81 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 int hosal_dma_chan_release(hosal_dma_chan_t chan);
-# 90 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 90 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 int hosal_dma_chan_start(hosal_dma_chan_t chan);
-# 99 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 int hosal_dma_chan_stop(hosal_dma_chan_t chan);
-# 110 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 110 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 int hosal_dma_irq_callback_set(hosal_dma_chan_t chan, hosal_dma_irq_t pfn, void *p_arg);
-# 119 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+# 119 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
 int hosal_dma_finalize(void);
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h" 2
-# 29 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h" 2
+# 29 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 typedef enum __ADC_INT_EVENTS__{
     HOSAL_ADC_INT_OV,
     HOSAL_ADC_INT_EOS,
@@ -4963,33 +4963,33 @@ typedef struct {
 
 
 typedef void (*hosal_adc_cb_t)(hosal_adc_event_t event, void *data, uint32_t size);
-# 100 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_init(hosal_adc_dev_t *adc);
-# 112 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 112 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_add_channel(hosal_adc_dev_t *adc, uint32_t channel);
-# 124 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 124 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_remove_channel(hosal_adc_dev_t *adc, uint32_t channel);
-# 136 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 136 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_add_reference_channel(hosal_adc_dev_t *adc, uint32_t refer_channel, float refer_voltage);
-# 148 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 148 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_remove_reference_channel(hosal_adc_dev_t *adc);
-# 157 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 157 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 hosal_adc_dev_t *hosal_adc_device_get(void);
-# 170 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_value_get(hosal_adc_dev_t *adc, uint32_t channel, uint32_t timeout);
-# 181 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_tsen_value_get(hosal_adc_dev_t *adc);
-# 196 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_sample_cb_reg(hosal_adc_dev_t *adc, hosal_adc_cb_t cb);
-# 209 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_start(hosal_adc_dev_t *adc, void *data, uint32_t size);
-# 220 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_stop(hosal_adc_dev_t *adc);
-# 231 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
+# 231 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_adc.h"
 int hosal_adc_finalize(hosal_adc_dev_t *adc);
-# 37 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h" 1
-# 14 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h" 1
+# 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
 enum PM_EVENT_ABLE {
     PM_DISABLE = 0,
     PM_ENABLE,
@@ -5058,8 +5058,8 @@ int bl_pm_state_run(void);
 int bl_pm_capacity_set(enum PM_LEVEL level);
 int pm_post_event(enum PM_EVEMT event, uint32_t code, uint32_t *retval);
 int bl_pm_event_switch(enum PM_EVEMT event, uint32_t code, enum PM_EVENT_ABLE enable);
-# 38 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 2
-# 47 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h" 2
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 struct wifi_hosal_funcs
 {
   int (*efuse_read_mac)(uint8_t mac[6]);
@@ -5098,31 +5098,31 @@ static inline int hosal_wifi_ret_non_zero(void *arg)
 {
   return -1;
 }
-# 102 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_efuse_read_mac(uint8_t mac[6]);
-# 116 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_rf_turn_on(void *arg);
-# 130 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 130 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_rf_turn_off(void *arg);
-# 143 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 hosal_adc_dev_t* wifi_hosal_adc_device_get(void);
-# 157 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 157 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_adc_tsen_value_get(hosal_adc_dev_t *adc);
-# 171 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 171 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_init(void);
-# 183 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 183 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_event_register(enum PM_EVEMT event, uint32_t code, uint32_t cap_bit, uint16_t pirority, bl_pm_cb_t ops, void *arg, enum PM_EVENT_ABLE enable);
-# 195 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 195 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_deinit(void);
-# 207 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 207 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_state_run(void);
-# 219 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 219 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_capacity_set(enum PM_LEVEL level);
-# 231 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 231 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_post_event(enum PM_EVEMT event, uint32_t code, uint32_t *retval);
-# 243 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
+# 243 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_hosal/include/wifi_hosal.h"
 int wifi_hosal_pm_event_switch(enum PM_EVEMT event, uint32_t code, enum PM_EVENT_ABLE enable);
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h" 2
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h" 2
 
 
 
@@ -5171,7 +5171,7 @@ struct ap_connect_adv {
 
 
     struct ap_info ap_info;
-# 61 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/include/wifi_mgmr_ext.h"
     uint32_t flags;
 };
 
@@ -5396,8 +5396,8 @@ int wifi_mgmr_bcnind_auth_to_ext(int auth);
 int wifi_mgmr_bcnind_cipher_to_ext(int cipher);
 struct sm_connect_tlv_desc* wifi_mgmr_diagnose_tlv_get_ele(void);
 void wifi_mgmr_diagnose_tlv_free_ele(struct sm_connect_tlv_desc* ele);
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 2
-# 31 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 2
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
 enum mm_ps_mode_state
 {
     MM_PS_MODE_OFF,
@@ -5444,7 +5444,7 @@ enum mm_remain_on_channel_op
     MM_ROC_OP_START = 0,
     MM_ROC_OP_CANCEL,
 };
-# 86 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 86 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
 struct lmac_msg
 {
     ke_msg_id_t id;
@@ -6049,7 +6049,7 @@ struct mm_rssi_status_ind
 
     s8_l rssi;
 };
-# 708 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 708 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
 struct scan_chan_tag
 {
 
@@ -6086,9 +6086,9 @@ struct scan_start_req
     u8_l ssid_cnt;
 
     
-# 743 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
+# 743 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
    _Bool 
-# 743 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 743 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
         no_cck;
 };
 
@@ -6123,9 +6123,9 @@ struct scanu_start_req
     u8_l ssid_cnt;
 
     
-# 776 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
+# 776 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
    _Bool 
-# 776 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 776 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
         no_cck;
 
     uint32_t flags;
@@ -6409,9 +6409,9 @@ struct sm_connect_req
 
 
     
-# 1058 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
+# 1058 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
    _Bool 
-# 1058 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 1058 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
         is_supplicant_enabled;
 
     uint8_t phrase[64];
@@ -6605,9 +6605,9 @@ struct apm_start_req
     u8_l vif_idx;
 
     
-# 1250 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
+# 1250 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h" 3 4
    _Bool 
-# 1250 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
+# 1250 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/lmac_msg.h"
         apm_emb_enabled;
 
     struct mac_rateset rate_set;
@@ -6713,8 +6713,8 @@ struct apm_sta_del_ind
 
     uint8_t sta_idx;
 };
-# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h" 2
-# 33 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h"
+# 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h" 2
+# 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_cmds.h"
 struct bl_hw;
 struct bl_cmd;
 typedef int (*msg_cb_fct)(struct bl_hw *bl_hw, struct bl_cmd *cmd, struct ipc_e2a_msg *msg);
@@ -6756,27 +6756,27 @@ struct bl_cmd_mgr {
 };
 
 void bl_cmd_mgr_init(struct bl_cmd_mgr *cmd_mgr);
-# 9 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_utils.h" 1
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_utils.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 1
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/errno.h" 1
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/errno.h" 1
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 2
 
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 1
-# 15 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 1
-# 16 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 1
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 1
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 1
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 1
 
 
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 1
-# 173 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 1
+# 173 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
 enum ieee80211_reasoncode {
  WLAN_REASON_UNSPECIFIED = 1,
  WLAN_REASON_PREV_AUTH_NOT_VALID = 2,
@@ -6833,7 +6833,7 @@ enum ieee80211_reasoncode {
  WLAN_REASON_MESH_CHAN_REGULATORY = 65,
  WLAN_REASON_MESH_CHAN = 66,
 };
-# 239 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 239 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
 struct ieee80211_mcs_info {
  u8 rx_mask[10];
  __le16 rx_highest;
@@ -7026,9 +7026,9 @@ struct ieee80211_mgmt {
 
 
 static inline 
-# 430 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 430 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 430 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 430 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_beacon(__le16 fc)
 {
  return (fc & (0x000c | 0x00f0)) ==
@@ -7040,9 +7040,9 @@ static inline
 
 
 static inline 
-# 440 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 440 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 440 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 440 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_deauth(__le16 fc)
 {
  return (fc & (0x000c | 0x00f0)) ==
@@ -7054,9 +7054,9 @@ static inline
 
 
 static inline 
-# 450 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 450 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 450 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 450 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_disassoc(__le16 fc)
 {
  return (fc & (0x000c | 0x00f0)) ==
@@ -7068,9 +7068,9 @@ static inline
 
 
 static inline 
-# 460 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 460 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 460 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 460 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_action(__le16 fc)
 {
  return (fc & (0x000c | 0x00f0)) ==
@@ -7092,9 +7092,9 @@ static inline int ieee80211_is_probe_resp(__le16 fc)
 
 
 static inline 
-# 480 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 480 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 480 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 480 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_probe_req(__le16 fc)
 {
  return (fc & (0x000c | 0x00f0)) ==
@@ -7106,9 +7106,9 @@ static inline
 
 
 static inline 
-# 490 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 490 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 490 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 490 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_data(__le16 fc)
 {
  return (fc & (0x000c)) ==
@@ -7120,9 +7120,9 @@ static inline
 
 
 static inline 
-# 500 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
+# 500 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h" 3 4
              _Bool 
-# 500 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
+# 500 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ieee80211.h"
                   ieee80211_is_data_qos(__le16 fc)
 {
 
@@ -7132,9 +7132,9 @@ static inline
  return (fc & (0x000c | 0x0080)) ==
         (0x0008 | 0x0080);
 }
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h" 1
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h" 1
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
 enum nl80211_bss_select_attr {
  __NL80211_BSS_SELECT_ATTR_INVALID,
  NL80211_BSS_SELECT_ATTR_RSSI,
@@ -7145,7 +7145,7 @@ enum nl80211_bss_select_attr {
  __NL80211_BSS_SELECT_ATTR_AFTER_LAST,
  NL80211_BSS_SELECT_ATTR_MAX = __NL80211_BSS_SELECT_ATTR_AFTER_LAST - 1
 };
-# 45 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
+# 45 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
 enum nl80211_auth_type {
  NL80211_AUTHTYPE_OPEN_SYSTEM,
  NL80211_AUTHTYPE_SHARED_KEY,
@@ -7161,13 +7161,13 @@ enum nl80211_auth_type {
  NL80211_AUTHTYPE_MAX = __NL80211_AUTHTYPE_NUM - 1,
  NL80211_AUTHTYPE_AUTOMATIC
 };
-# 72 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
+# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
 enum nl80211_dfs_state {
  NL80211_DFS_USABLE,
  NL80211_DFS_UNAVAILABLE,
  NL80211_DFS_AVAILABLE,
 };
-# 86 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
+# 86 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
 enum nl80211_band {
  NL80211_BAND_2GHZ,
  NL80211_BAND_5GHZ,
@@ -7175,7 +7175,7 @@ enum nl80211_band {
 
  NUM_NL80211_BANDS,
 };
-# 123 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
+# 123 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/nl80211.h"
 enum nl80211_iftype {
  NL80211_IFTYPE_UNSPECIFIED,
  NL80211_IFTYPE_ADHOC,
@@ -7205,8 +7205,8 @@ enum nl80211_mfp {
  NL80211_MFP_NO,
  NL80211_MFP_REQUIRED,
 };
-# 5 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 2
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 2
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 enum ieee80211_channel_flags {
  IEEE80211_CHAN_DISABLED = 1<<0,
  IEEE80211_CHAN_NO_IR = 1<<1,
@@ -7222,7 +7222,7 @@ enum ieee80211_channel_flags {
  IEEE80211_CHAN_NO_20MHZ = 1<<11,
  IEEE80211_CHAN_NO_10MHZ = 1<<12,
 };
-# 58 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 struct ieee80211_channel {
  enum nl80211_band band;
  u16 center_freq;
@@ -7232,9 +7232,9 @@ struct ieee80211_channel {
  int max_power;
  int max_reg_power;
  
-# 66 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
 _Bool 
-# 66 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
      beacon_found;
  u32 orig_flags;
  int orig_mag, orig_mpwr;
@@ -7248,19 +7248,19 @@ struct ieee80211_dot_d {
     int channel_num;
     const struct ieee80211_channel *channels;
 };
-# 92 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 92 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 struct ieee80211_sta_ht_cap {
  u16 cap;
  
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
 _Bool 
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
      ht_supported;
  u8 ampdu_factor;
  u8 ampdu_density;
  struct ieee80211_mcs_info mcs;
 };
-# 147 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 enum wiphy_flags {
 
 
@@ -7287,7 +7287,7 @@ enum wiphy_flags {
  WIPHY_FLAG_HAS_CHANNEL_SWITCH = (0x1U << (23)),
  WIPHY_FLAG_HAS_STATIC_WEP = (0x1U << (24)),
 };
-# 187 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 187 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 struct key_params {
  const u8 *key;
  const u8 *seq;
@@ -7295,7 +7295,7 @@ struct key_params {
  int seq_len;
  u32 cipher;
 };
-# 216 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 216 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 struct cfg80211_crypto_settings {
  u32 wpa_versions;
  u32 cipher_group;
@@ -7304,15 +7304,15 @@ struct cfg80211_crypto_settings {
  int n_akm_suites;
  u32 akm_suites[2];
  
-# 223 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
+# 223 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
 _Bool 
-# 223 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 223 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
      control_port;
  __be16 control_port_ethertype;
  
-# 225 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
+# 225 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
 _Bool 
-# 225 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 225 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
      control_port_no_encrypt;
  struct key_params *wep_keys;
  int wep_tx_key;
@@ -7328,7 +7328,7 @@ struct cfg80211_bss_select_adjust {
  enum nl80211_band band;
  s8 delta;
 };
-# 249 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 249 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 struct cfg80211_bss_selection {
  enum nl80211_bss_select_attr behaviour;
  union {
@@ -7336,7 +7336,7 @@ struct cfg80211_bss_selection {
   struct cfg80211_bss_select_adjust adjust;
  } param;
 };
-# 302 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 302 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
 struct cfg80211_connect_params {
  struct ieee80211_channel channel;
  struct ieee80211_channel *channel_hint;
@@ -7348,9 +7348,9 @@ struct cfg80211_connect_params {
  const u8 *ie;
  size_t ie_len;
  
-# 312 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
+# 312 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
 _Bool 
-# 312 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 312 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
      privacy;
  enum nl80211_mfp mfp;
  struct cfg80211_crypto_settings crypto;
@@ -7362,55 +7362,55 @@ _Bool
  struct ieee80211_ht_cap ht_capa;
  struct ieee80211_ht_cap ht_capa_mask;
  
-# 322 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
+# 322 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h" 3 4
 _Bool 
-# 322 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
+# 322 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/cfg80211.h"
      pbss;
  struct cfg80211_bss_selection bss_select;
  const u8 *prev_bssid;
 };
-# 17 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 2
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 2
 
 struct bl_mod_params {
     
-# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 19 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         ht_on;
     
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         vht_on;
     int mcs_map;
     int phy_cfg;
     int uapsd_timeout;
     
-# 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 24 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         sgi;
     
-# 25 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 25 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         sgi80;
     
-# 26 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 26 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         use_2040;
     int listen_itv;
     
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 28 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         listen_bcmc;
     int lp_clk_ppm;
     
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h" 3 4
    _Bool 
-# 30 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_mod_params.h"
         ps_on;
     int tx_lft;
     int amsdu_maxnb;
@@ -7423,8 +7423,8 @@ struct bl_hw;
 void bl_enable_wapi(struct bl_hw *bl_hw);
 void bl_enable_mfp(struct bl_hw *bl_hw);
 int bl_handle_dynparams(struct bl_hw *bl_hw);
-# 8 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 2
-# 50 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
+# 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 2
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
 enum {
     SW_PROF_HOSTBUF_IDX = 12,
 
@@ -7462,7 +7462,7 @@ enum ieee80211_max_ampdu_length_exp {
     IEEE80211_HT_MAX_AMPDU_32K = 2,
     IEEE80211_HT_MAX_AMPDU_64K = 3
 };
-# 109 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
+# 109 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
 enum ieee80211_vht_mcs_support {
     IEEE80211_VHT_MCS_SUPPORT_0_7 = 0,
     IEEE80211_VHT_MCS_SUPPORT_0_8 = 1,
@@ -7536,7 +7536,7 @@ struct bl_sta {
     uint32_t tsflo;
     uint32_t tsfhi;
 };
-# 196 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
+# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
 struct bl_bcn {
     u8 *head;
     u8 *tail;
@@ -7558,9 +7558,9 @@ struct bl_vif {
     struct list_head list;
     struct netif *dev;
     
-# 216 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 3 4
+# 216 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h" 3 4
    _Bool 
-# 216 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
+# 216 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_defs.h"
         up;
 
     union
@@ -7638,8 +7638,8 @@ enum
 
     PHY_CHNL_BW_OTHER,
 };
-# 4 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_utils.h" 2
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_utils.h"
+# 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_utils.h" 2
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_utils.h"
 struct bl_e2amsg_elem {
     struct ipc_e2a_msg *msgbuf_ptr;
     u32 dma_addr;
@@ -7665,20 +7665,20 @@ int bl_ipc_init(struct bl_hw *bl_hw, struct ipc_shared_env_tag *ipc_shared_mem);
 uint32_t* bl_utils_pbuf_alloc(void);
 void bl_utils_pbuf_free(uint32_t *p);
 int bl_utils_idx_lookup(struct bl_hw *bl_hw, uint8_t *mac);
-# 10 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 1 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h" 1
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
+# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h" 1
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
 typedef void (*bl_custom_tx_callback_t)(void *cb_arg, 
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h" 3 4
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h" 3 4
                                                      _Bool 
-# 20 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
+# 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
                                                           tx_ok);
 
 struct bl_custom_tx_cfm {
     bl_custom_tx_callback_t cb;
     void *cb_arg;
 };
-# 34 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
 union bl_hw_txstatus {
     struct {
         u32 tx_done : 1;
@@ -7698,15 +7698,15 @@ struct bl_txhdr {
 
 err_t bl_output(struct bl_hw *bl_hw, struct netif *netif, struct pbuf *p, int is_sta, struct bl_custom_tx_cfm *custom_cfm);
 int bl_wifi_eth_tx(struct pbuf *p, 
-# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h" 3 4
+# 52 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h" 3 4
                                   _Bool 
-# 52 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
+# 52 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/bl_tx.h"
                                        is_sta, struct bl_custom_tx_cfm *custom_cfm);
 int bl_txdatacfm(void *pthis, void *host_id);
 void bl_tx_try_flush();
 void bl_irq_handler();
-# 11 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
-# 23 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 2
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
 extern struct utils_list tx_list_bl;
 
 static const int nx_txdesc_cnt[] =
@@ -7745,7 +7745,7 @@ extern int internel_cal_size_tx_hdr;
 
      ;
     utils_list_init(&tx_list_bl);
-# 86 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
+# 86 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
     memset(env, 0, sizeof(struct ipc_host_env_tag));
 
 
@@ -7779,8 +7779,8 @@ int ipc_host_msg_push(struct ipc_host_env_tag *env, void *msg_buf, uint16_t len)
 
     do{ }while(0);
 
-    do { if (!(!env->msga2e_hostid)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 119, __FUNCTION__, "!env->msga2e_hostid"); } } while (0);
-    do { if (!(((((len)-1) | ((__typeof__(len))((4)-1)))+1) <= sizeof(env->shared->msg_a2e_buf.msg))) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 120, __FUNCTION__, "((((len)-1) | ((__typeof__(len))((4)-1)))+1) <= sizeof(env->shared->msg_a2e_buf.msg)"); } } while (0);
+    do { if (!(!env->msga2e_hostid)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 119, __FUNCTION__, "!env->msga2e_hostid"); } } while (0);
+    do { if (!(((((len)-1) | ((__typeof__(len))((4)-1)))+1) <= sizeof(env->shared->msg_a2e_buf.msg))) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 120, __FUNCTION__, "((((len)-1) | ((__typeof__(len))((4)-1)))+1) <= sizeof(env->shared->msg_a2e_buf.msg)"); } } while (0);
 
 
 
@@ -7836,13 +7836,13 @@ static void ipc_host_msgack_handler(struct ipc_host_env_tag *env)
 {
     void *hostid = env->msga2e_hostid;
 
-    do { if (!(hostid)) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 176, __FUNCTION__, "hostid"); } } while (0);
-    do { if (!(env->msga2e_cnt == (((struct lmac_msg *)(&env->shared->msg_a2e_buf.msg))->src_id & 0xFF))) { g_bl_ops_funcs._assert("/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 177, __FUNCTION__, "env->msga2e_cnt == (((struct lmac_msg *)(&env->shared->msg_a2e_buf.msg))->src_id & 0xFF)"); } } while (0);
+    do { if (!(hostid)) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 176, __FUNCTION__, "hostid"); } } while (0);
+    do { if (!(env->msga2e_cnt == (((struct lmac_msg *)(&env->shared->msg_a2e_buf.msg))->src_id & 0xFF))) { g_bl_ops_funcs._assert("/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c", 177, __FUNCTION__, "env->msga2e_cnt == (((struct lmac_msg *)(&env->shared->msg_a2e_buf.msg))->src_id & 0xFF)"); } } while (0);
 
     env->msga2e_hostid = 
-# 179 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 3 4
+# 179 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 3 4
                         ((void *)0)
-# 179 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
+# 179 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
                             ;
     env->msga2e_cnt++;
     env->cb.recv_msgack_ind(env->pthis, hostid);
@@ -7956,9 +7956,9 @@ volatile struct txdesc_host *ipc_host_txdesc_get(struct ipc_host_env_tag *env)
     else
     {
         txdesc_free = 
-# 291 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 3 4
+# 291 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c" 3 4
                      ((void *)0)
-# 291 "/home/dinhquangha/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
+# 291 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/wifi_manager/bl60x_wifi_driver/ipc_host.c"
                          ;
     }
     do {} while(0);

@@ -11,7 +11,7 @@
 	.type	EF_Ctrl_Get_Byte_Zero_Cnt, @function
 EF_Ctrl_Get_Byte_Zero_Cnt:
 .LFB35:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c"
 	.loc 1 885 1
 	.cfi_startproc
 .LVL0:
@@ -65,7 +65,7 @@ EF_Ctrl_Get_Byte_Zero_Cnt:
 	.cfi_endproc
 .LFE35:
 	.size	EF_Ctrl_Get_Byte_Zero_Cnt, .-EF_Ctrl_Get_Byte_Zero_Cnt
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c138,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c138,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Program_Efuse_0
 	.type	EF_Ctrl_Program_Efuse_0, @function
@@ -133,7 +133,7 @@ EF_Ctrl_Program_Efuse_0:
 	.cfi_endproc
 .LFE9:
 	.size	EF_Ctrl_Program_Efuse_0, .-EF_Ctrl_Program_Efuse_0
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c265,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c265,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Busy
 	.type	EF_Ctrl_Busy, @function
@@ -170,7 +170,7 @@ EF_Ctrl_Busy:
 	.cfi_endproc
 .LFE11:
 	.size	EF_Ctrl_Busy, .-EF_Ctrl_Busy
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c102,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c102,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Sw_AHB_Clk_0
 	.type	EF_Ctrl_Sw_AHB_Clk_0, @function
@@ -242,7 +242,7 @@ EF_Ctrl_Sw_AHB_Clk_0:
 	.cfi_endproc
 .LFE8:
 	.size	EF_Ctrl_Sw_AHB_Clk_0, .-EF_Ctrl_Sw_AHB_Clk_0
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c288,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c288,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_AutoLoad_Done
 	.type	EF_Ctrl_AutoLoad_Done, @function
@@ -715,7 +715,7 @@ EF_Ctrl_Write_Secure_Boot:
 	.cfi_endproc
 .LFE21:
 	.size	EF_Ctrl_Write_Secure_Boot, .-EF_Ctrl_Write_Secure_Boot
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c611,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c611,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Get_Trim_Parity
 	.type	EF_Ctrl_Get_Trim_Parity, @function
@@ -2250,7 +2250,7 @@ EF_Ctrl_Read_R0:
 	.cfi_endproc
 .LFE58:
 	.size	EF_Ctrl_Read_R0, .-EF_Ctrl_Read_R0
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c1748,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c1748,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Clear
 	.type	EF_Ctrl_Clear, @function
@@ -2321,7 +2321,7 @@ EF_Ctrl_Clear:
 	.cfi_endproc
 .LFE59:
 	.size	EF_Ctrl_Clear, .-EF_Ctrl_Clear
-	.section	.tcm_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c199,"ax",@progbits
+	.section	.tcm_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c199,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Load_Efuse_R0
 	.type	EF_Ctrl_Load_Efuse_R0, @function
@@ -2983,7 +2983,7 @@ EF_Ctrl_Read_Ana_Trim:
 	.cfi_endproc
 .LFE26:
 	.size	EF_Ctrl_Read_Ana_Trim, .-EF_Ctrl_Read_Ana_Trim
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c681,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c681,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Read_RC32M_Trim
 	.type	EF_Ctrl_Read_RC32M_Trim, @function
@@ -3054,7 +3054,7 @@ EF_Ctrl_Read_RC32M_Trim:
 	.cfi_endproc
 .LFE27:
 	.size	EF_Ctrl_Read_RC32M_Trim, .-EF_Ctrl_Read_RC32M_Trim
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c706,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c706,"ax",@progbits
 	.align	1
 	.weak	EF_Ctrl_Read_RC32K_Trim
 	.type	EF_Ctrl_Read_RC32K_Trim, @function
@@ -3127,7 +3127,7 @@ EF_Ctrl_Read_RC32K_Trim:
 	.cfi_endproc
 .LFE28:
 	.size	EF_Ctrl_Read_RC32K_Trim, .-EF_Ctrl_Read_RC32K_Trim
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c729,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c729,"ax",@progbits
 	.align	1
 	.globl	EF_Ctrl_Read_TSEN_Trim
 	.type	EF_Ctrl_Read_TSEN_Trim, @function
@@ -3226,7 +3226,7 @@ EF_Ctrl_Read_TSEN_Trim:
 	.cfi_endproc
 .LFE29:
 	.size	EF_Ctrl_Read_TSEN_Trim, .-EF_Ctrl_Read_TSEN_Trim
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c758,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c758,"ax",@progbits
 	.align	1
 	.globl	EF_Ctrl_Read_ADC_Gain_Trim
 	.type	EF_Ctrl_Read_ADC_Gain_Trim, @function
@@ -5278,9 +5278,9 @@ EF_Ctrl_Crc_Result:
 	.size	EF_Ctrl_Crc_Result, .-EF_Ctrl_Crc_Result
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1dd2
@@ -6112,7 +6112,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF82
 	.byte	0x1
 	.2byte	0x6d4
-	.byte	0xa6
+	.byte	0xad
 	.4byte	.LFB59
 	.4byte	.LFE59-.LFB59
 	.byte	0x1
@@ -6122,14 +6122,14 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF84
 	.byte	0x1
 	.2byte	0x6d4
-	.byte	0xbd
+	.byte	0xc4
 	.4byte	0x8a
 	.4byte	.LLST77
 	.byte	0x11
 	.string	"len"
 	.byte	0x1
 	.2byte	0x6d4
-	.byte	0xcd
+	.byte	0xd4
 	.4byte	0x8a
 	.4byte	.LLST78
 	.byte	0x12
@@ -7925,7 +7925,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF134
 	.byte	0x1
 	.2byte	0x2f6
-	.byte	0xac
+	.byte	0xb3
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
 	.byte	0x1
@@ -7935,7 +7935,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF111
 	.byte	0x1
 	.2byte	0x2f6
-	.byte	0xe3
+	.byte	0xea
 	.4byte	0x1656
 	.4byte	.LLST103
 	.byte	0xd
@@ -7959,7 +7959,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF135
 	.byte	0x1
 	.2byte	0x2d9
-	.byte	0xac
+	.byte	0xb3
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
 	.byte	0x1
@@ -7969,7 +7969,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF111
 	.byte	0x1
 	.2byte	0x2d9
-	.byte	0xe4
+	.byte	0xeb
 	.4byte	0x16a8
 	.4byte	.LLST101
 	.byte	0xd
@@ -7993,7 +7993,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF136
 	.byte	0x1
 	.2byte	0x2c2
-	.byte	0xac
+	.byte	0xb3
 	.4byte	.LFB28
 	.4byte	.LFE28-.LFB28
 	.byte	0x1
@@ -8003,7 +8003,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF111
 	.byte	0x1
 	.2byte	0x2c2
-	.byte	0xe0
+	.byte	0xe7
 	.4byte	0x16fa
 	.4byte	.LLST99
 	.byte	0xd
@@ -8027,7 +8027,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF137
 	.byte	0x1
 	.2byte	0x2a9
-	.byte	0xac
+	.byte	0xb3
 	.4byte	.LFB27
 	.4byte	.LFE27-.LFB27
 	.byte	0x1
@@ -8037,7 +8037,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF111
 	.byte	0x1
 	.2byte	0x2a9
-	.byte	0xe0
+	.byte	0xe7
 	.4byte	0x174c
 	.4byte	.LLST97
 	.byte	0xd
@@ -8130,7 +8130,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF140
 	.byte	0x1
 	.2byte	0x263
-	.byte	0xaf
+	.byte	0xb6
 	.4byte	0x7e
 	.4byte	.LFB24
 	.4byte	.LFE24-.LFB24
@@ -8141,14 +8141,14 @@ EF_Ctrl_Crc_Result:
 	.string	"val"
 	.byte	0x1
 	.2byte	0x263
-	.byte	0xd0
+	.byte	0xd7
 	.4byte	0x8a
 	.4byte	.LLST21
 	.byte	0x2a
 	.string	"len"
 	.byte	0x1
 	.2byte	0x263
-	.byte	0xdc
+	.byte	0xe3
 	.4byte	0x7e
 	.byte	0x1
 	.byte	0x5b
@@ -8606,7 +8606,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF158
 	.byte	0x1
 	.2byte	0x120
-	.byte	0xac
+	.byte	0xb3
 	.4byte	0xea
 	.4byte	.LFB12
 	.4byte	.LFE12-.LFB12
@@ -8625,7 +8625,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF159
 	.byte	0x1
 	.2byte	0x109
-	.byte	0xac
+	.byte	0xb3
 	.4byte	0xea
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
@@ -8644,7 +8644,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF160
 	.byte	0x1
 	.byte	0xc7
-	.byte	0xa5
+	.byte	0xac
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
 	.byte	0x1
@@ -8694,7 +8694,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF162
 	.byte	0x1
 	.byte	0x8a
-	.byte	0xa5
+	.byte	0xac
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
 	.byte	0x1
@@ -8721,7 +8721,7 @@ EF_Ctrl_Crc_Result:
 	.4byte	.LASF163
 	.byte	0x1
 	.byte	0x66
-	.byte	0xa5
+	.byte	0xac
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
 	.byte	0x1
@@ -13812,8 +13812,6 @@ EF_Ctrl_Crc_Result:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF169:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c"
 .LASF69:
 	.string	"Efuse_Device_Info_Type"
 .LASF50:
@@ -13838,8 +13836,8 @@ EF_Ctrl_Crc_Result:
 	.string	"EF_Ctrl_Write_Sw_Usage"
 .LASF36:
 	.string	"EF_CTRL_PARA_MANUAL"
-.LASF170:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF79:
+	.string	"tmpVal"
 .LASF35:
 	.string	"EF_CTRL_PARA_DFT"
 .LASF112:
@@ -13868,8 +13866,8 @@ EF_Ctrl_Crc_Result:
 	.string	"adcGainCoeff"
 .LASF92:
 	.string	"program"
-.LASF62:
-	.string	"rsvd"
+.LASF80:
+	.string	"EF_Ctrl_Crc_Set_Golden"
 .LASF71:
 	.string	"parity"
 .LASF95:
@@ -13974,6 +13972,8 @@ EF_Ctrl_Crc_Result:
 	.string	"Efuse_TxPower_Info_Type"
 .LASF120:
 	.string	"machigh"
+.LASF170:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF136:
 	.string	"EF_Ctrl_Read_RC32K_Trim"
 .LASF164:
@@ -14002,8 +14002,6 @@ EF_Ctrl_Crc_Result:
 	.string	"EF_Ctrl_Sec_Param_Type"
 .LASF163:
 	.string	"EF_Ctrl_Sw_AHB_Clk_0"
-.LASF80:
-	.string	"EF_Ctrl_Crc_Set_Golden"
 .LASF97:
 	.string	"EF_Ctrl_Write_AES_Key"
 .LASF22:
@@ -14046,8 +14044,8 @@ EF_Ctrl_Crc_Result:
 	.string	"BL_Sts_Type"
 .LASF23:
 	.string	"EF_Ctrl_Sign_Type"
-.LASF79:
-	.string	"tmpVal"
+.LASF62:
+	.string	"rsvd"
 .LASF67:
 	.string	"mcuInfo"
 .LASF38:
@@ -14090,6 +14088,8 @@ EF_Ctrl_Crc_Result:
 	.string	"EF_Ctrl_Write_PowerOffset_Opt"
 .LASF85:
 	.string	"pEfuseStart0"
+.LASF169:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_ef_ctrl.c"
 .LASF5:
 	.string	"short unsigned int"
 .LASF117:

@@ -11,7 +11,7 @@
 	.type	_ir_bloop_msg, @function
 _ir_bloop_msg:
 .LFB29:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_ir.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_ir.c"
 	.loc 1 38 1
 	.cfi_startproc
 .LVL0:
@@ -172,13 +172,13 @@ _ir_bloop_handler_holder.0:
 	.word	_ir_bloop_msg
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_ir.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/bloop/include/bloop.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_ir.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x549
@@ -1594,14 +1594,14 @@ _ir_bloop_handler_holder.0:
 	.string	"handlers"
 .LASF0:
 	.string	"unsigned int"
-.LASF68:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/loopset"
 .LASF65:
 	.string	"bl_enable_rx_int"
 .LASF17:
 	.string	"last"
 .LASF42:
 	.string	"bitmap_evt_async"
+.LASF68:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/loopset"
 .LASF44:
 	.string	"bitmap_msg"
 .LASF35:
@@ -1624,6 +1624,8 @@ _ir_bloop_handler_holder.0:
 	.string	"aos_post_event"
 .LASF9:
 	.string	"long unsigned int"
+.LASF67:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_ir.c"
 .LASF39:
 	.string	"handle"
 .LASF66:
@@ -1644,8 +1646,6 @@ _ir_bloop_handler_holder.0:
 	.string	"priority"
 .LASF54:
 	.string	"loop"
-.LASF67:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/loopset/src/loopset_ir.c"
 .LASF30:
 	.string	"arg2"
 .LASF19:

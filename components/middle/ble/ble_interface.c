@@ -136,10 +136,15 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
 
     printf("[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_ssid);
 
-
-    if(strcmp(temp_ssid, "test scan")==0){
-        test_ble_master();
-    }
+    /* Khi nhận được lệnh "test scan" thì CHUYỂN HẲN từ slave sang master:
+     *  - apps_ble_stop(): tắt toàn bộ BLE slave stack (bt_disable + controller_deinit)
+     *  - sau đó ble_start_master() sẽ khởi tạo lại stack cho central (ble_stack_start + HalBle)
+     */
+    // if (strcmp(temp_ssid, "test scan") == 0) {
+    //     apps_ble_stop();       /* shutdown BLE slave hoàn toàn */
+    //     aos_msleep(500);
+    //     ble_start_master();    /* khởi động lại stack ở chế độ master */
+    // }
 
     if (strcmp(temp_ssid, "1") == 0) {
         relay_on();
@@ -312,22 +317,29 @@ static void _ble_mtu_changed_cb(struct bt_conn *conn, int mtu)
     }
 }
 
-struct bt_conn *ble_get_conn_cur(void)
-{
-    return conn_cur;
-}
+// struct bt_conn *ble_get_conn_cur(void)
+// {
+//     return conn_cur;
+// }
 
-int ble_regist_conn(ble_gatt_conn_cb_t cb)
-{
-    conn_cb = cb;
-    return 0;
-}
+// int ble_regist_conn(ble_gatt_conn_cb_t cb)
+// {
+//     conn_cb = cb;
+//     return 0;
+// }
 
-int ble_regist_disconn(ble_gatt_conn_cb_t cb)
-{
-    disconn_cb = cb;
-    return 0;
-}
+// int ble_regist_disconn(ble_gatt_conn_cb_t cb)
+// {
+//     disconn_cb = cb;
+//     return 0;
+// }
+
+
+
+
+
+
+
 
 // static int ble_salve_conn_cb(struct bt_conn *conn, uint8_t code)
 // {

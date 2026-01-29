@@ -12,7 +12,7 @@
 	.type	bflb_platform_init_uart_debug_gpio, @function
 bflb_platform_init_uart_debug_gpio:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/platform_gpio.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/platform_gpio.c"
 	.loc 1 9 1
 	.cfi_startproc
 	.loc 1 10 5
@@ -158,10 +158,10 @@ bflb_platform_deinit_uart_debug_gpio:
 	.size	bflb_platform_deinit_uart_debug_gpio, .-bflb_platform_deinit_uart_debug_gpio
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_gpio.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x35a
@@ -895,6 +895,8 @@ bflb_platform_deinit_uart_debug_gpio:
 	.string	"GLB_UART_SIG_FUN_UART0_RTS"
 .LASF56:
 	.string	"GLB_UART_SIG_FUN_UART0_RXD"
+.LASF33:
+	.string	"GLB_GPIO_PIN_19"
 .LASF39:
 	.string	"gpioFun"
 .LASF37:
@@ -917,10 +919,10 @@ bflb_platform_deinit_uart_debug_gpio:
 	.string	"GLB_GPIO_PIN_17"
 .LASF32:
 	.string	"GLB_GPIO_PIN_18"
-.LASF33:
-	.string	"GLB_GPIO_PIN_19"
-.LASF69:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
+.LASF22:
+	.string	"GLB_GPIO_PIN_8"
+.LASF23:
+	.string	"GLB_GPIO_PIN_9"
 .LASF59:
 	.string	"GLB_UART_SIG_FUN_UART1_TXD"
 .LASF5:
@@ -961,14 +963,12 @@ bflb_platform_deinit_uart_debug_gpio:
 	.string	"GLB_GPIO_PIN_7"
 .LASF3:
 	.string	"short unsigned int"
-.LASF22:
-	.string	"GLB_GPIO_PIN_8"
-.LASF23:
-	.string	"GLB_GPIO_PIN_9"
 .LASF11:
 	.string	"char"
 .LASF4:
 	.string	"long int"
+.LASF69:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF7:
 	.string	"long unsigned int"
 .LASF40:
@@ -981,14 +981,14 @@ bflb_platform_deinit_uart_debug_gpio:
 	.string	"GLB_UART_SIG_6"
 .LASF19:
 	.string	"GLB_GPIO_PIN_5"
-.LASF68:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/platform_gpio.c"
 .LASF41:
 	.string	"pullType"
 .LASF63:
 	.string	"bflb_platform_init_uart_debug_gpio"
 .LASF57:
 	.string	"GLB_UART_SIG_FUN_UART1_RTS"
+.LASF68:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/platform_gpio.c"
 .LASF60:
 	.string	"GLB_UART_SIG_FUN_UART1_RXD"
 .LASF38:

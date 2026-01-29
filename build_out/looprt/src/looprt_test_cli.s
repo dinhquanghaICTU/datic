@@ -22,7 +22,7 @@
 	.type	cmd_looprt_test, @function
 cmd_looprt_test:
 .LFB26:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
 	.loc 1 14 1
 	.cfi_startproc
 .LVL0:
@@ -420,9 +420,9 @@ cmds_user:
 	.word	cmd_looprt_test_schedule_evt2
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/cli/cli/include/cli.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/include/looprt.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4bd
@@ -1745,6 +1745,8 @@ cmds_user:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
+.LASF28:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
 .LASF17:
 	.string	"cmd_looprt_test_evt_dump"
 .LASF22:
@@ -1769,22 +1771,20 @@ cmds_user:
 	.string	"looprt_evt_status_dump"
 .LASF11:
 	.string	"help"
-.LASF1:
-	.string	"unsigned char"
+.LASF29:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/looprt"
 .LASF30:
 	.string	"cli_command"
-.LASF28:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/bloop/looprt/src/looprt_test_cli.c"
 .LASF18:
 	.string	"cmd_looprt_test_evt"
 .LASF20:
 	.string	"cmd_looprt_test"
+.LASF1:
+	.string	"unsigned char"
 .LASF8:
 	.string	"unsigned int"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF29:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/looprt"
 .LASF32:
 	.string	"looprt_test_cli_init"
 .LASF19:

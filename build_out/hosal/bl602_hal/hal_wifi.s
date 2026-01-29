@@ -16,7 +16,7 @@
 	.type	hal_wifi_start_firmware_task, @function
 hal_wifi_start_firmware_task:
 .LFB22:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_wifi.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_wifi.c"
 	.loc 1 13 1
 	.cfi_startproc
 	.loc 1 14 5
@@ -77,11 +77,11 @@ wifi_fw_task.0:
 	.zero	104
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x2af
@@ -737,8 +737,8 @@ wifi_fw_task.0:
 	.string	"ucDummy19"
 .LASF23:
 	.string	"ucDummy7"
-.LASF40:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
+.LASF28:
+	.string	"pvDummy15_1"
 .LASF20:
 	.string	"xDummy3"
 .LASF5:
@@ -751,8 +751,6 @@ wifi_fw_task.0:
 	.string	"long long unsigned int"
 .LASF7:
 	.string	"uint8_t"
-.LASF28:
-	.string	"pvDummy15_1"
 .LASF35:
 	.string	"wifi_fw_task"
 .LASF29:
@@ -765,10 +763,14 @@ wifi_fw_task.0:
 	.string	"char"
 .LASF11:
 	.string	"StackType_t"
+.LASF39:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_wifi.c"
 .LASF2:
 	.string	"short int"
 .LASF31:
 	.string	"uxDummy20"
+.LASF40:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF27:
 	.string	"pvDummy15"
 .LASF8:
@@ -787,6 +789,4 @@ wifi_fw_task.0:
 	.string	"UBaseType_t"
 .LASF36:
 	.string	"bl_pm_init"
-.LASF39:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/hal_wifi.c"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

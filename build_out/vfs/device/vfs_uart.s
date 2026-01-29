@@ -24,7 +24,7 @@
 	.type	fdt32_to_cpu, @function
 fdt32_to_cpu:
 .LFB6:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt_env.h"
 	.loc 1 92 1
 	.cfi_startproc
 .LVL0:
@@ -77,7 +77,7 @@ fdt32_to_cpu:
 	.type	vfs_uart_open, @function
 vfs_uart_open:
 .LFB41:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/device/vfs_uart.c"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/device/vfs_uart.c"
 	.loc 2 88 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -2116,29 +2116,29 @@ inited.0:
 	.zero	1
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 12 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
-	.file 13 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
-	.file 14 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
-	.file 15 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
-	.file 16 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/device/vfs_uart.h"
-	.file 17 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
-	.file 18 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_types.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timeval.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_timespec.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/types.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/stat.h"
+	.file 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_dir.h"
+	.file 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_inode.h"
+	.file 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/yloop_types.h"
+	.file 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/device/vfs_uart.h"
+	.file 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h"
+	.file 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h"
 	.file 19 "<built-in>"
-	.file 20 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
-	.file 21 "/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/include/vfs_register.h"
-	.file 22 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
-	.file 23 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 24 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 25 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/stream_buffer.h"
+	.file 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdlib.h"
+	.file 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/include/vfs_register.h"
+	.file 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blfdt/inc/libfdt.h"
+	.file 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/stream_buffer.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1e5f
@@ -9084,6 +9084,8 @@ inited.0:
 	.string	"pin_tx"
 .LASF25:
 	.string	"char"
+.LASF238:
+	.string	"memset"
 .LASF236:
 	.string	"__uart_rx_irq"
 .LASF153:
@@ -9142,6 +9144,8 @@ inited.0:
 	.string	"mkdir"
 .LASF95:
 	.string	"closedir"
+.LASF271:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/fs/vfs/device/vfs_uart.c"
 .LASF142:
 	.string	"HOSAL_ODD_PARITY"
 .LASF53:
@@ -9254,8 +9258,6 @@ inited.0:
 	.string	"offset"
 .LASF203:
 	.string	"addr_prop"
-.LASF271:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/fs/vfs/device/vfs_uart.c"
 .LASF51:
 	.string	"st_nlink"
 .LASF35:
@@ -9320,8 +9322,8 @@ inited.0:
 	.string	"inited"
 .LASF227:
 	.string	"vfs_uart_close"
-.LASF238:
-	.string	"memset"
+.LASF272:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF207:
 	.string	"_feature_pin"
 .LASF146:
@@ -9380,8 +9382,6 @@ inited.0:
 	.string	"_uart_ioctrl_wait_read"
 .LASF192:
 	.string	"baudrate"
-.LASF272:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/vfs"
 .LASF239:
 	.string	"memcpy"
 .LASF154:

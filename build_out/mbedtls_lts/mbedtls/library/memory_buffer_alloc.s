@@ -117,8 +117,8 @@
 	.string	"unsigned int"
 .LASF5:
 	.string	"long unsigned int"
-.LASF4:
-	.string	"long int"
+.LASF10:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/memory_buffer_alloc.c"
 .LASF0:
 	.string	"signed char"
 .LASF3:
@@ -129,12 +129,12 @@
 	.string	"long long unsigned int"
 .LASF1:
 	.string	"unsigned char"
-.LASF10:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/mbedtls_lts/mbedtls/library/memory_buffer_alloc.c"
+.LASF4:
+	.string	"long int"
 .LASF9:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
+.LASF11:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 .LASF6:
 	.string	"long long int"
-.LASF11:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/mbedtls_lts"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

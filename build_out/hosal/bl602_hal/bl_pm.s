@@ -12,7 +12,7 @@
 	.type	pm_post_event, @function
 pm_post_event:
 .LFB37:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.c"
 	.loc 1 266 1
 	.cfi_startproc
 .LVL0:
@@ -317,7 +317,7 @@ pm_post_event:
 	.string	"p_node"
 	.align	2
 .LC1:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.c"
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.c"
 	.section	.text.bl_pm_event_register,"ax",@progbits
 	.align	1
 	.globl	bl_pm_event_register
@@ -468,7 +468,7 @@ bl_pm_event_register:
 	.loc 1 161 9
 .LBB100:
 .LBB101:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_list.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_list.h"
 	.loc 2 291 5
 	.loc 2 291 34 is_stmt 0
 	lw	a5,0(s2)
@@ -1378,15 +1378,15 @@ CSWTCH.70:
 	.byte	6
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/assert.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xeef
@@ -5267,8 +5267,6 @@ CSWTCH.70:
 	.string	"force_sleep"
 .LASF74:
 	.string	"cap_bit"
-.LASF117:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.c"
 .LASF95:
 	.string	"pm_set_state"
 .LASF80:
@@ -5345,8 +5343,6 @@ CSWTCH.70:
 	.string	"pti_pta_config"
 .LASF3:
 	.string	"size_t"
-.LASF118:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF55:
 	.string	"mac_idle"
 .LASF45:
@@ -5451,6 +5447,8 @@ CSWTCH.70:
 	.string	"PM_DISABLE"
 .LASF109:
 	.string	"vPortFree"
+.LASF117:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_pm.c"
 .LASF87:
 	.string	"pm_post_event"
 .LASF40:
@@ -5495,6 +5493,8 @@ CSWTCH.70:
 	.string	"WLAN_PM_EVENT_EXIT_SLEEP"
 .LASF70:
 	.string	"dlist_item"
+.LASF118:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF30:
 	.string	"PM_LEVEL"
 .LASF49:

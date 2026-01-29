@@ -11,7 +11,7 @@
 	.type	get_unaligned_le32, @function
 get_unaligned_le32:
 .LFB1:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_config.h"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_config.h"
 	.loc 1 73 1
 	.cfi_startproc
 .LVL0:
@@ -55,7 +55,7 @@ get_unaligned_le32:
 	.type	dec_vli, @function
 dec_vli:
 .LFB6:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_stream.c"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_stream.c"
 	.loc 2 188 1 is_stmt 1
 	.cfi_startproc
 .LVL2:
@@ -1843,12 +1843,12 @@ xz_dec_end:
 	.size	xz_dec_end, .-xz_dec_end
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_stream.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_private.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_stream.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_private.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xcaf
@@ -5004,8 +5004,6 @@ xz_dec_end:
 	.string	"XZ_CHECK_CRC64"
 .LASF71:
 	.string	"lzma2"
-.LASF104:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF31:
@@ -5062,8 +5060,6 @@ xz_dec_end:
 	.string	"unsigned int"
 .LASF18:
 	.string	"xz_ret"
-.LASF103:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_stream.c"
 .LASF6:
 	.string	"long unsigned int"
 .LASF105:
@@ -5088,6 +5084,8 @@ xz_dec_end:
 	.string	"SEQ_BLOCK_CHECK"
 .LASF80:
 	.string	"dec_stream_footer"
+.LASF104:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF96:
 	.string	"xz_dec_lzma2_create"
 .LASF75:
@@ -5194,6 +5192,8 @@ xz_dec_end:
 	.string	"dec_index"
 .LASF86:
 	.string	"dec_block"
+.LASF103:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/xz/xz_dec_stream.c"
 .LASF51:
 	.string	"SEQ_INDEX_CRC32"
 .LASF29:

@@ -12,7 +12,7 @@
 	.type	bl_sys_rstinfo_get, @function
 bl_sys_rstinfo_get:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.c"
 	.loc 1 29 1
 	.cfi_startproc
 	.loc 1 30 5
@@ -406,10 +406,10 @@ bl_sys_reset_por:
 	.loc 1 95 5
 .LBB20:
 .LBB21:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h"
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -453,7 +453,7 @@ bl_sys_reset_system:
 .LBB24:
 	.loc 2 94 3
  #APP
-# 94 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/RISCV/Core/Include/cmsis_compatible_gcc.h" 1
 	csrci mstatus, 8
 # 0 "" 2
  #NO_APP
@@ -623,7 +623,7 @@ bl_sys_early_init:
 	lui	a5,%hi(freertos_risc_v_trap_handler)
 	addi	a5,a5,%lo(freertos_risc_v_trap_handler)
  #APP
-# 177 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.c" 1
+# 177 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.c" 1
 	csrw mtvec, a5
 # 0 "" 2
 	.loc 1 180 5
@@ -729,14 +729,14 @@ sys_log_all_enable:
 	.byte	1
 	.text
 .Letext0:
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Device/Bouffalo/BL602/Peripherals/bl602.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_hbn.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_glb.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x669
@@ -2331,6 +2331,8 @@ sys_log_all_enable:
 	.string	"GLB_EM_0KB"
 .LASF68:
 	.string	"RST_REASON_ARRAY"
+.LASF103:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF62:
 	.string	"BL_RST_HARDWARE_WATCHDOG"
 .LASF3:
@@ -2409,6 +2411,8 @@ sys_log_all_enable:
 	.string	"byte"
 .LASF1:
 	.string	"BL_AHB_SLAVE1_RF"
+.LASF102:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.c"
 .LASF22:
 	.string	"BL_AHB_SLAVE1_IRR"
 .LASF48:
@@ -2447,8 +2451,6 @@ sys_log_all_enable:
 	.string	"sys_log_all_enable"
 .LASF51:
 	.string	"HBN_LDO_LEVEL_1P10V"
-.LASF102:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.c"
 .LASF37:
 	.string	"SUCCESS"
 .LASF20:
@@ -2465,8 +2467,6 @@ sys_log_all_enable:
 	.string	"bl_sys_logall_enable"
 .LASF28:
 	.string	"long int"
-.LASF103:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF99:
 	.string	"strlen"
 .LASF0:

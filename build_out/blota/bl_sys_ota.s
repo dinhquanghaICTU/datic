@@ -121,20 +121,20 @@
 	.string	"long unsigned int"
 .LASF9:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
-.LASF10:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c"
+.LASF11:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blota"
 .LASF7:
 	.string	"long long unsigned int"
 .LASF4:
 	.string	"unsigned char"
 .LASF2:
 	.string	"long int"
+.LASF10:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/sys/blota/bl_sys_ota.c"
 .LASF5:
 	.string	"short unsigned int"
 .LASF0:
 	.string	"signed char"
-.LASF11:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blota"
 .LASF1:
 	.string	"short int"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -12,7 +12,7 @@
 	.type	PtTable_Update_Entry, @function
 PtTable_Update_Entry:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_boot2.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_boot2.c"
 	.loc 1 11 1
 	.cfi_startproc
 .LVL0:
@@ -483,13 +483,13 @@ PtTable_Get_Active_Entries_By_Name:
 	.size	PtTable_Get_Active_Entries_By_Name, .-PtTable_Get_Active_Entries_By_Name
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_boot2.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sflash.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_boot2.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/soft_crc/softcrc.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_flash.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x9a3
@@ -2587,10 +2587,12 @@ PtTable_Get_Active_Entries_By_Name:
 	.section	.debug_str,"MS",@progbits,1
 .LASF114:
 	.string	"activeIndex"
-.LASF140:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_boot2.c"
+.LASF77:
+	.string	"deBurstWrapCmd"
 .LASF34:
 	.string	"blk64EraseCmd"
+.LASF141:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF110:
 	.string	"crc32"
 .LASF42:
@@ -2609,6 +2611,8 @@ PtTable_Get_Active_Entries_By_Name:
 	.string	"targetTableID"
 .LASF45:
 	.string	"fastReadDioCmd"
+.LASF57:
+	.string	"busyIndex"
 .LASF112:
 	.string	"type"
 .LASF86:
@@ -2631,8 +2635,8 @@ PtTable_Get_Active_Entries_By_Name:
 	.string	"pFlashCfg"
 .LASF54:
 	.string	"writeVregEnableCmd"
-.LASF57:
-	.string	"busyIndex"
+.LASF140:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_boot2.c"
 .LASF69:
 	.string	"enterQpi"
 .LASF124:
@@ -2695,8 +2699,6 @@ PtTable_Get_Active_Entries_By_Name:
 	.string	"resetCmd"
 .LASF6:
 	.string	"long unsigned int"
-.LASF77:
-	.string	"deBurstWrapCmd"
 .LASF87:
 	.string	"qeData"
 .LASF120:
@@ -2731,8 +2733,6 @@ PtTable_Get_Active_Entries_By_Name:
 	.string	"qeBit"
 .LASF41:
 	.string	"qpiFastReadCmd"
-.LASF141:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF52:
 	.string	"qpiFrQioDmyClk"
 .LASF108:

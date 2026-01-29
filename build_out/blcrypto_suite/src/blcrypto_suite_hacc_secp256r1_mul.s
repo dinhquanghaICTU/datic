@@ -19,7 +19,7 @@
 	.type	blcrypto_suite_hacc_secp256r1_mul_bin, @function
 blcrypto_suite_hacc_secp256r1_mul_bin:
 .LFB15:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc_secp256r1_mul.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc_secp256r1_mul.c"
 	.loc 1 424 1
 	.cfi_startproc
 .LVL0:
@@ -1815,9 +1815,9 @@ secp256r1_Zeroy:
 	.ascii	"\001"
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_sec_eng.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/Common/platform_print/bflb_platform.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1caf
@@ -8210,6 +8210,8 @@ secp256r1_Zeroy:
 	.section	.debug_str,"MS",@progbits,1
 .LASF13:
 	.string	"SEC_ENG_PKA_REG_SIZE_16"
+.LASF68:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc_secp256r1_mul.c"
 .LASF38:
 	.string	"result"
 .LASF56:
@@ -8244,8 +8246,8 @@ secp256r1_Zeroy:
 	.string	"secp256r1_1"
 .LASF44:
 	.string	"isOne"
-.LASF68:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_hacc_secp256r1_mul.c"
+.LASF24:
+	.string	"secp256r1N"
 .LASF47:
 	.string	"bflb_ecdsa_point_double"
 .LASF36:
@@ -8256,6 +8258,8 @@ secp256r1_Zeroy:
 	.string	"long long int"
 .LASF15:
 	.string	"SEC_ENG_PKA_REG_SIZE_64"
+.LASF69:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF11:
 	.string	"char"
 .LASF2:
@@ -8272,8 +8276,6 @@ secp256r1_Zeroy:
 	.string	"secp256r1_BAR8"
 .LASF4:
 	.string	"unsigned char"
-.LASF69:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF0:
 	.string	"signed char"
 .LASF14:
@@ -8312,8 +8314,6 @@ secp256r1_Zeroy:
 	.string	"long unsigned int"
 .LASF53:
 	.string	"bflb_ecc_basic_parameter_init"
-.LASF24:
-	.string	"secp256r1N"
 .LASF23:
 	.string	"secp256r1P"
 .LASF67:

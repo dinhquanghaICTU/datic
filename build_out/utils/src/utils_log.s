@@ -12,7 +12,7 @@
 	.type	bl_printk, @function
 bl_printk:
 .LFB5:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_log.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_log.c"
 	.loc 1 138 1
 	.cfi_startproc
 .LVL0:
@@ -481,13 +481,13 @@ log_buf:
 	.zero	512
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/utils/include/utils_log.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdarg.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x367
@@ -1801,16 +1801,12 @@ log_buf:
 	.string	"__uint8_t"
 .LASF37:
 	.string	"__builtin_va_list"
-.LASF36:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF5:
 	.string	"short unsigned int"
 .LASF19:
 	.string	"LOG_BUF_OUT_DATA_TYPE_T"
 .LASF14:
 	.string	"int8_t"
-.LASF35:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/utils/src/utils_log.c"
 .LASF17:
 	.string	"LOG_BUF_OUT_DATA_TYPE_INT8"
 .LASF24:
@@ -1831,8 +1827,8 @@ log_buf:
 	.string	"pbuffer"
 .LASF12:
 	.string	"va_list"
-.LASF29:
-	.string	"vprint"
+.LASF36:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/utils"
 .LASF11:
 	.string	"__gnuc_va_list"
 .LASF21:
@@ -1849,6 +1845,10 @@ log_buf:
 	.string	"line"
 .LASF31:
 	.string	"xPortIsInsideInterrupt"
+.LASF29:
+	.string	"vprint"
+.LASF35:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/src/utils_log.c"
 .LASF8:
 	.string	"long long int"
 .LASF16:

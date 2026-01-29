@@ -11,7 +11,7 @@
 	.type	ecp_get_type, @function
 ecp_get_type:
 .LFB9:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 	.loc 1 805 1
 	.cfi_startproc
 .LVL0:
@@ -8447,13 +8447,13 @@ init_done.0:
 	.zero	4
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_bignum.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_ecp.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/inc/blcrypto_suite/blcrypto_suite_platform_util.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4e0a
@@ -27430,8 +27430,6 @@ init_done.0:
 	.string	"t_pre"
 .LASF113:
 	.string	"blcrypto_suite_ecp_set_zero"
-.LASF162:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF8:
 	.string	"long long unsigned int"
 .LASF62:
@@ -27540,6 +27538,8 @@ init_done.0:
 	.string	"blcrypto_suite_ecp_tls_read_point"
 .LASF95:
 	.string	"curve_info"
+.LASF161:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 .LASF91:
 	.string	"ecp_modp"
 .LASF64:
@@ -27578,8 +27578,6 @@ init_done.0:
 	.string	"blcrypto_suite_mpi_sub_mpi"
 .LASF116:
 	.string	"blcrypto_suite_ecp_keypair_free"
-.LASF161:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/security/blcrypto_suite/src/blcrypto_suite_ecp.c"
 .LASF60:
 	.string	"lt_lower"
 .LASF78:
@@ -27606,6 +27604,8 @@ init_done.0:
 	.string	"init_done"
 .LASF112:
 	.string	"blcrypto_suite_ecp_is_zero"
+.LASF162:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/blcrypto_suite"
 .LASF101:
 	.string	"buf_len"
 .LASF164:

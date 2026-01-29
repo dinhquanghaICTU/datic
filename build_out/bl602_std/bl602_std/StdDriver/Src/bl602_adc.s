@@ -12,7 +12,7 @@
 	.type	ADC_Reset, @function
 ADC_Reset:
 .LFB8:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c"
 	.loc 1 107 1
 	.cfi_startproc
 	.loc 1 108 5
@@ -35,35 +35,35 @@ ADC_Reset:
 	sw	a3,-1780(a4)
 	.loc 1 113 6 is_stmt 1
  #APP
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 29
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 52
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 75
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 98
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 121
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 144
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 167
-# 113 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 113 191
@@ -2465,7 +2465,7 @@ TSEN_Get_V_Error:
 	.size	TSEN_Get_V_Error, .-TSEN_Get_V_Error
 	.globl	__subdf3
 	.globl	__adddf3
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c1073,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c1073,"ax",@progbits
 	.align	1
 	.globl	ADC_Trim_TSEN
 	.type	ADC_Trim_TSEN, @function
@@ -3230,7 +3230,7 @@ ADC_MIC_Bias_Disable:
 	.cfi_endproc
 .LFE36:
 	.size	ADC_MIC_Bias_Disable, .-ADC_MIC_Bias_Disable
-	.section	.sclock_rlt_code./home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c1331,"ax",@progbits
+	.section	.sclock_rlt_code./home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c1331,"ax",@progbits
 	.align	1
 	.globl	ADC_Gain_Trim
 	.type	ADC_Gain_Trim, @function
@@ -3503,35 +3503,35 @@ ADC_Init:
 	sw	a4,-1776(a1)
 	.loc 1 190 6 is_stmt 1
  #APP
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 29
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 52
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 75
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 98
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 121
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 144
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 167
-# 190 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
+# 190 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c" 1
 	nop
 # 0 "" 2
 	.loc 1 190 191
@@ -3759,10 +3759,10 @@ adcGainCoeffCal:
 	.word	1065353216
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_adc.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_common.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_adc.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Inc/bl602_ef_ctrl.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x1443
@@ -4886,7 +4886,7 @@ adcGainCoeffCal:
 	.4byte	.LASF181
 	.byte	0x1
 	.2byte	0x533
-	.byte	0xb0
+	.byte	0xb7
 	.4byte	0xde
 	.4byte	.LFB37
 	.4byte	.LFE37-.LFB37
@@ -5235,7 +5235,7 @@ adcGainCoeffCal:
 	.4byte	.LASF194
 	.byte	0x1
 	.2byte	0x431
-	.byte	0xb0
+	.byte	0xb7
 	.4byte	0xde
 	.4byte	.LFB30
 	.4byte	.LFE30-.LFB30
@@ -5246,7 +5246,7 @@ adcGainCoeffCal:
 	.4byte	.LASF187
 	.byte	0x1
 	.2byte	0x431
-	.byte	0xc9
+	.byte	0xd0
 	.4byte	0xc77
 	.4byte	.LLST44
 	.byte	0x1e
@@ -9285,6 +9285,8 @@ adcGainCoeffCal:
 	.string	"micBiasEn"
 .LASF161:
 	.string	"dmaEn"
+.LASF213:
+	.string	"orgVal"
 .LASF4:
 	.string	"int8_t"
 .LASF223:
@@ -9299,8 +9301,6 @@ adcGainCoeffCal:
 	.string	"ADC_INT_FIFO_OVERRUN"
 .LASF182:
 	.string	"ADC_Mic_Init"
-.LASF254:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF28:
 	.string	"BL_Mask_Type"
 .LASF125:
@@ -9429,8 +9429,8 @@ adcGainCoeffCal:
 	.string	"value"
 .LASF16:
 	.string	"char"
-.LASF213:
-	.string	"orgVal"
+.LASF254:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/bl602_std"
 .LASF202:
 	.string	"ADC_Vbat_Disable"
 .LASF109:
@@ -9529,6 +9529,8 @@ adcGainCoeffCal:
 	.string	"regVal"
 .LASF18:
 	.string	"ERROR"
+.LASF179:
+	.string	"ADC_MIC_Bias_Disable"
 .LASF243:
 	.string	"__extendsfdf2"
 .LASF84:
@@ -9617,8 +9619,8 @@ adcGainCoeffCal:
 	.string	"DISABLE"
 .LASF159:
 	.string	"ADC_INT_Type"
-.LASF179:
-	.string	"ADC_MIC_Bias_Disable"
+.LASF253:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c"
 .LASF241:
 	.string	"EF_Ctrl_Read_ADC_Gain_Trim"
 .LASF72:
@@ -9693,8 +9695,6 @@ adcGainCoeffCal:
 	.string	"ADC_PGA_VCM_1P2V"
 .LASF85:
 	.string	"ADC_CHOP_MOD_ALL_OFF"
-.LASF253:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/bl602_std/bl602_std/StdDriver/Src/bl602_adc.c"
 .LASF25:
 	.string	"BL_Sts_Type"
 .LASF186:

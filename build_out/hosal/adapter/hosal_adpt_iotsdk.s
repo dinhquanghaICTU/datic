@@ -12,7 +12,7 @@
 	.type	hosal_adpt_critical_enter, @function
 hosal_adpt_critical_enter:
 .LFB0:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/adapter/hosal_adpt_iotsdk.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/adapter/hosal_adpt_iotsdk.c"
 	.loc 1 6 1
 	.cfi_startproc
 	.loc 1 7 3
@@ -74,8 +74,8 @@ hosal_adpt_critical_exit:
 	.size	hosal_adpt_critical_exit, .-hosal_adpt_critical_exit
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0xe7
@@ -407,6 +407,8 @@ hosal_adpt_critical_exit:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF8:
 	.string	"unsigned int"
+.LASF14:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF15:
 	.string	"uintptr_t"
 .LASF6:
@@ -415,6 +417,8 @@ hosal_adpt_critical_exit:
 	.string	"long long unsigned int"
 .LASF4:
 	.string	"unsigned char"
+.LASF13:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/adapter/hosal_adpt_iotsdk.c"
 .LASF9:
 	.string	"char"
 .LASF11:
@@ -425,10 +429,6 @@ hosal_adpt_critical_exit:
 	.string	"vTaskExitCritical"
 .LASF17:
 	.string	"irq_state"
-.LASF13:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/platform/hosal/adapter/hosal_adpt_iotsdk.c"
-.LASF14:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/hosal"
 .LASF5:
 	.string	"short unsigned int"
 .LASF0:

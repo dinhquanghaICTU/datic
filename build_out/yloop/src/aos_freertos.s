@@ -11,7 +11,7 @@
 	.type	dfl_entry, @function
 dfl_entry:
 .LFB7:
-	.file 1 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/aos_freertos.c"
+	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/src/aos_freertos.c"
 	.loc 1 49 1
 	.cfi_startproc
 .LVL0:
@@ -2299,16 +2299,16 @@ aos_now_ms:
 	.size	aos_now_ms, .-aos_now_ms
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
-	.file 3 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
-	.file 4 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
-	.file 5 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
-	.file 6 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
-	.file 7 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
-	.file 8 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
-	.file 9 "/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 10 "/home/dinhquangha/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
-	.file 11 "/home/dinhquangha/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/machine/_default_types.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/sys/_stdint.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/portable/GCC/RISC-V/portmacro.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/task.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/queue.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/semphr.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/portable.h"
+	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x13cc
@@ -7299,8 +7299,6 @@ aos_now_ms:
 	.section	.debug_line,"",@progbits
 .Ldebug_line0:
 	.section	.debug_str,"MS",@progbits,1
-.LASF142:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF37:
 	.string	"StaticTask_t"
 .LASF132:
@@ -7485,6 +7483,8 @@ aos_now_ms:
 	.string	"ucDummy7"
 .LASF147:
 	.string	"aos_reboot"
+.LASF142:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/yloop"
 .LASF93:
 	.string	"aos_sem_signal"
 .LASF3:
@@ -7507,8 +7507,6 @@ aos_now_ms:
 	.string	"aos_task_new_ext"
 .LASF49:
 	.string	"aos_work_t"
-.LASF141:
-	.string	"/home/dinhquangha/Ai-Thinker-WB2/components/stage/yloop/src/aos_freertos.c"
 .LASF61:
 	.string	"work"
 .LASF80:
@@ -7587,6 +7585,8 @@ aos_now_ms:
 	.string	"overflow_count"
 .LASF101:
 	.string	"aos_mutex_unlock"
+.LASF141:
+	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/src/aos_freertos.c"
 .LASF78:
 	.string	"timer"
 .LASF52:
