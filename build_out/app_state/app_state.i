@@ -95,6 +95,10 @@ typedef enum {
     APP_EVENT_MQTT_SET_ON,
     APP_EVENT_MQTT_SET_OFF,
     APP_EVENT_RELAY_STATE_CHANGED,
+    APP_EVENT_MQTT_BLE_MASTER_START,
+    APP_EVENT_MQTT_BLE_MASTER_STOP,
+    APP_EVENT_MQTT_BLE_MASTER_CONNECT,
+    APP_EVENT_MQTT_BLE_MASTER_DISCONNECT,
     APP_EVENT_MAX
 } app_event_type_t;
 
@@ -111,6 +115,7 @@ typedef enum {
     APP_STATE_WIFI_CONNECTING,
     APP_STATE_WIFI_CONNECTED,
     APP_STATE_WIFI_FAILED,
+    APP_STATE_BLE_MASTER,
     APP_STATE_MAX
 } app_state_t;
 
@@ -2243,6 +2248,7 @@ static app_state_t state_ble_config_handler(app_event_t *event);
 static app_state_t state_wifi_connecting_handler(app_event_t *event);
 static app_state_t state_wifi_connected_handler(app_event_t *event);
 static app_state_t state_wifi_failed_handler(app_event_t *event);
+static app_state_t state_ble_master_handler(app_event_t *event);
 
 static app_state_handler_t state_handlers[APP_STATE_MAX] = {
     state_init_handler,
@@ -2250,7 +2256,8 @@ static app_state_handler_t state_handlers[APP_STATE_MAX] = {
     state_ble_config_handler,
     state_wifi_connecting_handler,
     state_wifi_connected_handler,
-    state_wifi_failed_handler
+    state_wifi_failed_handler,
+    state_ble_master_handler
 };
 
 void app_state_init(void)
@@ -2279,9 +2286,9 @@ void app_state_set_next(app_state_t next_state)
 app_state_t app_state_process_event(app_event_t *event)
 {
     if (event == 
-# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c" 3 4
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c" 3 4
                 ((void *)0)
-# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c"
                     ) {
         return g_state_machine.current_state;
     }
@@ -2368,4 +2375,14 @@ static app_state_t state_wifi_failed_handler(app_event_t *event)
         return APP_STATE_BLE_CONFIG;
     }
     return APP_STATE_WIFI_FAILED;
+}
+
+static app_state_t state_ble_master_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        ;
+        return APP_STATE_BLE_CONFIG;
+    }
+    ;
+    return APP_STATE_BLE_MASTER;
 }

@@ -1056,7 +1056,7 @@ sem_found:
 	.type	target_name, @object
 	.size	target_name, 8
 target_name:
-	.string	"VRemote"
+	.string	"HNNtest"
 	.text
 .Letext0:
 	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"

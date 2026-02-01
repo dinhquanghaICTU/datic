@@ -13,6 +13,7 @@ static app_state_t state_ble_config_handler(app_event_t *event);
 static app_state_t state_wifi_connecting_handler(app_event_t *event);
 static app_state_t state_wifi_connected_handler(app_event_t *event);
 static app_state_t state_wifi_failed_handler(app_event_t *event);
+static app_state_t state_ble_master_handler(app_event_t *event);
 
 static app_state_handler_t state_handlers[APP_STATE_MAX] = {
     state_init_handler,
@@ -20,7 +21,8 @@ static app_state_handler_t state_handlers[APP_STATE_MAX] = {
     state_ble_config_handler,
     state_wifi_connecting_handler,
     state_wifi_connected_handler,
-    state_wifi_failed_handler
+    state_wifi_failed_handler,
+    state_ble_master_handler
 };
 
 void app_state_init(void)
@@ -134,4 +136,14 @@ static app_state_t state_wifi_failed_handler(app_event_t *event)
         return APP_STATE_BLE_CONFIG;
     }
     return APP_STATE_WIFI_FAILED;
+}
+
+static app_state_t state_ble_master_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        blog_info("State: BLE_MASTER -> BLE_CONFIG (button hold)\r\n");
+        return APP_STATE_BLE_CONFIG;
+    }
+    blog_info("State: BLE_MASTER (scanning for ADV)\r\n");
+    return APP_STATE_BLE_MASTER;
 }

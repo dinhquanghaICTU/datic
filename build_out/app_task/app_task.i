@@ -2466,6 +2466,10 @@ typedef enum {
     APP_EVENT_MQTT_SET_ON,
     APP_EVENT_MQTT_SET_OFF,
     APP_EVENT_RELAY_STATE_CHANGED,
+    APP_EVENT_MQTT_BLE_MASTER_START,
+    APP_EVENT_MQTT_BLE_MASTER_STOP,
+    APP_EVENT_MQTT_BLE_MASTER_CONNECT,
+    APP_EVENT_MQTT_BLE_MASTER_DISCONNECT,
     APP_EVENT_MAX
 } app_event_type_t;
 
@@ -2589,6 +2593,7 @@ typedef enum {
     APP_STATE_WIFI_CONNECTING,
     APP_STATE_WIFI_CONNECTED,
     APP_STATE_WIFI_FAILED,
+    APP_STATE_BLE_MASTER,
     APP_STATE_MAX
 } app_state_t;
 
@@ -2615,29 +2620,16 @@ app_state_t app_state_process_event(app_event_t *event);
 
 
 
-
 int app_mqtt_init(void);
-
-
 int app_mqtt_start(const char *broker, int port, const char *client_id);
-
-
 int app_mqtt_stop(void);
 
-
-
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h" 3 4
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h" 3 4
 _Bool 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h"
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_mqtt.h"
     app_mqtt_is_connected(void);
-
-
 int app_mqtt_publish_state(const char *state);
-
-
 const char *app_mqtt_get_command_topic(void);
-
-
 const char *app_mqtt_get_state_topic(void);
 # 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../hardware/led/led.h" 1
@@ -2881,35 +2873,82 @@ int bl_sys_init(void);
 # 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 2
 
 
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h" 1
+
+
+
+
+
+
+typedef enum {
+    BLE_MASTER_MODE_SCAN_ADV = 0,
+    BLE_MASTER_MODE_CONNECT
+} ble_master_mode_t;
+
+typedef void (*app_ble_master_rx_cb_t)(const uint8_t *data, uint16_t len);
+typedef void (*app_ble_master_conn_cb_t)(
+# 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h" 3 4
+                                        _Bool 
+# 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h"
+                                             connected);
+typedef void (*app_ble_master_adv_state_cb_t)(uint8_t relay_state, int8_t rssi);
+
+int app_ble_master_init(void);
+int app_ble_master_start(void);
+int app_ble_master_stop(void);
+int app_ble_master_connect(const uint8_t *slave_mac);
+int app_ble_master_disconnect(void);
+
+# 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h" 3 4
+_Bool 
+# 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h"
+    app_ble_master_is_running(void);
+ble_master_mode_t app_ble_master_get_mode(void);
+
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h" 3 4
+_Bool 
+# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h"
+    app_ble_master_is_connected(void);
+
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h" 3 4
+_Bool 
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h"
+    app_ble_master_get_found_mac(uint8_t *mac_out);
+int app_ble_master_send_data(const uint8_t *data, uint16_t len);
+void app_ble_master_set_rx_cb(app_ble_master_rx_cb_t cb);
+void app_ble_master_set_conn_cb(app_ble_master_conn_cb_t cb);
+void app_ble_master_set_adv_state_cb(app_ble_master_adv_state_cb_t cb);
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 2
+
 
 static TaskHandle_t g_task_button_handle = 
-# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                           ((void *)0)
-# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                               ;
 static TaskHandle_t g_task_led_handle = 
-# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                        ((void *)0)
-# 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                            ;
 static TaskHandle_t g_task_wifi_handle = 
-# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                         ((void *)0)
-# 26 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                             ;
 static TaskHandle_t g_task_main_handle = 
-# 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 29 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                         ((void *)0)
-# 27 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 29 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                             ;
 static 
-# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
       _Bool 
-# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
            g_led_blink_enable = 
-# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                 0
-# 28 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                      ;
 uint8_t g_btn_filter_cnt = 1;
 
@@ -2921,24 +2960,24 @@ static uint32_t app_get_tick_ms(void)
 void app_task_init(void)
 {
     xTaskCreate(app_task_button, "btn_task", 2048, 
-# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                         ((void *)0)
-# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                             , 5, &g_task_button_handle);
     xTaskCreate(app_task_led, "led_task", 1024, 
-# 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                   ((void *)0)
-# 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                       , 4, &g_task_led_handle);
     xTaskCreate(app_task_wifi, "wifi_task", 4096, 
-# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                      ((void *)0)
-# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                          , 3, &g_task_wifi_handle);
     xTaskCreate(app_task_main, "main_task", 4096, 
-# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                      ((void *)0)
-# 41 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                          , 2, &g_task_main_handle);
 }
 
@@ -2957,14 +2996,14 @@ void app_task_button(void *params)
     btn_cfg.btn_count = 1;
     btn_cfg.get_tick_cb = app_get_tick_ms;
     btn_cfg.btn_initialize = 
-# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                             ((void *)0)
-# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                 ;
     btn_cfg.btn_read = 
-# 59 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                       ((void *)0)
-# 59 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                           ;
 
     bl_gpio_enable_input(4, 0, 0);
@@ -2972,21 +3011,21 @@ void app_task_button(void *params)
 
     app_btn_initialize(&btn_cfg);
     app_btn_register_callback(APP_BTN_EVT_HOLD, app_button_hold_callback, 
-# 65 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                          ((void *)0)
-# 65 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                              );
     app_btn_register_callback(APP_BTN_EVT_PRESSED, app_button_press_callback, 
-# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                              ((void *)0)
-# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                                  );
 
     while (1) {
         app_btn_scan(
-# 69 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                     ((void *)0)
-# 69 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                         );
         aos_msleep(20);
     }
@@ -3021,24 +3060,24 @@ void app_task_main(void *params)
 
     {
         extern int app_config_load_relay_settings(uint8_t *default_state, 
-# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                                          _Bool 
-# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                               *lock_button);
         extern void app_callback_update_lock_button(
-# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                    _Bool 
-# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                         locked);
         uint8_t default_state = 0;
         
-# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
        _Bool 
-# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
             lock_button = 
-# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                           0
-# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                ;
         if (app_config_load_relay_settings(&default_state, &lock_button) == 0) {
             if (default_state) {
@@ -3089,9 +3128,9 @@ void app_task_main(void *params)
         } else {
             event.type = APP_EVENT_NONE;
             event.data = 
-# 154 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 156 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                         ((void *)0)
-# 154 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 156 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                             ;
         }
 
@@ -3123,6 +3162,36 @@ void app_task_main(void *params)
             }
             event.type = APP_EVENT_NONE;
         }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_START) {
+            int ret = app_ble_master_init();
+            if (ret != 0) {
+                event.type = APP_EVENT_NONE;
+                continue;
+            }
+            ret = app_ble_master_start();
+            app_state_set_next(APP_STATE_BLE_MASTER);
+            event.type = APP_EVENT_NONE;
+        }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_STOP) {
+            ;
+            app_ble_master_stop();
+            app_state_set_next(APP_STATE_WIFI_CONNECTED);
+            event.type = APP_EVENT_NONE;
+        }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_CONNECT) {
+            ;
+            app_ble_master_connect(
+# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+                                  ((void *)0)
+# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+                                      );
+            event.type = APP_EVENT_NONE;
+        }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_DISCONNECT) {
+            ;
+            app_ble_master_disconnect();
+            event.type = APP_EVENT_NONE;
+        }
 
         switch (current_state) {
             case APP_STATE_CHECK_FLASH:
@@ -3144,13 +3213,13 @@ void app_task_main(void *params)
                 }
                 {
                     static 
-# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 233 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                           _Bool 
-# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 233 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                mqtt_connect_attempted = 
-# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 233 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                         0
-# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 233 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                              ;
                     static uint32_t mqtt_last_attempt = 0;
                     uint32_t now = aos_now_ms();
@@ -3158,31 +3227,31 @@ void app_task_main(void *params)
                     if (!mqtt_if_is_connected() && !mqtt_connect_attempted) {
                         const char *mqtt_broker = "172.20.10.3";
                         app_mqtt_start(mqtt_broker, 1883, 
-# 211 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 239 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                          ((void *)0)
-# 211 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 239 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                              );
                         mqtt_connect_attempted = 
-# 212 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 240 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                 1
-# 212 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 240 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                     ;
                         mqtt_last_attempt = now;
                     } else if (!mqtt_if_is_connected() && mqtt_connect_attempted) {
                         if (now - mqtt_last_attempt > 10000) {
                             const char *mqtt_broker = "172.20.10.3";
                             app_mqtt_start(mqtt_broker, 1883, 
-# 217 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 245 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                              ((void *)0)
-# 217 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 245 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                                  );
                             mqtt_last_attempt = now;
                         }
                     } else if (mqtt_if_is_connected()) {
                         mqtt_connect_attempted = 
-# 221 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 249 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                                                 0
-# 221 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 249 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                                                      ;
                     }
                 }
@@ -3190,6 +3259,14 @@ void app_task_main(void *params)
             case APP_STATE_WIFI_FAILED:
                 if (app_ble_is_running()) {
                     app_ble_stop();
+                }
+                break;
+            case APP_STATE_BLE_MASTER:
+
+                if (event.type == APP_EVENT_BUTTON_HOLD) {
+                    app_ble_master_stop();
+                    app_state_set_next(APP_STATE_BLE_CONFIG);
+                    event.type = APP_EVENT_NONE;
                 }
                 break;
             default:
@@ -3201,9 +3278,9 @@ void app_task_main(void *params)
 }
 
 void app_set_led_blink(
-# 238 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
+# 274 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c" 3 4
                       _Bool 
-# 238 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
+# 274 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.c"
                            enable)
 {
     g_led_blink_enable = enable;

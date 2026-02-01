@@ -398,11 +398,17 @@ int ble_adv_stop(void)
     return 0;
 }
 
+bool ble_is_enabled(void)
+{
+    return s_ble_enabled;
+}
+
 static void bt_enable_cb(int err)
 {
     printf("[BLE] bt_enable_cb called with err=%d\r\n", err);
     if (!err) {
         s_ble_enabled = true;
+        printf("[BLE] BLE stack enabled successfully!\r\n");
         printf("check stack ok \r\n");
         bt_addr_le_t bt_addr;
         bt_get_local_public_address(&bt_addr);

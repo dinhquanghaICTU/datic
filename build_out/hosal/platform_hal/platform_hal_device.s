@@ -10812,8 +10812,6 @@ platform_hal_device_init:
 	.string	"NULL __null"
 .LASF611:
 	.string	"__asserts_shared(...) __lock_annotate(assert_shared_lock(__VA_ARGS__))"
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1769649180"
 .LASF1310:
 	.string	"traceCREATE_COUNTING_SEMAPHORE() "
 .LASF1066:
@@ -10908,6 +10906,8 @@ platform_hal_device_init:
 	.string	"traceLOW_POWER_IDLE_END() "
 .LASF705:
 	.string	"_REENT_CHECK_TM(ptr) "
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1769953437"
 .LASF337:
 	.string	"__riscv_muldiv 1"
 .LASF762:

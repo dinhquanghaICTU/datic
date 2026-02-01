@@ -10,29 +10,16 @@
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
 # 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h" 2
 
-
 int app_mqtt_init(void);
-
-
 int app_mqtt_start(const char *broker, int port, const char *client_id);
-
-
 int app_mqtt_stop(void);
 
-
-
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h" 3 4
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h" 3 4
 _Bool 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h"
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h"
     app_mqtt_is_connected(void);
-
-
 int app_mqtt_publish_state(const char *state);
-
-
 const char *app_mqtt_get_command_topic(void);
-
-
 const char *app_mqtt_get_state_topic(void);
 # 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h" 1
@@ -178,6 +165,11 @@ typedef enum {
     MQTT_CMD_AUTO_TOGGLE_START,
     MQTT_CMD_AUTO_TOGGLE_STOP,
     MQTT_CMD_SETTINGS,
+
+    MQTT_CMD_BLE_MASTER_START,
+    MQTT_CMD_BLE_MASTER_STOP,
+    MQTT_CMD_BLE_MASTER_CONNECT,
+    MQTT_CMD_BLE_MASTER_DISCONNECT,
     MQTT_CMD_INVALID
 } mqtt_cmd_type_t;
 
@@ -210,9 +202,9 @@ typedef struct {
         struct {
             relay_state_t default_state;
             
-# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h" 3 4
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h" 3 4
            _Bool 
-# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
                 lock_button;
         } settings;
     } params;
@@ -243,6 +235,10 @@ typedef enum {
     APP_EVENT_MQTT_SET_ON,
     APP_EVENT_MQTT_SET_OFF,
     APP_EVENT_RELAY_STATE_CHANGED,
+    APP_EVENT_MQTT_BLE_MASTER_START,
+    APP_EVENT_MQTT_BLE_MASTER_STOP,
+    APP_EVENT_MQTT_BLE_MASTER_CONNECT,
+    APP_EVENT_MQTT_BLE_MASTER_DISCONNECT,
     APP_EVENT_MAX
 } app_event_type_t;
 
@@ -2679,27 +2675,28 @@ static void mqtt_message_handler(const char *topic, const char *payload, int pay
 # 25 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                 ) {
         mqtt_cmd_t cmd;
-        if (mqtt_cmd_parse(payload, payload_len, &cmd) == 0) {
+        int parse_ret = mqtt_cmd_parse(payload, payload_len, &cmd);
+        if (parse_ret == 0) {
             switch (cmd.type) {
                 case MQTT_CMD_TOGGLE:
                     app_event_post(APP_EVENT_MQTT_TOGGLE, 
-# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                                          ((void *)0)
-# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                              );
                     break;
                 case MQTT_CMD_SET:
                     if (cmd.params.set.state == RELAY_STATE_ON) {
                         app_event_post(APP_EVENT_MQTT_SET_ON, 
-# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                                              ((void *)0)
-# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 35 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                                  );
                     } else {
                         app_event_post(APP_EVENT_MQTT_SET_OFF, 
-# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                                               ((void *)0)
-# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 37 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                                   );
                     }
                     break;
@@ -2708,9 +2705,9 @@ static void mqtt_message_handler(const char *topic, const char *payload, int pay
                         uint8_t default_state = (cmd.params.settings.default_state == RELAY_STATE_ON) ? 1 : 0;
                         app_config_save_relay_settings(default_state, cmd.params.settings.lock_button);
                         extern void app_callback_update_lock_button(
-# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 44 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                                                    _Bool 
-# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 44 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                                         locked);
                         app_callback_update_lock_button(cmd.params.settings.lock_button);
                     }
@@ -2720,6 +2717,38 @@ static void mqtt_message_handler(const char *topic, const char *payload, int pay
                 case MQTT_CMD_AUTO_TOGGLE_START:
                 case MQTT_CMD_AUTO_TOGGLE_STOP:
                     break;
+                case MQTT_CMD_BLE_MASTER_START:
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_START, 
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+                                                                   ((void *)0)
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+                                                                       );
+                    break;
+                case MQTT_CMD_BLE_MASTER_STOP:
+                    ;
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_STOP, 
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+                                                                  ((void *)0)
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+                                                                      );
+                    break;
+                case MQTT_CMD_BLE_MASTER_CONNECT:
+                    ;
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_CONNECT, 
+# 62 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+                                                                     ((void *)0)
+# 62 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+                                                                         );
+                    break;
+                case MQTT_CMD_BLE_MASTER_DISCONNECT:
+                    ;
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_DISCONNECT, 
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+                                                                        ((void *)0)
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+                                                                            );
+                    break;
+
                 default:
                     break;
             }
@@ -2754,9 +2783,9 @@ int app_mqtt_init(void)
 int app_mqtt_start(const char *broker, int port, const char *client_id)
 {
     if (broker == 
-# 85 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                  ((void *)0)
-# 85 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                      ) {
         return -1;
     }
@@ -2779,16 +2808,16 @@ int app_mqtt_start(const char *broker, int port, const char *client_id)
 int app_mqtt_publish_state(const char *state)
 {
     if (!mqtt_if_is_connected() || state == 
-# 106 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 123 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                            ((void *)0)
-# 106 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 123 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                ) {
         return -1;
     }
     return mqtt_if_publish(s_state_topic, state, strlen(state), 
-# 109 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                                                1
-# 109 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                                    );
 }
 

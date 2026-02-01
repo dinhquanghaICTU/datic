@@ -381,15 +381,15 @@ g_config_done_cb:
 	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x4d0
+	.4byte	0x4ee
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF67
+	.4byte	.LASF72
 	.byte	0xc
-	.4byte	.LASF68
-	.4byte	.LASF69
+	.4byte	.LASF73
+	.4byte	.LASF74
 	.4byte	.Ldebug_ranges0+0
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -434,7 +434,7 @@ g_config_done_cb:
 	.byte	0x7
 	.4byte	.LASF8
 	.byte	0x4
-	.4byte	.LASF36
+	.4byte	.LASF40
 	.byte	0x3
 	.byte	0xc
 	.byte	0x10
@@ -518,7 +518,7 @@ g_config_done_cb:
 	.byte	0x4
 	.4byte	0x110
 	.byte	0xc
-	.4byte	.LASF70
+	.4byte	.LASF75
 	.byte	0xd
 	.byte	0x7
 	.byte	0x4
@@ -526,7 +526,7 @@ g_config_done_cb:
 	.byte	0x4
 	.byte	0x6
 	.byte	0xe
-	.4byte	0x172
+	.4byte	0x18a
 	.byte	0xb
 	.4byte	.LASF23
 	.byte	0
@@ -566,40 +566,52 @@ g_config_done_cb:
 	.byte	0xb
 	.4byte	.LASF35
 	.byte	0xc
+	.byte	0xb
+	.4byte	.LASF36
+	.byte	0xd
+	.byte	0xb
+	.4byte	.LASF37
+	.byte	0xe
+	.byte	0xb
+	.4byte	.LASF38
+	.byte	0xf
+	.byte	0xb
+	.4byte	.LASF39
+	.byte	0x10
 	.byte	0
 	.byte	0x4
-	.4byte	.LASF37
+	.4byte	.LASF41
 	.byte	0x4
-	.byte	0x14
+	.byte	0x18
 	.byte	0x3
 	.4byte	0x115
 	.byte	0xe
 	.byte	0x8
 	.byte	0x4
-	.byte	0x16
+	.byte	0x1a
 	.byte	0x9
-	.4byte	0x1a2
+	.4byte	0x1ba
 	.byte	0xf
-	.4byte	.LASF38
+	.4byte	.LASF42
 	.byte	0x4
-	.byte	0x17
+	.byte	0x1b
 	.byte	0x16
-	.4byte	0x172
+	.4byte	0x18a
 	.byte	0
 	.byte	0xf
-	.4byte	.LASF39
+	.4byte	.LASF43
 	.byte	0x4
-	.byte	0x18
+	.byte	0x1c
 	.byte	0xb
 	.4byte	0x9f
 	.byte	0x4
 	.byte	0
 	.byte	0x4
-	.4byte	.LASF40
+	.4byte	.LASF44
 	.byte	0x4
-	.byte	0x19
+	.byte	0x1d
 	.byte	0x3
-	.4byte	0x17e
+	.4byte	0x196
 	.byte	0xd
 	.byte	0x7
 	.byte	0x4
@@ -607,31 +619,34 @@ g_config_done_cb:
 	.byte	0x5
 	.byte	0x7
 	.byte	0xe
-	.4byte	0x1e7
-	.byte	0xb
-	.4byte	.LASF41
-	.byte	0
-	.byte	0xb
-	.4byte	.LASF42
-	.byte	0x1
-	.byte	0xb
-	.4byte	.LASF43
-	.byte	0x2
-	.byte	0xb
-	.4byte	.LASF44
-	.byte	0x3
+	.4byte	0x205
 	.byte	0xb
 	.4byte	.LASF45
-	.byte	0x4
+	.byte	0
 	.byte	0xb
 	.4byte	.LASF46
-	.byte	0x5
+	.byte	0x1
 	.byte	0xb
 	.4byte	.LASF47
+	.byte	0x2
+	.byte	0xb
+	.4byte	.LASF48
+	.byte	0x3
+	.byte	0xb
+	.4byte	.LASF49
+	.byte	0x4
+	.byte	0xb
+	.4byte	.LASF50
+	.byte	0x5
+	.byte	0xb
+	.4byte	.LASF51
 	.byte	0x6
+	.byte	0xb
+	.4byte	.LASF52
+	.byte	0x7
 	.byte	0
 	.byte	0x10
-	.4byte	.LASF71
+	.4byte	.LASF76
 	.byte	0xb
 	.byte	0x22
 	.byte	0x11
@@ -640,7 +655,7 @@ g_config_done_cb:
 	.byte	0x3
 	.4byte	pconn
 	.byte	0x11
-	.4byte	.LASF48
+	.4byte	.LASF53
 	.byte	0x1
 	.byte	0xd
 	.byte	0x21
@@ -649,7 +664,7 @@ g_config_done_cb:
 	.byte	0x3
 	.4byte	g_config_done_cb
 	.byte	0x11
-	.4byte	.LASF49
+	.4byte	.LASF54
 	.byte	0x1
 	.byte	0xe
 	.byte	0xc
@@ -658,7 +673,7 @@ g_config_done_cb:
 	.byte	0x3
 	.4byte	g_ble_running
 	.byte	0x11
-	.4byte	.LASF50
+	.4byte	.LASF55
 	.byte	0x1
 	.byte	0xf
 	.byte	0xc
@@ -667,7 +682,7 @@ g_config_done_cb:
 	.byte	0x3
 	.4byte	g_ble_stack_started
 	.byte	0x11
-	.4byte	.LASF51
+	.4byte	.LASF56
 	.byte	0x1
 	.byte	0x10
 	.byte	0xc
@@ -676,14 +691,14 @@ g_config_done_cb:
 	.byte	0x3
 	.4byte	g_ble_adv_running
 	.byte	0x12
-	.4byte	.LASF52
+	.4byte	.LASF57
 	.byte	0x1
 	.byte	0x13
 	.byte	0xc
 	.4byte	0x103
 	.byte	0
 	.byte	0x13
-	.4byte	.LASF72
+	.4byte	.LASF77
 	.byte	0x1
 	.byte	0x51
 	.byte	0x6
@@ -691,7 +706,7 @@ g_config_done_cb:
 	.4byte	.LFE68-.LFB68
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x272
+	.4byte	0x290
 	.byte	0x14
 	.string	"cb"
 	.byte	0x1
@@ -702,7 +717,7 @@ g_config_done_cb:
 	.byte	0x5a
 	.byte	0
 	.byte	0x15
-	.4byte	.LASF73
+	.4byte	.LASF78
 	.byte	0x1
 	.byte	0x4c
 	.byte	0x5
@@ -712,14 +727,14 @@ g_config_done_cb:
 	.byte	0x1
 	.byte	0x9c
 	.byte	0x16
-	.4byte	.LASF74
+	.4byte	.LASF79
 	.byte	0x1
 	.byte	0x41
 	.byte	0x5
 	.4byte	0x5d
 	.byte	0x1
 	.byte	0x17
-	.4byte	.LASF53
+	.4byte	.LASF58
 	.byte	0x1
 	.byte	0x2b
 	.byte	0x5
@@ -728,14 +743,14 @@ g_config_done_cb:
 	.4byte	.LFE65-.LFB65
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x2f5
+	.4byte	0x313
 	.byte	0x18
 	.4byte	.LVL1
-	.4byte	0x45a
+	.4byte	0x478
 	.byte	0x19
 	.4byte	.LVL2
-	.4byte	0x466
-	.4byte	0x2cd
+	.4byte	0x484
+	.4byte	0x2eb
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -745,11 +760,11 @@ g_config_done_cb:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL3
-	.4byte	0x473
+	.4byte	0x491
 	.byte	0x19
 	.4byte	.LVL4
-	.4byte	0x466
-	.4byte	0x2eb
+	.4byte	0x484
+	.4byte	0x309
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -759,10 +774,10 @@ g_config_done_cb:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL5
-	.4byte	0x47f
+	.4byte	0x49d
 	.byte	0
 	.byte	0x17
-	.4byte	.LASF54
+	.4byte	.LASF59
 	.byte	0x1
 	.byte	0x25
 	.byte	0x5
@@ -771,10 +786,10 @@ g_config_done_cb:
 	.4byte	.LFE64-.LFB64
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x323
+	.4byte	0x341
 	.byte	0x1b
 	.4byte	.LVL0
-	.4byte	0x48b
+	.4byte	0x4a9
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -784,42 +799,42 @@ g_config_done_cb:
 	.byte	0
 	.byte	0
 	.byte	0x1c
-	.4byte	.LASF75
+	.4byte	.LASF80
 	.byte	0x1
 	.byte	0x14
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x357
+	.4byte	0x375
 	.byte	0x1d
-	.4byte	.LASF55
+	.4byte	.LASF60
 	.byte	0x1
 	.byte	0x14
 	.byte	0x31
 	.4byte	0x8d
 	.byte	0x1d
-	.4byte	.LASF56
+	.4byte	.LASF61
 	.byte	0x1
 	.byte	0x14
 	.byte	0x43
 	.4byte	0x8d
 	.byte	0x1e
 	.byte	0x1f
-	.4byte	.LASF76
+	.4byte	.LASF81
 	.byte	0x1
 	.byte	0x1d
 	.byte	0x15
-	.4byte	0x1a2
+	.4byte	0x1ba
 	.byte	0
 	.byte	0
 	.byte	0x20
-	.4byte	0x288
+	.4byte	0x2a6
 	.4byte	.LFB66
 	.4byte	.LFE66-.LFB66
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x385
+	.4byte	0x3a3
 	.byte	0x21
-	.4byte	0x288
+	.4byte	0x2a6
 	.4byte	.LBB5
 	.4byte	.LBE5-.LBB5
 	.byte	0x1
@@ -827,48 +842,48 @@ g_config_done_cb:
 	.byte	0x5
 	.byte	0x18
 	.4byte	.LVL6
-	.4byte	0x497
+	.4byte	0x4b5
 	.byte	0
 	.byte	0
 	.byte	0x20
-	.4byte	0x323
+	.4byte	0x341
 	.4byte	.LFB63
 	.4byte	.LFE63-.LFB63
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x45a
+	.4byte	0x478
 	.byte	0x22
-	.4byte	0x330
+	.4byte	0x34e
 	.4byte	.LLST0
 	.byte	0x22
-	.4byte	0x33c
+	.4byte	0x35a
 	.4byte	.LLST1
 	.byte	0x23
-	.4byte	0x323
+	.4byte	0x341
 	.4byte	.LBB10
 	.4byte	.LBE10-.LBB10
 	.byte	0x1
 	.byte	0x14
 	.byte	0xd
-	.4byte	0x443
+	.4byte	0x461
 	.byte	0x22
-	.4byte	0x33c
+	.4byte	0x35a
 	.4byte	.LLST2
 	.byte	0x22
-	.4byte	0x330
+	.4byte	0x34e
 	.4byte	.LLST3
 	.byte	0x24
-	.4byte	0x348
+	.4byte	0x366
 	.4byte	.LBB12
 	.4byte	.LBE12-.LBB12
 	.byte	0x25
-	.4byte	0x349
+	.4byte	0x367
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0x26
 	.4byte	.LVL10
-	.4byte	0x3fb
+	.4byte	0x419
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -884,11 +899,11 @@ g_config_done_cb:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL11
-	.4byte	0x288
+	.4byte	0x2a6
 	.byte	0x19
 	.4byte	.LVL12
-	.4byte	0x4a3
-	.4byte	0x41e
+	.4byte	0x4c1
+	.4byte	0x43c
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -904,8 +919,8 @@ g_config_done_cb:
 	.byte	0
 	.byte	0x19
 	.4byte	.LVL13
-	.4byte	0x4af
-	.4byte	0x431
+	.4byte	0x4cd
+	.4byte	0x44f
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -914,7 +929,7 @@ g_config_done_cb:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL14
-	.4byte	0x4bb
+	.4byte	0x4d9
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -926,7 +941,7 @@ g_config_done_cb:
 	.byte	0
 	.byte	0x1b
 	.4byte	.LVL8
-	.4byte	0x4c7
+	.4byte	0x4e5
 	.byte	0x1a
 	.byte	0x1
 	.byte	0x5a
@@ -942,62 +957,62 @@ g_config_done_cb:
 	.byte	0
 	.byte	0
 	.byte	0x27
-	.4byte	.LASF57
-	.4byte	.LASF57
+	.4byte	.LASF62
+	.4byte	.LASF62
 	.byte	0x6
 	.byte	0xc
 	.byte	0x5
 	.byte	0x28
-	.4byte	.LASF58
-	.4byte	.LASF58
+	.4byte	.LASF63
+	.4byte	.LASF63
 	.byte	0x7
 	.2byte	0x207
 	.byte	0xa
 	.byte	0x27
-	.4byte	.LASF59
-	.4byte	.LASF59
+	.4byte	.LASF64
+	.4byte	.LASF64
 	.byte	0x8
 	.byte	0x26
 	.byte	0x6
 	.byte	0x27
-	.4byte	.LASF60
-	.4byte	.LASF60
+	.4byte	.LASF65
+	.4byte	.LASF65
 	.byte	0x8
 	.byte	0x23
 	.byte	0x5
 	.byte	0x27
-	.4byte	.LASF61
-	.4byte	.LASF61
+	.4byte	.LASF66
+	.4byte	.LASF66
 	.byte	0x8
 	.byte	0x18
 	.byte	0x6
 	.byte	0x27
-	.4byte	.LASF62
-	.4byte	.LASF62
+	.4byte	.LASF67
+	.4byte	.LASF67
 	.byte	0x8
 	.byte	0x24
 	.byte	0x5
 	.byte	0x27
-	.4byte	.LASF63
-	.4byte	.LASF63
+	.4byte	.LASF68
+	.4byte	.LASF68
 	.byte	0x9
 	.byte	0xd
 	.byte	0x5
 	.byte	0x27
-	.4byte	.LASF64
-	.4byte	.LASF64
-	.byte	0x5
-	.byte	0x1b
-	.byte	0x6
-	.byte	0x27
-	.4byte	.LASF65
-	.4byte	.LASF65
+	.4byte	.LASF69
+	.4byte	.LASF69
 	.byte	0x5
 	.byte	0x1c
+	.byte	0x6
+	.byte	0x27
+	.4byte	.LASF70
+	.4byte	.LASF70
+	.byte	0x5
+	.byte	0x1d
 	.byte	0xd
 	.byte	0x27
-	.4byte	.LASF66
-	.4byte	.LASF66
+	.4byte	.LASF71
+	.4byte	.LASF71
 	.byte	0xa
 	.byte	0x16
 	.byte	0x5
@@ -1682,97 +1697,103 @@ g_config_done_cb:
 	.string	"_POLL_STATE_NOT_READY"
 .LASF14:
 	.string	"_POLL_NUM_TYPES"
-.LASF58:
+.LASF63:
 	.string	"aos_msleep"
-.LASF54:
+.LASF59:
 	.string	"app_ble_init"
 .LASF1:
 	.string	"short int"
-.LASF55:
-	.string	"ssid"
-.LASF45:
-	.string	"APP_STATE_WIFI_CONNECTED"
 .LASF60:
+	.string	"ssid"
+.LASF35:
+	.string	"APP_EVENT_MQTT_BLE_MASTER_START"
+.LASF49:
+	.string	"APP_STATE_WIFI_CONNECTED"
+.LASF65:
 	.string	"ble_adv_start"
-.LASF56:
+.LASF61:
 	.string	"password"
 .LASF27:
 	.string	"APP_EVENT_WIFI_DISCONNECTED"
-.LASF76:
+.LASF81:
 	.string	"event"
-.LASF73:
+.LASF78:
 	.string	"app_ble_is_running"
-.LASF37:
+.LASF41:
 	.string	"app_event_type_t"
-.LASF44:
+.LASF48:
 	.string	"APP_STATE_WIFI_CONNECTING"
-.LASF40:
+.LASF44:
 	.string	"app_event_t"
 .LASF29:
 	.string	"APP_EVENT_BLE_CONFIG_DONE"
-.LASF48:
+.LASF53:
 	.string	"g_config_done_cb"
 .LASF28:
 	.string	"APP_EVENT_WIFI_CONNECT_FAILED"
-.LASF70:
+.LASF75:
 	.string	"bt_conn"
-.LASF47:
+.LASF52:
 	.string	"APP_STATE_MAX"
 .LASF3:
 	.string	"long long int"
-.LASF51:
+.LASF56:
 	.string	"g_ble_adv_running"
-.LASF69:
+.LASF74:
 	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF19:
 	.string	"_POLL_STATE_SEM_AVAILABLE"
 .LASF2:
 	.string	"long int"
-.LASF52:
+.LASF57:
 	.string	"ble_slave"
 .LASF11:
 	.string	"_POLL_TYPE_SIGNAL"
 .LASF32:
 	.string	"APP_EVENT_MQTT_SET_ON"
+.LASF38:
+	.string	"APP_EVENT_MQTT_BLE_MASTER_DISCONNECT"
 .LASF34:
 	.string	"APP_EVENT_RELAY_STATE_CHANGED"
-.LASF63:
+.LASF68:
 	.string	"app_wifi_connect"
+.LASF36:
+	.string	"APP_EVENT_MQTT_BLE_MASTER_STOP"
 .LASF4:
 	.string	"unsigned char"
 .LASF12:
 	.string	"_POLL_TYPE_SEM_AVAILABLE"
-.LASF50:
+.LASF55:
 	.string	"g_ble_stack_started"
 .LASF10:
 	.string	"_POLL_TYPE_IGNORE"
 .LASF0:
 	.string	"signed char"
-.LASF53:
+.LASF58:
 	.string	"app_ble_start"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF41:
+.LASF45:
 	.string	"APP_STATE_INIT"
-.LASF38:
+.LASF42:
 	.string	"type"
-.LASF74:
+.LASF79:
 	.string	"app_ble_stop"
 .LASF8:
 	.string	"unsigned int"
-.LASF59:
+.LASF64:
 	.string	"apps_ble_start"
-.LASF43:
+.LASF47:
 	.string	"APP_STATE_BLE_CONFIG"
-.LASF57:
+.LASF62:
 	.string	"wifi_if_disconnect"
-.LASF66:
+.LASF71:
 	.string	"app_config_save_wifi"
 .LASF5:
 	.string	"short unsigned int"
 .LASF25:
 	.string	"APP_EVENT_BUTTON_PRESS"
-.LASF64:
+.LASF69:
 	.string	"app_state_set_next"
 .LASF9:
 	.string	"char"
@@ -1780,14 +1801,16 @@ g_config_done_cb:
 	.string	"APP_EVENT_MQTT_TOGGLE"
 .LASF22:
 	.string	"_Bool"
-.LASF62:
+.LASF67:
 	.string	"ble_adv_stop"
-.LASF39:
-	.string	"data"
+.LASF37:
+	.string	"APP_EVENT_MQTT_BLE_MASTER_CONNECT"
 .LASF20:
 	.string	"_POLL_STATE_DATA_AVAILABLE"
 .LASF6:
 	.string	"long unsigned int"
+.LASF51:
+	.string	"APP_STATE_BLE_MASTER"
 .LASF26:
 	.string	"APP_EVENT_WIFI_CONNECTED"
 .LASF18:
@@ -1796,39 +1819,41 @@ g_config_done_cb:
 	.string	"APP_EVENT_NONE"
 .LASF30:
 	.string	"APP_EVENT_BLE_CONFIG_TIMEOUT"
-.LASF67:
+.LASF72:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF15:
 	.string	"_poll_types_bits"
-.LASF49:
+.LASF54:
 	.string	"g_ble_running"
-.LASF42:
-	.string	"APP_STATE_CHECK_FLASH"
-.LASF65:
-	.string	"app_state_process_event"
 .LASF46:
+	.string	"APP_STATE_CHECK_FLASH"
+.LASF70:
+	.string	"app_state_process_event"
+.LASF50:
 	.string	"APP_STATE_WIFI_FAILED"
 .LASF33:
 	.string	"APP_EVENT_MQTT_SET_OFF"
-.LASF61:
+.LASF66:
 	.string	"ble_set_config_done_cb"
 .LASF16:
 	.string	"_poll_states_bits"
-.LASF68:
+.LASF73:
 	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c"
-.LASF75:
+.LASF80:
 	.string	"ble_config_done_handler"
 .LASF21:
 	.string	"_POLL_NUM_STATES"
-.LASF36:
+.LASF40:
 	.string	"app_ble_config_done_cb_t"
-.LASF71:
+.LASF76:
 	.string	"pconn"
 .LASF13:
 	.string	"_POLL_TYPE_DATA_AVAILABLE"
-.LASF72:
+.LASF43:
+	.string	"data"
+.LASF77:
 	.string	"app_ble_set_config_done_cb"
-.LASF35:
+.LASF39:
 	.string	"APP_EVENT_MAX"
 .LASF24:
 	.string	"APP_EVENT_BUTTON_HOLD"

@@ -22,7 +22,7 @@ static int master_current_scan;
 static uint8_t scan_le_addr[6];
 
 
-static const char target_name[] = "VRemote";
+static const char target_name[] = "HNNtest";
 
 
 

@@ -24,7 +24,8 @@ static void mqtt_message_handler(const char *topic, const char *payload, int pay
 {
     if (strstr(topic, MQTT_TOPIC_COMMAND) != NULL) {
         mqtt_cmd_t cmd;
-        if (mqtt_cmd_parse(payload, payload_len, &cmd) == 0) {
+        int parse_ret = mqtt_cmd_parse(payload, payload_len, &cmd);
+        if (parse_ret == 0) {
             switch (cmd.type) {
                 case MQTT_CMD_TOGGLE:
                     app_event_post(APP_EVENT_MQTT_TOGGLE, NULL);
@@ -49,6 +50,22 @@ static void mqtt_message_handler(const char *topic, const char *payload, int pay
                 case MQTT_CMD_AUTO_TOGGLE_START:
                 case MQTT_CMD_AUTO_TOGGLE_STOP:
                     break;
+                case MQTT_CMD_BLE_MASTER_START:
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_START, NULL);
+                    break;
+                case MQTT_CMD_BLE_MASTER_STOP:
+                    blog_info("[MQTT] Received BLE Master stop command\r\n");
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_STOP, NULL);
+                    break;
+                case MQTT_CMD_BLE_MASTER_CONNECT:
+                    blog_info("[MQTT] Received BLE Master connect command\r\n");
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_CONNECT, NULL);
+                    break;
+                case MQTT_CMD_BLE_MASTER_DISCONNECT:
+                    blog_info("[MQTT] Received BLE Master disconnect command\r\n");
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_DISCONNECT, NULL);
+                    break;
+
                 default:
                     break;
             }

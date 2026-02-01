@@ -47,7 +47,8 @@ ble_central_api.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/platform.h:
@@ -96,4 +97,5 @@ ble_central_api.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_uart.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/include/hosal_dma.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/./ble_central_api.c:

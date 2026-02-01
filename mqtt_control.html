@@ -434,6 +434,36 @@
                 </div>
                 <button id="saveSettingsBtn" class="btn btn-primary" style="width: 100%;" disabled>Lưu cài đặt</button>
             </div>
+
+            <div class="feature-card">
+                <h3>📡 BLE Master Control</h3>
+                <div style="margin-bottom: 15px;">
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">
+                        Điều khiển BLE Master mode: Scan ADV hoặc Connect với slave
+                    </p>
+                    <button id="bleMasterStartBtn" class="btn btn-success" style="width: 100%; margin-bottom: 10px;" disabled>
+                        ▶️ Start BLE Master
+                    </button>
+                    <button id="bleMasterStopBtn" class="btn btn-danger" style="width: 100%; margin-bottom: 10px; display: none;" disabled>
+                        ⏹️ Stop BLE Master
+                    </button>
+                </div>
+                <div style="border-top: 1px solid #e0e0e0; padding-top: 15px; margin-top: 15px;">
+                    <p style="color: #666; font-size: 14px; margin-bottom: 15px;">
+                        Khi đã start, có thể connect/disconnect:
+                    </p>
+                    <button id="bleMasterConnectBtn" class="btn btn-primary" style="width: 100%; margin-bottom: 10px;" disabled>
+                        🔗 Connect to Slave
+                    </button>
+                    <button id="bleMasterDisconnectBtn" class="btn btn-secondary" style="width: 100%;" disabled>
+                        🔌 Disconnect
+                    </button>
+                </div>
+                <div id="bleMasterStatus" style="color: #666; font-size: 14px; margin-top: 15px; padding-top: 15px; border-top: 1px solid #e0e0e0;">
+                    <div>Status: <span id="bleMasterStatusText">Stopped</span></div>
+                    <div style="margin-top: 5px;">Mode: <span id="bleMasterModeText">-</span></div>
+                </div>
+            </div>
         </div>
 
         <div class="feature-card">
@@ -523,6 +553,9 @@
             document.getElementById('autoToggleBtn').disabled = false;
             document.getElementById('saveSettingsBtn').disabled = false;
             document.getElementById('relaySwitch').classList.remove('disabled');
+            document.getElementById('bleMasterStartBtn').disabled = false;
+            document.getElementById('bleMasterConnectBtn').disabled = false;
+            document.getElementById('bleMasterDisconnectBtn').disabled = false;
         }
 
         function disableControls() {
@@ -532,6 +565,10 @@
             document.getElementById('autoToggleBtn').disabled = true;
             document.getElementById('saveSettingsBtn').disabled = true;
             document.getElementById('relaySwitch').classList.add('disabled');
+            document.getElementById('bleMasterStartBtn').disabled = true;
+            document.getElementById('bleMasterStopBtn').disabled = true;
+            document.getElementById('bleMasterConnectBtn').disabled = true;
+            document.getElementById('bleMasterDisconnectBtn').disabled = true;
         }
 
         function updateRelayState(state) {
@@ -759,6 +796,45 @@
             showAlert('Đã lưu cài đặt!', 'success');
         }
 
+        function updateBleMasterStatus(status, mode) {
+            document.getElementById('bleMasterStatusText').textContent = status;
+            document.getElementById('bleMasterModeText').textContent = mode;
+        }
+
+        function bleMasterStart() {
+            sendCommand('master_start');
+            showAlert('Đã gửi lệnh Start BLE Master', 'success');
+            document.getElementById('bleMasterStartBtn').style.display = 'none';
+            document.getElementById('bleMasterStopBtn').style.display = 'block';
+            updateBleMasterStatus('Running', 'Scan ADV');
+        }
+
+        function bleMasterStop() {
+            sendCommand('master_stop');
+            showAlert('Đã gửi lệnh Stop BLE Master', 'success');
+            document.getElementById('bleMasterStartBtn').style.display = 'block';
+            document.getElementById('bleMasterStopBtn').style.display = 'none';
+            document.getElementById('bleMasterConnectBtn').disabled = true;
+            document.getElementById('bleMasterDisconnectBtn').disabled = true;
+            updateBleMasterStatus('Stopped', '-');
+        }
+
+        function bleMasterConnect() {
+            sendCommand('master_connect');
+            showAlert('Đã gửi lệnh Connect BLE Master', 'success');
+            document.getElementById('bleMasterConnectBtn').disabled = true;
+            document.getElementById('bleMasterDisconnectBtn').disabled = false;
+            updateBleMasterStatus('Running', 'Connected');
+        }
+
+        function bleMasterDisconnect() {
+            sendCommand('master_disconnect');
+            showAlert('Đã gửi lệnh Disconnect BLE Master', 'success');
+            document.getElementById('bleMasterConnectBtn').disabled = false;
+            document.getElementById('bleMasterDisconnectBtn').disabled = true;
+            updateBleMasterStatus('Running', 'Scan ADV');
+        }
+
         // Event Listeners
         document.getElementById('connectBtn').addEventListener('click', connectMQTT);
         document.getElementById('disconnectBtn').addEventListener('click', disconnectMQTT);
@@ -788,6 +864,12 @@
         document.getElementById('clearLogBtn').addEventListener('click', () => {
             document.getElementById('logPanel').innerHTML = '';
         });
+
+        // BLE Master event listeners
+        document.getElementById('bleMasterStartBtn').addEventListener('click', bleMasterStart);
+        document.getElementById('bleMasterStopBtn').addEventListener('click', bleMasterStop);
+        document.getElementById('bleMasterConnectBtn').addEventListener('click', bleMasterConnect);
+        document.getElementById('bleMasterDisconnectBtn').addEventListener('click', bleMasterDisconnect);
     </script>
 </body>
 </html>

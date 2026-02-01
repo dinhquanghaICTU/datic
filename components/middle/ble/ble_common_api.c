@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <aos/kernel.h>
 #include "conn.h"
 #include "conn_internal.h"
 #include "gatt.h"
@@ -17,7 +18,8 @@ ble_gatt_conn_cb_t disconn_cb;
 static void _connected(struct bt_conn *conn, u8_t err)
 {
     if (conn_cb) {
-        if (conn_cb(conn, err) != 0) {
+        int ret = conn_cb(conn, err);
+        if (ret != 0) {
             return ;
         }
     }
@@ -27,10 +29,6 @@ static void _connected(struct bt_conn *conn, u8_t err)
     }
 
     conn_cur = conn;
-
-    printf("[BLE] connected \r\n");
-    //axk_Callbacks.bleConnectCallback(NULL);
-
     return ;
 }
 
@@ -47,20 +45,13 @@ static void _disconnected(struct bt_conn *conn, u8_t reason)
     }
 
     conn_cur = NULL;
-
-    printf("[BLE] disconnected, reason:%d \r\n", reason);
-   // axk_Callbacks.bleDisconnectCBCallback(NULL);
 }
 
 static bool _le_param_req(struct bt_conn *conn,
              struct bt_le_conn_param *param)
 {
-    printf("[BLE] conn param request: int 0x%04x-0x%04x lat %d to %d \r\n", 
-            param->interval_min, 
-            param->interval_max, 
-            param->latency, 
-            param->timeout);
-
+    (void)conn;
+    (void)param;
     return true;
 }
 
@@ -72,8 +63,12 @@ static void _le_param_updated(struct bt_conn *conn, u16_t interval,
 
 static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
 {
-    printf("[BLE] phy updated: rx_phy %d, rx_phy %d \r\n", tx_phy, rx_phy);
+    (void)conn;
+    (void)tx_phy;
+    (void)rx_phy;
 }
+
+// Pairing/auth callbacks removed - not needed
 
 static struct bt_conn_cb conn_callbacks = {
     .connected = _connected,
@@ -173,6 +168,18 @@ uint8_t axk_HalBleGetMac(uint8_t *mac)
     return 0;
 }
 
+// Register connection callbacks without starting BLE stack
+// Use this when BLE stack is already started
+void axk_HalBleRegisterCallbacks(void)
+{
+    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
+    bt_conn_cb_register(&conn_callbacks);
+    /* avoid callback infinite loop */
+    conn_callbacks._next = NULL;
+    
+    bt_set_tx_pwr(15);
+}
+
 //启动或者关闭蓝牙
 uint8_t axk_HalBleInit()
 {
@@ -180,11 +187,7 @@ uint8_t axk_HalBleInit()
     bt_addr_t bt_addr;
     ble_stack_start();
     ble_master_init();
-    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
-    bt_conn_cb_register(&conn_callbacks);
-        /* avoid callback infinite loop */
-    conn_callbacks._next = NULL;
-    bt_set_tx_pwr(15);
+    axk_HalBleRegisterCallbacks();
     return 0;
 }
 

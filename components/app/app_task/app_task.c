@@ -20,6 +20,8 @@
 #include <bl_sys.h>
 #include <stdbool.h>
 #include <string.h>
+#include "../gpio/m_ble_master.h" 
+
 
 static TaskHandle_t g_task_button_handle = NULL;
 static TaskHandle_t g_task_led_handle = NULL;
@@ -182,6 +184,32 @@ void app_task_main(void *params)
             }
             event.type = APP_EVENT_NONE;
         }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_START) {
+            int ret = app_ble_master_init();
+            if (ret != 0) {
+                event.type = APP_EVENT_NONE;
+                continue;
+            }
+            ret = app_ble_master_start();
+            app_state_set_next(APP_STATE_BLE_MASTER);
+            event.type = APP_EVENT_NONE;
+        }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_STOP) {
+            blog_info("[APP] Stopping BLE Master...\r\n");
+            app_ble_master_stop();
+            app_state_set_next(APP_STATE_WIFI_CONNECTED);
+            event.type = APP_EVENT_NONE;
+        }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_CONNECT) {
+            blog_info("[APP] BLE Master connect command...\r\n");
+            app_ble_master_connect(NULL);  
+            event.type = APP_EVENT_NONE;
+        }
+        else if (event.type == APP_EVENT_MQTT_BLE_MASTER_DISCONNECT) {
+            blog_info("[APP] BLE Master disconnect command...\r\n");
+            app_ble_master_disconnect();
+            event.type = APP_EVENT_NONE;
+        }
         
         switch (current_state) {
             case APP_STATE_CHECK_FLASH:
@@ -225,6 +253,14 @@ void app_task_main(void *params)
             case APP_STATE_WIFI_FAILED:
                 if (app_ble_is_running()) {
                     app_ble_stop();
+                }
+                break;
+            case APP_STATE_BLE_MASTER:
+                // Check if button hold event to switch to BLE_CONFIG
+                if (event.type == APP_EVENT_BUTTON_HOLD) {
+                    app_ble_master_stop();
+                    app_state_set_next(APP_STATE_BLE_CONFIG);
+                    event.type = APP_EVENT_NONE;
                 }
                 break;
             default:

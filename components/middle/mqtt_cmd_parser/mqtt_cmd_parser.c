@@ -125,6 +125,7 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         return -1;
     }
 
+    printf("[MQTT_CMD] Parsed command string: '%s' (len=%d)\r\n", cmd_str, (int)strlen(cmd_str));
 
     if (strcmp(cmd_str, "TOGGLE") == 0) {
         cmd->type = MQTT_CMD_TOGGLE;
@@ -205,11 +206,23 @@ int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
         bool lock_button = false;
         json_get_bool_value(json_str, tokens, num_tokens, "lockButton", &lock_button);
         cmd->params.settings.lock_button = lock_button;
+    } else if (strcmp(cmd_str, "master_start") == 0) {
+        printf("[MQTT_CMD] Matched master_start -> MQTT_CMD_BLE_MASTER_START\r\n");
+        cmd->type = MQTT_CMD_BLE_MASTER_START;
+    } else if (strcmp(cmd_str, "master_stop") == 0) {
+        printf("[MQTT_CMD] Matched master_stop -> MQTT_CMD_BLE_MASTER_STOP\r\n");
+        cmd->type = MQTT_CMD_BLE_MASTER_STOP;
+    } else if (strcmp(cmd_str, "master_connect") == 0) {
+        printf("[MQTT_CMD] Matched master_connect -> MQTT_CMD_BLE_MASTER_CONNECT\r\n");
+        cmd->type = MQTT_CMD_BLE_MASTER_CONNECT;
+    } else if (strcmp(cmd_str, "master_disconnect") == 0) {
+        printf("[MQTT_CMD] Matched master_disconnect -> MQTT_CMD_BLE_MASTER_DISCONNECT\r\n");
+        cmd->type = MQTT_CMD_BLE_MASTER_DISCONNECT;
     } else {
-        printf("[MQTT_CMD] Unknown command: %s\r\n", cmd_str);
+        printf("[MQTT_CMD] Unknown command: '%s'\r\n", cmd_str);
         return -1;
     }
-
+    printf("[MQTT_CMD] Parse successful, cmd->type = %d\r\n", cmd->type);
     return 0;
 }
 
@@ -232,6 +245,15 @@ const char *mqtt_cmd_type_to_string(mqtt_cmd_type_t type)
             return "AUTO_TOGGLE_STOP";
         case MQTT_CMD_SETTINGS:
             return "SETTINGS";
+            //HNN_modifier
+        case MQTT_CMD_BLE_MASTER_START:      
+            return "BLE_MASTER_START";
+        case MQTT_CMD_BLE_MASTER_STOP:       
+            return "BLE_MASTER_STOP";
+        case MQTT_CMD_BLE_MASTER_CONNECT:    
+            return "BLE_MASTER_CONNECT";
+        case MQTT_CMD_BLE_MASTER_DISCONNECT: 
+            return "BLE_MASTER_DISCONNECT";
         case MQTT_CMD_INVALID:
         default:
             return "INVALID";

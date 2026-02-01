@@ -34,7 +34,8 @@ app_task.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/wifi_if/wifi_if.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/mqtt_if/mqtt_if.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
@@ -70,4 +71,5 @@ app_task.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/../../middle/mqtt_if/mqtt_if.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_gpio.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble_master.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/./app_task.c:

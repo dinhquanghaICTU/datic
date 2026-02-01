@@ -1,5 +1,6 @@
 ble_common_api.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h \
@@ -32,6 +33,7 @@ ble_common_api.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h
+/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/bluetooth.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/misc/printk.h:

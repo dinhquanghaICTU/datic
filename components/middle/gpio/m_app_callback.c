@@ -21,9 +21,11 @@ static bool g_lock_button_loaded = false;
 
 void app_event_post(app_event_type_t type, void *data)
 {
+    printf("[EVENT_POST] Posting event type=%d, queue_tail=%d\r\n", type, g_event_queue_tail);
     g_event_queue[g_event_queue_tail].type = type;
     g_event_queue[g_event_queue_tail].data = data;
     g_event_queue_tail = (g_event_queue_tail + 1) % 10;
+    printf("[EVENT_POST] Event posted, new queue_tail=%d\r\n", g_event_queue_tail);
 }
 
 void app_button_hold_callback(int pin, int event, void *data)

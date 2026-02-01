@@ -1845,6 +1845,255 @@ __attribute__((__noreturn__)) void
 
 
 # 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 1
+
+
+
+
+
+
+
+# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h" 2
+# 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    
+# 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+   typedef struct
+    {
+        void *hdl;
+    } aos_hdl_t;
+
+    typedef aos_hdl_t aos_task_t;
+    typedef aos_hdl_t aos_mutex_t;
+    typedef aos_hdl_t aos_sem_t;
+    typedef aos_hdl_t aos_queue_t;
+    typedef aos_hdl_t aos_timer_t;
+    typedef aos_hdl_t aos_work_t;
+
+    typedef struct
+    {
+        void *hdl;
+        void *stk;
+    } aos_workqueue_t;
+
+    typedef unsigned int aos_task_key_t;
+
+
+
+
+    void aos_reboot(void);
+
+
+
+
+
+
+    int aos_get_hz(void);
+
+
+
+
+
+
+    const char *aos_version_get(void);
+# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new(const char *name, void (*fn)(void *), void *arg,
+                     int stack_size);
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_new_ext(aos_task_t *task, const char *name, void (*fn)(void *),
+                         void *arg, int stack_size, int prio);
+
+
+
+
+
+
+    void aos_task_exit(int code);
+
+
+
+
+
+
+    const char *aos_task_name(void);
+# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_key_create(aos_task_key_t *key);
+
+
+
+
+
+
+    void aos_task_key_delete(aos_task_key_t key);
+# 130 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_task_setspecific(aos_task_key_t key, void *vp);
+
+
+
+
+
+
+    void *aos_task_getspecific(aos_task_key_t key);
+# 148 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_new(aos_mutex_t *mutex);
+
+
+
+
+
+
+
+    void aos_mutex_free(aos_mutex_t *mutex);
+# 167 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_lock(aos_mutex_t *mutex, unsigned int timeout);
+# 177 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_unlock(aos_mutex_t *mutex);
+# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_mutex_is_valid(aos_mutex_t *mutex);
+# 197 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_new(aos_sem_t *sem, int count);
+
+
+
+
+
+
+
+    void aos_sem_free(aos_sem_t *sem);
+# 216 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_wait(aos_sem_t *sem, unsigned int timeout);
+
+
+
+
+
+
+
+    void aos_sem_signal(aos_sem_t *sem);
+# 233 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_sem_is_valid(aos_sem_t *sem);
+
+
+
+
+
+
+
+    void aos_sem_signal_all(aos_sem_t *sem);
+# 254 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_new(aos_queue_t *queue, void *buf, unsigned int size,
+                      int max_msg);
+
+
+
+
+
+
+    void aos_queue_free(aos_queue_t *queue);
+# 273 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_send(aos_queue_t *queue, void *msg, unsigned int size);
+# 285 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_recv(aos_queue_t *queue, unsigned int ms, void *msg,
+                       unsigned int *size);
+# 295 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_queue_is_valid(aos_queue_t *queue);
+# 304 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_queue_buf_ptr(aos_queue_t *queue);
+# 317 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new(aos_timer_t *timer, void (*fn)(void *, void *), void *arg,
+                      int ms, int repeat);
+# 332 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_new_ext(aos_timer_t *timer, void (*fn)(void *, void *),
+                          void *arg, int ms, int repeat,
+                          unsigned char auto_run);
+
+
+
+
+
+
+    void aos_timer_free(aos_timer_t *timer);
+# 350 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_start(aos_timer_t *timer);
+# 359 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_stop(aos_timer_t *timer);
+# 369 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_timer_change(aos_timer_t *timer, int ms);
+# 380 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_workqueue_create(aos_workqueue_t *workqueue, int pri,
+                             int stack_size);
+# 393 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_init(aos_work_t *work, void (*fn)(void *), void *arg, int dly);
+
+
+
+
+
+
+    void aos_work_destroy(aos_work_t *work);
+# 410 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_run(aos_workqueue_t *workqueue, aos_work_t *work);
+# 419 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_sched(aos_work_t *work);
+# 428 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    int aos_work_cancel(aos_work_t *work);
+# 438 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_realloc(void *mem, unsigned int size);
+# 447 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_malloc(unsigned int size);
+# 457 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_calloc(unsigned int nitems, unsigned int size);
+# 466 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    void *aos_zalloc(unsigned int size);
+
+
+
+
+
+
+
+    void aos_alloc_trace(void *addr, size_t allocator);
+
+
+
+
+
+
+    void aos_free(void *mem);
+
+
+
+
+
+
+    long long aos_now(void);
+
+
+
+
+
+
+    long long aos_now_ms(void);
+# 512 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+    char *aos_now_time_str(char *buffer, const int len);
+
+
+
+
+
+
+    void aos_msleep(int ms);
+
+
+
+
+    void aos_init(void);
+
+
+
+
+    void aos_start(void);
+# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 1
 # 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
@@ -1867,8 +2116,6 @@ __attribute__((__noreturn__)) void
 # 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/port/include/zephyr.h" 2
 
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h" 1
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
-
 # 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/zephyr/types.h"
 typedef signed char s8_t;
 typedef signed short s16_t;
@@ -7055,7 +7302,7 @@ struct bt_conn *bt_conn_create_br(const bt_addr_t *peer,
       const struct bt_br_conn_param *param);
 # 946 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer);
-# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
+# 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h" 1
 # 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
 typedef enum 
@@ -7346,7 +7593,7 @@ int bt_conn_prepare_events(struct k_poll_event events[]);
 void bt_conn_process_tx(struct bt_conn *conn);
 # 350 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/conn_internal.h"
 int bt_hci_get_conn_handle(const struct bt_conn *conn, u16_t *conn_handle);
-# 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
+# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h" 1
 # 20 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gatt.h"
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stddef.h" 1 3 4
@@ -8056,7 +8303,7 @@ uint16_t bt_gatts_add_service(void);
 
 
 int bt_gatts_del_service(uint16_t svc_id);
-# 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
+# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h" 1
 # 32 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/host/hci_core.h"
 enum {
@@ -8279,7 +8526,7 @@ void bt_register_host_assist_cb(struct blhast_cb *cb);
 
 typedef void (*bredr_name_callback)(const char *name);
 int remote_name_req(const bt_addr_t *addr, bredr_name_callback cb);
-# 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
+# 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
 
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h" 1
 # 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h"
@@ -8319,7 +8566,7 @@ int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_
 
 uint16_t ble_master_get_led_handle(void);
 int ble_master_write_led_cmd(const char *cmd, uint16_t handle);
-# 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
+# 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 2
 
 static struct bt_conn *conn_cur;
 ble_gatt_conn_cb_t conn_cb;
@@ -8328,7 +8575,8 @@ ble_gatt_conn_cb_t disconn_cb;
 static void _connected(struct bt_conn *conn, u8_t err)
 {
     if (conn_cb) {
-        if (conn_cb(conn, err) != 0) {
+        int ret = conn_cb(conn, err);
+        if (ret != 0) {
             return ;
         }
     }
@@ -8338,10 +8586,6 @@ static void _connected(struct bt_conn *conn, u8_t err)
     }
 
     conn_cur = conn;
-
-    printf("[BLE] connected \r\n");
-
-
     return ;
 }
 
@@ -8358,32 +8602,25 @@ static void _disconnected(struct bt_conn *conn, u8_t reason)
     }
 
     conn_cur = 
-# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
               ((void *)0)
-# 49 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
                   ;
-
-    printf("[BLE] disconnected, reason:%d \r\n", reason);
-
 }
 
 static 
-# 55 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
       _Bool 
-# 55 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
            _le_param_req(struct bt_conn *conn,
              struct bt_le_conn_param *param)
 {
-    printf("[BLE] conn param request: int 0x%04x-0x%04x lat %d to %d \r\n",
-            param->interval_min,
-            param->interval_max,
-            param->latency,
-            param->timeout);
-
+    (void)conn;
+    (void)param;
     return 
-# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 55 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
           1
-# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 55 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
               ;
 }
 
@@ -8395,8 +8632,12 @@ static void _le_param_updated(struct bt_conn *conn, u16_t interval,
 
 static void _le_phy_updated(struct bt_conn *conn, u8_t tx_phy, u8_t rx_phy)
 {
-    printf("[BLE] phy updated: rx_phy %d, rx_phy %d \r\n", tx_phy, rx_phy);
+    (void)conn;
+    (void)tx_phy;
+    (void)rx_phy;
 }
+
+
 
 static struct bt_conn_cb conn_callbacks = {
     .connected = _connected,
@@ -8437,7 +8678,7 @@ int ble_regist_disconn(ble_gatt_conn_cb_t cb)
 
     return 0;
 }
-# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 121 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
 uint8_t axk_HalBleSetMac(uint8_t *mac)
 {
     bt_addr_t bt_addr;
@@ -8465,7 +8706,7 @@ uint8_t axk_HalBleGetMac_Start(uint8_t *mac)
 
     return 0;
 }
-# 162 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 157 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
 uint8_t axk_HalBleGetMac(uint8_t *mac)
 {
     bt_addr_le_t bt_addr;
@@ -8481,21 +8722,29 @@ uint8_t axk_HalBleGetMac(uint8_t *mac)
 }
 
 
+
+void axk_HalBleRegisterCallbacks(void)
+{
+    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
+    bt_conn_cb_register(&conn_callbacks);
+
+    conn_callbacks._next = 
+# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+                          ((void *)0)
+# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+                              ;
+
+    bt_set_tx_pwr(15);
+}
+
+
 uint8_t axk_HalBleInit()
 {
     int ret;
     bt_addr_t bt_addr;
     ble_stack_start();
     ble_master_init();
-    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
-    bt_conn_cb_register(&conn_callbacks);
-
-    conn_callbacks._next = 
-# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
-                          ((void *)0)
-# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
-                              ;
-    bt_set_tx_pwr(15);
+    axk_HalBleRegisterCallbacks();
     return 0;
 }
 
@@ -8509,7 +8758,7 @@ static void exchange_func(struct bt_conn *conn, u8_t err,
 }
 
 static struct bt_gatt_exchange_params exchange_params;
-# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 212 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
 uint8_t axk_HalBleSetMtu(uint8_t mtu)
 {
     int ret;
@@ -8519,9 +8768,9 @@ uint8_t axk_HalBleSetMtu(uint8_t mtu)
     }
 
     if (conn_cur == 
-# 217 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
                    ((void *)0)
-# 217 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
                        ) {
         return 1;
     }
@@ -8534,15 +8783,15 @@ uint8_t axk_HalBleSetMtu(uint8_t mtu)
 
     return 0;
 }
-# 237 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 240 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
 int axk_HalBleGetMtu()
 {
     int mtu;
 
     if (conn_cur == 
-# 241 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 244 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
                    ((void *)0)
-# 241 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 244 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
                        ) {
         return -1;
     }

@@ -6317,6 +6317,13 @@ uint8_t BleSetMtu();
 void ble_scan_start(void);
 
 void handle_ble_scan(void);
+
+
+
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_interface.h" 3 4
+_Bool 
+# 48 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_interface.h"
+    ble_is_enabled(void);
 # 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h" 1
 # 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
@@ -6408,6 +6415,10 @@ typedef enum {
     APP_EVENT_MQTT_SET_ON,
     APP_EVENT_MQTT_SET_OFF,
     APP_EVENT_RELAY_STATE_CHANGED,
+    APP_EVENT_MQTT_BLE_MASTER_START,
+    APP_EVENT_MQTT_BLE_MASTER_STOP,
+    APP_EVENT_MQTT_BLE_MASTER_CONNECT,
+    APP_EVENT_MQTT_BLE_MASTER_DISCONNECT,
     APP_EVENT_MAX
 } app_event_type_t;
 
@@ -6424,6 +6435,7 @@ typedef enum {
     APP_STATE_WIFI_CONNECTING,
     APP_STATE_WIFI_CONNECTED,
     APP_STATE_WIFI_FAILED,
+    APP_STATE_BLE_MASTER,
     APP_STATE_MAX
 } app_state_t;
 
