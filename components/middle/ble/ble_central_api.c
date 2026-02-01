@@ -157,7 +157,6 @@ void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3)
     }
     else{
         printf("[LED] UNKNOWN (pad1=%d, pad2=%d, pad3=%d)\r\n", pad1, pad2, pad3);
-        fflush(stdout);
     }
 }
 
