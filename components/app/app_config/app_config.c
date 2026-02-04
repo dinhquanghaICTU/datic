@@ -57,6 +57,7 @@ int app_config_save_wifi(const char *ssid, const char *password)
 
 int app_config_clear_wifi(void)
 {
+    //xóa hết value dưới flash của FLASH_KEY_SSID | FLASH_KEY_PASSWORD
     ef_del_env(FLASH_KEY_SSID);
     ef_del_env(FLASH_KEY_PASSWORD);
     ef_save_env();

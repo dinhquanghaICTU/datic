@@ -31,15 +31,15 @@ static bool g_ble_adv_running = false;
 
 
 static bool ble_slave = false;
-static void ble_config_done_handler(const char *ssid, const char *password)
+static void ble_config_done_handler(const char *ssid, const char *password) 
 {
-    if (app_config_save_wifi(ssid, password) == 0) {
+    if (app_config_save_wifi(ssid, password) == 0) { // lưu lại cấu hình 
         if (g_config_done_cb) {
             g_config_done_cb(ssid, password);
         }
-        app_ble_stop();
-        app_wifi_connect(ssid, password);
-        app_state_set_next(APP_STATE_WIFI_CONNECTING);
+        app_ble_stop(); // tắt ble  để tránh xung đột vs wifi
+        app_wifi_connect(ssid, password); // bắt đầu connect wifi vs ssid vừa cho 
+        app_state_set_next(APP_STATE_WIFI_CONNECTING); // 
         app_event_t event = {
             .type = APP_EVENT_BLE_CONFIG_DONE,
             .data = NULL
@@ -48,19 +48,19 @@ static void ble_config_done_handler(const char *ssid, const char *password)
     }
 }
 
-int app_ble_init(void) //register callback  affter when config, have full data about ssid and pass will call app
+int app_ble_init(void) 
 {
-    ble_set_config_done_cb(ble_config_done_handler);
+    ble_set_config_done_cb(ble_config_done_handler); // khi có đủ ssid vs pass nó gọi callback này 
     return 0;
 }
 
 int app_ble_start(void)
 {
-    wifi_if_disconnect();
+    wifi_if_disconnect();// tắt wifi manager station đi 
     aos_msleep(2000);
     
-    if (!g_ble_stack_started) {
-        apps_ble_start();
+    if (!g_ble_stack_started) { //check xem đã khởi tại stack chưa tránh cash  vì chỉ cho phép khởi tạo 1 lần 
+        apps_ble_start(); // nếu chưa thì khởi tạo stack 
         aos_msleep(1000);
         // ble_scan_start();
         // ble_master_scan(200000);
@@ -87,7 +87,7 @@ int app_ble_stop(void)
     return 0;
 }
 
-bool app_ble_is_running(void)
+bool app_ble_is_running(void) // trả về biến global true or false  init là false
 {
     return g_ble_running;
 }
@@ -155,12 +155,16 @@ static uint8_t s_relay_current_state = 0;
 static bool s_wifi_was_connected = false;
 static bool s_ble_master_api_init = false;  
 
-static bool adv_parse_cb(struct bt_data *data, void *user_data)
+static bool adv_parse_cb(struct bt_data *data, void *user_data) 
 {
+    /*
+        ở đây lọc theo gói adv runtile  
+    */
     int8_t rssi = *(int8_t *)user_data;
+
     bt_addr_le_t *addr = (bt_addr_le_t *)((uint8_t *)user_data + sizeof(int8_t));
 
-    if (data->type != BT_DATA_MANUFACTURER_DATA) {
+    if (data->type != BT_DATA_MANUFACTURER_DATA) { //chỉ lọc các gói có kiểu BT_DATA_MANUFACTURER_DATA
         return true; 
     }
     
@@ -170,8 +174,8 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
 
     const uint8_t *p = data->data;
     
-    uint16_t company_id = p[0] | (p[1] << 8);
-    if (company_id != 0x0211) {
+    uint16_t company_id = p[0] | (p[1] << 8); 
+    if (company_id != 0x0211) { // lọc ra chỉ lấy cái handle 0x0211
         return true;  
     }
 
@@ -179,7 +183,7 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
         return true;
     }
     
-    if (memcmp(&p[2], "addruntitle", 11) != 0) {
+    if (memcmp(&p[2], "addruntitle", 11) != 0) { 
         return true;
     }
     
@@ -192,8 +196,10 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
     }
 
     (void)p[16]; 
-    uint8_t touchpad2 = p[17];  
+    uint8_t touchpad2 = p[17];   // lấy ra giá trị để thay đổi state của led theo perferiall 
     (void)p[18]; 
+
+    // lưu lại mac để sau này chờ mqtt gửi xuống command kết nối luôn 
     bool is_same_device = s_slave_mac_found &&(memcmp(s_found_slave_mac, addr->a.val, 6) == 0);
     if (!s_slave_mac_found || !is_same_device) {      
         memcpy(s_found_slave_mac, addr->a.val, 6);
@@ -241,7 +247,7 @@ static void scan_adv_device_found(const bt_addr_le_t *addr,int8_t rssi,uint8_t t
     } user_data;
     
     user_data.rssi = rssi;
-    memcpy(&user_data.addr, addr, sizeof(bt_addr_le_t));
+    memcpy(&user_data.addr, addr, sizeof(bt_addr_le_t)); // lưu lại thông tin của các thiết bị đó 
     
     bt_data_parse(ad, adv_parse_cb, &user_data);
 }
@@ -250,13 +256,13 @@ static void scan_adv_device_found(const bt_addr_le_t *addr,int8_t rssi,uint8_t t
 static void ble_master_scan_adv_task(void *params)
 {
     struct bt_le_scan_param scan_param = {
-        .type       = BT_LE_SCAN_TYPE_PASSIVE,
-        .filter_dup = BT_LE_SCAN_FILTER_DUPLICATE,
-        .interval   = 0x400,  
-        .window     = 0x30,   
+        .type       = BT_LE_SCAN_TYPE_PASSIVE,// chọn chêc độ passive
+        .filter_dup = BT_LE_SCAN_FILTER_DUPLICATE, // lọc các gói duplicate 
+        .interval   = 0x400,   // set interrvall 
+        .window     = 0x30, //set window 
     };
     
-    int ret = bt_le_scan_start(&scan_param, scan_adv_device_found);
+    int ret = bt_le_scan_start(&scan_param, scan_adv_device_found);  // bắt đầu scan và truyền call back khi timg thấy các thiêt bị xung qian 
     if (ret) {
         vTaskDelete(NULL);
         return;
@@ -308,6 +314,9 @@ int app_ble_master_init(void)
     return 0;
 }
 
+/*
+    hàm này là để chọn sang chế độ adv runtile
+*/
 int app_ble_master_start(void)
 {
     if (s_ble_master_running) {
@@ -336,11 +345,11 @@ int app_ble_master_start(void)
     s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
     s_ble_master_running = true;
     
-    xTaskCreate(ble_master_scan_adv_task,"ble_scan_adv",1024,NULL,10,&s_ble_scan_task_handle);
+    xTaskCreate(ble_master_scan_adv_task,"ble_scan_adv",1024,NULL,10,&s_ble_scan_task_handle); // nó cứ loop ở đây chờ đến khi mqtt send cmd kết nối 
     return 0;
 }
 
-int app_ble_master_connect(const uint8_t *slave_mac)
+int app_ble_master_connect(const uint8_t *slave_mac) // hàm này  sẽ xóa mac của lần trước để chuẩn bị tìm slave trong qua tìm adv add runtile 
 {
     if (!s_ble_master_running) {
         blog_error("[BLE_MASTER] Not running\r\n");
@@ -366,23 +375,23 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     ble_reverse_byte(mac_display, 6);
     
     if (s_ble_scan_task_handle) {
-        vTaskDelete(s_ble_scan_task_handle);
+        vTaskDelete(s_ble_scan_task_handle); //xóa task scan adv tile trước khi kết nối
         s_ble_scan_task_handle = NULL;
     }
     
-    bt_le_scan_stop();
+    bt_le_scan_stop();// tắt scan của adv runtile tránh xung đột 
     aos_msleep(500);
     
     s_current_mode = BLE_MASTER_MODE_CONNECT;
     
-    if (!s_ble_master_api_init) {
+    if (!s_ble_master_api_init) { // nếu chưa init thì init 
         extern int ble_master_init(void);
         int ret = ble_master_init();
         if (ret == 0) {
             s_ble_master_api_init = true;
         }
         
-        extern void axk_HalBleRegisterCallbacks(void);
+        extern void axk_HalBleRegisterCallbacks(void); // đang kí các call back của master 
         axk_HalBleRegisterCallbacks();
     }
     
@@ -390,14 +399,14 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     memcpy(mac_reversed, s_found_slave_mac, 6);
     ble_reverse_byte(mac_reversed, 6);
     
-    uint8_t ret = axk_HalBleCentralConnect(mac_reversed, NULL, BLE_MASTER_AUTOCONN_DISABLE);
+    uint8_t ret = axk_HalBleCentralConnect(mac_reversed, NULL, BLE_MASTER_AUTOCONN_DISABLE); // kết nối với master đã lưu lại mac
     
     if (ret != 0 && ret != 1) {
         printf("[BLE_MASTER] Connection failed, ret=%d\r\n", ret);
         fflush(stdout);
         
         s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
-        xTaskCreate(ble_master_scan_adv_task,"ble_scan_adv",1024,NULL,14,&s_ble_scan_task_handle);
+        xTaskCreate(ble_master_scan_adv_task,"ble_scan_adv",1024,NULL,14,&s_ble_scan_task_handle); // tạo task scan 
     }
     xTaskCreate(ble_master_uart_task,"ble_uart",1024,NULL,15,&s_ble_uart_task_handle);
     return 0;

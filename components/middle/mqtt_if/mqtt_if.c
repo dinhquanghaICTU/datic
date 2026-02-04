@@ -539,7 +539,7 @@ static char s_topic_prefix[64] = MQTT_TOPIC_PREFIX;
 
 static void mqtt_message_handler(const char *topic, const char *payload, int payload_len)
 {
-    if (strstr(topic, MQTT_TOPIC_COMMAND) != NULL) {
+    if (strstr(topic, MQTT_TOPIC_COMMAND) != NULL) { // xử lý command  tùy trường hợp bắn các event khác nhau loop trong main và thực hiện theo evenent đa số lag điều khiển có chế độ masster cần chú ý 
         mqtt_cmd_t cmd;
         int parse_ret = mqtt_cmd_parse(payload, payload_len, &cmd);
         if (parse_ret == 0) {
@@ -574,9 +574,9 @@ static void mqtt_message_handler(const char *topic, const char *payload, int pay
                     blog_info("[MQTT] Received BLE Master stop command\r\n");
                     app_event_post(APP_EVENT_MQTT_BLE_MASTER_STOP, NULL);
                     break;
-                case MQTT_CMD_BLE_MASTER_CONNECT:
+                case MQTT_CMD_BLE_MASTER_CONNECT: // khi nhận được command master connect 
                     blog_info("[MQTT] Received BLE Master connect command\r\n");
-                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_CONNECT, NULL);
+                    app_event_post(APP_EVENT_MQTT_BLE_MASTER_CONNECT, NULL); //bắn event lên  loop ngoài while 1
                     break;
                 case MQTT_CMD_BLE_MASTER_DISCONNECT:
                     blog_info("[MQTT] Received BLE Master disconnect command\r\n");
@@ -608,7 +608,7 @@ int app_mqtt_init(void)
     //register callback  save to variable global pointer funcion 
     mqtt_if_set_connected_cb(mqtt_connected_handler);
     mqtt_if_set_disconnected_cb(mqtt_disconnected_handler);
-    mqtt_if_set_message_cb(mqtt_message_handler);
+    mqtt_if_set_message_cb(mqtt_message_handler); // khi write xuống nhận được call back này 
     
 
     // create full string connect, save to array 
@@ -624,18 +624,20 @@ int app_mqtt_start(const char *broker, int port, const char *client_id)
     }
     
     mqtt_if_config_t config = {0};
+    // config port là 1883
     strncpy(config.broker, broker, sizeof(config.broker) - 1);
     config.port = port > 0 ? port : 1883;
     
+    //set client id là device_  thao số lần kết nối tự tăng tránh trùng 
     if (client_id) {
         strncpy(config.client_id, client_id, sizeof(config.client_id) - 1);
     } else {
         snprintf(config.client_id, sizeof(config.client_id), "device_%d", (int)aos_now_ms());
     }
     
-    config.keepalive = 60;
+    config.keepalive = 60; // đặt keep alive là 60  ping 
     mqtt_if_set_config(&config);
-    return mqtt_if_connect();
+    return mqtt_if_connect(); // trả về connect 
 }
 
 int app_mqtt_publish_state(const char *state)

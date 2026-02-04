@@ -54,11 +54,11 @@ static bool has_password = false;
 static bool s_ble_enabled = false;
 static bool s_ble_service_registered = false;
 
-#define ble_slave_name "HNN_intern"
+#define ble_slave_name "HNN_intern" // được truyền name này vào 
 
 static const struct bt_data salve_adv[] = {
-    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)),
-    BT_DATA(BT_DATA_NAME_COMPLETE, ble_slave_name, sizeof(ble_slave_name) - 1),
+    BT_DATA_BYTES(BT_DATA_FLAGS, (BT_LE_AD_GENERAL | BT_LE_AD_NO_BREDR)), // có thể scan và không cho cho phép bluetooh thông thường connect 
+    BT_DATA(BT_DATA_NAME_COMPLETE, ble_slave_name, sizeof(ble_slave_name) - 1), // xét name cho khi central quét được 
 };
 
 static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
@@ -68,21 +68,31 @@ static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt
 static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value);
 static void check_and_save_config(void);
 
+
+
+/*
+    - config  gatt 
+    + có 1 service 3 characteric 
+        1 là để write pass, 
+        2 là để nontify
+        3 là write pass
+*/
 static struct bt_gatt_attr wifi_config_server[] = {
+
     BT_GATT_PRIMARY_SERVICE(WIFI_CONFIG_SERVICE_UUID),
     BT_GATT_CHARACTERISTIC(WIFI_CONFIG_CHAR_SSID_UUID,
-                           BT_GATT_CHRC_WRITE_WITHOUT_RESP,
-                           BT_GATT_PERM_WRITE, NULL, ble_ssid_write_val, NULL),
+                           BT_GATT_CHRC_WRITE_WITHOUT_RESP,// có quyền  nhận res và phản hồi lái res
+                           BT_GATT_PERM_WRITE, NULL, ble_ssid_write_val, NULL), // có quyền write và truyền callback khi có người write ble_ssid_write_val 
 
     BT_GATT_CHARACTERISTIC(WIFI_CONFIG_CHAR_PASS_UUID,
-                           BT_GATT_CHRC_WRITE_WITHOUT_RESP,
-                           BT_GATT_PERM_WRITE, NULL, ble_password_write_val, NULL),
+                           BT_GATT_CHRC_WRITE_WITHOUT_RESP,// có quyền  nhận res và phản hồi lái res
+                           BT_GATT_PERM_WRITE, NULL, ble_password_write_val, NULL),// có quyền write và truyền callback khi có người write ble_password_write_val 
 
 
 
-    BT_GATT_CHARACTERISTIC(NONTIFY_UUID, BT_GATT_CHRC_NOTIFY, BT_GATT_PERM_NONE ,NULL, NULL, NULL),
+    BT_GATT_CHARACTERISTIC(NONTIFY_UUID, BT_GATT_CHRC_NOTIFY, BT_GATT_PERM_NONE ,NULL, NULL, NULL), // chit nontify  báo character này là nontify
 
-    BT_GATT_CCC(ble_ccc_cfg_changed, BT_GATT_PERM_READ | BT_GATT_PERM_WRITE),
+    BT_GATT_CCC(ble_ccc_cfg_changed, BT_GATT_PERM_READ | BT_GATT_PERM_WRITE), // bật ccc để cho phép nhận nontify
 };
 
 static struct bt_gatt_service wifi_config_service = BT_GATT_SERVICE(wifi_config_server);
@@ -96,6 +106,8 @@ int notify_data(struct bt_conn *conn,
 
 static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
+
+    // in ra mac thiết bị write 
     bt_addr_le_t *test_mac;
     
     char addr [BT_ADDR_LE_STR_LEN];
@@ -114,18 +126,18 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     //     return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
     // }
 
-    if (offset == 0) {
+    if (offset == 0) {// nếu người dùng ghi khoảng trắng thì sẽ xóa biến tạm lưu ssid 
         memset(temp_ssid, 0, sizeof(temp_ssid));
-        has_ssid = false;
+        has_ssid = false; //xet lại cờ này về false
     }
 
-    if (offset + len > WIFI_SSID_MAX_LEN) {
+    if (offset + len > WIFI_SSID_MAX_LEN) { // nếu data write  xuống vượt quá mảng chứa ssid thì báo lỗi
         printf("[BLE] Invalid SSID length: offset=%d, len=%d, total=%d\r\n", offset, len, offset + len);
         return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
     }
-    memcpy(temp_ssid + offset, buf, len);
+    memcpy(temp_ssid + offset, buf, len); //copy từ buff vào biến tạm
     temp_ssid[offset + len] = '\0';  
-    has_ssid = true;
+    has_ssid = true; //xét lại cờ có ssid rồi 
 
     printf("[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_ssid);
 
@@ -135,6 +147,9 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     //     ble_start_master();    /* khởi động lại stack ở chế độ master */
     // }
 
+
+
+    // các extension thêm để test 
     if (strcmp(temp_ssid, "1") == 0) {
         relay_on();
         const char msg[] = "relay on ";
@@ -146,18 +161,21 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
         notify_data(conn, (uint8_t *)msg, sizeof(msg) - 1);
         relay_off();
     }
-    check_and_save_config();
+    check_and_save_config(); // lưu lại config vừa rồi 
 
-    return len;
+    return len; 
 }
 
+
+
+// khi có đủ hai cờ has_ssid= true |has_password = true thì nó sẽ bắn sang state khác đây là cầu nối giữa ble và wifi
 static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
                                       const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
 
-    if (len == 0) {
-        return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
-    }
+    // if (len == 0) { // 
+    //     return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
+    // }
 
     
     if (offset == 0) {
@@ -348,6 +366,9 @@ static int ble_salve_disconn_cb(struct bt_conn *conn, uint8_t code)
 
 int ble_salve_adv()
 {
+    /*
+        bắt đầu phát adv  với mảng config là salve_adv
+    */
     int err = bt_le_adv_start(BT_LE_ADV_CONN, salve_adv, ARRAY_SIZE(salve_adv), NULL, 0);
     if (err) {
         printf("[BLE] adv fail err %d\r\n", err);
@@ -383,15 +404,15 @@ bool ble_is_enabled(void)
     return s_ble_enabled;
 }
 
-static void bt_enable_cb(int err)
+static void bt_enable_cb(int err) // enable ble 
 {
     printf("[BLE] bt_enable_cb called with err=%d\r\n", err);
     if (!err) {
-        s_ble_enabled = true;
+        s_ble_enabled = true; // xét cờ enable lên true để không khởi tạo 2 lần 
         printf("[BLE] BLE stack enabled successfully!\r\n");
         printf("check stack ok \r\n");
         bt_addr_le_t bt_addr;
-        bt_get_local_public_address(&bt_addr);
+        bt_get_local_public_address(&bt_addr); // đặt mac addr  là 88:88:88:88 ,....
         bt_addr.a.val[5] = 0x88;
         bt_addr.a.val[4] = 0x88;
         bt_addr.a.val[3] = 0x88;
@@ -447,8 +468,8 @@ void ble_set_config_done_cb(ble_config_done_cb_t cb)
 
 int ble_slave_init()
 {
-    ble_server_init();
-    ble_salve_adv();
+    ble_server_init(); // xóa value có  key ssid vs pass dưới flash khởi tạo lại gatt
+    ble_salve_adv(); // phát đi adv chờ central connect gọi call back ble_ssid_write_val để xử lý ble_pass_write_val
     return 0;
 }
 
@@ -463,32 +484,35 @@ int ble_slave_deinit(void)
 
 int ble_server_init()
 {
-    memset(temp_ssid, 0, sizeof(temp_ssid));
+    /*
+        memset đi hai cái mảng trung gian chứ ssid và pass
+        + set cờ trạng thái không hai trường đó không có để sau này nhận đủ cả hai thì mới cho connect wifi
+    */
+    memset(temp_ssid, 0, sizeof(temp_ssid)); 
     memset(temp_password, 0, sizeof(temp_password));
     has_ssid = false;
     has_password = false;
 
     
-    if (s_ble_service_registered) {
+    if (s_ble_service_registered) { // nếu đã đăng kí service gatt từ trước thì bỏ config gatt đó đi 
         printf("[BLE] Service already registered\r\n");
         bt_gatt_service_unregister(&wifi_config_service);
-        s_ble_service_registered = false;
+        s_ble_service_registered = false; //xét lại cờ về trạng thái chưa đăng kí 
         aos_msleep(100); 
     }
 
-    
-    int wait_count = 0;
-    while (!s_ble_enabled && wait_count < 50) { 
-        aos_msleep(100);
-        wait_count++;
-    }
+    // int wait_count = 0;
+    // while (!s_ble_enabled && wait_count < 50) { 
+    //     aos_msleep(100);
+    //     wait_count++;
+    // }
 
-    if (!s_ble_enabled) {
+    if (!s_ble_enabled) { // nếu biến cờ s_ble_enabled chưa được bật lên thì báo lỗi 
         printf("[BLE] BLE stack not enabled, cannot register service\r\n");
         return -1;
     }
 
-    int ret = bt_gatt_service_register(&wifi_config_service);
+    int ret = bt_gatt_service_register(&wifi_config_service); // đăng kí lại gatt kèm config wifi_config_service
     if (ret) {
         printf("[BLE] Failedconfig service: %d\r\n", ret);
         s_ble_service_registered = false;
@@ -520,12 +544,12 @@ void ble_stack_start(void)
     s_ble_enabled = false;
     ble_controller_init(configMAX_PRIORITIES - 1);
     hci_driver_init();
-    bt_enable(bt_enable_cb);
+    bt_enable(bt_enable_cb); // enable ble và đăng kí call back bt_enable_cb để chờ set lên 
 }
 
 void apps_ble_start()
 {
-    if (s_ble_enabled) {
+    if (s_ble_enabled) { //đảo lại cờ cho lần sau 
 
         s_ble_enabled = false;
         aos_msleep(1000); 
@@ -534,24 +558,29 @@ void apps_ble_start()
     aos_msleep(3000);  
     
     printf("[BLE] Starting BLE stack...\r\n");
-    ble_stack_start();
+    ble_stack_start(); // bắt đầu chạy stack ble
     
     
     int wait_count = 0;
-    while (!s_ble_enabled && wait_count < 150) { 
+    /*
+        check cờ s_ble_enabled được set lên = true| 
+         nếu quá 150 ms  thì sẽ thoát nhằm ổn định 
+         cờ s_ble_enabled được đăng kí trong call back bt_enable_cb();
         aos_msleep(100);
+    */
+    while (!s_ble_enabled && wait_count < 150) {  
         wait_count++;
         if (wait_count % 20 == 0) {
             printf("[BLE] %d\r\n", wait_count / 10);
         }
     }
     
-    if (!s_ble_enabled) {
+    if (!s_ble_enabled) { // nếu chưa được set sau time out thì false
         return;
     }
     
     printf("[BLE]init slave\r\n");
-    ble_slave_init();
+    ble_slave_init(); // init ble perferial và loop chờ central write xuống thì vào 2 call back để xử lý data
 }
 
 void apps_ble_stop()

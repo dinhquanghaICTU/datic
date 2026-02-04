@@ -637,7 +637,7 @@ uint8_t axk_HalBleCentralDisconnect(void)
 }
 
 /*BLE 主机模式初始化*/
-int ble_master_init(void)
+int ble_master_init(void) 
 {
     int ret;
 
@@ -664,11 +664,13 @@ int ble_master_init(void)
         printf("[BLE] task create fail\r\n");
         return -1;
     }
+
+    // đăng kí callback  khi master connect và disconnect 
     ble_regist_conn(ble_master_conn_cb);
     ble_regist_disconn(ble_master_disconn_cb);
 
-    aos_register_event_filter(EV_USER, event_cb_user_event, NULL);
-    aos_post_event(EV_USER, CODE_USER_MASTER_INIT, 0);
+    aos_register_event_filter(EV_USER, event_cb_user_event, NULL); // nhận hết các event là EV_USER lọc fillter  và báo cho call back này event_cb_user_event
+    aos_post_event(EV_USER, CODE_USER_MASTER_INIT, 0); // báo init done
 
     return 0;
 }

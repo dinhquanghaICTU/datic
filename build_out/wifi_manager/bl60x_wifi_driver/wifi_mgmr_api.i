@@ -8351,7 +8351,7 @@ int wifi_mgmr_api_chan_switch(int channel, uint8_t cs_count)
     return wifi_mgmr_api_common_msg(WIFI_MGMR_EVENT_APP_AP_CHAN_SWITCH, (void *)(intptr_t)channel, (void *)(uintptr_t)cs_count);
 }
 
-int wifi_mgmr_api_idle(void)
+int wifi_mgmr_api_idle(void) 
 {
     return wifi_mgmr_api_common_msg(WIFI_MGMR_EVENT_APP_IDLE, (void*)0x1, (void*)0x2);
 }

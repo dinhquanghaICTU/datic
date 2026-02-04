@@ -30,7 +30,7 @@ void main(void)
     blog_info("HNN_intern init TCP\r\n");
     tcpip_init(NULL, NULL);
     aos_msleep(100);
-    app_run();
+    app_run(); // go to app run - app task.c
     blog_info("Main loop started\r\n");
     while (1) {
         aos_msleep(1000);

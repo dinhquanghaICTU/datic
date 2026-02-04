@@ -36,17 +36,17 @@ static void wifi_event_handler(input_event_t *event, void *private_data)
     }
 
     switch (event->code) {
-        case CODE_WIFI_ON_INIT_DONE: //when wifi done - call fun wifi_mgmr_start_background parameter config struct s_wifi_conf
+        case CODE_WIFI_ON_INIT_DONE: // code init done
             printf("[WIFI_IF] WiFi INIT DONE\r\n");
-            wifi_mgmr_start_background(&s_wifi_conf); // api for buffalo
+            wifi_mgmr_start_background(&s_wifi_conf); 
             break;
 
-        case CODE_WIFI_ON_MGMR_DONE:
+        case CODE_WIFI_ON_MGMR_DONE: // code  khởi tạo manager  wifi station done
             printf("[WIFI_IF] WiFi MGMR DONE\r\n");
             s_wifi_mgmr_ready = true;
             break;
 
-        case CODE_WIFI_ON_GOT_IP:
+        case CODE_WIFI_ON_GOT_IP:  // trả về khi đã nhận được ip  từ dhcp cấp 
             printf("[WIFI_IF] WiFi connected and got IP\r\n");
             s_wifi_connected = true;
             s_wifi_connecting = false;
@@ -55,17 +55,17 @@ static void wifi_event_handler(input_event_t *event, void *private_data)
             }
             break;
 
-        case CODE_WIFI_ON_CONNECTED:
+        case CODE_WIFI_ON_CONNECTED: // báo connect thành công 
             printf("[WIFI_IF] WiFi connected (no IP yet), waiting for DHCP...\r\n");
             
             break;
 
-        case CODE_WIFI_ON_CONNECTING:
+        case CODE_WIFI_ON_CONNECTING: // báo đang connect 
             printf("[WIFI_IF] WiFi connecting...\r\n");
             s_wifi_connecting = true;
             break;
 
-        case CODE_WIFI_ON_DISCONNECT: {
+        case CODE_WIFI_ON_DISCONNECT: { // báo đã ngắt kết nối
             printf("[WIFI_IF] WiFi disconnected\r\n");
             bool was_connected = s_wifi_connected;
             s_wifi_connected = false;
@@ -120,48 +120,53 @@ int wifi_if_connect(const char *ssid, const char *password)
         return -1;
     }
 
-    if (s_wifi_connecting) {
+    if (s_wifi_connecting) { // check nếu đã conneting từ truowvs nó sẽ báo lỗi 
         printf("[WIFI_IF] WiFi already connecting\r\n");
         return -1;
     }
 
-    if (!s_wifi_mgmr_ready) {
+    if (!s_wifi_mgmr_ready) { // nếu chưa khởi tạo wifi manager station báo lỗi 
         printf("[WIFI_IF] WiFi MGMR not ready, cannot connect yet\r\n");
         s_wifi_connecting = false;
         return -1;
     }
 
     printf("[WIFI_IF] Connecting to WiFi: %s\r\n", ssid);
-    s_wifi_connecting = true;
+    s_wifi_connecting = true; // set cờ s_wifi_connecting = true
 
     
-    wifi_interface = wifi_mgmr_sta_enable();
+    wifi_interface = wifi_mgmr_sta_enable(); // lấy lại status của khởi tạo manager station  
 
     
-    wifi_mgmr_sta_autoconnect_enable();
+    wifi_mgmr_sta_autoconnect_enable(); // bật auto connect nếu rớt mạng tự connect lại 
 
     
-    memset(&ext_param, 0, sizeof(ext_param));
-    ext_param.psk = NULL;
-    ext_param.ap_info.type = AP_INFO_TYPE_PRESIST;
-    ext_param.ap_info.time_to_live = 5;
-    ext_param.ap_info.band = 0;
-    ext_param.ap_info.use_dhcp = 1;  
+    memset(&ext_param, 0, sizeof(ext_param)); //xóa cấu hình và set lại 
+    ext_param.psk = NULL; //Không truyền PSK đã hash sẵn, tự tính sẵn từ lúc truyền pass
+    ext_param.ap_info.type = AP_INFO_TYPE_PRESIST; //Lưu thông tin AP vào storage
+    ext_param.ap_info.time_to_live = 5;// TTL = thời gian sống của record AP.
+    ext_param.ap_info.band = 0; // tự chọn mode Auto 2.4GHZ||5GHZ mà wb2 chỉ hỗ trợ 2.4GHZ nên auto cũng tự vào 2.4GHZ
+    ext_param.ap_info.use_dhcp = 1;  //Router sẽ cấp IP tự động
 
-    return wifi_mgmr_sta_connect_ext(wifi_interface, (char *)ssid, (char *)password, &ext_param);
+    /*
+         bắt đầu kết nối tới AP vs cấu hình đã cho và chờ conback từ yloop gọi tới báo kết nối thành công 
+         khi đã init wifi_if_init và đăng kí callback EV_WIFI, wifi_event_handler nó sẽ trả về theo code 
+
+    */
+    return wifi_mgmr_sta_connect_ext(wifi_interface, (char *)ssid, (char *)password, &ext_param); 
 }
 
 int wifi_if_disconnect(void)
 {
     
-    wifi_mgmr_sta_autoconnect_disable();
+    wifi_mgmr_sta_autoconnect_disable(); // tắt manager station quản lý wifi 
     wifi_mgmr_sta_disconnect();
     
     
     extern int wifi_mgmr_api_idle(void);
-    wifi_mgmr_api_idle();
+    wifi_mgmr_api_idle(); // trả về trạng thái idle cho manager station
     
-    s_wifi_connected = false;
+    s_wifi_connected = false; // set cờ trạng thái về false
     s_wifi_connecting = false;
     return 0;
 }
@@ -249,19 +254,19 @@ void wifi_if_set_connect_failed_cb(wifi_if_connect_failed_cb_t cb)
 
 int app_wifi_connect(const char *ssid, const char *password)
 {
-    if (ssid == NULL || password == NULL) {
+    if (ssid == NULL || password == NULL) { // nếu không có ssid vs pass báo error
         return -1;
     }
 
-    if (!wifi_if_is_mgmr_ready()) {
-        printf("[APP][WiFi] MGMR not ready, cannot connect\r\n");
+    if (!wifi_if_is_mgmr_ready()) { // check cờ này s_wifi_mgmr_ready nếu manager station chưa sẵn sàn 
+        printf("[APP][WiFi] MGMR not ready, cannot connect\r\n"); // báo lỗi
         if (g_connect_failed_cb) {
             g_connect_failed_cb();
         }
         return -1;
     }
 
-    return wifi_if_connect(ssid, password);
+    return wifi_if_connect(ssid, password);  // trả về kết quả connect 
 }
 
 

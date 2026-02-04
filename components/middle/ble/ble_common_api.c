@@ -171,10 +171,10 @@ uint8_t axk_HalBleGetMac(uint8_t *mac)
 
 void axk_HalBleRegisterCallbacks(void)
 {
-    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb); //bt_gatt_exchange_mtu()
-    bt_conn_cb_register(&conn_callbacks);
+    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb); //nếu muốn đổi mtu có thể dùng hàm này  bt_gatt_exchange_mtu()
+    bt_conn_cb_register(&conn_callbacks);  // truyền concallback khi connect và disconnect vs của tần PHY
     conn_callbacks._next = NULL;
-    bt_set_tx_pwr(15);
+    bt_set_tx_pwr(15); // thiết lập công xuất phát 
 }
 
 //启动或者关闭蓝牙
