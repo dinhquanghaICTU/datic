@@ -12,7 +12,7 @@
 
 int app_run(void)
 {
-    blog_info("APP RUN\r\n");
+    blog_info("HNN RUN\r\n");
     led_init();
     relay_init();
     if (app_config_init() != 0) {
@@ -23,7 +23,7 @@ int app_run(void)
         blog_error(">>> Failed to init WiFi\r\n");
         return -1;
     }
-    app_wifi_set_connected_cb(app_wifi_connected_callback);
+    app_wifi_set_connected_cb(app_wifi_connected_callback); //register call back , call fun set callback for wrapper
     app_wifi_set_disconnected_cb(app_wifi_disconnected_callback);
     app_wifi_set_connect_failed_cb(app_wifi_connect_failed_callback);
     
@@ -31,7 +31,7 @@ int app_run(void)
         blog_error(">>> Failed to init BLE\r\n");
         return -1;
     }
-    app_ble_set_config_done_cb(app_ble_config_done_callback);
+    app_ble_set_config_done_cb(app_ble_config_done_callback); // register callback when config done will call pointer funtion
     
     app_task_init();
     

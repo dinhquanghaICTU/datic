@@ -44,7 +44,7 @@ void ble_scan_start(void);
 
 void handle_ble_scan(void);
 
-// Check if BLE stack is enabled
+
 bool ble_is_enabled(void);
 
 #endif //__BLE_INTERFACE_H__

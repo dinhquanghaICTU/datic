@@ -27,7 +27,7 @@ static app_state_handler_t state_handlers[APP_STATE_MAX] = {
 
 void app_state_init(void)
 {
-    blog_debug("in log init state\r\n");
+    blog_debug("init state\r\n");
     memset(&g_state_machine, 0, sizeof(app_state_machine_t));
     g_state_machine.current_state = APP_STATE_INIT;
     g_state_machine.next_state = APP_STATE_INIT;
@@ -58,7 +58,7 @@ app_state_t app_state_process_event(app_event_t *event)
         return g_state_machine.current_state;
     }
     
-    app_state_t new_state = state_handlers[g_state_machine.current_state](event);
+    app_state_t new_state = state_handlers[g_state_machine.current_state](event); //return idex
     
     if (new_state != g_state_machine.current_state) {
         blog_info("State transition: %d -> %d\r\n", g_state_machine.current_state, new_state);
@@ -104,7 +104,6 @@ static app_state_t state_ble_config_handler(app_event_t *event)
 static app_state_t state_wifi_connecting_handler(app_event_t *event)
 {
     if (event->type == APP_EVENT_BUTTON_HOLD) {
-        
         blog_info("State: WIFI_CONNECTING -> BLE_CONFIG (button hold)\r\n");
         return APP_STATE_BLE_CONFIG;
     } else if (event->type == APP_EVENT_WIFI_CONNECTED) {

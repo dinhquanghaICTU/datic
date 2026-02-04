@@ -3,6 +3,8 @@
 
 #include <stdbool.h>
 
+
+//register funcion pointer
 typedef void (*wifi_if_connected_cb_t)(void);
 typedef void (*wifi_if_disconnected_cb_t)(void);
 typedef void (*wifi_if_connect_failed_cb_t)(void);

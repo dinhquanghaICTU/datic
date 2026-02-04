@@ -33,9 +33,9 @@ static void wifi_event_handler(input_event_t *event, void *private_data)
     }
 
     switch (event->code) {
-        case CODE_WIFI_ON_INIT_DONE:
-            printf("[WIFI_IF] WiFi INIT DONE, starting background\r\n");
-            wifi_mgmr_start_background(&s_wifi_conf);
+        case CODE_WIFI_ON_INIT_DONE: //when wifi done - call fun wifi_mgmr_start_background parameter config struct s_wifi_conf
+            printf("[WIFI_IF] WiFi INIT DONE\r\n");
+            wifi_mgmr_start_background(&s_wifi_conf); // api for buffalo
             break;
 
         case CODE_WIFI_ON_MGMR_DONE:
@@ -91,20 +91,19 @@ int wifi_if_init(void)
     static uint8_t wifi_init_done = 0;
 
     if (wifi_init_done) {
-        printf("[WIFI_IF] WiFi already initialized\r\n");
         return 0;
     }
 
     wifi_init_done = 1;
     printf("[WIFI_IF] Initializing WiFi...\r\n");
 
-    aos_register_event_filter(EV_WIFI, wifi_event_handler, NULL);
+    aos_register_event_filter(EV_WIFI, wifi_event_handler, NULL); //when have event about code is "EV_WIFI" call callback - wifi_event_handler
 
     
-    hal_wifi_start_firmware_task();
+    hal_wifi_start_firmware_task(); // runing wifi stack api for buffalo
 
     
-    aos_post_event(EV_WIFI, CODE_WIFI_ON_INIT_DONE, 0);
+    aos_post_event(EV_WIFI, CODE_WIFI_ON_INIT_DONE, 0); //send event nontify "wifi init done" call fun wifi_event_handler
 
     return 0;
 }
@@ -232,7 +231,7 @@ bool wifi_if_is_mgmr_ready(void)
 
 void wifi_if_set_connected_cb(wifi_if_connected_cb_t cb)
 {
-    s_connected_cb = cb;
+    s_connected_cb = cb; // save call back in interface 
 }
 
 void wifi_if_set_disconnected_cb(wifi_if_disconnected_cb_t cb)

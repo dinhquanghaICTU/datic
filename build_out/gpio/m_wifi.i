@@ -143,6 +143,8 @@ void app_wifi_task(void *params);
 
 
 
+
+
 typedef void (*wifi_if_connected_cb_t)(void);
 typedef void (*wifi_if_disconnected_cb_t)(void);
 typedef void (*wifi_if_connect_failed_cb_t)(void);
@@ -153,14 +155,14 @@ int wifi_if_disconnect(void);
 int wifi_if_disable(void);
 int wifi_if_enable(void);
 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
     wifi_if_is_connected(void);
 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
     wifi_if_is_mgmr_ready(void);
 
 

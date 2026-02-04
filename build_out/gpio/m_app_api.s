@@ -236,7 +236,7 @@ app_run:
 	.4byte	.LASF14
 	.4byte	.LASF14
 	.byte	0x5
-	.byte	0xa
+	.byte	0xc
 	.byte	0x5
 	.byte	0x6
 	.4byte	.LASF15

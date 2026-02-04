@@ -28,8 +28,8 @@ static struct
     uint16_t tt_tx;
     uint16_t tt_rx;
     uint16_t led_value;
-    uint16_t touchpad_notify_char;  // Handle for touchpad notify characteristic (0xFFE1)
-    uint16_t touchpad_notify_ccc;   // Handle for touchpad notify CCC descriptor
+    uint16_t touchpad_notify_char;  
+    uint16_t touchpad_notify_ccc;   
 } discover_handle;
 
 static struct 
@@ -58,26 +58,18 @@ extern hosal_uart_dev_t ble_uart_dev;
 
 void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3);
 
-static uint8_t notify_func(
-    struct bt_conn *conn,
-    struct bt_gatt_subscribe_params *params,
-    const void *data, 
-    uint16_t length)
+static uint8_t notify_func(struct bt_conn *conn,struct bt_gatt_subscribe_params *params,const void *data, uint16_t length)
 {
     pconn = conn;
     if (length != 0)
     {
-        // Check if this notification is from touchpad notify characteristic (0xFFE1)
         if (params->value_handle == discover_handle.touchpad_notify_char) {
-            // Parse JSON format: {"t1":value1,"t2":value2,"t3":value3}
             const char *str = (const char *)data;
-            
             uint8_t t1 = 0, t2 = 0, t3 = 0;
-            
-            // Parse JSON: {"t1":value1,"t2":value2,"t3":value3}
+            // Parse {"t1":value1,"t2":value2,"t3":value3}
             const char *t1_start = strstr(str, "\"t1\":");
             if (t1_start) {
-                t1_start += 5; // Skip "t1":
+                t1_start += 5;
                 while (*t1_start == ' ' || *t1_start == '\t') t1_start++;
                 t1 = (uint8_t)atoi(t1_start);
             }
@@ -95,23 +87,17 @@ static uint8_t notify_func(
                 while (*t3_start == ' ' || *t3_start == '\t') t3_start++;
                 t3 = (uint8_t)atoi(t3_start);
             }
-            
-            // Call handle_res with parsed values
             handle_res(t1, t2, t3);
         }
         else {
-            // Handle tt_rx notification (old format)
             char logbuf[128];
             uint8_t pad1 = 0, pad2 = 0, pad3 = 0;
-            
             if (length >= 19) {  
                 const char *str = (const char *)data;
-                
                 const char *p1 = strstr(str, "pad1:");
                 if (p1) {
                     pad1 = (p1[5] == '1') ? 1 : 0;
                 }
-                
                 const char *p2 = strstr(str, "pad2:");
                 if (p2) {
                     pad2 = (p2[5] == '1') ? 1 : 0;
@@ -121,7 +107,6 @@ static uint8_t notify_func(
                 if (p3) {
                     pad3 = (p3[5] == '1') ? 1 : 0;
                 }
-                
                 sprintf(logbuf, "[TOUCHPAD] pad1=%d, pad2=%d, pad3=%d\r\n", pad1, pad2, pad3);
                 bleuart_printf(logbuf);
                 
@@ -133,8 +118,6 @@ static uint8_t notify_func(
     }
     return BT_GATT_ITER_CONTINUE;
 }
-
-
 void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3)
 {
     printf("[LED]  %d\r\n",pad2);
@@ -160,27 +143,24 @@ void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3)
     }
 }
 
-static uint8_t discover_func(
-    struct bt_conn *conn,
-    const struct bt_gatt_attr *attr,
-    struct bt_gatt_discover_params *params)
+static uint8_t discover_func(struct bt_conn *conn,const struct bt_gatt_attr *attr,struct bt_gatt_discover_params *params)
 {
     int err;
     uint8_t uuid128[16];
-    // Removed unused logbuf variable
     pconn = conn;
+
     if (!attr) 
     {
         printf("Discover complete\r\n");
-        printf("[BLE] Touchpad notify: char=0x%04X, ccc=0x%04X\r\n",
-               discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
-        fflush(stdout);
+        // printf("[BLE] Touchpad notify: char=0x%04X, ccc=0x%04X\r\n",
+        //        discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
+        // fflush(stdout);
         
-        // After discovery complete, subscribe to touchpad notify if found
+       
         if (discover_handle.touchpad_notify_char != 0 && discover_handle.touchpad_notify_ccc != 0) {
-            printf("[BLE] Subscribing to touchpad notify (char=0x%04X, ccc=0x%04X)...\r\n",
-                   discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
-            fflush(stdout);
+            // printf("[BLE] Subscribing to touchpad notify (char=0x%04X, ccc=0x%04X)...\r\n",
+            //        discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
+            // fflush(stdout);
             
             subscribe_touchpad.notify = notify_func;
             subscribe_touchpad.value = BT_GATT_CCC_NOTIFY;
@@ -192,43 +172,36 @@ static uint8_t discover_func(
                 printf("[BLE] Touchpad subscribe failed: %d\r\n", err);
                 fflush(stdout);
             } else {
-                printf("[BLE] Touchpad notify SUBSCRIBED successfully!\r\n");
+                printf("[BLE] Touchpad notify SUBSCRIBED successfully\r\n");
                 fflush(stdout);
             }
         } else {
-            printf("[BLE] Touchpad notify not found (char=0x%04X, ccc=0x%04X)\r\n",
-                   discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
+            printf("[BLE] Touchpad notify not found char=0x%04X, ccc=0x%04X\r\n",discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
             fflush(stdout);
         }
-        
         (void)memset(params, 0, sizeof(*params));
         return BT_GATT_ITER_STOP;
     }
 
-    // Log all 16-bit UUIDs for debugging
-    // Only check for touchpad notify characteristic (0xFFE1)
+   
+   
     if (attr->uuid->type == BT_UUID_TYPE_16) {
         struct bt_uuid_16 *uuid16 = (struct bt_uuid_16 *)attr->uuid;
         if (uuid16->val == 0xFFE1) {
             discover_handle.touchpad_notify_char = attr->handle;
-            printf("[BLE] Found touchpad notify (0xFFE1) at handle 0x%04X\r\n", attr->handle);
-            fflush(stdout);
+            // printf("[BLE] Found touchpad notify (0xFFE1) at handle 0x%04X\r\n", attr->handle);
+            // fflush(stdout);
         }
     }
- 
-    // Skip 128-bit UUIDs - only care about touchpad notify (0xFFE1)
-
-    // Check for CCC descriptor - only for touchpad_notify (0xFFE1)
     if(!bt_uuid_cmp(attr->uuid, BT_UUID_GATT_CCC)) 
     {
-        // Check if this is CCC for touchpad_notify (0xFFE1)
         if (discover_handle.touchpad_notify_char != 0) 
         {
             if (attr->handle == discover_handle.touchpad_notify_char + 1) 
             {
                 discover_handle.touchpad_notify_ccc = attr->handle;
-                printf("[BLE] Found touchpad notify CCC at handle 0x%04X\r\n", attr->handle);
-                fflush(stdout);
+                // printf("[BLE] Found touchpad notify CCC at handle 0x%04X\r\n", attr->handle);
+                // fflush(stdout);
             }
         }
     }
@@ -238,17 +211,16 @@ static uint8_t discover_func(
 static int ble_master_discover_server(struct bt_conn *conn)
 {
     int err;
-    
-    // Reset touchpad handles before new discovery
     discover_handle.touchpad_notify_char = 0;
     discover_handle.touchpad_notify_ccc = 0;
     
     discover_params.uuid = NULL;
-    discover_params.func = discover_func;
+    discover_params.func = discover_func; // callback when seach att
     discover_params.start_handle = 0x0001;
-    discover_params.end_handle = 0xFFFF;  // Extended range to find all characteristics
+    discover_params.end_handle = 0xFFFF;  
     discover_params.type = BT_GATT_DISCOVER_ATTRIBUTE;
     pconn = conn;
+
     err = bt_gatt_discover(conn, &discover_params);
     if (err) 
     {
@@ -350,7 +322,7 @@ static int ble_master_disconn_cb(struct bt_conn *conn, uint8_t code)
 static void exchange_func(struct bt_conn *conn, u8_t err,struct bt_gatt_exchange_params *params)
 {
     pconn = conn;
-    // MTU exchange completed
+    
 }
 
 static void event_cb_user_event(input_event_t *event, void *private_data)
@@ -365,8 +337,6 @@ static void event_cb_user_event(input_event_t *event, void *private_data)
             struct bt_conn *conn = (struct bt_conn *)event->value;
             bleuart_printf("+BLE_CONNECTED\r\n");
             bleuart_connect_status = 1;
-            
-            // Wait for connection to stabilize and MTU exchange
             aos_msleep(500);
             
             if (conn == NULL || conn->state != BT_CONN_CONNECTED) {
@@ -374,8 +344,6 @@ static void event_cb_user_event(input_event_t *event, void *private_data)
                 fflush(stdout);
                 break;
             }
-            
-            printf("[BLE] Starting GATT discovery...\r\n");
             fflush(stdout);
             
             int err = ble_master_discover_server(conn);
@@ -387,7 +355,7 @@ static void event_cb_user_event(input_event_t *event, void *private_data)
                 fflush(stdout);
             }
 
-            /* req mtu to max - only if connection is still valid */
+           
             if (conn && conn->state == BT_CONN_CONNECTED) {
                 exchange_params.func = exchange_func;
                 bt_gatt_exchange_mtu(conn, &exchange_params);
@@ -460,42 +428,46 @@ int ble_master_write_data(struct bt_conn *conn, u16_t handle, void *data, uint16
 
 uint16_t ble_master_get_led_handle(void)
 {
-
     return 0x0011;  
 }
 
+//HNN_modifier
+// int ble_master_write_led_cmd(const char *cmd, uint16_t handle)
+// {
+//     int ret;
+//     uint16_t len;
+//     char logbuf[100];
 
-int ble_master_write_led_cmd(const char *cmd, uint16_t handle)
-{
-    int ret;
-    uint16_t len;
-    char logbuf[100];
-
-    if (pconn == NULL) {
-        bleuart_printf("[BLE] write LED: pconn is NULL\r\n");
-        return -1;
-    }
+//     if (pconn == NULL) {
+//         bleuart_printf("[BLE] write LED: pconn is NULL\r\n");
+//         return -1;
+//     }
 
 
-    if (handle == 0) {
-        handle = ble_master_get_led_handle();
-    }
+//     if (handle == 0) {
+//         handle = ble_master_get_led_handle();
+//     }
 
-    len = strlen(cmd);
-    sprintf(logbuf, "[BLE] write LED: handle=0x%04X, cmd=\"%s\", len=%d\r\n", handle, cmd, len);
-    bleuart_printf(logbuf);
+//     len = strlen(cmd);
+//     sprintf(logbuf, "[BLE] write LED: handle=0x%04X, cmd=\"%s\", len=%d\r\n", handle, cmd, len);
+//     bleuart_printf(logbuf);
     
-    ret = bt_gatt_write_without_response(pconn, handle, (const uint8_t *)cmd, len, 0);
+//     ret = bt_gatt_write_without_response(pconn, handle, (const uint8_t *)cmd, len, 0);
     
-    if (ret) {
-        sprintf(logbuf, "[BLE] write LED failed: ret=%d\r\n", ret);
-        bleuart_printf(logbuf);
-    } else {
-        bleuart_printf("[BLE] write LED OK\r\n");
-    }
+//     if (ret) {
+//         sprintf(logbuf, "[BLE] write LED failed: ret=%d\r\n", ret);
+//         bleuart_printf(logbuf);
+//     } else {
+//         bleuart_printf("[BLE] write LED OK\r\n");
+//     }
     
-    return ret;
-}
+//     return ret;
+// }
+
+
+
+
+
 
 /*蓝牙主机主动连接指定从机*/
 //参数

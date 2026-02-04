@@ -528,25 +528,25 @@ g_connect_failed_cb:
 	.4byte	.LASF24
 	.4byte	.LASF24
 	.byte	0x4
-	.byte	0x15
+	.byte	0x17
 	.byte	0x6
 	.byte	0x15
 	.4byte	.LASF25
 	.4byte	.LASF25
 	.byte	0x4
-	.byte	0x14
+	.byte	0x16
 	.byte	0x6
 	.byte	0x15
 	.4byte	.LASF26
 	.4byte	.LASF26
 	.byte	0x4
-	.byte	0x13
+	.byte	0x15
 	.byte	0x6
 	.byte	0x15
 	.4byte	.LASF27
 	.4byte	.LASF27
 	.byte	0x4
-	.byte	0x10
+	.byte	0x12
 	.byte	0x5
 	.byte	0x15
 	.4byte	.LASF28
@@ -558,7 +558,7 @@ g_connect_failed_cb:
 	.4byte	.LASF29
 	.4byte	.LASF29
 	.byte	0x4
-	.byte	0xb
+	.byte	0xd
 	.byte	0x5
 	.byte	0
 	.section	.debug_abbrev,"",@progbits

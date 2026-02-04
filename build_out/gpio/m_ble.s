@@ -960,7 +960,7 @@ g_config_done_cb:
 	.4byte	.LASF62
 	.4byte	.LASF62
 	.byte	0x6
-	.byte	0xc
+	.byte	0xe
 	.byte	0x5
 	.byte	0x28
 	.4byte	.LASF63

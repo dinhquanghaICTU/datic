@@ -28,8 +28,8 @@ int app_wifi_connect(const char *ssid, const char *password)
 
 void app_wifi_set_connected_cb(app_wifi_connected_cb_t cb)
 {
-    g_connected_cb = cb;
-    wifi_if_set_connected_cb(cb);
+    g_connected_cb = cb; //save call back is variable, affter will call callback for value is poiter funcion
+    wifi_if_set_connected_cb(cb); // send down wifi_if register for callback interface 
 }
 
 void app_wifi_set_disconnected_cb(app_wifi_disconnected_cb_t cb)

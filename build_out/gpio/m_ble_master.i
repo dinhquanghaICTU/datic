@@ -6322,6 +6322,8 @@ _Bool
 
 
 
+
+
 typedef void (*wifi_if_connected_cb_t)(void);
 typedef void (*wifi_if_disconnected_cb_t)(void);
 typedef void (*wifi_if_connect_failed_cb_t)(void);
@@ -6332,14 +6334,14 @@ int wifi_if_disconnect(void);
 int wifi_if_disable(void);
 int wifi_if_enable(void);
 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
     wifi_if_is_connected(void);
 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
     wifi_if_is_mgmr_ready(void);
 
 
@@ -7450,9 +7452,6 @@ int hosal_uart_callback_set (hosal_uart_dev_t *uart,
 int hosal_uart_finalize(hosal_uart_dev_t *uart);
 # 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
 
-
-
-
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h" 1
 # 22 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/../../bluetooth/buf.h" 1
@@ -7589,8 +7588,7 @@ struct bt_hci_driver {
 int bt_hci_driver_register(const struct bt_hci_driver *drv);
 # 185 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/drivers/bluetooth/hci_driver.h"
 int bt_hci_transport_setup(struct device *dev);
-# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
-
+# 14 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h" 1
 # 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 struct bt_conn;
@@ -7928,8 +7926,7 @@ struct bt_conn *bt_conn_create_br(const bt_addr_t *peer,
       const struct bt_br_conn_param *param);
 # 946 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/conn.h"
 struct bt_conn *bt_conn_create_sco(const bt_addr_t *peer);
-# 19 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
-
+# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_master.h" 1
 # 13 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/ble/ble_master.h"
 typedef int (*ble_gatt_conn_cb_t)(struct bt_conn *conn, uint8_t code);
@@ -7968,12 +7965,10 @@ int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_
 
 uint16_t ble_master_get_led_handle(void);
 int ble_master_write_led_cmd(const char *cmd, uint16_t handle);
-# 21 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
-
+# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 2
 
 extern unsigned char bleuart_connect_status;
 extern struct bt_conn *pconn;
-
 
 hosal_uart_dev_t ble_uart_dev = {
     .config = {
@@ -7994,108 +7989,105 @@ hosal_uart_dev_t ble_uart_dev = {
 void bleuart_printf(char *buf)
 {
     if (buf != 
-# 45 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               ((void *)0)
-# 45 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 38 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ) {
         hosal_uart_send(&ble_uart_dev, buf, strlen(buf));
     }
 }
-
 
 extern uint8_t axk_HalBleInit(void);
 extern uint8_t axk_HalBleCentralStartScan(void);
 extern uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnect);
 extern int axk_HalBleCentralTTWrite(uint16_t len, uint8_t *data);
 
-
 extern void axk_HalBleRegisterCallbacks(void);
 
-
 static 
-# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
       _Bool 
-# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            s_ble_master_running = 
-# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                   0
-# 60 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                        ;
 static 
-# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
       _Bool 
-# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            s_ble_master_stack_started = 
-# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                         0
-# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                              ;
 static ble_master_mode_t s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
 static TaskHandle_t s_ble_uart_task_handle = 
-# 63 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                             ((void *)0)
-# 63 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                                 ;
 static TaskHandle_t s_ble_scan_task_handle = 
-# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                             ((void *)0)
-# 64 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 54 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                                 ;
 
 
 static uint8_t s_found_slave_mac[6] = {0};
 static 
-# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
       _Bool 
-# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            s_slave_mac_found = 
-# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                0
-# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 58 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                     ;
 
 
 static app_ble_master_rx_cb_t s_rx_cb = 
-# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                        ((void *)0)
-# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 61 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                            ;
 static app_ble_master_conn_cb_t s_conn_cb = 
-# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 62 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                            ((void *)0)
-# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 62 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                                ;
 static app_ble_master_adv_state_cb_t s_adv_state_cb = 
-# 73 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 63 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                                      ((void *)0)
-# 73 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 63 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                                          ;
 
 
 static uint8_t s_relay_current_state = 0;
 static 
-# 77 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
       _Bool 
-# 77 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            s_wifi_was_connected = 
-# 77 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                   0
-# 77 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                        ;
 static 
-# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
       _Bool 
-# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            s_ble_master_api_init = 
-# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                    0
-# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                         ;
 
 static 
-# 80 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 70 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
       _Bool 
-# 80 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 70 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            adv_parse_cb(struct bt_data *data, void *user_data)
 {
     int8_t rssi = *(int8_t *)user_data;
@@ -8103,18 +8095,18 @@ static
 
     if (data->type != 0xff) {
         return 
-# 86 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 76 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 86 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 76 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
 
     if (data->data_len < 19) {
         return 
-# 91 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 81 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 91 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 81 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
@@ -8124,43 +8116,43 @@ static
     uint16_t company_id = p[0] | (p[1] << 8);
     if (company_id != 0x0211) {
         return 
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
 
     if (data->data_len < 13) {
         return 
-# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
     if (memcmp(&p[2], "addruntitle", 11) != 0) {
         return 
-# 108 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 108 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 98 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
 
     if (data->data_len < 16) {
         return 
-# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 113 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
     if (memcmp(&p[13], "HNN", 3) != 0) {
         return 
-# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               1
-# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 107 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                   ;
     }
 
@@ -8171,9 +8163,9 @@ static
 
 
     
-# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
    _Bool 
-# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
         is_same_device = s_slave_mac_found &&
                           (memcmp(s_found_slave_mac, addr->a.val, 6) == 0);
 
@@ -8183,9 +8175,9 @@ static
         memcpy(s_found_slave_mac, addr->a.val, 6);
 
         s_slave_mac_found = 
-# 134 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 124 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                            1
-# 134 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 124 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                ;
         s_relay_current_state = touchpad2;
 
@@ -8199,9 +8191,9 @@ static
                mac_display[3], mac_display[4], mac_display[5],
                rssi, touchpad2);
         fflush(
-# 146 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
+# 136 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
               (_impure_ptr->_stdout)
-# 146 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 136 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                     );
 
 
@@ -8212,9 +8204,9 @@ static
         }
 
         return 
-# 155 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               0
-# 155 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 145 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                    ;
     }
 
@@ -8232,13 +8224,12 @@ static
             printf("RELAY OFF\r\n");
         }
         fflush(
-# 171 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
               (_impure_ptr->_stdout)
-# 171 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                     );
 
         s_relay_current_state = touchpad2;
-
 
         if (s_adv_state_cb) {
             s_adv_state_cb(touchpad2, rssi);
@@ -8246,9 +8237,9 @@ static
     }
 
     return 
-# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
           0
-# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                ;
 }
 
@@ -8272,10 +8263,6 @@ static void scan_adv_device_found(const bt_addr_le_t *addr,
 
 static void ble_master_scan_adv_task(void *params)
 {
-
-
-
-
     struct bt_le_scan_param scan_param = {
         .type = BT_LE_SCAN_TYPE_PASSIVE,
         .filter_dup = BT_LE_SCAN_FILTER_DUPLICATE,
@@ -8287,14 +8274,14 @@ static void ble_master_scan_adv_task(void *params)
     if (ret) {
         printf("[BLE_MASTER] ERROR: Scan start failed: %d\r\n", ret);
         fflush(
-# 218 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
+# 203 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
               (_impure_ptr->_stdout)
-# 218 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 203 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                     );
         vTaskDelete(
-# 219 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 204 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                    ((void *)0)
-# 219 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 204 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                        );
         return;
     }
@@ -8307,12 +8294,11 @@ static void ble_master_scan_adv_task(void *params)
     bt_le_scan_stop();
 
     vTaskDelete(
-# 230 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 215 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                ((void *)0)
-# 230 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 215 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                    );
 }
-
 
 static void ble_master_uart_task(void *params)
 {
@@ -8340,28 +8326,20 @@ static void ble_master_uart_task(void *params)
 
     ;
     vTaskDelete(
-# 259 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 243 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                ((void *)0)
-# 259 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 243 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                    );
 }
 
-
-
-
-
 int app_ble_master_init(void)
 {
-
-
-
     memset(s_found_slave_mac, 0, 6);
     s_slave_mac_found = 
-# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 249 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                        0
-# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 249 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                             ;
-
 
     return 0;
 }
@@ -8371,10 +8349,6 @@ int app_ble_master_start(void)
     if (s_ble_master_running) {
         return 0;
     }
-
-
-
-
     s_wifi_was_connected = wifi_if_is_connected();
 
     if (!s_ble_master_stack_started) {
@@ -8389,47 +8363,41 @@ int app_ble_master_start(void)
         if (!ble_is_enabled()) {
             printf("[BLE_MASTER] ERROR: BLE stack not enabled after timeout!\r\n");
             fflush(
-# 300 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
                   (_impure_ptr->_stdout)
-# 300 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                         );
             return -1;
         }
 
         s_ble_master_stack_started = 
-# 304 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 276 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                     1
-# 304 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 276 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                         ;
     }
 
-
     s_slave_mac_found = 
-# 308 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 279 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                        0
-# 308 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 279 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                             ;
     memset(s_found_slave_mac, 0, 6);
 
 
     s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
     s_ble_master_running = 
-# 313 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                           1
-# 313 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                               ;
 
     xTaskCreate(
-        ble_master_scan_adv_task,
-        "ble_scan_adv",
-        1024,
-        
-# 319 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
-       ((void *)0)
-# 319 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
-           ,
-        10,
-        &s_ble_scan_task_handle
+        ble_master_scan_adv_task,"ble_scan_adv",1024,
+# 287 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+                                                    ((void *)0)
+# 287 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+                                                        ,10,&s_ble_scan_task_handle
     );
     return 0;
 }
@@ -8450,9 +8418,9 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     if (slave_mac) {
         memcpy(s_found_slave_mac, slave_mac, 6);
         s_slave_mac_found = 
-# 341 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 307 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                            1
-# 341 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 307 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                ;
         ;
     }
@@ -8471,9 +8439,9 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     if (s_ble_scan_task_handle) {
         vTaskDelete(s_ble_scan_task_handle);
         s_ble_scan_task_handle = 
-# 358 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 324 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                 ((void *)0)
-# 358 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 324 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                     ;
     }
 
@@ -8482,40 +8450,37 @@ int app_ble_master_connect(const uint8_t *slave_mac)
 
     s_current_mode = BLE_MASTER_MODE_CONNECT;
 
-
-
-
     if (!s_ble_master_api_init) {
         extern int ble_master_init(void);
         int ret = ble_master_init();
         if (ret == 0) {
             s_ble_master_api_init = 
-# 373 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 336 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                    1
-# 373 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 336 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                        ;
         }
 
         extern void axk_HalBleRegisterCallbacks(void);
         axk_HalBleRegisterCallbacks();
     }
-# 387 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+
     uint8_t mac_reversed[6];
     memcpy(mac_reversed, s_found_slave_mac, 6);
     ble_reverse_byte(mac_reversed, 6);
 
     uint8_t ret = axk_HalBleCentralConnect(mac_reversed, 
-# 391 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 347 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                                         ((void *)0)
-# 391 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 347 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                                             , BLE_MASTER_AUTOCONN_DISABLE);
 
     if (ret != 0 && ret != 1) {
         printf("[BLE_MASTER] Connection failed, ret=%d\r\n", ret);
         fflush(
-# 395 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
+# 351 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3
               (_impure_ptr->_stdout)
-# 395 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 351 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                     );
 
         s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
@@ -8524,9 +8489,9 @@ int app_ble_master_connect(const uint8_t *slave_mac)
             "ble_scan_adv",
             1024,
             
-# 402 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 358 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
            ((void *)0)
-# 402 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 358 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                ,
             14,
             &s_ble_scan_task_handle
@@ -8535,16 +8500,11 @@ int app_ble_master_connect(const uint8_t *slave_mac)
 
 
     xTaskCreate(
-        ble_master_uart_task,
-        "ble_uart",
-        1024,
-        
-# 413 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
-       ((void *)0)
-# 413 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
-           ,
-        15,
-        &s_ble_uart_task_handle
+        ble_master_uart_task,"ble_uart",1024,
+# 366 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+                                            ((void *)0)
+# 366 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+                                                ,15,&s_ble_uart_task_handle
     );
     return 0;
 }
@@ -8564,9 +8524,9 @@ int app_ble_master_disconnect(void)
 
 
     if (pconn != 
-# 434 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                 ((void *)0)
-# 434 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                     ) {
         bt_conn_disconnect(pconn, 0x13);
         aos_msleep(500);
@@ -8582,9 +8542,9 @@ int app_ble_master_disconnect(void)
     if (s_ble_uart_task_handle) {
         vTaskDelete(s_ble_uart_task_handle);
         s_ble_uart_task_handle = 
-# 448 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 399 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                 ((void *)0)
-# 448 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 399 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                     ;
     }
 
@@ -8597,9 +8557,9 @@ int app_ble_master_disconnect(void)
         "ble_scan_adv",
         1024,
         
-# 459 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 410 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
        ((void *)0)
-# 459 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 410 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
            ,
         10,
         &s_ble_scan_task_handle
@@ -8620,9 +8580,9 @@ int app_ble_master_stop(void)
 
     if (s_current_mode == BLE_MASTER_MODE_CONNECT) {
         if (pconn != 
-# 478 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 429 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                     ((void *)0)
-# 478 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 429 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                         ) {
             bt_conn_disconnect(pconn, 0x13);
         }
@@ -8649,14 +8609,14 @@ int app_ble_master_stop(void)
     }
 
     s_ble_master_running = 
-# 503 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 454 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                           0
-# 503 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 454 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                ;
     s_ble_master_stack_started = 
-# 504 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 455 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                 0
-# 504 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 455 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                      ;
     s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
 
@@ -8666,9 +8626,9 @@ int app_ble_master_stop(void)
 }
 
 
-# 512 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 463 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
 _Bool 
-# 512 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 463 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
     app_ble_master_is_running(void)
 {
     return s_ble_master_running;
@@ -8680,9 +8640,9 @@ ble_master_mode_t app_ble_master_get_mode(void)
 }
 
 
-# 522 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 473 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
 _Bool 
-# 522 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 473 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
     app_ble_master_is_connected(void)
 {
     return (s_current_mode == BLE_MASTER_MODE_CONNECT &&
@@ -8691,27 +8651,27 @@ _Bool
 
 
 
-# 529 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 480 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
 _Bool 
-# 529 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 480 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
     app_ble_master_get_found_mac(uint8_t *mac_out)
 {
     if (!s_slave_mac_found || mac_out == 
-# 531 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 482 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
                                         ((void *)0)
-# 531 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 482 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                                             ) {
         return 
-# 532 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 483 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
               0
-# 532 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 483 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
                    ;
     }
     memcpy(mac_out, s_found_slave_mac, 6);
     return 
-# 535 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
+# 486 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c" 3 4
           1
-# 535 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
+# 486 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
               ;
 }
 

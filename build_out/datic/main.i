@@ -9129,30 +9129,20 @@ hosal_uart_dev_t uart_dev_log = {
 void main(void)
 {
     bl_sys_init();
-
     hosal_uart_init(&uart_dev_log);
-
-    ;
-
-
     ;
     tcpip_init(
-# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
               ((void *)0)
-# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c"
                   , 
-# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c" 3 4
                     ((void *)0)
-# 36 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c"
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c"
                         );
-
-
     aos_msleep(100);
-
     app_run();
-
     ;
-
     while (1) {
         aos_msleep(1000);
     }

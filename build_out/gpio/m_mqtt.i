@@ -2770,22 +2770,25 @@ static void mqtt_disconnected_handler(void)
 int app_mqtt_init(void)
 {
     mqtt_if_init();
+
+
     mqtt_if_set_connected_cb(mqtt_connected_handler);
     mqtt_if_set_disconnected_cb(mqtt_disconnected_handler);
     mqtt_if_set_message_cb(mqtt_message_handler);
 
+
+
     snprintf(s_command_topic, sizeof(s_command_topic), "%s%s", s_topic_prefix, "/command");
     snprintf(s_state_topic, sizeof(s_state_topic), "%s%s", s_topic_prefix, "/state");
-
     return 0;
 }
 
 int app_mqtt_start(const char *broker, int port, const char *client_id)
 {
     if (broker == 
-# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                  ((void *)0)
-# 102 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 105 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                      ) {
         return -1;
     }
@@ -2808,16 +2811,16 @@ int app_mqtt_start(const char *broker, int port, const char *client_id)
 int app_mqtt_publish_state(const char *state)
 {
     if (!mqtt_if_is_connected() || state == 
-# 123 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                            ((void *)0)
-# 123 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                ) {
         return -1;
     }
     return mqtt_if_publish(s_state_topic, state, strlen(state), 
-# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
+# 129 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c" 3 4
                                                                1
-# 126 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
+# 129 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.c"
                                                                    );
 }
 

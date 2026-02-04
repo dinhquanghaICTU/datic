@@ -21,14 +21,12 @@ static bool g_lock_button_loaded = false;
 
 void app_event_post(app_event_type_t type, void *data)
 {
-    printf("[EVENT_POST] Posting event type=%d, queue_tail=%d\r\n", type, g_event_queue_tail);
     g_event_queue[g_event_queue_tail].type = type;
     g_event_queue[g_event_queue_tail].data = data;
     g_event_queue_tail = (g_event_queue_tail + 1) % 10;
-    printf("[EVENT_POST] Event posted, new queue_tail=%d\r\n", g_event_queue_tail);
 }
 
-void app_button_hold_callback(int pin, int event, void *data)
+void app_button_hold_callback(int pin, int event, void *data) // when hold 
 {
     
     if (app_ble_is_running()) {
@@ -38,9 +36,13 @@ void app_button_hold_callback(int pin, int event, void *data)
     
     wifi_if_disconnect();
     aos_msleep(2000);
-    app_config_clear_wifi();
+
+    app_config_clear_wifi(); //erase flash ssid and pass
     
-    app_event_t evt = {.type = APP_EVENT_BUTTON_HOLD, .data = NULL};
+    app_event_t evt = {
+        .type = APP_EVENT_BUTTON_HOLD,
+        .data = NULL
+    };
     app_state_process_event(&evt);
 }
 
@@ -76,7 +78,9 @@ void app_callback_update_lock_button(bool locked)
 
 void app_wifi_connected_callback(void)
 {
-    app_event_t evt = {.type = APP_EVENT_WIFI_CONNECTED, .data = NULL};
+    app_event_t evt = {
+        .type = APP_EVENT_WIFI_CONNECTED, 
+        .data = NULL};
     app_state_process_event(&evt);
 }
 

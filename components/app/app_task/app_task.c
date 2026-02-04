@@ -35,16 +35,20 @@ static uint32_t app_get_tick_ms(void)
     return aos_now_ms();
 }
 
+
+
+//create 3 task 
 void app_task_init(void)
 {
-    xTaskCreate(app_task_button, "btn_task", APP_TASK_BUTTON_STACK_SIZE, NULL, APP_TASK_BUTTON_PRIORITY, &g_task_button_handle);
+    xTaskCreate(app_task_button, "btn_task", APP_TASK_BUTTON_STACK_SIZE, NULL, APP_TASK_BUTTON_PRIORITY, &g_task_button_handle); 
     xTaskCreate(app_task_led, "led_task", APP_TASK_LED_STACK_SIZE, NULL, APP_TASK_LED_PRIORITY, &g_task_led_handle);
-    xTaskCreate(app_task_wifi, "wifi_task", APP_TASK_WIFI_STACK_SIZE, NULL, APP_TASK_WIFI_PRIORITY, &g_task_wifi_handle);
+    // xTaskCreate(app_task_wifi, "wifi_task", APP_TASK_WIFI_STACK_SIZE, NULL, APP_TASK_WIFI_PRIORITY, &g_task_wifi_handle);
     xTaskCreate(app_task_main, "main_task", APP_TASK_MAIN_STACK_SIZE, NULL, APP_TASK_MAIN_PRIORITY, &g_task_main_handle);
 }
 
 void app_task_button(void *params)
 {
+    // config button call lib app_btn 
     app_btn_hw_config_t btn_config[1] = {0};
     app_btn_config_t btn_cfg = {0};
     
@@ -63,11 +67,14 @@ void app_task_button(void *params)
     bl_gpio_enable_input(BUTTON1, 0, 0);
     btn_cfg.btn_read = (app_btn_get_level_cb)bl_gpio_input_get_value;
     
-    app_btn_initialize(&btn_cfg);
-    app_btn_register_callback(APP_BTN_EVT_HOLD, app_button_hold_callback, NULL);
-    app_btn_register_callback(APP_BTN_EVT_PRESSED, app_button_press_callback, NULL);
+    app_btn_initialize(&btn_cfg); // init button
+
+
+    //register callback  
+    app_btn_register_callback(APP_BTN_EVT_HOLD, app_button_hold_callback, NULL); //if hold  will call app_button_hold_callback
+    app_btn_register_callback(APP_BTN_EVT_PRESSED, app_button_press_callback, NULL); // if press will call app_button_press_callback
     
-    while (1) {
+    while (1) { // loop scan sleep 20ms
         app_btn_scan(NULL);
         aos_msleep(20);
     }
@@ -75,34 +82,35 @@ void app_task_button(void *params)
 
 void app_task_led(void *params)
 {
-    led_init();
-    while (1) {
-        if (wifi_if_is_connected()) {
+    led_init(); 
+    while (1) { //loop check   
+        if (wifi_if_is_connected()) { //if status wifi connect = true  led turn on 
             led_on();
             aos_msleep(1000);
-        } else {
+        } else { // else led blink
             led_toggle();
             aos_msleep(500);
         }
     }
 }
 
-void app_task_wifi(void *params)
-{
-    app_wifi_task(params);
-}
+// void app_task_wifi(void *params)
+// {
+//     app_wifi_task(params);
+// }
 
 void app_task_main(void *params)
 {
     wifi_config_t wifi_cfg;
     app_event_t event = {0};
-    blog_debug("task main \r\n");
-    app_state_init();
+    blog_debug("MAIN\r\n");
+    app_state_init(); //init app state
     app_mqtt_init();
     
     {
         extern int app_config_load_relay_settings(uint8_t *default_state, bool *lock_button);
         extern void app_callback_update_lock_button(bool locked);
+        
         uint8_t default_state = 0;
         bool lock_button = false;
         if (app_config_load_relay_settings(&default_state, &lock_button) == 0) {
@@ -111,15 +119,15 @@ void app_task_main(void *params)
             } else {
                 relay_off();
             }
-            app_callback_update_lock_button(lock_button);
+            app_callback_update_lock_button(lock_button); // save is status lock 
         }
     }
     
     event.type = APP_EVENT_NONE;
-    app_state_process_event(&event);
+    app_state_process_event(&event); // triger change state -> app check flash 
     
     int wait_count = 0;
-    while (!wifi_if_is_mgmr_ready() && wait_count < 100) {
+    while (!wifi_if_is_mgmr_ready() && wait_count < 100) { //check wifi ready by aos_post_event set flag
         aos_msleep(100);
         wait_count++;
     }
@@ -195,26 +203,26 @@ void app_task_main(void *params)
             event.type = APP_EVENT_NONE;
         }
         else if (event.type == APP_EVENT_MQTT_BLE_MASTER_STOP) {
-            blog_info("[APP] Stopping BLE Master...\r\n");
+            blog_info("[APP] Stopping BLE Master\r\n");
             app_ble_master_stop();
             app_state_set_next(APP_STATE_WIFI_CONNECTED);
             event.type = APP_EVENT_NONE;
         }
         else if (event.type == APP_EVENT_MQTT_BLE_MASTER_CONNECT) {
-            blog_info("[APP] BLE Master connect command...\r\n");
+            blog_info("[APP] BLE Master connect \r\n");
             app_ble_master_connect(NULL);  
             event.type = APP_EVENT_NONE;
         }
         else if (event.type == APP_EVENT_MQTT_BLE_MASTER_DISCONNECT) {
-            blog_info("[APP] BLE Master disconnect command...\r\n");
+            blog_info("[APP] BLE Master disconnect \r\n");
             app_ble_master_disconnect();
             event.type = APP_EVENT_NONE;
         }
         
         switch (current_state) {
-            case APP_STATE_CHECK_FLASH:
+            case APP_STATE_CHECK_FLASH:// if flag s_wifi_mgmr_ready= false will idle wait cline hold btn
                 break;
-            case APP_STATE_BLE_CONFIG:
+            case APP_STATE_BLE_CONFIG: // start ble
                 if (!app_ble_is_running()) {
                     aos_msleep(200);
                     app_ble_start();
@@ -233,7 +241,6 @@ void app_task_main(void *params)
                     static bool mqtt_connect_attempted = false;
                     static uint32_t mqtt_last_attempt = 0;
                     uint32_t now = aos_now_ms();
-                    
                     if (!mqtt_if_is_connected() && !mqtt_connect_attempted) {
                         const char *mqtt_broker = "172.20.10.3";
                         app_mqtt_start(mqtt_broker, 1883, NULL);
@@ -256,7 +263,6 @@ void app_task_main(void *params)
                 }
                 break;
             case APP_STATE_BLE_MASTER:
-                // Check if button hold event to switch to BLE_CONFIG
                 if (event.type == APP_EVENT_BUTTON_HOLD) {
                     app_ble_master_stop();
                     app_state_set_next(APP_STATE_BLE_CONFIG);

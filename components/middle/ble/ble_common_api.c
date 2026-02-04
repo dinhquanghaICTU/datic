@@ -168,15 +168,12 @@ uint8_t axk_HalBleGetMac(uint8_t *mac)
     return 0;
 }
 
-// Register connection callbacks without starting BLE stack
-// Use this when BLE stack is already started
+
 void axk_HalBleRegisterCallbacks(void)
 {
-    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
+    bt_gatt_register_mtu_callback(_ble_mtu_changed_cb); //bt_gatt_exchange_mtu()
     bt_conn_cb_register(&conn_callbacks);
-    /* avoid callback infinite loop */
     conn_callbacks._next = NULL;
-    
     bt_set_tx_pwr(15);
 }
 

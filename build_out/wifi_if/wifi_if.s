@@ -9,7 +9,7 @@
 	.section	.rodata.wifi_event_handler.str1.4,"aMS",@progbits,1
 	.align	2
 .LC0:
-	.string	"[WIFI_IF] WiFi INIT DONE, starting background\r\n"
+	.string	"[WIFI_IF] WiFi INIT DONE\r\n"
 	.align	2
 .LC1:
 	.string	"[WIFI_IF] WiFi MGMR DONE\r\n"
@@ -295,9 +295,6 @@ wifi_event_handler:
 	.section	.rodata.wifi_if_init.str1.4,"aMS",@progbits,1
 	.align	2
 .LC6:
-	.string	"[WIFI_IF] WiFi already initialized\r\n"
-	.align	2
-.LC7:
 	.string	"[WIFI_IF] Initializing WiFi...\r\n"
 	.section	.text.wifi_if_init,"ax",@progbits
 	.align	1
@@ -309,33 +306,53 @@ wifi_if_init:
 	.cfi_startproc
 	.loc 1 91 5
 	.loc 1 93 5
-	.loc 1 90 1 is_stmt 0
-	addi	sp,sp,-16
-	.cfi_def_cfa_offset 16
-	sw	s0,8(sp)
-	sw	ra,12(sp)
-	.cfi_offset 8, -8
-	.cfi_offset 1, -4
-	addi	s0,sp,16
-	.cfi_def_cfa 8, 0
-	.loc 1 93 9
+	.loc 1 93 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR7)
-	.loc 1 90 1
-	.loc 1 93 9
 	addi	a5,a5,%lo(.LANCHOR7)
 	.loc 1 93 8
 	lbu	a4,0(a5)
-	beq	a4,zero,.L31
-	.loc 1 94 9 is_stmt 1
+	bne	a4,zero,.L33
+	.loc 1 97 5 is_stmt 1
+	.loc 1 90 1 is_stmt 0
+	addi	sp,sp,-16
+	.cfi_def_cfa_offset 16
+	sw	ra,12(sp)
+	sw	s0,8(sp)
+	.loc 1 98 5
 	lui	a0,%hi(.LC6)
+	.cfi_offset 1, -4
+	.cfi_offset 8, -8
+	.loc 1 90 1
+	addi	s0,sp,16
+	.cfi_def_cfa 8, 0
+	.loc 1 97 20
+	li	a4,1
+	.loc 1 98 5
 	addi	a0,a0,%lo(.LC6)
+	.loc 1 97 20
+	sb	a4,0(a5)
+	.loc 1 98 5 is_stmt 1
 	call	printf
 .LVL20:
-	.loc 1 95 9
-.L32:
-	.loc 1 110 1 is_stmt 0
+	.loc 1 100 5
+	lui	a1,%hi(wifi_event_handler)
+	li	a2,0
+	addi	a1,a1,%lo(wifi_event_handler)
+	li	a0,2
+	call	aos_register_event_filter
+.LVL21:
+	.loc 1 103 5
+	call	hal_wifi_start_firmware_task
+.LVL22:
+	.loc 1 106 5
+	li	a2,0
+	li	a1,1
+	li	a0,2
+	call	aos_post_event
+.LVL23:
+	.loc 1 108 5
+	.loc 1 109 1 is_stmt 0
 	lw	ra,12(sp)
-	.cfi_remember_state
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
@@ -344,51 +361,21 @@ wifi_if_init:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.L31:
-	.cfi_restore_state
-	.loc 1 98 5 is_stmt 1
-	.loc 1 99 5 is_stmt 0
-	lui	a0,%hi(.LC7)
-	.loc 1 98 20
-	li	a4,1
-	.loc 1 99 5
-	addi	a0,a0,%lo(.LC7)
-	.loc 1 98 20
-	sb	a4,0(a5)
-	.loc 1 99 5 is_stmt 1
-	call	printf
-.LVL21:
-	.loc 1 101 5
-	lui	a1,%hi(wifi_event_handler)
-	li	a2,0
-	addi	a1,a1,%lo(wifi_event_handler)
-	li	a0,2
-	call	aos_register_event_filter
-.LVL22:
-	.loc 1 104 5
-	call	hal_wifi_start_firmware_task
-.LVL23:
-	.loc 1 107 5
-	li	a2,0
-	li	a1,1
-	li	a0,2
-	call	aos_post_event
-.LVL24:
-	.loc 1 109 5
-	.loc 1 109 12 is_stmt 0
-	j	.L32
+.L33:
+	li	a0,0
+	ret
 	.cfi_endproc
 .LFE30:
 	.size	wifi_if_init, .-wifi_if_init
 	.section	.rodata.wifi_if_connect.str1.4,"aMS",@progbits,1
 	.align	2
-.LC8:
+.LC7:
 	.string	"[WIFI_IF] WiFi already connecting\r\n"
 	.align	2
-.LC9:
+.LC8:
 	.string	"[WIFI_IF] WiFi MGMR not ready, cannot connect yet\r\n"
 	.align	2
-.LC10:
+.LC9:
 	.string	"[WIFI_IF] Connecting to WiFi: %s\r\n"
 	.section	.text.wifi_if_connect,"ax",@progbits
 	.align	1
@@ -396,12 +383,12 @@ wifi_if_init:
 	.type	wifi_if_connect, @function
 wifi_if_connect:
 .LFB31:
-	.loc 1 113 1 is_stmt 1
+	.loc 1 112 1 is_stmt 1
 	.cfi_startproc
-.LVL25:
+.LVL24:
+	.loc 1 113 5
 	.loc 1 114 5
-	.loc 1 115 5
-	.loc 1 113 1 is_stmt 0
+	.loc 1 112 1 is_stmt 0
 	addi	sp,sp,-64
 	.cfi_def_cfa_offset 64
 	sw	s0,56(sp)
@@ -418,43 +405,43 @@ wifi_if_connect:
 	.cfi_offset 1, -4
 	.cfi_offset 18, -16
 	.cfi_offset 20, -24
-	.loc 1 113 1
+	.loc 1 112 1
 	mv	s1,a0
 	mv	s3,a1
-	.loc 1 115 27
+	.loc 1 114 27
 	li	a2,28
 	li	a1,0
-.LVL26:
+.LVL25:
 	addi	a0,s0,-60
-.LVL27:
+.LVL26:
 	call	memset
-.LVL28:
-	.loc 1 117 5 is_stmt 1
-	.loc 1 118 16 is_stmt 0
+.LVL27:
+	.loc 1 116 5 is_stmt 1
+	.loc 1 117 16 is_stmt 0
 	li	a0,-1
-	.loc 1 117 8
-	beq	s1,zero,.L34
-	.loc 1 117 21 discriminator 1
-	beq	s3,zero,.L34
-	.loc 1 121 5 is_stmt 1
-	.loc 1 121 9 is_stmt 0
+	.loc 1 116 8
+	beq	s1,zero,.L36
+	.loc 1 116 21 discriminator 1
+	beq	s3,zero,.L36
+	.loc 1 120 5 is_stmt 1
+	.loc 1 120 9 is_stmt 0
 	lui	s2,%hi(.LANCHOR3)
 	addi	s2,s2,%lo(.LANCHOR3)
-	.loc 1 121 8
+	.loc 1 120 8
 	lbu	a5,0(s2)
-	beq	a5,zero,.L36
-	.loc 1 122 9 is_stmt 1
-	lui	a0,%hi(.LC8)
-	addi	a0,a0,%lo(.LC8)
+	beq	a5,zero,.L38
+	.loc 1 121 9 is_stmt 1
+	lui	a0,%hi(.LC7)
+	addi	a0,a0,%lo(.LC7)
 	call	printf
-.LVL29:
-	.loc 1 123 9
-.L41:
-	.loc 1 129 9
-	.loc 1 129 16 is_stmt 0
+.LVL28:
+	.loc 1 122 9
+.L43:
+	.loc 1 128 9
+	.loc 1 128 16 is_stmt 0
 	li	a0,-1
-.L34:
-	.loc 1 150 1
+.L36:
+	.loc 1 149 1
 	lw	ra,60(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -463,87 +450,87 @@ wifi_if_connect:
 	.cfi_def_cfa 2, 64
 	lw	s1,52(sp)
 	.cfi_restore 9
-.LVL30:
+.LVL29:
 	lw	s2,48(sp)
 	.cfi_restore 18
 	lw	s3,44(sp)
 	.cfi_restore 19
-.LVL31:
+.LVL30:
 	lw	s4,40(sp)
 	.cfi_restore 20
 	addi	sp,sp,64
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL32:
-.L36:
+.LVL31:
+.L38:
 	.cfi_restore_state
-	.loc 1 126 5 is_stmt 1
-	.loc 1 126 8 is_stmt 0
+	.loc 1 125 5 is_stmt 1
+	.loc 1 125 8 is_stmt 0
 	lui	a5,%hi(.LANCHOR1)
 	lbu	a5,%lo(.LANCHOR1)(a5)
-	bne	a5,zero,.L37
-	.loc 1 127 9 is_stmt 1
+	bne	a5,zero,.L39
+	.loc 1 126 9 is_stmt 1
+	lui	a0,%hi(.LC8)
+	addi	a0,a0,%lo(.LC8)
+	call	printf
+.LVL32:
+	.loc 1 127 9
+	.loc 1 127 27 is_stmt 0
+	sb	zero,0(s2)
+	j	.L43
+.L39:
+	.loc 1 131 5 is_stmt 1
 	lui	a0,%hi(.LC9)
+	mv	a1,s1
 	addi	a0,a0,%lo(.LC9)
 	call	printf
 .LVL33:
-	.loc 1 128 9
-	.loc 1 128 27 is_stmt 0
-	sb	zero,0(s2)
-	j	.L41
-.L37:
-	.loc 1 132 5 is_stmt 1
-	lui	a0,%hi(.LC10)
-	mv	a1,s1
-	addi	a0,a0,%lo(.LC10)
-	call	printf
-.LVL34:
-	.loc 1 133 5
-	.loc 1 133 23 is_stmt 0
+	.loc 1 132 5
+	.loc 1 132 23 is_stmt 0
 	li	s4,1
 	sb	s4,0(s2)
-	.loc 1 136 5 is_stmt 1
-	.loc 1 136 22 is_stmt 0
+	.loc 1 135 5 is_stmt 1
+	.loc 1 135 22 is_stmt 0
 	call	wifi_mgmr_sta_enable
-.LVL35:
+.LVL34:
 	mv	s2,a0
-.LVL36:
-	.loc 1 139 5 is_stmt 1
+.LVL35:
+	.loc 1 138 5 is_stmt 1
 	call	wifi_mgmr_sta_autoconnect_enable
-.LVL37:
-	.loc 1 142 5
+.LVL36:
+	.loc 1 141 5
 	li	a2,28
 	li	a1,0
 	addi	a0,s0,-60
 	call	memset
-.LVL38:
-	.loc 1 143 5
-	.loc 1 145 36 is_stmt 0
+.LVL37:
+	.loc 1 142 5
+	.loc 1 144 36 is_stmt 0
 	li	a5,5
-	.loc 1 149 12
+	.loc 1 148 12
 	addi	a3,s0,-60
 	mv	a2,s3
 	mv	a1,s1
 	mv	a0,s2
-	.loc 1 143 19
+	.loc 1 142 19
 	sw	zero,-60(s0)
-	.loc 1 144 5 is_stmt 1
-	.loc 1 144 28 is_stmt 0
+	.loc 1 143 5 is_stmt 1
+	.loc 1 143 28 is_stmt 0
 	sw	s4,-56(s0)
-	.loc 1 145 5 is_stmt 1
-	.loc 1 145 36 is_stmt 0
+	.loc 1 144 5 is_stmt 1
+	.loc 1 144 36 is_stmt 0
 	sw	a5,-52(s0)
-	.loc 1 146 5 is_stmt 1
-	.loc 1 146 28 is_stmt 0
+	.loc 1 145 5 is_stmt 1
+	.loc 1 145 28 is_stmt 0
 	sb	zero,-44(s0)
-	.loc 1 147 5 is_stmt 1
-	.loc 1 147 32 is_stmt 0
+	.loc 1 146 5 is_stmt 1
+	.loc 1 146 32 is_stmt 0
 	sb	s4,-40(s0)
-	.loc 1 149 5 is_stmt 1
-	.loc 1 149 12 is_stmt 0
+	.loc 1 148 5 is_stmt 1
+	.loc 1 148 12 is_stmt 0
 	call	wifi_mgmr_sta_connect_ext
-.LVL39:
-	j	.L34
+.LVL38:
+	j	.L36
 	.cfi_endproc
 .LFE31:
 	.size	wifi_if_connect, .-wifi_if_connect
@@ -553,10 +540,10 @@ wifi_if_connect:
 	.type	wifi_if_disconnect, @function
 wifi_if_disconnect:
 .LFB32:
-	.loc 1 153 1 is_stmt 1
+	.loc 1 152 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 155 5
-	.loc 1 153 1 is_stmt 0
+	.loc 1 154 5
+	.loc 1 152 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -565,32 +552,32 @@ wifi_if_disconnect:
 	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 155 5
+	.loc 1 154 5
 	call	wifi_mgmr_sta_autoconnect_disable
-.LVL40:
-	.loc 1 156 5 is_stmt 1
+.LVL39:
+	.loc 1 155 5 is_stmt 1
 	call	wifi_mgmr_sta_disconnect
-.LVL41:
+.LVL40:
+	.loc 1 158 5
 	.loc 1 159 5
-	.loc 1 160 5
 	call	wifi_mgmr_api_idle
-.LVL42:
-	.loc 1 162 5
-	.loc 1 165 1 is_stmt 0
+.LVL41:
+	.loc 1 161 5
+	.loc 1 164 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 162 22
+	.loc 1 161 22
 	lui	a5,%hi(.LANCHOR2)
 	sb	zero,%lo(.LANCHOR2)(a5)
-	.loc 1 163 5 is_stmt 1
-	.loc 1 163 23 is_stmt 0
+	.loc 1 162 5 is_stmt 1
+	.loc 1 162 23 is_stmt 0
 	lui	a5,%hi(.LANCHOR3)
 	sb	zero,%lo(.LANCHOR3)(a5)
-	.loc 1 164 5 is_stmt 1
-	.loc 1 165 1 is_stmt 0
+	.loc 1 163 5 is_stmt 1
+	.loc 1 164 1 is_stmt 0
 	li	a0,0
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -600,19 +587,19 @@ wifi_if_disconnect:
 	.size	wifi_if_disconnect, .-wifi_if_disconnect
 	.section	.rodata.wifi_if_disable.str1.4,"aMS",@progbits,1
 	.align	2
-.LC11:
+.LC10:
 	.string	"[WIFI_IF] Completely disabling WiFi STA to release radio for BLE\r\n"
 	.align	2
-.LC12:
+.LC11:
 	.string	"[WIFI_IF] Disabling WiFi STA interface to release radio...\r\n"
 	.align	2
-.LC13:
+.LC12:
 	.string	"[WIFI_IF] Warning: Could not get WiFi interface, may already be disabled\r\n"
 	.align	2
-.LC14:
+.LC13:
 	.string	"[WIFI_IF] Waiting for WiFi stack to fully release radio...\r\n"
 	.align	2
-.LC15:
+.LC14:
 	.string	"[WIFI_IF] WiFi STA disabled and radio should be released\r\n"
 	.section	.text.wifi_if_disable,"ax",@progbits
 	.align	1
@@ -620,10 +607,10 @@ wifi_if_disconnect:
 	.type	wifi_if_disable, @function
 wifi_if_disable:
 .LFB33:
-	.loc 1 168 1 is_stmt 1
+	.loc 1 167 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 169 5
-	.loc 1 168 1 is_stmt 0
+	.loc 1 168 5
+	.loc 1 167 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	ra,28(sp)
@@ -636,81 +623,81 @@ wifi_if_disable:
 	.cfi_offset 18, -16
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 169 5
-	lui	a0,%hi(.LC11)
-	.loc 1 168 1
-	.loc 1 169 5
-	addi	a0,a0,%lo(.LC11)
+	.loc 1 168 5
+	lui	a0,%hi(.LC10)
+	.loc 1 167 1
+	.loc 1 168 5
+	addi	a0,a0,%lo(.LC10)
 	call	printf
-.LVL43:
-	.loc 1 172 5 is_stmt 1
+.LVL42:
+	.loc 1 171 5 is_stmt 1
 	call	wifi_mgmr_sta_autoconnect_disable
-.LVL44:
-	.loc 1 175 5
-	.loc 1 175 9 is_stmt 0
+.LVL43:
+	.loc 1 174 5
+	.loc 1 174 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR2)
-	.loc 1 175 8
+	.loc 1 174 8
 	lbu	a4,%lo(.LANCHOR2)(a5)
 	lui	s1,%hi(.LANCHOR3)
 	addi	s2,a5,%lo(.LANCHOR2)
 	addi	s1,s1,%lo(.LANCHOR3)
-	bne	a4,zero,.L45
-	.loc 1 175 26 discriminator 1
+	bne	a4,zero,.L47
+	.loc 1 174 26 discriminator 1
 	lbu	a5,0(s1)
-	beq	a5,zero,.L46
-.L45:
-	.loc 1 176 9 is_stmt 1
+	beq	a5,zero,.L48
+.L47:
+	.loc 1 175 9 is_stmt 1
 	call	wifi_mgmr_sta_disconnect
-.LVL45:
-.L46:
+.LVL44:
+.L48:
+	.loc 1 179 5
 	.loc 1 180 5
-	.loc 1 181 5
 	call	wifi_mgmr_api_idle
-.LVL46:
+.LVL45:
+	.loc 1 185 5
 	.loc 1 186 5
-	.loc 1 187 5
-	.loc 1 187 22 is_stmt 0
+	.loc 1 186 22 is_stmt 0
 	call	wifi_mgmr_sta_enable
-.LVL47:
-	.loc 1 187 20
+.LVL46:
+	.loc 1 186 20
 	sw	a0,-20(s0)
-	.loc 1 188 5 is_stmt 1
-	.loc 1 188 8 is_stmt 0
-	beq	a0,zero,.L47
-	.loc 1 189 9 is_stmt 1
-	lui	a0,%hi(.LC12)
-	addi	a0,a0,%lo(.LC12)
+	.loc 1 187 5 is_stmt 1
+	.loc 1 187 8 is_stmt 0
+	beq	a0,zero,.L49
+	.loc 1 188 9 is_stmt 1
+	lui	a0,%hi(.LC11)
+	addi	a0,a0,%lo(.LC11)
 	call	printf
-.LVL48:
-	.loc 1 190 9
+.LVL47:
+	.loc 1 189 9
 	addi	a0,s0,-20
 	call	wifi_mgmr_sta_disable
-.LVL49:
-.L48:
-	.loc 1 195 5
-	.loc 1 199 5 is_stmt 0
-	lui	a0,%hi(.LC14)
-	addi	a0,a0,%lo(.LC14)
-	.loc 1 195 22
+.LVL48:
+.L50:
+	.loc 1 194 5
+	.loc 1 198 5 is_stmt 0
+	lui	a0,%hi(.LC13)
+	addi	a0,a0,%lo(.LC13)
+	.loc 1 194 22
 	sb	zero,0(s2)
-	.loc 1 196 5 is_stmt 1
-	.loc 1 196 23 is_stmt 0
+	.loc 1 195 5 is_stmt 1
+	.loc 1 195 23 is_stmt 0
 	sb	zero,0(s1)
-	.loc 1 199 5 is_stmt 1
+	.loc 1 198 5 is_stmt 1
 	call	printf
-.LVL50:
-	.loc 1 200 5
+.LVL49:
+	.loc 1 199 5
 	li	a0,4096
 	addi	a0,a0,-1096
 	call	aos_msleep
+.LVL50:
+	.loc 1 201 5
+	lui	a0,%hi(.LC14)
+	addi	a0,a0,%lo(.LC14)
+	call	printf
 .LVL51:
 	.loc 1 202 5
-	lui	a0,%hi(.LC15)
-	addi	a0,a0,%lo(.LC15)
-	call	printf
-.LVL52:
-	.loc 1 203 5
-	.loc 1 204 1 is_stmt 0
+	.loc 1 203 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -725,26 +712,26 @@ wifi_if_disable:
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.L47:
+.L49:
 	.cfi_restore_state
-	.loc 1 192 9 is_stmt 1
-	lui	a0,%hi(.LC13)
-	addi	a0,a0,%lo(.LC13)
+	.loc 1 191 9 is_stmt 1
+	lui	a0,%hi(.LC12)
+	addi	a0,a0,%lo(.LC12)
 	call	printf
-.LVL53:
-	j	.L48
+.LVL52:
+	j	.L50
 	.cfi_endproc
 .LFE33:
 	.size	wifi_if_disable, .-wifi_if_disable
 	.section	.rodata.wifi_if_enable.str1.4,"aMS",@progbits,1
 	.align	2
-.LC16:
+.LC15:
 	.string	"[WIFI_IF] Re-enabling WiFi STA interface...\r\n"
 	.align	2
-.LC17:
+.LC16:
 	.string	"[WIFI_IF] WiFi STA interface re-enabled\r\n"
 	.align	2
-.LC18:
+.LC17:
 	.string	"[WIFI_IF] Warning: Failed to re-enable WiFi STA interface\r\n"
 	.section	.text.wifi_if_enable,"ax",@progbits
 	.align	1
@@ -752,43 +739,43 @@ wifi_if_disable:
 	.type	wifi_if_enable, @function
 wifi_if_enable:
 .LFB34:
-	.loc 1 207 1
+	.loc 1 206 1
 	.cfi_startproc
-	.loc 1 208 5
-	.loc 1 207 1 is_stmt 0
+	.loc 1 207 5
+	.loc 1 206 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
 	sw	s0,8(sp)
-	.loc 1 208 5
-	lui	a0,%hi(.LC16)
+	.loc 1 207 5
+	lui	a0,%hi(.LC15)
 	.cfi_offset 1, -4
 	.cfi_offset 8, -8
-	.loc 1 207 1
+	.loc 1 206 1
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 208 5
-	addi	a0,a0,%lo(.LC16)
+	.loc 1 207 5
+	addi	a0,a0,%lo(.LC15)
 	call	printf
-.LVL54:
-	.loc 1 211 5 is_stmt 1
-	.loc 1 212 5
-	.loc 1 212 22 is_stmt 0
+.LVL53:
+	.loc 1 210 5 is_stmt 1
+	.loc 1 211 5
+	.loc 1 211 22 is_stmt 0
 	call	wifi_mgmr_sta_enable
+.LVL54:
+	.loc 1 213 5 is_stmt 1
+	.loc 1 213 8 is_stmt 0
+	beq	a0,zero,.L56
+	.loc 1 214 9 is_stmt 1
+	lui	a0,%hi(.LC16)
 .LVL55:
-	.loc 1 214 5 is_stmt 1
-	.loc 1 214 8 is_stmt 0
-	beq	a0,zero,.L54
-	.loc 1 215 9 is_stmt 1
-	lui	a0,%hi(.LC17)
-.LVL56:
-	addi	a0,a0,%lo(.LC17)
-.L57:
-	.loc 1 217 9 is_stmt 0
+	addi	a0,a0,%lo(.LC16)
+.L59:
+	.loc 1 216 9 is_stmt 0
 	call	printf
-.LVL57:
-	.loc 1 220 5 is_stmt 1
-	.loc 1 221 1 is_stmt 0
+.LVL56:
+	.loc 1 219 5 is_stmt 1
+	.loc 1 220 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -799,14 +786,14 @@ wifi_if_enable:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL58:
-.L54:
+.LVL57:
+.L56:
 	.cfi_restore_state
-	.loc 1 217 9 is_stmt 1
-	lui	a0,%hi(.LC18)
-.LVL59:
-	addi	a0,a0,%lo(.LC18)
-	j	.L57
+	.loc 1 216 9 is_stmt 1
+	lui	a0,%hi(.LC17)
+.LVL58:
+	addi	a0,a0,%lo(.LC17)
+	j	.L59
 	.cfi_endproc
 .LFE34:
 	.size	wifi_if_enable, .-wifi_if_enable
@@ -816,17 +803,17 @@ wifi_if_enable:
 	.type	wifi_if_is_connected, @function
 wifi_if_is_connected:
 .LFB35:
-	.loc 1 224 1
+	.loc 1 223 1
 	.cfi_startproc
-	.loc 1 225 5
-	.loc 1 224 1 is_stmt 0
+	.loc 1 224 5
+	.loc 1 223 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 226 1
+	.loc 1 225 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -844,17 +831,17 @@ wifi_if_is_connected:
 	.type	wifi_if_is_mgmr_ready, @function
 wifi_if_is_mgmr_ready:
 .LFB36:
-	.loc 1 229 1 is_stmt 1
+	.loc 1 228 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 230 5
-	.loc 1 229 1 is_stmt 0
+	.loc 1 229 5
+	.loc 1 228 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 231 1
+	.loc 1 230 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -872,25 +859,25 @@ wifi_if_is_mgmr_ready:
 	.type	wifi_if_set_connected_cb, @function
 wifi_if_set_connected_cb:
 .LFB37:
-	.loc 1 234 1 is_stmt 1
+	.loc 1 233 1 is_stmt 1
 	.cfi_startproc
-.LVL60:
-	.loc 1 235 5
-	.loc 1 234 1 is_stmt 0
+.LVL59:
+	.loc 1 234 5
+	.loc 1 233 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 236 1
+	.loc 1 235 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 235 20
+	.loc 1 234 20
 	lui	a5,%hi(.LANCHOR4)
 	sw	a0,%lo(.LANCHOR4)(a5)
-	.loc 1 236 1
+	.loc 1 235 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -903,25 +890,25 @@ wifi_if_set_connected_cb:
 	.type	wifi_if_set_disconnected_cb, @function
 wifi_if_set_disconnected_cb:
 .LFB38:
-	.loc 1 239 1 is_stmt 1
+	.loc 1 238 1 is_stmt 1
 	.cfi_startproc
-.LVL61:
-	.loc 1 240 5
-	.loc 1 239 1 is_stmt 0
+.LVL60:
+	.loc 1 239 5
+	.loc 1 238 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 241 1
+	.loc 1 240 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 240 23
+	.loc 1 239 23
 	lui	a5,%hi(.LANCHOR5)
 	sw	a0,%lo(.LANCHOR5)(a5)
-	.loc 1 241 1
+	.loc 1 240 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -934,25 +921,25 @@ wifi_if_set_disconnected_cb:
 	.type	wifi_if_set_connect_failed_cb, @function
 wifi_if_set_connect_failed_cb:
 .LFB39:
-	.loc 1 244 1 is_stmt 1
+	.loc 1 243 1 is_stmt 1
 	.cfi_startproc
-.LVL62:
-	.loc 1 245 5
-	.loc 1 244 1 is_stmt 0
+.LVL61:
+	.loc 1 244 5
+	.loc 1 243 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 246 1
+	.loc 1 245 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 245 25
+	.loc 1 244 25
 	lui	a5,%hi(.LANCHOR6)
 	sw	a0,%lo(.LANCHOR6)(a5)
-	.loc 1 246 1
+	.loc 1 245 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -1031,7 +1018,7 @@ s_wifi_conf:
 	.file 15 "<built-in>"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x9ca
+	.4byte	0x9b3
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -1046,7 +1033,7 @@ s_wifi_conf:
 	.byte	0x2
 	.4byte	.LASF0
 	.byte	0x2
-	.byte	0x6
+	.byte	0x8
 	.byte	0x10
 	.4byte	0x31
 	.byte	0x3
@@ -1056,13 +1043,13 @@ s_wifi_conf:
 	.byte	0x2
 	.4byte	.LASF1
 	.byte	0x2
-	.byte	0x7
+	.byte	0x9
 	.byte	0x10
 	.4byte	0x31
 	.byte	0x2
 	.4byte	.LASF2
 	.byte	0x2
-	.byte	0x8
+	.byte	0xa
 	.byte	0x10
 	.4byte	0x31
 	.byte	0x5
@@ -1574,7 +1561,7 @@ s_wifi_conf:
 	.byte	0x13
 	.4byte	.LASF92
 	.byte	0x1
-	.byte	0xf3
+	.byte	0xf2
 	.byte	0x6
 	.4byte	.LFB39
 	.4byte	.LFE39-.LFB39
@@ -1584,7 +1571,7 @@ s_wifi_conf:
 	.byte	0x14
 	.string	"cb"
 	.byte	0x1
-	.byte	0xf3
+	.byte	0xf2
 	.byte	0x40
 	.4byte	0x44
 	.byte	0x1
@@ -1593,7 +1580,7 @@ s_wifi_conf:
 	.byte	0x13
 	.4byte	.LASF93
 	.byte	0x1
-	.byte	0xee
+	.byte	0xed
 	.byte	0x6
 	.4byte	.LFB38
 	.4byte	.LFE38-.LFB38
@@ -1603,7 +1590,7 @@ s_wifi_conf:
 	.byte	0x14
 	.string	"cb"
 	.byte	0x1
-	.byte	0xee
+	.byte	0xed
 	.byte	0x3c
 	.4byte	0x38
 	.byte	0x1
@@ -1612,7 +1599,7 @@ s_wifi_conf:
 	.byte	0x13
 	.4byte	.LASF94
 	.byte	0x1
-	.byte	0xe9
+	.byte	0xe8
 	.byte	0x6
 	.4byte	.LFB37
 	.4byte	.LFE37-.LFB37
@@ -1622,7 +1609,7 @@ s_wifi_conf:
 	.byte	0x14
 	.string	"cb"
 	.byte	0x1
-	.byte	0xe9
+	.byte	0xe8
 	.byte	0x36
 	.4byte	0x25
 	.byte	0x1
@@ -1631,7 +1618,7 @@ s_wifi_conf:
 	.byte	0x15
 	.4byte	.LASF95
 	.byte	0x1
-	.byte	0xe4
+	.byte	0xe3
 	.byte	0x5
 	.4byte	0x3a5
 	.4byte	.LFB36
@@ -1641,7 +1628,7 @@ s_wifi_conf:
 	.byte	0x15
 	.4byte	.LASF96
 	.byte	0x1
-	.byte	0xdf
+	.byte	0xde
 	.byte	0x5
 	.4byte	0x3a5
 	.4byte	.LFB35
@@ -1651,7 +1638,7 @@ s_wifi_conf:
 	.byte	0x16
 	.4byte	.LASF98
 	.byte	0x1
-	.byte	0xce
+	.byte	0xcd
 	.byte	0x5
 	.4byte	0xac
 	.4byte	.LFB34
@@ -1662,32 +1649,32 @@ s_wifi_conf:
 	.byte	0x17
 	.4byte	.LASF97
 	.byte	0x1
-	.byte	0xd3
+	.byte	0xd2
 	.byte	0x16
 	.4byte	0x343
 	.4byte	.LLST7
 	.byte	0x18
-	.4byte	.LVL54
-	.4byte	0x919
+	.4byte	.LVL53
+	.4byte	0x902
 	.4byte	0x4f1
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC16
+	.4byte	.LC15
 	.byte	0
 	.byte	0x1a
-	.4byte	.LVL55
-	.4byte	0x925
+	.4byte	.LVL54
+	.4byte	0x90e
 	.byte	0x1a
-	.4byte	.LVL57
-	.4byte	0x919
+	.4byte	.LVL56
+	.4byte	0x902
 	.byte	0
 	.byte	0x16
 	.4byte	.LASF99
 	.byte	0x1
-	.byte	0xa7
+	.byte	0xa6
 	.byte	0x5
 	.4byte	0xac
 	.4byte	.LFB33
@@ -1698,22 +1685,45 @@ s_wifi_conf:
 	.byte	0x1b
 	.4byte	.LASF101
 	.byte	0x1
-	.byte	0xb4
+	.byte	0xb3
 	.byte	0x10
 	.4byte	0xac
 	.byte	0x12
 	.4byte	.LASF97
 	.byte	0x1
-	.byte	0xba
+	.byte	0xb9
 	.byte	0x16
 	.4byte	0x343
 	.byte	0x2
 	.byte	0x91
 	.byte	0x6c
 	.byte	0x18
-	.4byte	.LVL43
-	.4byte	0x919
+	.4byte	.LVL42
+	.4byte	0x902
 	.4byte	0x550
+	.byte	0x19
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC10
+	.byte	0
+	.byte	0x1a
+	.4byte	.LVL43
+	.4byte	0x91a
+	.byte	0x1a
+	.4byte	.LVL44
+	.4byte	0x926
+	.byte	0x1a
+	.4byte	.LVL45
+	.4byte	0x932
+	.byte	0x1a
+	.4byte	.LVL46
+	.4byte	0x90e
+	.byte	0x18
+	.4byte	.LVL47
+	.4byte	0x902
+	.4byte	0x58b
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -1721,32 +1731,9 @@ s_wifi_conf:
 	.byte	0x3
 	.4byte	.LC11
 	.byte	0
-	.byte	0x1a
-	.4byte	.LVL44
-	.4byte	0x931
-	.byte	0x1a
-	.4byte	.LVL45
-	.4byte	0x93d
-	.byte	0x1a
-	.4byte	.LVL46
-	.4byte	0x949
-	.byte	0x1a
-	.4byte	.LVL47
-	.4byte	0x925
 	.byte	0x18
 	.4byte	.LVL48
-	.4byte	0x919
-	.4byte	0x58b
-	.byte	0x19
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC12
-	.byte	0
-	.byte	0x18
-	.4byte	.LVL49
-	.4byte	0x955
+	.4byte	0x93e
 	.4byte	0x59f
 	.byte	0x19
 	.byte	0x1
@@ -1756,19 +1743,19 @@ s_wifi_conf:
 	.byte	0x6c
 	.byte	0
 	.byte	0x18
-	.4byte	.LVL50
-	.4byte	0x919
+	.4byte	.LVL49
+	.4byte	0x902
 	.4byte	0x5b6
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC14
+	.4byte	.LC13
 	.byte	0
 	.byte	0x18
-	.4byte	.LVL51
-	.4byte	0x961
+	.4byte	.LVL50
+	.4byte	0x94a
 	.4byte	0x5cb
 	.byte	0x19
 	.byte	0x1
@@ -1778,31 +1765,31 @@ s_wifi_conf:
 	.2byte	0xbb8
 	.byte	0
 	.byte	0x18
-	.4byte	.LVL52
-	.4byte	0x919
+	.4byte	.LVL51
+	.4byte	0x902
 	.4byte	0x5e2
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC15
+	.4byte	.LC14
 	.byte	0
 	.byte	0x1c
-	.4byte	.LVL53
-	.4byte	0x919
+	.4byte	.LVL52
+	.4byte	0x902
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC13
+	.4byte	.LC12
 	.byte	0
 	.byte	0
 	.byte	0x16
 	.4byte	.LASF100
 	.byte	0x1
-	.byte	0x98
+	.byte	0x97
 	.byte	0x5
 	.4byte	0xac
 	.4byte	.LFB32
@@ -1813,23 +1800,23 @@ s_wifi_conf:
 	.byte	0x1b
 	.4byte	.LASF101
 	.byte	0x1
-	.byte	0x9f
+	.byte	0x9e
 	.byte	0x10
 	.4byte	0xac
 	.byte	0x1a
+	.4byte	.LVL39
+	.4byte	0x91a
+	.byte	0x1a
 	.4byte	.LVL40
-	.4byte	0x931
+	.4byte	0x926
 	.byte	0x1a
 	.4byte	.LVL41
-	.4byte	0x93d
-	.byte	0x1a
-	.4byte	.LVL42
-	.4byte	0x949
+	.4byte	0x932
 	.byte	0
 	.byte	0x16
 	.4byte	.LASF102
 	.byte	0x1
-	.byte	0x70
+	.byte	0x6f
 	.byte	0x5
 	.4byte	0xac
 	.4byte	.LFB31
@@ -1840,36 +1827,36 @@ s_wifi_conf:
 	.byte	0x1d
 	.4byte	.LASF103
 	.byte	0x1
-	.byte	0x70
+	.byte	0x6f
 	.byte	0x21
 	.4byte	0xce
 	.4byte	.LLST4
 	.byte	0x1d
 	.4byte	.LASF104
 	.byte	0x1
-	.byte	0x70
+	.byte	0x6f
 	.byte	0x33
 	.4byte	0xce
 	.4byte	.LLST5
 	.byte	0x17
 	.4byte	.LASF97
 	.byte	0x1
-	.byte	0x72
+	.byte	0x71
 	.byte	0x16
 	.4byte	0x343
 	.4byte	.LLST6
 	.byte	0x12
 	.4byte	.LASF105
 	.byte	0x1
-	.byte	0x73
+	.byte	0x72
 	.byte	0x1b
 	.4byte	0x30e
 	.byte	0x2
 	.byte	0x91
 	.byte	0x44
 	.byte	0x18
-	.4byte	.LVL28
-	.4byte	0x96e
+	.4byte	.LVL27
+	.4byte	0x957
 	.4byte	0x6af
 	.byte	0x19
 	.byte	0x1
@@ -1889,9 +1876,20 @@ s_wifi_conf:
 	.byte	0x4c
 	.byte	0
 	.byte	0x18
-	.4byte	.LVL29
-	.4byte	0x919
+	.4byte	.LVL28
+	.4byte	0x902
 	.4byte	0x6c6
+	.byte	0x19
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x5
+	.byte	0x3
+	.4byte	.LC7
+	.byte	0
+	.byte	0x18
+	.4byte	.LVL32
+	.4byte	0x902
+	.4byte	0x6dd
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -1901,25 +1899,14 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL33
-	.4byte	0x919
-	.4byte	0x6dd
-	.byte	0x19
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC9
-	.byte	0
-	.byte	0x18
-	.4byte	.LVL34
-	.4byte	0x919
+	.4byte	0x902
 	.4byte	0x6fa
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC10
+	.4byte	.LC9
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5b
@@ -1928,14 +1915,14 @@ s_wifi_conf:
 	.byte	0
 	.byte	0
 	.byte	0x1a
-	.4byte	.LVL35
-	.4byte	0x925
+	.4byte	.LVL34
+	.4byte	0x90e
 	.byte	0x1a
-	.4byte	.LVL37
-	.4byte	0x979
+	.4byte	.LVL36
+	.4byte	0x962
 	.byte	0x18
-	.4byte	.LVL38
-	.4byte	0x985
+	.4byte	.LVL37
+	.4byte	0x96e
 	.4byte	0x72a
 	.byte	0x19
 	.byte	0x1
@@ -1955,8 +1942,8 @@ s_wifi_conf:
 	.byte	0x4c
 	.byte	0
 	.byte	0x1c
-	.4byte	.LVL39
-	.4byte	0x991
+	.4byte	.LVL38
+	.4byte	0x97a
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -1993,7 +1980,7 @@ s_wifi_conf:
 	.4byte	.LFE30-.LFB30
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x7eb
+	.4byte	0x7d4
 	.byte	0x12
 	.4byte	.LASF107
 	.byte	0x1
@@ -2005,7 +1992,7 @@ s_wifi_conf:
 	.4byte	wifi_init_done.0
 	.byte	0x18
 	.4byte	.LVL20
-	.4byte	0x919
+	.4byte	0x902
 	.4byte	0x790
 	.byte	0x19
 	.byte	0x1
@@ -2016,19 +2003,8 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL21
-	.4byte	0x919
-	.4byte	0x7a7
-	.byte	0x19
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC7
-	.byte	0
-	.byte	0x18
-	.4byte	.LVL22
-	.4byte	0x99d
-	.4byte	0x7c8
+	.4byte	0x986
+	.4byte	0x7b1
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2047,11 +2023,11 @@ s_wifi_conf:
 	.byte	0x30
 	.byte	0
 	.byte	0x1a
-	.4byte	.LVL23
-	.4byte	0x9a9
+	.4byte	.LVL22
+	.4byte	0x992
 	.byte	0x1c
-	.4byte	.LVL24
-	.4byte	0x9b5
+	.4byte	.LVL23
+	.4byte	0x99e
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2075,7 +2051,7 @@ s_wifi_conf:
 	.byte	0x1b
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x81f
+	.4byte	0x808
 	.byte	0x1f
 	.4byte	.LASF108
 	.byte	0x1
@@ -2098,42 +2074,42 @@ s_wifi_conf:
 	.byte	0
 	.byte	0
 	.byte	0x22
-	.4byte	0x7eb
+	.4byte	0x7d4
 	.4byte	.LFB29
 	.4byte	.LFE29-.LFB29
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x919
+	.4byte	0x902
 	.byte	0x23
-	.4byte	0x7f8
+	.4byte	0x7e1
 	.4byte	.LLST0
 	.byte	0x23
-	.4byte	0x804
+	.4byte	0x7ed
 	.4byte	.LLST1
 	.byte	0x24
-	.4byte	0x7eb
+	.4byte	0x7d4
 	.4byte	.LBB7
 	.4byte	.Ldebug_ranges0+0
 	.byte	0x1
 	.byte	0x1b
 	.byte	0xd
 	.byte	0x25
-	.4byte	0x7f8
+	.4byte	0x7e1
 	.byte	0x25
-	.4byte	0x7f8
+	.4byte	0x7e1
 	.byte	0x23
-	.4byte	0x804
+	.4byte	0x7ed
 	.4byte	.LLST2
 	.byte	0x26
-	.4byte	0x810
+	.4byte	0x7f9
 	.4byte	.Ldebug_ranges0+0x58
-	.4byte	0x891
+	.4byte	0x87a
 	.byte	0x27
-	.4byte	0x811
+	.4byte	0x7fa
 	.4byte	.LLST3
 	.byte	0x1c
 	.4byte	.LVL17
-	.4byte	0x919
+	.4byte	0x902
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2144,8 +2120,8 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL3
-	.4byte	0x919
-	.4byte	0x8a8
+	.4byte	0x902
+	.4byte	0x891
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2155,8 +2131,8 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x28
 	.4byte	.LVL4
-	.4byte	0x9c1
-	.4byte	0x8bf
+	.4byte	0x9aa
+	.4byte	0x8a8
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2166,8 +2142,8 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL6
-	.4byte	0x919
-	.4byte	0x8d6
+	.4byte	0x902
+	.4byte	0x8bf
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2177,8 +2153,8 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x18
 	.4byte	.LVL9
-	.4byte	0x919
-	.4byte	0x8ed
+	.4byte	0x902
+	.4byte	0x8d6
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2188,8 +2164,8 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x28
 	.4byte	.LVL12
-	.4byte	0x919
-	.4byte	0x904
+	.4byte	0x902
+	.4byte	0x8ed
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2199,7 +2175,7 @@ s_wifi_conf:
 	.byte	0
 	.byte	0x1c
 	.4byte	.LVL14
-	.4byte	0x919
+	.4byte	0x902
 	.byte	0x19
 	.byte	0x1
 	.byte	0x5a
@@ -2237,7 +2213,7 @@ s_wifi_conf:
 	.4byte	.LASF101
 	.4byte	.LASF101
 	.byte	0x1
-	.byte	0xb4
+	.byte	0xb3
 	.byte	0x10
 	.byte	0x29
 	.4byte	.LASF114
@@ -2924,66 +2900,66 @@ s_wifi_conf:
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 .LLST7:
+	.4byte	.LVL54
 	.4byte	.LVL55
-	.4byte	.LVL56
 	.2byte	0x1
 	.byte	0x5a
+	.4byte	.LVL57
 	.4byte	.LVL58
-	.4byte	.LVL59
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST4:
-	.4byte	.LVL25
-	.4byte	.LVL27
+	.4byte	.LVL24
+	.4byte	.LVL26
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL27
-	.4byte	.LVL30
+	.4byte	.LVL26
+	.4byte	.LVL29
 	.2byte	0x1
 	.byte	0x59
-	.4byte	.LVL30
-	.4byte	.LVL32
+	.4byte	.LVL29
+	.4byte	.LVL31
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL32
+	.4byte	.LVL31
 	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x59
 	.4byte	0
 	.4byte	0
 .LLST5:
+	.4byte	.LVL24
 	.4byte	.LVL25
-	.4byte	.LVL26
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL26
-	.4byte	.LVL31
+	.4byte	.LVL25
+	.4byte	.LVL30
 	.2byte	0x1
 	.byte	0x63
+	.4byte	.LVL30
 	.4byte	.LVL31
-	.4byte	.LVL32
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL32
+	.4byte	.LVL31
 	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x63
 	.4byte	0
 	.4byte	0
 .LLST6:
-	.4byte	.LVL36
-	.4byte	.LVL37-1
+	.4byte	.LVL35
+	.4byte	.LVL36-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL37-1
+	.4byte	.LVL36-1
 	.4byte	.LFE31
 	.2byte	0x1
 	.byte	0x62

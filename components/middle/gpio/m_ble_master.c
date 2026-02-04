@@ -1,5 +1,5 @@
 #include "m_ble_master.h"
-#include "../../middle/ble/ble_interface.h"  // Include này có work_q.h và ADV_* defines
+#include "../../middle/ble/ble_interface.h"  
 #include "../../middle/wifi_if/wifi_if.h"
 #include "../../middle/gpio/m_wifi.h"
 #include "../../hardware/relay/relay.h"
@@ -10,25 +10,18 @@
 #include "blog.h"
 #include <hosal_uart.h>
 #include <bluetooth.h>
-
-// Include BLE headers (same order as ble_master.c và ble_central_api.c)
-// Không cần include work_q.h vì đã có trong ble_interface.h
 #include "hci_driver.h"
-// #include "hci_core.h"
-#include "conn.h"  // For bt_conn_disconnect, bt_conn_foreach, etc.
-
+#include "conn.h"  
 #include "../../middle/ble/ble_master.h"
 
-// External variables
 extern unsigned char bleuart_connect_status;
 extern struct bt_conn *pconn;
 
-// Define ble_uart_dev (UART device for BLE communication)
 hosal_uart_dev_t ble_uart_dev = {
     .config = {
         .uart_id = 1,
-        .tx_pin = 16, // TXD GPIO
-        .rx_pin = 7,  // RXD GPIO
+        .tx_pin = 16, 
+        .rx_pin = 7,  
         .cts_pin = 255,
         .rts_pin = 255,
         .baud_rate = 115200,
@@ -39,7 +32,7 @@ hosal_uart_dev_t ble_uart_dev = {
     },
 };
 
-// Define bleuart_printf function (used by ble_central_api.c)
+
 void bleuart_printf(char *buf)
 {
     if (buf != NULL) {
@@ -47,15 +40,12 @@ void bleuart_printf(char *buf)
     }
 }
 
-// External functions from ble_central_api.c
 extern uint8_t axk_HalBleInit(void);
 extern uint8_t axk_HalBleCentralStartScan(void);
 extern uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnect);
 extern int axk_HalBleCentralTTWrite(uint16_t len, uint8_t *data);
 
-// External functions from ble_common_api.c
 extern void axk_HalBleRegisterCallbacks(void);
-
 
 static bool s_ble_master_running = false;
 static bool s_ble_master_stack_started = false;
@@ -75,7 +65,7 @@ static app_ble_master_adv_state_cb_t s_adv_state_cb = NULL;
 
 static uint8_t s_relay_current_state = 0;
 static bool s_wifi_was_connected = false;
-static bool s_ble_master_api_init = false;  // Track if ble_master_init() was called
+static bool s_ble_master_api_init = false;  
 
 static bool adv_parse_cb(struct bt_data *data, void *user_data)
 {
@@ -85,21 +75,18 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
     if (data->type != BT_DATA_MANUFACTURER_DATA) {
         return true; 
     }
-
-    // Format: Company ID (2) + "addruntitle" (11) + "HNN" (3) + touchpad1 (1) + touchpad2 (1) + touchpad3 (1) = 19 bytes
+    
     if (data->data_len < 19) {
         return true;
     }
 
     const uint8_t *p = data->data;
     
-    // Parse Company ID
     uint16_t company_id = p[0] | (p[1] << 8);
     if (company_id != 0x0211) {
         return true;  
     }
 
-    // Check magic string "addruntitle" (11 bytes) at offset 2
     if (data->data_len < 13) {
         return true;
     }
@@ -107,8 +94,7 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
     if (memcmp(&p[2], "addruntitle", 11) != 0) {
         return true;
     }
-
-    // Check product "HNN" (3 bytes) at offset 13
+    
     if (data->data_len < 16) {
         return true;
     }
@@ -117,50 +103,30 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
         return true;
     }
 
-    // Parse touchpad values
-    (void)p[16]; // touchpad1 - unused
-    uint8_t touchpad2 = p[17];  // This is the state (touchpad2): 1=ON, 0=OFF
-    (void)p[18]; // touchpad3 - unused
-    
-    // Check if this is the same device (by MAC address - compare original, not reversed)
-    bool is_same_device = s_slave_mac_found && 
-                          (memcmp(s_found_slave_mac, addr->a.val, 6) == 0);
-    
-    // Log first time found (only once)
-    if (!s_slave_mac_found || !is_same_device) {
-        // Store MAC address (original format for comparison)
+    (void)p[16]; 
+    uint8_t touchpad2 = p[17];  
+    (void)p[18]; 
+    bool is_same_device = s_slave_mac_found &&(memcmp(s_found_slave_mac, addr->a.val, 6) == 0);
+    if (!s_slave_mac_found || !is_same_device) {      
         memcpy(s_found_slave_mac, addr->a.val, 6);
-        
         s_slave_mac_found = true;
-        s_relay_current_state = touchpad2;  // Initialize current state
-
-        // Display MAC in reversed format (for readability)
+        s_relay_current_state = touchpad2;          
         uint8_t mac_display[6];
         memcpy(mac_display, addr->a.val, 6);
         ble_reverse_byte(mac_display, 6);
-        
-        printf("[BLE_MASTER] [FOUND] Target device! MAC: %02X:%02X:%02X:%02X:%02X:%02X, RSSI=%d, touchpad2(state)=%d\r\n",
-               mac_display[0], mac_display[1], mac_display[2],
-               mac_display[3], mac_display[4], mac_display[5],
-               rssi, touchpad2);
-        fflush(stdout);
-        
-        // Set relay to initial state (1=ON, 0=OFF)
+        // printf("[BLE_MASTER] [FOUND] Target device! MAC: %02X:%02X:%02X:%02X:%02X:%02X, RSSI=%d, touchpad2(state)=%d\r\n",mac_display[0], mac_display[1], mac_display[2],mac_display[3], mac_display[4], mac_display[5],rssi, touchpad2);
+        // fflush(stdout);     
         if (touchpad2 == 1) {
             relay_on();
         } else {
             relay_off();
         }
         
-        return false;  // Stop parsing
+        return false;  
     }
     
-    // Only process when touchpad2 (state) changes (for same device)
     if (touchpad2 != s_relay_current_state) {
-        printf("[BLE_MASTER] [STATE CHANGE] touchpad2: %d -> %d, ", 
-               s_relay_current_state, touchpad2);
-        
-        // Set relay based on state: 1=ON, 0=OFF
+        // printf("[BLE_MASTER] [STATE CHANGE] touchpad2: %d -> %d, ", s_relay_current_state, touchpad2);
         if (touchpad2 == 1) {
             relay_on();
             printf("RELAY ON\r\n");
@@ -169,23 +135,17 @@ static bool adv_parse_cb(struct bt_data *data, void *user_data)
             printf("RELAY OFF\r\n");
         }
         fflush(stdout);
-        
         s_relay_current_state = touchpad2;
-        
-        // Notify callback
         if (s_adv_state_cb) {
             s_adv_state_cb(touchpad2, rssi);
         }
     }
     
-    return false;  // Stop parsing, found what we need
+    return false; 
 }
 
 
-static void scan_adv_device_found(const bt_addr_le_t *addr,
-                                   int8_t rssi,
-                                   uint8_t type,
-                                   struct net_buf_simple *ad)
+static void scan_adv_device_found(const bt_addr_le_t *addr,int8_t rssi,uint8_t type,struct net_buf_simple *ad)
 {
     struct {
         int8_t rssi;
@@ -201,27 +161,21 @@ static void scan_adv_device_found(const bt_addr_le_t *addr,
 
 static void ble_master_scan_adv_task(void *params)
 {
-    // Optimized scan parameters to reduce CPU usage and avoid interfering with MQTT
-    // interval = 0x400 (1024 * 0.625ms = 640ms) - scan every 640ms
-    // window = 0x30 (48 * 0.625ms = 30ms) - scan for 30ms each interval
-    // This gives ~4.7% duty cycle instead of 100%, much less CPU intensive
     struct bt_le_scan_param scan_param = {
         .type       = BT_LE_SCAN_TYPE_PASSIVE,
         .filter_dup = BT_LE_SCAN_FILTER_DUPLICATE,
-        .interval   = 0x400,  // 640ms interval (was 0x50 = 50ms)
-        .window     = 0x30,   // 30ms window (was 0x50 = 50ms)
+        .interval   = 0x400,  
+        .window     = 0x30,   
     };
     
     int ret = bt_le_scan_start(&scan_param, scan_adv_device_found);
     if (ret) {
-        printf("[BLE_MASTER] ERROR: Scan start failed: %d\r\n", ret);
-        fflush(stdout);
         vTaskDelete(NULL);
         return;
     }
     
     while (s_ble_master_running && s_current_mode == BLE_MASTER_MODE_SCAN_ADV) {
-        // Longer delay to reduce task switching overhead
+        
         vTaskDelay(pdMS_TO_TICKS(2000));
     }
     
@@ -229,7 +183,6 @@ static void ble_master_scan_adv_task(void *params)
     
     vTaskDelete(NULL);
 }
-
 
 static void ble_master_uart_task(void *params)
 {
@@ -259,18 +212,10 @@ static void ble_master_uart_task(void *params)
     vTaskDelete(NULL);
 }
 
-// Removed unused ble_master_connect_init_task - logic moved directly into app_ble_master_connect
-
-
-
 int app_ble_master_init(void)
 {
-    
-    // int uart_ret = hosal_uart_init(&ble_uart_dev);
-
     memset(s_found_slave_mac, 0, 6);
     s_slave_mac_found = false;
-    
 
     return 0;
 }
@@ -280,10 +225,6 @@ int app_ble_master_start(void)
     if (s_ble_master_running) {
         return 0;
     }
-    
-    
-    // Don't disable WiFi when scanning ADV - allow MQTT to work
-    // WiFi will be disabled only when connecting to slave device
     s_wifi_was_connected = wifi_if_is_connected();
     
     if (!s_ble_master_stack_started) {
@@ -296,30 +237,18 @@ int app_ble_master_start(void)
         }
         
         if (!ble_is_enabled()) {
-            printf("[BLE_MASTER] ERROR: BLE stack not enabled after timeout!\r\n");
-            fflush(stdout);
             return -1;
         }
         
         s_ble_master_stack_started = true;
     }
-    
-    
+
     s_slave_mac_found = false;
     memset(s_found_slave_mac, 0, 6);
-    
-    
     s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
     s_ble_master_running = true;
     
-    xTaskCreate(
-        ble_master_scan_adv_task,
-        "ble_scan_adv",
-        1024,
-        NULL,
-        10,  // Lower priority to avoid interfering with MQTT/WiFi
-        &s_ble_scan_task_handle
-    );
+    xTaskCreate(ble_master_scan_adv_task,"ble_scan_adv",1024,NULL,10,&s_ble_scan_task_handle);
     return 0;
 }
 
@@ -331,7 +260,6 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     }
     
     if (s_current_mode == BLE_MASTER_MODE_CONNECT) {
-        blog_warn("[BLE_MASTER] Already in CONNECT mode\r\n");
         return 0;
     }
     
@@ -339,20 +267,16 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     if (slave_mac) {
         memcpy(s_found_slave_mac, slave_mac, 6);
         s_slave_mac_found = true;
-        blog_info("[BLE_MASTER] Using provided MAC\r\n");
     }
     
-    
     if (!s_slave_mac_found) {
-        blog_error("[BLE_MASTER] No MAC found! Please wait for scan to find device first\r\n");
         return -1;
     }
     
-    // Print MAC address (reversed for display)
     uint8_t mac_display[6];
     memcpy(mac_display, s_found_slave_mac, 6);
     ble_reverse_byte(mac_display, 6);
-    // Stop scan task first
+    
     if (s_ble_scan_task_handle) {
         vTaskDelete(s_ble_scan_task_handle);
         s_ble_scan_task_handle = NULL;
@@ -363,9 +287,6 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     
     s_current_mode = BLE_MASTER_MODE_CONNECT;
     
-    // Don't call axk_HalBleInit() - it will call ble_stack_start() again and cause crash
-    // BLE stack is already running, just need to ensure ble_master_init() is called
-    // Only call it once
     if (!s_ble_master_api_init) {
         extern int ble_master_init(void);
         int ret = ble_master_init();
@@ -377,13 +298,6 @@ int app_ble_master_connect(const uint8_t *slave_mac)
         axk_HalBleRegisterCallbacks();
     }
     
-    // Use the original vendor's connection function - it will:
-    // 1. Scan for the device (ble_master_find_target) to verify it's still there
-    // 2. Create connection with proper parameters
-    // 3. Wait for connection complete via semaphore
-    // 4. Set up auto-reconnect if needed
-    
-    // Reverse MAC for axk_HalBleCentralConnect (it expects reversed format)
     uint8_t mac_reversed[6];
     memcpy(mac_reversed, s_found_slave_mac, 6);
     ble_reverse_byte(mac_reversed, 6);
@@ -393,27 +307,11 @@ int app_ble_master_connect(const uint8_t *slave_mac)
     if (ret != 0 && ret != 1) {
         printf("[BLE_MASTER] Connection failed, ret=%d\r\n", ret);
         fflush(stdout);
-        // Fall back to scan mode
+        
         s_current_mode = BLE_MASTER_MODE_SCAN_ADV;
-        xTaskCreate(
-            ble_master_scan_adv_task,
-            "ble_scan_adv",
-            1024,
-            NULL,
-            14,
-            &s_ble_scan_task_handle
-        );
+        xTaskCreate(ble_master_scan_adv_task,"ble_scan_adv",1024,NULL,14,&s_ble_scan_task_handle);
     }
-    
-    // Create UART task for data passthrough (will be used when connected)
-    xTaskCreate(
-        ble_master_uart_task,
-        "ble_uart",
-        1024,
-        NULL,
-        15,
-        &s_ble_uart_task_handle
-    );
+    xTaskCreate(ble_master_uart_task,"ble_uart",1024,NULL,15,&s_ble_uart_task_handle);
     return 0;
 }
 
@@ -457,7 +355,7 @@ int app_ble_master_disconnect(void)
         "ble_scan_adv",
         1024,
         NULL,
-        10,  // Lower priority to avoid interfering with MQTT/WiFi
+        10,  
         &s_ble_scan_task_handle
     );
     

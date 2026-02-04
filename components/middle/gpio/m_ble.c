@@ -34,7 +34,7 @@ static void ble_config_done_handler(const char *ssid, const char *password)
     }
 }
 
-int app_ble_init(void)
+int app_ble_init(void) //register callback  affter when config, have full data about ssid and pass will call app
 {
     ble_set_config_done_cb(ble_config_done_handler);
     return 0;

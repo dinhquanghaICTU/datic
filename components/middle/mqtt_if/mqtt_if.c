@@ -371,12 +371,11 @@ static void mqtt_recv_task(void *params)
 
 int mqtt_if_init(void)
 {
-    printf("=========================================== mqtt init oke ==================================\r\n");
+    printf("mqtt init oke\r\n");
     memset(&s_mqtt_config, 0, sizeof(s_mqtt_config));
     s_mqtt_config.port = MQTT_DEFAULT_PORT;
     s_mqtt_config.keepalive = MQTT_DEFAULT_KEEPALIVE;
     strcpy(s_mqtt_config.client_id, "device_");
-    printf("=====================================clienid: %s ==== broker: %s ==== port:%d \r\n", s_mqtt_config.client_id,s_mqtt_config.broker, s_mqtt_config.port);
     return 0;
 }
 

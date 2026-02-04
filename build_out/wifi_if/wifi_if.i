@@ -10,6 +10,8 @@
 # 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdbool.h" 1 3 4
 # 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h" 2
 
+
+
 typedef void (*wifi_if_connected_cb_t)(void);
 typedef void (*wifi_if_disconnected_cb_t)(void);
 typedef void (*wifi_if_connect_failed_cb_t)(void);
@@ -20,14 +22,14 @@ int wifi_if_disconnect(void);
 int wifi_if_disable(void);
 int wifi_if_enable(void);
 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h" 3 4
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h"
     wifi_if_is_connected(void);
 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h" 3 4
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h"
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h"
     wifi_if_is_mgmr_ready(void);
 
 
@@ -4814,7 +4816,7 @@ static void wifi_event_handler(input_event_t *event, void *private_data)
 
     switch (event->code) {
         case 1:
-            printf("[WIFI_IF] WiFi INIT DONE, starting background\r\n");
+            printf("[WIFI_IF] WiFi INIT DONE\r\n");
             wifi_mgmr_start_background(&s_wifi_conf);
             break;
 
@@ -4899,7 +4901,6 @@ int wifi_if_init(void)
     static uint8_t wifi_init_done = 0;
 
     if (wifi_init_done) {
-        printf("[WIFI_IF] WiFi already initialized\r\n");
         return 0;
     }
 
@@ -4907,9 +4908,9 @@ int wifi_if_init(void)
     printf("[WIFI_IF] Initializing WiFi...\r\n");
 
     aos_register_event_filter(0x0002, wifi_event_handler, 
-# 101 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                                                           ((void *)0)
-# 101 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                                                               );
 
 
@@ -4927,13 +4928,13 @@ int wifi_if_connect(const char *ssid, const char *password)
     struct ap_connect_adv ext_param = {0};
 
     if (ssid == 
-# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                ((void *)0) 
-# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                     || password == 
-# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                                    ((void *)0)
-# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                                        ) {
         return -1;
     }
@@ -4946,18 +4947,18 @@ int wifi_if_connect(const char *ssid, const char *password)
     if (!s_wifi_mgmr_ready) {
         printf("[WIFI_IF] WiFi MGMR not ready, cannot connect yet\r\n");
         s_wifi_connecting = 
-# 128 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 127 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                            0
-# 128 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 127 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                                 ;
         return -1;
     }
 
     printf("[WIFI_IF] Connecting to WiFi: %s\r\n", ssid);
     s_wifi_connecting = 
-# 133 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 132 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                        1
-# 133 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 132 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                            ;
 
 
@@ -4969,9 +4970,9 @@ int wifi_if_connect(const char *ssid, const char *password)
 
     memset(&ext_param, 0, sizeof(ext_param));
     ext_param.psk = 
-# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 142 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                    ((void *)0)
-# 143 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 142 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                        ;
     ext_param.ap_info.type = AP_INFO_TYPE_PRESIST;
     ext_param.ap_info.time_to_live = 5;
@@ -4992,14 +4993,14 @@ int wifi_if_disconnect(void)
     wifi_mgmr_api_idle();
 
     s_wifi_connected = 
-# 162 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                       0
-# 162 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                            ;
     s_wifi_connecting = 
-# 163 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 162 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                        0
-# 163 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 162 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                             ;
     return 0;
 }
@@ -5033,14 +5034,14 @@ int wifi_if_disable(void)
     }
 
     s_wifi_connected = 
-# 195 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 194 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                       0
-# 195 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 194 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                            ;
     s_wifi_connecting = 
-# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 195 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
                        0
-# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 195 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
                             ;
 
 
@@ -5069,18 +5070,18 @@ int wifi_if_enable(void)
 }
 
 
-# 223 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 222 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
 _Bool 
-# 223 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 222 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
     wifi_if_is_connected(void)
 {
     return s_wifi_connected;
 }
 
 
-# 228 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
+# 227 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c" 3 4
 _Bool 
-# 228 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
+# 227 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c"
     wifi_if_is_mgmr_ready(void)
 {
     return s_wifi_mgmr_ready;

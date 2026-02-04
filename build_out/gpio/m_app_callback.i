@@ -136,6 +136,8 @@ void app_callback_update_lock_button(
 
 
 
+
+
 typedef void (*wifi_if_connected_cb_t)(void);
 typedef void (*wifi_if_disconnected_cb_t)(void);
 typedef void (*wifi_if_connect_failed_cb_t)(void);
@@ -146,14 +148,14 @@ int wifi_if_disconnect(void);
 int wifi_if_disable(void);
 int wifi_if_enable(void);
 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
     wifi_if_is_connected(void);
 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h" 3 4
 _Bool 
-# 16 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
     wifi_if_is_mgmr_ready(void);
 
 
@@ -2816,13 +2818,17 @@ void app_button_hold_callback(int pin, int event, void *data)
 
     wifi_if_disconnect();
     aos_msleep(2000);
+
     app_config_clear_wifi();
 
-    app_event_t evt = {.type = APP_EVENT_BUTTON_HOLD, .data = 
-# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
-                                                             ((void *)0)
-# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
-                                                                 };
+    app_event_t evt = {
+        .type = APP_EVENT_BUTTON_HOLD,
+        .data = 
+# 46 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+               ((void *)0)
+    
+# 47 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+   };
     app_state_process_event(&evt);
 }
 
@@ -2833,9 +2839,9 @@ void app_button_press_callback(int pin, int event, void *data)
         uint8_t dummy_state;
         app_config_load_relay_settings(&dummy_state, &g_lock_button);
         g_lock_button_loaded = 
-# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 57 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                               1
-# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 57 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                   ;
     }
 
@@ -2851,37 +2857,37 @@ void app_button_press_callback(int pin, int event, void *data)
     }
 
     app_event_post(APP_EVENT_BUTTON_PRESS, 
-# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                           ((void *)0)
-# 67 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                               );
     app_event_post(APP_EVENT_RELAY_STATE_CHANGED, 
-# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                                  ((void *)0)
-# 68 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                                      );
 }
 
 void app_callback_update_lock_button(
-# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 75 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                     _Bool 
-# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 75 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                          locked)
 {
     g_lock_button = locked;
     g_lock_button_loaded = 
-# 74 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                           1
-# 74 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                               ;
 }
 
 void app_wifi_connected_callback(void)
 {
     app_event_t evt = {.type = APP_EVENT_WIFI_CONNECTED, .data = 
-# 79 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                                                 ((void *)0)
-# 79 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 83 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                                                     };
     app_state_process_event(&evt);
 }
@@ -2889,9 +2895,9 @@ void app_wifi_connected_callback(void)
 void app_wifi_disconnected_callback(void)
 {
     app_event_t evt = {.type = APP_EVENT_WIFI_DISCONNECTED, .data = 
-# 85 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                                                    ((void *)0)
-# 85 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 89 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                                                        };
     app_state_process_event(&evt);
 }
@@ -2899,9 +2905,9 @@ void app_wifi_disconnected_callback(void)
 void app_wifi_connect_failed_callback(void)
 {
     app_event_t evt = {.type = APP_EVENT_WIFI_CONNECT_FAILED, .data = 
-# 91 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 95 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                                                      ((void *)0)
-# 91 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 95 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                                                          };
     app_state_process_event(&evt);
 }
@@ -2911,9 +2917,9 @@ void app_ble_config_done_callback(const char *ssid, const char *password)
     (void)ssid;
     (void)password;
     app_event_t evt = {.type = APP_EVENT_BLE_CONFIG_DONE, .data = 
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
+# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c" 3 4
                                                                  ((void *)0)
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
+# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
                                                                      };
     app_state_process_event(&evt);
 }

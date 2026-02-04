@@ -7,6 +7,7 @@
 int app_config_init(void)
 {
     easyflash_init();
+    // app_config_clear_wifi(); // test
     return 0;
 }
 

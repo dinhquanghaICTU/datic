@@ -86,14 +86,17 @@ static void mqtt_disconnected_handler(void)
 
 int app_mqtt_init(void)
 {
-    mqtt_if_init();
+    mqtt_if_init(); // config for mqtt, port , keep alive, client id
+    
+    //register callback  save to variable global pointer funcion 
     mqtt_if_set_connected_cb(mqtt_connected_handler);
     mqtt_if_set_disconnected_cb(mqtt_disconnected_handler);
     mqtt_if_set_message_cb(mqtt_message_handler);
     
+
+    // create full string connect, save to array 
     snprintf(s_command_topic, sizeof(s_command_topic), "%s%s", s_topic_prefix, MQTT_TOPIC_COMMAND);
     snprintf(s_state_topic, sizeof(s_state_topic), "%s%s", s_topic_prefix, MQTT_TOPIC_STATE);
-    
     return 0;
 }
 

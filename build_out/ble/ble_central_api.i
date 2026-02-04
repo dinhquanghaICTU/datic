@@ -9614,18 +9614,14 @@ static uint8_t notify_func(
             handle_res(t1, t2, t3);
         }
         else {
-
             char logbuf[128];
             uint8_t pad1 = 0, pad2 = 0, pad3 = 0;
-
             if (length >= 19) {
                 const char *str = (const char *)data;
-
                 const char *p1 = strstr(str, "pad1:");
                 if (p1) {
                     pad1 = (p1[5] == '1') ? 1 : 0;
                 }
-
                 const char *p2 = strstr(str, "pad2:");
                 if (p2) {
                     pad2 = (p2[5] == '1') ? 1 : 0;
@@ -9635,7 +9631,6 @@ static uint8_t notify_func(
                 if (p3) {
                     pad3 = (p3[5] == '1') ? 1 : 0;
                 }
-
                 sprintf(logbuf, "[TOUCHPAD] pad1=%d, pad2=%d, pad3=%d\r\n", pad1, pad2, pad3);
                 bleuart_printf(logbuf);
 
@@ -9647,8 +9642,6 @@ static uint8_t notify_func(
     }
     return BT_GATT_ITER_CONTINUE;
 }
-
-
 void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3)
 {
     printf("[LED]  %d\r\n",pad2);
@@ -9659,9 +9652,9 @@ void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3)
             relay_on();
             printf("[LED] ON %d\r\n",pad2);
             fflush(
-# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 140 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                   (_impure_ptr->_stdout)
-# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 140 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                         );
             last_pad2 = 1;
         }
@@ -9675,11 +9668,6 @@ void handle_res(uint8_t pad1, uint8_t pad2, uint8_t pad3)
     }
     else{
         printf("[LED] UNKNOWN (pad1=%d, pad2=%d, pad3=%d)\r\n", pad1, pad2, pad3);
-        fflush(
-# 160 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
-              (_impure_ptr->_stdout)
-# 160 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
-                    );
     }
 }
 
@@ -9698,9 +9686,9 @@ static uint8_t discover_func(
         printf("[BLE] Touchpad notify: char=0x%04X, ccc=0x%04X\r\n",
                discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
         fflush(
-# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
               (_impure_ptr->_stdout)
-# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                     );
 
 
@@ -9708,9 +9696,9 @@ static uint8_t discover_func(
             printf("[BLE] Subscribing to touchpad notify (char=0x%04X, ccc=0x%04X)...\r\n",
                    discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
             fflush(
-# 184 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 176 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                   (_impure_ptr->_stdout)
-# 184 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 176 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                         );
 
             subscribe_touchpad.notify = notify_func;
@@ -9720,31 +9708,31 @@ static uint8_t discover_func(
 
             err = bt_gatt_subscribe(conn, &subscribe_touchpad);
             if (err && err != -
-# 192 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 184 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                               120
-# 192 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 184 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                       ) {
                 printf("[BLE] Touchpad subscribe failed: %d\r\n", err);
                 fflush(
-# 194 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                       (_impure_ptr->_stdout)
-# 194 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 186 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             );
             } else {
                 printf("[BLE] Touchpad notify SUBSCRIBED successfully!\r\n");
                 fflush(
-# 197 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                       (_impure_ptr->_stdout)
-# 197 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             );
             }
         } else {
             printf("[BLE] Touchpad notify not found (char=0x%04X, ccc=0x%04X)\r\n",
                    discover_handle.touchpad_notify_char, discover_handle.touchpad_notify_ccc);
             fflush(
-# 202 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 194 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                   (_impure_ptr->_stdout)
-# 202 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 194 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                         );
         }
 
@@ -9760,16 +9748,12 @@ static uint8_t discover_func(
             discover_handle.touchpad_notify_char = attr->handle;
             printf("[BLE] Found touchpad notify (0xFFE1) at handle 0x%04X\r\n", attr->handle);
             fflush(
-# 216 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 208 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                   (_impure_ptr->_stdout)
-# 216 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 208 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                         );
         }
     }
-
-
-
-
     if(!bt_uuid_cmp(attr->uuid, ((struct bt_uuid *) ((struct bt_uuid_16[]) {{ .uuid = { BT_UUID_TYPE_16 }, .val = (0x2902), }}))))
     {
 
@@ -9780,9 +9764,9 @@ static uint8_t discover_func(
                 discover_handle.touchpad_notify_ccc = attr->handle;
                 printf("[BLE] Found touchpad notify CCC at handle 0x%04X\r\n", attr->handle);
                 fflush(
-# 232 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                       (_impure_ptr->_stdout)
-# 232 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             );
             }
         }
@@ -9799,9 +9783,9 @@ static int ble_master_discover_server(struct bt_conn *conn)
     discover_handle.touchpad_notify_ccc = 0;
 
     discover_params.uuid = 
-# 247 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 235 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                           ((void *)0)
-# 247 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 235 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                               ;
     discover_params.func = discover_func;
     discover_params.start_handle = 0x0001;
@@ -9840,13 +9824,13 @@ static void ble_master_auto_connect(void)
     }
 
     if (mac == 
-# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
               ((void *)0) 
-# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                    && uuid == 
-# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                               ((void *)0)
-# 284 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 272 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                   )
     {
         printf("[BLE] invalid mac|uuid\r\n");
@@ -9890,9 +9874,9 @@ static int ble_master_conn_cb(struct bt_conn *conn, uint8_t code)
     {
   printf("[BLE] connect fail(%u)\r\n", code);
   fflush(
-# 326 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 314 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
         (_impure_ptr->_stdout)
-# 326 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 314 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
               );
   if (conn) {
       bt_conn_unref(conn);
@@ -9903,9 +9887,9 @@ static int ble_master_conn_cb(struct bt_conn *conn, uint8_t code)
     if (sem_conn)
     {
         xQueueGenericSend( ( QueueHandle_t ) ( sem_conn ), 
-# 335 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 323 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
        ((void *)0)
-# 335 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 323 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
        , ( ( TickType_t ) 0U ), ( ( BaseType_t ) 0 ) );
     }
 
@@ -9940,45 +9924,41 @@ static void event_cb_user_event(input_event_t *event, void *private_data)
             struct bt_conn *conn = (struct bt_conn *)event->value;
             bleuart_printf("+BLE_CONNECTED\r\n");
             bleuart_connect_status = 1;
-
-
             aos_msleep(500);
 
             if (conn == 
-# 373 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 359 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                        ((void *)0) 
-# 373 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 359 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             || conn->state != BT_CONN_CONNECTED) {
                 printf("[BLE] Connection invalid, state=%d\r\n", conn ? conn->state : -1);
                 fflush(
-# 375 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 361 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                       (_impure_ptr->_stdout)
-# 375 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 361 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             );
                 break;
             }
-
-            printf("[BLE] Starting GATT discovery...\r\n");
             fflush(
-# 380 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 364 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                   (_impure_ptr->_stdout)
-# 380 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 364 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                         );
 
             int err = ble_master_discover_server(conn);
             if (err) {
                 printf("[BLE] Discovery failed: %d\r\n", err);
                 fflush(
-# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 369 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                       (_impure_ptr->_stdout)
-# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 369 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             );
             } else {
                 printf("[BLE] Discovery started successfully\r\n");
                 fflush(
-# 388 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 372 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
                       (_impure_ptr->_stdout)
-# 388 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 372 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             );
             }
 
@@ -10004,9 +9984,9 @@ static void event_cb_user_event(input_event_t *event, void *private_data)
             if (ble_master_autoconn != BLE_MASTER_AUTOCONN_DISABLE) {
                 bleuart_printf("+BLE_AUTOCONNECTED\r\n");
                 xQueueGenericSend( ( QueueHandle_t ) ( sem_autoconn ), 
-# 412 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 396 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                ((void *)0)
-# 412 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 396 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                , ( ( TickType_t ) 0U ), ( ( BaseType_t ) 0 ) );
             }
             break;
@@ -10029,9 +10009,9 @@ static void _ble_autoconn_task(void)
     }
 
     vTaskDelete(
-# 433 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 417 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                ((void *)0)
-# 433 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 417 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                    );
 }
 
@@ -10063,47 +10043,9 @@ int ble_master_write_data(struct bt_conn *conn, u16_t handle, void *data, uint16
 
 uint16_t ble_master_get_led_handle(void)
 {
-
     return 0x0011;
 }
-
-
-int ble_master_write_led_cmd(const char *cmd, uint16_t handle)
-{
-    int ret;
-    uint16_t len;
-    char logbuf[100];
-
-    if (pconn == 
-# 475 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
-                ((void *)0)
-# 475 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
-                    ) {
-        bleuart_printf("[BLE] write LED: pconn is NULL\r\n");
-        return -1;
-    }
-
-
-    if (handle == 0) {
-        handle = ble_master_get_led_handle();
-    }
-
-    len = strlen(cmd);
-    sprintf(logbuf, "[BLE] write LED: handle=0x%04X, cmd=\"%s\", len=%d\r\n", handle, cmd, len);
-    bleuart_printf(logbuf);
-
-    ret = bt_gatt_write_without_response(pconn, handle, (const uint8_t *)cmd, len, 0);
-
-    if (ret) {
-        sprintf(logbuf, "[BLE] write LED failed: ret=%d\r\n", ret);
-        bleuart_printf(logbuf);
-    } else {
-        bleuart_printf("[BLE] write LED OK\r\n");
-    }
-
-    return ret;
-}
-# 517 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 505 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
 uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnect)
 {
     bt_addr_le_t target_addr;
@@ -10116,13 +10058,13 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
     memset(&ble_autoconn_target, 0, sizeof ble_autoconn_target);
 
     if (mac == 
-# 528 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 516 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
               ((void *)0) 
-# 528 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 516 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                    && uuid == 
-# 528 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 516 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                               ((void *)0)
-# 528 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 516 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                   ) {
 
         ble_master_autoconn = BLE_MASTER_AUTOCONN_DISABLE;
@@ -10130,16 +10072,16 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
     }
 
     if (mac != 
-# 534 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 522 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
               ((void *)0)
-# 534 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 522 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                   ) {
         memcpy(ble_autoconn_target.mac, mac, 6);
     }
     if (uuid != 
-# 537 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 525 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                ((void *)0)
-# 537 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 525 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                    ) {
         ble_autoconn_target.uuid = *(uint16_t *)uuid;
     }
@@ -10155,17 +10097,17 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
            mac ? mac[0] : 0, mac ? mac[1] : 0, mac ? mac[2] : 0,
            mac ? mac[3] : 0, mac ? mac[4] : 0, mac ? mac[5] : 0);
     fflush(
-# 551 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 539 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
           (_impure_ptr->_stdout)
-# 551 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 539 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                 );
 
     if (ble_master_find_target(2000, mac, (uint16_t *)uuid, &target_addr) != 0) {
         printf("[BLE] Target device not found during scan\r\n");
         fflush(
-# 555 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 543 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
               (_impure_ptr->_stdout)
-# 555 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 543 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                     );
         if (autoConnect == BLE_MASTER_AUTOCONN_FORCE) {
             ble_master_autoconn = BLE_MASTER_AUTOCONN_FORCE;
@@ -10179,9 +10121,9 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
            target_addr.a.val[5], target_addr.a.val[4], target_addr.a.val[3],
            target_addr.a.val[2], target_addr.a.val[1], target_addr.a.val[0]);
     fflush(
-# 567 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 555 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
           (_impure_ptr->_stdout)
-# 567 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 555 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                 );
 
     memset(&discover_handle, 0, sizeof discover_handle);
@@ -10189,9 +10131,9 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
     printf("[BLE] Creating connection with params: interval_min=0x%04X, interval_max=0x%04X, latency=%d, timeout=%d\r\n",
            conn_param.interval_min, conn_param.interval_max, conn_param.latency, conn_param.timeout);
     fflush(
-# 573 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 561 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
           (_impure_ptr->_stdout)
-# 573 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 561 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                 );
 
     conn = bt_conn_create_le(&target_addr, &conn_param);
@@ -10199,9 +10141,9 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
     if (!conn) {
        printf("[BLE] Connection creation failed\r\n");
        fflush(
-# 579 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 567 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
              (_impure_ptr->_stdout)
-# 579 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 567 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                    );
        bleuart_printf("Connection failed\r\n");
         return 2;
@@ -10209,27 +10151,27 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
        printf("[BLE] Connection created (conn=%p), state=%d, waiting for complete (timeout 3s)...\r\n",
               conn, conn ? conn->state : -1);
        fflush(
-# 585 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 573 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
              (_impure_ptr->_stdout)
-# 585 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 573 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                    );
        bleuart_printf("Connection pending\r\n");
     }
 
     printf("[BLE] Waiting for connection callback (sem_conn=%p)...\r\n", sem_conn);
     fflush(
-# 590 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 578 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
           (_impure_ptr->_stdout)
-# 590 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 578 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                 );
 
     if (( ( ( BaseType_t ) 0 ) ) == xQueueSemaphoreTake( ( sem_conn ), ( 3000 / ( ( TickType_t ) 1000 / ( ( TickType_t ) 1000 ) ) ) )) {
         printf("[BLE] Connection timeout! Callback was not called. Final state: %d\r\n",
                conn ? conn->state : -1);
         fflush(
-# 595 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 583 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
               (_impure_ptr->_stdout)
-# 595 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 583 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                     );
         bleuart_printf("connect timeout\r\n");
         if (conn) {
@@ -10238,9 +10180,9 @@ uint8_t axk_HalBleCentralConnect(uint8_t *mac, uint8_t *uuid, uint8_t autoConnec
     } else {
         printf("[BLE] Connection established! Semaphore received.\r\n");
         fflush(
-# 602 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
+# 590 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3
               (_impure_ptr->_stdout)
-# 602 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 590 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                     );
     }
     ble_master_autoconn = autoConnect;
@@ -10263,14 +10205,14 @@ uint8_t axk_HalBleCentralStartScan(void)
 
     return 0;
 }
-# 637 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 625 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
 int axk_HalBleCentralTTWrite(uint16_t len, uint8_t *data)
 {
     int ret;
     if (pconn == 
-# 640 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 628 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                 ((void *)0)
-# 640 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 628 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                     ) {
         return -1;
     }
@@ -10292,17 +10234,17 @@ uint8_t axk_HalBleCentralDisconnect(void)
     ble_scan_info_t mac_addr;
 
     if (pconn == 
-# 660 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 648 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                 ((void *)0)
-# 660 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 648 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                     ) {
         return 1;
     }
     bt_conn_disconnect(pconn, 0x13);
     axk_HalBleCentralConnect(mac_addr.mac, 
-# 664 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 652 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                                           ((void *)0)
-# 664 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 652 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                               , BLE_MASTER_AUTOCONN_ENABLE);
     return 0;
 }
@@ -10313,14 +10255,14 @@ int ble_master_init(void)
     int ret;
 
     sem_conn = xQueueGenericCreateStatic( ( UBaseType_t ) 1, ( ( uint8_t ) 0U ), 
-# 673 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 661 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
               ((void *)0)
-# 673 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 661 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
               , &sem_conn_buffer, ( ( uint8_t ) 3U ) );
     if (sem_conn == 
-# 674 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 662 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                    ((void *)0) 
-# 674 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 662 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                         )
     {
         printf("[BLE] create sem fail\r\n");
@@ -10328,14 +10270,14 @@ int ble_master_init(void)
     }
 
     sem_autoconn = xQueueGenericCreateStatic( ( UBaseType_t ) 1, ( ( uint8_t ) 0U ), 
-# 680 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 668 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                   ((void *)0)
-# 680 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 668 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                   , &sem_autoconn_buffer, ( ( uint8_t ) 3U ) );
     if (sem_autoconn == 
-# 681 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 669 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                        ((void *)0) 
-# 681 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 669 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                             )
     {
         vQueueDelete( ( QueueHandle_t ) ( sem_conn ) );
@@ -10344,9 +10286,9 @@ int ble_master_init(void)
     }
 
     ret = xTaskCreate((void *)_ble_autoconn_task, "autoconn", 1024 / 4, 
-# 688 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 676 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                                                                        ((void *)0)
-# 688 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 676 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                                                            , 10, &ble_master_autoconn_handle);
 
     if (ret != ( ( ( BaseType_t ) 1 ) )) {
@@ -10359,9 +10301,9 @@ int ble_master_init(void)
     ble_regist_disconn(ble_master_disconn_cb);
 
     aos_register_event_filter(0x1000, event_cb_user_event, 
-# 699 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 687 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                                                            ((void *)0)
-# 699 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 687 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                                                );
     aos_post_event(0x1000, 0x00, 0);
 
@@ -10371,27 +10313,27 @@ int ble_master_init(void)
 int ble_master_deinit(void)
 {
     ble_regist_conn(
-# 707 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 695 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                    ((void *)0)
-# 707 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 695 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                        );
     ble_regist_disconn(
-# 708 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 696 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                       ((void *)0)
-# 708 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 696 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                           );
     aos_unregister_event_filter(0x1000, event_cb_user_event, 
-# 709 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 697 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
                                                              ((void *)0)
-# 709 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 697 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                                                                  );
     vQueueDelete( ( QueueHandle_t ) ( sem_conn ) );
     vQueueDelete( ( QueueHandle_t ) ( sem_autoconn ) );
     vTaskDelete(ble_master_autoconn_handle);
     sem_conn = 
-# 713 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
+# 701 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c" 3 4
               ((void *)0)
-# 713 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
+# 701 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_central_api.c"
                   ;
     return 0;
 }

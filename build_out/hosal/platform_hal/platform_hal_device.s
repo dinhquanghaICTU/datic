@@ -10062,8 +10062,8 @@ platform_hal_device_init:
 	.string	"dump"
 .LASF377:
 	.string	"__FILENAME__ \"platform_hal_device.cpp\""
-.LASF569:
-	.string	"__predict_true(exp) __builtin_expect((exp), 1)"
+.LASF231:
+	.string	"__FLT16_EPSILON__ 9.76562500000000000000000000000000000e-4F16"
 .LASF1349:
 	.string	"traceEVENT_GROUP_CLEAR_BITS_FROM_ISR(xEventGroup,uxBitsToClear) "
 .LASF1551:
@@ -10526,6 +10526,8 @@ platform_hal_device_init:
 	.string	"_ZN12BLAesRequest8done_setEv"
 .LASF283:
 	.string	"__FLT32X_DIG__ 15"
+.LASF651:
+	.string	"_GCC_MAX_ALIGN_T "
 .LASF1210:
 	.string	"pdFREERTOS_ERRNO_EOPNOTSUPP 95"
 .LASF1011:
@@ -10906,8 +10908,6 @@ platform_hal_device_init:
 	.string	"traceLOW_POWER_IDLE_END() "
 .LASF705:
 	.string	"_REENT_CHECK_TM(ptr) "
-.LASF368:
-	.string	"BFLB_COREDUMP_BINARY_ID 1769953437"
 .LASF337:
 	.string	"__riscv_muldiv 1"
 .LASF762:
@@ -10962,8 +10962,6 @@ platform_hal_device_init:
 	.string	"_REENT_CHECK_VERIFY 1"
 .LASF522:
 	.string	"__GNUCLIKE_BUILTIN_NEXT_ARG 1"
-.LASF231:
-	.string	"__FLT16_EPSILON__ 9.76562500000000000000000000000000000e-4F16"
 .LASF753:
 	.string	"_UINT64_T_DECLARED "
 .LASF951:
@@ -12093,6 +12091,8 @@ platform_hal_device_init:
 	.string	"__FLT128_MAX__ 1.18973149535723176508575932662800702e+4932F128"
 .LASF399:
 	.string	"HAVE_INITFINI_ARRAY 1"
+.LASF569:
+	.string	"__predict_true(exp) __builtin_expect((exp), 1)"
 .LASF1478:
 	.string	"taskENTER_CRITICAL() portENTER_CRITICAL()"
 .LASF463:
@@ -12904,8 +12904,8 @@ platform_hal_device_init:
 	.string	"__INT_LEAST16_TYPE__ short int"
 .LASF1422:
 	.string	"pdTASK_HOOK_CODE TaskHookFunction_t"
-.LASF651:
-	.string	"_GCC_MAX_ALIGN_T "
+.LASF368:
+	.string	"BFLB_COREDUMP_BINARY_ID 1770108272"
 .LASF1480:
 	.string	"taskEXIT_CRITICAL() portEXIT_CRITICAL()"
 .LASF1261:

@@ -2014,6 +2014,7 @@ int easyflash_cli_init(void);
 int app_config_init(void)
 {
     easyflash_init();
+    app_config_clear_wifi();
     return 0;
 }
 
@@ -2022,9 +2023,9 @@ int app_config_load_wifi(wifi_config_t *config)
     size_t len;
 
     if (config == 
-# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                  ((void *)0)
-# 17 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 18 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                      ) {
         return -1;
     }
@@ -2032,9 +2033,9 @@ int app_config_load_wifi(wifi_config_t *config)
     memset(config, 0, sizeof(wifi_config_t));
 
     len = ef_get_env_blob("wifi_ssid", config->ssid, 32, 
-# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                           ((void *)0)
-# 23 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                               );
     if (len > 0 && len <= 32) {
         config->ssid[len] = '\0';
@@ -2043,16 +2044,16 @@ int app_config_load_wifi(wifi_config_t *config)
     }
 
     len = ef_get_env_blob("wifi_pass", config->password, 64, 
-# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                       ((void *)0)
-# 30 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 31 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                           );
     if (len > 0 && len <= 64) {
         config->password[len] = '\0';
         config->is_valid = 
-# 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                           1
-# 33 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 34 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                               ;
         return 0;
     }
@@ -2063,13 +2064,13 @@ int app_config_load_wifi(wifi_config_t *config)
 int app_config_save_wifi(const char *ssid, const char *password)
 {
     if (ssid == 
-# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                ((void *)0) 
-# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                     || password == 
-# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                    ((void *)0)
-# 42 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 43 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                        ) {
         return -1;
     }
@@ -2094,9 +2095,9 @@ int app_config_clear_wifi(void)
 }
 
 
-# 65 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
 _Bool 
-# 65 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 66 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
     app_config_has_wifi(void)
 {
     size_t len_ssid, len_pass;
@@ -2104,14 +2105,14 @@ _Bool
     char password[64 + 1];
 
     len_ssid = ef_get_env_blob("wifi_ssid", ssid, 32, 
-# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                        ((void *)0)
-# 71 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                            );
     len_pass = ef_get_env_blob("wifi_pass", password, 64, 
-# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 73 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                    ((void *)0)
-# 72 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 73 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                        );
 
     return (len_ssid > 0 && len_ssid <= 32 &&
@@ -2119,9 +2120,9 @@ _Bool
 }
 
 int app_config_save_relay_settings(uint8_t default_state, 
-# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 79 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                          _Bool 
-# 78 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 79 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                               lock_button)
 {
     char state_str[4];
@@ -2138,9 +2139,9 @@ int app_config_save_relay_settings(uint8_t default_state,
 }
 
 int app_config_load_relay_settings(uint8_t *default_state, 
-# 93 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                           _Bool 
-# 93 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 94 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                *lock_button)
 {
     char state_str[4];
@@ -2148,21 +2149,21 @@ int app_config_load_relay_settings(uint8_t *default_state,
     size_t len;
 
     if (default_state == 
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                         ((void *)0) 
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                              || lock_button == 
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                ((void *)0)
-# 99 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 100 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                    ) {
         return -1;
     }
 
     len = ef_get_env_blob("relay_def", state_str, sizeof(state_str) - 1, 
-# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                           ((void *)0)
-# 103 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 104 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                               );
     if (len > 0 && len < sizeof(state_str)) {
         state_str[len] = '\0';
@@ -2172,18 +2173,18 @@ int app_config_load_relay_settings(uint8_t *default_state,
     }
 
     len = ef_get_env_blob("relay_lock", lock_str, sizeof(lock_str) - 1, 
-# 111 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 112 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                                                                                       ((void *)0)
-# 111 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 112 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                                                                                           );
     if (len > 0 && len < sizeof(lock_str)) {
         lock_str[len] = '\0';
         *lock_button = (atoi(lock_str) != 0);
     } else {
         *lock_button = 
-# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
+# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c" 3 4
                       0
-# 116 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
+# 117 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/app_config.c"
                            ;
     }
 

@@ -28,33 +28,32 @@ main:
 	.loc 1 28 5
 	call	bl_sys_init
 .LVL0:
-	.loc 1 30 5 is_stmt 1
+	.loc 1 29 5 is_stmt 1
 	lui	a0,%hi(.LANCHOR0)
 	addi	a0,a0,%lo(.LANCHOR0)
 	call	hosal_uart_init
 .LVL1:
-	.loc 1 32 5
-	.loc 1 35 5
-	.loc 1 36 5
+	.loc 1 30 5
+	.loc 1 31 5
 	li	a1,0
 	li	a0,0
 	call	tcpip_init
 .LVL2:
-	.loc 1 39 5
+	.loc 1 32 5
 	li	a0,100
 	call	aos_msleep
 .LVL3:
-	.loc 1 41 5
+	.loc 1 33 5
 	call	app_run
 .LVL4:
 .L2:
-	.loc 1 43 5 discriminator 1
-	.loc 1 45 5 discriminator 1
-	.loc 1 46 9 discriminator 1
+	.loc 1 34 5 discriminator 1
+	.loc 1 35 5 discriminator 1
+	.loc 1 36 9 discriminator 1
 	li	a0,1000
 	call	aos_msleep
 .LVL5:
-	.loc 1 45 11 discriminator 1
+	.loc 1 35 11 discriminator 1
 	j	.L2
 	.cfi_endproc
 .LFE64:

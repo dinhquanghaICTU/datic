@@ -93,8 +93,7 @@ int notify_data(struct bt_conn *conn,
                           uint16_t length);
 
 
-static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,
-                                   const void *buf, u16_t len, u16_t offset, u8_t flags)
+static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_attr *attr,const void *buf, u16_t len, u16_t offset, u8_t flags)
 {
     bt_addr_le_t *test_mac;
     
@@ -102,44 +101,33 @@ static ssize_t ble_ssid_write_val(struct bt_conn *conn, const struct bt_gatt_att
     test_mac = bt_conn_get_dst(conn);
     if (!test_mac)
     {
-        printf(" ===============================================================no seach Mac==================== \r\n"); 
+        printf(" =====no seach Mac==== \r\n"); 
         return 0;
     }
 
     bt_addr_le_to_str(test_mac, addr, sizeof(addr));
-    printf("==========================================Mac : %s==============================\r\n",addr );   
-    
-    
-    
+    printf("======Mac : %s=====\r\n",addr );   
 
 
-    if (len == 0) {
-        return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
-    }
+    // if (len == 0) {
+    //     return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
+    // }
 
-    
     if (offset == 0) {
         memset(temp_ssid, 0, sizeof(temp_ssid));
         has_ssid = false;
     }
 
-    
     if (offset + len > WIFI_SSID_MAX_LEN) {
         printf("[BLE] Invalid SSID length: offset=%d, len=%d, total=%d\r\n", offset, len, offset + len);
         return BT_GATT_ERR(BT_ATT_ERR_INVALID_ATTRIBUTE_LEN);
     }
-
-    
     memcpy(temp_ssid + offset, buf, len);
     temp_ssid[offset + len] = '\0';  
     has_ssid = true;
 
     printf("[BLE] Received SSID chunk: offset=%d, len=%d, total=%s\r\n", offset, len, temp_ssid);
 
-    /* Khi nhận được lệnh "test scan" thì CHUYỂN HẲN từ slave sang master:
-     *  - apps_ble_stop(): tắt toàn bộ BLE slave stack (bt_disable + controller_deinit)
-     *  - sau đó ble_start_master() sẽ khởi tạo lại stack cho central (ble_stack_start + HalBle)
-     */
     // if (strcmp(temp_ssid, "test scan") == 0) {
     //     apps_ble_stop();       /* shutdown BLE slave hoàn toàn */
     //     aos_msleep(500);
@@ -196,13 +184,9 @@ static ssize_t ble_password_write_val(struct bt_conn *conn, const struct bt_gatt
 
 static void check_and_save_config(void)
 {
-    if (has_ssid && has_password && config_done_cb) {
-        printf("[BLE] Both SSID and password received, saving config...\r\n");
-        
-        
+    if (has_ssid && has_password ) {
+        printf("[BLE] Both SSID and password received, \r\n");
         config_done_cb(temp_ssid, temp_password);
-        
-        
         memset(temp_ssid, 0, sizeof(temp_ssid));
         memset(temp_password, 0, sizeof(temp_password));
         has_ssid = false;
@@ -260,21 +244,16 @@ static void ble_ccc_cfg_changed(const struct bt_gatt_attr *attr, u16_t value)
     printf("[BLE] ccc change %s\r\n", str);
 }
 
-static void _connected(struct bt_conn *conn, u8_t err)
-{
-    printf("[BLE] _connected callback called, err=%d\r\n", err);
+// static void _connected(struct bt_conn *conn, u8_t err)
+// {
+//     printf("[BLE] _connected callback called, err=%d\r\n", err);
+// }
 
-        
-}
-
-static void _disconnected(struct bt_conn *conn, u8_t reason)
-{
-    
-    printf("[BLE] _disconnected callback called, reason=%d\r\n", reason);
-    
-    
-    conn_cur = NULL;
-}
+// static void _disconnected(struct bt_conn *conn, u8_t reason)
+// {
+//     printf("[BLE] _disconnected callback called, reason=%d\r\n", reason);
+//     conn_cur = NULL;
+// }
 
 static bool _le_param_req(struct bt_conn *conn, struct bt_le_conn_param *param)
 {
@@ -370,7 +349,7 @@ int ble_salve_adv()
 {
     int err = bt_le_adv_start(BT_LE_ADV_CONN, salve_adv, ARRAY_SIZE(salve_adv), NULL, 0);
     if (err) {
-        printf("[BLE] adv fail(err %d)\r\n", err);
+        printf("[BLE] adv fail err %d\r\n", err);
         return -1;
     }
     return 0;
@@ -483,7 +462,6 @@ int ble_slave_deinit(void)
 
 int ble_server_init()
 {
-    
     memset(temp_ssid, 0, sizeof(temp_ssid));
     memset(temp_password, 0, sizeof(temp_password));
     has_ssid = false;
@@ -491,7 +469,7 @@ int ble_server_init()
 
     
     if (s_ble_service_registered) {
-        printf("[BLE] Service already registered, unregistering first...\r\n");
+        printf("[BLE] Service already registered\r\n");
         bt_gatt_service_unregister(&wifi_config_service);
         s_ble_service_registered = false;
         aos_msleep(100); 
@@ -511,10 +489,10 @@ int ble_server_init()
 
     int ret = bt_gatt_service_register(&wifi_config_service);
     if (ret) {
-        printf("[BLE] Failed to register WiFi config service: %d\r\n", ret);
+        printf("[BLE] Failedconfig service: %d\r\n", ret);
         s_ble_service_registered = false;
     } else {
-        printf("[BLE] WiFi config service registered\r\n");
+        printf("[BLE] WiFi config registered\r\n");
         s_ble_service_registered = true;
     }
     return ret;
@@ -538,33 +516,20 @@ int ble_server_deinit(void)
 
 void ble_stack_start(void)
 {
-    
     s_ble_enabled = false;
-    printf("[BLE] Resetting BLE enabled flag\r\n");
-
-    
-    printf("[BLE] Initializing BLE controller...\r\n");
     ble_controller_init(configMAX_PRIORITIES - 1);
-    
-    
-    printf("[BLE] Initializing HCI driver...\r\n");
     hci_driver_init();
-    
-    printf("[BLE] Calling bt_enable()...\r\n");
     bt_enable(bt_enable_cb);
-    printf("[BLE] bt_enable() called, waiting for callback...\r\n");
 }
 
 void apps_ble_start()
 {
     if (s_ble_enabled) {
-        printf("[BLE] Warning: BLE still marked as enabled, forcing stop first...\r\n");
-        
+
         s_ble_enabled = false;
         aos_msleep(1000); 
     }
-    
-    printf("[BLE] Waiting for radio to be free...\r\n");
+
     aos_msleep(3000);  
     
     printf("[BLE] Starting BLE stack...\r\n");
@@ -576,19 +541,16 @@ void apps_ble_start()
         aos_msleep(100);
         wait_count++;
         if (wait_count % 20 == 0) {
-            printf("[BLE] Still waiting for BLE stack to enable... (%d/15s)\r\n", wait_count / 10);
+            printf("[BLE] %d\r\n", wait_count / 10);
         }
     }
     
     if (!s_ble_enabled) {
-        printf("[BLE] BLE stack enable timeout after %d attempts, cannot start BLE\r\n", wait_count);
-        printf("[BLE] This may be due to WiFi stack still holding the radio\r\n");
         return;
     }
     
-    printf("[BLE] BLE stack enabled, initializing slave...\r\n");
+    printf("[BLE]init slave\r\n");
     ble_slave_init();
-    
 }
 
 void apps_ble_stop()

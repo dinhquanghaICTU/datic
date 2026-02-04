@@ -12,6 +12,7 @@
 #include "conn.h"
 #include "conn_internal.h"
 #include "gatt.h"
+
 extern void bleuart_printf(char *buf);
 
 

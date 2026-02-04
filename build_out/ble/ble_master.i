@@ -8828,6 +8828,7 @@ uint16_t bt_gatts_add_service(void);
 
 int bt_gatts_del_service(uint16_t svc_id);
 # 15 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 2
+
 extern void bleuart_printf(char *buf);
 
 
@@ -8853,9 +8854,9 @@ static void bt_enable_cb(int err)
 }
 
 static 
-# 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
       _Bool 
-# 39 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 40 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
            scan_data_cb(struct bt_data *data, void *user_data)
 {
     ble_scan_info_t *info = user_data;
@@ -8868,15 +8869,15 @@ static
             memcpy(info->name, data->data, len);
             info->name[len] = '\0';
             return 
-# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                   0
-# 50 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 51 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                        ;
         default:
             return 
-# 52 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                   1
-# 52 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 53 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                       ;
     }
 }
@@ -8947,9 +8948,9 @@ int ble_master_scan(uint32_t scan_time) {
         if (strncmp(master_scan_tbl[i].name, target_name, strlen(target_name)) == 0) {
             printf("Found target name %s, start central connect\r\n", target_name);
             axk_HalBleCentralConnect(master_scan_tbl[i].mac, 
-# 121 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 122 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                                                             ((void *)0)
-# 121 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 122 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                                                                 , BLE_MASTER_AUTOCONN_ENABLE);
             break;
         }
@@ -8965,9 +8966,9 @@ static bt_addr_le_t *find_target_addr;
 static StaticSemaphore_t sem_found_buffer;
 static SemaphoreHandle_t sem_found;
 static 
-# 135 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 136 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
       _Bool 
-# 135 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 136 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
            find_data_cb(struct bt_data *data, void *user_data)
 {
     u8_t len;
@@ -8981,9 +8982,9 @@ static
 
                 printf("[BLE] find invalid adv\r\n");
                 return 
-# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 148 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                       0
-# 147 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 148 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                            ;
             }
             uint16_t *p_uuid = (uint16_t *)(data->data);
@@ -8992,9 +8993,9 @@ static
                 if (*uuid == *find_uuid) {
                     *uuid = find_uuid;
                     return 
-# 154 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 155 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                           0
-# 154 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 155 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                                ;
                 }
                 p_uuid++;
@@ -9002,9 +9003,9 @@ static
             }
         default:
             return 
-# 160 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                   1
-# 160 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 161 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                       ;
     }
 }
@@ -9016,9 +9017,9 @@ static void find_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
     uint16_t uuid = 0;
 
     if (find_uuid != 
-# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 171 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                     ((void *)0)
-# 170 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 171 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                         ) {
 
         bt_data_parse(buf, find_data_cb, &uuid);
@@ -9027,17 +9028,17 @@ static void find_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
     memcpy(mac, addr->a.val, 6);
     ble_reverse_byte(mac, 6);
     if (find_mac != 
-# 177 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                    ((void *)0) 
-# 177 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                         && memcmp(find_mac, mac, 6) != 0) {
         return ;
     }
 
     if (find_uuid != 
-# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 182 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                     ((void *)0) 
-# 181 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 182 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                          && *find_uuid != uuid) {
         return ;
     }
@@ -9046,9 +9047,9 @@ static void find_device_found(const bt_addr_le_t *addr, s8_t rssi, u8_t evtype,
     memcpy(find_target_addr, addr, sizeof(bt_addr_le_t));
     find_result = 1;
     xQueueGenericSend( ( QueueHandle_t ) ( sem_found ), 
-# 188 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
    ((void *)0)
-# 188 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 189 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
    , ( ( TickType_t ) 0U ), ( ( BaseType_t ) 0 ) );
 }
 
@@ -9058,34 +9059,34 @@ int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_
     struct bt_le_scan_param scan_param;
 
     if (target_addr == 
-# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 197 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                       ((void *)0)
-# 196 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 197 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                           ) {
         return -1;
     }
 
     if (mac == 
-# 200 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
               ((void *)0) 
-# 200 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                    && uuid == 
-# 200 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                               ((void *)0)
-# 200 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 201 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                                   ) {
         return -1;
     }
 
     sem_found = xQueueGenericCreateStatic( ( UBaseType_t ) 1, ( ( uint8_t ) 0U ), 
-# 204 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                ((void *)0)
-# 204 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                , &sem_found_buffer, ( ( uint8_t ) 3U ) );
     if (sem_found == 
-# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 206 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                     ((void *)0) 
-# 205 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 206 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                          )
     {
         printf("[BLE] create sem faxkl \r\n");
@@ -9112,9 +9113,9 @@ int ble_master_find_target(uint32_t scan_time, uint8_t *mac, uint16_t *uuid, bt_
     xQueueSemaphoreTake( ( sem_found ), ( scan_time / ( ( TickType_t ) 1000 / ( ( TickType_t ) 1000 ) ) ) );
     vQueueDelete( ( QueueHandle_t ) ( sem_found ) );
     sem_found = 
-# 230 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
+# 231 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c" 3 4
                ((void *)0)
-# 230 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
+# 231 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.c"
                    ;
     bt_le_scan_stop();
     if (find_result == 0) {

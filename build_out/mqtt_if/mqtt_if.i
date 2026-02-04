@@ -5020,21 +5020,20 @@ static void mqtt_recv_task(void *params)
 
 int mqtt_if_init(void)
 {
-    printf("=========================================== mqtt init oke ==================================\r\n");
+    printf("mqtt init oke\r\n");
     memset(&s_mqtt_config, 0, sizeof(s_mqtt_config));
     s_mqtt_config.port = 1883;
     s_mqtt_config.keepalive = 60;
     strcpy(s_mqtt_config.client_id, "device_");
-    printf("=====================================clienid: %s ==== broker: %s ==== port:%d \r\n", s_mqtt_config.client_id,s_mqtt_config.broker, s_mqtt_config.port);
     return 0;
 }
 
 int mqtt_if_set_config(const mqtt_if_config_t *config)
 {
     if (config == 
-# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 384 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                  ((void *)0)
-# 385 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 384 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                      ) {
         return -1;
     }
@@ -5060,9 +5059,9 @@ int mqtt_if_connect(void)
 
     struct hostent *host = lwip_gethostbyname(s_mqtt_config.broker);
     if (host == 
-# 409 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 408 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                ((void *)0)
-# 409 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 408 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                    ) {
         return -1;
     }
@@ -5086,31 +5085,31 @@ int mqtt_if_connect(void)
     }
 
     s_mqtt_connecting = 
-# 431 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 430 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                        1
-# 431 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 430 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                            ;
 
     if (mqtt_send_connect() < 0) {
         lwip_close(s_mqtt_socket);
         s_mqtt_socket = -1;
         s_mqtt_connecting = 
-# 436 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 435 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                            0
-# 436 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 435 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                 ;
         return -1;
     }
 
     if (s_mqtt_task_handle == 
-# 440 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 439 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                              ((void *)0)
-# 440 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 439 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                  ) {
         xTaskCreate(mqtt_recv_task, "mqtt_recv", 4096, 
-# 441 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 440 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                                       ((void *)0)
-# 441 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 440 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                           , 5, &s_mqtt_task_handle);
     }
 
@@ -5133,14 +5132,14 @@ int mqtt_if_disconnect(void)
     lwip_close(s_mqtt_socket);
     s_mqtt_socket = -1;
     s_mqtt_connected = 
-# 462 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 461 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                       0
-# 462 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 461 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                            ;
     s_mqtt_connecting = 
-# 463 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 462 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                        0
-# 463 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 462 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                             ;
 
     if (s_disconnected_cb) {
@@ -5151,9 +5150,9 @@ int mqtt_if_disconnect(void)
 }
 
 
-# 472 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 471 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
 _Bool 
-# 472 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 471 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
     mqtt_if_is_connected(void)
 {
     return s_mqtt_connected;
@@ -5162,9 +5161,9 @@ _Bool
 int mqtt_if_subscribe(const char *topic)
 {
     if (!s_mqtt_connected || topic == 
-# 479 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 478 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                      ((void *)0)
-# 479 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 478 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                          ) {
         return -1;
     }
@@ -5179,15 +5178,15 @@ int mqtt_if_unsubscribe(const char *topic)
 }
 
 int mqtt_if_publish(const char *topic, const char *payload, int payload_len, 
-# 492 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 491 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                                                             _Bool 
-# 492 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 491 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                                                                  retain)
 {
     if (!s_mqtt_connected || topic == 
-# 494 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
+# 493 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c" 3 4
                                      ((void *)0)
-# 494 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
+# 493 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.c"
                                          ) {
         return -1;
     }
