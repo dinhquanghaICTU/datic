@@ -26,8 +26,8 @@ m_ble_master.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_err.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gap.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/gpio/m_wifi.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../wifi_if/wifi_if.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h \
@@ -75,8 +75,8 @@ m_ble_master.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_err.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gap.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/gpio/m_wifi.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../wifi_if/wifi_if.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:

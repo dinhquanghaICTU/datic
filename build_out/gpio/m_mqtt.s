@@ -683,7 +683,7 @@ s_topic_prefix:
 	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
 	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
 	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h"
-	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h"
 	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
 	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
@@ -1067,7 +1067,7 @@ s_topic_prefix:
 	.byte	0x4
 	.4byte	0xa9
 	.byte	0x5
-	.byte	0x6
+	.byte	0x1d
 	.byte	0xe
 	.4byte	0x32f
 	.byte	0xd

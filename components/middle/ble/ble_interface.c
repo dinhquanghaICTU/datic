@@ -19,7 +19,8 @@
 
 #include "ble_master.h"
 // #include "mqtt_if.h"
-#include "m_mqtt.h"
+#include "../gpio/m_ble.h"
+#include "../mqtt_if/mqtt_if.h"
 
 
 

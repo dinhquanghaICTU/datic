@@ -272,7 +272,7 @@ app_run:
 	.4byte	.LASF20
 	.4byte	.LASF20
 	.byte	0x8
-	.byte	0x11
+	.byte	0x12
 	.byte	0x6
 	.byte	0
 	.section	.debug_abbrev,"",@progbits

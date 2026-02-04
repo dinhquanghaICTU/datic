@@ -92,7 +92,7 @@ uart_dev_log:
 	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/hosal/bl602_hal/bl_sys.h"
 	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/tcpip.h"
 	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h"
+	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x4f9
@@ -757,7 +757,7 @@ uart_dev_log:
 	.4byte	.LASF103
 	.4byte	.LASF103
 	.byte	0xc
-	.byte	0x4
+	.byte	0x58
 	.byte	0x5
 	.byte	0
 	.section	.debug_abbrev,"",@progbits

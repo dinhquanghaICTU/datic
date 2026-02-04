@@ -74,14 +74,21 @@ typedef long long int intmax_t;
 typedef long long unsigned int uintmax_t;
 # 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint.h" 2 3 4
 # 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h" 2
-# 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h" 1
 
 
 
+# 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h"
+typedef enum {
+    APP_STATE_INIT = 0,
+    APP_STATE_CHECK_FLASH,
+    APP_STATE_BLE_CONFIG,
+    APP_STATE_WIFI_CONNECTING,
+    APP_STATE_WIFI_CONNECTED,
+    APP_STATE_WIFI_FAILED,
+    APP_STATE_BLE_MASTER,
+    APP_STATE_MAX
+} app_state_t;
 
-
-
-# 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h"
 typedef enum {
     APP_EVENT_NONE = 0,
     APP_EVENT_BUTTON_HOLD,
@@ -106,18 +113,6 @@ typedef struct {
     app_event_type_t type;
     void *data;
 } app_event_t;
-# 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h" 2
-
-typedef enum {
-    APP_STATE_INIT = 0,
-    APP_STATE_CHECK_FLASH,
-    APP_STATE_BLE_CONFIG,
-    APP_STATE_WIFI_CONNECTING,
-    APP_STATE_WIFI_CONNECTED,
-    APP_STATE_WIFI_FAILED,
-    APP_STATE_BLE_MASTER,
-    APP_STATE_MAX
-} app_state_t;
 
 typedef struct {
     app_state_t current_state;
@@ -2343,7 +2338,6 @@ static app_state_t state_ble_config_handler(app_event_t *event)
 static app_state_t state_wifi_connecting_handler(app_event_t *event)
 {
     if (event->type == APP_EVENT_BUTTON_HOLD) {
-
         ;
         return APP_STATE_BLE_CONFIG;
     } else if (event->type == APP_EVENT_WIFI_CONNECTED) {

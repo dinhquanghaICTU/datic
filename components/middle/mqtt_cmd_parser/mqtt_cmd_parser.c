@@ -12,8 +12,6 @@
 #include <aos/kernel.h>
 
 #define MAX_TOKENS 64
-
-
 static int json_str_eq(const char *json, jsmntok_t *tok, const char *key)
 {
     if (tok->type == JSMN_STRING && 
@@ -23,7 +21,6 @@ static int json_str_eq(const char *json, jsmntok_t *tok, const char *key)
     }
     return -1;
 }
-
 
 static int json_get_string_value(const char *json, jsmntok_t *tokens, int num_tokens, 
                                  const char *key, char *buf, int buf_size)
@@ -44,7 +41,6 @@ static int json_get_string_value(const char *json, jsmntok_t *tokens, int num_to
     }
     return -1;
 }
-
 
 static int json_get_int_value(const char *json, jsmntok_t *tokens, int num_tokens, 
                               const char *key, int *value)
@@ -67,7 +63,6 @@ static int json_get_int_value(const char *json, jsmntok_t *tokens, int num_token
     }
     return -1;
 }
-
 
 static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_tokens, 
                                const char *key, bool *value)
@@ -93,7 +88,7 @@ static int json_get_bool_value(const char *json, jsmntok_t *tokens, int num_toke
 
 int mqtt_cmd_parse(const char *json_str, int json_len, mqtt_cmd_t *cmd)
 {
-   printf("====================== resspont recive : %s \r\n============================",json_str);
+   printf("== resspont recive : %s \r\n==",json_str);
     if (json_str == NULL || cmd == NULL) {
         return -1;
     }

@@ -285,14 +285,14 @@ _ble_mtu_changed_cb:
 	.type	exchange_func, @function
 exchange_func:
 .LFB87:
-	.loc 1 197 1 is_stmt 1
+	.loc 1 194 1 is_stmt 1
 	.cfi_startproc
 .LVL20:
-	.loc 1 198 5
-	.loc 1 198 8 is_stmt 0
+	.loc 1 195 5
+	.loc 1 195 8 is_stmt 0
 	beq	a0,zero,.L31
-	.loc 1 199 9 is_stmt 1
-	.loc 1 197 1 is_stmt 0
+	.loc 1 196 9 is_stmt 1
+	.loc 1 194 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -301,41 +301,41 @@ exchange_func:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 199 9
+	.loc 1 196 9
 	beq	a1,zero,.L34
 	lui	a1,%hi(.LC3)
 .LVL21:
 	addi	a1,a1,%lo(.LC3)
 .L33:
 	sw	a1,-20(s0)
-	.loc 1 199 92 discriminator 4
+	.loc 1 196 92 discriminator 4
 	call	bt_gatt_get_mtu
 .LVL22:
-	.loc 1 199 9 discriminator 4
+	.loc 1 196 9 discriminator 4
 	lw	a1,-20(s0)
-	.loc 1 201 1 discriminator 4
+	.loc 1 198 1 discriminator 4
 	lw	s0,24(sp)
 	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 32
 	lw	ra,28(sp)
 	.cfi_restore 1
-	.loc 1 199 92 discriminator 4
+	.loc 1 196 92 discriminator 4
 	mv	a2,a0
-	.loc 1 199 9 discriminator 4
+	.loc 1 196 9 discriminator 4
 	lui	a0,%hi(.LC4)
-	.loc 1 201 1 discriminator 4
-	.loc 1 199 9 discriminator 4
+	.loc 1 198 1 discriminator 4
+	.loc 1 196 9 discriminator 4
 	addi	a0,a0,%lo(.LC4)
-	.loc 1 201 1 discriminator 4
+	.loc 1 198 1 discriminator 4
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
-	.loc 1 199 9 discriminator 4
+	.loc 1 196 9 discriminator 4
 	tail	printf
 .LVL23:
 .L34:
 	.cfi_restore_state
-	.loc 1 199 9
+	.loc 1 196 9
 	lui	a1,%hi(.LC2)
 .LVL24:
 	addi	a1,a1,%lo(.LC2)
@@ -641,10 +641,10 @@ axk_HalBleGetMac:
 	.type	axk_HalBleRegisterCallbacks, @function
 axk_HalBleRegisterCallbacks:
 .LFB85:
-	.loc 1 174 1 is_stmt 1
+	.loc 1 173 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 175 5
-	.loc 1 174 1 is_stmt 0
+	.loc 1 174 5
+	.loc 1 173 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -655,38 +655,38 @@ axk_HalBleRegisterCallbacks:
 	.cfi_offset 9, -12
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 175 5
+	.loc 1 174 5
 	lui	a0,%hi(_ble_mtu_changed_cb)
-	.loc 1 174 1
-	.loc 1 175 5
+	.loc 1 173 1
+	.loc 1 174 5
 	addi	a0,a0,%lo(_ble_mtu_changed_cb)
 	call	bt_gatt_register_mtu_callback
 .LVL47:
-	.loc 1 176 5 is_stmt 1
+	.loc 1 175 5 is_stmt 1
 	lui	a0,%hi(.LANCHOR1)
 	addi	s1,a0,%lo(.LANCHOR1)
 	addi	a0,a0,%lo(.LANCHOR1)
 	call	bt_conn_cb_register
 .LVL48:
-	.loc 1 178 5
-	.loc 1 181 1 is_stmt 0
+	.loc 1 176 5
+	.loc 1 178 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 178 26
+	.loc 1 176 26
 	sw	zero,28(s1)
-	.loc 1 180 5 is_stmt 1
-	.loc 1 181 1 is_stmt 0
+	.loc 1 177 5 is_stmt 1
+	.loc 1 178 1 is_stmt 0
 	lw	s1,4(sp)
 	.cfi_restore 9
-	.loc 1 180 5
+	.loc 1 177 5
 	li	a0,15
-	.loc 1 181 1
+	.loc 1 178 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 180 5
+	.loc 1 177 5
 	tail	bt_set_tx_pwr
 .LVL49:
 	.cfi_endproc
@@ -698,12 +698,12 @@ axk_HalBleRegisterCallbacks:
 	.type	axk_HalBleInit, @function
 axk_HalBleInit:
 .LFB86:
-	.loc 1 185 1 is_stmt 1
+	.loc 1 182 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 186 5
-	.loc 1 187 5
-	.loc 1 188 5
-	.loc 1 185 1 is_stmt 0
+	.loc 1 183 5
+	.loc 1 184 5
+	.loc 1 185 5
+	.loc 1 182 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	ra,12(sp)
@@ -712,17 +712,17 @@ axk_HalBleInit:
 	.cfi_offset 8, -8
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 188 5
+	.loc 1 185 5
 	call	ble_stack_start
 .LVL50:
-	.loc 1 189 5 is_stmt 1
+	.loc 1 186 5 is_stmt 1
 	call	ble_master_init
 .LVL51:
-	.loc 1 190 5
+	.loc 1 187 5
 	call	axk_HalBleRegisterCallbacks
 .LVL52:
-	.loc 1 191 5
-	.loc 1 192 1 is_stmt 0
+	.loc 1 188 5
+	.loc 1 189 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -741,28 +741,28 @@ axk_HalBleInit:
 	.type	axk_HalBleSetMtu, @function
 axk_HalBleSetMtu:
 .LFB88:
-	.loc 1 213 1 is_stmt 1
+	.loc 1 210 1 is_stmt 1
 	.cfi_startproc
 .LVL53:
-	.loc 1 214 5
-	.loc 1 216 5
-	.loc 1 216 18 is_stmt 0
+	.loc 1 211 5
+	.loc 1 213 5
+	.loc 1 213 18 is_stmt 0
 	addi	a0,a0,-23
 .LVL54:
-	.loc 1 216 8
+	.loc 1 213 8
 	andi	a0,a0,0xff
 	li	a5,224
 	bgtu	a0,a5,.L57
-	.loc 1 220 5 is_stmt 1
-	.loc 1 220 18 is_stmt 0
+	.loc 1 217 5 is_stmt 1
+	.loc 1 217 18 is_stmt 0
 	lui	a5,%hi(.LANCHOR0)
 	lw	a4,%lo(.LANCHOR0)(a5)
-	.loc 1 217 16
+	.loc 1 214 16
 	li	a0,1
-	.loc 1 220 8
+	.loc 1 217 8
 	beq	a4,zero,.L60
-	.loc 1 224 5 is_stmt 1
-	.loc 1 213 1 is_stmt 0
+	.loc 1 221 5 is_stmt 1
+	.loc 1 210 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -771,42 +771,42 @@ axk_HalBleSetMtu:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 224 26
+	.loc 1 221 26
 	lui	a1,%hi(.LANCHOR2)
 	lui	a5,%hi(exchange_func)
-	.loc 1 213 1
-	.loc 1 224 26
+	.loc 1 210 1
+	.loc 1 221 26
 	addi	a3,a1,%lo(.LANCHOR2)
 	addi	a5,a5,%lo(exchange_func)
-	.loc 1 225 11
+	.loc 1 222 11
 	addi	a1,a1,%lo(.LANCHOR2)
 	mv	a0,a4
-	.loc 1 224 26
+	.loc 1 221 26
 	sw	a5,24(a3)
-	.loc 1 225 5 is_stmt 1
-	.loc 1 225 11 is_stmt 0
+	.loc 1 222 5 is_stmt 1
+	.loc 1 222 11 is_stmt 0
 	call	bt_gatt_exchange_mtu
 .LVL55:
-	.loc 1 226 5 is_stmt 1
-	.loc 1 231 1 is_stmt 0
+	.loc 1 223 5 is_stmt 1
+	.loc 1 228 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 217 16
+	.loc 1 214 16
 	snez	a0,a0
 .LVL56:
-	.loc 1 231 1
+	.loc 1 228 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
 .L57:
-	.loc 1 217 16
+	.loc 1 214 16
 	li	a0,1
 	ret
 .L60:
-	.loc 1 231 1
+	.loc 1 228 1
 	ret
 	.cfi_endproc
 .LFE88:
@@ -817,17 +817,17 @@ axk_HalBleSetMtu:
 	.type	axk_HalBleGetMtu, @function
 axk_HalBleGetMtu:
 .LFB89:
-	.loc 1 241 1 is_stmt 1
+	.loc 1 238 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 242 5
-	.loc 1 244 5
-	.loc 1 244 18 is_stmt 0
+	.loc 1 239 5
+	.loc 1 241 5
+	.loc 1 241 18 is_stmt 0
 	lui	a5,%hi(.LANCHOR0)
 	lw	a5,%lo(.LANCHOR0)(a5)
-	.loc 1 244 8
+	.loc 1 241 8
 	beq	a5,zero,.L66
-	.loc 1 248 5 is_stmt 1
-	.loc 1 241 1 is_stmt 0
+	.loc 1 245 5 is_stmt 1
+	.loc 1 238 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -836,12 +836,12 @@ axk_HalBleGetMtu:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 248 11
+	.loc 1 245 11
 	mv	a0,a5
 	call	bt_gatt_get_mtu
 .LVL57:
-	.loc 1 250 5 is_stmt 1
-	.loc 1 251 1 is_stmt 0
+	.loc 1 247 5 is_stmt 1
+	.loc 1 248 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -2560,7 +2560,7 @@ conn_cur:
 	.byte	0x28
 	.4byte	.LASF197
 	.byte	0x1
-	.byte	0xcb
+	.byte	0xc8
 	.byte	0x27
 	.4byte	0xaf9
 	.byte	0x5
@@ -2569,7 +2569,7 @@ conn_cur:
 	.byte	0x29
 	.4byte	.LASF200
 	.byte	0x1
-	.byte	0xf0
+	.byte	0xed
 	.byte	0x5
 	.4byte	0x75
 	.4byte	.LFB89
@@ -2580,7 +2580,7 @@ conn_cur:
 	.byte	0x2a
 	.string	"mtu"
 	.byte	0x1
-	.byte	0xf2
+	.byte	0xef
 	.byte	0x9
 	.4byte	0x75
 	.4byte	.LLST22
@@ -2591,7 +2591,7 @@ conn_cur:
 	.byte	0x2c
 	.4byte	.LASF204
 	.byte	0x1
-	.byte	0xd4
+	.byte	0xd1
 	.byte	0x9
 	.4byte	0x41
 	.4byte	.LFB88
@@ -2602,14 +2602,14 @@ conn_cur:
 	.byte	0x2d
 	.string	"mtu"
 	.byte	0x1
-	.byte	0xd4
+	.byte	0xd1
 	.byte	0x22
 	.4byte	0x41
 	.4byte	.LLST20
 	.byte	0x2a
 	.string	"ret"
 	.byte	0x1
-	.byte	0xd6
+	.byte	0xd3
 	.byte	0x9
 	.4byte	0x75
 	.4byte	.LLST21
@@ -2627,7 +2627,7 @@ conn_cur:
 	.byte	0x30
 	.4byte	.LASF210
 	.byte	0x1
-	.byte	0xc3
+	.byte	0xc0
 	.byte	0xd
 	.4byte	.LFB87
 	.4byte	.LFE87-.LFB87
@@ -2637,21 +2637,21 @@ conn_cur:
 	.byte	0x31
 	.4byte	.LASF198
 	.byte	0x1
-	.byte	0xc3
+	.byte	0xc0
 	.byte	0x2b
 	.4byte	0x72f
 	.4byte	.LLST12
 	.byte	0x2d
 	.string	"err"
 	.byte	0x1
-	.byte	0xc3
+	.byte	0xc0
 	.byte	0x36
 	.4byte	0x93
 	.4byte	.LLST13
 	.byte	0x31
 	.4byte	.LASF199
 	.byte	0x1
-	.byte	0xc4
+	.byte	0xc1
 	.byte	0x2f
 	.4byte	0xb39
 	.4byte	.LLST14
@@ -2679,7 +2679,7 @@ conn_cur:
 	.byte	0x29
 	.4byte	.LASF201
 	.byte	0x1
-	.byte	0xb8
+	.byte	0xb5
 	.byte	0x9
 	.4byte	0x41
 	.4byte	.LFB86
@@ -2690,13 +2690,13 @@ conn_cur:
 	.byte	0x33
 	.string	"ret"
 	.byte	0x1
-	.byte	0xba
+	.byte	0xb7
 	.byte	0x9
 	.4byte	0x75
 	.byte	0x34
 	.4byte	.LASF202
 	.byte	0x1
-	.byte	0xbb
+	.byte	0xb8
 	.byte	0xf
 	.4byte	0x52c
 	.byte	0x2b
@@ -2712,7 +2712,7 @@ conn_cur:
 	.byte	0x35
 	.4byte	.LASF203
 	.byte	0x1
-	.byte	0xad
+	.byte	0xac
 	.byte	0x6
 	.4byte	.LFB85
 	.4byte	.LFE85-.LFB85

@@ -1,6 +1,7 @@
 wifi_if.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.c \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/event_type_code.h \
@@ -39,6 +40,7 @@ wifi_if.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_log.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/os/bl_os_adapter/bl_os_adapter/include/bl_os_adapter/bl_os_system.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/wifi_if/wifi_if.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/event_type_code.h:

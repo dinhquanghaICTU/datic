@@ -8722,18 +8722,15 @@ uint8_t axk_HalBleGetMac(uint8_t *mac)
 }
 
 
-
 void axk_HalBleRegisterCallbacks(void)
 {
     bt_gatt_register_mtu_callback(_ble_mtu_changed_cb);
     bt_conn_cb_register(&conn_callbacks);
-
     conn_callbacks._next = 
-# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 176 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
                           ((void *)0)
-# 178 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 176 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
                               ;
-
     bt_set_tx_pwr(15);
 }
 
@@ -8758,7 +8755,7 @@ static void exchange_func(struct bt_conn *conn, u8_t err,
 }
 
 static struct bt_gatt_exchange_params exchange_params;
-# 212 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 209 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
 uint8_t axk_HalBleSetMtu(uint8_t mtu)
 {
     int ret;
@@ -8768,9 +8765,9 @@ uint8_t axk_HalBleSetMtu(uint8_t mtu)
     }
 
     if (conn_cur == 
-# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 217 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
                    ((void *)0)
-# 220 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 217 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
                        ) {
         return 1;
     }
@@ -8783,15 +8780,15 @@ uint8_t axk_HalBleSetMtu(uint8_t mtu)
 
     return 0;
 }
-# 240 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 237 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
 int axk_HalBleGetMtu()
 {
     int mtu;
 
     if (conn_cur == 
-# 244 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
+# 241 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c" 3 4
                    ((void *)0)
-# 244 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
+# 241 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_common_api.c"
                        ) {
         return -1;
     }

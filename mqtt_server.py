@@ -35,7 +35,7 @@ def main():
     os.chdir(Path(__file__).parent)
     
     try:
-        with socketserver.TCPServer(("", PORT), MyHTTPRequestHandler) as httpd:
+        with socketserver.TCPServer(("0.0.0.0", PORT), MyHTTPRequestHandler) as httpd:
             server_url = f"http://localhost:{PORT}/mqtt_control.html"
             
             print(f"\033[92m[SUCCESS]\033[0m Server đã khởi động!")

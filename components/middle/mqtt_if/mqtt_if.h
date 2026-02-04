@@ -20,31 +20,26 @@ typedef struct {
 
 
 int mqtt_if_init(void);
-
-
 int mqtt_if_set_config(const mqtt_if_config_t *config);
-
-
 int mqtt_if_connect(void);
-
-
 int mqtt_if_disconnect(void);
-
-
 bool mqtt_if_is_connected(void);
-
-
 int mqtt_if_subscribe(const char *topic);
-
-
 int mqtt_if_unsubscribe(const char *topic);
-
-
 int mqtt_if_publish(const char *topic, const char *payload, int payload_len, bool retain);
-
-
 void mqtt_if_set_connected_cb(mqtt_if_connected_cb_t cb);
 void mqtt_if_set_disconnected_cb(mqtt_if_disconnected_cb_t cb);
 void mqtt_if_set_message_cb(mqtt_if_message_cb_t cb);
+
+
+
+
+int app_mqtt_init(void);
+int app_mqtt_start(const char *broker, int port, const char *client_id);
+int app_mqtt_stop(void);
+bool app_mqtt_is_connected(void);
+int app_mqtt_publish_state(const char *state);
+const char *app_mqtt_get_command_topic(void);
+const char *app_mqtt_get_state_topic(void);
 
 #endif //__MQTT_IF_H__

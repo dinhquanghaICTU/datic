@@ -141,16 +141,16 @@ state_wifi_connecting_handler:
 	.loc 1 106 8
 	li	a5,1
 	beq	a0,a5,.L14
-	.loc 1 110 12 is_stmt 1
-	.loc 1 110 15 is_stmt 0
+	.loc 1 109 12 is_stmt 1
+	.loc 1 109 15 is_stmt 0
 	li	a5,3
 	beq	a0,a5,.L15
-	.loc 1 113 12 is_stmt 1
-	.loc 1 113 15 is_stmt 0
+	.loc 1 112 12 is_stmt 1
+	.loc 1 112 15 is_stmt 0
 	li	a5,5
 	bne	a0,a5,.L16
 .L12:
-	.loc 1 118 1
+	.loc 1 117 1
 	lw	s0,12(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -160,15 +160,15 @@ state_wifi_connecting_handler:
 	jr	ra
 .L14:
 	.cfi_restore_state
-	.loc 1 109 16
+	.loc 1 108 16
 	li	a0,2
 	j	.L12
 .L15:
-	.loc 1 112 16
+	.loc 1 111 16
 	li	a0,4
 	j	.L12
 .L16:
-	.loc 1 117 12
+	.loc 1 116 12
 	li	a0,3
 	j	.L12
 	.cfi_endproc
@@ -179,35 +179,35 @@ state_wifi_connecting_handler:
 	.type	state_wifi_connected_handler, @function
 state_wifi_connected_handler:
 .LFB13:
-	.loc 1 121 1 is_stmt 1
+	.loc 1 120 1 is_stmt 1
 	.cfi_startproc
 .LVL10:
-	.loc 1 122 5
-	.loc 1 121 1 is_stmt 0
+	.loc 1 121 5
+	.loc 1 120 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 122 14
+	.loc 1 121 14
 	lw	a5,0(a0)
-	.loc 1 122 8
+	.loc 1 121 8
 	li	a4,1
-	.loc 1 124 16
+	.loc 1 123 16
 	li	a0,2
 .LVL11:
-	.loc 1 122 8
+	.loc 1 121 8
 	beq	a5,a4,.L18
-	.loc 1 125 12 is_stmt 1
-	.loc 1 129 12 is_stmt 0
+	.loc 1 124 12 is_stmt 1
+	.loc 1 128 12 is_stmt 0
 	li	a0,4
-	.loc 1 125 15
+	.loc 1 124 15
 	bne	a5,a0,.L18
-	.loc 1 127 16
+	.loc 1 126 16
 	li	a0,3
 .L18:
-	.loc 1 130 1
+	.loc 1 129 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -222,29 +222,29 @@ state_wifi_connected_handler:
 	.type	state_wifi_failed_handler, @function
 state_wifi_failed_handler:
 .LFB14:
-	.loc 1 133 1 is_stmt 1
+	.loc 1 132 1 is_stmt 1
 	.cfi_startproc
 .LVL12:
-	.loc 1 134 5
-	.loc 1 133 1 is_stmt 0
+	.loc 1 133 5
+	.loc 1 132 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 134 8
+	.loc 1 133 8
 	lw	a4,0(a0)
 	li	a5,1
-	.loc 1 136 16
+	.loc 1 135 16
 	li	a0,2
 .LVL13:
-	.loc 1 134 8
+	.loc 1 133 8
 	beq	a4,a5,.L23
-	.loc 1 138 12
+	.loc 1 137 12
 	li	a0,5
 .L23:
-	.loc 1 139 1
+	.loc 1 138 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -259,29 +259,29 @@ state_wifi_failed_handler:
 	.type	state_ble_master_handler, @function
 state_ble_master_handler:
 .LFB15:
-	.loc 1 142 1 is_stmt 1
+	.loc 1 141 1 is_stmt 1
 	.cfi_startproc
 .LVL14:
-	.loc 1 143 5
-	.loc 1 142 1 is_stmt 0
+	.loc 1 142 5
+	.loc 1 141 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 143 8
+	.loc 1 142 8
 	lw	a4,0(a0)
 	li	a5,1
-	.loc 1 145 16
+	.loc 1 144 16
 	li	a0,2
 .LVL15:
-	.loc 1 143 8
+	.loc 1 142 8
 	beq	a4,a5,.L27
-	.loc 1 148 12
+	.loc 1 147 12
 	li	a0,6
 .L27:
-	.loc 1 149 1
+	.loc 1 148 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -523,9 +523,8 @@ g_state_machine:
 	.zero	8
 	.text
 .Letext0:
-	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h"
-	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h"
-	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
+	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/string.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
 	.4byte	0x40b
@@ -585,9 +584,9 @@ g_state_machine:
 	.byte	0x4
 	.4byte	0x64
 	.byte	0x2
-	.byte	0x6
+	.byte	0x7
 	.byte	0xe
-	.4byte	0xe0
+	.4byte	0xaa
 	.byte	0x5
 	.4byte	.LASF9
 	.byte	0
@@ -612,153 +611,153 @@ g_state_machine:
 	.byte	0x5
 	.4byte	.LASF16
 	.byte	0x7
-	.byte	0x5
-	.4byte	.LASF17
-	.byte	0x8
-	.byte	0x5
-	.4byte	.LASF18
-	.byte	0x9
-	.byte	0x5
-	.4byte	.LASF19
-	.byte	0xa
-	.byte	0x5
-	.4byte	.LASF20
-	.byte	0xb
-	.byte	0x5
-	.4byte	.LASF21
-	.byte	0xc
-	.byte	0x5
-	.4byte	.LASF22
-	.byte	0xd
-	.byte	0x5
-	.4byte	.LASF23
-	.byte	0xe
-	.byte	0x5
-	.4byte	.LASF24
-	.byte	0xf
-	.byte	0x5
-	.4byte	.LASF25
-	.byte	0x10
 	.byte	0
 	.byte	0x6
-	.4byte	.LASF28
+	.4byte	.LASF34
 	.byte	0x2
-	.byte	0x18
+	.byte	0x10
 	.byte	0x3
 	.4byte	0x6b
-	.byte	0x7
-	.byte	0x8
-	.byte	0x2
-	.byte	0x1a
-	.byte	0x9
-	.4byte	0x110
-	.byte	0x8
-	.4byte	.LASF26
-	.byte	0x2
-	.byte	0x1b
-	.byte	0x16
-	.4byte	0xe0
-	.byte	0
-	.byte	0x8
-	.4byte	.LASF27
-	.byte	0x2
-	.byte	0x1c
-	.byte	0xb
-	.4byte	0x110
-	.byte	0x4
-	.byte	0
-	.byte	0x9
-	.byte	0x4
-	.byte	0x6
-	.4byte	.LASF29
-	.byte	0x2
-	.byte	0x1d
-	.byte	0x3
-	.4byte	0xec
 	.byte	0x4
 	.byte	0x7
 	.byte	0x4
 	.4byte	0x64
-	.byte	0x3
-	.byte	0x7
+	.byte	0x2
+	.byte	0x12
 	.byte	0xe
-	.4byte	0x15d
+	.4byte	0x12b
 	.byte	0x5
-	.4byte	.LASF30
+	.4byte	.LASF17
 	.byte	0
 	.byte	0x5
-	.4byte	.LASF31
+	.4byte	.LASF18
 	.byte	0x1
 	.byte	0x5
-	.4byte	.LASF32
+	.4byte	.LASF19
 	.byte	0x2
 	.byte	0x5
-	.4byte	.LASF33
+	.4byte	.LASF20
 	.byte	0x3
 	.byte	0x5
-	.4byte	.LASF34
+	.4byte	.LASF21
 	.byte	0x4
 	.byte	0x5
-	.4byte	.LASF35
+	.4byte	.LASF22
 	.byte	0x5
 	.byte	0x5
-	.4byte	.LASF36
+	.4byte	.LASF23
 	.byte	0x6
 	.byte	0x5
-	.4byte	.LASF37
+	.4byte	.LASF24
 	.byte	0x7
+	.byte	0x5
+	.4byte	.LASF25
+	.byte	0x8
+	.byte	0x5
+	.4byte	.LASF26
+	.byte	0x9
+	.byte	0x5
+	.4byte	.LASF27
+	.byte	0xa
+	.byte	0x5
+	.4byte	.LASF28
+	.byte	0xb
+	.byte	0x5
+	.4byte	.LASF29
+	.byte	0xc
+	.byte	0x5
+	.4byte	.LASF30
+	.byte	0xd
+	.byte	0x5
+	.4byte	.LASF31
+	.byte	0xe
+	.byte	0x5
+	.4byte	.LASF32
+	.byte	0xf
+	.byte	0x5
+	.4byte	.LASF33
+	.byte	0x10
 	.byte	0
 	.byte	0x6
-	.4byte	.LASF38
+	.4byte	.LASF35
+	.byte	0x2
+	.byte	0x24
 	.byte	0x3
-	.byte	0x10
-	.byte	0x3
-	.4byte	0x11e
+	.4byte	0xb6
 	.byte	0x7
 	.byte	0x8
+	.byte	0x2
+	.byte	0x26
+	.byte	0x9
+	.4byte	0x15b
+	.byte	0x8
+	.4byte	.LASF36
+	.byte	0x2
+	.byte	0x27
+	.byte	0x16
+	.4byte	0x12b
+	.byte	0
+	.byte	0x8
+	.4byte	.LASF37
+	.byte	0x2
+	.byte	0x28
+	.byte	0xb
+	.4byte	0x15b
+	.byte	0x4
+	.byte	0
+	.byte	0x9
+	.byte	0x4
+	.byte	0x6
+	.4byte	.LASF38
+	.byte	0x2
+	.byte	0x29
 	.byte	0x3
-	.byte	0x12
+	.4byte	0x137
+	.byte	0x7
+	.byte	0x8
+	.byte	0x2
+	.byte	0x2b
 	.byte	0x9
 	.4byte	0x18d
 	.byte	0x8
 	.4byte	.LASF39
-	.byte	0x3
-	.byte	0x13
+	.byte	0x2
+	.byte	0x2c
 	.byte	0x11
-	.4byte	0x15d
+	.4byte	0xaa
 	.byte	0
 	.byte	0x8
 	.4byte	.LASF40
-	.byte	0x3
-	.byte	0x14
+	.byte	0x2
+	.byte	0x2d
 	.byte	0x11
-	.4byte	0x15d
+	.4byte	0xaa
 	.byte	0x4
 	.byte	0
 	.byte	0x6
 	.4byte	.LASF41
-	.byte	0x3
-	.byte	0x15
+	.byte	0x2
+	.byte	0x2e
 	.byte	0x3
 	.4byte	0x169
 	.byte	0x6
 	.4byte	.LASF42
-	.byte	0x3
-	.byte	0x17
+	.byte	0x2
+	.byte	0x30
 	.byte	0x17
 	.4byte	0x1a5
 	.byte	0xa
 	.byte	0x4
 	.4byte	0x1ab
 	.byte	0xb
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	0x1ba
 	.byte	0xc
 	.4byte	0x1ba
 	.byte	0
 	.byte	0xa
 	.byte	0x4
-	.4byte	0x112
+	.4byte	0x15d
 	.byte	0x2
 	.byte	0x1
 	.byte	0x8
@@ -791,9 +790,9 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF46
 	.byte	0x1
-	.byte	0x8d
+	.byte	0x8c
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB15
 	.4byte	.LFE15-.LFB15
 	.byte	0x1
@@ -802,7 +801,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF48
 	.byte	0x1
-	.byte	0x8d
+	.byte	0x8c
 	.byte	0x3a
 	.4byte	0x1ba
 	.4byte	.LLST7
@@ -810,9 +809,9 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF47
 	.byte	0x1
-	.byte	0x84
+	.byte	0x83
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB14
 	.4byte	.LFE14-.LFB14
 	.byte	0x1
@@ -821,7 +820,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF48
 	.byte	0x1
-	.byte	0x84
+	.byte	0x83
 	.byte	0x3b
 	.4byte	0x1ba
 	.4byte	.LLST6
@@ -829,9 +828,9 @@ g_state_machine:
 	.byte	0x10
 	.4byte	.LASF49
 	.byte	0x1
-	.byte	0x78
+	.byte	0x77
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB13
 	.4byte	.LFE13-.LFB13
 	.byte	0x1
@@ -840,7 +839,7 @@ g_state_machine:
 	.byte	0x11
 	.4byte	.LASF48
 	.byte	0x1
-	.byte	0x78
+	.byte	0x77
 	.byte	0x3e
 	.4byte	0x1ba
 	.4byte	.LLST5
@@ -850,7 +849,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x68
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB12
 	.4byte	.LFE12-.LFB12
 	.byte	0x1
@@ -869,7 +868,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x5f
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB11
 	.4byte	.LFE11-.LFB11
 	.byte	0x1
@@ -888,7 +887,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x4e
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB10
 	.4byte	.LFE10-.LFB10
 	.byte	0x1
@@ -906,7 +905,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x57
 	.byte	0x11
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LLST2
 	.byte	0
 	.byte	0x10
@@ -914,7 +913,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x47
 	.byte	0x14
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB9
 	.4byte	.LFE9-.LFB9
 	.byte	0x1
@@ -933,7 +932,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x33
 	.byte	0xd
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
 	.byte	0x1
@@ -951,7 +950,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x3d
 	.byte	0x11
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LLST9
 	.byte	0x14
 	.4byte	.LVL19
@@ -979,7 +978,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x2e
 	.byte	0x25
-	.4byte	0x15d
+	.4byte	0xaa
 	.byte	0x1
 	.byte	0x5a
 	.byte	0
@@ -988,7 +987,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x29
 	.byte	0xd
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB6
 	.4byte	.LFE6-.LFB6
 	.byte	0x1
@@ -998,7 +997,7 @@ g_state_machine:
 	.byte	0x1
 	.byte	0x24
 	.byte	0xd
-	.4byte	0x15d
+	.4byte	0xaa
 	.4byte	.LFB5
 	.4byte	.LFE5-.LFB5
 	.byte	0x1
@@ -1037,7 +1036,7 @@ g_state_machine:
 	.byte	0x1a
 	.4byte	.LASF64
 	.4byte	.LASF64
-	.byte	0x4
+	.byte	0x3
 	.byte	0x21
 	.byte	0x8
 	.byte	0
@@ -1630,7 +1629,7 @@ g_state_machine:
 	.section	.debug_str,"MS",@progbits,1
 .LASF56:
 	.string	"app_state_get_next"
-.LASF17:
+.LASF25:
 	.string	"APP_EVENT_MQTT_TOGGLE"
 .LASF51:
 	.string	"state_ble_config_handler"
@@ -1638,15 +1637,15 @@ g_state_machine:
 	.string	"current_state"
 .LASF40:
 	.string	"next_state"
-.LASF21:
+.LASF29:
 	.string	"APP_EVENT_MQTT_BLE_MASTER_START"
-.LASF34:
+.LASF13:
 	.string	"APP_STATE_WIFI_CONNECTED"
-.LASF27:
+.LASF37:
 	.string	"data"
 .LASF50:
 	.string	"state_wifi_connecting_handler"
-.LASF13:
+.LASF21:
 	.string	"APP_EVENT_WIFI_DISCONNECTED"
 .LASF48:
 	.string	"event"
@@ -1654,39 +1653,39 @@ g_state_machine:
 	.string	"short int"
 .LASF59:
 	.string	"app_state_init"
-.LASF28:
+.LASF35:
 	.string	"app_event_type_t"
-.LASF33:
+.LASF12:
 	.string	"APP_STATE_WIFI_CONNECTING"
 .LASF49:
 	.string	"state_wifi_connected_handler"
 .LASF57:
 	.string	"app_state_get_current"
-.LASF15:
+.LASF23:
 	.string	"APP_EVENT_BLE_CONFIG_DONE"
-.LASF14:
+.LASF22:
 	.string	"APP_EVENT_WIFI_CONNECT_FAILED"
-.LASF37:
+.LASF16:
 	.string	"APP_STATE_MAX"
 .LASF3:
 	.string	"long long int"
-.LASF64:
-	.string	"memset"
+.LASF14:
+	.string	"APP_STATE_WIFI_FAILED"
 .LASF47:
 	.string	"state_wifi_failed_handler"
-.LASF30:
+.LASF9:
 	.string	"APP_STATE_INIT"
 .LASF52:
 	.string	"state_check_flash_handler"
-.LASF18:
+.LASF26:
 	.string	"APP_EVENT_MQTT_SET_ON"
-.LASF24:
+.LASF32:
 	.string	"APP_EVENT_MQTT_BLE_MASTER_DISCONNECT"
-.LASF20:
+.LASF28:
 	.string	"APP_EVENT_RELAY_STATE_CHANGED"
 .LASF62:
 	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/app_state"
-.LASF22:
+.LASF30:
 	.string	"APP_EVENT_MQTT_BLE_MASTER_STOP"
 .LASF4:
 	.string	"unsigned char"
@@ -1696,17 +1695,17 @@ g_state_machine:
 	.string	"signed char"
 .LASF7:
 	.string	"long long unsigned int"
-.LASF26:
+.LASF36:
 	.string	"type"
 .LASF8:
 	.string	"unsigned int"
-.LASF32:
+.LASF11:
 	.string	"APP_STATE_BLE_CONFIG"
 .LASF44:
 	.string	"g_state_machine"
 .LASF5:
 	.string	"short unsigned int"
-.LASF11:
+.LASF19:
 	.string	"APP_EVENT_BUTTON_PRESS"
 .LASF58:
 	.string	"app_state_set_next"
@@ -1714,48 +1713,48 @@ g_state_machine:
 	.string	"char"
 .LASF2:
 	.string	"long int"
-.LASF23:
+.LASF31:
 	.string	"APP_EVENT_MQTT_BLE_MASTER_CONNECT"
 .LASF55:
 	.string	"new_state"
-.LASF38:
+.LASF34:
 	.string	"app_state_t"
 .LASF6:
 	.string	"long unsigned int"
 .LASF45:
 	.string	"state_handlers"
-.LASF36:
+.LASF15:
 	.string	"APP_STATE_BLE_MASTER"
-.LASF12:
+.LASF20:
 	.string	"APP_EVENT_WIFI_CONNECTED"
 .LASF41:
 	.string	"app_state_machine_t"
-.LASF9:
+.LASF17:
 	.string	"APP_EVENT_NONE"
-.LASF16:
+.LASF24:
 	.string	"APP_EVENT_BLE_CONFIG_TIMEOUT"
 .LASF60:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF42:
 	.string	"app_state_handler_t"
-.LASF31:
+.LASF10:
 	.string	"APP_STATE_CHECK_FLASH"
 .LASF63:
 	.string	"app_state_process_event"
-.LASF35:
-	.string	"APP_STATE_WIFI_FAILED"
 .LASF54:
 	.string	"state_init_handler"
-.LASF19:
+.LASF64:
+	.string	"memset"
+.LASF27:
 	.string	"APP_EVENT_MQTT_SET_OFF"
 .LASF46:
 	.string	"state_ble_master_handler"
-.LASF25:
+.LASF33:
 	.string	"APP_EVENT_MAX"
-.LASF29:
+.LASF38:
 	.string	"app_event_t"
 .LASF53:
 	.string	"next"
-.LASF10:
+.LASF18:
 	.string	"APP_EVENT_BUTTON_HOLD"
 	.ident	"GCC: (SiFive GCC-Metal 10.2.0-2020.12.8) 10.2.0"

@@ -49,7 +49,8 @@ ble_interface.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../mqtt_if/mqtt_if.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_interface.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/work_q.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/common/include/atomic.h:
@@ -99,5 +100,6 @@ ble_interface.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/att.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/hardware/relay/relay.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../gpio/m_ble.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/../mqtt_if/mqtt_if.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/./ble_interface.c:

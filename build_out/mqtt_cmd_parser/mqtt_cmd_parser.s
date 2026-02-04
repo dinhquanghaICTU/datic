@@ -12,11 +12,11 @@
 json_str_eq:
 .LFB4:
 	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_cmd_parser/mqtt_cmd_parser.c"
-	.loc 1 18 1
+	.loc 1 16 1
 	.cfi_startproc
 .LVL0:
-	.loc 1 19 5
-	.loc 1 18 1 is_stmt 0
+	.loc 1 17 5
+	.loc 1 16 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -29,19 +29,19 @@ json_str_eq:
 	.cfi_offset 18, -16
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 19 8
+	.loc 1 17 8
 	lw	a4,0(a1)
 	li	a5,4
-	.loc 1 18 1
+	.loc 1 16 1
 	mv	s1,a1
-	.loc 1 19 8
+	.loc 1 17 8
 	beq	a4,a5,.L2
 .LVL1:
 .L4:
-	.loc 1 24 12
+	.loc 1 22 12
 	li	a0,-1
 .L1:
-	.loc 1 25 1
+	.loc 1 23 1
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -60,28 +60,28 @@ json_str_eq:
 .L2:
 	.cfi_restore_state
 	mv	s2,a0
-	.loc 1 20 14 discriminator 1
+	.loc 1 18 14 discriminator 1
 	mv	a0,a2
 .LVL4:
 	sw	a2,-20(s0)
 	call	strlen
 .LVL5:
-	.loc 1 20 38 discriminator 1
+	.loc 1 18 38 discriminator 1
 	lw	a5,8(s1)
-	.loc 1 20 14 discriminator 1
+	.loc 1 18 14 discriminator 1
 	mv	a2,a0
-	.loc 1 20 43 discriminator 1
+	.loc 1 18 43 discriminator 1
 	lw	a0,4(s1)
-	.loc 1 20 38 discriminator 1
+	.loc 1 18 38 discriminator 1
 	sub	a5,a5,a0
-	.loc 1 19 34 discriminator 1
+	.loc 1 17 34 discriminator 1
 	bne	a2,a5,.L4
-	.loc 1 21 9
+	.loc 1 19 9
 	lw	a1,-20(s0)
 	add	a0,s2,a0
 	call	strncmp
 .LVL6:
-	.loc 1 20 51
+	.loc 1 18 51
 	snez	a0,a0
 	neg	a0,a0
 	j	.L1
@@ -93,14 +93,14 @@ json_str_eq:
 	.type	json_get_string_value, @function
 json_get_string_value:
 .LFB5:
-	.loc 1 30 1 is_stmt 1
+	.loc 1 27 1 is_stmt 1
 	.cfi_startproc
 .LVL7:
-	.loc 1 31 5
+	.loc 1 28 5
 .LBB8:
-	.loc 1 31 10
+	.loc 1 28 10
 .LBE8:
-	.loc 1 30 1 is_stmt 0
+	.loc 1 27 1 is_stmt 0
 	addi	sp,sp,-48
 	.cfi_def_cfa_offset 48
 	sw	s0,40(sp)
@@ -125,7 +125,7 @@ json_get_string_value:
 	.cfi_offset 20, -24
 	addi	s0,sp,48
 	.cfi_def_cfa 8, 0
-	.loc 1 30 1
+	.loc 1 27 1
 	mv	s6,a0
 	mv	s1,a1
 	mv	s5,a2
@@ -133,15 +133,15 @@ json_get_string_value:
 	mv	s3,a4
 	mv	s8,a5
 .LBB10:
-	.loc 1 31 14
+	.loc 1 28 14
 	li	s2,1
 .LVL8:
 .L7:
-	.loc 1 31 21 is_stmt 1 discriminator 1
-	.loc 1 31 5 is_stmt 0 discriminator 1
+	.loc 1 28 21 is_stmt 1 discriminator 1
+	.loc 1 28 5 is_stmt 0 discriminator 1
 	bge	s2,s5,.L10
-	.loc 1 32 9 is_stmt 1
-	.loc 1 32 13 is_stmt 0
+	.loc 1 29 9 is_stmt 1
+	.loc 1 29 13 is_stmt 0
 	slli	a1,s2,4
 	mv	a2,s7
 	add	a1,s1,a1
@@ -149,22 +149,22 @@ json_get_string_value:
 	call	json_str_eq
 .LVL9:
 	mv	s4,s2
-	.loc 1 34 19
+	.loc 1 31 19
 	addi	s2,s2,1
 .LVL10:
-	.loc 1 32 12
+	.loc 1 29 12
 	bne	a0,zero,.L7
-	.loc 1 34 13 is_stmt 1
-	.loc 1 34 16 is_stmt 0
+	.loc 1 31 13 is_stmt 1
+	.loc 1 31 16 is_stmt 0
 	blt	s2,s5,.L8
 .LVL11:
 .L10:
 .LBE10:
-	.loc 1 45 12
+	.loc 1 42 12
 	li	s1,-1
 .LVL12:
 .L6:
-	.loc 1 46 1
+	.loc 1 43 1
 	lw	ra,44(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -199,41 +199,41 @@ json_get_string_value:
 .L8:
 	.cfi_restore_state
 .LBB11:
-	.loc 1 34 45 discriminator 1
+	.loc 1 31 45 discriminator 1
 	addi	a3,s4,1
 	slli	a3,a3,4
 	add	a3,s1,a3
-	.loc 1 34 36 discriminator 1
+	.loc 1 31 36 discriminator 1
 	lw	a4,0(a3)
 	li	a5,4
 	bne	a4,a5,.L10
 .LBB9:
-	.loc 1 35 17 is_stmt 1
-	.loc 1 35 60 is_stmt 0
+	.loc 1 32 17 is_stmt 1
+	.loc 1 32 60 is_stmt 0
 	lw	a1,4(a3)
-	.loc 1 35 21
+	.loc 1 32 21
 	lw	s1,8(a3)
 .LVL18:
 	sub	s1,s1,a1
 .LVL19:
-	.loc 1 36 17 is_stmt 1
-	.loc 1 36 20 is_stmt 0
+	.loc 1 33 17 is_stmt 1
+	.loc 1 33 20 is_stmt 0
 	bge	s1,s8,.L10
-	.loc 1 37 21 is_stmt 1
+	.loc 1 34 21 is_stmt 1
 	mv	a0,s3
 	mv	a2,s1
 	add	a1,s6,a1
-	.loc 1 38 30 is_stmt 0
+	.loc 1 35 30 is_stmt 0
 	add	s3,s3,s1
 .LVL20:
-	.loc 1 37 21
+	.loc 1 34 21
 	call	memcpy
 .LVL21:
-	.loc 1 38 21 is_stmt 1
-	.loc 1 38 30 is_stmt 0
+	.loc 1 35 21 is_stmt 1
+	.loc 1 35 30 is_stmt 0
 	sb	zero,0(s3)
-	.loc 1 39 21 is_stmt 1
-	.loc 1 39 28 is_stmt 0
+	.loc 1 36 21 is_stmt 1
+	.loc 1 36 28 is_stmt 0
 	j	.L6
 .LBE9:
 .LBE11:
@@ -245,7 +245,7 @@ json_get_string_value:
 	.type	json_get_int_value.constprop.0, @function
 json_get_int_value.constprop.0:
 .LFB10:
-	.loc 1 49 12 is_stmt 1
+	.loc 1 45 12 is_stmt 1
 	.cfi_startproc
 .LVL22:
 	addi	sp,sp,-80
@@ -272,22 +272,22 @@ json_get_int_value.constprop.0:
 	.cfi_offset 20, -24
 	addi	s0,sp,80
 	.cfi_def_cfa 8, 0
-	.loc 1 49 12 is_stmt 0
+	.loc 1 45 12 is_stmt 0
 	mv	s7,a0
 	mv	s1,a1
 	mv	s6,a2
 	mv	s8,a3
 	mv	s5,a4
 .LBB12:
-	.loc 1 52 14
+	.loc 1 48 14
 	li	s3,1
 .LVL23:
 .L15:
-	.loc 1 52 21 is_stmt 1
-	.loc 1 52 5 is_stmt 0
+	.loc 1 48 21 is_stmt 1
+	.loc 1 48 5 is_stmt 0
 	bge	s3,s6,.L19
-	.loc 1 53 9 is_stmt 1
-	.loc 1 53 13 is_stmt 0
+	.loc 1 49 9 is_stmt 1
+	.loc 1 49 13 is_stmt 0
 	slli	a1,s3,4
 	mv	a2,s8
 	add	a1,s1,a1
@@ -296,18 +296,18 @@ json_get_int_value.constprop.0:
 .LVL24:
 	mv	s4,s3
 	mv	s2,a0
-	.loc 1 55 19
+	.loc 1 51 19
 	addi	s3,s3,1
 .LVL25:
-	.loc 1 53 12
+	.loc 1 49 12
 	bne	a0,zero,.L15
-	.loc 1 55 13 is_stmt 1
-	.loc 1 55 16 is_stmt 0
+	.loc 1 51 13 is_stmt 1
+	.loc 1 51 16 is_stmt 0
 	bgt	s6,s3,.L16
 .LVL26:
 .L19:
 .LBE12:
-	.loc 1 68 12
+	.loc 1 64 12
 	li	s2,-1
 .LBB15:
 .LBB13:
@@ -315,55 +315,55 @@ json_get_int_value.constprop.0:
 .LVL27:
 .L16:
 .LBE13:
-	.loc 1 55 45
+	.loc 1 51 45
 	addi	a5,s4,1
 	slli	a5,a5,4
 	add	a5,s1,a5
-	.loc 1 55 36
+	.loc 1 51 36
 	lw	a3,0(a5)
 	li	a4,8
 	bne	a3,a4,.L19
 .LBB14:
-	.loc 1 56 17 is_stmt 1
-	.loc 1 57 17
-	.loc 1 57 60 is_stmt 0
+	.loc 1 52 17 is_stmt 1
+	.loc 1 53 17
+	.loc 1 53 60 is_stmt 0
 	lw	a1,4(a5)
-	.loc 1 57 21
+	.loc 1 53 21
 	lw	s1,8(a5)
 .LVL28:
-	.loc 1 58 20
+	.loc 1 54 20
 	li	a5,31
-	.loc 1 57 21
+	.loc 1 53 21
 	sub	s1,s1,a1
 .LVL29:
-	.loc 1 58 17 is_stmt 1
-	.loc 1 58 20 is_stmt 0
+	.loc 1 54 17 is_stmt 1
+	.loc 1 54 20 is_stmt 0
 	bgtu	s1,a5,.L19
-	.loc 1 59 21 is_stmt 1
+	.loc 1 55 21 is_stmt 1
 	mv	a2,s1
 	add	a1,s7,a1
 	addi	a0,s0,-80
 	call	memcpy
 .LVL30:
-	.loc 1 60 21
-	.loc 1 60 34 is_stmt 0
+	.loc 1 56 21
+	.loc 1 56 34 is_stmt 0
 	addi	a5,s0,-48
 	add	s1,a5,s1
 .LVL31:
 	sb	zero,-32(s1)
-	.loc 1 61 21 is_stmt 1
-	.loc 1 61 30 is_stmt 0
+	.loc 1 57 21 is_stmt 1
+	.loc 1 57 30 is_stmt 0
 	addi	a0,s0,-80
 	call	atoi
 .LVL32:
-	.loc 1 61 28
+	.loc 1 57 28
 	sw	a0,0(s5)
-	.loc 1 62 21 is_stmt 1
+	.loc 1 58 21 is_stmt 1
 .LVL33:
 .L14:
 .LBE14:
 .LBE15:
-	.loc 1 69 1 is_stmt 0
+	.loc 1 65 1 is_stmt 0
 	lw	ra,76(sp)
 	.cfi_restore 1
 	lw	s0,72(sp)
@@ -399,7 +399,7 @@ json_get_int_value.constprop.0:
 	.section	.rodata.mqtt_cmd_parse.str1.4,"aMS",@progbits,1
 	.align	2
 .LC0:
-	.string	"====================== resspont recive : %s \r\n============================"
+	.string	"== resspont recive : %s \r\n=="
 	.align	2
 .LC1:
 	.string	"[MQTT_CMD] JSON parse error: %d\r\n"
@@ -520,11 +520,11 @@ json_get_int_value.constprop.0:
 	.type	mqtt_cmd_parse, @function
 mqtt_cmd_parse:
 .LFB8:
-	.loc 1 95 1 is_stmt 1
+	.loc 1 90 1 is_stmt 1
 	.cfi_startproc
 .LVL38:
-	.loc 1 96 4
-	.loc 1 95 1 is_stmt 0
+	.loc 1 91 4
+	.loc 1 90 1 is_stmt 0
 	addi	sp,sp,-1120
 	.cfi_def_cfa_offset 1120
 	sw	s0,1112(sp)
@@ -547,44 +547,44 @@ mqtt_cmd_parse:
 	.cfi_def_cfa 8, 0
 	mv	s2,a0
 	mv	s3,a1
-	.loc 1 96 4
+	.loc 1 91 4
 	mv	a1,a0
 .LVL39:
 	lui	a0,%hi(.LC0)
 .LVL40:
-	.loc 1 95 1
-	.loc 1 96 4
+	.loc 1 90 1
+	.loc 1 91 4
 	addi	a0,a0,%lo(.LC0)
-	.loc 1 95 1
+	.loc 1 90 1
 	mv	s1,a2
-	.loc 1 96 4
+	.loc 1 91 4
 	call	printf
 .LVL41:
-	.loc 1 97 5 is_stmt 1
-	.loc 1 98 16 is_stmt 0
+	.loc 1 92 5 is_stmt 1
+	.loc 1 93 16 is_stmt 0
 	li	a0,-1
-	.loc 1 97 8
+	.loc 1 92 8
 	beq	s2,zero,.L23
-	.loc 1 97 25 discriminator 1
+	.loc 1 92 25 discriminator 1
 	beq	s1,zero,.L23
-	.loc 1 101 5 is_stmt 1
+	.loc 1 96 5 is_stmt 1
 	li	a2,12
 	li	a1,0
 	mv	a0,s1
 	call	memset
 .LVL42:
-	.loc 1 102 5
-	.loc 1 102 15 is_stmt 0
+	.loc 1 97 5
+	.loc 1 97 15 is_stmt 0
 	li	a5,12
 	sw	a5,0(s1)
-	.loc 1 105 5 is_stmt 1
-	.loc 1 106 5
-	.loc 1 108 5
+	.loc 1 100 5 is_stmt 1
+	.loc 1 101 5
+	.loc 1 103 5
 	addi	a0,s0,-1116
 	call	jsmn_init
 .LVL43:
-	.loc 1 109 5
-	.loc 1 109 22 is_stmt 0
+	.loc 1 104 5
+	.loc 1 104 22 is_stmt 0
 	mv	a2,s3
 	li	a4,64
 	addi	a3,s0,-1056
@@ -594,32 +594,32 @@ mqtt_cmd_parse:
 .LVL44:
 	mv	s3,a0
 .LVL45:
-	.loc 1 111 5 is_stmt 1
-	.loc 1 111 8 is_stmt 0
+	.loc 1 106 5 is_stmt 1
+	.loc 1 106 8 is_stmt 0
 	bge	a0,zero,.L25
-	.loc 1 112 9 is_stmt 1
+	.loc 1 107 9 is_stmt 1
 	mv	a1,a0
 	lui	a0,%hi(.LC1)
 .LVL46:
 	addi	a0,a0,%lo(.LC1)
 .LVL47:
 .L75:
-	.loc 1 222 9 is_stmt 0
+	.loc 1 217 9 is_stmt 0
 	call	printf
 .LVL48:
-	.loc 1 223 9 is_stmt 1
+	.loc 1 218 9 is_stmt 1
 	j	.L73
 .LVL49:
 .L25:
-	.loc 1 116 5
-	.loc 1 116 8 is_stmt 0
+	.loc 1 111 5
+	.loc 1 111 8 is_stmt 0
 	beq	a0,zero,.L26
-	.loc 1 116 24 discriminator 1
+	.loc 1 111 24 discriminator 1
 	lw	s4,-1056(s0)
 	li	a5,1
 	beq	s4,a5,.L27
 .L26:
-	.loc 1 117 9 is_stmt 1
+	.loc 1 112 9 is_stmt 1
 	lui	a0,%hi(.LC2)
 .LVL50:
 	addi	a0,a0,%lo(.LC2)
@@ -627,12 +627,12 @@ mqtt_cmd_parse:
 	call	printf
 .LVL51:
 .L73:
-	.loc 1 118 9
-	.loc 1 118 16 is_stmt 0
+	.loc 1 113 9
+	.loc 1 113 16 is_stmt 0
 	li	a0,-1
 .LVL52:
 .L23:
-	.loc 1 227 1
+	.loc 1 222 1
 	lw	ra,1116(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -659,9 +659,9 @@ mqtt_cmd_parse:
 .LVL55:
 .L27:
 	.cfi_restore_state
-	.loc 1 122 5 is_stmt 1
-	.loc 1 123 5
-	.loc 1 123 9 is_stmt 0
+	.loc 1 117 5 is_stmt 1
+	.loc 1 118 5
+	.loc 1 118 9 is_stmt 0
 	lui	a3,%hi(.LC3)
 	mv	a2,a0
 	li	a5,32
@@ -672,69 +672,69 @@ mqtt_cmd_parse:
 .LVL56:
 	call	json_get_string_value
 .LVL57:
-	.loc 1 123 8
+	.loc 1 118 8
 	bge	a0,zero,.L28
-	.loc 1 124 9 is_stmt 1
+	.loc 1 119 9 is_stmt 1
 	lui	a0,%hi(.LC4)
 	addi	a0,a0,%lo(.LC4)
 	j	.L74
 .L28:
-	.loc 1 128 5
-	.loc 1 128 81 is_stmt 0
+	.loc 1 123 5
+	.loc 1 123 81 is_stmt 0
 	addi	a0,s0,-1088
 	call	strlen
 .LVL58:
 	mv	a2,a0
-	.loc 1 128 5
+	.loc 1 123 5
 	lui	a0,%hi(.LC5)
 	addi	a1,s0,-1088
 	addi	a0,a0,%lo(.LC5)
 	call	printf
 .LVL59:
-	.loc 1 130 5 is_stmt 1
-	.loc 1 130 9 is_stmt 0
+	.loc 1 125 5 is_stmt 1
+	.loc 1 125 9 is_stmt 0
 	lui	a1,%hi(.LC6)
 	addi	a1,a1,%lo(.LC6)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL60:
-	.loc 1 130 8
+	.loc 1 125 8
 	bne	a0,zero,.L29
-	.loc 1 131 9 is_stmt 1
-	.loc 1 131 19 is_stmt 0
+	.loc 1 126 9 is_stmt 1
+	.loc 1 126 19 is_stmt 0
 	sw	s4,0(s1)
 .L30:
-	.loc 1 225 5 is_stmt 1
+	.loc 1 220 5 is_stmt 1
 	lw	a1,0(s1)
 	lui	a0,%hi(.LC38)
 	addi	a0,a0,%lo(.LC38)
 	call	printf
 .LVL61:
-	.loc 1 226 5
-	.loc 1 226 12 is_stmt 0
+	.loc 1 221 5
+	.loc 1 221 12 is_stmt 0
 	li	a0,0
 	j	.L23
 .L29:
-	.loc 1 132 12 is_stmt 1
-	.loc 1 132 16 is_stmt 0
+	.loc 1 127 12 is_stmt 1
+	.loc 1 127 16 is_stmt 0
 	lui	a1,%hi(.LC7)
 	addi	a1,a1,%lo(.LC7)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL62:
-	.loc 1 132 15
+	.loc 1 127 15
 	bne	a0,zero,.L31
 .LBB24:
-	.loc 1 133 9 is_stmt 1
-	.loc 1 133 19 is_stmt 0
+	.loc 1 128 9 is_stmt 1
+	.loc 1 128 19 is_stmt 0
 	li	a5,2
-	.loc 1 137 13
+	.loc 1 132 13
 	lui	a3,%hi(.LC8)
-	.loc 1 133 19
+	.loc 1 128 19
 	sw	a5,0(s1)
-	.loc 1 136 9 is_stmt 1
-	.loc 1 137 9
-	.loc 1 137 13 is_stmt 0
+	.loc 1 131 9 is_stmt 1
+	.loc 1 132 9
+	.loc 1 132 13 is_stmt 0
 	addi	a4,s0,-1104
 	li	a5,16
 	addi	a3,a3,%lo(.LC8)
@@ -743,65 +743,65 @@ mqtt_cmd_parse:
 	mv	a0,s2
 	call	json_get_string_value
 .LVL63:
-	.loc 1 137 12
+	.loc 1 132 12
 	blt	a0,zero,.L32
-	.loc 1 138 13 is_stmt 1
-	.loc 1 138 17 is_stmt 0
+	.loc 1 133 13 is_stmt 1
+	.loc 1 133 17 is_stmt 0
 	lui	a1,%hi(.LC9)
 	addi	a1,a1,%lo(.LC9)
 	addi	a0,s0,-1104
 	call	strcmp
 .LVL64:
-	.loc 1 140 39
+	.loc 1 135 39
 	li	a5,1
-	.loc 1 138 16
+	.loc 1 133 16
 	beq	a0,zero,.L71
-	.loc 1 141 20 is_stmt 1
-	.loc 1 141 24 is_stmt 0
+	.loc 1 136 20 is_stmt 1
+	.loc 1 136 24 is_stmt 0
 	lui	a1,%hi(.LC10)
 	addi	a1,a1,%lo(.LC10)
 	addi	a0,s0,-1104
 	call	strcmp
 .LVL65:
-	.loc 1 141 23
+	.loc 1 136 23
 	bne	a0,zero,.L35
-	.loc 1 143 17 is_stmt 1
-	.loc 1 143 39 is_stmt 0
+	.loc 1 138 17 is_stmt 1
+	.loc 1 138 39 is_stmt 0
 	sw	zero,4(s1)
 	j	.L30
 .L35:
-	.loc 1 145 17 is_stmt 1
+	.loc 1 140 17 is_stmt 1
 	lui	a0,%hi(.LC11)
 	addi	a1,s0,-1104
 	addi	a0,a0,%lo(.LC11)
 	j	.L75
 .L32:
-	.loc 1 149 13
+	.loc 1 144 13
 	lui	a0,%hi(.LC12)
 	addi	a0,a0,%lo(.LC12)
 	j	.L74
 .L31:
 .LBE24:
-	.loc 1 152 12
-	.loc 1 152 16 is_stmt 0
+	.loc 1 147 12
+	.loc 1 147 16 is_stmt 0
 	lui	a1,%hi(.LC13)
 	addi	a1,a1,%lo(.LC13)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL66:
-	.loc 1 152 15
+	.loc 1 147 15
 	bne	a0,zero,.L37
 .LBB25:
-	.loc 1 153 9 is_stmt 1
-	.loc 1 153 19 is_stmt 0
+	.loc 1 148 9 is_stmt 1
+	.loc 1 148 19 is_stmt 0
 	li	a5,3
-	.loc 1 157 13
+	.loc 1 152 13
 	lui	a3,%hi(.LC14)
-	.loc 1 153 19
+	.loc 1 148 19
 	sw	a5,0(s1)
-	.loc 1 156 9 is_stmt 1
-	.loc 1 157 9
-	.loc 1 157 13 is_stmt 0
+	.loc 1 151 9 is_stmt 1
+	.loc 1 152 9
+	.loc 1 152 13 is_stmt 0
 	addi	a4,s0,-1104
 	li	a5,16
 	addi	a3,a3,%lo(.LC14)
@@ -810,162 +810,162 @@ mqtt_cmd_parse:
 	mv	a0,s2
 	call	json_get_string_value
 .LVL67:
-	.loc 1 157 12
+	.loc 1 152 12
 	blt	a0,zero,.L38
-	.loc 1 158 13 is_stmt 1
-	.loc 1 158 17 is_stmt 0
+	.loc 1 153 13 is_stmt 1
+	.loc 1 153 17 is_stmt 0
 	lui	a1,%hi(.LC9)
 	addi	a1,a1,%lo(.LC9)
 	addi	a0,s0,-1104
 	call	strcmp
 .LVL68:
-	.loc 1 158 16
+	.loc 1 153 16
 	bne	a0,zero,.L39
-	.loc 1 159 17 is_stmt 1
-	.loc 1 159 42 is_stmt 0
+	.loc 1 154 17 is_stmt 1
+	.loc 1 154 42 is_stmt 0
 	sw	zero,4(s1)
 .L40:
-	.loc 1 171 9 is_stmt 1
-	.loc 1 172 13 is_stmt 0
+	.loc 1 166 9 is_stmt 1
+	.loc 1 167 13 is_stmt 0
 	lui	a3,%hi(.LC17)
 	addi	a4,s0,-1120
 	addi	a3,a3,%lo(.LC17)
 	mv	a2,s3
 	addi	a1,s0,-1056
 	mv	a0,s2
-	.loc 1 171 13
+	.loc 1 166 13
 	sw	zero,-1120(s0)
-	.loc 1 172 9 is_stmt 1
-	.loc 1 172 13 is_stmt 0
+	.loc 1 167 9 is_stmt 1
+	.loc 1 167 13 is_stmt 0
 	call	json_get_int_value.constprop.0
 .LVL69:
-	.loc 1 172 12
+	.loc 1 167 12
 	blt	a0,zero,.L43
-	.loc 1 173 13 is_stmt 1
-	.loc 1 173 39 is_stmt 0
+	.loc 1 168 13 is_stmt 1
+	.loc 1 168 39 is_stmt 0
 	lw	a5,-1120(s0)
 	sw	a5,8(s1)
 	j	.L30
 .L39:
-	.loc 1 160 20 is_stmt 1
-	.loc 1 160 24 is_stmt 0
+	.loc 1 155 20 is_stmt 1
+	.loc 1 155 24 is_stmt 0
 	lui	a1,%hi(.LC10)
 	addi	a1,a1,%lo(.LC10)
 	addi	a0,s0,-1104
 	call	strcmp
 .LVL70:
-	.loc 1 160 23
+	.loc 1 155 23
 	bne	a0,zero,.L41
-	.loc 1 161 17 is_stmt 1
-	.loc 1 161 42 is_stmt 0
+	.loc 1 156 17 is_stmt 1
+	.loc 1 156 42 is_stmt 0
 	li	a5,1
 	sw	a5,4(s1)
 	j	.L40
 .L41:
-	.loc 1 163 17 is_stmt 1
+	.loc 1 158 17 is_stmt 1
 	lui	a0,%hi(.LC15)
 	addi	a1,s0,-1104
 	addi	a0,a0,%lo(.LC15)
 	j	.L75
 .L38:
-	.loc 1 167 13
+	.loc 1 162 13
 	lui	a0,%hi(.LC16)
 	addi	a0,a0,%lo(.LC16)
 	j	.L74
 .L43:
-	.loc 1 175 13
+	.loc 1 170 13
 	lui	a0,%hi(.LC18)
 	addi	a0,a0,%lo(.LC18)
 	j	.L74
 .L37:
 .LBE25:
-	.loc 1 178 12
-	.loc 1 178 16 is_stmt 0
+	.loc 1 173 12
+	.loc 1 173 16 is_stmt 0
 	lui	a1,%hi(.LC19)
 	addi	a1,a1,%lo(.LC19)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL71:
-	.loc 1 179 19
+	.loc 1 174 19
 	li	a5,4
-	.loc 1 178 15
+	.loc 1 173 15
 	beq	a0,zero,.L72
-	.loc 1 180 12 is_stmt 1
-	.loc 1 180 16 is_stmt 0
+	.loc 1 175 12 is_stmt 1
+	.loc 1 175 16 is_stmt 0
 	lui	a1,%hi(.LC20)
 	addi	a1,a1,%lo(.LC20)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL72:
-	.loc 1 180 15
+	.loc 1 175 15
 	bne	a0,zero,.L45
 .LBB26:
-	.loc 1 181 9 is_stmt 1
-	.loc 1 181 19 is_stmt 0
+	.loc 1 176 9 is_stmt 1
+	.loc 1 176 19 is_stmt 0
 	li	a5,5
-	.loc 1 184 13
+	.loc 1 179 13
 	lui	a3,%hi(.LC21)
-	.loc 1 181 19
+	.loc 1 176 19
 	sw	a5,0(s1)
-	.loc 1 183 9 is_stmt 1
-	.loc 1 184 13 is_stmt 0
+	.loc 1 178 9 is_stmt 1
+	.loc 1 179 13 is_stmt 0
 	addi	a4,s0,-1104
 	addi	a3,a3,%lo(.LC21)
 	mv	a2,s3
 	addi	a1,s0,-1056
 	mv	a0,s2
-	.loc 1 183 13
+	.loc 1 178 13
 	sw	zero,-1104(s0)
-	.loc 1 184 9 is_stmt 1
-	.loc 1 184 13 is_stmt 0
+	.loc 1 179 9 is_stmt 1
+	.loc 1 179 13 is_stmt 0
 	call	json_get_int_value.constprop.0
 .LVL73:
-	.loc 1 184 12
+	.loc 1 179 12
 	blt	a0,zero,.L46
-	.loc 1 185 13 is_stmt 1
-	.loc 1 185 46 is_stmt 0
+	.loc 1 180 13 is_stmt 1
+	.loc 1 180 46 is_stmt 0
 	lw	a5,-1104(s0)
 .L71:
 	sw	a5,4(s1)
 	j	.L30
 .L46:
-	.loc 1 187 13 is_stmt 1
+	.loc 1 182 13 is_stmt 1
 	lui	a0,%hi(.LC22)
 	addi	a0,a0,%lo(.LC22)
 	j	.L74
 .L45:
 .LBE26:
-	.loc 1 190 12
-	.loc 1 190 16 is_stmt 0
+	.loc 1 185 12
+	.loc 1 185 16 is_stmt 0
 	lui	a1,%hi(.LC23)
 	addi	a1,a1,%lo(.LC23)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL74:
-	.loc 1 191 19
+	.loc 1 186 19
 	li	a5,6
-	.loc 1 190 15
+	.loc 1 185 15
 	beq	a0,zero,.L72
-	.loc 1 192 12 is_stmt 1
-	.loc 1 192 16 is_stmt 0
+	.loc 1 187 12 is_stmt 1
+	.loc 1 187 16 is_stmt 0
 	lui	a1,%hi(.LC24)
 	addi	a1,a1,%lo(.LC24)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL75:
-	.loc 1 192 15
+	.loc 1 187 15
 	bne	a0,zero,.L48
 .LBB27:
-	.loc 1 193 9 is_stmt 1
-	.loc 1 193 19 is_stmt 0
+	.loc 1 188 9 is_stmt 1
+	.loc 1 188 19 is_stmt 0
 	li	a5,7
-	.loc 1 197 13
+	.loc 1 192 13
 	lui	a3,%hi(.LC25)
-	.loc 1 193 19
+	.loc 1 188 19
 	sw	a5,0(s1)
-	.loc 1 196 9 is_stmt 1
-	.loc 1 197 9
-	.loc 1 197 13 is_stmt 0
+	.loc 1 191 9 is_stmt 1
+	.loc 1 192 9
+	.loc 1 192 13 is_stmt 0
 	addi	a4,s0,-1104
 	li	a5,16
 	addi	a3,a3,%lo(.LC25)
@@ -974,37 +974,37 @@ mqtt_cmd_parse:
 	mv	a0,s2
 	call	json_get_string_value
 .LVL76:
-	.loc 1 197 12
+	.loc 1 192 12
 	blt	a0,zero,.L51
-	.loc 1 198 13 is_stmt 1
-	.loc 1 198 17 is_stmt 0
+	.loc 1 193 13 is_stmt 1
+	.loc 1 193 17 is_stmt 0
 	lui	a1,%hi(.LC9)
 	addi	a1,a1,%lo(.LC9)
 	addi	a0,s0,-1104
 	call	strcmp
 .LVL77:
-	.loc 1 198 16
+	.loc 1 193 16
 	bne	a0,zero,.L50
-	.loc 1 199 17 is_stmt 1
-	.loc 1 199 52 is_stmt 0
+	.loc 1 194 17 is_stmt 1
+	.loc 1 194 52 is_stmt 0
 	li	a5,1
 	sw	a5,4(s1)
 .L51:
 .LBE27:
-	.loc 1 95 1
+	.loc 1 90 1
 	li	s5,1
 .LBB39:
 .LBB28:
 .LBB29:
-	.loc 1 76 13
+	.loc 1 71 13
 	lui	s6,%hi(.LC26)
 .L52:
 .LVL78:
-	.loc 1 75 21 is_stmt 1
-	.loc 1 75 5 is_stmt 0
+	.loc 1 70 21 is_stmt 1
+	.loc 1 70 5 is_stmt 0
 	ble	s3,s5,.L70
-	.loc 1 76 9 is_stmt 1
-	.loc 1 76 13 is_stmt 0
+	.loc 1 71 9 is_stmt 1
+	.loc 1 71 13 is_stmt 0
 	slli	a1,s5,4
 	addi	a5,s0,-1056
 	addi	a2,s6,%lo(.LC26)
@@ -1013,19 +1013,19 @@ mqtt_cmd_parse:
 	call	json_str_eq
 .LVL79:
 	mv	s4,s5
-	.loc 1 78 19
+	.loc 1 73 19
 	addi	s5,s5,1
 .LVL80:
-	.loc 1 76 12
+	.loc 1 71 12
 	bne	a0,zero,.L52
-	.loc 1 78 13 is_stmt 1
-	.loc 1 78 16 is_stmt 0
+	.loc 1 73 13 is_stmt 1
+	.loc 1 73 16 is_stmt 0
 	bgt	s3,s5,.L53
 .LVL81:
 .L70:
 .LBE29:
 .LBE28:
-	.loc 1 206 13
+	.loc 1 201 13
 	li	a0,0
 .LBB36:
 .LBB33:
@@ -1035,62 +1035,62 @@ mqtt_cmd_parse:
 .LBE30:
 .LBE33:
 .LBE36:
-	.loc 1 200 20 is_stmt 1
-	.loc 1 200 24 is_stmt 0
+	.loc 1 195 20 is_stmt 1
+	.loc 1 195 24 is_stmt 0
 	lui	a1,%hi(.LC10)
 	addi	a1,a1,%lo(.LC10)
 	addi	a0,s0,-1104
 	call	strcmp
 .LVL82:
-	.loc 1 200 23
+	.loc 1 195 23
 	bne	a0,zero,.L51
-	.loc 1 201 17 is_stmt 1
-	.loc 1 201 52 is_stmt 0
+	.loc 1 196 17 is_stmt 1
+	.loc 1 196 52 is_stmt 0
 	sw	zero,4(s1)
 	j	.L51
 .LVL83:
 .L53:
 .LBB37:
 .LBB34:
-	.loc 1 78 45
+	.loc 1 73 45
 	addi	a5,s4,1
 	addi	a4,s0,-1056
 	slli	a5,a5,4
 	add	a5,a4,a5
-	.loc 1 78 36
+	.loc 1 73 36
 	lw	a3,0(a5)
 	li	a4,8
 	bne	a3,a4,.L70
 .LBB31:
-	.loc 1 79 17 is_stmt 1
-	.loc 1 79 60 is_stmt 0
+	.loc 1 74 17 is_stmt 1
+	.loc 1 74 60 is_stmt 0
 	lw	a0,4(a5)
-	.loc 1 79 21
+	.loc 1 74 21
 	lw	a5,8(a5)
-	.loc 1 80 20
+	.loc 1 75 20
 	li	a4,4
-	.loc 1 79 21
+	.loc 1 74 21
 	sub	a5,a5,a0
 .LVL84:
-	.loc 1 80 17 is_stmt 1
-	.loc 1 80 20 is_stmt 0
+	.loc 1 75 17 is_stmt 1
+	.loc 1 75 20 is_stmt 0
 	bne	a5,a4,.L56
-	.loc 1 80 33
+	.loc 1 75 33
 	lui	a1,%hi(.LC27)
 	li	a2,4
 	addi	a1,a1,%lo(.LC27)
 	add	a0,s2,a0
 	call	strncmp
 .LVL85:
-	.loc 1 80 30
+	.loc 1 75 30
 	seqz	a0,a0
 .LVL86:
 .L54:
 .LBE31:
 .LBE34:
 .LBE37:
-	.loc 1 208 9 is_stmt 1
-	.loc 1 208 42 is_stmt 0
+	.loc 1 203 9 is_stmt 1
+	.loc 1 203 42 is_stmt 0
 	sb	a0,8(s1)
 .LVL87:
 .LBE39:
@@ -1101,11 +1101,11 @@ mqtt_cmd_parse:
 .LBB38:
 .LBB35:
 .LBB32:
-	.loc 1 83 24 is_stmt 1
-	.loc 1 83 27 is_stmt 0
+	.loc 1 78 24 is_stmt 1
+	.loc 1 78 27 is_stmt 0
 	li	a4,5
 	bne	a5,a4,.L70
-	.loc 1 83 40
+	.loc 1 78 40
 	lui	a1,%hi(.LC28)
 	li	a2,5
 	addi	a1,a1,%lo(.LC28)
@@ -1119,86 +1119,86 @@ mqtt_cmd_parse:
 .LBE35:
 .LBE38:
 .LBE40:
-	.loc 1 209 12 is_stmt 1
-	.loc 1 209 16 is_stmt 0
+	.loc 1 204 12 is_stmt 1
+	.loc 1 204 16 is_stmt 0
 	lui	a1,%hi(.LC29)
 	addi	a1,a1,%lo(.LC29)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL91:
-	.loc 1 209 15
+	.loc 1 204 15
 	bne	a0,zero,.L58
-	.loc 1 210 9 is_stmt 1
+	.loc 1 205 9 is_stmt 1
 	lui	a0,%hi(.LC30)
 	addi	a0,a0,%lo(.LC30)
 	call	printf
 .LVL92:
-	.loc 1 211 9
-	.loc 1 211 19 is_stmt 0
+	.loc 1 206 9
+	.loc 1 206 19 is_stmt 0
 	li	a5,8
 .L72:
-	.loc 1 220 19
+	.loc 1 215 19
 	sw	a5,0(s1)
 	j	.L30
 .L58:
-	.loc 1 212 12 is_stmt 1
-	.loc 1 212 16 is_stmt 0
+	.loc 1 207 12 is_stmt 1
+	.loc 1 207 16 is_stmt 0
 	lui	a1,%hi(.LC31)
 	addi	a1,a1,%lo(.LC31)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL93:
-	.loc 1 212 15
+	.loc 1 207 15
 	bne	a0,zero,.L59
-	.loc 1 213 9 is_stmt 1
+	.loc 1 208 9 is_stmt 1
 	lui	a0,%hi(.LC32)
 	addi	a0,a0,%lo(.LC32)
 	call	printf
 .LVL94:
-	.loc 1 214 9
-	.loc 1 214 19 is_stmt 0
+	.loc 1 209 9
+	.loc 1 209 19 is_stmt 0
 	li	a5,9
 	j	.L72
 .L59:
-	.loc 1 215 12 is_stmt 1
-	.loc 1 215 16 is_stmt 0
+	.loc 1 210 12 is_stmt 1
+	.loc 1 210 16 is_stmt 0
 	lui	a1,%hi(.LC33)
 	addi	a1,a1,%lo(.LC33)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL95:
-	.loc 1 215 15
+	.loc 1 210 15
 	bne	a0,zero,.L60
-	.loc 1 216 9 is_stmt 1
+	.loc 1 211 9 is_stmt 1
 	lui	a0,%hi(.LC34)
 	addi	a0,a0,%lo(.LC34)
 	call	printf
 .LVL96:
-	.loc 1 217 9
-	.loc 1 217 19 is_stmt 0
+	.loc 1 212 9
+	.loc 1 212 19 is_stmt 0
 	li	a5,10
 	j	.L72
 .L60:
-	.loc 1 218 12 is_stmt 1
-	.loc 1 218 16 is_stmt 0
+	.loc 1 213 12 is_stmt 1
+	.loc 1 213 16 is_stmt 0
 	lui	a1,%hi(.LC35)
 	addi	a1,a1,%lo(.LC35)
 	addi	a0,s0,-1088
 	call	strcmp
 .LVL97:
-	.loc 1 218 15
+	.loc 1 213 15
 	bne	a0,zero,.L61
-	.loc 1 219 9 is_stmt 1
+	.loc 1 214 9 is_stmt 1
 	lui	a0,%hi(.LC36)
 	addi	a0,a0,%lo(.LC36)
 	call	printf
 .LVL98:
-	.loc 1 220 9
-	.loc 1 220 19 is_stmt 0
+	.loc 1 215 9
+	.loc 1 215 19 is_stmt 0
 	li	a5,11
 	j	.L72
 .L61:
-	.loc 1 222 9 is_stmt 1
+	.loc 1 217 9 is_stmt 1
 	lui	a0,%hi(.LC37)
 	addi	a1,s0,-1088
 	addi	a0,a0,%lo(.LC37)
@@ -1216,11 +1216,11 @@ mqtt_cmd_parse:
 	.type	mqtt_cmd_type_to_string, @function
 mqtt_cmd_type_to_string:
 .LFB9:
-	.loc 1 230 1
+	.loc 1 225 1
 	.cfi_startproc
 .LVL99:
-	.loc 1 231 5
-	.loc 1 230 1 is_stmt 0
+	.loc 1 226 5
+	.loc 1 225 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
@@ -1236,7 +1236,7 @@ mqtt_cmd_type_to_string:
 	add	a0,a5,a0
 	lw	a0,0(a0)
 .L76:
-	.loc 1 261 1
+	.loc 1 256 1
 	lw	s0,12(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -1247,7 +1247,7 @@ mqtt_cmd_type_to_string:
 .LVL101:
 .L78:
 	.cfi_restore_state
-	.loc 1 230 1
+	.loc 1 225 1
 	lui	a0,%hi(.LC39)
 .LVL102:
 	addi	a0,a0,%lo(.LC39)
@@ -1707,7 +1707,7 @@ CSWTCH.32:
 	.byte	0x10
 	.4byte	.LASF57
 	.byte	0x1
-	.byte	0xe5
+	.byte	0xe0
 	.byte	0xd
 	.4byte	0x2ef
 	.4byte	.LFB9
@@ -1718,7 +1718,7 @@ CSWTCH.32:
 	.byte	0x11
 	.4byte	.LASF40
 	.byte	0x1
-	.byte	0xe5
+	.byte	0xe0
 	.byte	0x35
 	.4byte	0xd4
 	.4byte	.LLST24
@@ -1726,7 +1726,7 @@ CSWTCH.32:
 	.byte	0x10
 	.4byte	.LASF58
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x59
 	.byte	0x5
 	.4byte	0x69
 	.4byte	.LFB8
@@ -1737,28 +1737,28 @@ CSWTCH.32:
 	.byte	0x11
 	.4byte	.LASF59
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x59
 	.byte	0x20
 	.4byte	0x2ef
 	.4byte	.LLST17
 	.byte	0x11
 	.4byte	.LASF60
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x59
 	.byte	0x2e
 	.4byte	0x69
 	.4byte	.LLST18
 	.byte	0x12
 	.string	"cmd"
 	.byte	0x1
-	.byte	0x5e
+	.byte	0x59
 	.byte	0x44
 	.4byte	0x94e
 	.4byte	.LLST19
 	.byte	0x13
 	.4byte	.LASF61
 	.byte	0x1
-	.byte	0x69
+	.byte	0x64
 	.byte	0x11
 	.4byte	0x2d1
 	.byte	0x3
@@ -1767,7 +1767,7 @@ CSWTCH.32:
 	.byte	0x13
 	.4byte	.LASF62
 	.byte	0x1
-	.byte	0x6a
+	.byte	0x65
 	.byte	0xf
 	.4byte	0x954
 	.byte	0x3
@@ -1776,14 +1776,14 @@ CSWTCH.32:
 	.byte	0x14
 	.4byte	.LASF63
 	.byte	0x1
-	.byte	0x6d
+	.byte	0x68
 	.byte	0x9
 	.4byte	0x69
 	.4byte	.LLST20
 	.byte	0x13
 	.4byte	.LASF64
 	.byte	0x1
-	.byte	0x7a
+	.byte	0x75
 	.byte	0xa
 	.4byte	0x964
 	.byte	0x3
@@ -1796,7 +1796,7 @@ CSWTCH.32:
 	.byte	0x13
 	.4byte	.LASF65
 	.byte	0x1
-	.byte	0x88
+	.byte	0x83
 	.byte	0xe
 	.4byte	0x974
 	.byte	0x3
@@ -1883,7 +1883,7 @@ CSWTCH.32:
 	.byte	0x13
 	.4byte	.LASF66
 	.byte	0x1
-	.byte	0x9c
+	.byte	0x97
 	.byte	0xe
 	.4byte	0x974
 	.byte	0x3
@@ -1892,7 +1892,7 @@ CSWTCH.32:
 	.byte	0x13
 	.4byte	.LASF32
 	.byte	0x1
-	.byte	0xab
+	.byte	0xa6
 	.byte	0xd
 	.4byte	0x69
 	.byte	0x3
@@ -2014,7 +2014,7 @@ CSWTCH.32:
 	.byte	0x13
 	.4byte	.LASF33
 	.byte	0x1
-	.byte	0xb7
+	.byte	0xb2
 	.byte	0xd
 	.4byte	0x69
 	.byte	0x3
@@ -2061,7 +2061,7 @@ CSWTCH.32:
 	.byte	0x13
 	.4byte	.LASF67
 	.byte	0x1
-	.byte	0xc4
+	.byte	0xbf
 	.byte	0xe
 	.4byte	0x974
 	.byte	0x3
@@ -2070,7 +2070,7 @@ CSWTCH.32:
 	.byte	0x14
 	.4byte	.LASF35
 	.byte	0x1
-	.byte	0xce
+	.byte	0xc9
 	.byte	0xd
 	.4byte	0x1a4
 	.4byte	.LLST21
@@ -2079,7 +2079,7 @@ CSWTCH.32:
 	.4byte	.LBB28
 	.4byte	.Ldebug_ranges0+0x70
 	.byte	0x1
-	.byte	0xcf
+	.byte	0xca
 	.byte	0x9
 	.4byte	0x62b
 	.byte	0x1b
@@ -2671,7 +2671,7 @@ CSWTCH.32:
 	.byte	0x22
 	.4byte	.LASF70
 	.byte	0x1
-	.byte	0x48
+	.byte	0x43
 	.byte	0xc
 	.4byte	0x69
 	.byte	0x1
@@ -2679,45 +2679,45 @@ CSWTCH.32:
 	.byte	0x23
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x48
+	.byte	0x43
 	.byte	0x2c
 	.4byte	0x2ef
 	.byte	0x23
 	.4byte	.LASF62
 	.byte	0x1
-	.byte	0x48
+	.byte	0x43
 	.byte	0x3d
 	.4byte	0x9ec
 	.byte	0x23
 	.4byte	.LASF63
 	.byte	0x1
-	.byte	0x48
+	.byte	0x43
 	.byte	0x49
 	.4byte	0x69
 	.byte	0x24
 	.string	"key"
 	.byte	0x1
-	.byte	0x49
+	.byte	0x44
 	.byte	0x2c
 	.4byte	0x2ef
 	.byte	0x23
 	.4byte	.LASF69
 	.byte	0x1
-	.byte	0x49
+	.byte	0x44
 	.byte	0x36
 	.4byte	0x9f2
 	.byte	0x25
 	.byte	0x26
 	.string	"i"
 	.byte	0x1
-	.byte	0x4b
+	.byte	0x46
 	.byte	0xe
 	.4byte	0x69
 	.byte	0x25
 	.byte	0x26
 	.string	"len"
 	.byte	0x1
-	.byte	0x4f
+	.byte	0x4a
 	.byte	0x15
 	.4byte	0x69
 	.byte	0
@@ -2732,7 +2732,7 @@ CSWTCH.32:
 	.byte	0x22
 	.4byte	.LASF71
 	.byte	0x1
-	.byte	0x31
+	.byte	0x2d
 	.byte	0xc
 	.4byte	0x69
 	.byte	0x1
@@ -2740,51 +2740,51 @@ CSWTCH.32:
 	.byte	0x23
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x31
+	.byte	0x2d
 	.byte	0x2b
 	.4byte	0x2ef
 	.byte	0x23
 	.4byte	.LASF62
 	.byte	0x1
-	.byte	0x31
+	.byte	0x2d
 	.byte	0x3c
 	.4byte	0x9ec
 	.byte	0x23
 	.4byte	.LASF63
 	.byte	0x1
-	.byte	0x31
+	.byte	0x2d
 	.byte	0x48
 	.4byte	0x69
 	.byte	0x24
 	.string	"key"
 	.byte	0x1
-	.byte	0x32
+	.byte	0x2e
 	.byte	0x2b
 	.4byte	0x2ef
 	.byte	0x23
 	.4byte	.LASF69
 	.byte	0x1
-	.byte	0x32
+	.byte	0x2e
 	.byte	0x35
 	.4byte	0xa6c
 	.byte	0x25
 	.byte	0x26
 	.string	"i"
 	.byte	0x1
-	.byte	0x34
+	.byte	0x30
 	.byte	0xe
 	.4byte	0x69
 	.byte	0x25
 	.byte	0x27
 	.4byte	.LASF72
 	.byte	0x1
-	.byte	0x38
+	.byte	0x34
 	.byte	0x16
 	.4byte	0x964
 	.byte	0x26
 	.string	"len"
 	.byte	0x1
-	.byte	0x39
+	.byte	0x35
 	.byte	0x15
 	.4byte	0x69
 	.byte	0
@@ -2796,7 +2796,7 @@ CSWTCH.32:
 	.byte	0x28
 	.4byte	.LASF74
 	.byte	0x1
-	.byte	0x1c
+	.byte	0x19
 	.byte	0xc
 	.4byte	0x69
 	.4byte	.LFB5
@@ -2807,42 +2807,42 @@ CSWTCH.32:
 	.byte	0x11
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x1c
+	.byte	0x19
 	.byte	0x2e
 	.4byte	0x2ef
 	.4byte	.LLST3
 	.byte	0x11
 	.4byte	.LASF62
 	.byte	0x1
-	.byte	0x1c
+	.byte	0x19
 	.byte	0x3f
 	.4byte	0x9ec
 	.4byte	.LLST4
 	.byte	0x11
 	.4byte	.LASF63
 	.byte	0x1
-	.byte	0x1c
+	.byte	0x19
 	.byte	0x4b
 	.4byte	0x69
 	.4byte	.LLST5
 	.byte	0x12
 	.string	"key"
 	.byte	0x1
-	.byte	0x1d
+	.byte	0x1a
 	.byte	0x2e
 	.4byte	0x2ef
 	.4byte	.LLST6
 	.byte	0x12
 	.string	"buf"
 	.byte	0x1
-	.byte	0x1d
+	.byte	0x1a
 	.byte	0x39
 	.4byte	0x2dd
 	.4byte	.LLST7
 	.byte	0x11
 	.4byte	.LASF73
 	.byte	0x1
-	.byte	0x1d
+	.byte	0x1a
 	.byte	0x42
 	.4byte	0x69
 	.4byte	.LLST8
@@ -2851,7 +2851,7 @@ CSWTCH.32:
 	.byte	0x2a
 	.string	"i"
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x1c
 	.byte	0xe
 	.4byte	0x69
 	.4byte	.LLST9
@@ -2862,7 +2862,7 @@ CSWTCH.32:
 	.byte	0x2b
 	.string	"len"
 	.byte	0x1
-	.byte	0x23
+	.byte	0x20
 	.byte	0x15
 	.4byte	0x69
 	.byte	0x1
@@ -2917,7 +2917,7 @@ CSWTCH.32:
 	.byte	0x28
 	.4byte	.LASF75
 	.byte	0x1
-	.byte	0x11
+	.byte	0xf
 	.byte	0xc
 	.4byte	0x69
 	.4byte	.LFB4
@@ -2928,21 +2928,21 @@ CSWTCH.32:
 	.byte	0x11
 	.4byte	.LASF68
 	.byte	0x1
-	.byte	0x11
+	.byte	0xf
 	.byte	0x24
 	.4byte	0x2ef
 	.4byte	.LLST0
 	.byte	0x12
 	.string	"tok"
 	.byte	0x1
-	.byte	0x11
+	.byte	0xf
 	.byte	0x35
 	.4byte	0x9ec
 	.4byte	.LLST1
 	.byte	0x12
 	.string	"key"
 	.byte	0x1
-	.byte	0x11
+	.byte	0xf
 	.byte	0x46
 	.4byte	0x2ef
 	.4byte	.LLST2

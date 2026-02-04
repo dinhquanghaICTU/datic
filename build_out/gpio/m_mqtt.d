@@ -3,8 +3,7 @@ m_mqtt.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_app_callback.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h \
@@ -25,8 +24,7 @@ m_mqtt.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_mqtt.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_app_callback.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h:

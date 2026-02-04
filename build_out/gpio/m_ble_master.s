@@ -12,12 +12,12 @@
 scan_adv_device_found:
 .LFB69:
 	.file 1 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_ble_master.c"
-	.loc 1 178 1
+	.loc 1 149 1
 	.cfi_startproc
 .LVL0:
-	.loc 1 179 5
-	.loc 1 184 5
-	.loc 1 178 1 is_stmt 0
+	.loc 1 150 5
+	.loc 1 155 5
+	.loc 1 149 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	ra,28(sp)
@@ -28,28 +28,28 @@ scan_adv_device_found:
 	.cfi_offset 9, -12
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 184 20
+	.loc 1 155 20
 	sb	a1,-24(s0)
-	.loc 1 185 5 is_stmt 1
+	.loc 1 156 5 is_stmt 1
 	li	a2,7
 .LVL1:
 	mv	a1,a0
 .LVL2:
 	addi	a0,s0,-23
 .LVL3:
-	.loc 1 178 1 is_stmt 0
+	.loc 1 149 1 is_stmt 0
 	mv	s1,a3
-	.loc 1 185 5
+	.loc 1 156 5
 	call	memcpy
 .LVL4:
-	.loc 1 187 5 is_stmt 1
+	.loc 1 158 5 is_stmt 1
 	lui	a1,%hi(adv_parse_cb)
 	addi	a2,s0,-24
 	mv	a0,s1
 	addi	a1,a1,%lo(adv_parse_cb)
 	call	bt_data_parse
 .LVL5:
-	.loc 1 188 1 is_stmt 0
+	.loc 1 159 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -73,15 +73,9 @@ scan_adv_device_found:
 	.string	"HNN"
 	.align	2
 .LC3:
-	.string	"[BLE_MASTER] [FOUND] Target device! MAC: %02X:%02X:%02X:%02X:%02X:%02X, RSSI=%d, touchpad2(state)=%d\r\n"
-	.align	2
-.LC4:
-	.string	"[BLE_MASTER] [STATE CHANGE] touchpad2: %d -> %d, "
-	.align	2
-.LC5:
 	.string	"RELAY ON\r\n"
 	.align	2
-.LC6:
+.LC4:
 	.string	"RELAY OFF\r\n"
 	.section	.text.adv_parse_cb,"ax",@progbits
 	.align	1
@@ -101,7 +95,7 @@ adv_parse_cb:
 	.loc 1 76 15
 	li	a0,1
 .LVL8:
-	.loc 1 171 1
+	.loc 1 145 1
 	ret
 .LVL9:
 .L6:
@@ -118,66 +112,65 @@ adv_parse_cb:
 	li	a0,1
 .LVL10:
 .L5:
-	.loc 1 171 1 discriminator 1
-	lw	ra,76(sp)
+	.loc 1 145 1 discriminator 1
+	lw	ra,60(sp)
 	.cfi_restore 1
-	lw	s0,72(sp)
+	lw	s0,56(sp)
 	.cfi_restore 8
-	.cfi_def_cfa 2, 80
-	lw	s1,68(sp)
+	.cfi_def_cfa 2, 64
+	lw	s1,52(sp)
 	.cfi_restore 9
-	lw	s2,64(sp)
+	lw	s2,48(sp)
 	.cfi_restore 18
-	lw	s3,60(sp)
+	lw	s3,44(sp)
 	.cfi_restore 19
-	lw	s4,56(sp)
+	lw	s4,40(sp)
 	.cfi_restore 20
-	lw	s5,52(sp)
+	lw	s5,36(sp)
 	.cfi_restore 21
-	lw	s6,48(sp)
+	lw	s6,32(sp)
 	.cfi_restore 22
-	addi	sp,sp,80
+	addi	sp,sp,64
 	.cfi_def_cfa_offset 0
 	jr	ra
 .LVL11:
 .L4:
 	.loc 1 71 1
-	addi	sp,sp,-80
-	.cfi_def_cfa_offset 80
-	sw	s0,72(sp)
+	addi	sp,sp,-64
+	.cfi_def_cfa_offset 64
+	sw	s0,56(sp)
 .LVL12:
-	sw	s1,68(sp)
-	sw	ra,76(sp)
-	sw	s2,64(sp)
-	sw	s3,60(sp)
-	sw	s4,56(sp)
-	sw	s5,52(sp)
-	sw	s6,48(sp)
+	sw	s2,48(sp)
+	sw	ra,60(sp)
+	sw	s1,52(sp)
+	sw	s3,44(sp)
+	sw	s4,40(sp)
+	sw	s5,36(sp)
+	sw	s6,32(sp)
 	.cfi_offset 8, -8
-	.cfi_offset 9, -12
-	.cfi_offset 1, -4
 	.cfi_offset 18, -16
+	.cfi_offset 1, -4
+	.cfi_offset 9, -12
 	.cfi_offset 19, -20
 	.cfi_offset 20, -24
 	.cfi_offset 21, -28
 	.cfi_offset 22, -32
-	addi	s0,sp,80
+	addi	s0,sp,64
 	.cfi_def_cfa 8, 0
-	.loc 1 80 8
+	.loc 1 79 8
 	lbu	a4,1(a0)
 	li	a5,18
-	mv	s1,a0
-	.loc 1 80 5 is_stmt 1
-	.loc 1 80 8 is_stmt 0
+	mv	s2,a0
+	.loc 1 79 5 is_stmt 1
+	.loc 1 79 8 is_stmt 0
 	bleu	a4,a5,.L6
-.LVL13:
-	.loc 1 84 5 is_stmt 1
-	.loc 1 84 20 is_stmt 0
+	.loc 1 83 5 is_stmt 1
+	.loc 1 83 20 is_stmt 0
 	lw	s3,4(a0)
-.LVL14:
-	.loc 1 87 5 is_stmt 1
-	.loc 1 88 5
-	.loc 1 88 8 is_stmt 0
+.LVL13:
+	.loc 1 85 5 is_stmt 1
+	.loc 1 86 5
+	.loc 1 86 8 is_stmt 0
 	lbu	a5,1(s3)
 	lbu	a4,0(s3)
 	slli	a5,a5,8
@@ -186,197 +179,170 @@ adv_parse_cb:
 	bne	a5,a4,.L6
 	.loc 1 72 12
 	lb	s4,0(a1)
-	.loc 1 93 5 is_stmt 1
-	.loc 1 97 5
-	mv	s2,a1
-	.loc 1 97 9 is_stmt 0
+	.loc 1 90 5 is_stmt 1
+	.loc 1 94 5
+	mv	s1,a1
+	.loc 1 94 9 is_stmt 0
 	lui	a1,%hi(.LC1)
-.LVL15:
+.LVL14:
 	li	a2,11
 	addi	a1,a1,%lo(.LC1)
 	addi	a0,s3,2
+.LVL15:
 	call	memcmp
 .LVL16:
-	.loc 1 97 8
+	.loc 1 94 8
 	bne	a0,zero,.L6
-	.loc 1 102 5 is_stmt 1
-	.loc 1 102 8 is_stmt 0
-	lbu	a4,1(s1)
+	.loc 1 98 5 is_stmt 1
+	.loc 1 98 8 is_stmt 0
+	lbu	a4,1(s2)
 	li	a5,15
 	bleu	a4,a5,.L6
-	.loc 1 106 5 is_stmt 1
-	.loc 1 106 9 is_stmt 0
+	.loc 1 102 5 is_stmt 1
+	.loc 1 102 9 is_stmt 0
 	lui	a1,%hi(.LC2)
 	li	a2,3
 	addi	a1,a1,%lo(.LC2)
 	addi	a0,s3,13
 	call	memcmp
 .LVL17:
-	.loc 1 106 8
+	.loc 1 102 8
 	bne	a0,zero,.L6
-	.loc 1 111 5 is_stmt 1
-	.loc 1 112 5
-	.loc 1 116 26 is_stmt 0
+	.loc 1 106 5 is_stmt 1
+	.loc 1 107 5
+	.loc 1 109 26 is_stmt 0
 	lui	a5,%hi(.LANCHOR0)
 	addi	s5,a5,%lo(.LANCHOR0)
-	.loc 1 116 44
+	.loc 1 109 44
 	lbu	a4,0(s5)
-	.loc 1 117 61
-	addi	a1,s2,2
-	lui	s2,%hi(.LANCHOR2)
+	.loc 1 109 80
+	addi	a1,s1,2
+	lui	s1,%hi(.LANCHOR2)
 .LVL18:
-	.loc 1 112 13
-	lbu	s1,17(s3)
+	.loc 1 107 13
+	lbu	s2,17(s3)
 .LVL19:
-	.loc 1 113 5 is_stmt 1
-	.loc 1 116 4
+	.loc 1 108 5 is_stmt 1
+	.loc 1 109 4
 	addi	s6,a5,%lo(.LANCHOR0)
 	lui	s3,%hi(.LANCHOR1)
 .LVL20:
-	addi	s2,s2,%lo(.LANCHOR2)
-	.loc 1 116 44 is_stmt 0
+	addi	s1,s1,%lo(.LANCHOR2)
+	.loc 1 109 44 is_stmt 0
 	bne	a4,zero,.L7
 .LVL21:
 .L10:
 .LBB2:
-	.loc 1 122 9 is_stmt 1
+	.loc 1 111 9 is_stmt 1
 	li	a2,6
 	addi	a0,s3,%lo(.LANCHOR1)
 	sw	a1,-52(s0)
 	call	memcpy
 .LVL22:
-	.loc 1 124 9
-	.loc 1 129 9 is_stmt 0
+	.loc 1 112 9
+	.loc 1 115 9 is_stmt 0
 	lw	a1,-52(s0)
-	li	a2,6
-	.loc 1 124 27
+	.loc 1 112 27
 	li	s3,1
-	.loc 1 129 9
+	.loc 1 115 9
+	li	a2,6
 	addi	a0,s0,-40
-	.loc 1 124 27
+	.loc 1 112 27
 	sb	s3,0(s6)
-	.loc 1 125 9 is_stmt 1
-	.loc 1 125 31 is_stmt 0
-	sb	s1,0(s2)
-	.loc 1 128 9 is_stmt 1
-	.loc 1 129 9
+	.loc 1 113 9 is_stmt 1
+	.loc 1 113 31 is_stmt 0
+	sb	s2,0(s1)
+	.loc 1 114 9 is_stmt 1
+	.loc 1 115 9
 	call	memcpy
 .LVL23:
-	.loc 1 130 9
+	.loc 1 116 9
 	li	a1,6
 	addi	a0,s0,-40
 	call	ble_reverse_byte
 .LVL24:
-	.loc 1 132 9
-	lbu	a5,-36(s0)
-	lbu	a6,-35(s0)
-	lbu	a4,-37(s0)
-	lbu	a3,-38(s0)
-	lbu	a2,-39(s0)
-	lbu	a1,-40(s0)
-	lui	a0,%hi(.LC3)
-	sw	s1,0(sp)
-	mv	a7,s4
-	addi	a0,a0,%lo(.LC3)
-	call	printf
-.LVL25:
-	.loc 1 136 9
-	.loc 1 136 27 is_stmt 0
-	lui	a5,%hi(_impure_ptr)
-	lw	a5,%lo(_impure_ptr)(a5)
-	.loc 1 136 9
-	lw	a0,8(a5)
-	call	fflush
-.LVL26:
-	.loc 1 139 9 is_stmt 1
-	.loc 1 139 12 is_stmt 0
-	bne	s1,s3,.L23
-	.loc 1 140 13 is_stmt 1
+	.loc 1 119 9
+	.loc 1 119 12 is_stmt 0
+	bne	s2,s3,.L23
+	.loc 1 120 13 is_stmt 1
 	call	relay_on
-.LVL27:
+.LVL25:
 .L28:
 .LBE2:
-	.loc 1 170 11 is_stmt 0
+	.loc 1 144 11 is_stmt 0
 	li	a0,0
 	j	.L5
 .L7:
-	.loc 1 117 28 discriminator 1
+	.loc 1 109 47 discriminator 1
 	li	a2,6
 	addi	a0,s3,%lo(.LANCHOR1)
 	sw	a1,-52(s0)
 	call	memcmp
-.LVL28:
-	.loc 1 120 5 is_stmt 1 discriminator 1
-	.loc 1 120 8 is_stmt 0 discriminator 1
+.LVL26:
+	.loc 1 110 5 is_stmt 1 discriminator 1
+	.loc 1 110 8 is_stmt 0 discriminator 1
 	lbu	a5,0(s5)
 	lw	a1,-52(s0)
 	beq	a5,zero,.L10
-	.loc 1 120 28 discriminator 1
+	.loc 1 110 28 discriminator 1
 	bne	a0,zero,.L10
-	.loc 1 149 5 is_stmt 1
-	.loc 1 149 19 is_stmt 0
-	lbu	a1,0(s2)
-	.loc 1 149 8
-	beq	a1,s1,.L28
-	.loc 1 150 9 is_stmt 1
-	lui	a0,%hi(.LC4)
-.LVL29:
-	mv	a2,s1
-	addi	a0,a0,%lo(.LC4)
-	call	printf
-.LVL30:
-	.loc 1 154 9
-	.loc 1 154 12 is_stmt 0
+	.loc 1 128 5 is_stmt 1
+	.loc 1 128 8 is_stmt 0
+	lbu	a5,0(s1)
+	beq	a5,s2,.L28
+	.loc 1 130 9 is_stmt 1
+	.loc 1 130 12 is_stmt 0
 	li	a5,1
-	bne	s1,a5,.L14
-	.loc 1 155 13 is_stmt 1
+	bne	s2,a5,.L14
+	.loc 1 131 13 is_stmt 1
 	call	relay_on
-.LVL31:
-	.loc 1 156 13
-	lui	a0,%hi(.LC5)
-	addi	a0,a0,%lo(.LC5)
+.LVL27:
+	.loc 1 132 13
+	lui	a0,%hi(.LC3)
+	addi	a0,a0,%lo(.LC3)
 .L27:
-	.loc 1 159 13 is_stmt 0
+	.loc 1 135 13 is_stmt 0
 	call	printf
-.LVL32:
-	.loc 1 161 9 is_stmt 1
-	.loc 1 161 27 is_stmt 0
+.LVL28:
+	.loc 1 137 9 is_stmt 1
+	.loc 1 137 27 is_stmt 0
 	lui	a5,%hi(_impure_ptr)
 	lw	a5,%lo(_impure_ptr)(a5)
-	.loc 1 161 9
+	.loc 1 137 9
 	lw	a0,8(a5)
 	call	fflush
-.LVL33:
-	.loc 1 163 9 is_stmt 1
-	.loc 1 165 13 is_stmt 0
+.LVL29:
+	.loc 1 138 9 is_stmt 1
+	.loc 1 139 13 is_stmt 0
 	lui	a5,%hi(.LANCHOR3)
 	lw	a5,%lo(.LANCHOR3)(a5)
-	.loc 1 163 31
-	sb	s1,0(s2)
-	.loc 1 165 9 is_stmt 1
-	.loc 1 165 12 is_stmt 0
+	.loc 1 138 31
+	sb	s2,0(s1)
+	.loc 1 139 9 is_stmt 1
+	.loc 1 139 12 is_stmt 0
 	beq	a5,zero,.L28
-	.loc 1 166 13 is_stmt 1
+	.loc 1 140 13 is_stmt 1
 	mv	a1,s4
-	mv	a0,s1
+	mv	a0,s2
 	jalr	a5
-.LVL34:
+.LVL30:
 	j	.L28
 .L23:
 .LBB3:
-	.loc 1 142 13
+	.loc 1 122 13
 	call	relay_off
-.LVL35:
-	.loc 1 145 9
+.LVL31:
+	.loc 1 125 9
 	j	.L28
+.LVL32:
 .L14:
 .LBE3:
-	.loc 1 158 13
+	.loc 1 134 13
 	call	relay_off
-.LVL36:
-	.loc 1 159 13
-	lui	a0,%hi(.LC6)
-	addi	a0,a0,%lo(.LC6)
+.LVL33:
+	.loc 1 135 13
+	lui	a0,%hi(.LC4)
+	addi	a0,a0,%lo(.LC4)
 	j	.L27
 	.cfi_endproc
 .LFE68:
@@ -386,14 +352,14 @@ adv_parse_cb:
 	.type	ble_master_uart_task, @function
 ble_master_uart_task:
 .LFB71:
-	.loc 1 219 1
+	.loc 1 188 1
 	.cfi_startproc
-.LVL37:
-	.loc 1 220 5
-	.loc 1 221 5
-	.loc 1 223 5
-	.loc 1 225 5
-	.loc 1 219 1 is_stmt 0
+.LVL34:
+	.loc 1 189 5
+	.loc 1 190 5
+	.loc 1 192 5
+	.loc 1 194 5
+	.loc 1 188 1 is_stmt 0
 	addi	sp,sp,-288
 	.cfi_def_cfa_offset 288
 	sw	s0,280(sp)
@@ -412,31 +378,31 @@ ble_master_uart_task:
 	.cfi_offset 1, -4
 	addi	s0,sp,288
 	.cfi_def_cfa 8, 0
-	.loc 1 225 12
+	.loc 1 194 12
 	lui	s3,%hi(.LANCHOR5)
-	.loc 1 225 51
+	.loc 1 194 51
 	lui	s2,%hi(.LANCHOR6)
-	.loc 1 225 33
+	.loc 1 194 33
 	li	s1,1
-	.loc 1 226 15
+	.loc 1 195 15
 	lui	s4,%hi(.LANCHOR4)
-	.loc 1 229 40
+	.loc 1 198 40
 	lui	s5,%hi(bleuart_connect_status)
-.LVL38:
+.LVL35:
 .L30:
-	.loc 1 225 11 is_stmt 1
+	.loc 1 194 11 is_stmt 1
 	lbu	a5,%lo(.LANCHOR5)(s3)
 	beq	a5,zero,.L32
-	.loc 1 225 33 is_stmt 0 discriminator 1
+	.loc 1 194 33 is_stmt 0 discriminator 1
 	lw	a5,%lo(.LANCHOR6)(s2)
 	beq	a5,s1,.L33
 .L32:
-	.loc 1 242 5 is_stmt 1
-	.loc 1 243 5
+	.loc 1 211 5 is_stmt 1
+	.loc 1 212 5
 	li	a0,0
 	call	vTaskDelete
-.LVL39:
-	.loc 1 244 1 is_stmt 0
+.LVL36:
+	.loc 1 213 1 is_stmt 0
 	lw	ra,284(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -458,54 +424,50 @@ ble_master_uart_task:
 	jr	ra
 .L33:
 	.cfi_restore_state
-	.loc 1 226 9 is_stmt 1
-	.loc 1 226 15 is_stmt 0
+	.loc 1 195 9 is_stmt 1
+	.loc 1 195 15 is_stmt 0
 	li	a2,250
 	addi	a1,s0,-284
 	addi	a0,s4,%lo(.LANCHOR4)
 	call	hosal_uart_receive
-.LVL40:
-	.loc 1 228 9 is_stmt 1
-	.loc 1 228 12 is_stmt 0
+.LVL37:
+	.loc 1 197 9 is_stmt 1
+	.loc 1 197 12 is_stmt 0
 	ble	a0,zero,.L31
-	.loc 1 229 13 is_stmt 1
-	.loc 1 229 16 is_stmt 0
+	.loc 1 198 13 is_stmt 1
+	.loc 1 198 16 is_stmt 0
 	lbu	a5,%lo(bleuart_connect_status)(s5)
 	bne	a5,s1,.L31
-	.loc 1 230 17 is_stmt 1
-	.loc 1 230 23 is_stmt 0
+	.loc 1 199 17 is_stmt 1
+	.loc 1 199 23 is_stmt 0
 	slli	a0,a0,16
-.LVL41:
+.LVL38:
 	addi	a1,s0,-284
 	srli	a0,a0,16
 	call	axk_HalBleCentralTTWrite
-.LVL42:
-	.loc 1 231 17 is_stmt 1
-	.loc 1 232 21
+.LVL39:
+	.loc 1 200 17 is_stmt 1
+	.loc 1 201 21
 .L31:
-	.loc 1 235 17
-	.loc 1 239 9
+	.loc 1 204 17
+	.loc 1 208 9
 	li	a0,100
 	call	vTaskDelay
-.LVL43:
+.LVL40:
 	j	.L30
 	.cfi_endproc
 .LFE71:
 	.size	ble_master_uart_task, .-ble_master_uart_task
-	.section	.rodata.ble_master_scan_adv_task.str1.4,"aMS",@progbits,1
-	.align	2
-.LC7:
-	.string	"[BLE_MASTER] ERROR: Scan start failed: %d\r\n"
 	.section	.text.ble_master_scan_adv_task,"ax",@progbits
 	.align	1
 	.type	ble_master_scan_adv_task, @function
 ble_master_scan_adv_task:
 .LFB70:
-	.loc 1 192 1
+	.loc 1 163 1
 	.cfi_startproc
-.LVL44:
-	.loc 1 193 5
-	.loc 1 192 1 is_stmt 0
+.LVL41:
+	.loc 1 164 5
+	.loc 1 163 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -516,79 +478,56 @@ ble_master_scan_adv_task:
 	.cfi_def_cfa 8, 0
 	sw	s1,20(sp)
 	sw	s2,16(sp)
-	.loc 1 193 29
+	.loc 1 164 29
 	lui	a5,%hi(.LC0)
-	.loc 1 192 1
+	.loc 1 163 1
 	.cfi_offset 9, -12
 	.cfi_offset 18, -16
-	.loc 1 193 29
+	.loc 1 164 29
 	addi	a5,a5,%lo(.LC0)
 	lw	a4,0(a5)
 	lhu	a5,4(a5)
-	.loc 1 200 15
+	.loc 1 171 15
 	lui	a1,%hi(scan_adv_device_found)
 	addi	a1,a1,%lo(scan_adv_device_found)
 	addi	a0,s0,-24
-.LVL45:
-	.loc 1 193 29
+.LVL42:
+	.loc 1 164 29
 	sw	a4,-24(s0)
 	sh	a5,-20(s0)
-	.loc 1 200 5 is_stmt 1
-	.loc 1 200 15 is_stmt 0
+	.loc 1 171 5 is_stmt 1
+	.loc 1 171 15 is_stmt 0
 	call	bt_le_scan_start
-.LVL46:
-	.loc 1 201 5 is_stmt 1
-	.loc 1 201 8 is_stmt 0
-	bne	a0,zero,.L48
+.LVL43:
+	.loc 1 172 5 is_stmt 1
+	.loc 1 172 8 is_stmt 0
+	bne	a0,zero,.L50
 .LBB6:
 .LBB7:
-	.loc 1 208 12
+	.loc 1 177 12
 	lui	s2,%hi(.LANCHOR5)
-	.loc 1 208 51
+	.loc 1 177 51
 	lui	s1,%hi(.LANCHOR6)
-.LVL47:
+.LVL44:
 .L39:
-	.loc 1 208 11 is_stmt 1
+	.loc 1 177 11 is_stmt 1
 	lbu	a5,%lo(.LANCHOR5)(s2)
 	beq	a5,zero,.L41
-	.loc 1 208 33 is_stmt 0
+	.loc 1 177 33 is_stmt 0
 	lw	a5,%lo(.LANCHOR6)(s1)
 	beq	a5,zero,.L42
 .L41:
-	.loc 1 213 5 is_stmt 1
+	.loc 1 182 5 is_stmt 1
 	call	bt_le_scan_stop
-.LVL48:
-	j	.L50
-.LVL49:
-.L48:
-	mv	a1,a0
-.LBE7:
-.LBE6:
-	.loc 1 202 9
-	lui	a0,%hi(.LC7)
-.LVL50:
-	addi	a0,a0,%lo(.LC7)
-	call	printf
-.LVL51:
-	.loc 1 203 9
-	.loc 1 203 27 is_stmt 0
-	lui	a5,%hi(_impure_ptr)
-	lw	a5,%lo(_impure_ptr)(a5)
-	.loc 1 203 9
-	lw	a0,8(a5)
-	call	fflush
-.LVL52:
-	.loc 1 204 9 is_stmt 1
+.LVL45:
 .L50:
-.LBB10:
-.LBB8:
-	.loc 1 215 5
+	.loc 1 184 5
 	li	a0,0
 	call	vTaskDelete
-.LVL53:
-.LBE8:
-.LBE10:
-	.loc 1 216 1 is_stmt 0
+.LVL46:
+.LBE7:
+.LBE6:
+	.loc 1 185 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -604,15 +543,15 @@ ble_master_scan_adv_task:
 	jr	ra
 .L42:
 	.cfi_restore_state
-.LBB11:
 .LBB9:
-	.loc 1 210 9 is_stmt 1
+.LBB8:
+	.loc 1 179 9 is_stmt 1
 	li	a0,2000
 	call	vTaskDelay
-.LVL54:
+.LVL47:
 	j	.L39
+.LBE8:
 .LBE9:
-.LBE11:
 	.cfi_endproc
 .LFE70:
 	.size	ble_master_scan_adv_task, .-ble_master_scan_adv_task
@@ -624,7 +563,7 @@ bleuart_printf:
 .LFB67:
 	.loc 1 37 1
 	.cfi_startproc
-.LVL55:
+.LVL48:
 	.loc 1 38 5
 	.loc 1 37 1 is_stmt 0
 	addi	sp,sp,-32
@@ -641,7 +580,7 @@ bleuart_printf:
 	.loc 1 39 9 is_stmt 1
 	.loc 1 39 45 is_stmt 0
 	call	strlen
-.LVL56:
+.LVL49:
 	.loc 1 39 9
 	lw	a1,-20(s0)
 	.loc 1 41 1
@@ -649,7 +588,7 @@ bleuart_printf:
 	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 32
-.LVL57:
+.LVL50:
 	lw	ra,28(sp)
 	.cfi_restore 1
 	.loc 1 39 45
@@ -664,7 +603,7 @@ bleuart_printf:
 	.cfi_def_cfa_offset 0
 	.loc 1 39 9
 	tail	hosal_uart_send
-.LVL58:
+.LVL51:
 .L51:
 	.cfi_restore_state
 	.loc 1 41 1
@@ -685,10 +624,10 @@ bleuart_printf:
 	.type	app_ble_master_init, @function
 app_ble_master_init:
 .LFB72:
-	.loc 1 247 1 is_stmt 1
+	.loc 1 216 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 248 5
-	.loc 1 247 1 is_stmt 0
+	.loc 1 217 5
+	.loc 1 216 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -697,27 +636,27 @@ app_ble_master_init:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 248 5
+	.loc 1 217 5
 	lui	a0,%hi(.LANCHOR1)
-	.loc 1 247 1
-	.loc 1 248 5
+	.loc 1 216 1
+	.loc 1 217 5
 	li	a2,6
 	li	a1,0
 	addi	a0,a0,%lo(.LANCHOR1)
 	call	memset
-.LVL59:
-	.loc 1 249 5 is_stmt 1
-	.loc 1 252 1 is_stmt 0
+.LVL52:
+	.loc 1 218 5 is_stmt 1
+	.loc 1 221 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 249 23
+	.loc 1 218 23
 	lui	a5,%hi(.LANCHOR0)
 	sb	zero,%lo(.LANCHOR0)(a5)
-	.loc 1 251 5 is_stmt 1
-	.loc 1 252 1 is_stmt 0
+	.loc 1 220 5 is_stmt 1
+	.loc 1 221 1 is_stmt 0
 	li	a0,0
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
@@ -727,10 +666,7 @@ app_ble_master_init:
 	.size	app_ble_master_init, .-app_ble_master_init
 	.section	.rodata.app_ble_master_start.str1.4,"aMS",@progbits,1
 	.align	2
-.LC8:
-	.string	"[BLE_MASTER] ERROR: BLE stack not enabled after timeout!\r\n"
-	.align	2
-.LC9:
+.LC5:
 	.string	"ble_scan_adv"
 	.section	.text.app_ble_master_start,"ax",@progbits
 	.align	1
@@ -738,94 +674,123 @@ app_ble_master_init:
 	.type	app_ble_master_start, @function
 app_ble_master_start:
 .LFB73:
-	.loc 1 255 1 is_stmt 1
+	.loc 1 224 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 256 5
-	.loc 1 256 9 is_stmt 0
-	lui	a5,%hi(.LANCHOR5)
-	.loc 1 256 8
-	lbu	a4,%lo(.LANCHOR5)(a5)
-	.loc 1 257 16
-	li	a0,0
-	.loc 1 256 8
-	bne	a4,zero,.L65
-	.loc 1 255 1
+	.loc 1 225 5
+	.loc 1 224 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
-	sw	s1,20(sp)
 	sw	s3,12(sp)
 	sw	ra,28(sp)
+	sw	s1,20(sp)
 	sw	s2,16(sp)
 	.cfi_offset 8, -8
-	.cfi_offset 9, -12
 	.cfi_offset 19, -20
 	.cfi_offset 1, -4
+	.cfi_offset 9, -12
 	.cfi_offset 18, -16
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
+	.loc 1 225 9
+	lui	a5,%hi(.LANCHOR5)
+	.loc 1 224 1
+	.loc 1 225 8
+	lbu	a4,%lo(.LANCHOR5)(a5)
 	addi	s3,a5,%lo(.LANCHOR5)
-	.loc 1 259 5 is_stmt 1
-	.loc 1 259 28 is_stmt 0
+	.loc 1 226 16
+	li	a5,0
+	.loc 1 225 8
+	bne	a4,zero,.L56
+	.loc 1 228 5 is_stmt 1
+	.loc 1 228 28 is_stmt 0
 	call	wifi_if_is_connected
-.LVL60:
-	.loc 1 259 26
+.LVL53:
+	.loc 1 228 26
 	lui	a5,%hi(.LANCHOR7)
 	sb	a0,%lo(.LANCHOR7)(a5)
-	.loc 1 261 5 is_stmt 1
-	.loc 1 261 9 is_stmt 0
+	.loc 1 230 5 is_stmt 1
+	.loc 1 230 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR8)
-	.loc 1 261 8
+	.loc 1 230 8
 	lbu	a4,%lo(.LANCHOR8)(a5)
 	addi	s1,a5,%lo(.LANCHOR8)
 	bne	a4,zero,.L58
-.LBB12:
-	.loc 1 262 9 is_stmt 1
+.LBB10:
+	.loc 1 231 9 is_stmt 1
 	call	ble_stack_start
-.LVL61:
-	.loc 1 264 9
-	.loc 1 265 9
-	.loc 1 265 15 is_stmt 0
+.LVL54:
+	.loc 1 233 9
+	.loc 1 234 9
+	.loc 1 234 15 is_stmt 0
 	li	s2,151
-.LVL62:
+.LVL55:
 .L59:
-	.loc 1 265 15 is_stmt 1
-	.loc 1 265 17 is_stmt 0
+	.loc 1 234 15 is_stmt 1
+	.loc 1 234 17 is_stmt 0
 	call	ble_is_enabled
-.LVL63:
-	.loc 1 265 15
+.LVL56:
+	.loc 1 234 15
 	bne	a0,zero,.L60
-	.loc 1 265 34 discriminator 1
+	.loc 1 234 34 discriminator 1
 	addi	s2,s2,-1
-.LVL64:
+.LVL57:
 	bne	s2,zero,.L61
-.LVL65:
+.LVL58:
 .L60:
-	.loc 1 270 9 is_stmt 1
-	.loc 1 270 14 is_stmt 0
+	.loc 1 239 9 is_stmt 1
+	.loc 1 239 14 is_stmt 0
 	call	ble_is_enabled
-.LVL66:
-	.loc 1 270 12
-	bne	a0,zero,.L62
-	.loc 1 271 13 is_stmt 1
-	lui	a0,%hi(.LC8)
-	addi	a0,a0,%lo(.LC8)
-	call	printf
-.LVL67:
-	.loc 1 272 13
-	.loc 1 272 31 is_stmt 0
-	lui	a5,%hi(_impure_ptr)
-	lw	a5,%lo(_impure_ptr)(a5)
-	.loc 1 272 13
-	lw	a0,8(a5)
-	call	fflush
-.LVL68:
-	.loc 1 273 13 is_stmt 1
-	.loc 1 273 20 is_stmt 0
-	li	a0,-1
+.LVL59:
+	.loc 1 240 20
+	li	a5,-1
+	.loc 1 239 12
+	beq	a0,zero,.L56
+	.loc 1 243 9 is_stmt 1
+	.loc 1 243 36 is_stmt 0
+	li	a5,1
+	sb	a5,0(s1)
+.L58:
+.LBE10:
+	.loc 1 246 5 is_stmt 1
+	.loc 1 247 5 is_stmt 0
+	lui	a0,%hi(.LANCHOR1)
+	.loc 1 246 23
+	lui	a5,%hi(.LANCHOR0)
+	.loc 1 247 5
+	li	a2,6
+	li	a1,0
+	addi	a0,a0,%lo(.LANCHOR1)
+	.loc 1 246 23
+	sb	zero,%lo(.LANCHOR0)(a5)
+	.loc 1 247 5 is_stmt 1
+	call	memset
+.LVL60:
+	.loc 1 248 5
+	.loc 1 248 20 is_stmt 0
+	lui	a5,%hi(.LANCHOR6)
+	sw	zero,%lo(.LANCHOR6)(a5)
+	.loc 1 249 5 is_stmt 1
+	.loc 1 249 26 is_stmt 0
+	li	a5,1
+	sb	a5,0(s3)
+	.loc 1 251 5 is_stmt 1
+	lui	a1,%hi(.LC5)
+	lui	a5,%hi(.LANCHOR9)
+	lui	a0,%hi(ble_master_scan_adv_task)
+	addi	a5,a5,%lo(.LANCHOR9)
+	li	a4,10
+	li	a3,0
+	li	a2,1024
+	addi	a1,a1,%lo(.LC5)
+	addi	a0,a0,%lo(ble_master_scan_adv_task)
+	call	xTaskCreate
+.LVL61:
+	.loc 1 252 5
+	.loc 1 252 12 is_stmt 0
+	li	a5,0
 .L56:
-.LBE12:
-	.loc 1 290 1
+	.loc 1 253 1
 	lw	ra,28(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -838,83 +803,30 @@ app_ble_master_start:
 	.cfi_restore 18
 	lw	s3,12(sp)
 	.cfi_restore 19
+	mv	a0,a5
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL69:
+.LVL62:
 .L61:
 	.cfi_restore_state
-.LBB13:
-	.loc 1 266 13 is_stmt 1
+.LBB11:
+	.loc 1 235 13 is_stmt 1
 	li	a0,100
 	call	aos_msleep
-.LVL70:
-	.loc 1 267 13
+.LVL63:
+	.loc 1 236 13
 	j	.L59
-.LVL71:
-.L62:
-	.loc 1 276 9
-	.loc 1 276 36 is_stmt 0
-	li	a5,1
-	sb	a5,0(s1)
-.L58:
-.LBE13:
-	.loc 1 279 5 is_stmt 1
-	.loc 1 280 5 is_stmt 0
-	lui	a0,%hi(.LANCHOR1)
-	.loc 1 279 23
-	lui	a5,%hi(.LANCHOR0)
-	.loc 1 280 5
-	li	a2,6
-	li	a1,0
-	addi	a0,a0,%lo(.LANCHOR1)
-	.loc 1 279 23
-	sb	zero,%lo(.LANCHOR0)(a5)
-	.loc 1 280 5 is_stmt 1
-	call	memset
-.LVL72:
-	.loc 1 283 5
-	.loc 1 283 20 is_stmt 0
-	lui	a5,%hi(.LANCHOR6)
-	sw	zero,%lo(.LANCHOR6)(a5)
-	.loc 1 284 5 is_stmt 1
-	.loc 1 284 26 is_stmt 0
-	li	a5,1
-	sb	a5,0(s3)
-	.loc 1 286 5 is_stmt 1
-	lui	a1,%hi(.LC9)
-	lui	a5,%hi(.LANCHOR9)
-	lui	a0,%hi(ble_master_scan_adv_task)
-	addi	a5,a5,%lo(.LANCHOR9)
-	li	a4,10
-	li	a3,0
-	li	a2,1024
-	addi	a1,a1,%lo(.LC9)
-	addi	a0,a0,%lo(ble_master_scan_adv_task)
-	call	xTaskCreate
-.LVL73:
-	.loc 1 289 5
-	.loc 1 289 12 is_stmt 0
-	li	a0,0
-	j	.L56
-.L65:
-	.cfi_def_cfa_register 2
-	.cfi_restore 1
-	.cfi_restore 8
-	.cfi_restore 9
-	.cfi_restore 18
-	.cfi_restore 19
-	.loc 1 290 1
-	ret
+.LBE11:
 	.cfi_endproc
 .LFE73:
 	.size	app_ble_master_start, .-app_ble_master_start
 	.section	.rodata.app_ble_master_connect.str1.4,"aMS",@progbits,1
 	.align	2
-.LC10:
+.LC6:
 	.string	"[BLE_MASTER] Connection failed, ret=%d\r\n"
 	.align	2
-.LC11:
+.LC7:
 	.string	"ble_uart"
 	.section	.text.app_ble_master_connect,"ax",@progbits
 	.align	1
@@ -922,15 +834,15 @@ app_ble_master_start:
 	.type	app_ble_master_connect, @function
 app_ble_master_connect:
 .LFB74:
-	.loc 1 293 1 is_stmt 1
+	.loc 1 256 1
 	.cfi_startproc
-.LVL74:
-	.loc 1 294 5
-	.loc 1 294 8 is_stmt 0
+.LVL64:
+	.loc 1 257 5
+	.loc 1 257 8 is_stmt 0
 	lui	a5,%hi(.LANCHOR5)
 	lbu	a5,%lo(.LANCHOR5)(a5)
-	beq	a5,zero,.L76
-	.loc 1 293 1
+	beq	a5,zero,.L73
+	.loc 1 256 1
 	addi	sp,sp,-48
 	.cfi_def_cfa_offset 48
 	sw	s0,40(sp)
@@ -949,191 +861,189 @@ app_ble_master_connect:
 	.cfi_offset 21, -28
 	addi	s0,sp,48
 	.cfi_def_cfa 8, 0
-	.loc 1 299 24
+	.loc 1 262 24
 	lui	s1,%hi(.LANCHOR6)
-	.loc 1 293 1
-	.loc 1 299 8
+	.loc 1 256 1
+	.loc 1 262 8
 	lw	a5,%lo(.LANCHOR6)(s1)
 	li	s3,1
 	mv	a1,a0
-	.loc 1 299 5 is_stmt 1
+	.loc 1 262 5 is_stmt 1
 	addi	s1,s1,%lo(.LANCHOR6)
-	.loc 1 301 16 is_stmt 0
+	.loc 1 263 16 is_stmt 0
 	li	a0,0
-.LVL75:
-	.loc 1 299 8
-	beq	a5,s3,.L68
-	.loc 1 305 5 is_stmt 1
+.LVL65:
+	.loc 1 262 8
+	beq	a5,s3,.L65
+	.loc 1 267 5 is_stmt 1
 	lui	s2,%hi(.LANCHOR0)
 	addi	s2,s2,%lo(.LANCHOR0)
-	.loc 1 305 8 is_stmt 0
-	beq	a1,zero,.L70
-	.loc 1 306 9 is_stmt 1
+	.loc 1 267 8 is_stmt 0
+	beq	a1,zero,.L67
+	.loc 1 268 9 is_stmt 1
 	lui	a0,%hi(.LANCHOR1)
 	li	a2,6
 	addi	a0,a0,%lo(.LANCHOR1)
 	call	memcpy
-.LVL76:
-	.loc 1 307 9
-	.loc 1 307 27 is_stmt 0
+.LVL66:
+	.loc 1 269 9
+	.loc 1 269 27 is_stmt 0
 	sb	s3,0(s2)
-	.loc 1 308 9 is_stmt 1
-	.loc 1 312 5
-.L71:
-	.loc 1 318 5
-	.loc 1 319 5
+	.loc 1 272 5 is_stmt 1
+.L68:
+	.loc 1 276 5
+	.loc 1 277 5
 	lui	s2,%hi(.LANCHOR1)
 	li	a2,6
 	addi	a1,s2,%lo(.LANCHOR1)
 	addi	a0,s0,-48
 	call	memcpy
-.LVL77:
-	.loc 1 320 5
+.LVL67:
+	.loc 1 278 5
 	addi	a0,s0,-48
 	li	a1,6
 	call	ble_reverse_byte
-.LVL78:
-	.loc 1 322 5
-	.loc 1 322 9 is_stmt 0
+.LVL68:
+	.loc 1 280 5
+	.loc 1 280 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR9)
 	addi	s3,a5,%lo(.LANCHOR9)
 	lw	a0,0(s3)
 	mv	s5,a5
-	.loc 1 322 8
-	beq	a0,zero,.L72
-	.loc 1 323 9 is_stmt 1
+	.loc 1 280 8
+	beq	a0,zero,.L69
+	.loc 1 281 9 is_stmt 1
 	call	vTaskDelete
-.LVL79:
-	.loc 1 324 9
-	.loc 1 324 32 is_stmt 0
+.LVL69:
+	.loc 1 282 9
+	.loc 1 282 32 is_stmt 0
 	sw	zero,0(s3)
-.L72:
-	.loc 1 327 5 is_stmt 1
+.L69:
+	.loc 1 285 5 is_stmt 1
 	call	bt_le_scan_stop
-.LVL80:
-	.loc 1 328 5
+.LVL70:
+	.loc 1 286 5
 	li	a0,500
-	.loc 1 332 9 is_stmt 0
+	.loc 1 290 9 is_stmt 0
 	lui	s3,%hi(.LANCHOR10)
-	.loc 1 328 5
+	.loc 1 286 5
 	call	aos_msleep
-.LVL81:
-	.loc 1 330 5 is_stmt 1
-	.loc 1 332 9 is_stmt 0
+.LVL71:
+	.loc 1 288 5 is_stmt 1
+	.loc 1 290 9 is_stmt 0
 	addi	s3,s3,%lo(.LANCHOR10)
-	.loc 1 332 8
+	.loc 1 290 8
 	lbu	a5,0(s3)
-	.loc 1 330 20
+	.loc 1 288 20
 	li	s4,1
 	sw	s4,0(s1)
-	.loc 1 332 5 is_stmt 1
-	.loc 1 332 8 is_stmt 0
-	bne	a5,zero,.L73
-.LBB14:
-	.loc 1 333 9 is_stmt 1
-	.loc 1 334 9
-	.loc 1 334 19 is_stmt 0
+	.loc 1 290 5 is_stmt 1
+	.loc 1 290 8 is_stmt 0
+	bne	a5,zero,.L70
+.LBB12:
+	.loc 1 291 9 is_stmt 1
+	.loc 1 292 9
+	.loc 1 292 19 is_stmt 0
 	call	ble_master_init
-.LVL82:
-	.loc 1 335 9 is_stmt 1
-	.loc 1 335 12 is_stmt 0
-	bne	a0,zero,.L74
-	.loc 1 336 13 is_stmt 1
-	.loc 1 336 35 is_stmt 0
+.LVL72:
+	.loc 1 293 9 is_stmt 1
+	.loc 1 293 12 is_stmt 0
+	bne	a0,zero,.L71
+	.loc 1 294 13 is_stmt 1
+	.loc 1 294 35 is_stmt 0
 	sb	s4,0(s3)
-.L74:
-	.loc 1 339 9 is_stmt 1
-	.loc 1 340 9
+.L71:
+	.loc 1 297 9 is_stmt 1
+	.loc 1 298 9
 	call	axk_HalBleRegisterCallbacks
-.LVL83:
-.L73:
-.LBE14:
-	.loc 1 343 5
-	.loc 1 344 5
+.LVL73:
+.L70:
+.LBE12:
+	.loc 1 301 5
+	.loc 1 302 5
 	li	a2,6
 	addi	a1,s2,%lo(.LANCHOR1)
 	addi	a0,s0,-40
 	call	memcpy
-.LVL84:
-	.loc 1 345 5
+.LVL74:
+	.loc 1 303 5
 	li	a1,6
 	addi	a0,s0,-40
 	call	ble_reverse_byte
-.LVL85:
-	.loc 1 347 5
-	.loc 1 347 19 is_stmt 0
+.LVL75:
+	.loc 1 305 5
+	.loc 1 305 19 is_stmt 0
 	li	a1,0
 	li	a2,0
 	addi	a0,s0,-40
 	call	axk_HalBleCentralConnect
-.LVL86:
-	.loc 1 349 8
+.LVL76:
+	.loc 1 307 8
 	li	a5,1
-	.loc 1 347 19
+	.loc 1 305 19
 	mv	a1,a0
-.LVL87:
-	.loc 1 349 5 is_stmt 1
-	.loc 1 349 8 is_stmt 0
-	bleu	a0,a5,.L75
-	.loc 1 350 9 is_stmt 1
-	lui	a0,%hi(.LC10)
-.LVL88:
-	addi	a0,a0,%lo(.LC10)
+.LVL77:
+	.loc 1 307 5 is_stmt 1
+	.loc 1 307 8 is_stmt 0
+	bleu	a0,a5,.L72
+	.loc 1 308 9 is_stmt 1
+	lui	a0,%hi(.LC6)
+.LVL78:
+	addi	a0,a0,%lo(.LC6)
 	call	printf
-.LVL89:
-	.loc 1 351 9
-	.loc 1 351 27 is_stmt 0
+.LVL79:
+	.loc 1 309 9
+	.loc 1 309 27 is_stmt 0
 	lui	a5,%hi(_impure_ptr)
 	lw	a5,%lo(_impure_ptr)(a5)
-	.loc 1 351 9
+	.loc 1 309 9
 	lw	a0,8(a5)
 	call	fflush
-.LVL90:
-	.loc 1 353 9 is_stmt 1
-	.loc 1 354 9 is_stmt 0
-	lui	a1,%hi(.LC9)
+.LVL80:
+	.loc 1 311 9 is_stmt 1
+	.loc 1 312 9 is_stmt 0
+	lui	a1,%hi(.LC5)
 	lui	a0,%hi(ble_master_scan_adv_task)
 	addi	a5,s5,%lo(.LANCHOR9)
 	li	a4,14
 	li	a3,0
 	li	a2,1024
-	addi	a1,a1,%lo(.LC9)
+	addi	a1,a1,%lo(.LC5)
 	addi	a0,a0,%lo(ble_master_scan_adv_task)
-	.loc 1 353 24
+	.loc 1 311 24
 	sw	zero,0(s1)
-	.loc 1 354 9 is_stmt 1
+	.loc 1 312 9 is_stmt 1
 	call	xTaskCreate
-.LVL91:
-.L75:
-	.loc 1 365 5
+.LVL81:
+.L72:
+	.loc 1 314 5
 	lui	a5,%hi(.LANCHOR11)
-	lui	a1,%hi(.LC11)
+	lui	a1,%hi(.LC7)
 	lui	a0,%hi(ble_master_uart_task)
 	addi	a5,a5,%lo(.LANCHOR11)
 	li	a4,15
 	li	a3,0
 	li	a2,1024
-	addi	a1,a1,%lo(.LC11)
+	addi	a1,a1,%lo(.LC7)
 	addi	a0,a0,%lo(ble_master_uart_task)
 	call	xTaskCreate
-.LVL92:
-	.loc 1 368 5
-	.loc 1 368 12 is_stmt 0
+.LVL82:
+	.loc 1 315 5
+	.loc 1 315 12 is_stmt 0
 	li	a0,0
-	j	.L68
-.LVL93:
-.L70:
-	.loc 1 308 9 is_stmt 1
-	.loc 1 312 5
-	.loc 1 312 8 is_stmt 0
+	j	.L65
+.LVL83:
+.L67:
+	.loc 1 272 5 is_stmt 1
+	.loc 1 272 8 is_stmt 0
 	lbu	a5,0(s2)
-	.loc 1 296 16
+	.loc 1 259 16
 	li	a0,-1
-	.loc 1 312 8
-	bne	a5,zero,.L71
-.LVL94:
-.L68:
-	.loc 1 369 1
+	.loc 1 272 8
+	bne	a5,zero,.L68
+.LVL84:
+.L65:
+	.loc 1 316 1
 	lw	ra,44(sp)
 	.cfi_restore 1
 	lw	s0,40(sp)
@@ -1152,12 +1062,12 @@ app_ble_master_connect:
 	addi	sp,sp,48
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL95:
-.L76:
-	.loc 1 296 16
+.LVL85:
+.L73:
+	.loc 1 259 16
 	li	a0,-1
-.LVL96:
-	.loc 1 369 1
+.LVL86:
+	.loc 1 316 1
 	ret
 	.cfi_endproc
 .LFE74:
@@ -1168,15 +1078,15 @@ app_ble_master_connect:
 	.type	app_ble_master_disconnect, @function
 app_ble_master_disconnect:
 .LFB75:
-	.loc 1 372 1 is_stmt 1
+	.loc 1 319 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 373 5
-	.loc 1 373 8 is_stmt 0
+	.loc 1 320 5
+	.loc 1 320 8 is_stmt 0
 	lui	a5,%hi(.LANCHOR5)
 	lbu	a5,%lo(.LANCHOR5)(a5)
-	beq	a5,zero,.L100
-	.loc 1 377 5 is_stmt 1
-	.loc 1 372 1 is_stmt 0
+	beq	a5,zero,.L97
+	.loc 1 324 5 is_stmt 1
+	.loc 1 319 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -1189,72 +1099,72 @@ app_ble_master_disconnect:
 	.cfi_offset 18, -16
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 377 24
+	.loc 1 324 24
 	lui	a5,%hi(.LANCHOR6)
-	.loc 1 372 1
-	.loc 1 377 8
+	.loc 1 319 1
+	.loc 1 324 8
 	lw	a3,%lo(.LANCHOR6)(a5)
 	li	a4,1
 	addi	s1,a5,%lo(.LANCHOR6)
-	bne	a3,a4,.L87
-	.loc 1 382 5 is_stmt 1
-	.loc 1 385 5
-	.loc 1 385 15 is_stmt 0
+	bne	a3,a4,.L84
+	.loc 1 329 5 is_stmt 1
+	.loc 1 332 5
+	.loc 1 332 15 is_stmt 0
 	lui	a5,%hi(pconn)
 	lw	a0,%lo(pconn)(a5)
-	.loc 1 385 8
-	beq	a0,zero,.L88
-	.loc 1 386 9 is_stmt 1
+	.loc 1 332 8
+	beq	a0,zero,.L85
+	.loc 1 333 9 is_stmt 1
 	li	a1,19
 	call	bt_conn_disconnect
-.LVL97:
-	.loc 1 387 9
+.LVL87:
+	.loc 1 334 9
 	li	a0,500
 	call	aos_msleep
-.LVL98:
-.L88:
-	.loc 1 391 5
+.LVL88:
+.L85:
+	.loc 1 338 5
 	call	bt_le_scan_stop
-.LVL99:
-	.loc 1 394 5
-	.loc 1 397 9 is_stmt 0
+.LVL89:
+	.loc 1 341 5
+	.loc 1 344 9 is_stmt 0
 	lui	s2,%hi(.LANCHOR11)
-	.loc 1 394 5
+	.loc 1 341 5
 	call	ble_master_deinit
-.LVL100:
-	.loc 1 397 5 is_stmt 1
-	.loc 1 397 9 is_stmt 0
+.LVL90:
+	.loc 1 344 5 is_stmt 1
+	.loc 1 344 9 is_stmt 0
 	addi	s2,s2,%lo(.LANCHOR11)
 	lw	a0,0(s2)
-	.loc 1 397 8
-	beq	a0,zero,.L89
-	.loc 1 398 9 is_stmt 1
+	.loc 1 344 8
+	beq	a0,zero,.L86
+	.loc 1 345 9 is_stmt 1
 	call	vTaskDelete
-.LVL101:
-	.loc 1 399 9
-	.loc 1 399 32 is_stmt 0
+.LVL91:
+	.loc 1 346 9
+	.loc 1 346 32 is_stmt 0
 	sw	zero,0(s2)
-.L89:
-	.loc 1 403 5 is_stmt 1
-	.loc 1 406 5 is_stmt 0
+.L86:
+	.loc 1 350 5 is_stmt 1
+	.loc 1 353 5 is_stmt 0
 	lui	a5,%hi(.LANCHOR9)
-	lui	a1,%hi(.LC9)
+	lui	a1,%hi(.LC5)
 	lui	a0,%hi(ble_master_scan_adv_task)
 	addi	a5,a5,%lo(.LANCHOR9)
 	li	a4,10
 	li	a3,0
 	li	a2,1024
-	addi	a1,a1,%lo(.LC9)
+	addi	a1,a1,%lo(.LC5)
 	addi	a0,a0,%lo(ble_master_scan_adv_task)
-	.loc 1 403 20
+	.loc 1 350 20
 	sw	zero,0(s1)
-	.loc 1 406 5 is_stmt 1
+	.loc 1 353 5 is_stmt 1
 	call	xTaskCreate
-.LVL102:
-	.loc 1 415 5
-	.loc 1 416 5
-.L87:
-	.loc 1 417 1 is_stmt 0
+.LVL92:
+	.loc 1 362 5
+	.loc 1 363 5
+.L84:
+	.loc 1 364 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -1268,7 +1178,7 @@ app_ble_master_disconnect:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.L100:
+.L97:
 	li	a0,0
 	ret
 	.cfi_endproc
@@ -1280,15 +1190,15 @@ app_ble_master_disconnect:
 	.type	app_ble_master_stop, @function
 app_ble_master_stop:
 .LFB76:
-	.loc 1 420 1 is_stmt 1
+	.loc 1 367 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 421 5
-	.loc 1 421 9 is_stmt 0
+	.loc 1 368 5
+	.loc 1 368 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR5)
-	.loc 1 421 8
+	.loc 1 368 8
 	lbu	a4,%lo(.LANCHOR5)(a5)
-	beq	a4,zero,.L126
-	.loc 1 420 1
+	beq	a4,zero,.L123
+	.loc 1 367 1
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -1302,93 +1212,93 @@ app_ble_master_stop:
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
 	addi	s2,a5,%lo(.LANCHOR5)
-	.loc 1 425 5 is_stmt 1
-	.loc 1 428 5
-	.loc 1 428 24 is_stmt 0
+	.loc 1 372 5 is_stmt 1
+	.loc 1 375 5
+	.loc 1 375 24 is_stmt 0
 	lui	a5,%hi(.LANCHOR6)
-	.loc 1 428 8
+	.loc 1 375 8
 	lw	a3,%lo(.LANCHOR6)(a5)
 	li	a4,1
 	addi	s1,a5,%lo(.LANCHOR6)
-	bne	a3,a4,.L105
-	.loc 1 429 9 is_stmt 1
-	.loc 1 429 19 is_stmt 0
+	bne	a3,a4,.L102
+	.loc 1 376 9 is_stmt 1
+	.loc 1 376 19 is_stmt 0
 	lui	a5,%hi(pconn)
 	lw	a0,%lo(pconn)(a5)
-	.loc 1 429 12
-	beq	a0,zero,.L106
-	.loc 1 430 13 is_stmt 1
+	.loc 1 376 12
+	beq	a0,zero,.L103
+	.loc 1 377 13 is_stmt 1
 	li	a1,19
 	call	bt_conn_disconnect
-.LVL103:
-.L106:
-	.loc 1 432 9
+.LVL93:
+.L103:
+	.loc 1 379 9
 	call	bt_le_scan_stop
-.LVL104:
-	.loc 1 433 9
+.LVL94:
+	.loc 1 380 9
 	call	ble_master_deinit
-.LVL105:
-.L105:
-	.loc 1 437 5
-	.loc 1 437 9 is_stmt 0
+.LVL95:
+.L102:
+	.loc 1 384 5
+	.loc 1 384 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR11)
 	lw	a0,%lo(.LANCHOR11)(a5)
-	.loc 1 437 8
-	beq	a0,zero,.L107
-	.loc 1 438 9 is_stmt 1
+	.loc 1 384 8
+	beq	a0,zero,.L104
+	.loc 1 385 9 is_stmt 1
 	call	vTaskDelete
-.LVL106:
-.L107:
-	.loc 1 440 5
-	.loc 1 440 9 is_stmt 0
+.LVL96:
+.L104:
+	.loc 1 387 5
+	.loc 1 387 9 is_stmt 0
 	lui	a5,%hi(.LANCHOR9)
 	lw	a0,%lo(.LANCHOR9)(a5)
-	.loc 1 440 8
-	beq	a0,zero,.L108
-	.loc 1 441 9 is_stmt 1
+	.loc 1 387 8
+	beq	a0,zero,.L105
+	.loc 1 388 9 is_stmt 1
 	call	vTaskDelete
-.LVL107:
-.L108:
-	.loc 1 445 5
+.LVL97:
+.L105:
+	.loc 1 392 5
 	call	apps_ble_stop
-.LVL108:
-	.loc 1 446 5
+.LVL98:
+	.loc 1 393 5
 	li	a0,1000
 	call	aos_msleep
-.LVL109:
-	.loc 1 449 5
-	.loc 1 449 8 is_stmt 0
+.LVL99:
+	.loc 1 396 5
+	.loc 1 396 8 is_stmt 0
 	lui	a5,%hi(.LANCHOR7)
 	lbu	a5,%lo(.LANCHOR7)(a5)
-	beq	a5,zero,.L109
-	.loc 1 450 9 is_stmt 1
+	beq	a5,zero,.L106
+	.loc 1 397 9 is_stmt 1
 	call	wifi_if_enable
-.LVL110:
-	.loc 1 451 9
+.LVL100:
+	.loc 1 398 9
 	li	a0,2000
 	call	aos_msleep
-.LVL111:
-.L109:
-	.loc 1 454 5
-	.loc 1 461 1 is_stmt 0
+.LVL101:
+.L106:
+	.loc 1 401 5
+	.loc 1 408 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 455 32
+	.loc 1 402 32
 	lui	a5,%hi(.LANCHOR8)
-	.loc 1 454 26
+	.loc 1 401 26
 	sb	zero,0(s2)
-	.loc 1 455 5 is_stmt 1
-	.loc 1 456 20 is_stmt 0
+	.loc 1 402 5 is_stmt 1
+	.loc 1 403 20 is_stmt 0
 	sw	zero,0(s1)
-	.loc 1 455 32
+	.loc 1 402 32
 	sb	zero,%lo(.LANCHOR8)(a5)
-	.loc 1 456 5 is_stmt 1
-	.loc 1 459 5
-	.loc 1 460 5
-	.loc 1 461 1 is_stmt 0
+	.loc 1 403 5 is_stmt 1
+	.loc 1 406 5
+	.loc 1 407 5
+	.loc 1 408 1 is_stmt 0
 	lw	s1,4(sp)
 	.cfi_restore 9
 	lw	s2,0(sp)
@@ -1397,7 +1307,7 @@ app_ble_master_stop:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.L126:
+.L123:
 	li	a0,0
 	ret
 	.cfi_endproc
@@ -1409,17 +1319,17 @@ app_ble_master_stop:
 	.type	app_ble_master_is_running, @function
 app_ble_master_is_running:
 .LFB77:
-	.loc 1 464 1 is_stmt 1
+	.loc 1 411 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 465 5
-	.loc 1 464 1 is_stmt 0
+	.loc 1 412 5
+	.loc 1 411 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 466 1
+	.loc 1 413 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -1437,17 +1347,17 @@ app_ble_master_is_running:
 	.type	app_ble_master_get_mode, @function
 app_ble_master_get_mode:
 .LFB78:
-	.loc 1 469 1 is_stmt 1
+	.loc 1 416 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 470 5
-	.loc 1 469 1 is_stmt 0
+	.loc 1 417 5
+	.loc 1 416 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 471 1
+	.loc 1 418 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -1465,32 +1375,32 @@ app_ble_master_get_mode:
 	.type	app_ble_master_is_connected, @function
 app_ble_master_is_connected:
 .LFB79:
-	.loc 1 474 1 is_stmt 1
+	.loc 1 421 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 475 5
-	.loc 1 474 1 is_stmt 0
+	.loc 1 422 5
+	.loc 1 421 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 475 55
+	.loc 1 422 55
 	lui	a5,%hi(.LANCHOR6)
-	.loc 1 474 1
-	.loc 1 475 55
+	.loc 1 421 1
+	.loc 1 422 55
 	lw	a4,%lo(.LANCHOR6)(a5)
 	li	a5,1
 	li	a0,0
-	bne	a4,a5,.L134
-	.loc 1 476 36 discriminator 1
+	bne	a4,a5,.L131
+	.loc 1 423 36 discriminator 1
 	lui	a5,%hi(bleuart_connect_status)
-	.loc 1 475 55 discriminator 1
+	.loc 1 422 55 discriminator 1
 	lbu	a0,%lo(bleuart_connect_status)(a5)
 	addi	a0,a0,-1
 	seqz	a0,a0
-.L134:
-	.loc 1 477 1 discriminator 6
+.L131:
+	.loc 1 424 1 discriminator 6
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -1506,11 +1416,11 @@ app_ble_master_is_connected:
 	.type	app_ble_master_get_found_mac, @function
 app_ble_master_get_found_mac:
 .LFB80:
-	.loc 1 481 1 is_stmt 1
+	.loc 1 428 1 is_stmt 1
 	.cfi_startproc
-.LVL112:
-	.loc 1 482 5
-	.loc 1 481 1 is_stmt 0
+.LVL102:
+	.loc 1 429 5
+	.loc 1 428 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -1521,22 +1431,22 @@ app_ble_master_get_found_mac:
 	.cfi_offset 1, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 482 9
+	.loc 1 429 9
 	lui	a4,%hi(.LANCHOR0)
 	lbu	s1,%lo(.LANCHOR0)(a4)
-	.loc 1 482 8
-	beq	s1,zero,.L139
-	.loc 1 482 28 discriminator 1
-	beq	a0,zero,.L140
-	.loc 1 485 5 is_stmt 1
+	.loc 1 429 8
+	beq	s1,zero,.L136
+	.loc 1 429 28 discriminator 1
+	beq	a0,zero,.L137
+	.loc 1 432 5 is_stmt 1
 	lui	a1,%hi(.LANCHOR1)
 	li	a2,6
 	addi	a1,a1,%lo(.LANCHOR1)
 	call	memcpy
-.LVL113:
-	.loc 1 486 5
-.L139:
-	.loc 1 487 1 is_stmt 0
+.LVL103:
+	.loc 1 433 5
+.L136:
+	.loc 1 434 1 is_stmt 0
 	lw	ra,12(sp)
 	.cfi_remember_state
 	.cfi_restore 1
@@ -1549,12 +1459,12 @@ app_ble_master_get_found_mac:
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL114:
-.L140:
+.LVL104:
+.L137:
 	.cfi_restore_state
-	.loc 1 483 15
+	.loc 1 430 15
 	li	s1,0
-	j	.L139
+	j	.L136
 	.cfi_endproc
 .LFE80:
 	.size	app_ble_master_get_found_mac, .-app_ble_master_get_found_mac
@@ -1564,16 +1474,16 @@ app_ble_master_get_found_mac:
 	.type	app_ble_master_send_data, @function
 app_ble_master_send_data:
 .LFB81:
-	.loc 1 490 1 is_stmt 1
+	.loc 1 437 1 is_stmt 1
 	.cfi_startproc
-.LVL115:
-	.loc 1 491 5
-	.loc 1 491 8 is_stmt 0
+.LVL105:
+	.loc 1 438 5
+	.loc 1 438 8 is_stmt 0
 	lui	a5,%hi(.LANCHOR6)
 	lw	a4,%lo(.LANCHOR6)(a5)
 	li	a5,1
-	bne	a4,a5,.L151
-	.loc 1 490 1
+	bne	a4,a5,.L148
+	.loc 1 437 1
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,8(sp)
@@ -1588,37 +1498,37 @@ app_ble_master_send_data:
 	.cfi_def_cfa 8, 0
 	mv	s2,a0
 	mv	s1,a1
-	.loc 1 496 5 is_stmt 1
-	.loc 1 496 10 is_stmt 0
+	.loc 1 443 5 is_stmt 1
+	.loc 1 443 10 is_stmt 0
 	call	app_ble_master_is_connected
-.LVL116:
-	.loc 1 496 8
-	beq	a0,zero,.L145
-	.loc 1 501 5 is_stmt 1
-	.loc 1 502 1 is_stmt 0
+.LVL106:
+	.loc 1 443 8
+	beq	a0,zero,.L142
+	.loc 1 448 5 is_stmt 1
+	.loc 1 449 1 is_stmt 0
 	lw	s0,8(sp)
 	.cfi_remember_state
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
 	lw	ra,12(sp)
 	.cfi_restore 1
-	.loc 1 501 12
+	.loc 1 448 12
 	mv	a1,s2
 	mv	a0,s1
-	.loc 1 502 1
+	.loc 1 449 1
 	lw	s2,0(sp)
 	.cfi_restore 18
-.LVL117:
+.LVL107:
 	lw	s1,4(sp)
 	.cfi_restore 9
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 501 12
+	.loc 1 448 12
 	tail	axk_HalBleCentralTTWrite
-.LVL118:
-.L145:
+.LVL108:
+.L142:
 	.cfi_restore_state
-	.loc 1 502 1
+	.loc 1 449 1
 	lw	ra,12(sp)
 	.cfi_restore 1
 	lw	s0,8(sp)
@@ -1628,15 +1538,15 @@ app_ble_master_send_data:
 	.cfi_restore 9
 	lw	s2,0(sp)
 	.cfi_restore 18
-.LVL119:
+.LVL109:
 	li	a0,-1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
-.LVL120:
-.L151:
+.LVL110:
+.L148:
 	li	a0,-1
-.LVL121:
+.LVL111:
 	ret
 	.cfi_endproc
 .LFE81:
@@ -1647,18 +1557,18 @@ app_ble_master_send_data:
 	.type	app_ble_master_set_rx_cb, @function
 app_ble_master_set_rx_cb:
 .LFB82:
-	.loc 1 505 1 is_stmt 1
+	.loc 1 452 1 is_stmt 1
 	.cfi_startproc
-.LVL122:
-	.loc 1 506 5
-	.loc 1 505 1 is_stmt 0
+.LVL112:
+	.loc 1 453 5
+	.loc 1 452 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 507 1
+	.loc 1 454 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -1674,18 +1584,18 @@ app_ble_master_set_rx_cb:
 	.type	app_ble_master_set_conn_cb, @function
 app_ble_master_set_conn_cb:
 .LFB83:
-	.loc 1 510 1 is_stmt 1
+	.loc 1 457 1 is_stmt 1
 	.cfi_startproc
-.LVL123:
-	.loc 1 511 5
-	.loc 1 510 1 is_stmt 0
+.LVL113:
+	.loc 1 458 5
+	.loc 1 457 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 512 1
+	.loc 1 459 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
@@ -1701,25 +1611,25 @@ app_ble_master_set_conn_cb:
 	.type	app_ble_master_set_adv_state_cb, @function
 app_ble_master_set_adv_state_cb:
 .LFB84:
-	.loc 1 515 1 is_stmt 1
+	.loc 1 462 1 is_stmt 1
 	.cfi_startproc
-.LVL124:
-	.loc 1 516 5
-	.loc 1 515 1 is_stmt 0
+.LVL114:
+	.loc 1 463 5
+	.loc 1 462 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 517 1
+	.loc 1 464 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 516 20
+	.loc 1 463 20
 	lui	a5,%hi(.LANCHOR3)
 	sw	a0,%lo(.LANCHOR3)(a5)
-	.loc 1 517 1
+	.loc 1 464 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -1853,7 +1763,7 @@ s_wifi_was_connected:
 	.file 24 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x1bac
+	.4byte	0x1b1b
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
@@ -1862,7 +1772,7 @@ s_wifi_was_connected:
 	.byte	0xc
 	.4byte	.LASF296
 	.4byte	.LASF297
-	.4byte	.Ldebug_ranges0+0x50
+	.4byte	.Ldebug_ranges0+0x48
 	.4byte	0
 	.4byte	.Ldebug_line0
 	.byte	0x2
@@ -3914,7 +3824,7 @@ s_wifi_was_connected:
 	.byte	0x28
 	.4byte	.LASF237
 	.byte	0x1
-	.2byte	0x202
+	.2byte	0x1cd
 	.byte	0x6
 	.4byte	.LFB84
 	.4byte	.LFE84-.LFB84
@@ -3924,7 +3834,7 @@ s_wifi_was_connected:
 	.byte	0x29
 	.string	"cb"
 	.byte	0x1
-	.2byte	0x202
+	.2byte	0x1cd
 	.byte	0x44
 	.4byte	0x113
 	.byte	0x1
@@ -3933,7 +3843,7 @@ s_wifi_was_connected:
 	.byte	0x28
 	.4byte	.LASF238
 	.byte	0x1
-	.2byte	0x1fd
+	.2byte	0x1c8
 	.byte	0x6
 	.4byte	.LFB83
 	.4byte	.LFE83-.LFB83
@@ -3943,7 +3853,7 @@ s_wifi_was_connected:
 	.byte	0x29
 	.string	"cb"
 	.byte	0x1
-	.2byte	0x1fd
+	.2byte	0x1c8
 	.byte	0x3a
 	.4byte	0xef
 	.byte	0x1
@@ -3952,7 +3862,7 @@ s_wifi_was_connected:
 	.byte	0x28
 	.4byte	.LASF239
 	.byte	0x1
-	.2byte	0x1f8
+	.2byte	0x1c3
 	.byte	0x6
 	.4byte	.LFB82
 	.4byte	.LFE82-.LFB82
@@ -3962,7 +3872,7 @@ s_wifi_was_connected:
 	.byte	0x29
 	.string	"cb"
 	.byte	0x1
-	.2byte	0x1f8
+	.2byte	0x1c3
 	.byte	0x36
 	.4byte	0xc7
 	.byte	0x1
@@ -3971,7 +3881,7 @@ s_wifi_was_connected:
 	.byte	0x2a
 	.4byte	.LASF240
 	.byte	0x1
-	.2byte	0x1e9
+	.2byte	0x1b4
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB81
@@ -3982,23 +3892,23 @@ s_wifi_was_connected:
 	.byte	0x2b
 	.4byte	.LASF143
 	.byte	0x1
-	.2byte	0x1e9
+	.2byte	0x1b4
 	.byte	0x2d
 	.4byte	0xe9
 	.4byte	.LLST21
 	.byte	0x2c
 	.string	"len"
 	.byte	0x1
-	.2byte	0x1e9
+	.2byte	0x1b4
 	.byte	0x3c
 	.4byte	0x65
 	.4byte	.LLST22
 	.byte	0x2d
-	.4byte	.LVL116
+	.4byte	.LVL106
 	.4byte	0x10d2
 	.byte	0x2e
-	.4byte	.LVL118
-	.4byte	0x1a49
+	.4byte	.LVL108
+	.4byte	0x19b8
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5b
@@ -4011,7 +3921,7 @@ s_wifi_was_connected:
 	.byte	0x2a
 	.4byte	.LASF241
 	.byte	0x1
-	.2byte	0x1e0
+	.2byte	0x1ab
 	.byte	0x5
 	.4byte	0x10c
 	.4byte	.LFB80
@@ -4022,13 +3932,13 @@ s_wifi_was_connected:
 	.byte	0x2b
 	.4byte	.LASF242
 	.byte	0x1
-	.2byte	0x1e0
+	.2byte	0x1ab
 	.byte	0x2b
 	.4byte	0xbe5
 	.4byte	.LLST20
 	.byte	0x30
-	.4byte	.LVL113
-	.4byte	0x1a55
+	.4byte	.LVL103
+	.4byte	0x19c4
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4052,7 +3962,7 @@ s_wifi_was_connected:
 	.byte	0x31
 	.4byte	.LASF243
 	.byte	0x1
-	.2byte	0x1d9
+	.2byte	0x1a4
 	.byte	0x5
 	.4byte	0x10c
 	.4byte	.LFB79
@@ -4062,7 +3972,7 @@ s_wifi_was_connected:
 	.byte	0x31
 	.4byte	.LASF244
 	.byte	0x1
-	.2byte	0x1d4
+	.2byte	0x19f
 	.byte	0x13
 	.4byte	0xbb
 	.4byte	.LFB78
@@ -4072,7 +3982,7 @@ s_wifi_was_connected:
 	.byte	0x31
 	.4byte	.LASF245
 	.byte	0x1
-	.2byte	0x1cf
+	.2byte	0x19a
 	.byte	0x5
 	.4byte	0x10c
 	.4byte	.LFB77
@@ -4082,7 +3992,7 @@ s_wifi_was_connected:
 	.byte	0x2a
 	.4byte	.LASF246
 	.byte	0x1
-	.2byte	0x1a3
+	.2byte	0x16e
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB76
@@ -4091,8 +4001,8 @@ s_wifi_was_connected:
 	.byte	0x9c
 	.4byte	0x11a2
 	.byte	0x32
-	.4byte	.LVL103
-	.4byte	0x1a61
+	.4byte	.LVL93
+	.4byte	0x19d0
 	.4byte	0x1145
 	.byte	0x2f
 	.byte	0x1
@@ -4101,23 +4011,23 @@ s_wifi_was_connected:
 	.byte	0x43
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL104
-	.4byte	0x1a6d
+	.4byte	.LVL94
+	.4byte	0x19dc
 	.byte	0x2d
-	.4byte	.LVL105
-	.4byte	0x1a7a
+	.4byte	.LVL95
+	.4byte	0x19e9
 	.byte	0x2d
-	.4byte	.LVL106
-	.4byte	0x1a86
+	.4byte	.LVL96
+	.4byte	0x19f5
 	.byte	0x2d
-	.4byte	.LVL107
-	.4byte	0x1a86
+	.4byte	.LVL97
+	.4byte	0x19f5
 	.byte	0x2d
-	.4byte	.LVL108
-	.4byte	0x1a93
+	.4byte	.LVL98
+	.4byte	0x1a02
 	.byte	0x32
-	.4byte	.LVL109
-	.4byte	0x1a9f
+	.4byte	.LVL99
+	.4byte	0x1a0e
 	.4byte	0x1187
 	.byte	0x2f
 	.byte	0x1
@@ -4127,11 +4037,11 @@ s_wifi_was_connected:
 	.2byte	0x3e8
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL110
-	.4byte	0x1aac
+	.4byte	.LVL100
+	.4byte	0x1a1b
 	.byte	0x30
-	.4byte	.LVL111
-	.4byte	0x1a9f
+	.4byte	.LVL101
+	.4byte	0x1a0e
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4143,7 +4053,7 @@ s_wifi_was_connected:
 	.byte	0x2a
 	.4byte	.LASF247
 	.byte	0x1
-	.2byte	0x173
+	.2byte	0x13e
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB75
@@ -4152,8 +4062,8 @@ s_wifi_was_connected:
 	.byte	0x9c
 	.4byte	0x1237
 	.byte	0x32
-	.4byte	.LVL97
-	.4byte	0x1a61
+	.4byte	.LVL87
+	.4byte	0x19d0
 	.4byte	0x11d0
 	.byte	0x2f
 	.byte	0x1
@@ -4162,8 +4072,8 @@ s_wifi_was_connected:
 	.byte	0x43
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL98
-	.4byte	0x1a9f
+	.4byte	.LVL88
+	.4byte	0x1a0e
 	.4byte	0x11e5
 	.byte	0x2f
 	.byte	0x1
@@ -4173,17 +4083,17 @@ s_wifi_was_connected:
 	.2byte	0x1f4
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL99
-	.4byte	0x1a6d
+	.4byte	.LVL89
+	.4byte	0x19dc
 	.byte	0x2d
-	.4byte	.LVL100
-	.4byte	0x1a7a
+	.4byte	.LVL90
+	.4byte	0x19e9
 	.byte	0x2d
-	.4byte	.LVL101
-	.4byte	0x1a86
+	.4byte	.LVL91
+	.4byte	0x19f5
 	.byte	0x30
-	.4byte	.LVL102
-	.4byte	0x1ab8
+	.4byte	.LVL92
+	.4byte	0x1a27
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4195,7 +4105,7 @@ s_wifi_was_connected:
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC9
+	.4byte	.LC5
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5c
@@ -4220,82 +4130,82 @@ s_wifi_was_connected:
 	.4byte	.LANCHOR9
 	.byte	0
 	.byte	0
-	.byte	0x2a
+	.byte	0x33
 	.4byte	.LASF248
 	.byte	0x1
-	.2byte	0x124
+	.byte	0xff
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB74
 	.4byte	.LFE74-.LFB74
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x144a
-	.byte	0x2b
+	.4byte	0x1448
+	.byte	0x34
 	.4byte	.LASF249
 	.byte	0x1
-	.2byte	0x124
+	.byte	0xff
 	.byte	0x2b
 	.4byte	0xe9
 	.4byte	.LLST17
-	.byte	0x33
+	.byte	0x35
 	.4byte	.LASF250
 	.byte	0x1
-	.2byte	0x13e
+	.2byte	0x114
 	.byte	0xd
 	.4byte	0xe9e
 	.byte	0x2
 	.byte	0x91
 	.byte	0x50
-	.byte	0x33
+	.byte	0x35
 	.4byte	.LASF251
 	.byte	0x1
-	.2byte	0x157
+	.2byte	0x12d
 	.byte	0xd
 	.4byte	0xe9e
 	.byte	0x2
 	.byte	0x91
 	.byte	0x58
-	.byte	0x34
+	.byte	0x36
 	.string	"ret"
 	.byte	0x1
-	.2byte	0x15b
+	.2byte	0x131
 	.byte	0xd
 	.4byte	0x4d
 	.4byte	.LLST18
-	.byte	0x35
-	.4byte	.LBB14
-	.4byte	.LBE14-.LBB14
-	.4byte	0x12db
-	.byte	0x36
+	.byte	0x37
+	.4byte	.LBB12
+	.4byte	.LBE12-.LBB12
+	.4byte	0x12d9
+	.byte	0x38
 	.4byte	.LASF276
 	.byte	0x1
-	.2byte	0x14d
+	.2byte	0x123
 	.byte	0x14
 	.4byte	0x92
-	.byte	0x34
+	.byte	0x36
 	.string	"ret"
 	.byte	0x1
-	.2byte	0x14e
+	.2byte	0x124
 	.byte	0xd
 	.4byte	0x92
 	.4byte	.LLST19
-	.byte	0x37
+	.byte	0x39
 	.4byte	.LASF277
 	.byte	0x1
-	.2byte	0x153
+	.2byte	0x129
 	.byte	0x15
 	.byte	0x2d
-	.4byte	.LVL82
-	.4byte	0x1ac5
+	.4byte	.LVL72
+	.4byte	0x1a34
 	.byte	0x2d
-	.4byte	.LVL83
-	.4byte	0x1ad2
+	.4byte	.LVL73
+	.4byte	0x1a41
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL76
-	.4byte	0x1a55
-	.4byte	0x12fe
+	.4byte	.LVL66
+	.4byte	0x19c4
+	.4byte	0x12fc
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4316,9 +4226,9 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL77
-	.4byte	0x1a55
-	.4byte	0x1320
+	.4byte	.LVL67
+	.4byte	0x19c4
+	.4byte	0x131e
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4338,9 +4248,9 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL78
-	.4byte	0x1adf
-	.4byte	0x1339
+	.4byte	.LVL68
+	.4byte	0x1a4e
+	.4byte	0x1337
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4354,15 +4264,15 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL79
-	.4byte	0x1a86
+	.4byte	.LVL69
+	.4byte	0x19f5
 	.byte	0x2d
-	.4byte	.LVL80
-	.4byte	0x1a6d
+	.4byte	.LVL70
+	.4byte	0x19dc
 	.byte	0x32
-	.4byte	.LVL81
-	.4byte	0x1a9f
-	.4byte	0x1360
+	.4byte	.LVL71
+	.4byte	0x1a0e
+	.4byte	0x135e
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4371,9 +4281,9 @@ s_wifi_was_connected:
 	.2byte	0x1f4
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL84
-	.4byte	0x1a55
-	.4byte	0x1382
+	.4byte	.LVL74
+	.4byte	0x19c4
+	.4byte	0x1380
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4393,9 +4303,9 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL85
-	.4byte	0x1adf
-	.4byte	0x139b
+	.4byte	.LVL75
+	.4byte	0x1a4e
+	.4byte	0x1399
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4409,9 +4319,9 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL86
-	.4byte	0x1aeb
-	.4byte	0x13b9
+	.4byte	.LVL76
+	.4byte	0x1a5a
+	.4byte	0x13b7
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4430,23 +4340,23 @@ s_wifi_was_connected:
 	.byte	0x30
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL89
-	.4byte	0x1af7
-	.4byte	0x13d0
+	.4byte	.LVL79
+	.4byte	0x1a66
+	.4byte	0x13ce
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC10
+	.4byte	.LC6
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL90
-	.4byte	0x1b03
+	.4byte	.LVL80
+	.4byte	0x1a72
 	.byte	0x32
-	.4byte	.LVL91
-	.4byte	0x1ab8
-	.4byte	0x1413
+	.4byte	.LVL81
+	.4byte	0x1a27
+	.4byte	0x1411
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4458,7 +4368,7 @@ s_wifi_was_connected:
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC9
+	.4byte	.LC5
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5c
@@ -4483,8 +4393,8 @@ s_wifi_was_connected:
 	.4byte	.LANCHOR9
 	.byte	0
 	.byte	0x30
-	.4byte	.LVL92
-	.4byte	0x1ab8
+	.4byte	.LVL82
+	.4byte	0x1a27
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4496,7 +4406,7 @@ s_wifi_was_connected:
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC11
+	.4byte	.LC7
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5c
@@ -4521,53 +4431,39 @@ s_wifi_was_connected:
 	.4byte	.LANCHOR11
 	.byte	0
 	.byte	0
-	.byte	0x38
+	.byte	0x33
 	.4byte	.LASF252
 	.byte	0x1
-	.byte	0xfe
+	.byte	0xdf
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB73
 	.4byte	.LFE73-.LFB73
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x152b
-	.byte	0x39
-	.4byte	.Ldebug_ranges0+0x38
-	.4byte	0x14ca
+	.4byte	0x1508
 	.byte	0x3a
+	.4byte	.Ldebug_ranges0+0x30
+	.4byte	0x14a7
+	.byte	0x3b
 	.4byte	.LASF253
 	.byte	0x1
-	.2byte	0x108
+	.byte	0xe9
 	.byte	0xd
 	.4byte	0x92
 	.4byte	.LLST16
 	.byte	0x2d
-	.4byte	.LVL61
-	.4byte	0x1b0f
+	.4byte	.LVL54
+	.4byte	0x1a7e
 	.byte	0x2d
-	.4byte	.LVL63
-	.4byte	0x1b1b
+	.4byte	.LVL56
+	.4byte	0x1a8a
 	.byte	0x2d
-	.4byte	.LVL66
-	.4byte	0x1b1b
-	.byte	0x32
-	.4byte	.LVL67
-	.4byte	0x1af7
-	.4byte	0x14b0
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC8
-	.byte	0
-	.byte	0x2d
-	.4byte	.LVL68
-	.4byte	0x1b03
+	.4byte	.LVL59
+	.4byte	0x1a8a
 	.byte	0x30
-	.4byte	.LVL70
-	.4byte	0x1a9f
+	.4byte	.LVL63
+	.4byte	0x1a0e
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4577,12 +4473,12 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL60
-	.4byte	0x1b27
+	.4byte	.LVL53
+	.4byte	0x1a96
 	.byte	0x32
-	.4byte	.LVL72
-	.4byte	0x1b33
-	.4byte	0x14f4
+	.4byte	.LVL60
+	.4byte	0x1aa2
+	.4byte	0x14d1
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4601,8 +4497,8 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0x30
-	.4byte	.LVL73
-	.4byte	0x1ab8
+	.4byte	.LVL61
+	.4byte	0x1a27
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4614,7 +4510,7 @@ s_wifi_was_connected:
 	.byte	0x5b
 	.byte	0x5
 	.byte	0x3
-	.4byte	.LC9
+	.4byte	.LC5
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5c
@@ -4639,20 +4535,20 @@ s_wifi_was_connected:
 	.4byte	.LANCHOR9
 	.byte	0
 	.byte	0
-	.byte	0x38
+	.byte	0x33
 	.4byte	.LASF254
 	.byte	0x1
-	.byte	0xf6
+	.byte	0xd7
 	.byte	0x5
 	.4byte	0x92
 	.4byte	.LFB72
 	.4byte	.LFE72-.LFB72
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1563
+	.4byte	0x1540
 	.byte	0x30
-	.4byte	.LVL59
-	.4byte	0x1b33
+	.4byte	.LVL52
+	.4byte	0x1aa2
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4671,49 +4567,49 @@ s_wifi_was_connected:
 	.byte	0x36
 	.byte	0
 	.byte	0
-	.byte	0x3b
+	.byte	0x3c
 	.4byte	.LASF257
 	.byte	0x1
-	.byte	0xda
+	.byte	0xbb
 	.byte	0xd
 	.4byte	.LFB71
 	.4byte	.LFE71-.LFB71
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1612
-	.byte	0x3c
+	.4byte	0x15ef
+	.byte	0x34
 	.4byte	.LASF255
 	.byte	0x1
-	.byte	0xda
+	.byte	0xbb
 	.byte	0x28
 	.4byte	0x1e5
 	.4byte	.LLST11
 	.byte	0x26
 	.4byte	.LASF143
 	.byte	0x1
-	.byte	0xdc
+	.byte	0xbd
 	.byte	0xa
-	.4byte	0x1612
+	.4byte	0x15ef
 	.byte	0x3
 	.byte	0x91
 	.byte	0xe4,0x7d
 	.byte	0x3d
 	.string	"ret"
 	.byte	0x1
-	.byte	0xdd
+	.byte	0xbe
 	.byte	0x9
 	.4byte	0x92
 	.4byte	.LLST12
 	.byte	0x3e
 	.string	"rep"
 	.byte	0x1
-	.byte	0xdd
+	.byte	0xbe
 	.byte	0xe
 	.4byte	0x92
 	.byte	0x32
-	.4byte	.LVL39
-	.4byte	0x1a86
-	.4byte	0x15c8
+	.4byte	.LVL36
+	.4byte	0x19f5
+	.4byte	0x15a5
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4721,9 +4617,9 @@ s_wifi_was_connected:
 	.byte	0x30
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL40
-	.4byte	0x1b3f
-	.4byte	0x15ec
+	.4byte	.LVL37
+	.4byte	0x1aae
+	.4byte	0x15c9
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4744,9 +4640,9 @@ s_wifi_was_connected:
 	.byte	0xfa
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL42
-	.4byte	0x1a49
-	.4byte	0x1601
+	.4byte	.LVL39
+	.4byte	0x19b8
+	.4byte	0x15de
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5b
@@ -4755,8 +4651,8 @@ s_wifi_was_connected:
 	.byte	0xe4,0x7d
 	.byte	0
 	.byte	0x30
-	.4byte	.LVL43
-	.4byte	0x1b4c
+	.4byte	.LVL40
+	.4byte	0x1abb
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4767,7 +4663,7 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0xe
 	.4byte	0x697
-	.4byte	0x1622
+	.4byte	0x15ff
 	.byte	0xf
 	.4byte	0x99
 	.byte	0xf9
@@ -4775,84 +4671,84 @@ s_wifi_was_connected:
 	.byte	0x3f
 	.4byte	.LASF298
 	.byte	0x1
-	.byte	0xbf
+	.byte	0xa2
 	.byte	0xd
 	.byte	0x1
-	.4byte	0x1654
+	.4byte	0x1631
 	.byte	0x40
 	.4byte	.LASF255
 	.byte	0x1
-	.byte	0xbf
+	.byte	0xa2
 	.byte	0x2c
 	.4byte	0x1e5
 	.byte	0x27
 	.4byte	.LASF256
 	.byte	0x1
-	.byte	0xc1
+	.byte	0xa4
 	.byte	0x1d
 	.4byte	0xb87
 	.byte	0x3e
 	.string	"ret"
 	.byte	0x1
-	.byte	0xc8
+	.byte	0xab
 	.byte	0x9
 	.4byte	0x92
 	.byte	0
-	.byte	0x3b
+	.byte	0x3c
 	.4byte	.LASF258
 	.byte	0x1
-	.byte	0xae
+	.byte	0x94
 	.byte	0xd
 	.4byte	.LFB69
 	.4byte	.LFE69-.LFB69
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x171c
-	.byte	0x3c
+	.4byte	0x16f9
+	.byte	0x34
 	.4byte	.LASF259
 	.byte	0x1
-	.byte	0xae
+	.byte	0x94
 	.byte	0x37
 	.4byte	0xb43
 	.4byte	.LLST0
-	.byte	0x3c
+	.byte	0x34
 	.4byte	.LASF260
 	.byte	0x1
-	.byte	0xaf
-	.byte	0x2b
+	.byte	0x94
+	.byte	0x43
 	.4byte	0x25
 	.4byte	.LLST1
-	.byte	0x3c
+	.byte	0x34
 	.4byte	.LASF147
 	.byte	0x1
-	.byte	0xb0
-	.byte	0x2c
+	.byte	0x94
+	.byte	0x50
 	.4byte	0x4d
 	.4byte	.LLST2
 	.byte	0x41
 	.string	"ad"
 	.byte	0x1
-	.byte	0xb1
-	.byte	0x3b
+	.byte	0x94
+	.byte	0x6c
 	.4byte	0xb02
 	.4byte	.LLST3
 	.byte	0x10
 	.byte	0x8
 	.byte	0x1
-	.byte	0xb3
+	.byte	0x96
 	.byte	0x5
-	.4byte	0x16cd
+	.4byte	0x16aa
 	.byte	0x11
 	.4byte	.LASF260
 	.byte	0x1
-	.byte	0xb4
+	.byte	0x97
 	.byte	0x10
 	.4byte	0x25
 	.byte	0
 	.byte	0x11
 	.4byte	.LASF259
 	.byte	0x1
-	.byte	0xb5
+	.byte	0x98
 	.byte	0x16
 	.4byte	0xaf1
 	.byte	0x1
@@ -4860,16 +4756,16 @@ s_wifi_was_connected:
 	.byte	0x26
 	.4byte	.LASF261
 	.byte	0x1
-	.byte	0xb6
+	.byte	0x99
 	.byte	0x7
-	.4byte	0x16a9
+	.4byte	0x1686
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0x32
 	.4byte	.LVL4
-	.4byte	0x1a55
-	.4byte	0x16fc
+	.4byte	0x19c4
+	.4byte	0x16d9
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4891,7 +4787,7 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x30
 	.4byte	.LVL5
-	.4byte	0x1b59
+	.4byte	0x1ac8
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -4922,71 +4818,71 @@ s_wifi_was_connected:
 	.4byte	.LFE68-.LFB68
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1925
-	.byte	0x3c
+	.4byte	0x18b8
+	.byte	0x34
 	.4byte	.LASF143
 	.byte	0x1
 	.byte	0x46
 	.byte	0x29
-	.4byte	0x1925
+	.4byte	0x18b8
 	.4byte	.LLST4
-	.byte	0x3c
+	.byte	0x34
 	.4byte	.LASF261
 	.byte	0x1
 	.byte	0x46
 	.byte	0x35
 	.4byte	0x1e5
 	.4byte	.LLST5
-	.byte	0x43
+	.byte	0x3b
 	.4byte	.LASF260
 	.byte	0x1
 	.byte	0x48
 	.byte	0xc
 	.4byte	0x25
 	.4byte	.LLST6
-	.byte	0x43
+	.byte	0x3b
 	.4byte	.LASF259
 	.byte	0x1
 	.byte	0x49
 	.byte	0x13
-	.4byte	0x192b
+	.4byte	0x18be
 	.4byte	.LLST7
 	.byte	0x3d
 	.string	"p"
 	.byte	0x1
-	.byte	0x54
+	.byte	0x53
 	.byte	0x14
 	.4byte	0xe9
 	.4byte	.LLST8
-	.byte	0x43
+	.byte	0x3b
 	.4byte	.LASF262
 	.byte	0x1
-	.byte	0x57
+	.byte	0x55
 	.byte	0xe
 	.4byte	0x65
 	.4byte	.LLST9
 	.byte	0x26
 	.4byte	.LASF263
 	.byte	0x1
-	.byte	0x70
+	.byte	0x6b
 	.byte	0xd
 	.4byte	0x4d
 	.byte	0x1
-	.byte	0x59
-	.byte	0x43
+	.byte	0x62
+	.byte	0x3b
 	.4byte	.LASF264
 	.byte	0x1
-	.byte	0x74
+	.byte	0x6d
 	.byte	0x9
 	.4byte	0x10c
 	.4byte	.LLST10
-	.byte	0x39
+	.byte	0x3a
 	.4byte	.Ldebug_ranges0+0
-	.4byte	0x1866
+	.4byte	0x1816
 	.byte	0x26
 	.4byte	.LASF250
 	.byte	0x1
-	.byte	0x80
+	.byte	0x72
 	.byte	0x11
 	.4byte	0xe9e
 	.byte	0x2
@@ -4994,8 +4890,8 @@ s_wifi_was_connected:
 	.byte	0x58
 	.byte	0x32
 	.4byte	.LVL22
-	.4byte	0x1a55
-	.4byte	0x17ed
+	.4byte	0x19c4
+	.4byte	0x17ca
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5017,8 +4913,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x32
 	.4byte	.LVL23
-	.4byte	0x1a55
-	.4byte	0x180d
+	.4byte	0x19c4
+	.4byte	0x17ea
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5040,8 +4936,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x32
 	.4byte	.LVL24
-	.4byte	0x1adf
-	.4byte	0x1826
+	.4byte	0x1a4e
+	.4byte	0x1803
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5054,44 +4950,17 @@ s_wifi_was_connected:
 	.byte	0x1
 	.byte	0x36
 	.byte	0
-	.byte	0x32
+	.byte	0x2d
 	.4byte	.LVL25
-	.4byte	0x1af7
-	.4byte	0x184a
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC3
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x61
-	.byte	0x2
-	.byte	0x84
-	.byte	0
-	.byte	0x2f
-	.byte	0x2
-	.byte	0x72
-	.byte	0
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0
+	.4byte	0x1ad5
 	.byte	0x2d
-	.4byte	.LVL26
-	.4byte	0x1b03
-	.byte	0x2d
-	.4byte	.LVL27
-	.4byte	0x1b66
-	.byte	0x2d
-	.4byte	.LVL35
-	.4byte	0x1b72
+	.4byte	.LVL31
+	.4byte	0x1ae1
 	.byte	0
 	.byte	0x32
 	.4byte	.LVL16
-	.4byte	0x1b7e
-	.4byte	0x1888
+	.4byte	0x1aed
+	.4byte	0x1838
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5112,8 +4981,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x32
 	.4byte	.LVL17
-	.4byte	0x1b7e
-	.4byte	0x18aa
+	.4byte	0x1aed
+	.4byte	0x185a
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5133,9 +5002,9 @@ s_wifi_was_connected:
 	.byte	0x33
 	.byte	0
 	.byte	0x32
-	.4byte	.LVL28
-	.4byte	0x1b7e
-	.4byte	0x18cd
+	.4byte	.LVL26
+	.4byte	0x1aed
+	.4byte	0x187d
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5155,40 +5024,23 @@ s_wifi_was_connected:
 	.byte	0x1
 	.byte	0x36
 	.byte	0
-	.byte	0x32
+	.byte	0x2d
+	.4byte	.LVL27
+	.4byte	0x1ad5
+	.byte	0x2d
+	.4byte	.LVL28
+	.4byte	0x1a66
+	.byte	0x2d
+	.4byte	.LVL29
+	.4byte	0x1a72
+	.byte	0x43
 	.4byte	.LVL30
-	.4byte	0x1af7
-	.4byte	0x18ea
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC4
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x2
-	.byte	0x79
-	.byte	0
-	.byte	0
-	.byte	0x2d
-	.4byte	.LVL31
-	.4byte	0x1b66
-	.byte	0x2d
-	.4byte	.LVL32
-	.4byte	0x1af7
-	.byte	0x2d
-	.4byte	.LVL33
-	.4byte	0x1b03
-	.byte	0x44
-	.4byte	.LVL34
-	.4byte	0x191b
+	.4byte	0x18ae
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x2
-	.byte	0x79
+	.byte	0x82
 	.byte	0
 	.byte	0x2f
 	.byte	0x1
@@ -5198,8 +5050,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0
 	.byte	0x2d
-	.4byte	.LVL36
-	.4byte	0x1b72
+	.4byte	.LVL33
+	.4byte	0x1ae1
 	.byte	0
 	.byte	0x8
 	.byte	0x4
@@ -5207,7 +5059,7 @@ s_wifi_was_connected:
 	.byte	0x8
 	.byte	0x4
 	.4byte	0xaf1
-	.byte	0x45
+	.byte	0x44
 	.4byte	.LASF265
 	.byte	0x1
 	.byte	0x24
@@ -5216,7 +5068,7 @@ s_wifi_was_connected:
 	.4byte	.LFE67-.LFB67
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1987
+	.4byte	0x191a
 	.byte	0x41
 	.string	"buf"
 	.byte	0x1
@@ -5225,9 +5077,9 @@ s_wifi_was_connected:
 	.4byte	0x691
 	.4byte	.LLST15
 	.byte	0x32
-	.4byte	.LVL56
-	.4byte	0x1b8a
-	.4byte	0x196c
+	.4byte	.LVL49
+	.4byte	0x1af9
+	.4byte	0x18ff
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5237,8 +5089,8 @@ s_wifi_was_connected:
 	.byte	0x6
 	.byte	0
 	.byte	0x2e
-	.4byte	.LVL58
-	.4byte	0x1b96
+	.4byte	.LVL51
+	.4byte	0x1b05
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5254,47 +5106,47 @@ s_wifi_was_connected:
 	.byte	0x6
 	.byte	0
 	.byte	0
-	.byte	0x46
-	.4byte	0x1622
+	.byte	0x45
+	.4byte	0x15ff
 	.4byte	.LFB70
 	.4byte	.LFE70-.LFB70
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x1a49
-	.byte	0x47
-	.4byte	0x162f
+	.4byte	0x19b8
+	.byte	0x46
+	.4byte	0x160c
 	.4byte	.LLST13
-	.byte	0x48
-	.4byte	0x163b
+	.byte	0x47
+	.4byte	0x1618
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
-	.byte	0x49
-	.4byte	0x1647
+	.byte	0x48
+	.4byte	0x1624
 	.4byte	.LLST14
-	.byte	0x4a
-	.4byte	0x1622
+	.byte	0x49
+	.4byte	0x15ff
 	.4byte	.LBB6
 	.4byte	.Ldebug_ranges0+0x18
 	.byte	0x1
-	.byte	0xbf
+	.byte	0xa2
 	.byte	0xd
-	.4byte	0x1a0b
+	.4byte	0x199e
+	.byte	0x4a
+	.4byte	0x160c
 	.byte	0x4b
-	.4byte	0x162f
-	.byte	0x4c
 	.4byte	.Ldebug_ranges0+0x18
-	.byte	0x4d
-	.4byte	0x163b
-	.byte	0x4d
-	.4byte	0x1647
+	.byte	0x4c
+	.4byte	0x1618
+	.byte	0x4c
+	.4byte	0x1624
 	.byte	0x2d
-	.4byte	.LVL48
-	.4byte	0x1a6d
+	.4byte	.LVL45
+	.4byte	0x19dc
 	.byte	0x32
-	.4byte	.LVL53
-	.4byte	0x1a86
-	.4byte	0x19f8
+	.4byte	.LVL46
+	.4byte	0x19f5
+	.4byte	0x198b
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5302,8 +5154,8 @@ s_wifi_was_connected:
 	.byte	0x30
 	.byte	0
 	.byte	0x30
-	.4byte	.LVL54
-	.4byte	0x1b4c
+	.4byte	.LVL47
+	.4byte	0x1abb
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5313,10 +5165,9 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0
 	.byte	0
-	.byte	0x32
-	.4byte	.LVL46
-	.4byte	0x1ba2
-	.4byte	0x1a28
+	.byte	0x30
+	.4byte	.LVL43
+	.4byte	0x1b11
 	.byte	0x2f
 	.byte	0x1
 	.byte	0x5a
@@ -5330,190 +5181,176 @@ s_wifi_was_connected:
 	.byte	0x3
 	.4byte	scan_adv_device_found
 	.byte	0
-	.byte	0x32
-	.4byte	.LVL51
-	.4byte	0x1af7
-	.4byte	0x1a3f
-	.byte	0x2f
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC7
 	.byte	0
-	.byte	0x2d
-	.4byte	.LVL52
-	.4byte	0x1b03
-	.byte	0
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF266
 	.4byte	.LASF266
 	.byte	0x1
 	.byte	0x2e
 	.byte	0xc
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF267
 	.4byte	.LASF267
 	.byte	0x12
 	.byte	0x1f
 	.byte	0x8
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF268
 	.4byte	.LASF268
 	.byte	0x13
 	.byte	0xf1
 	.byte	0x5
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF269
 	.4byte	.LASF269
 	.byte	0xc
 	.2byte	0x1fc
 	.byte	0x5
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF270
 	.4byte	.LASF270
 	.byte	0x11
 	.byte	0x2a
 	.byte	0x5
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF271
 	.4byte	.LASF271
 	.byte	0xe
 	.2byte	0x2c2
 	.byte	0x6
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF272
 	.4byte	.LASF272
 	.byte	0x14
 	.byte	0x25
 	.byte	0x6
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF273
 	.4byte	.LASF273
 	.byte	0x15
 	.2byte	0x207
 	.byte	0xa
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF274
 	.4byte	.LASF274
 	.byte	0x16
-	.byte	0x10
+	.byte	0x23
 	.byte	0x5
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF275
 	.4byte	.LASF275
 	.byte	0xe
 	.2byte	0x14a
 	.byte	0xd
-	.byte	0x4f
-	.4byte	.LASF276
-	.4byte	.LASF276
-	.byte	0x1
-	.2byte	0x14d
-	.byte	0x14
-	.byte	0x4f
-	.4byte	.LASF277
-	.4byte	.LASF277
-	.byte	0x1
-	.2byte	0x153
-	.byte	0x15
 	.byte	0x4e
+	.4byte	.LASF276
+	.4byte	.LASF276
+	.byte	0x1
+	.2byte	0x123
+	.byte	0x14
+	.byte	0x4e
+	.4byte	.LASF277
+	.4byte	.LASF277
+	.byte	0x1
+	.2byte	0x129
+	.byte	0x15
+	.byte	0x4d
 	.4byte	.LASF278
 	.4byte	.LASF278
 	.byte	0x11
 	.byte	0x23
 	.byte	0x6
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF279
 	.4byte	.LASF279
 	.byte	0x1
 	.byte	0x2d
 	.byte	0x10
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF280
 	.4byte	.LASF280
 	.byte	0x17
 	.byte	0xc8
 	.byte	0x5
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF281
 	.4byte	.LASF281
 	.byte	0x17
 	.byte	0xc0
 	.byte	0x5
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF282
 	.4byte	.LASF282
 	.byte	0x11
 	.byte	0x24
 	.byte	0x6
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF283
 	.4byte	.LASF283
 	.byte	0x14
 	.byte	0x30
 	.byte	0x5
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF284
 	.4byte	.LASF284
 	.byte	0x16
-	.byte	0x11
+	.byte	0x24
 	.byte	0x5
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF285
 	.4byte	.LASF285
 	.byte	0x12
 	.byte	0x21
 	.byte	0x8
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF286
 	.4byte	.LASF286
 	.byte	0x10
 	.2byte	0x103
 	.byte	0x5
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF287
 	.4byte	.LASF287
 	.byte	0xe
 	.2byte	0x2f6
 	.byte	0x6
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF288
 	.4byte	.LASF288
 	.byte	0xc
 	.2byte	0x23f
 	.byte	0x6
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF289
 	.4byte	.LASF289
 	.byte	0x18
 	.byte	0x7
 	.byte	0x6
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF290
 	.4byte	.LASF290
 	.byte	0x18
 	.byte	0x8
 	.byte	0x6
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF291
 	.4byte	.LASF291
 	.byte	0x12
 	.byte	0x1e
 	.byte	0x5
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF292
 	.4byte	.LASF292
 	.byte	0x12
 	.byte	0x29
 	.byte	0x8
-	.byte	0x4e
+	.byte	0x4d
 	.4byte	.LASF293
 	.4byte	.LASF293
 	.byte	0x10
 	.byte	0xf6
 	.byte	0x5
-	.byte	0x4f
+	.byte	0x4e
 	.4byte	.LASF294
 	.4byte	.LASF294
 	.byte	0xc
@@ -6261,6 +6098,52 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0
 	.byte	0x33
+	.byte	0x2e
+	.byte	0x1
+	.byte	0x3f
+	.byte	0x19
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x27
+	.byte	0x19
+	.byte	0x49
+	.byte	0x13
+	.byte	0x11
+	.byte	0x1
+	.byte	0x12
+	.byte	0x6
+	.byte	0x40
+	.byte	0x18
+	.byte	0x97,0x42
+	.byte	0x19
+	.byte	0x1
+	.byte	0x13
+	.byte	0
+	.byte	0
+	.byte	0x34
+	.byte	0x5
+	.byte	0
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0xb
+	.byte	0x39
+	.byte	0xb
+	.byte	0x49
+	.byte	0x13
+	.byte	0x2
+	.byte	0x17
+	.byte	0
+	.byte	0
+	.byte	0x35
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -6277,7 +6160,7 @@ s_wifi_was_connected:
 	.byte	0x18
 	.byte	0
 	.byte	0
-	.byte	0x34
+	.byte	0x36
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -6294,7 +6177,7 @@ s_wifi_was_connected:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x35
+	.byte	0x37
 	.byte	0xb
 	.byte	0x1
 	.byte	0x11
@@ -6303,51 +6186,11 @@ s_wifi_was_connected:
 	.byte	0x6
 	.byte	0x1
 	.byte	0x13
-	.byte	0
-	.byte	0
-	.byte	0x36
-	.byte	0x2e
-	.byte	0
-	.byte	0x3f
-	.byte	0x19
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0x5
-	.byte	0x39
-	.byte	0xb
-	.byte	0x27
-	.byte	0x19
-	.byte	0x49
-	.byte	0x13
-	.byte	0x3c
-	.byte	0x19
-	.byte	0
-	.byte	0
-	.byte	0x37
-	.byte	0x2e
-	.byte	0
-	.byte	0x3f
-	.byte	0x19
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0x5
-	.byte	0x39
-	.byte	0xb
-	.byte	0x27
-	.byte	0x19
-	.byte	0x3c
-	.byte	0x19
 	.byte	0
 	.byte	0
 	.byte	0x38
 	.byte	0x2e
-	.byte	0x1
+	.byte	0
 	.byte	0x3f
 	.byte	0x19
 	.byte	0x3
@@ -6355,26 +6198,37 @@ s_wifi_was_connected:
 	.byte	0x3a
 	.byte	0xb
 	.byte	0x3b
-	.byte	0xb
+	.byte	0x5
 	.byte	0x39
 	.byte	0xb
 	.byte	0x27
 	.byte	0x19
 	.byte	0x49
 	.byte	0x13
-	.byte	0x11
-	.byte	0x1
-	.byte	0x12
-	.byte	0x6
-	.byte	0x40
-	.byte	0x18
-	.byte	0x97,0x42
+	.byte	0x3c
 	.byte	0x19
-	.byte	0x1
-	.byte	0x13
 	.byte	0
 	.byte	0
 	.byte	0x39
+	.byte	0x2e
+	.byte	0
+	.byte	0x3f
+	.byte	0x19
+	.byte	0x3
+	.byte	0xe
+	.byte	0x3a
+	.byte	0xb
+	.byte	0x3b
+	.byte	0x5
+	.byte	0x39
+	.byte	0xb
+	.byte	0x27
+	.byte	0x19
+	.byte	0x3c
+	.byte	0x19
+	.byte	0
+	.byte	0
+	.byte	0x3a
 	.byte	0xb
 	.byte	0x1
 	.byte	0x55
@@ -6383,7 +6237,7 @@ s_wifi_was_connected:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x3a
+	.byte	0x3b
 	.byte	0x34
 	.byte	0
 	.byte	0x3
@@ -6391,7 +6245,7 @@ s_wifi_was_connected:
 	.byte	0x3a
 	.byte	0xb
 	.byte	0x3b
-	.byte	0x5
+	.byte	0xb
 	.byte	0x39
 	.byte	0xb
 	.byte	0x49
@@ -6400,7 +6254,7 @@ s_wifi_was_connected:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x3b
+	.byte	0x3c
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3
@@ -6423,23 +6277,6 @@ s_wifi_was_connected:
 	.byte	0x19
 	.byte	0x1
 	.byte	0x13
-	.byte	0
-	.byte	0
-	.byte	0x3c
-	.byte	0x5
-	.byte	0
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0xb
-	.byte	0x39
-	.byte	0xb
-	.byte	0x49
-	.byte	0x13
-	.byte	0x2
-	.byte	0x17
 	.byte	0
 	.byte	0
 	.byte	0x3d
@@ -6553,23 +6390,6 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0
 	.byte	0x43
-	.byte	0x34
-	.byte	0
-	.byte	0x3
-	.byte	0xe
-	.byte	0x3a
-	.byte	0xb
-	.byte	0x3b
-	.byte	0xb
-	.byte	0x39
-	.byte	0xb
-	.byte	0x49
-	.byte	0x13
-	.byte	0x2
-	.byte	0x17
-	.byte	0
-	.byte	0
-	.byte	0x44
 	.byte	0x89,0x82,0x1
 	.byte	0x1
 	.byte	0x11
@@ -6578,7 +6398,7 @@ s_wifi_was_connected:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x45
+	.byte	0x44
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x3f
@@ -6605,7 +6425,7 @@ s_wifi_was_connected:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x46
+	.byte	0x45
 	.byte	0x2e
 	.byte	0x1
 	.byte	0x31
@@ -6622,7 +6442,7 @@ s_wifi_was_connected:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x47
+	.byte	0x46
 	.byte	0x5
 	.byte	0
 	.byte	0x31
@@ -6631,7 +6451,7 @@ s_wifi_was_connected:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x48
+	.byte	0x47
 	.byte	0x34
 	.byte	0
 	.byte	0x31
@@ -6640,7 +6460,7 @@ s_wifi_was_connected:
 	.byte	0x18
 	.byte	0
 	.byte	0
-	.byte	0x49
+	.byte	0x48
 	.byte	0x34
 	.byte	0
 	.byte	0x31
@@ -6649,7 +6469,7 @@ s_wifi_was_connected:
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x4a
+	.byte	0x49
 	.byte	0x1d
 	.byte	0x1
 	.byte	0x31
@@ -6668,28 +6488,28 @@ s_wifi_was_connected:
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x4b
+	.byte	0x4a
 	.byte	0x5
 	.byte	0
 	.byte	0x31
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x4c
+	.byte	0x4b
 	.byte	0xb
 	.byte	0x1
 	.byte	0x55
 	.byte	0x17
 	.byte	0
 	.byte	0
-	.byte	0x4d
+	.byte	0x4c
 	.byte	0x34
 	.byte	0
 	.byte	0x31
 	.byte	0x13
 	.byte	0
 	.byte	0
-	.byte	0x4e
+	.byte	0x4d
 	.byte	0x2e
 	.byte	0
 	.byte	0x3f
@@ -6708,7 +6528,7 @@ s_wifi_was_connected:
 	.byte	0xb
 	.byte	0
 	.byte	0
-	.byte	0x4f
+	.byte	0x4e
 	.byte	0x2e
 	.byte	0
 	.byte	0x3f
@@ -6731,41 +6551,41 @@ s_wifi_was_connected:
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
 .LLST21:
-	.4byte	.LVL115
-	.4byte	.LVL116-1
+	.4byte	.LVL105
+	.4byte	.LVL106-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL116-1
-	.4byte	.LVL117
+	.4byte	.LVL106-1
+	.4byte	.LVL107
 	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL117
-	.4byte	.LVL118-1
+	.4byte	.LVL107
+	.4byte	.LVL108-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL118-1
-	.4byte	.LVL118
+	.4byte	.LVL108-1
+	.4byte	.LVL108
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL118
-	.4byte	.LVL119
+	.4byte	.LVL108
+	.4byte	.LVL109
 	.2byte	0x1
 	.byte	0x62
-	.4byte	.LVL119
-	.4byte	.LVL120
+	.4byte	.LVL109
+	.4byte	.LVL110
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL120
-	.4byte	.LVL121
+	.4byte	.LVL110
+	.4byte	.LVL111
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL121
+	.4byte	.LVL111
 	.4byte	.LFE81
 	.2byte	0x4
 	.byte	0xf3
@@ -6775,73 +6595,73 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST22:
-	.4byte	.LVL115
-	.4byte	.LVL116-1
+	.4byte	.LVL105
+	.4byte	.LVL106-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL116-1
-	.4byte	.LVL120
+	.4byte	.LVL106-1
+	.4byte	.LVL110
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
 	.byte	0x9f
-	.4byte	.LVL120
+	.4byte	.LVL110
 	.4byte	.LFE81
 	.2byte	0x1
 	.byte	0x5b
 	.4byte	0
 	.4byte	0
 .LLST20:
-	.4byte	.LVL112
-	.4byte	.LVL113-1
+	.4byte	.LVL102
+	.4byte	.LVL103-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL113-1
-	.4byte	.LVL114
+	.4byte	.LVL103-1
+	.4byte	.LVL104
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL114
+	.4byte	.LVL104
 	.4byte	.LFE80
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST17:
-	.4byte	.LVL74
-	.4byte	.LVL75
+	.4byte	.LVL64
+	.4byte	.LVL65
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL75
-	.4byte	.LVL76-1
+	.4byte	.LVL65
+	.4byte	.LVL66-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL76-1
-	.4byte	.LVL93
+	.4byte	.LVL66-1
+	.4byte	.LVL83
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL93
-	.4byte	.LVL94
+	.4byte	.LVL83
+	.4byte	.LVL84
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL94
-	.4byte	.LVL95
+	.4byte	.LVL84
+	.4byte	.LVL85
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5a
 	.byte	0x9f
-	.4byte	.LVL95
-	.4byte	.LVL96
+	.4byte	.LVL85
+	.4byte	.LVL86
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL96
+	.4byte	.LVL86
 	.4byte	.LFE74
 	.2byte	0x4
 	.byte	0xf3
@@ -6851,27 +6671,27 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST18:
-	.4byte	.LVL87
-	.4byte	.LVL88
+	.4byte	.LVL77
+	.4byte	.LVL78
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST19:
-	.4byte	.LVL82
-	.4byte	.LVL83-1
+	.4byte	.LVL72
+	.4byte	.LVL73-1
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST16:
-	.4byte	.LVL61
-	.4byte	.LVL62
+	.4byte	.LVL54
+	.4byte	.LVL55
 	.2byte	0x2
 	.byte	0x30
 	.byte	0x9f
-	.4byte	.LVL62
-	.4byte	.LVL64
+	.4byte	.LVL55
+	.4byte	.LVL57
 	.2byte	0x6
 	.byte	0x8
 	.byte	0x97
@@ -6879,8 +6699,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x1c
 	.byte	0x9f
-	.4byte	.LVL64
-	.4byte	.LVL65
+	.4byte	.LVL57
+	.4byte	.LVL58
 	.2byte	0x6
 	.byte	0x8
 	.byte	0x96
@@ -6888,8 +6708,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x1c
 	.byte	0x9f
-	.4byte	.LVL69
-	.4byte	.LVL70
+	.4byte	.LVL62
+	.4byte	.LVL63
 	.2byte	0x6
 	.byte	0x8
 	.byte	0x96
@@ -6897,8 +6717,8 @@ s_wifi_was_connected:
 	.byte	0
 	.byte	0x1c
 	.byte	0x9f
-	.4byte	.LVL70
-	.4byte	.LVL71
+	.4byte	.LVL63
+	.4byte	.LFE73
 	.2byte	0x6
 	.byte	0x8
 	.byte	0x97
@@ -6909,11 +6729,11 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST11:
-	.4byte	.LVL37
-	.4byte	.LVL38
+	.4byte	.LVL34
+	.4byte	.LVL35
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL38
+	.4byte	.LVL35
 	.4byte	.LFE71
 	.2byte	0x4
 	.byte	0xf3
@@ -6923,8 +6743,8 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST12:
-	.4byte	.LVL40
-	.4byte	.LVL41
+	.4byte	.LVL37
+	.4byte	.LVL38
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
@@ -7013,7 +6833,7 @@ s_wifi_was_connected:
 	.4byte	.LVL9
 	.4byte	.LVL10
 	.2byte	0x1
-	.byte	0x59
+	.byte	0x62
 	.4byte	.LVL10
 	.4byte	.LVL11
 	.2byte	0x4
@@ -7022,13 +6842,13 @@ s_wifi_was_connected:
 	.byte	0x5a
 	.byte	0x9f
 	.4byte	.LVL11
-	.4byte	.LVL13
+	.4byte	.LVL15
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL13
+	.4byte	.LVL15
 	.4byte	.LVL19
 	.2byte	0x1
-	.byte	0x59
+	.byte	0x62
 	.4byte	.LVL19
 	.4byte	.LFE68
 	.2byte	0x4
@@ -7051,13 +6871,13 @@ s_wifi_was_connected:
 	.byte	0x5b
 	.byte	0x9f
 	.4byte	.LVL11
-	.4byte	.LVL15
+	.4byte	.LVL14
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL15
+	.4byte	.LVL14
 	.4byte	.LVL18
 	.2byte	0x1
-	.byte	0x62
+	.byte	0x59
 	.4byte	.LVL18
 	.4byte	.LVL21
 	.2byte	0x3
@@ -7103,15 +6923,15 @@ s_wifi_was_connected:
 	.byte	0x1
 	.byte	0x9f
 	.4byte	.LVL11
-	.4byte	.LVL15
+	.4byte	.LVL14
 	.2byte	0x3
 	.byte	0x7b
 	.byte	0x1
 	.byte	0x9f
-	.4byte	.LVL15
+	.4byte	.LVL14
 	.4byte	.LVL18
 	.2byte	0x3
-	.byte	0x82
+	.byte	0x79
 	.byte	0x1
 	.byte	0x9f
 	.4byte	.LVL18
@@ -7132,14 +6952,14 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST8:
-	.4byte	.LVL14
+	.4byte	.LVL13
 	.4byte	.LVL20
 	.2byte	0x1
 	.byte	0x63
 	.4byte	0
 	.4byte	0
 .LLST9:
-	.4byte	.LVL14
+	.4byte	.LVL13
 	.4byte	.LVL16-1
 	.2byte	0x12
 	.byte	0x83
@@ -7163,8 +6983,16 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST10:
-	.4byte	.LVL28
-	.4byte	.LVL29
+	.4byte	.LVL26
+	.4byte	.LVL27-1
+	.2byte	0x5
+	.byte	0x7a
+	.byte	0
+	.byte	0x30
+	.byte	0x29
+	.byte	0x9f
+	.4byte	.LVL32
+	.4byte	.LVL33-1
 	.2byte	0x5
 	.byte	0x7a
 	.byte	0
@@ -7174,32 +7002,32 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST15:
-	.4byte	.LVL55
-	.4byte	.LVL56-1
+	.4byte	.LVL48
+	.4byte	.LVL49-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL56-1
-	.4byte	.LVL57
+	.4byte	.LVL49-1
+	.4byte	.LVL50
 	.2byte	0x2
 	.byte	0x78
 	.byte	0x6c
-	.4byte	.LVL57
-	.4byte	.LVL58
+	.4byte	.LVL50
+	.4byte	.LVL51
 	.2byte	0x2
 	.byte	0x91
 	.byte	0x6c
-	.4byte	.LVL58
+	.4byte	.LVL51
 	.4byte	.LFE67
 	.2byte	0x1
 	.byte	0x5a
 	.4byte	0
 	.4byte	0
 .LLST13:
-	.4byte	.LVL44
-	.4byte	.LVL45
+	.4byte	.LVL41
+	.4byte	.LVL42
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL45
+	.4byte	.LVL42
 	.4byte	.LFE70
 	.2byte	0x4
 	.byte	0xf3
@@ -7209,18 +7037,10 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	0
 .LLST14:
-	.4byte	.LVL46
-	.4byte	.LVL47
+	.4byte	.LVL43
+	.4byte	.LVL44
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL49
-	.4byte	.LVL50
-	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL50
-	.4byte	.LVL51-1
-	.2byte	0x1
-	.byte	0x5b
 	.4byte	0
 	.4byte	0
 	.section	.debug_aranges,"",@progbits
@@ -7279,16 +7099,14 @@ s_wifi_was_connected:
 	.4byte	0
 	.4byte	.LBB6
 	.4byte	.LBE6
+	.4byte	.LBB9
+	.4byte	.LBE9
+	.4byte	0
+	.4byte	0
 	.4byte	.LBB10
 	.4byte	.LBE10
 	.4byte	.LBB11
 	.4byte	.LBE11
-	.4byte	0
-	.4byte	0
-	.4byte	.LBB12
-	.4byte	.LBE12
-	.4byte	.LBB13
-	.4byte	.LBE13
 	.4byte	0
 	.4byte	0
 	.4byte	.LFB69

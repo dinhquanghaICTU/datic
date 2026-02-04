@@ -1,7 +1,6 @@
 app_state.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.c \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h \
@@ -17,7 +16,6 @@ app_state.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_cfg.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/app_state.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_state/../app_event/app_event.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:

@@ -6,13 +6,6 @@
 	.text
 .Ltext0:
 	.cfi_sections	.debug_frame
-	.section	.rodata.app_event_post.str1.4,"aMS",@progbits,1
-	.align	2
-.LC0:
-	.string	"[EVENT_POST] Posting event type=%d, queue_tail=%d\r\n"
-	.align	2
-.LC1:
-	.string	"[EVENT_POST] Event posted, new queue_tail=%d\r\n"
 	.section	.text.app_event_post,"ax",@progbits
 	.align	1
 	.globl	app_event_post
@@ -25,82 +18,42 @@ app_event_post:
 .LVL0:
 	.loc 1 24 5
 	.loc 1 23 1 is_stmt 0
-	addi	sp,sp,-32
-	.cfi_def_cfa_offset 32
-	sw	s0,24(sp)
-	sw	s1,20(sp)
-	sw	s2,16(sp)
-	sw	s3,12(sp)
-	sw	ra,28(sp)
-	.cfi_offset 8, -8
-	.cfi_offset 9, -12
-	.cfi_offset 18, -16
-	.cfi_offset 19, -20
-	.cfi_offset 1, -4
-	addi	s0,sp,32
+	addi	sp,sp,-16
+	.cfi_def_cfa_offset 16
+	sw	s0,12(sp)
+	.loc 1 24 38
+	lui	a3,%hi(.LANCHOR0)
+	.cfi_offset 8, -4
+	.loc 1 23 1
+	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 24 5
-	lui	s1,%hi(.LANCHOR0)
-	.loc 1 23 1
-	.loc 1 24 5
-	addi	s1,s1,%lo(.LANCHOR0)
-	lw	a2,0(s1)
-	.loc 1 23 1
-	mv	s2,a0
-	mv	s3,a1
-	.loc 1 24 5
-	mv	a1,a0
-.LVL1:
-	lui	a0,%hi(.LC0)
-.LVL2:
-	addi	a0,a0,%lo(.LC0)
-	call	printf
-.LVL3:
-	.loc 1 25 5 is_stmt 1
-	.loc 1 25 38 is_stmt 0
-	lw	a5,0(s1)
-	.loc 1 25 44
+	.loc 1 24 38
+	addi	a3,a3,%lo(.LANCHOR0)
+	lw	a5,0(a3)
+	.loc 1 24 44
 	lui	a4,%hi(g_event_queue)
 	addi	a4,a4,%lo(g_event_queue)
-	slli	a3,a5,3
-	.loc 1 27 46
-	addi	a1,a5,1
-	.loc 1 27 51
-	li	a5,10
-	rem	a1,a1,a5
-	.loc 1 25 44
-	add	a4,a4,a3
-	sw	s2,0(a4)
+	slli	a2,a5,3
+	add	a4,a4,a2
+	sw	a0,0(a4)
+	.loc 1 25 5 is_stmt 1
+	.loc 1 25 44 is_stmt 0
+	sw	a1,4(a4)
 	.loc 1 26 5 is_stmt 1
-	.loc 1 26 44 is_stmt 0
-	sw	s3,4(a4)
-	.loc 1 27 5 is_stmt 1
-	.loc 1 29 1 is_stmt 0
-	lw	s0,24(sp)
+	.loc 1 26 46 is_stmt 0
+	addi	a5,a5,1
+	.loc 1 26 51
+	li	a4,10
+	rem	a5,a5,a4
+	.loc 1 26 24
+	sw	a5,0(a3)
+	.loc 1 27 1
+	lw	s0,12(sp)
 	.cfi_restore 8
-	.cfi_def_cfa 2, 32
-	lw	ra,28(sp)
-	.cfi_restore 1
-	lw	s2,16(sp)
-	.cfi_restore 18
-.LVL4:
-	lw	s3,12(sp)
-	.cfi_restore 19
-.LVL5:
-	.loc 1 28 5
-	lui	a0,%hi(.LC1)
-	addi	a0,a0,%lo(.LC1)
-	.loc 1 27 24
-	sw	a1,0(s1)
-	.loc 1 28 5 is_stmt 1
-	.loc 1 29 1 is_stmt 0
-	lw	s1,20(sp)
-	.cfi_restore 9
-	addi	sp,sp,32
+	.cfi_def_cfa 2, 16
+	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
-	.loc 1 28 5
-	tail	printf
-.LVL6:
+	jr	ra
 	.cfi_endproc
 .LFE4:
 	.size	app_event_post, .-app_event_post
@@ -110,11 +63,11 @@ app_event_post:
 	.type	app_button_hold_callback, @function
 app_button_hold_callback:
 .LFB5:
-	.loc 1 32 1 is_stmt 1
+	.loc 1 30 1 is_stmt 1
 	.cfi_startproc
-.LVL7:
-	.loc 1 34 5
-	.loc 1 32 1 is_stmt 0
+.LVL1:
+	.loc 1 32 5
+	.loc 1 30 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -123,41 +76,41 @@ app_button_hold_callback:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 34 9
+	.loc 1 32 9
 	call	app_ble_is_running
-.LVL8:
-	.loc 1 34 8
+.LVL2:
+	.loc 1 32 8
 	beq	a0,zero,.L4
-	.loc 1 35 9 is_stmt 1
+	.loc 1 33 9 is_stmt 1
 	call	app_ble_stop
-.LVL9:
-	.loc 1 36 9
+.LVL3:
+	.loc 1 34 9
 	li	a0,500
 	call	aos_msleep
-.LVL10:
+.LVL4:
 .L4:
-	.loc 1 39 5
+	.loc 1 37 5
 	call	wifi_if_disconnect
-.LVL11:
-	.loc 1 40 5
+.LVL5:
+	.loc 1 38 5
 	li	a0,2000
 	call	aos_msleep
-.LVL12:
-	.loc 1 42 5
+.LVL6:
+	.loc 1 40 5
 	call	app_config_clear_wifi
-.LVL13:
-	.loc 1 44 5
-	.loc 1 44 17 is_stmt 0
+.LVL7:
+	.loc 1 42 5
+	.loc 1 42 17 is_stmt 0
 	li	a5,1
-	.loc 1 48 5
+	.loc 1 46 5
 	addi	a0,s0,-24
-	.loc 1 44 17
+	.loc 1 42 17
 	sw	a5,-24(s0)
 	sw	zero,-20(s0)
-	.loc 1 48 5 is_stmt 1
+	.loc 1 46 5 is_stmt 1
 	call	app_state_process_event
-.LVL14:
-	.loc 1 49 1 is_stmt 0
+.LVL8:
+	.loc 1 47 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -171,10 +124,10 @@ app_button_hold_callback:
 	.size	app_button_hold_callback, .-app_button_hold_callback
 	.section	.rodata.app_button_press_callback.str1.4,"aMS",@progbits,1
 	.align	2
-.LC2:
+.LC0:
 	.string	"ON"
 	.align	2
-.LC3:
+.LC1:
 	.string	"OFF"
 	.section	.text.app_button_press_callback,"ax",@progbits
 	.align	1
@@ -182,11 +135,11 @@ app_button_hold_callback:
 	.type	app_button_press_callback, @function
 app_button_press_callback:
 .LFB6:
-	.loc 1 52 1 is_stmt 1
+	.loc 1 50 1 is_stmt 1
 	.cfi_startproc
-.LVL15:
-	.loc 1 54 5
-	.loc 1 52 1 is_stmt 0
+.LVL9:
+	.loc 1 52 5
+	.loc 1 50 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -199,66 +152,66 @@ app_button_press_callback:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 54 9
+	.loc 1 52 9
 	lui	s1,%hi(.LANCHOR1)
-	.loc 1 52 1
-	.loc 1 54 9
+	.loc 1 50 1
+	.loc 1 52 9
 	addi	s1,s1,%lo(.LANCHOR1)
-	.loc 1 54 8
+	.loc 1 52 8
 	lbu	a5,0(s1)
 	lui	s2,%hi(.LANCHOR2)
 	bne	a5,zero,.L10
 .LBB2:
-	.loc 1 55 9 is_stmt 1
-	.loc 1 56 9
+	.loc 1 53 9 is_stmt 1
+	.loc 1 54 9
 	addi	a1,s2,%lo(.LANCHOR2)
-.LVL16:
+.LVL10:
 	addi	a0,s0,-17
-.LVL17:
+.LVL11:
 	call	app_config_load_relay_settings
-.LVL18:
-	.loc 1 57 9
-	.loc 1 57 30 is_stmt 0
+.LVL12:
+	.loc 1 55 9
+	.loc 1 55 30 is_stmt 0
 	li	a5,1
 	sb	a5,0(s1)
 .L10:
 .LBE2:
-	.loc 1 60 5 is_stmt 1
-	.loc 1 60 8 is_stmt 0
+	.loc 1 58 5 is_stmt 1
+	.loc 1 58 8 is_stmt 0
 	lbu	a5,%lo(.LANCHOR2)(s2)
 	bne	a5,zero,.L9
-	.loc 1 64 5 is_stmt 1
+	.loc 1 62 5 is_stmt 1
 	call	relay_toggle
-.LVL19:
-	.loc 1 66 5
-	.loc 1 66 9 is_stmt 0
+.LVL13:
+	.loc 1 64 5
+	.loc 1 64 9 is_stmt 0
 	call	mqtt_if_is_connected
-.LVL20:
-	.loc 1 66 8
+.LVL14:
+	.loc 1 64 8
 	beq	a0,zero,.L12
 .LBB3:
-	.loc 1 67 9 is_stmt 1
-	.loc 1 67 31 is_stmt 0
+	.loc 1 65 9 is_stmt 1
+	.loc 1 65 31 is_stmt 0
 	call	relay_get_state
-.LVL21:
-	.loc 1 68 9 is_stmt 1
+.LVL15:
+	.loc 1 66 9 is_stmt 1
 	bne	a0,zero,.L14
-	lui	a0,%hi(.LC3)
-.LVL22:
-	addi	a0,a0,%lo(.LC3)
+	lui	a0,%hi(.LC1)
+.LVL16:
+	addi	a0,a0,%lo(.LC1)
 .L13:
-	.loc 1 68 9 is_stmt 0 discriminator 4
+	.loc 1 66 9 is_stmt 0 discriminator 4
 	call	app_mqtt_publish_state
-.LVL23:
+.LVL17:
 .L12:
 .LBE3:
-	.loc 1 71 5 is_stmt 1
+	.loc 1 69 5 is_stmt 1
 	li	a1,0
 	li	a0,2
 	call	app_event_post
-.LVL24:
-	.loc 1 72 5
-	.loc 1 73 1 is_stmt 0
+.LVL18:
+	.loc 1 70 5
+	.loc 1 71 1 is_stmt 0
 	lw	s0,24(sp)
 	.cfi_remember_state
 	.cfi_restore 8
@@ -269,28 +222,28 @@ app_button_press_callback:
 	.cfi_restore 9
 	lw	s2,16(sp)
 	.cfi_restore 18
-	.loc 1 72 5
+	.loc 1 70 5
 	li	a1,0
-	.loc 1 73 1
-	.loc 1 72 5
+	.loc 1 71 1
+	.loc 1 70 5
 	li	a0,11
-	.loc 1 73 1
+	.loc 1 71 1
 	addi	sp,sp,32
 	.cfi_def_cfa_offset 0
-	.loc 1 72 5
+	.loc 1 70 5
 	tail	app_event_post
-.LVL25:
+.LVL19:
 .L14:
 	.cfi_restore_state
 .LBB4:
-	.loc 1 68 9
-	lui	a0,%hi(.LC2)
-.LVL26:
-	addi	a0,a0,%lo(.LC2)
+	.loc 1 66 9
+	lui	a0,%hi(.LC0)
+.LVL20:
+	addi	a0,a0,%lo(.LC0)
 	j	.L13
 .L9:
 .LBE4:
-	.loc 1 73 1
+	.loc 1 71 1
 	lw	ra,28(sp)
 	.cfi_restore 1
 	lw	s0,24(sp)
@@ -312,30 +265,30 @@ app_button_press_callback:
 	.type	app_callback_update_lock_button, @function
 app_callback_update_lock_button:
 .LFB7:
-	.loc 1 76 1 is_stmt 1
+	.loc 1 74 1 is_stmt 1
 	.cfi_startproc
-.LVL27:
-	.loc 1 77 5
-	.loc 1 76 1 is_stmt 0
+.LVL21:
+	.loc 1 75 5
+	.loc 1 74 1 is_stmt 0
 	addi	sp,sp,-16
 	.cfi_def_cfa_offset 16
 	sw	s0,12(sp)
 	.cfi_offset 8, -4
 	addi	s0,sp,16
 	.cfi_def_cfa 8, 0
-	.loc 1 79 1
+	.loc 1 77 1
 	lw	s0,12(sp)
 	.cfi_restore 8
 	.cfi_def_cfa 2, 16
-	.loc 1 77 19
+	.loc 1 75 19
 	lui	a5,%hi(.LANCHOR2)
 	sb	a0,%lo(.LANCHOR2)(a5)
-	.loc 1 78 5 is_stmt 1
-	.loc 1 78 26 is_stmt 0
+	.loc 1 76 5 is_stmt 1
+	.loc 1 76 26 is_stmt 0
 	li	a4,1
 	lui	a5,%hi(.LANCHOR1)
 	sb	a4,%lo(.LANCHOR1)(a5)
-	.loc 1 79 1
+	.loc 1 77 1
 	addi	sp,sp,16
 	.cfi_def_cfa_offset 0
 	jr	ra
@@ -348,10 +301,10 @@ app_callback_update_lock_button:
 	.type	app_wifi_connected_callback, @function
 app_wifi_connected_callback:
 .LFB8:
-	.loc 1 82 1 is_stmt 1
+	.loc 1 80 1 is_stmt 1
 	.cfi_startproc
-	.loc 1 83 5
-	.loc 1 82 1 is_stmt 0
+	.loc 1 81 5
+	.loc 1 80 1 is_stmt 0
 	addi	sp,sp,-32
 	.cfi_def_cfa_offset 32
 	sw	s0,24(sp)
@@ -360,16 +313,16 @@ app_wifi_connected_callback:
 	.cfi_offset 1, -4
 	addi	s0,sp,32
 	.cfi_def_cfa 8, 0
-	.loc 1 83 17
+	.loc 1 81 17
 	li	a5,3
 	.loc 1 84 5
 	addi	a0,s0,-24
-	.loc 1 83 17
+	.loc 1 81 17
 	sw	a5,-24(s0)
 	sw	zero,-20(s0)
 	.loc 1 84 5 is_stmt 1
 	call	app_state_process_event
-.LVL28:
+.LVL22:
 	.loc 1 85 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
@@ -409,7 +362,7 @@ app_wifi_disconnected_callback:
 	sw	zero,-20(s0)
 	.loc 1 90 5 is_stmt 1
 	call	app_state_process_event
-.LVL29:
+.LVL23:
 	.loc 1 91 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
@@ -449,7 +402,7 @@ app_wifi_connect_failed_callback:
 	sw	zero,-20(s0)
 	.loc 1 96 5 is_stmt 1
 	call	app_state_process_event
-.LVL30:
+.LVL24:
 	.loc 1 97 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
@@ -470,7 +423,7 @@ app_ble_config_done_callback:
 .LFB11:
 	.loc 1 100 1 is_stmt 1
 	.cfi_startproc
-.LVL31:
+.LVL25:
 	.loc 1 101 5
 	.loc 1 102 5
 	.loc 1 103 5
@@ -487,13 +440,13 @@ app_ble_config_done_callback:
 	li	a5,6
 	.loc 1 104 5
 	addi	a0,s0,-24
-.LVL32:
+.LVL26:
 	.loc 1 103 17
 	sw	a5,-24(s0)
 	sw	zero,-20(s0)
 	.loc 1 104 5 is_stmt 1
 	call	app_state_process_event
-.LVL33:
+.LVL27:
 	.loc 1 105 1 is_stmt 0
 	lw	ra,28(sp)
 	.cfi_restore 1
@@ -537,27 +490,25 @@ g_lock_button_loaded:
 	.text
 .Letext0:
 	.file 2 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/lib/gcc/riscv64-unknown-elf/10.2.0/include/stdint-gcc.h"
-	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h"
-	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/app_state.h"
-	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
-	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
-	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_mqtt.h"
-	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
-	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h"
-	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
-	.file 11 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
-	.file 12 "/home/dinhquangha/intern/Ai-Thinker-WB2/toolchain/riscv/Linux/riscv64-unknown-elf/include/stdio.h"
+	.file 3 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_state/app_state.h"
+	.file 4 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h"
+	.file 5 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h"
+	.file 6 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_mqtt.h"
+	.file 7 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/mqtt_if/mqtt_if.h"
+	.file 8 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h"
+	.file 9 "/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h"
+	.file 10 "/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../middle/wifi_if/wifi_if.h"
 	.section	.debug_info,"",@progbits
 .Ldebug_info0:
-	.4byte	0x55a
+	.4byte	0x51a
 	.2byte	0x4
 	.4byte	.Ldebug_abbrev0
 	.byte	0x4
 	.byte	0x1
-	.4byte	.LASF64
+	.4byte	.LASF63
 	.byte	0xc
+	.4byte	.LASF64
 	.4byte	.LASF65
-	.4byte	.LASF66
 	.4byte	.Ldebug_ranges0+0x18
 	.4byte	0
 	.4byte	.Ldebug_line0
@@ -612,7 +563,7 @@ g_lock_button_loaded:
 	.byte	0x4
 	.4byte	0x70
 	.byte	0x3
-	.byte	0x6
+	.byte	0x12
 	.byte	0xe
 	.4byte	0xec
 	.byte	0x6
@@ -670,26 +621,26 @@ g_lock_button_loaded:
 	.byte	0x3
 	.4byte	.LASF27
 	.byte	0x3
-	.byte	0x18
+	.byte	0x24
 	.byte	0x3
 	.4byte	0x77
 	.byte	0x7
 	.byte	0x8
 	.byte	0x3
-	.byte	0x1a
+	.byte	0x26
 	.byte	0x9
 	.4byte	0x11c
 	.byte	0x8
 	.4byte	.LASF28
 	.byte	0x3
-	.byte	0x1b
+	.byte	0x27
 	.byte	0x16
 	.4byte	0xec
 	.byte	0
 	.byte	0x8
 	.4byte	.LASF29
 	.byte	0x3
-	.byte	0x1c
+	.byte	0x28
 	.byte	0xb
 	.4byte	0x11c
 	.byte	0x4
@@ -699,7 +650,7 @@ g_lock_button_loaded:
 	.byte	0x3
 	.4byte	.LASF30
 	.byte	0x3
-	.byte	0x1d
+	.byte	0x29
 	.byte	0x3
 	.4byte	0xf8
 	.byte	0xa
@@ -783,14 +734,14 @@ g_lock_button_loaded:
 	.byte	0x63
 	.byte	0x2f
 	.4byte	0x12a
-	.4byte	.LLST9
+	.4byte	.LLST7
 	.byte	0x11
 	.4byte	.LASF39
 	.byte	0x1
 	.byte	0x63
 	.byte	0x41
 	.4byte	0x12a
-	.4byte	.LLST10
+	.4byte	.LLST8
 	.byte	0x12
 	.string	"evt"
 	.byte	0x1
@@ -801,8 +752,8 @@ g_lock_button_loaded:
 	.byte	0x91
 	.byte	0x68
 	.byte	0x13
-	.4byte	.LVL33
-	.4byte	0x4cc
+	.4byte	.LVL27
+	.4byte	0x498
 	.byte	0x14
 	.byte	0x1
 	.byte	0x5a
@@ -831,8 +782,8 @@ g_lock_button_loaded:
 	.byte	0x91
 	.byte	0x68
 	.byte	0x13
-	.4byte	.LVL30
-	.4byte	0x4cc
+	.4byte	.LVL24
+	.4byte	0x498
 	.byte	0x14
 	.byte	0x1
 	.byte	0x5a
@@ -861,8 +812,8 @@ g_lock_button_loaded:
 	.byte	0x91
 	.byte	0x68
 	.byte	0x13
-	.4byte	.LVL29
-	.4byte	0x4cc
+	.4byte	.LVL23
+	.4byte	0x498
 	.byte	0x14
 	.byte	0x1
 	.byte	0x5a
@@ -874,7 +825,7 @@ g_lock_button_loaded:
 	.byte	0x10
 	.4byte	.LASF43
 	.byte	0x1
-	.byte	0x51
+	.byte	0x4f
 	.byte	0x6
 	.4byte	.LFB8
 	.4byte	.LFE8-.LFB8
@@ -884,15 +835,15 @@ g_lock_button_loaded:
 	.byte	0x12
 	.string	"evt"
 	.byte	0x1
-	.byte	0x53
+	.byte	0x51
 	.byte	0x11
 	.4byte	0x11e
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0x13
-	.4byte	.LVL28
-	.4byte	0x4cc
+	.4byte	.LVL22
+	.4byte	0x498
 	.byte	0x14
 	.byte	0x1
 	.byte	0x5a
@@ -904,7 +855,7 @@ g_lock_button_loaded:
 	.byte	0x10
 	.4byte	.LASF44
 	.byte	0x1
-	.byte	0x4b
+	.byte	0x49
 	.byte	0x6
 	.4byte	.LFB7
 	.4byte	.LFE7-.LFB7
@@ -914,7 +865,7 @@ g_lock_button_loaded:
 	.byte	0x15
 	.4byte	.LASF45
 	.byte	0x1
-	.byte	0x4b
+	.byte	0x49
 	.byte	0x2a
 	.4byte	0x13c
 	.byte	0x1
@@ -923,7 +874,7 @@ g_lock_button_loaded:
 	.byte	0x10
 	.4byte	.LASF46
 	.byte	0x1
-	.byte	0x33
+	.byte	0x31
 	.byte	0x6
 	.4byte	.LFB6
 	.4byte	.LFE6-.LFB6
@@ -933,24 +884,24 @@ g_lock_button_loaded:
 	.byte	0x16
 	.string	"pin"
 	.byte	0x1
-	.byte	0x33
+	.byte	0x31
 	.byte	0x24
 	.4byte	0x69
-	.4byte	.LLST5
+	.4byte	.LLST3
 	.byte	0x11
 	.4byte	.LASF47
 	.byte	0x1
-	.byte	0x33
+	.byte	0x31
 	.byte	0x2d
 	.4byte	0x69
-	.4byte	.LLST6
+	.4byte	.LLST4
 	.byte	0x11
 	.4byte	.LASF29
 	.byte	0x1
-	.byte	0x33
+	.byte	0x31
 	.byte	0x3a
 	.4byte	0x11c
-	.4byte	.LLST7
+	.4byte	.LLST5
 	.byte	0x17
 	.4byte	.LBB2
 	.4byte	.LBE2-.LBB2
@@ -958,15 +909,15 @@ g_lock_button_loaded:
 	.byte	0xf
 	.4byte	.LASF48
 	.byte	0x1
-	.byte	0x37
+	.byte	0x35
 	.byte	0x11
 	.4byte	0x41
 	.byte	0x2
 	.byte	0x91
 	.byte	0x6f
 	.byte	0x13
-	.4byte	.LVL18
-	.4byte	0x4d8
+	.4byte	.LVL12
+	.4byte	0x4a4
 	.byte	0x14
 	.byte	0x1
 	.byte	0x5a
@@ -987,25 +938,25 @@ g_lock_button_loaded:
 	.byte	0x19
 	.4byte	.LASF49
 	.byte	0x1
-	.byte	0x43
+	.byte	0x41
 	.byte	0x11
 	.4byte	0x41
-	.4byte	.LLST8
+	.4byte	.LLST6
 	.byte	0x1a
-	.4byte	.LVL21
-	.4byte	0x4e4
+	.4byte	.LVL15
+	.4byte	0x4b0
 	.byte	0x1a
-	.4byte	.LVL23
-	.4byte	0x4f0
+	.4byte	.LVL17
+	.4byte	0x4bc
 	.byte	0
 	.byte	0x1a
-	.4byte	.LVL19
-	.4byte	0x4fc
+	.4byte	.LVL13
+	.4byte	0x4c8
 	.byte	0x1a
-	.4byte	.LVL20
-	.4byte	0x508
+	.4byte	.LVL14
+	.4byte	0x4d4
 	.byte	0x1b
-	.4byte	.LVL24
+	.4byte	.LVL18
 	.4byte	0x465
 	.4byte	0x39c
 	.byte	0x14
@@ -1020,7 +971,7 @@ g_lock_button_loaded:
 	.byte	0x30
 	.byte	0
 	.byte	0x1c
-	.4byte	.LVL25
+	.4byte	.LVL19
 	.4byte	0x465
 	.byte	0x14
 	.byte	0x1
@@ -1037,7 +988,7 @@ g_lock_button_loaded:
 	.byte	0x10
 	.4byte	.LASF50
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x1d
 	.byte	0x6
 	.4byte	.LFB5
 	.4byte	.LFE5-.LFB5
@@ -1047,42 +998,42 @@ g_lock_button_loaded:
 	.byte	0x16
 	.string	"pin"
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x1d
 	.byte	0x23
 	.4byte	0x69
-	.4byte	.LLST2
+	.4byte	.LLST0
 	.byte	0x11
 	.4byte	.LASF47
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x1d
 	.byte	0x2c
 	.4byte	0x69
-	.4byte	.LLST3
+	.4byte	.LLST1
 	.byte	0x11
 	.4byte	.LASF29
 	.byte	0x1
-	.byte	0x1f
+	.byte	0x1d
 	.byte	0x39
 	.4byte	0x11c
-	.4byte	.LLST4
+	.4byte	.LLST2
 	.byte	0x12
 	.string	"evt"
 	.byte	0x1
-	.byte	0x2c
+	.byte	0x2a
 	.byte	0x11
 	.4byte	0x11e
 	.byte	0x2
 	.byte	0x91
 	.byte	0x68
 	.byte	0x1a
-	.4byte	.LVL8
-	.4byte	0x514
+	.4byte	.LVL2
+	.4byte	0x4e0
 	.byte	0x1a
-	.4byte	.LVL9
-	.4byte	0x520
+	.4byte	.LVL3
+	.4byte	0x4ec
 	.byte	0x1b
-	.4byte	.LVL10
-	.4byte	0x52c
+	.4byte	.LVL4
+	.4byte	0x4f8
 	.4byte	0x42d
 	.byte	0x14
 	.byte	0x1
@@ -1092,11 +1043,11 @@ g_lock_button_loaded:
 	.2byte	0x1f4
 	.byte	0
 	.byte	0x1a
-	.4byte	.LVL11
-	.4byte	0x539
+	.4byte	.LVL5
+	.4byte	0x505
 	.byte	0x1b
-	.4byte	.LVL12
-	.4byte	0x52c
+	.4byte	.LVL6
+	.4byte	0x4f8
 	.4byte	0x44b
 	.byte	0x14
 	.byte	0x1
@@ -1106,11 +1057,11 @@ g_lock_button_loaded:
 	.2byte	0x7d0
 	.byte	0
 	.byte	0x1a
-	.4byte	.LVL13
-	.4byte	0x545
+	.4byte	.LVL7
+	.4byte	0x511
 	.byte	0x13
-	.4byte	.LVL14
-	.4byte	0x4cc
+	.4byte	.LVL8
+	.4byte	0x498
 	.byte	0x14
 	.byte	0x1
 	.byte	0x5a
@@ -1128,120 +1079,89 @@ g_lock_button_loaded:
 	.4byte	.LFE4-.LFB4
 	.byte	0x1
 	.byte	0x9c
-	.4byte	0x4cc
-	.byte	0x11
+	.4byte	0x498
+	.byte	0x15
 	.4byte	.LASF28
 	.byte	0x1
 	.byte	0x16
 	.byte	0x26
 	.4byte	0xec
-	.4byte	.LLST0
-	.byte	0x11
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x15
 	.4byte	.LASF29
 	.byte	0x1
 	.byte	0x16
 	.byte	0x32
 	.4byte	0x11c
-	.4byte	.LLST1
-	.byte	0x1b
-	.4byte	.LVL3
-	.4byte	0x551
-	.4byte	0x4b8
-	.byte	0x14
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
-	.byte	0x3
-	.4byte	.LC0
-	.byte	0x14
 	.byte	0x1
 	.byte	0x5b
-	.byte	0x2
-	.byte	0x82
 	.byte	0
-	.byte	0
-	.byte	0x1c
-	.4byte	.LVL6
-	.4byte	0x551
-	.byte	0x14
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x5
+	.byte	0x1d
+	.4byte	.LASF52
+	.4byte	.LASF52
 	.byte	0x3
-	.4byte	.LC1
-	.byte	0
-	.byte	0
-	.byte	0x1d
-	.4byte	.LASF52
-	.4byte	.LASF52
-	.byte	0x4
-	.byte	0x1d
+	.byte	0x36
 	.byte	0xd
 	.byte	0x1d
 	.4byte	.LASF53
 	.4byte	.LASF53
-	.byte	0x5
+	.byte	0x4
 	.byte	0x1c
 	.byte	0x5
 	.byte	0x1d
 	.4byte	.LASF54
 	.4byte	.LASF54
-	.byte	0x6
+	.byte	0x5
 	.byte	0xa
 	.byte	0x9
 	.byte	0x1d
 	.4byte	.LASF55
 	.4byte	.LASF55
-	.byte	0x7
+	.byte	0x6
 	.byte	0xa
 	.byte	0x5
 	.byte	0x1d
 	.4byte	.LASF56
 	.4byte	.LASF56
-	.byte	0x6
+	.byte	0x5
 	.byte	0x9
 	.byte	0x6
 	.byte	0x1d
 	.4byte	.LASF57
 	.4byte	.LASF57
-	.byte	0x8
+	.byte	0x7
 	.byte	0x22
 	.byte	0x5
 	.byte	0x1d
 	.4byte	.LASF58
 	.4byte	.LASF58
-	.byte	0x9
+	.byte	0x8
 	.byte	0x11
 	.byte	0x5
 	.byte	0x1d
 	.4byte	.LASF59
 	.4byte	.LASF59
-	.byte	0x9
+	.byte	0x8
 	.byte	0x10
 	.byte	0x5
 	.byte	0x1e
 	.4byte	.LASF60
 	.4byte	.LASF60
-	.byte	0xa
+	.byte	0x9
 	.2byte	0x207
 	.byte	0xa
 	.byte	0x1d
 	.4byte	.LASF61
 	.4byte	.LASF61
-	.byte	0xb
+	.byte	0xa
 	.byte	0xe
 	.byte	0x5
 	.byte	0x1d
 	.4byte	.LASF62
 	.4byte	.LASF62
-	.byte	0x5
+	.byte	0x4
 	.byte	0x17
-	.byte	0x5
-	.byte	0x1d
-	.4byte	.LASF63
-	.4byte	.LASF63
-	.byte	0xc
-	.byte	0xc8
 	.byte	0x5
 	.byte	0
 	.section	.debug_abbrev,"",@progbits
@@ -1661,12 +1581,12 @@ g_lock_button_loaded:
 	.byte	0
 	.section	.debug_loc,"",@progbits
 .Ldebug_loc0:
-.LLST9:
-	.4byte	.LVL31
-	.4byte	.LVL32
+.LLST7:
+	.4byte	.LVL25
+	.4byte	.LVL26
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL32
+	.4byte	.LVL26
 	.4byte	.LFE11
 	.2byte	0x4
 	.byte	0xf3
@@ -1675,13 +1595,41 @@ g_lock_button_loaded:
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
-.LLST10:
-	.4byte	.LVL31
-	.4byte	.LVL33-1
+.LLST8:
+	.4byte	.LVL25
+	.4byte	.LVL27-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL33-1
+	.4byte	.LVL27-1
 	.4byte	.LFE11
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5b
+	.byte	0x9f
+	.4byte	0
+	.4byte	0
+.LLST3:
+	.4byte	.LVL9
+	.4byte	.LVL11
+	.2byte	0x1
+	.byte	0x5a
+	.4byte	.LVL11
+	.4byte	.LFE6
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5a
+	.byte	0x9f
+	.4byte	0
+	.4byte	0
+.LLST4:
+	.4byte	.LVL9
+	.4byte	.LVL10
+	.2byte	0x1
+	.byte	0x5b
+	.4byte	.LVL10
+	.4byte	.LFE6
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
@@ -1690,16 +1638,16 @@ g_lock_button_loaded:
 	.4byte	0
 	.4byte	0
 .LLST5:
-	.4byte	.LVL15
-	.4byte	.LVL17
+	.4byte	.LVL9
+	.4byte	.LVL12-1
 	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL17
+	.byte	0x5c
+	.4byte	.LVL12-1
 	.4byte	.LFE6
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
-	.byte	0x5a
+	.byte	0x5c
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
@@ -1707,103 +1655,20 @@ g_lock_button_loaded:
 	.4byte	.LVL15
 	.4byte	.LVL16
 	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL16
-	.4byte	.LFE6
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x9f
-	.4byte	0
-	.4byte	0
-.LLST7:
-	.4byte	.LVL15
-	.4byte	.LVL18-1
-	.2byte	0x1
-	.byte	0x5c
-	.4byte	.LVL18-1
-	.4byte	.LFE6
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x9f
-	.4byte	0
-	.4byte	0
-.LLST8:
-	.4byte	.LVL21
-	.4byte	.LVL22
+	.byte	0x5a
+	.4byte	.LVL19
+	.4byte	.LVL20
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL25
-	.4byte	.LVL26
-	.2byte	0x1
-	.byte	0x5a
-	.4byte	0
-	.4byte	0
-.LLST2:
-	.4byte	.LVL7
-	.4byte	.LVL8-1
-	.2byte	0x1
-	.byte	0x5a
-	.4byte	.LVL8-1
-	.4byte	.LFE5
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5a
-	.byte	0x9f
-	.4byte	0
-	.4byte	0
-.LLST3:
-	.4byte	.LVL7
-	.4byte	.LVL8-1
-	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL8-1
-	.4byte	.LFE5
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5b
-	.byte	0x9f
-	.4byte	0
-	.4byte	0
-.LLST4:
-	.4byte	.LVL7
-	.4byte	.LVL8-1
-	.2byte	0x1
-	.byte	0x5c
-	.4byte	.LVL8-1
-	.4byte	.LFE5
-	.2byte	0x4
-	.byte	0xf3
-	.byte	0x1
-	.byte	0x5c
-	.byte	0x9f
 	.4byte	0
 	.4byte	0
 .LLST0:
-	.4byte	.LVL0
-	.4byte	.LVL2
+	.4byte	.LVL1
+	.4byte	.LVL2-1
 	.2byte	0x1
 	.byte	0x5a
-	.4byte	.LVL2
-	.4byte	.LVL3-1
-	.2byte	0x1
-	.byte	0x5b
-	.4byte	.LVL3-1
-	.4byte	.LVL4
-	.2byte	0x1
-	.byte	0x62
-	.4byte	.LVL4
-	.4byte	.LVL6-1
-	.2byte	0x2
-	.byte	0x7e
-	.byte	0
-	.4byte	.LVL6-1
-	.4byte	.LFE4
+	.4byte	.LVL2-1
+	.4byte	.LFE5
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
@@ -1812,25 +1677,30 @@ g_lock_button_loaded:
 	.4byte	0
 	.4byte	0
 .LLST1:
-	.4byte	.LVL0
 	.4byte	.LVL1
+	.4byte	.LVL2-1
 	.2byte	0x1
 	.byte	0x5b
-	.4byte	.LVL1
-	.4byte	.LVL5
-	.2byte	0x1
-	.byte	0x63
-	.4byte	.LVL5
-	.4byte	.LVL6-1
-	.2byte	0x2
-	.byte	0x7e
-	.byte	0x4
-	.4byte	.LVL6-1
-	.4byte	.LFE4
+	.4byte	.LVL2-1
+	.4byte	.LFE5
 	.2byte	0x4
 	.byte	0xf3
 	.byte	0x1
 	.byte	0x5b
+	.byte	0x9f
+	.4byte	0
+	.4byte	0
+.LLST2:
+	.4byte	.LVL1
+	.4byte	.LVL2-1
+	.2byte	0x1
+	.byte	0x5c
+	.4byte	.LVL2-1
+	.4byte	.LFE5
+	.2byte	0x4
+	.byte	0xf3
+	.byte	0x1
+	.byte	0x5c
 	.byte	0x9f
 	.4byte	0
 	.4byte	0
@@ -1929,7 +1799,7 @@ g_lock_button_loaded:
 	.string	"APP_EVENT_BUTTON_HOLD"
 .LASF3:
 	.string	"long long int"
-.LASF66:
+.LASF65:
 	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/build_out/gpio"
 .LASF2:
 	.string	"long int"
@@ -1937,8 +1807,6 @@ g_lock_button_loaded:
 	.string	"dummy_state"
 .LASF34:
 	.string	"g_event_queue_head"
-.LASF63:
-	.string	"printf"
 .LASF18:
 	.string	"APP_EVENT_MQTT_SET_ON"
 .LASF24:
@@ -1959,7 +1827,7 @@ g_lock_button_loaded:
 	.string	"app_event_post"
 .LASF46:
 	.string	"app_button_press_callback"
-.LASF65:
+.LASF64:
 	.string	"/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_callback.c"
 .LASF54:
 	.string	"relay_get_state"
@@ -1997,7 +1865,7 @@ g_lock_button_loaded:
 	.string	"APP_EVENT_NONE"
 .LASF16:
 	.string	"APP_EVENT_BLE_CONFIG_TIMEOUT"
-.LASF64:
+.LASF63:
 	.string	"GNU C99 10.2.0 -march=rv32imfc -mabi=ilp32f -march=rv32imfc -gdwarf -Os -std=gnu99 -ffunction-sections -fdata-sections -fstrict-volatile-bitfields -fcommon -ffreestanding -fno-strict-aliasing -fno-omit-frame-pointer"
 .LASF52:
 	.string	"app_state_process_event"

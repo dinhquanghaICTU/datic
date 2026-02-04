@@ -20,8 +20,7 @@ m_app_api.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_wifi.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_app_callback.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/../app_state/app_state.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/led/led.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h:
@@ -44,8 +43,7 @@ m_app_api.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_wifi.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_ble.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../gpio/m_app_callback.h:
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_event/app_event.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/../app_state/app_state.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/led/led.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/../../hardware/relay/relay.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/./m_app_api.c:

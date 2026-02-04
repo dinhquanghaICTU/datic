@@ -13,6 +13,9 @@ static bool s_wifi_connected = false;
 static bool s_wifi_connecting = false;
 static bool s_wifi_mgmr_ready = false;
 
+static app_wifi_connected_cb_t g_connected_cb = NULL;
+static app_wifi_disconnected_cb_t g_disconnected_cb = NULL;
+static app_wifi_connect_failed_cb_t g_connect_failed_cb = NULL;
 
 static wifi_if_connected_cb_t s_connected_cb = NULL;
 static wifi_if_disconnected_cb_t s_disconnected_cb = NULL;
@@ -242,4 +245,40 @@ void wifi_if_set_disconnected_cb(wifi_if_disconnected_cb_t cb)
 void wifi_if_set_connect_failed_cb(wifi_if_connect_failed_cb_t cb)
 {
     s_connect_failed_cb = cb;
+}
+
+int app_wifi_connect(const char *ssid, const char *password)
+{
+    if (ssid == NULL || password == NULL) {
+        return -1;
+    }
+
+    if (!wifi_if_is_mgmr_ready()) {
+        printf("[APP][WiFi] MGMR not ready, cannot connect\r\n");
+        if (g_connect_failed_cb) {
+            g_connect_failed_cb();
+        }
+        return -1;
+    }
+
+    return wifi_if_connect(ssid, password);
+}
+
+
+void app_wifi_set_connected_cb(app_wifi_connected_cb_t cb)
+{
+    g_connected_cb = cb; //save call back is variable, affter will call callback for value is poiter funcion
+    wifi_if_set_connected_cb(cb); // send down wifi_if register for callback interface 
+}
+
+void app_wifi_set_disconnected_cb(app_wifi_disconnected_cb_t cb)
+{
+    g_disconnected_cb = cb;
+    wifi_if_set_disconnected_cb(cb);
+}
+
+void app_wifi_set_connect_failed_cb(app_wifi_connect_failed_cb_t cb)
+{
+    g_connect_failed_cb = cb;
+    wifi_if_set_connect_failed_cb(cb);
 }

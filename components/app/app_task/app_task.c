@@ -3,13 +3,10 @@
 #include <FreeRTOS.h>
 #include <task.h>
 #include "blog.h"
-#include "../gpio/m_app_callback.h"
-#include "../gpio/m_wifi.h"
+#include "../wifi_if/wifi_if.h"
 #include "../gpio/m_ble.h"
-#include "../app_state/app_state.h"
-#include "../app_event/app_event.h"
 #include "../app_config/app_config.h"
-#include "../gpio/m_mqtt.h"
+#include "../mqtt_if/mqtt_if.h"
 #include "../../hardware/led/led.h"
 #include "../../hardware/relay/relay.h"
 #include "../../third_party/lib_button/app_btn.h"
@@ -20,7 +17,7 @@
 #include <bl_sys.h>
 #include <stdbool.h>
 #include <string.h>
-#include "../gpio/m_ble_master.h" 
+#include "../gpio/m_ble.h" 
 
 
 static TaskHandle_t g_task_button_handle = NULL;
@@ -30,12 +27,46 @@ static TaskHandle_t g_task_main_handle = NULL;
 static bool g_led_blink_enable = false;
 uint8_t g_btn_filter_cnt = MIN_BTN_FILTER_CNT;
 
+
+
+app_event_t g_event_queue[10];
+int g_event_queue_head = 0;
+int g_event_queue_tail = 0;
+static bool g_lock_button = false;
+static bool g_lock_button_loaded = false;
+
+
+
+
+static app_state_machine_t g_state_machine = {
+    .current_state = APP_STATE_INIT,
+    .next_state = APP_STATE_INIT
+};
+
+static app_state_t state_init_handler(app_event_t *event);
+static app_state_t state_check_flash_handler(app_event_t *event);
+static app_state_t state_ble_config_handler(app_event_t *event);
+static app_state_t state_wifi_connecting_handler(app_event_t *event);
+static app_state_t state_wifi_connected_handler(app_event_t *event);
+static app_state_t state_wifi_failed_handler(app_event_t *event);
+static app_state_t state_ble_master_handler(app_event_t *event);
+
+static app_state_handler_t state_handlers[APP_STATE_MAX] = {
+    state_init_handler,
+    state_check_flash_handler,
+    state_ble_config_handler,
+    state_wifi_connecting_handler,
+    state_wifi_connected_handler,
+    state_wifi_failed_handler,
+    state_ble_master_handler
+};
+
+
+
 static uint32_t app_get_tick_ms(void)
 {
     return aos_now_ms();
 }
-
-
 
 //create 3 task 
 void app_task_init(void)
@@ -203,18 +234,18 @@ void app_task_main(void *params)
             event.type = APP_EVENT_NONE;
         }
         else if (event.type == APP_EVENT_MQTT_BLE_MASTER_STOP) {
-            blog_info("[APP] Stopping BLE Master\r\n");
+            blog_info("[APP] Stopping BLE Master...\r\n");
             app_ble_master_stop();
             app_state_set_next(APP_STATE_WIFI_CONNECTED);
             event.type = APP_EVENT_NONE;
         }
         else if (event.type == APP_EVENT_MQTT_BLE_MASTER_CONNECT) {
-            blog_info("[APP] BLE Master connect \r\n");
+            blog_info("[APP] BLE Master connect command...\r\n");
             app_ble_master_connect(NULL);  
             event.type = APP_EVENT_NONE;
         }
         else if (event.type == APP_EVENT_MQTT_BLE_MASTER_DISCONNECT) {
-            blog_info("[APP] BLE Master disconnect \r\n");
+            blog_info("[APP] BLE Master disconnect command...\r\n");
             app_ble_master_disconnect();
             event.type = APP_EVENT_NONE;
         }
@@ -222,7 +253,7 @@ void app_task_main(void *params)
         switch (current_state) {
             case APP_STATE_CHECK_FLASH:// if flag s_wifi_mgmr_ready= false will idle wait cline hold btn
                 break;
-            case APP_STATE_BLE_CONFIG: // start ble
+            case APP_STATE_BLE_CONFIG:
                 if (!app_ble_is_running()) {
                     aos_msleep(200);
                     app_ble_start();
@@ -241,6 +272,7 @@ void app_task_main(void *params)
                     static bool mqtt_connect_attempted = false;
                     static uint32_t mqtt_last_attempt = 0;
                     uint32_t now = aos_now_ms();
+                    
                     if (!mqtt_if_is_connected() && !mqtt_connect_attempted) {
                         const char *mqtt_broker = "172.20.10.3";
                         app_mqtt_start(mqtt_broker, 1883, NULL);
@@ -281,3 +313,243 @@ void app_set_led_blink(bool enable)
 {
     g_led_blink_enable = enable;
 }
+
+
+void app_event_post(app_event_type_t type, void *data)
+{
+    g_event_queue[g_event_queue_tail].type = type;
+    g_event_queue[g_event_queue_tail].data = data;
+    g_event_queue_tail = (g_event_queue_tail + 1) % 10;
+}
+
+void app_button_hold_callback(int pin, int event, void *data) // when hold 
+{
+    
+    if (app_ble_is_running()) {
+        app_ble_stop();
+        aos_msleep(500);
+    }
+    
+    wifi_if_disconnect();
+    aos_msleep(2000);
+
+    app_config_clear_wifi(); //erase flash ssid and pass
+    
+    app_event_t evt = {
+        .type = APP_EVENT_BUTTON_HOLD,
+        .data = NULL
+    };
+    app_state_process_event(&evt);
+}
+
+void app_button_press_callback(int pin, int event, void *data)
+{
+    
+    if (!g_lock_button_loaded) {
+        uint8_t dummy_state;
+        app_config_load_relay_settings(&dummy_state, &g_lock_button);
+        g_lock_button_loaded = true;
+    }
+    
+    if (g_lock_button) {
+        return;
+    }
+    
+    relay_toggle();
+    
+    if (mqtt_if_is_connected()) {
+        uint8_t relay_state = relay_get_state();
+        app_mqtt_publish_state(relay_state ? "ON" : "OFF");
+    }
+    
+    app_event_post(APP_EVENT_BUTTON_PRESS, NULL);
+    app_event_post(APP_EVENT_RELAY_STATE_CHANGED, NULL);
+}
+
+void app_callback_update_lock_button(bool locked)
+{
+    g_lock_button = locked;
+    g_lock_button_loaded = true;
+}
+
+void app_wifi_connected_callback(void)
+{
+    app_event_t evt = {
+        .type = APP_EVENT_WIFI_CONNECTED, 
+        .data = NULL};
+    app_state_process_event(&evt);
+}
+
+void app_wifi_disconnected_callback(void)
+{
+    app_event_t evt = {.type = APP_EVENT_WIFI_DISCONNECTED, .data = NULL};
+    app_state_process_event(&evt);
+}
+
+void app_wifi_connect_failed_callback(void)
+{
+    app_event_t evt = {.type = APP_EVENT_WIFI_CONNECT_FAILED, .data = NULL};
+    app_state_process_event(&evt);
+}
+
+void app_ble_config_done_callback(const char *ssid, const char *password)
+{
+    (void)ssid;
+    (void)password;
+    app_event_t evt = {.type = APP_EVENT_BLE_CONFIG_DONE, .data = NULL};
+    app_state_process_event(&evt);
+}
+
+void app_state_init(void)
+{
+    blog_debug("init state\r\n");
+    memset(&g_state_machine, 0, sizeof(app_state_machine_t));
+    g_state_machine.current_state = APP_STATE_INIT;
+    g_state_machine.next_state = APP_STATE_INIT;
+}
+
+app_state_t app_state_get_current(void)
+{
+    return g_state_machine.current_state;
+}
+
+app_state_t app_state_get_next(void)
+{
+    return g_state_machine.next_state;
+}
+
+void app_state_set_next(app_state_t next_state)
+{
+    g_state_machine.next_state = next_state;
+}
+
+app_state_t app_state_process_event(app_event_t *event)
+{
+    if (event == NULL) {
+        return g_state_machine.current_state;
+    }
+    
+    if (g_state_machine.current_state >= APP_STATE_MAX) {
+        return g_state_machine.current_state;
+    }
+    
+    app_state_t new_state = state_handlers[g_state_machine.current_state](event); //return idex
+    
+    if (new_state != g_state_machine.current_state) {
+        blog_info("State transition: %d -> %d\r\n", g_state_machine.current_state, new_state);
+        g_state_machine.current_state = new_state;
+    }
+    
+    return g_state_machine.current_state;
+}
+
+static app_state_t state_init_handler(app_event_t *event)
+{
+    (void)event;
+    blog_info("State: INIT\r\n");
+    return APP_STATE_CHECK_FLASH;
+}
+
+static app_state_t state_check_flash_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        
+        blog_info("State: CHECK_FLASH -> BLE_CONFIG (button hold)\r\n");
+        return APP_STATE_BLE_CONFIG;
+    }
+    blog_info("State: CHECK_FLASH (waiting for button hold)\r\n");
+    
+    app_state_t next = g_state_machine.next_state;
+    if (next == APP_STATE_INIT) {
+        
+        return APP_STATE_CHECK_FLASH;
+    }
+    return next;
+}
+
+static app_state_t state_ble_config_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BLE_CONFIG_DONE) {
+        blog_info("State: BLE_CONFIG -> WIFI_CONNECTING\r\n");
+        return APP_STATE_WIFI_CONNECTING;
+    }
+    return APP_STATE_BLE_CONFIG;
+}
+
+static app_state_t state_wifi_connecting_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        blog_info("State: WIFI_CONNECTING -> BLE_CONFIG (button hold)\r\n");
+        return APP_STATE_BLE_CONFIG;
+    } else if (event->type == APP_EVENT_WIFI_CONNECTED) {
+        blog_info("State: WIFI_CONNECTING -> WIFI_CONNECTED\r\n");
+        return APP_STATE_WIFI_CONNECTED;
+    } else if (event->type == APP_EVENT_WIFI_CONNECT_FAILED) {
+        blog_info("State: WIFI_CONNECTING -> WIFI_FAILED\r\n");
+        return APP_STATE_WIFI_FAILED;
+    }
+    return APP_STATE_WIFI_CONNECTING;
+}
+
+static app_state_t state_wifi_connected_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        blog_info("State: WIFI_CONNECTED -> BLE_CONFIG (button hold)\r\n");
+        return APP_STATE_BLE_CONFIG;
+    } else if (event->type == APP_EVENT_WIFI_DISCONNECTED) {
+        blog_info("State: WIFI_CONNECTED -> WIFI_CONNECTING\r\n");
+        return APP_STATE_WIFI_CONNECTING;
+    }
+    return APP_STATE_WIFI_CONNECTED;
+}
+
+static app_state_t state_wifi_failed_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        blog_info("State: WIFI_FAILED -> BLE_CONFIG (button hold)\r\n");
+        return APP_STATE_BLE_CONFIG;
+    }
+    return APP_STATE_WIFI_FAILED;
+}
+
+static app_state_t state_ble_master_handler(app_event_t *event)
+{
+    if (event->type == APP_EVENT_BUTTON_HOLD) {
+        blog_info("State: BLE_MASTER -> BLE_CONFIG (button hold)\r\n");
+        return APP_STATE_BLE_CONFIG;
+    }
+    blog_info("State: BLE_MASTER (scanning for ADV)\r\n");
+    return APP_STATE_BLE_MASTER;
+}
+
+
+int app_run(void)
+{
+    blog_info("HNN RUN\r\n");
+    led_init();
+    relay_init();
+    if (app_config_init() != 0) {
+        blog_error(">>> Failed to init config\r\n");
+        return -1;
+    }
+    if (wifi_if_init() != 0) {
+        blog_error(">>> Failed to init WiFi\r\n");
+        return -1;
+    }
+    app_wifi_set_connected_cb(app_wifi_connected_callback); //register call back , call fun set callback for wrapper
+    app_wifi_set_disconnected_cb(app_wifi_disconnected_callback);
+    app_wifi_set_connect_failed_cb(app_wifi_connect_failed_callback);
+    
+    if (app_ble_init() != 0) {
+        blog_error(">>> Failed to init BLE\r\n");
+        return -1;
+    }
+    app_ble_set_config_done_cb(app_ble_config_done_callback); // register callback when config done will call pointer funtion
+    
+    app_task_init();
+    
+    return 0;
+}
+
+
+

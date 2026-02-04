@@ -1,5 +1,5 @@
 main.o: /home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c \
- /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h \
@@ -70,7 +70,7 @@ main.o: /home/dinhquangha/intern/Ai-Thinker-WB2/datic/datic/main.c \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/hci_err.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/ble/blestack/src/include/bluetooth/gap.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/ble/ble_master.h
-/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/gpio/m_app_api.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_task/app_task.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOS.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/platform/soc/bl602/freertos_riscv_ram/config/FreeRTOSConfig.h:

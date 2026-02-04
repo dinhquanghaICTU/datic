@@ -46,7 +46,16 @@ mqtt_if.o: \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/ip6.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/ip.h \
  /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/icmp.h \
- /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/icmp.h
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/icmp.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_cfg.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/../../middle/mqtt_if/mqtt_if.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h \
+ /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/../../hardware/relay/relay.h
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/mqtt_if.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/kernel.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/yloop/include/aos/yloop.h:
@@ -94,4 +103,13 @@ mqtt_if.o: \
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/ip.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/icmp.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/components/network/lwip/src/include/lwip/prot/icmp.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/components/utils/include/utils_log.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_type.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/components/stage/blog/blog_cfg.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/../../middle/mqtt_if/mqtt_if.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/../../middle/mqtt_cmd_parser/mqtt_cmd_parser.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_task/app_task.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/app/app_config/../app_config/app_config.h:
+/home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/../../hardware/relay/relay.h:
 /home/dinhquangha/intern/Ai-Thinker-WB2/datic/components/middle/mqtt_if/./mqtt_if.c:
